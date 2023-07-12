@@ -14,6 +14,7 @@ use App\Http\Controllers\Controller;
 |
 */
 
-Route::get('/home', [Controller::class, "home"]);
-Route::get('/view', [Controller::class, "view"]);
 
+
+Route::get('/dashboard', [Controller::class, "index"]);
+Route::get('/viewroom', [Controller::class, "viewroom"]);

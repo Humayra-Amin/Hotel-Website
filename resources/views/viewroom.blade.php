@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +13,8 @@
     <title>SB Admin 2 - Dashboard</title>
 
     <!-- Custom fonts for this template-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+   
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
@@ -30,7 +33,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -42,7 +45,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="/dashboard">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -138,204 +141,247 @@
 
     <div class="container">
       <div class="row">
-         <br>
-         <h1></h1>
-         <h2 class="col-md-12 text-center">Hotel Rooms</h2><br>
-         <br>
+         
+        <div class="col-md-12 d-flex align-items-center justify-content-between">
+            <h2>Rooms</h2>
+            <div class="d-flex align-items-center justify-content-between">
+                <form>
+                   <div class="input-group">
+                        <input type="text" class="form-control bg-light border-1 small" placeholder="Search a room"
+                            aria-label="Search" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button">
+                              <i class="fas fa-search fa-sm"></i>
+                            </button>
+                        </div>
+                  </div> 
+                    
+                    
+                    <!-- <input type="text" placeholder="Search a room"> -->
+                </form>
+                <button class="btn btn-primary ml-2">
+                    <i class="fa fa-plus"></i>
+                    Add Room
+                </button>
+            </div>
+        </div>
+         
          <div class="col-md-12">
-         <table class="table">
-      <thead>
-      <tr>
-      <th scope="col">
-      <div class="form-check">
-           <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-           <label class="form-check-label" for="flexCheckIndeterminate"></label>
-      </div>
-      </th>
-      <th scope="col">Room No</th>
-      <th scope="col">Floor</th>
-      <th scope="col">Category</th>
-      <th scope="col">Price</th>
-      <th colspan=3 scope="col">Edit</th>
-   </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">    
-      <div class="form-check">
-           <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-          <label class="form-check-label" for="flexCheckIndeterminate"></label>
-      </div>
-      </th>
-      <td>201</td>
-      <td>2nd floor</td>
-      <td>Single room</td>      
-      <td><button type="button" class="btn btn-dark">Show Price</td>
-      <td><button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button></td>
-      <td><button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button></td>
-      <td><button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i></td>
+            <table class="table">
+                <thead>
+                <tr>
+                <th scope="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                    <label class="form-check-label" for="flexCheckIndeterminate"></label>
+                </div>
+                </th>
+                <th scope="col">Room No</th>
+                <th scope="col">Floor</th>
+                <th scope="col">Category</th>
+                <th scope="col">Price</th>
+                <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th class="text-left">    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
+                    </div>
+                    </th>
+                    <td>201</td>
+                    <td>2nd floor</td>
+                    <td>Single room</td>      
+                    <td><button type="button" class="btn btn-dark">Show Price</td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button>
+                        <button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i>
+                    </td>
 
-    </tr>
-    <tr>
-      <th scope="row">
-      <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-          <label class="form-check-label" for="flexCheckIndeterminate"></label>
-      </div>
-      </th>
-      <td>202</td>
-      <td>2nd Floor</td>
-      <td>Double bed</td>
-      <td><button type="button" class="btn btn-dark">Show Price</td>
-      <td><button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button></td>
-      <td><button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button></td>
-      <td><button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
+                    </div>
+                    </th>
+                    <td>202</td>
+                    <td>2nd Floor</td>
+                    <td>Double bed</td>
+                    <td><button type="button" class="btn btn-dark">Show Price</td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button>
+                        <button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i>
+                    </td>
 
-    </tr>
-    <tr>
-      <th scope="row">
-      <div class="form-check">
-           <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-          <label class="form-check-label" for="flexCheckIndeterminate"></label>
-      </div>
-      </th>
-      <td>203</td>
-      <td>2nd Floor</td>
-      <td>Double bed</td>
-      <td><button type="button" class="btn btn-dark">Show Price</td>
-      <td><button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button></td>
-      <td><button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button></td>
-      <td><button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i></td>
-    </tr>
-    <tr>
-      <th scope="row">
-      <div class="form-check">
-           <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-          <label class="form-check-label" for="flexCheckIndeterminate"></label>
-      </div>
-      </th>
-      <td>204</td>
-      <td>2nd Floor</td>
-      <td>Deluxe Single Room</td>
-      <td><button type="button" class="btn btn-dark">Show Price</td>
-      <td><button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button></td>
-      <td><button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button></td>
-      <td><button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i></td>
-    </tr>
-    <tr>
-      <th scope="row">
-      <div class="form-check">
-           <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-          <label class="form-check-label" for="flexCheckIndeterminate"></label>
-      </div>
-      </th>
-      <td>205</td>
-      <td>2nd Floor</td>
-      <td>Deluxe Double Room</td>
-      <td><button type="button" class="btn btn-dark">Show Price</td>
-      <td><button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button></td>
-      <td><button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button></td>
-      <td><button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
+                    </div>
+                    </th>
+                    <td>203</td>
+                    <td>2nd Floor</td>
+                    <td>Double bed</td>
+                    <td><button type="button" class="btn btn-dark">Show Price</td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button>
+                        <button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i>
+                    </td>
+                    </tr>
+                    <tr>
+                    <th scope="row">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
+                    </div>
+                    </th>
+                    <td>204</td>
+                    <td>2nd Floor</td>
+                    <td>Deluxe Single Room</td>
+                    <td><button type="button" class="btn btn-dark">Show Price</td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button>
+                        <button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i>
+                    </td>
+                    </tr>
+                    <tr>
+                    <th scope="row">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
+                    </div>
+                    </th>
+                    <td>205</td>
+                    <td>2nd Floor</td>
+                    <td>Deluxe Double Room</td>
+                    <td><button type="button" class="btn btn-dark">Show Price</td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button>
+                        <button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i>
+                    </td>
 
-    </tr>
-    <tr>
+                    </tr>
+                    <tr>
 
-      <th scope="row">
-      <div class="form-check">
-           <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-          <label class="form-check-label" for="flexCheckIndeterminate"></label>
-      </div>
-      </th>
-      <td>301</td>
-      <td>3rd Floor</td>
-      <td>Deluxe Double Room</td>
-      <td><button type="button" class="btn btn-dark">Show Price</td>
-      <td><button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button></td>
-      <td><button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button></td>
-      <td><button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i></td>
-    </tr>
-    <tr>
-      <th scope="row">
-      <div class="form-check">
-           <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-          <label class="form-check-label" for="flexCheckIndeterminate"></label>
-      </div>
-      </th>
-      <td>302</td>
-      <td>3rd floor</td>
-      <td>Single Room</td>
-      <td><button type="button" class="btn btn-dark">Show Price</td>
-      <td><button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button></td>
-      <td><button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button></td>
-      <td><button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i></td>
+                    <th scope="row">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
+                    </div>
+                    </th>
+                    <td>301</td>
+                    <td>3rd Floor</td>
+                    <td>Deluxe Double Room</td>
+                    <td><button type="button" class="btn btn-dark">Show Price</td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button>
+                        <button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i>
+                    </td>
+                    </tr>
+                    <tr>
+                    <th scope="row">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
+                    </div>
+                    </th>
+                    <td>302</td>
+                    <td>3rd floor</td>
+                    <td>Single Room</td>
+                    <td><button type="button" class="btn btn-dark">Show Price</td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button>
+                        <button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i>
+                    </td>
 
-    </tr>
-    <tr>
-      <th scope="row">
-      <div class="form-check">
-           <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-          <label class="form-check-label" for="flexCheckIndeterminate"></label>
-      </div>
-      </th>
-      <td>302</td>
-      <td>3rd floor</td>
-      <td>Single Room</td>
-      <td><button type="button" class="btn btn-dark">Show Price</td>
-      <td><button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button></td>
-      <td><button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button></td>
-      <td><button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
+                    </div>
+                    </th>
+                    <td>302</td>
+                    <td>3rd floor</td>
+                    <td>Single Room</td>
+                    <td><button type="button" class="btn btn-dark">Show Price</td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button>
+                        <button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i>
+                    </td>
 
-    </tr>
-    <tr>
-      <th scope="row">
-      <div class="form-check">
-           <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-          <label class="form-check-label" for="flexCheckIndeterminate"></label>
-      </div>
-      </th>
-      <td>303</td>
-      <td>3rd floor</td>
-      <td>Single Room</td>
-      <td><button type="button" class="btn btn-dark">Show Price</td>
-      <td><button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button></td>
-      <td><button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button></td>
-      <td><button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
+                    </div>
+                    </th>
+                    <td>303</td>
+                    <td>3rd floor</td>
+                    <td>Single Room</td>
+                    <td><button type="button" class="btn btn-dark">Show Price</td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button>
+                        <button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i>
+                    </td>
 
-    </tr>
-    <tr>
-      <th scope="row">
-      <div class="form-check">
-           <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-          <label class="form-check-label" for="flexCheckIndeterminate"></label>
-      </div>
-      </th>
-      <td>304</td>
-      <td>3rd floor</td>
-      <td>Single Room</td>
-      <td><button type="button" class="btn btn-dark">Show Price</td>
-      <td><button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button></td>
-      <td><button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button></td>
-      <td><button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
+                    </div>
+                    </th>
+                    <td>304</td>
+                    <td>3rd floor</td>
+                    <td>Single Room</td>
+                    <td><button type="button" class="btn btn-dark">Show Price</td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button>
+                        <button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i>
+                    </td>
 
-    </tr>
-    <tr>
-      <th scope="row">
-      <div class="form-check">
-           <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-          <label class="form-check-label" for="flexCheckIndeterminate"></label>
-      </div>
-      </th>
-      <td>305</td>
-      <td>3rd floor</td>
-      <td>Single Room</td>
-      <td><button type="button" class="btn btn-dark">Show Price</td>
-      <td><button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button></td>
-      <td><button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button></td>
-      <td><button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
+                    </div>
+                    </th>
+                    <td>305</td>
+                    <td>3rd floor</td>
+                    <td>Single Room</td>
+                    <td><button type="button" class="btn btn-dark">Show Price</td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-eye"><i class="fa-solid fa-eye"></i></button>
+                        <button type="button" class="btn btn-pencil"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-trash"><i class="fa-solid fa-trash"></button></i>
+                    </td>
 
-    </tr>
-  </tbody>
-</table>
+                    </tr>
+                </tbody>
+            </table>
          </div>
       </div>
     </div>

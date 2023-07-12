@@ -10,14 +10,13 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
     
-    public function home()
+    public function index()
     {
-        return view("home");
+        return view("index");
     }
     public function viewroom()
     {
         return view("viewroom");
     }
-   
    
 }
