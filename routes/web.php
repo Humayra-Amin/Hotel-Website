@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\RoomController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,5 +18,13 @@ use App\Http\Controllers\Controller;
 
 
 
-Route::get('/dashboard', [Controller::class, "index"]);
-Route::get('/viewroom', [Controller::class, "viewroom"]);
+Route::get('/dashboard', [DashboardController::class, "index"]);
+Route::get('/room/', [RoomController::class, "index"]);
+Route::get('/room/add', [RoomController::class, "add"]);
+Route::get('/room/edit', [RoomController::class, "edit"]);
+Route::get('/room/single', [RoomController::class, "single"]);
+Route::get('/employee/', [EmployeeController::class, "index"]);
+Route::get('/employee/add', [EmployeeController::class, "add"]);
+Route::get('/employee/edit', [EmployeeController::class, "edit"]);
+Route::get('/employee/single', [EmployeeController::class, "single"]);
+
