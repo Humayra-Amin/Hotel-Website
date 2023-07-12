@@ -60,7 +60,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
+                    <i class="fa-sharp fa-solid fa-hotel"></i>
                     <span>Hotel Rooms</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -77,7 +77,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
+                    <i class="fa-sharp fa-solid fa-person"></i>
                     <span>Employee</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
@@ -159,7 +159,7 @@
                     
                     <!-- <input type="text" placeholder="Search a room"> -->
                 </form>
-                <button class="btn btn-primary ml-2">
+                <button class="btn btn-primary ml-3">
                     <i class="fa fa-plus"></i>
                     Add Room
                 </button>
@@ -170,8 +170,8 @@
             <table class="table">
                 <thead>
                 <tr>
-                <th scope="col">
-                <div class="form-check">
+                <th scope="row">
+                <div class="form-check-left">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
                     <label class="form-check-label" for="flexCheckIndeterminate"></label>
                 </div>
@@ -185,8 +185,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                    <th class="text-left">    
-                    <div class="form-check">
+                    <td scope="row">    
+                    <div class="form-check-left">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
                         <label class="form-check-label" for="flexCheckIndeterminate"></label>
                     </div>
@@ -204,7 +204,7 @@
                     </tr>
                     <tr>
                     <th scope="row">
-                    <div class="form-check">
+                    <div class="form-check-left">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
                         <label class="form-check-label" for="flexCheckIndeterminate"></label>
                     </div>
@@ -222,7 +222,7 @@
                     </tr>
                     <tr>
                     <th scope="row">
-                    <div class="form-check">
+                    <div class="form-check-left">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
                         <label class="form-check-label" for="flexCheckIndeterminate"></label>
                     </div>
@@ -239,7 +239,7 @@
                     </tr>
                     <tr>
                     <th scope="row">
-                    <div class="form-check">
+                    <div class="form-check-left">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
                         <label class="form-check-label" for="flexCheckIndeterminate"></label>
                     </div>
@@ -256,7 +256,7 @@
                     </tr>
                     <tr>
                     <th scope="row">
-                    <div class="form-check">
+                    <div class="form-check-left">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
                         <label class="form-check-label" for="flexCheckIndeterminate"></label>
                     </div>
@@ -275,7 +275,7 @@
                     <tr>
 
                     <th scope="row">
-                    <div class="form-check">
+                    <div class="form-check-left">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
                         <label class="form-check-label" for="flexCheckIndeterminate"></label>
                     </div>
@@ -292,7 +292,7 @@
                     </tr>
                     <tr>
                     <th scope="row">
-                    <div class="form-check">
+                    <div class="form-check-left">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
                         <label class="form-check-label" for="flexCheckIndeterminate"></label>
                     </div>
@@ -310,7 +310,7 @@
                     </tr>
                     <tr>
                     <th scope="row">
-                    <div class="form-check">
+                    <div class="form-check-left">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
                         <label class="form-check-label" for="flexCheckIndeterminate"></label>
                     </div>
@@ -328,7 +328,7 @@
                     </tr>
                     <tr>
                     <th scope="row">
-                    <div class="form-check">
+                    <div class="form-check-left">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
                         <label class="form-check-label" for="flexCheckIndeterminate"></label>
                     </div>
@@ -346,7 +346,7 @@
                     </tr>
                     <tr>
                     <th scope="row">
-                    <div class="form-check">
+                    <div class="form-check-left">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
                         <label class="form-check-label" for="flexCheckIndeterminate"></label>
                     </div>
@@ -364,7 +364,7 @@
                     </tr>
                     <tr>
                     <th scope="row">
-                    <div class="form-check">
+                    <div class="form-check-left">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
                         <label class="form-check-label" for="flexCheckIndeterminate"></label>
                     </div>
@@ -382,6 +382,21 @@
                     </tr>
                 </tbody>
             </table>
+
+            <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+             <li class="page-item disabled">
+                 <a class="page-link">Previous</a>
+             </li>
+             <li class="page-item"><a class="page-link" href="#">1</a></li>
+             <li class="page-item"><a class="page-link" href="#">2</a></li>
+             <li class="page-item"><a class="page-link" href="#">3</a></li>
+             <li class="page-item"><a class="page-link" href="#">4</a></li>
+             <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+             </li>
+            </ul>
+            </nav>
          </div>
       </div>
     </div>
