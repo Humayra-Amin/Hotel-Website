@@ -9,4 +9,15 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
+    
+    public function home()
+    {
+        return view("home");
+    }
+    public function viewroom()
+    {
+        return view("viewroom");
+    }
+   
+   
 }
