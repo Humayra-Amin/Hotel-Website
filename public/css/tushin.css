@@ -2,17 +2,23 @@
 @import url(//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css);
 @import url(//startbootstrap.com/theme/sb-admin-2);
     
-.container {
 
-height: 200;
-}
+
 body 
      {
       background-color: rgb(255, 255, 255);
      }
-
+     
+     .sidebar {
+        width: 250px; 
+      }
+     .custom-form {
+        width: auto; 
+        height: 700px; 
+      }
      .btn-warning 
      {
+    
       color: #fff;
       background-color: #f0ad4e;
       border-color: #eea236;

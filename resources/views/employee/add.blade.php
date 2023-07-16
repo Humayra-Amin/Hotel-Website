@@ -1,124 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <title>Employee Add Form</title>
-        <style>
-              body {
-                font-family: Arial, sans-serif;
-                background-color: #3f6fb5d9;
-                }
-
-            .container {
-                max-width: 600px;
-                margin: 0 auto;
-                padding: 100px;
-                background-color: #fff;
-                box-shadow: inset 15px -5px 12px 7px rgba(0, 0, 0, 0.1)
-                
-            }
-            
-            .form-group {
-                margin-bottom: 10.5px;
-            }
-            
-            label {
-              font-weight: bold;
-              font-family: sans-serif;
-              font-size: 20px;
-            }
-            
-            input[type="text"],
-            input[type="email"],
-            input[type="number"] 
-            {
-                width: 100%;
-                padding: 14px;
-                border: 1px solid #ccc;
-                border-radius: 40px;
-                box-sizing: border-box;
-            }
-
-            h2 {
-                font-size: 2.5em;
-                font-weight: bold;
-               }
-
-            
-            input[type="submit"] {
-                background-color: #4285f4;
-                color: black;
-                border: none;
-                padding: 10px 20px;
-                border-radius: 40px;
-                cursor: pointer;
-                font-weight: bold;
-              font-family: sans-serif;
-              font-size: 20px;
-                
-            }
-            
-            table {
-                width: 100%;
-                border-collapse: collapse;
-            }
-            
-            th,
-            td {
-                padding: 8px;
-                text-align: left;
-                border-bottom: 1px solid #ddd;
-            }
-            
-            th {
-                background-color: #4CAF50;
-                color: #fff;
-            }
-            
-            tr:hover {
-                background-color: #f5f5f5;
-            }
-        </style>
-</head>
-<body>
-    <div class="container">
-        <h2><center>Employee Add </center> </h2>
-        <form action="/employees" method="POST">
-            
-            <div class="form-group">
-                <label for="first_name">First Name:</label>
-                <input type="text" id="first_name" name="first_name" required>
-            </div>
-            <div class="form-group">
-                <label for="last_name">Last Name:</label>
-                <input type="text" id="last_name" name="last_name" required>
-            </div>
-            <div class="form-group">
-                <label for="last_name">Employee ID:</label>
-                <input type="text" id="last_name" name="employee_id" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="address">Address:</label>
-                <input type="text" id="address" name="address" required>
-            </div>
-            <div class="form-group">
-                <label for="contact">Contact:</label>
-                <input type="text" id="contact" name="contact" required>
-            </div>
-            <div class="form-group">
-                <label for="salary">Salary:</label>
-                <input type="number" id="salary" name="salary" required>
-      </div>
-           
-            <input type="submit" value="Add Employee">
-        </form>
-        
-    </div>
-</body>
- </html> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -129,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>SB Admin 2 - Dashboard </title>
+    <title>SB Admin 2 - Add</title>
 
   <link rel="stylesheet" href="/css/humayra.css">
 
@@ -141,7 +20,8 @@
    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
    <!-- Custom styles for this template-->
-   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+   <link href="/css/sb-admin-2.min.css" rel="stylesheet">
+   
 
 </head>
 <body id="page-top">
@@ -221,6 +101,7 @@
         </ul>
         <!-- End of Sidebar -->
 
+        <!-- Search?? -->
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -254,7 +135,7 @@
 
   <div class="container">
 
-    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+    <form class="well form-horizontal ms-end" action=" " method="post"  id="contact_form">
 <fieldset>
 
 <!-- Form Name -->
@@ -314,7 +195,7 @@
   
 
 <!-- Text input-->
-       <div class="form-group">
+<div class="form-group">
   <label class="col-md-4 control-label">E-Mail</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
@@ -357,7 +238,7 @@
 <!-- Button -->
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
-  <div class="col-md-4"><br>
+  <div class="col-md-4 d-flex flex-column"><br>
     <button type="submit" class="btn btn-warning" > SUBMIT <span class="glyphicon glyphicon-send"></span></button>
   </div>
 </div>
