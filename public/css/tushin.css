@@ -1,12 +1,12 @@
 
-@import url(//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css);
+
 @import url(//startbootstrap.com/theme/sb-admin-2);
     
 
 
 body 
      {
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(221, 221, 221);
      }
      
      .sidebar {
@@ -28,7 +28,7 @@ body
      {
       display: inline-block;
       padding: 6px 12px;
-      margin-bottom: 0;
+      margin-bottom: 1;
       font-size: 14px;
       font-weight: 400;
       line-height: 1.42857143;
@@ -43,7 +43,8 @@ body
      }
      b, strong 
      {
-      font-weight: 700;
+      font-weight: 100
+      ;
     }
     * 
     {

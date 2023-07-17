@@ -1,18 +1,10 @@
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
-    <title>Hotel Booking Form</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jaima.css">
 
      <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
-</head>
-<body>
+@extends('room.layouts.app')
+@section('app')
     <div class="container"><!--container-->
 
         <form class="form-group"><!--form-->
@@ -49,7 +41,7 @@
 
                 
                     
-                     <button id="ID">Added</button>
+                     <button class="btn added" id="ID">Added</button>
                 
                     
                 </div><!--input5-->
@@ -63,5 +55,4 @@
         </form><!--form-->
 
     </div><!--container-->
-</body>
-</html>
+@endsection
