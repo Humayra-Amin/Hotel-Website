@@ -1,4 +1,6 @@
-
+body{
+  background-image: url(room.jpg);
+  background-size: cover;}
 #form{
     background-color: #000;
     height:500px;
