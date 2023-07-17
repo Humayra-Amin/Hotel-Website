@@ -4,7 +4,7 @@
 @section('app')
 
 
-    <div class="container">
+<div class="container">
       <div class="row">
         <div class="col-md-6">
           <div id="roomSlider" class="carousel slide room-slider" data-bs-ride="carousel">
@@ -43,13 +43,14 @@
                 <li><i class="fa-solid fa-tv"></i>TV</li><br>
                 <li><i class="fa-solid fa-mug-tea"></i>Tea/Coffe maker</li><br>
                 <li><i class="fa-solid fa-air-conditioner"></i>Air Conditioning</li><br>
-        
+      
               </ul>
-            
+            </p>
+   
               </p>
               <p class="room-numbers">Number of Rooms: 71</p>
             </div>
-          </div>
+         </div>
         </div>
         </div>
         </div>
@@ -61,6 +62,7 @@
               </div>
               
         </div>
+
 
  
  @endsection
