@@ -56,7 +56,7 @@
 			  
             </ul> -->
           </p>
-          <p class="room-numbers">Number of Rooms: 256 square feet</p>
+          <p class="room-numbers">Number of Rooms: 71</p>
         </div>
       </div>
     </div>

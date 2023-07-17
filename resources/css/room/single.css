@@ -18,11 +18,11 @@
     margin-bottom: 10px;
   }
   .room-description {
-    margin-block-start: 20px;
-    margin-bottom: 20px;
-    margin-left: 110px;
+    margin-block-start: 10px;
+    margin-bottom: 30px;
+    margin-left: 150px;
   }
   .room-slider image {
-    max-width: 100%;
-    height: 50%;
+    max-width: 60%;
+    height: 40%;
   }
