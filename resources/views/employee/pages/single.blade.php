@@ -1,14 +1,15 @@
-    <!DOCTYPE html>
-    <html>
-    <head>
-    <title>Employee Detail</title>
+@extends('employee.layouts.app')
+
+@section('content')
+
+<title>Employee Detail</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fardin.css">
+    <link rel="stylesheet" href="{{asset('css/fardin.css')}}">
     </head>
     <body>
     <div class="container">
         <div class="card">
-        <img src="Jason Roy.jpg" class="card-img-top" alt="Employee Avatar">
+        <img src="{{asset('image/Employee/Jason Roy.jpg')}}" class="card-img-top" alt="Employee Avatar">
         <div class="card-body">
             <h2 class="card-title">Jason Roy</h2>
             <p class="card-text">Front Desk Receptionist</p>
@@ -18,6 +19,6 @@
         </div>
         </div>
     </div>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
-    </html>
+  
+
+    @endsection
