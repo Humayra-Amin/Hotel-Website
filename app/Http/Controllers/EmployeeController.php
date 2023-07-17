@@ -13,7 +13,7 @@ class EmployeeController extends Controller
     }
     public function add()
     {
-        return view("employee.add");
+        return view("employee.pages.add");
     }
     public function edit()
     {
