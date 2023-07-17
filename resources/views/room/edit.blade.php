@@ -139,85 +139,68 @@
 <fieldset>
 
 <!-- Form Name -->
-<legend><center><h2><b>Employee Edit</b></h2><h4><b>Edit Your Details Below</b></h4></center></legend><br>
+<legend><center><h2><b>Hotel Room Edit</b></h2><h4></h4></center></legend><br>
 
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label">Employee Id</label>  
-  <div class="col-md-4 inputGroupContainer">
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="employee_id" placeholder="" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label">First Name</label>  
-  <div class="col-md-4 inputGroupContainer">
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
-
-<!-- Text input-->
-
-<div class="form-group">
-  <label class="col-md-4 control-label" >Last Name</label> 
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
-
-  <div class="form-group"> 
-  <label class="col-md-4 control-label">Position</label>
-    <div class="col-md-4 selectContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-    <select name="department" class="form-control selectpicker">
-      <option value="">Change your Position</option>
-      <option>Manager</option>
-      <option>Assistant Manager</option>
-      <option >Officer</option>
-      <option >Receptionist</option>
-      <option >Security</option>
-      <option >Room Service</option>
-      <option >Janitor</option>
-    </select>
-  </div>
-</div>
-</div>
-  
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label">E-Mail</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-  <input name="email" placeholder="" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
-
-
-<!-- Text input-->
        
-<div class="form-group">
-  <label class="col-md-4 control-label">Contact Info</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact_no" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label id="room-label" for="room">Room No</label>
+						<input type="text" name="room" id="room" placeholder="Enter your room no" class="form-control" required>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label id="floor-label" for="floor">Floor No</label>
+						<input type="floor" name="floor" id="floor" placeholder="Enter your floor no" class="form-control" required>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label id="rent-label" for="number">Rent <small></small></label>
+						<input type="number" name="rent" id="number" min="0" max="100" class="form-control" placeholder="rent" >
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Room type</label>
+						<select id="dropdown" name="room" class="form-control" required>
+							<option disabled selected value>Room</option>
+							<option value="single">Single</option>
+							<option value="double">Double</option>
+							<option value="triple">Triple</option>
+							<option value="premium">Premium</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label>Description</label>
+						<textarea  id="description" class="form-control" name="description" placeholder="...."></textarea>
+					</div>
+				</div>
+			</div>
+            <div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<form method="post" action="#" id="#">
+				<div class="form-group files">
+					<input type="file" class="form-control" multiple="">
+				</div>
+			</form>
+		</div>
 </div>
+
+			
 
 <!-- Select Basic -->
 <form id="file-upload-form" action="<?php echo $_SERVER['PHP_SELF'] ?>">
