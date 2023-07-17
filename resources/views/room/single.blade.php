@@ -31,7 +31,7 @@
     }
     .room-slider image {
       max-width: 100%;
-      height: auto;
+      height: 50%;
     }
   </style>
 </head>
@@ -42,10 +42,10 @@
         <div id="roomSlider" class="carousel slide room-slider" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="image/room-image1.jpg" alt="Room Image 1">
+              <img src="{{asset('image/room-image1.jpg')}}" alt="Room Image 1">
             </div>
             <div class="carousel-item">
-              <img src="image/room-image2.jpg" alt="Room Image 2">
+              <img src="{{asset('image/room-image2.jpg')}}" alt="Room Image 2">
             </div>
             <div class="carousel-item">
               <img src="image/room-image3.jpg" alt="Room Image 3">
@@ -67,7 +67,7 @@
           <p class="room-type">Room Type: Deluxe</p>
           <p class="room-size">Room Size: 256 square feet</p>
           <p class="room-facilities">Room Facilities:
-            <ul class="list-group" style="list">
+            <ul class="list-group">
               <li><i class="fa-solid fa-wifi"></i> Free Wi-Fi</li><br>
               <li><i class="fa-solid fa-car"></i> Parking Available</li><br>
               <li><i class="fa-solid fa-phone"></i> Direct Dial Phone</li><br>
