@@ -250,7 +250,7 @@
                 </ul>
             </nav>
          </div>
-      </div>
+</div>
 
 
 @endsection
