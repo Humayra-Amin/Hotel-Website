@@ -26,6 +26,8 @@
 
     <link rel="stylesheet" href="{{asset('css/jaima.css')}}">
 
+    <link rel="stylesheet" href="{{asset('css/urbashi.css')}}">
+
 </head>
 <body id="page-top">
 
