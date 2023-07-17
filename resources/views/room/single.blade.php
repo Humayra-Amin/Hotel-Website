@@ -4,36 +4,7 @@
   <title>Single Room Page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    /* Custom CSS styles */
-    .room-details {
-      margin-bottom: 20px;
-    }
-    .room-title {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-    .room-type {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-    .room-size {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-    .room-facilities {
-      margin-bottom: 10px;
-    }
-    .room-description {
-      margin-block-start: 20px;
-      margin-bottom: 20px;
-      margin-left: 110px;
-    }
-    .room-slider image {
-      max-width: 100%;
-      height: 50%;
-    }
-  </style>
+  
 </head>
 <body>
   <div class="container">
@@ -48,7 +19,7 @@
               <img src="{{asset('image/room-image2.jpg')}}" alt="Room Image 2">
             </div>
             <div class="carousel-item">
-              <img src="image/room-image3.jpg" alt="Room Image 3">
+              <img src="{{asset('image/room-image2.jpg')}}" alt="Room Image 3">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#roomSlider" data-bs-slide="prev">
