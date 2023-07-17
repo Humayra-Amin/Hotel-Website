@@ -371,7 +371,7 @@
                             <label class="form-check-label" for="flexCheckIndeterminate"></label>
                         </div>
                         </th>
-                        <td>305</td>
+                        <td>205</td>
                         <td>3rd floor</td>
                         <td>Single Room</td>
                         <td>1800 BDT</td>
