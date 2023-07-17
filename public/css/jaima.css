@@ -1,16 +1,17 @@
 body{
-  background-image: url(room.jpg);
-  background-size: cover;}
+  background-image: url('../xampp/htdocs/Hotel/public/img/room.jpg');
+  background-size: cover;
+}
 #form{
-    background-color: #2f4ed8;
+    background-color: hsl(192, 56%, 49%);
     height:400px;
     width: 900px;
     margin:auto;
-    padding:20px;
+    padding:40px;
     opacity: 0.7;
   }
   #form h3{
-    border-bottom: px solid #3a87d4;
+    border-bottom: px solid #1767b8;
     width:210px;
     padding: 5px;
   }
@@ -25,7 +26,7 @@ body{
     border-right: none;
     outline: none;
     background: transparent;
-    color:#fff
+    color:#fdfdfd
   }
   #input2 #input-group{
     width:195px;
@@ -35,7 +36,7 @@ body{
     border-right: none;
     outline: none;
     background: transparent;
-    color:#fff
+    color:#2207bd
   }
   
   #input4 #input-group{
@@ -46,7 +47,7 @@ body{
     border-right: none;
     outline: none;
     background: transparent;
-    color:#fff
+    color:#2207bd
   }
   #input4 #input-group1{
     width:615px;
@@ -56,10 +57,10 @@ body{
     border-right: none;
     outline: none;
     background: transparent;
-    color:#fff
+    color:#2207bd
   }
   #input5 {
-    background-color: orange;
+    background-color: rgb(55, 10, 177);
   
     width:300px;
     margin:15px;
@@ -72,7 +73,7 @@ body{
     color:#fff
   }
   .added {
-  background-color: orange;
+  background-color: rgb(253, 253, 253);
   width: 80px;
   font-size: 10px;
   padding: 5px;
@@ -80,7 +81,7 @@ body{
   position: relative;
   left: 600px;
   
-  color: white;
+  color: #2207bd;
   cursor: pointer;
   }
   
