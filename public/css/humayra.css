@@ -1,13 +1,23 @@
 
-@import url(//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css);
+
 @import url(//startbootstrap.com/theme/sb-admin-2);
     
 .container {
       height: 200;
            }
+           fieldset
+           {
+            
+              min-width: 10;
+              padding: 10;
+              margin: 10;
+              border: 10;
+          
+           }
  body 
      {
       background-color: rgb(255, 255, 255);
+      font-size: 20px
      }
 
      .btn-warning 
@@ -20,7 +30,7 @@
      .btn 
      {
       display: inline-block;
-      padding: 6px 12px;
+      padding: 6px 20px;
       margin-bottom: 0;
       font-size: 14px;
       font-weight: 400;
