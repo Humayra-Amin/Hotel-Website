@@ -1,0 +1,138 @@
+body {
+    position: relative;
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .containerBackground {
+    opacity: 0.3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: auto;
+    display: inline-block;
+    z-index: 1;
+  }
+  
+  .containerContent {
+    z-index: 10 !important;
+    position: relative;
+  }
+  
+  .formInput-inputs.input-text input,
+  .formInput-inputs.input-radios select {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: none;
+    margin: 8px 0;
+    width: 250px;
+  }
+  
+  #formContainer {
+    background-color: rgb(233, 233, 233);
+    opacity: 1;
+    padding: 40px;
+    margin: 0;
+  }
+  
+  #europe {
+    display: none;
+  }
+  
+  #formTitle {
+    font-family: "Playfair Display", serif;
+  }
+  
+  .formInput-label {
+    margin: 8px 0;
+  }
+  
+  .formInput-group {
+    margin: 10px 0;
+  }
+  
+  input,
+  select {
+    font-family: "Work Sans", sans-serif;
+  }
+  
+  button {
+    margin: 32px 0 0 0;
+    width: 150px;
+    height: 32px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    background-color: #92fe9d;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    body {
+      background: rgb(0, 201, 255);
+      background: -moz-linear-gradient(
+        45deg,
+        rgba(0, 201, 255, 1) 0%,
+        rgba(146, 254, 157, 1) 100%
+      );
+      background: -webkit-linear-gradient(
+        45deg,
+        rgba(0, 201, 255, 1) 0%,
+        rgba(146, 254, 157, 1) 100%
+      );
+      background: linear-gradient(
+        45deg,
+        rgba(0, 201, 255, 1) 0%,
+        rgba(146, 254, 157, 1) 100%
+      );
+      background-color: #00c9ff;
+      position: static;
+    }
+  
+    #form .flexed {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+  
+    .formInput-group {
+      margin: 10px 0;
+      width: 33%;
+      margin-right: 15%;
+    }
+  
+    .containerContent {
+      z-index: unset;
+      position: relative;
+    }
+  
+    #formContainer {
+      max-width: 612px;
+      width: 100%;
+      background-color: rgb(233, 233, 233);
+      border-radius: 32px;
+      opacity: 1;
+      padding: 40px;
+      overflow: hidden;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  
+    .containerBackground {
+      opacity: 0.3;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 125%;
+      height: auto;
+      display: inline-block;
+    }
+  }
+  

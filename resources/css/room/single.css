@@ -1,0 +1,28 @@
+ /* Custom CSS styles */
+ .room-details {
+    margin-bottom: 20px;
+  }
+  .room-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .room-type {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .room-size {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .room-facilities {
+    margin-bottom: 10px;
+  }
+  .room-description {
+    margin-block-start: 10px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+  }
+  .room-slider image {
+    max-width: 60%;
+    height: 40%;
+  }
