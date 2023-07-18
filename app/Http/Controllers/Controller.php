@@ -11,7 +11,8 @@ class Controller extends BaseController
     use AuthorizesRequests, ValidatesRequests;
     
    
-    public function index() {
+    public function index()
+    {
         return view("room.dashboard");
     }
     
