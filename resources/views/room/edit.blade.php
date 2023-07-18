@@ -46,7 +46,8 @@
 <fieldset>
 
 <!-- Form Name -->
-<legend><center><h2><b>Edit Room</b></h2><h4></h4></center></legend><br>
+<form class="form-group"><!--form-->
+    <h1 class="text-left">Edit Room</h1>
 
 
        
@@ -109,30 +110,30 @@
 
 			
 
-<!-- Select Basic -->
-<form id="file-upload-form" action="<?php echo $_SERVER['PHP_SELF'] ?>">
-	<input id="file-upload" type="file" name="fileUpload" />
-	<label for="file-upload" id="file-drag">
-		Select a file to upload
-		<br />OR
-		<br />Drag a file into this box
-		
-		<br /><br /><span id="file-upload-btn" class="button">Add a file</span>
-	</label>
-	
-	<progress id="file-progress" value="0">
-		<span>0</span>%
-	</progress>
-	
-	<output for="file-upload" id="messages"></output>
-</form>
+<!-- Upload  -->
+<form id="file-upload-form" class="uploader">
+    <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+  
+    <label for="file-upload" id="file-drag">
+      <img id="file-image" src="#" alt="Preview" class="hidden">
+      <div id="start">
+        <i class="fa fa-download" aria-hidden="true"></i>
+        <div>Select a file or drag here</div>
+        <div id="notimage" class="hidden">Please select an image</div>
+        <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+      </div>
+      <div id="response" class="hidden">
+        <div id="messages"></div>
+        <progress class="progress" id="file-progress" value="0">
+          <span>0</span>%
+        </progress>
+      </div>
+    </label>
+  </form>
 <!-- Button -->
-<div class="form-group">
-  <label class="col-md-4 control-label"></label>
-  <div class="col-md-4 d-flex flex-column"><br>
-    <button type="submit" class="btn btn-warning" > Update Room </button>
+<div class="text-center">
+    <button class="btn btn-primary waves-effect waves-light " id="btn-submit">Update Room</button>
   </div>
-</div>
   </fieldset>
     </form>
         </div>
