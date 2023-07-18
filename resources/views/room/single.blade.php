@@ -89,7 +89,7 @@
 
         <div class="row">
             <div class= "col-md-6">
-                <p class="room-description mt-2 mb-3">
+                <p class="room-description mt-3 mb-3">
                     Elegantly furnished with solid wood furniture along with teak wood flooring, king sized bed with orthopedic bedding. All the rooms have ceiling height windows overlooking the front of the hotel and to the distance hills. Separate living room with a nice and cozy sitting arrangement make this ideal for business meeting or entertaining your guest without disturbing your partner.
                 </p>
             </div>
