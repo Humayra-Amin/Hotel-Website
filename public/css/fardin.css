@@ -10,8 +10,8 @@
         }
         
         .card-img-top {
-            width: 50%;
-            height: auto;
+            width: 45%;
+            height: Auto;
             object-fit: cover;
             background-color: cornflowerblue;
             
@@ -20,17 +20,27 @@
         .card-title {
             font-size: 24px;
             font-weight: bold;
-            margin-bottom: 50px;
+            margin-bottom: 25px;
             
         }
         
         .card-text {
-            margin-bottom: 5px;
+            text-align: left;
+            margin-bottom: 25px;
+            font-size: 14px;
             
         }
+
+        .box {
+            width: 400px;
+            height: 550px;
+            border:  solid cornflowerblue;
+            padding: 100px;
+            margin: 4px;
+          }
         
         .container {
-            max-width: 600px;
+            max-width: 500px;
             background-color: cornflowerblue;
             
         }
