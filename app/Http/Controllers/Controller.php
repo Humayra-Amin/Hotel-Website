@@ -12,7 +12,7 @@ class Controller extends BaseController
     
    
     public function index() {
-        return view("room.deshboard");
+        return view("room.dahhboard");
     }
     
 }
