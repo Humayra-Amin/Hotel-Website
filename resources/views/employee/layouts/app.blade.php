@@ -10,10 +10,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Hotel Management Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+   <link rel="stylesheet" href= "{{asset('css/tushin.css')}}">
+
+
+
     <link rel="stylesheet" href="{{asset('/css/humayra.css')}}">
 
 
@@ -24,8 +28,8 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="{{asset('/css/sb-admin-2.min.css')}}" rel="stylesheet">
-
+    <link href="{{asset('css/sb-admin-2.min.css')}}" rel="stylesheet">
+ 
 </head>
 <body id="page-top">
 

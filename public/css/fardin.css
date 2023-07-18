@@ -1,0 +1,46 @@
+        body {
+            padding-top: 50px;
+            
+            
+        }
+        
+        .card {
+            margin-top: 30px;
+            color: cornflowerblue;
+        }
+        
+        .card-img-top {
+            width: 45%;
+            height: Auto;
+            object-fit: cover;
+            background-color: cornflowerblue;
+            
+        }
+        
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            
+        }
+        
+        .card-text {
+            text-align: left;
+            margin-bottom: 25px;
+            font-size: 14px;
+            
+        }
+
+        .box {
+            width: 400px;
+            height: 550px;
+            border:  solid cornflowerblue;
+            padding: 100px;
+            margin: 4px;
+          }
+        
+        .container {
+            max-width: 500px;
+            background-color: cornflowerblue;
+            
+        }

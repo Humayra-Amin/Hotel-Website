@@ -17,10 +17,10 @@ class EmployeeController extends Controller
     }
     public function edit()
     {
-        return view("employee.edit");
+        return view("employee.pages.edit");
     }
     public function single()
     {
-        return view("employee.single");
+        return view("employee.pages.single");
     }
 }
