@@ -16,6 +16,7 @@
 
             <!-- Topbar Search -->
             <form
+
                 class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                 <div class="input-group">
                     <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
@@ -29,58 +30,69 @@
             </form>
 
             <!-- Topbar Navbar -->
-                
+                 </nav>
 
-        </nav>
-    <div class="container"><!--container-->
-
-        <form class="form-group"><!--form-->
-            <h1 class="text-left">Add Room</h1>
-
-            <div id="form"><!--form-->
-                <h3 class="text-white">Room Details</h3>
-
-            <div id="input"><!--input-->
-                <input type="text" id="input-group" placeholder="Room No">
-                <input type="text" id="input-group" placeholder="Floor No">
-                 <select  id="input-group" style="background: hsl(192, 56%, 49%);">
-                    <option value="">Room Type</option>
-                    <option value="">Single</option>
-                    <option value="">Double</option>
-                    <option value="">Triple</option>
-                    <option value="">Deluxe</option>
-                    <option value="">Suit</option>
-               <input type="number" id="input-group" placeholder="Rent">
-                </div><!--input-->
-
-                <div id="input4"><!--input4-->
+                 <div class="container"><!--container-->
+    
+        
+           
+                    <h1 class="text-left">Add Room</h1>
+                <form class="form-group"><!--form--> 
+                    <div class="col-md-12 d-flex align-items-left justify-content-between">
+                    <div id="form"><!--form-->
+                    <h2 class= "text-black">Room Details </h2>
+                    <div class="a">
+                   <div class="verticalLineTop"></div>
+                   </div>
+        
+                    <div id="input"><!--input-->
+                        <input type="text" id="input-group" placeholder="Room No">
+                        <input type="text" id="input-group" placeholder="Floor No">
+                    </div><!--input-->
+                    <div id="input2"><!--input2-->  
+                        <select id="input-group" name="Room">
+                            <option value="">Room Type</option>
+                            <option>Single</option>
+                            <option>Double</option>
+                            <option>Triple</option>
+                            <option>Executive</option>
+                            <option>Suit</option>
+                            
+                            </select>
+                       <input type="number" id="input-group" placeholder="Rent">
+                       <div id="input2"><!--input2-->  
+                        
+        
+                        <div id="input4"><!--input4-->
+                            
+                            <input type="text" id="input-group1" placeholder="Description">
+                            <input type="text" id="input-group1" placeholder="Facility">
+                             
+                        <div id="input4"><!--input4-->
+        
+                         <div id="input5"><!--input5-->
+                            
+                         <input type="file" name="name" multiple=>
+                        
+                            
+                        <div id="input5"><!--input5-->
+        
+                        
+                            
+                             <button class="btn added" id="ID">Added</button>
+                        
+                        
+                            
+                        </div><!--input5-->
+        
                     
-                    <input type="text" id="input-group1" placeholder="Description">
-                    <input type="text" id="input-group1" placeholder="Facility">
-                     
-
-                 <div id="input5"><!--input4-->
-                    
-                     <input class="form-control" type="file"  multiple />
-                
-                    
-                </div><!--input5-->
-
-                
-                    
-                     <button class="btn added" id="ID">Added</button>
-                
-                    
-                </div><!--input5-->
-
-            
-                
-                
-                
-            </div><!--form-->
-
-        </form><!--form-->
-
-    </div><!--container-->
-</div>
-@endsection
+                        
+                        
+                        
+                    </div><!--form-->
+        
+                </form><!--form-->
+        
+            </div><!--container-->
+        </div>
+ @endsection
