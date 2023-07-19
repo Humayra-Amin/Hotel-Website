@@ -35,9 +35,10 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Components:</h6>
-                <a class="collapse-item" href="buttons.html">View room</a>
-                <a class="collapse-item" href="cards.html">Add room</a>
-                <a class="collapse-item" href="cards.html">Edit room</a>
+                <a class="collapse-item" href="rooms/">View room</a>
+                <a class="collapse-item" href="rooms/add">Add room</a>
+                <a class="collapse-item" href="rooms/edit">Edit room</a>
+                <a class="collapse-item" href="rooms/single">Single room</a>
             </div>
         </div>
     </li>
@@ -53,9 +54,10 @@
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Utilities:</h6>
-                <a class="collapse-item" href="utilities-color.html">View Employee list</a>
-                <a class="collapse-item" href="utilities-border.html">Add Employee</a>
-                <a class="collapse-item" href="utilities-animation.html">Edit Employee</a>
+                <a class="collapse-item" href="">View Employee list</a>
+                <a class="collapse-item" href="">Add Employee</a>
+                <a class="collapse-item" href="">Edit Employee</a>
+                <a class="collapse-item" href="">Single Employee</a>
                
             </div>
         </div>

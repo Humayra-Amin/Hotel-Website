@@ -1,12 +1,8 @@
-
-
 @import url(//startbootstrap.com/theme/sb-admin-2);
     
-
-
 body 
      {
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(200, 209, 224);
      }
      
      .sidebar {
@@ -181,5 +177,7 @@ body
       margin          : 0;
       padding         : 0;
     }
+
+    
 
     
