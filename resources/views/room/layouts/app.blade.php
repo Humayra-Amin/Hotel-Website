@@ -14,6 +14,7 @@
 
     <!-- Custom fonts for this template-->
     <link href="https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300" rel="stylesheet">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
    
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -22,12 +23,12 @@
         rel="stylesheet"> --}}
 
     <!-- Custom styles for this template-->
-    <link rel="stylesheet" href="{{asset('css/sb-admin-2.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/karima.css')}}">
+    <link rel="stylesheet" href="{{asset('rooms/css/sb-admin-2.min.css')}}">
+    <link rel="stylesheet" href="{{asset('rooms/css/karima.css')}}">
+    <link rel="stylesheet" href="{{asset('rooms/css/jaima.css')}}">
+    <link rel="stylesheet" href="{{asset('rooms/css/urbashi.css')}}">
 
-    <link rel="stylesheet" href="{{asset('css/jaima.css')}}">
-
-    <link rel="stylesheet" href="{{asset('css/urbashi.css')}}">
+    <link rel="stylesheet" href="{{asset('rooms/js/jaima.js')}}">
     <!--slicker--> 
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 
