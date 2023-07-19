@@ -1,42 +1,46 @@
-        body {
-            padding-top: 50px;
+        /* body {
+            padding-top: 5px;
             
             
-        }
+        } */
         
         .card {
-            margin-top: 30px;
-            color: cornflowerblue;
+            margin-top: 20px;
+            border: 5px cornflowerblue; 
+            /* color: cornflowerblue; */
         }
         
         .card-img-top {
-            width: 45%;
-            height: Auto;
+            width: 180px;
+            height: 100px;
             object-fit: cover;
-            background-color: cornflowerblue;
+            
+            
             
         }
         
         .card-title {
+            
             font-size: 24px;
             font-weight: bold;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
+            color: cornflowerblue;
             
         }
         
         .card-text {
-            text-align: left;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
             font-size: 14px;
+            color: hsl(216, 85%, 48%);
             
         }
 
         .box {
             width: 400px;
-            height: 550px;
+            height: 350px;
             border:  solid cornflowerblue;
-            padding: 100px;
-            margin: 4px;
+            padding: 30px;
+            margin: 2px;
           }
         
         .container {
