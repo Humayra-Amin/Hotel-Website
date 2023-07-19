@@ -1,7 +1,13 @@
-@import url(//startbootstrap.com/theme/sb-admin-2);
 
-     
-    
+     .text-info 
+              {
+                color: black;
+              }
+      label 
+              {
+                font-weight: 600;
+                color: #666;
+              }
      .button 
             {
             background      : #005f95;
