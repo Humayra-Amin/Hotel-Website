@@ -287,6 +287,25 @@
                     </table>
                 </div>
 
+                {{-- <div class="pagination justify-content center mt-2 mb-2">
+                    <button class="btn-nav left-btn">
+                      
+                    </button>
+                    <div class="page-numbers">
+                      <button class="btn-page">1</button>
+                      <button class="btn-page">2</button>
+                      <button class="btn-page btn-selected">3</button>
+                      <button class="btn-page">4</button>
+                      <button class="btn-page">5</button>
+                      <button class="btn-page">6</button>
+                      <span class="dots">...</span>
+                      <button class="btn-page">23</button>
+                    </div>
+                    <button class="btn-nav right-btn">
+                      
+                    </button>
+                  </div> --}}
+
                 <nav aria-label="Page navigation example ">
                     <ul class="pagination justify-content-center mt-2 mb-4">
                         <li class="page-item disabled">
