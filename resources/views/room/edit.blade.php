@@ -44,15 +44,25 @@
        
 			<div class="row">
 				<div class="col-md-6">
-					<div class="form-group">
-						<label id="room-label" for="room">Room No</label>
-						<input type="text" name="room" id="room" placeholder="Enter your room no" class="form-control" required>
-					</div>
+					<label>Room type</label>
+						<select id="dropdown" name="room" class="form-control" required>
+							<option disabled selected value>Room type</option>
+							<option value="Budget Double Room">Budget Double Room</option>
+							<option value="Deluex Room">Deluex Room</option>
+							<option value="King Room">King Room</option>
+							<option value="Queen Room">Queen Room</option>
+						</select>
 				</div>
 				<div class="col-md-6">
 					<div class="form-group">
-						<label id="floor-label" for="floor">Floor No</label>
-						<input type="floor" name="floor" id="floor" placeholder="Enter your floor no" class="form-control" required>
+						<label>Category</label>
+						<select id="dropdown" name="room" class="form-control" required>
+							<option disabled selected value>Category</option>
+							<option value="Standard Room">Standard Room</option>
+							<option value="Premium Room">Premium Room</option>
+							<option value="Deluxe Room">Deluxe Room</option>
+							<option value="Suites Room">Suites Room</option>
+						</select>
 					</div>
 				</div>
 			</div>
@@ -60,19 +70,23 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="form-group">
-						<label id="rent-label" for="number">Rent <small></small></label>
-						<input type="number" name="rent" id="number" min="0" max="100" class="form-control" placeholder="rent" >
+						<label id="room-label" for="number">Room Size <small></small></label>
+						<input type="number" name="rent" id="number" min="200" max="1000" class="form-control" placeholder="room" >
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="form-group">
-						<label>Room type</label>
+						<label>Room Facilities</label>
 						<select id="dropdown" name="room" class="form-control" required>
-							<option disabled selected value>Room</option>
-							<option value="single">Single</option>
-							<option value="double">Double</option>
-							<option value="triple">Triple</option>
-							<option value="premium">Premium</option>
+							<option disabled selected value>Room Facilities</option>
+							<option value="Free WiFi">Free WiFi</option>
+							<option value="Flat-screen TV">Flat-screen TV</option>
+							<option value="Coffee Maker">Coffee Maker</option>
+							<option value="King-sized Bed">King-sized Bed</option>
+              <option value="Pool">Pool</option>
+              <option value="Sound Proofing">Sound Proofing</option>
+              <option value="City View">City View</option>
+              <option value="Private Bathroom">Private Bathroom</option>
 						</select>
 					</div>
 				</div>
@@ -88,6 +102,16 @@
 					</div>
 				</div>
 			</div>
+      
+      <div class="col-md-12">
+        <label>Room View</label>
+          <select id="dropdown" name="room" class="form-control" required>
+            <option disabled selected value>Room View</option>
+            <option value="City View">City View</option>
+            <option value="Sea View">Sea View</option>
+            <option value="Mountain View">Mountain View</option>
+          </select>
+      </div>
             
 			
 
@@ -113,7 +137,9 @@
 </form>
 
 <!-- Button -->
-<div class="text-center">
+<div class="text-center" style="
+margin-top: 30px;
+">
     <button class="btn btn-primary waves-effect waves-light " id="btn-submit">Update Room</button>
   </div>
   </fieldset>
