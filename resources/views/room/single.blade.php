@@ -40,30 +40,31 @@
         <div class=container>
         <div class= "row">
             <div class="col-md-6">
-            <div id="roomImageSlider" class="carousel slide mt-4 mb-2" data-bs-ride="carousel">
-            <div class="carousel-inner">
+            <div id="roomImageSlider">
+            <div class=".fade">
             <!-- room images here -->
-            <div class="carousel-item active">
+            <div>
                 <img src="{{ asset('image/room-image1.jpg') }}" class="d-block w-100" alt="Room Image 1">
             </div>
-            <div class="carousel-item">
+            <div>
                 <img src="{{ asset('image/room-image2.jpg') }}" class="d-block w-100" alt="Room Image 2">
             </div>
-            <div class="carousel-item">
+            <div>
                 <img src="{{ asset('image/room-image3.jpg') }}" class="d-block w-100" alt="Room Image 2">
             </div>
             <!--  more images as needed -->
 
             <!-- image slider controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#roomImageSlider" data-bs-slide="prev">
+            {{-- <button class="carousel-control-prev" type="button" data-bs-target="#roomImageSlider" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#roomImageSlider" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-            </button>
+            </button> --}}
             </div>
+
         </div>
     </div>
     <div class="col-md-6">
@@ -73,8 +74,10 @@
         <p>Category: Standard</p>
         <p>Room Size: 256 square feet</p>
         <p class="mb-2"> Room Facilities: </p>
-           <p> <i class="fas fa-wifi"></i> Free Wi-Fi, <i class="fas fa-tv"></i> Flat-screen TV, <i class="fas fa-coffee"></i> Coffee Maker, <i class="fas fa-bed"></i> King-sized Bed,
-             <i class="fas fa-swimming-pool"></i> Pool,  <i class="fas fa-soundcloud facility-item"></i>Sound Proofing,  <i class="fas fa-city facility-item"></i>City View,  <i class="fas fa-bath facility-item"></i>Private Bathroom </p>
+           <p> <span class=".d-block mr-2"><i class="fas fa-wifi"></i> Free Wi-Fi</span>  <span class=".d-block mr-2"> <i class="fas fa-tv"></i> Flat-screen TV </span>
+            <span class=".d-block mr-2"> <i class="fas fa-coffee"></i> Coffee Maker</span> <span class=".d-block mr-2"><i class="fas fa-bed"></i> King-sized Bed</span>
+            <span class=".d-block mr-2"><i class="fas fa-swimming-pool"></i>Pool</span> <span class=".d-block mr-2"> <i class="fas fa-soundcloud facility-item"></i>Sound Proofing</span>
+             <span class=".d-block mr-2"><i class="fas fa-city facility-item"></i>City View</span>  <span class=".d-block mr-2"><i class="fas fa-bath facility-item"></i>Private Bathroom </span></p>
 
         <p class="room-details">
              Featuring free toiletries, this double room includes a private bathroom with a bath, a shower and a hairdryer. This double room has air conditioning, flat-screen TV with cable channels, city views, as well as fruit for guests. The unit has 1 bed.
@@ -101,7 +104,16 @@
     </div>
     
 
-       
+    <script type="text/javascript">
+    $('.fade').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+    });
+    </script>
+
 
             
 
