@@ -13,20 +13,26 @@
     <title>SB Admin 2 - Dashboard</title>
 
     <!-- Custom fonts for this template-->
+    <link href="https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300" rel="stylesheet">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
    
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
+    {{-- <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+        rel="stylesheet"> --}}
 
     <!-- Custom styles for this template-->
-    <link rel="stylesheet" href="{{asset('css/sb-admin-2.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/karima.css')}}">
+    <link rel="stylesheet" href="{{asset('rooms/css/sb-admin-2.min.css')}}">
+    <link rel="stylesheet" href="{{asset('rooms/css/karima.css')}}">
+    <link rel="stylesheet" href="{{asset('rooms/css/jaima.css')}}">
+    <link rel="stylesheet" href="{{asset('rooms/css/urbashi.css')}}">
 
-    <link rel="stylesheet" href="{{asset('css/jaima.css')}}">
+    <link rel="stylesheet" href="{{asset('rooms/js/jaima.js')}}">
+    <!--slicker--> 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 
-    <link rel="stylesheet" href="{{asset('css/urbashi.css')}}">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
 </head>
 <body id="page-top">
@@ -40,7 +46,11 @@
         @yield('app')
     
     </div>
-   
+
+   <!--slicker-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 
     
     <!-- Bootstrap core JavaScript-->
