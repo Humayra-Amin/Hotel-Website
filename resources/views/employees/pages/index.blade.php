@@ -35,6 +35,7 @@
                 <th scope="col">Position</th>
                 <th scope="col">Email</th>
                 <th scope="col">Contact</th>
+                <th scope="col">Address</th>
                 <th></th>
                 </tr>
                 </thead>

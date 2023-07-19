@@ -24,7 +24,7 @@ Route::get('/rooms/', [RoomController::class, "index"]);
 Route::get('/rooms/add', [RoomController::class, "add"]);
 Route::get('/rooms/edit', [RoomController::class, "edit"]);
 Route::get('/rooms/single', [RoomController::class, "single"]);
-Route::get('/employee/', [EmployeeController::class, "index"]);
+Route::get('/employees/', [EmployeeController::class, "index"]);
 Route::get('/employee/add', [EmployeeController::class, "add"]);
 Route::get('/employee/edit', [EmployeeController::class, "edit"]);
 Route::get('/employee/single', [EmployeeController::class, "single"]);
