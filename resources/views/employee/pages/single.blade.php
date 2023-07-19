@@ -4,12 +4,12 @@
 
 <title>Employee Detail</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{asset('css/fardin.css')}}">
+    <link rel="stylesheet" href="{{asset('employee/css/fardin.css')}}">
     </head>
     <body>
     <div class="container">
         <div class="card">
-        <img src="{{asset('image/Employee/Jason Roy.jpg')}}" class="card-img-top" alt="Employee Avatar">
+        <img src="{{asset('employee/images/Jason Roy.jpg')}}" class="card-img-top" alt="Employee Avatar">
         <div class="card-body">
             <h2 class="card-title">Jason Roy</h2>
             <div class="box">

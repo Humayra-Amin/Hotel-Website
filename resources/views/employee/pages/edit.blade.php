@@ -8,7 +8,7 @@
 <fieldset>
 
 <!-- Form Name -->
-<legend><center><h2><b>Employee Edit</b></h2><h4><b>Edit Your Details Below</b></h4></center></legend><br>
+<legend><h2><b>Employee Edit</b></h2><h4><b>Edit Your Details Below</b></h4></legend><br>
 
 
 <!-- Text input-->
@@ -92,11 +92,9 @@
 <form id="file-upload-form" action="<?php echo $_SERVER['PHP_SELF'] ?>">
 	<input id="file-upload" type="file" name="fileUpload" />
 	<label for="file-upload" id="file-drag">
-		Select a file to upload
-		<br />OR
-		<br />Drag a file into this box
+	
 		
-		<br /><br /><span id="file-upload-btn" class="button">Add a file</span>
+		
 	</label>
 	
 	<progress id="file-progress" value="0">
