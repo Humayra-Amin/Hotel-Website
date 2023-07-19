@@ -6,7 +6,7 @@ body
      }
      
      .sidebar {
-        width: 250px; 
+        width: 300px; 
       }
      .custom-form {
         width: auto; 
@@ -39,7 +39,7 @@ body
      }
      b, strong 
      {
-      font-weight: 700;
+      font-weight: 400;
     }
     * 
     {
@@ -47,7 +47,7 @@ body
     }
     h2, .h2 
     {
-  font-size: 30px;
+  font-size: 20px;
   font-family: inherit;
   line-height: 1.1;
   color: inherit;
@@ -97,13 +97,13 @@ body
     #file-drag 
     {
       border        : 2px dashed #555;
-      border-radius : 20px;
+      border-radius : 15px;
       color         : #555;
       cursor        : pointer;
       display       : block;
       font-weight   : bold;
       margin        : 0;
-      padding       : 3.5em;
+      padding       : 2 em;
       text-align    : center;
       transition    : background 0.3s, color 0.3s;
     }
@@ -126,7 +126,7 @@ body
     {
       display : none;
       margin  : 1em auto;
-      width   : 100%;
+      width   : 70%;
     }
     
     #file-upload-btn 
@@ -142,34 +142,9 @@ body
     #file-upload-form {
       margin : auto;	
 
-      width  : 40%;
+      width  : 20%;
     }
     
-    progress 
-    {
-      appearance    : none;
-      background    : #eee;
-      border        : none;
-      border-radius : 3px;
-      box-shadow    : 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-      height        : 30px;
-    }
-    
-    progress[value]::-webkit-progress-value 
-    {
-      background : -webkit-linear-gradient(-45deg,transparent 33%, rgba(0, 0, 0, .2) 33%, rgba(0,0, 0, .2) 66%, transparent 66%), -webkit-linear-gradient(right, #005f95,#07294d);
-      background : linear-gradient(-45deg, transparent 33%,rgba(0, 0, 0, .2) 33%, rgba(0,0, 0, .2) 66%, transparent 66%), linear-gradient(right, #005f95,#07294d);
-      background-size : 60px 30px, 100% 100%, 100% 100%;
-      border-radius   : 3px;
-    }
-
-    progress[value]::-moz-progress-bar 
-    {
-      background : -moz-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .2) 33%, rgba(0,0, 0, .2) 66%, transparent 66%), -moz-linear-gradient(right, #005f95,#07294d);
-      background : linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .2) 33%, rgba(0,0, 0, .2) 66%, transparent 66%), linear-gradient(right, #005f95,#07294d);
-      background-size : 60px 30px, 100% 100%, 100% 100%;
-      border-radius   : 3px;
-    }
     
     ul 
     {

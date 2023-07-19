@@ -111,6 +111,7 @@
     </div>
   </label>
 </form>
+
 <!-- Button -->
 <div class="text-center">
     <button class="btn btn-primary waves-effect waves-light " id="btn-submit">Update Room</button>
@@ -120,4 +121,5 @@
         </div>
           </div> <!-- /.container -->
           
-          @endsection
+@endsection
+ 
