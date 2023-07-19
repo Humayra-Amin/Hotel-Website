@@ -2,54 +2,32 @@
 
 @section('content')
 
-<div class="container">
-
-    <form class="well form-horizontal ms-end" action=" " method="post"  id="contact_form">
-<fieldset>
-
-<!-- Form Name -->
-<legend><center><h2><b>Employee Add</b></h2></center></legend><br>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label">Employee Id</label>  
-  <div class="col-md-4 inputGroupContainer">
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="employee_id" placeholder="" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label">First Name</label>  
-  <div class="col-md-4 inputGroupContainer">
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
-
-<!-- Text input-->
-
-<div class="form-group">
-  <label class="col-md-4 control-label" >Last Name</label> 
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
-
-  <div class="form-group"> 
-  <label class="col-md-4 control-label">Position</label>
-    <div class="col-md-4 selectContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-    <select name="department" class="form-control selectpicker">
-      <option value="">Select your Position</option>
+<div class="container mt-3">
+  <form>
+    <div class="row jumbotron box8">
+      <div class="col-sm-12 mx-t3 mb-4">
+        <h2 class="text-center text-info">Add Employee</h2>
+      </div>
+      <div class="col-sm-6 form-group">
+        <label for="name-f">First Name</label>
+        <input type="text" class="form-control" name="fname" id="name-f" placeholder="Enter first name." required>
+      </div>
+      <div class="col-sm-6 form-group">
+        <label for="name-l">Last name</label>
+        <input type="text" class="form-control" name="lname" id="name-l" placeholder="Enter last name." required>
+      </div>
+      <div class="col-sm-6 form-group">
+        <label for="name-e">Employee Id</label>
+        <input type="text" class="form-control" name="eid" id="number" placeholder="Enter Employee id" required>
+      </div>
+      <div class="col-sm-6 form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email." required>
+      </div>
+      <div class="col-sm-6 form-group">
+        <label for="Country">Position</label>
+        <select class="form-control custom-select browser-default">
+        <option value="">Select your Position</option>
       <option>Manager</option>
       <option>Assistant Manager</option>
       <option >Accountent</option>
@@ -57,35 +35,38 @@
       <option >Security</option>
       <option >Room Service</option>
       <option >Janitor</option>
-    </select>
-  </div>
-</div>
-</div>
-  
+        </select>
+      </div>
+      <div class="col-sm-6 form-group">
+        <label for="Date">Date Of Birth</label>
+        <input type="Date" name="dob" class="form-control" id="Date" placeholder="" required>
+      </div>
+      <div class="col-sm-6 form-group">
+        <label for="sex">Gender</label>
+        <select id="sex" class="form-control browser-default custom-select">
+        <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="unspesified">Others</option>
+        </select>
+      </div>
+      <div class="col-sm-4 form-group">
+        <label for="tel">Contact No.</label>
+        <input type="tel" name="phone" class="form-control" id="tel" placeholder="Enter Contact Number." required>
+      </div>
+      <div class="col-sm-12">
+        <input type="checkbox" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label">&nbsp;I accept all terms and conditions.
+        </label>
+      </div>
 
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label">E-Mail</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-  <input name="email" placeholder="" class="form-control"  type="text">
+      <div class="col-sm-12 form-group mb-0">
+        <button class="btn btn-primary float-right">Submit</button>
+      </div>
+
     </div>
-  </div>
+  </form>
 </div>
-
-
-<!-- Text input-->
-       
-<div class="form-group">
-  <label class="col-md-4 control-label">Contact No.</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="contact_no" placeholder="" class="form-control" type="text">
-    </div>
-  </div>
-</div>
+                           
 
 <!-- Select Basic -->
 <form id="file-upload-form" action="<?php echo $_SERVER['PHP_SELF'] ?>">
@@ -104,16 +85,6 @@
 	
 	<output for="file-upload" id="messages"></output>
 </form>
-<!-- Button -->
-<div class="form-group">
-  <label class="col-md-4 control-label"></label>
-  <div class="col-md-4 d-flex flex-column"><br>
-    <button type="submit" class="btn btn-warning" > SUBMIT <span class="glyphicon glyphicon-send"></span></button>
-  </div>
-</div>
-  </fieldset>
-    </form>
-        </div>
-          </div> <!-- /.container -->
+
 
 @endsection
