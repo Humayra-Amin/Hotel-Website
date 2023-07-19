@@ -1,9 +1,10 @@
 body{
-  background-image: url('../xampp/htdocs/Hotel/public/img/room.jpg');
+  background-color: white;
   background-size: cover;
 }
+
 #form{
-    background-color: hsl(192, 56%, 49%);
+    background-color: hsl(0, 0%, 99%);
     height:400px;
     width: 900px;
     margin:auto;
@@ -11,12 +12,12 @@ body{
     opacity: 0.7;
   }
   #form h3{
-    border-bottom: px solid #1767b8;
-    width:210px;
+    border-bottom: px solid #01060a;
+    width:180px;
     padding: 5px;
   }
   ::placeholder{
-    color:#fff
+    color:#ffffff
   }
   #input #input-group{
     width:300px;
@@ -26,17 +27,22 @@ body{
     border-right: none;
     outline: none;
     background: transparent;
-    color:#fdfdfd
+    color:#3e09b9;
+    position: relative;
+    right: 125px;
+
   }
   #input2 #input-group{
-    width:195px;
-    margin:5px;
+    width:300px;
+    margin:10px;
     border-top: none;
     border-left: none;
     border-right: none;
     outline: none;
     background: transparent;
-    color:#2207bd
+    position: relative;
+    right: 125px;
+    
   }
   
   #input4 #input-group{
@@ -47,7 +53,11 @@ body{
     border-right: none;
     outline: none;
     background: transparent;
-    color:#2207bd
+    color:#3e09b9;
+    position: relative;
+    right: 120px;
+    
+    
   }
   #input4 #input-group1{
     width:615px;
@@ -57,15 +67,18 @@ body{
     border-right: none;
     outline: none;
     background: transparent;
-    color:#2207bd
+    color:#3e09b9;
+    position: relative;
+    right: 120px;
+
   }
   #input5 {
-    background-color: rgb(55, 10, 177);
+    color: blue;
   
     width:300px;
     margin:15px;
     position: relative;
-    right: 10px;
+    right: 130px;
   
   
     outline: none;
@@ -73,16 +86,61 @@ body{
     color:#fff
   }
   .added {
-  background-color: rgb(253, 253, 253);
+  background-color: rgb(17, 4, 204);
   width: 80px;
   font-size: 10px;
   padding: 5px;
   border-radius: 10px;
   position: relative;
-  left: 600px;
+  left: 660px;
   
-  color: #2207bd;
+  color: #ffffff;
   cursor: pointer;
   }
-  
+
+  ::placeholder{
+
+    color: blue
+    
+    }
+    .text-black {
+      color: Blue;
+    }
  
+  
+select {
+  color: blue;
+}
+
+select:focus {
+  color: #5b27d3;
+}
+option {
+  color: blue;
+}
+option:first-of-type {
+  color: blue;
+}
+
+.form-group {
+    padding: 20px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    border-style: double;
+
+}
+
+.text-black {
+
+text-align: left;
+position: relative;
+right: 120px;
+}
+
+.text-left {
+  color: black;
+  text-align: left;
+  position: relative;
+  left: 9px;
+  }
