@@ -98,24 +98,6 @@
                             <label for="tel">Facilities</label>
                             <input type="text" name="phone" class="form-control" placeholder="" required>
                         </div>
-                        <head>
-                            <title>Drag and Drop Files</title>
-                            <meta charset="UTF-8" />
-                            <meta name="viewport" content="width=device-width" />
-                            <link rel="stylesheet" href="styles.css" />
-                          </head>
-                          <body>
-                            <div class="container">
-                            <div class="file-drop-area">
-                            <span class="fake-btn">Choose files</span>
-                            <span class="file-msg">or drop files here</span>
-                            <input class="file-input" type="file" multiple>
-                            <div class="item-delete"></div>
-                          </div>
-                        </div>
-                          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-                          <script src="script.js"></script>
-                          </body>
 
                         <div class="col-sm-4">
                           <input type="checkbox" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label">&nbsp;I accept all terms and conditions.
