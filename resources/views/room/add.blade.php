@@ -34,69 +34,103 @@
 
 
 
-        <div class="container"><!--container-->
-    
-        
-           
-                    <h1 class="text-left">Add Room</h1>
-                <form class="form-group"><!--form--> 
-                    <div class="col-md-12 d-flex align-items-left justify-content-between">
-                    <div id="form"><!--form-->
-                    <h2 class= "text-black">Room Details </h2>
-                    <div class="a">
-                   <div class="verticalLineTop"></div>
-                   </div>
-        
-                    <div id="input"><!--input-->
-                        <input type="text" id="input-group" placeholder="Room No">
-                        <input type="text" id="input-group" placeholder="Floor No">
-                    </div><!--input-->
-                    <div id="input2"><!--input2-->  
-                        <select id="input-group" name="Room">
-                            <option value="">Room Type</option>
-                            <option>Single</option>
-                            <option>Double</option>
-                            <option>Triple</option>
-                            <option>Executive</option>
-                            <option>Suit</option>
-                            
-                            </select>
-                       <input type="number" id="input-group" placeholder="Rent">
-                       <div id="input2"><!--input2-->  
-                        
-        
-                        <div id="input4"><!--input4-->
-                            
-                            <input type="text" id="input-group1" placeholder="Description">
-                            <input type="text" id="input-group1" placeholder="Facility">
-                             
-                        <div id="input4"><!--input4-->
-        
-                         <div id="input5"><!--input5-->
-                            
-                            <input type="file" name="name" multiple=>
-                
-                            
-                        
-                        
-                            <div id="input5"><!--input5-->
-        
-                        
-                            
-                             <button class="btn added" id="ID">Added</button>
-                        
-                        
-                            
-                        </div><!--input5-->
-        
+                 <div class="container mt-3">
                     
+                          <h2 class="text-left text-info1">Add Room</h2>
+                       
+                    <form>
+                      <div class="row jumbotron box8">
+                        <div class="col-sm-12 mx-t3 mb-4">
+                          <h2 class="text-left text-info2">Room Details</h2>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                          <label for="name-f">Room No.</label>
+                          <input type="number" class="form-control" name="roomno." id="name-f" placeholder="Enter Room No." required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                          <label for="name-l">Floor No.</label>
+                          <input type="number" class="form-control" name="floorno." id="name-l" placeholder="Enter Floor No." required>
+                        </div>
+                       
+                        <div class="col-sm-6 form-group">
+                          <label for="Category">Category</label>
+                          <select class="form-control custom-select browser-default">
+                            <option value="">Select your Room Category</option>
+                          <option>Normal</option>
+                          <option>Standered</option>
+                          <option >Premium</option>
+                          <option >Super Premium</option>
+                          <option >Queen</option>
+                         </select>
+                        </div>
                         
                         
-                        
-                    </div><!--form-->
-        
-                </form><!--form-->
-        
-            </div><!--container-->
-        </div>
+                        <div class="col-sm-6 form-group">
+                          <label for="Country">Room Type</label>
+                          <select class="form-control custom-select browser-default">
+                          <option value="">Select Room Type</option>
+                        <option>Single Room</option>
+                        <option>Double Room</option>
+                        <option >Quad Room</option>
+                        <option >Hollywood Twin Room</option>
+                        <option > Double-Double Room</option>
+                        <option >Interconnecting Room</option>
+                        <option > Adjoining Room</option>
+                        <option >Duplex Room</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                          <label for="size">Room Size</label>
+                          <input type="number" name="roomsize" class="form-control" id="number" placeholder="" required>
+                        </div>
+                    
+                        <div class="col-sm-6 form-group">
+                          <label for="view">Room View</label>
+                          <input type="text" name="roomview" class="form-control" placeholder="" required>
+                        </div>
+
+                        <div class="col-sm-12 form-group">
+                            <label for="tel">Description</label>
+                            <input type="text" name="description" class="form-control" placeholder="" required>
+                        </div>
+
+                        <div class="col-sm-12 form-group">
+                            <label for="tel">Facilities</label>
+                            <input type="text" name="phone" class="form-control" placeholder="" required>
+                        </div>
+                        <head>
+                            <title>Drag and Drop Files</title>
+                            <meta charset="UTF-8" />
+                            <meta name="viewport" content="width=device-width" />
+                            <link rel="stylesheet" href="styles.css" />
+                          </head>
+                          <body>
+                            <div class="container">
+                            <div class="file-drop-area">
+                            <span class="fake-btn">Choose files</span>
+                            <span class="file-msg">or drop files here</span>
+                            <input class="file-input" type="file" multiple>
+                            <div class="item-delete"></div>
+                          </div>
+                        </div>
+                          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                          <script src="script.js"></script>
+                          </body>
+
+                        <div class="col-sm-4">
+                          <input type="checkbox" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label">&nbsp;I accept all terms and conditions.
+                          </label>
+                        </div>
+                  
+                        <div class="col-sm-12 form-group mb-0">
+                          <button class="btn btn-primary float-right">Submit</button>
+                        </div>
+                  
+                      </div>
+                    </form>
+                  </div>
+                                             
+                  
+                
+                  
  @endsection
