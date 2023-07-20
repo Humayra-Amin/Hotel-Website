@@ -95,6 +95,15 @@
 
 
 			<div class="row">
+        <div class="col-md-12">
+          <label>Room View</label>
+            <select id="dropdown" name="room" class="form-control" required>
+              <option disabled selected value>Room View</option>
+              <option value="City View">City View</option>
+              <option value="Sea View">Sea View</option>
+              <option value="Mountain View">Mountain View</option>
+            </select>
+        </div>
 				<div class="col-md-12">
 					<div class="form-group">
 						<label>Description</label>
@@ -102,16 +111,6 @@
 					</div>
 				</div>
 			</div>
-      
-      <div class="col-md-12">
-        <label>Room View</label>
-          <select id="dropdown" name="room" class="form-control" required>
-            <option disabled selected value>Room View</option>
-            <option value="City View">City View</option>
-            <option value="Sea View">Sea View</option>
-            <option value="Mountain View">Mountain View</option>
-          </select>
-      </div>
             
 			
 
