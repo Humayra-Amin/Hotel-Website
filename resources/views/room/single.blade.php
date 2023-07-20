@@ -41,7 +41,7 @@
         <div class= "row">
             <div class="col-md-6">
             <div id="roomImageSlider">
-            <div class=".fade">
+            <div class="carosusel-item">
             <!-- room images here -->
             <div>
                 <img src="{{ asset('image/room-image1.jpg') }}" class="d-block w-100" alt="Room Image 1">
@@ -104,15 +104,7 @@
     </div>
     
 
-    <script type="text/javascript">
-    $('.fade').slick({
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear'
-    });
-    </script>
+
 
 
             
