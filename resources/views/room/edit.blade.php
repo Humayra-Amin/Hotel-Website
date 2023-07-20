@@ -43,6 +43,7 @@
 
       <div class="row box8">
 
+
 				<div class="col-sm-6 form-group custom-form-group">
 					<label>Room type</label>
 						<select id="dropdown" name="room" class="form-control" required>
@@ -71,7 +72,7 @@
 				<div class="col-sm-6 form-group custom-form-group">
 					<div class="form-group">
 						<label id="room-label" for="number">Room Size <small></small></label>
-						<input type="number" name="rent" id="number" min="200" max="1000" class="form-control" placeholder="room size" >
+						<input type="number" name="rent" id="number" min="200" max="1000" class="form-control" placeholder="Room size" >
 					</div>
 				</div>
 				<div class="col-sm-6 form-group custom-form-group">
