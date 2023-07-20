@@ -87,7 +87,7 @@
 
       <div class="col-sm-6 form-group">
         <label for="Date" class="custom-label">Joining Date</label>
-        <input type="Date" name="joining-date" class="form-control" id="jdate" placeholder="" required>
+        <input type="Date" name="joiningdate" class="form-control" id="jdate" placeholder="" required>
       </div>
       <div class="col-sm-6 form-group">
         <label for="Date">Salary</label>
