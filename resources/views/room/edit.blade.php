@@ -116,6 +116,9 @@
 			
 
 <!-- Upload  -->
+<div class="text-center" style="
+margin-top: 30px;
+">
 <form id="file-upload-form" class="uploader">
   <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
 
@@ -129,9 +132,6 @@
     </div>
     <div id="response" class="hidden">
       <div id="messages"></div>
-      <progress class="progress" id="file-progress" value="0">
-        <span>0</span>%
-      </progress>
     </div>
   </label>
 </form>

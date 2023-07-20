@@ -12,6 +12,15 @@ body
         width: auto; 
         height: 700px; 
       }
+      .text-info 
+              {
+                color: #1e2cc8;
+              }
+      label 
+              {
+                font-weight: 600;
+                color: #1e2cc8;
+              }
      .btn-warning 
      {
     
@@ -96,14 +105,14 @@ body
     
     #file-drag 
     {
-      border        : 2px dashed #555;
-      border-radius : 15px;
+      border        : 2px solid #555;
+      border-radius : 10px;
       color         : #555;
       cursor        : pointer;
       display       : block;
       font-weight   : bold;
-      margin        : 0;
-      padding       : 2 em;
+      margin        : 10;
+      padding       : 10 em;
       text-align    : center;
       transition    : background 0.3s, color 0.3s;
     }
