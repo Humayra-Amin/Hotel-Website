@@ -36,10 +36,10 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Components:</h6>
-                <a class="collapse-item" href="room/">View room</a>
-                <a class="collapse-item" href="room/add">Add room</a>
-                <a class="collapse-item" href="room/edit">Edit room</a>
-                <a class="collapse-item" href="room/single">Single room</a>
+                <a class="collapse-item" href="/room/">View room</a>
+                <a class="collapse-item" href="/room/add">Add room</a>
+                <a class="collapse-item" href="/room/edit">Edit room</a>
+                <a class="collapse-item" href="/room/single">Single room</a>
             </div>
         </div>
     </li>
