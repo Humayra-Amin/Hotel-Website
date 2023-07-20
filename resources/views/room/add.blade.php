@@ -47,7 +47,7 @@
                             </div>
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="buildingno">Building No</label>
-                              <input type="number" class="form-control" name="buildingno" id="room-no" placeholder="Enter Room No." required>
+                              <input type="number" class="form-control" name="buildingno" id="building-no" placeholder="Enter Room No." required>
                             </div>
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="roomno">Room No</label>
