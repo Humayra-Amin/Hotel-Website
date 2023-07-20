@@ -35,7 +35,7 @@
 
 
                  <div class="container mt-3">
-                          <h2 class="text-left text-info1 custom-form-title">Add Room</h2>
+                          <h2 class="text-left text-info1 custom-form-title">Add Rooms</h2>
                        
                     <form>
                       <div class="row custom-jumbotron box8">
@@ -44,6 +44,10 @@
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="room-title">Room Title</label>
                               <input type="text" class="form-control" name="roomno." id="room-title" placeholder="Enter Room Name" required>
+                            </div>
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="building-no">Building No.</label>
+                              <input type="number" class="form-control" name="roomno." id="room-no" placeholder="Enter Room No." required>
                             </div>
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="room-no">Room No.</label>
@@ -81,25 +85,72 @@
                                 <option >Duplex Room</option>
                               </select>
                             </div>
+
+                          
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="size">Room Size</label>
                               <input type="number" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" required>
                             </div>
-                        
+
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="view">Room View</label>
-                              <input type="text" name="roomview" class="form-control" placeholder="" required>
+                              <select class="form-control custom-select browser-default">
+                                <option value="">Select Room View</option>
+                              <option>Sea View</option>
+                              <option>Mountain View</option>
+                              <option>Road View</option>
+                              </select>
                             </div>
-    
-                            <div class="col-sm-6 form-group custom-form-group1">
+
+
+
+
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="guest-service">Guest Service</label>
+                              <select class="form-control custom-select browser-default" multiple>
+                                <option value="">Select Services</option>
+                              <option>24-Hour room service</option>
+                              <option>Free wireless internet access</option>
+                              <option >Complimentary use of hotel bicycle</option>
+                              <option >Laundry service</option>
+                              <option >Tour & excursions</option>
+                              <option >24 Hour concierge</option>
+                              <option >E-Bike & horse cart rental</option>
+                              <option >Airport transfers</option>
+                              <option >Babysitting on request</option>
+                              </select>
+                            </div>
+
+
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="view">Facilities</label>
+                              <select class="form-control custom-select browser-default" multiple>
+                                <option value="">Select Facilities</option>
+                              <option>Free Wi-Fi</option>
+                              <option>Flat-screen TV</option>
+                              <option >Coffee Maker</option>
+                              <option >Pool</option>
+                              <option >24 Hour security</option>
+                              <option >Car parking</option>
+                              <option >Poolside bar</option>
+                              <option >Disable rooms & Interconnecting room</option>
+                              <option >Sunset boat trip</option>
+                              </select>
+                            </div>
+
+                        
+                            
+                            <div class="col-sm-12 form-group custom-form-group1">
                               <label for="description" class="form-label">Description</label>
                               <textarea class="form-control" id="description" rows="3"></textarea>
                             </div>
-                            <div class="col-sm-6">
+                            
+                            
+                            <div class="col-sm-12">
                               <div class="upload__box">
                                 <div class="upload__btn-box">
                                   <label class="upload__btn">
-                                    <p>Upload images</p>
+                                    Upload Room Images
                                     <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
                                   </label>
                                 </div>
@@ -114,7 +165,7 @@
                             </div>
                       
                             <div class="col-sm-12 form-group mb-0">
-                              <button class="btn btn-primary float-right">Submit</button>
+                              <button class="btn btn-primary btn-lg float-right add-room-btn">Submit</button>
                             </div>
                         </div>
                   
