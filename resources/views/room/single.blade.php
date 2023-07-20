@@ -58,7 +58,7 @@
     
     <div class="col-md-6 customize-fonts">
         <div class="room-details mt-4 mb-2">
-        <h2 class="room-title customize-font-famil">Deluxe Double Room</h2>
+        <h2 class="room-title customize-fonts">Deluxe Double Room</h2>
         <p>Room Type: Deluxe</p>
         <p>Category: Standard</p>
         <p>Room Size: 256 square feet</p>

@@ -54,7 +54,7 @@
   font-size: 14.5px;
   margin-bottom: 5px;
 }
-.custom-form-group input, 
+/* .custom-form-group input, 
 .custom-form-group select{
   min-height: 40px;
   border-radius: 3px;
@@ -63,4 +63,4 @@
 .custom-form-group input::placeholder,
 .custom-form-group select::placeholder{
   font-family: roboto;
-}
+} */
