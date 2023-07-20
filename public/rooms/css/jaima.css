@@ -65,7 +65,7 @@
   font-size: 17px;
   margin-bottom: 5px;
 }
-.custom-form-group input, 
+/* .custom-form-group input, 
 .custom-form-group select{
   min-height: 40px;
   border-radius: 3px;
@@ -86,5 +86,9 @@
 .custom-form-group input::placeholder,
 .custom-form-group select::placeholder{
   font-family: roboto;
+<<<<<<< HEAD
+} */
+=======
 }
 
+>>>>>>> 8bd89126c4a64188cdf6f9b5d00b95412fa5cabc
