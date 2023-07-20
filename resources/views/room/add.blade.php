@@ -42,8 +42,12 @@
                         
                         <div class="custom-form-inner">
                             <div class="col-sm-6 form-group custom-form-group">
-                              <label for="name-f">Room No.</label>
-                              <input type="number" class="form-control" name="roomno." id="name-f" placeholder="Enter Room No." required>
+                              <label for="room-title">Room Title</label>
+                              <input type="text" class="form-control" name="roomno." id="room-title" placeholder="Enter Room Name" required>
+                            </div>
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="room-no">Room No.</label>
+                              <input type="number" class="form-control" name="roomno." id="room-no" placeholder="Enter Room No." required>
                             </div>
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="name-l">Floor No.</label>
@@ -79,7 +83,7 @@
                             </div>
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="size">Room Size</label>
-                              <input type="number" name="roomsize" class="form-control" id="number" placeholder="" required>
+                              <input type="number" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" required>
                             </div>
                         
                             <div class="col-sm-6 form-group custom-form-group">
@@ -87,20 +91,23 @@
                               <input type="text" name="roomview" class="form-control" placeholder="" required>
                             </div>
     
-                            <div class="col-sm-12 form-group custom-form-group1">
-                                <label for="tel">Description</label>
-                                <input type="text" name="description" class="form-control" placeholder="" required>
+                            <div class="col-sm-6 form-group custom-form-group1">
+                              <label for="description" class="form-label">Description</label>
+                              <textarea class="form-control" id="description" rows="3"></textarea>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="upload__box">
+                                <div class="upload__btn-box">
+                                  <label class="upload__btn">
+                                    <p>Upload images</p>
+                                    <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                                  </label>
+                                </div>
+                                <div class="upload__img-wrap"></div>
+                              </div>
                             </div>
     
-                            <div class="col-sm-12 form-group custom-form-group1">
-                                <label for="tel">Facilities</label>
-                                <input type="text" name="phone" class="form-control" placeholder="" required>
-                            </div>
-    
-    
-                         
-    
-    
+                        
                             <div class="col-sm-4">
                               <input type="checkbox" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label">&nbsp;I accept all terms and conditions.
                               </label>
