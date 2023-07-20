@@ -9,15 +9,17 @@
             <h2>Employee</h2>
             <div class="d-flex align-items-center justify-content-between">
                 <form>
-                <button class="btn btn-primary ml-2">
+                <button class="btn btn-outline-info ml-2">
                     <input type="text" placeholder="Search a employee">
                 </form>
-                <button class="btn btn-primary ml-2">
+                <button class="btn btn-outline-dark ml-2">
                     <i class="fa fa-plus"></i>
                     Add Employee
                 </button>
             </div>
         </div>
+</div>
+        
          
          <div class="col-md-12">
             <table class="table">
@@ -32,12 +34,15 @@
                 <th scope="col"> Id </th>
                 <th scope="col">First Name</th>
                 <th scope="col">last Name</th>
+                <th scope="col">Gender</th>
                 <th scope="col">Position</th>
                 <th scope="col">Email</th>
                 <th scope="col">Contact</th>
+                
                 <th></th>
                 </tr>
                 </thead>
+                </div>
                 <tbody>
                     <tr>
                     <th scope="row">    
@@ -49,6 +54,7 @@
                     <td>001</td>
                     <td>Fardin</td>
                     <td>Farabi</td>
+                    <td>Male</td>
                     <td>Accountent</td>
                     <td>fardin@gmail.com</td>
                     <td>017202736</td>     
@@ -70,12 +76,14 @@
                     <td>002</td>
                     <td>Safayet</td>
                     <td>Hossain</td>
+                    <td>Male</td>
                     <td>Assistent Manager</td>
                     <td>Safayet@gmail.com</td>
                     <td>01829821975</td>
                     <!-- <td><button type="button" class="btn btn-dark">Show Price</td> -->
                     <td>
                     <td class="text-right">
+                            
                             <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></button>
                             <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></button>
                             <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
@@ -91,6 +99,7 @@
                     <td>003</td>
                     <td>Momen</td>
                     <td>Hoque</td>
+                    <td>Male</td>
                     <td>Manager</td>
                     <td>hoque@gmail.com</td>
                     <td>01776789627</td>
@@ -110,8 +119,9 @@
                     </div>
                     </th>
                     <td>004</td>
-                    <td>Jubair</td>
-                    <td>Hrid</td>
+                    <td>Rodshi</td>
+                    <td>Rafiq</td>
+                    <td>Female</td>
                     <td>Receptionist</td>
                     <td>hraid@gmail.com</td>
                     <td>01929789620</td>
@@ -133,6 +143,7 @@
                     <td>005</td>
                     <td>Rakibul</td>
                     <td>Khan</td>
+                    <td>Male</td>
                     <td>Security</td>
                     <td>khan@gmail.com</td>
                     <td>01629769627</td>
@@ -155,6 +166,7 @@
                     <td>006</td>
                     <td>Noky</td>
                     <td>Ali</td>
+                    <td>Male</td>
                     <td>Room Service</td>
                     <td>noky@gmail.com</td>
                     <td>018789557</td>
@@ -174,8 +186,9 @@
                     </div>
                     </th>
                     <td>007</td>
-                    <td>shakil</td>
-                    <td>Barua</td>
+                    <td>Tasnim</td>
+                    <td>Jerry</td>
+                    <td>Female</td>
                     <td>Accountent</td>
                     <td>iqbal@gmail.com</td>
                     <td>0199789627</td>
@@ -197,6 +210,7 @@
                     <td>008</td>
                     <td>Antu</td>
                     <td>Baura</td>
+                    <td>Male</td>
                     <td>Room Service</td>
                     <td>antu@gmail.com</td>
                     <td>01729782796</td>
@@ -218,6 +232,7 @@
                     <td>009</td>
                     <td>Rubel</td>
                     <td>khan</td>
+                    <td>Male</td>
                     <td>Janitor</td>
                     <td>Rubel@gmail.com</td>
                     <td>01757789627</td>
@@ -251,6 +266,10 @@
             </nav>
          </div>
 </div>
+
+
+
+
 
 
 @endsection
