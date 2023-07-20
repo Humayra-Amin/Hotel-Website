@@ -31,12 +31,15 @@
     <link rel="stylesheet" href="{{asset('rooms/js/jaima.js')}}">
     
     <link rel="stylesheet" href="{{asset('rooms/js/karima.js')}}">
+
+    <!--drag and drop -->
+    <link rel="stylesheet" href="style.css">
     
 
-
+{{-- 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}"> --}}
 
 
 </head>
@@ -55,13 +58,10 @@
     
     
 
-    <script src="{{ asset('js/app.js') }}"></script>
 
 
-   <!--slicker-->
-    {{-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> --}}
-    {{-- <script type="text/javascript" src="slick/slick.min.js"></script> --}}
+
+
 
     
     <!-- Bootstrap core JavaScript-->
@@ -76,7 +76,10 @@
 
     <!-- Page level plugins -->
     <script src="{{asset('rooms/vendor/chart.js/Chart.min.js')}}"></script>
-
+    
+    <!-- Page level custom scripts -->
+    <script src="{{asset('rooms/js/demo/chart-area-demo.js')}}"></script>
+    <script src="{{asset('rooms/js/demo/chart-pie-demo.js')}}"></script>
 
   </body>
 </html>
