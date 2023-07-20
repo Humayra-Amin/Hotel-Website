@@ -1,0 +1,78 @@
+
+
+      .form-h1
+             {
+                   color: black;
+                   font-size: 40px;
+
+             }
+            .box
+              {
+                box-shadow: 0px 0px 5px 1px #98bbd2;
+              }
+     .text-color
+              {
+                color: #1e2cc8;
+                font-size: 36px;
+                font-family: roboto;
+              }
+      
+      tag
+              {
+                font-weight: 600;
+                color: black;
+                font-family: roboto;
+              }
+      .input-image 
+              {
+                padding: 5px;
+                width: 50%;
+                margin: 0 auto;
+                }
+      .upload-image
+               {
+                  border-radius: 100%;
+                  display: inline-block;
+                  width: 100px;
+                  height: 100px;
+                  object-fit: cover;
+                  object-position: 50% 50%;
+                  border: 2px solid #2023e5;
+                  margin-right: 20px;
+                  vertical-align: middle;
+              }
+        /* .input-image-upload 
+              {
+                  position: relative;
+                  display: inline-block;
+                  vertical-align: middle;
+              } */
+        .input-image-upload input[type="file"] {
+                opacity: 0;
+                padding: 10px 0;
+                height:36px;
+                width: 150px;
+              }
+              
+        .upload-tag 
+              {
+                width: 150px;
+                height: 36px;
+                background: #3b70f1;
+                text-align: center;
+                color: #ffffff;
+                display: block;
+                padding: 8px 0;
+                position: absolute;
+                line-height: normal;
+                font-size: 14px;
+                font-weight: 700;
+                transition: all 0.3s ease-in-out;
+              }
+        .input-image-upload:hover 
+        
+        .upload-label {
+                  background: #eaf5fe;
+                color: #3b70f1;
+              }
+        

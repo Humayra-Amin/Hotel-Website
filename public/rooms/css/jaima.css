@@ -1,0 +1,66 @@
+.text-info1 {
+  color: #050000;
+}
+
+.text-info2 {
+  color: #2514c4;
+}
+
+/* .form-group {
+  color:  #2514c4;
+} */
+
+.custom-form-title{
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 19px;
+  color: #141414;
+  text-transform: capitalize;
+  position: relative;
+}
+.custom-form-title::before{
+  content: '';
+    width: 10px;
+    height: 3px;
+    border-radius: 45px;
+    position: absolute;
+    bottom: -4px;
+    background: #efb931;
+    display: block;
+    left: 0;
+}
+.custom-form-title::after{
+  content: '';
+    width: 30px;
+    height: 3px;
+    border-radius: 45px;
+    position: absolute;
+    bottom: -4px;
+    background: #efb931;
+    display: block;
+    left: 15px;
+}
+.custom-form-inner{
+  display: flex;
+  row-gap: 20%;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.custom-form-group label{
+  color: #5a5c69;
+  font-family: roboto;
+  font-weight: 500;
+  font-size: 14.5px;
+  margin-bottom: 5px;
+}
+.custom-form-group input, 
+.custom-form-group select{
+  min-height: 40px;
+  border-radius: 3px;
+  font-family: roboto;
+}
+.custom-form-group input::placeholder,
+.custom-form-group select::placeholder{
+  font-family: roboto;
+}
