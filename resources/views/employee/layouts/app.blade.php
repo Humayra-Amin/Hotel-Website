@@ -17,6 +17,7 @@
    <link rel="stylesheet" href= "{{asset('css/tushin.css')}}">
 
 
+   <link rel="stylesheet" href="{{asset('employees/css/kayem.css')}}">
 
    <link rel="stylesheet" href="{{asset('employees/css/humayra.css')}}">
 
@@ -147,11 +148,7 @@
             </div>
   
                 
-                
-
-    
-    
-            <div class="container">
+                <div class="container">
       @yield('content')
     </div>
 
