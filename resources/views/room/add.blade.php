@@ -99,6 +99,18 @@
                             <input type="text" name="phone" class="form-control" placeholder="" required>
                         </div>
 
+
+                        <div class="col-sm-12 form-group">
+                          <input type="file" id="upload-button" multiple accept="image/*" />
+                          <label for="upload-button"
+                            ><i class="fa-solid fa-upload"></i>&nbsp; Choose Or Drop Photos
+                          </label>
+                          <div id="error"></div>
+                          <div id="image-display"></div>
+                        </div>
+                        
+
+
                         <div class="col-sm-4">
                           <input type="checkbox" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label">&nbsp;I accept all terms and conditions.
                           </label>
