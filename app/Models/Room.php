@@ -23,7 +23,8 @@ class Room extends Model
         'guestservice',
         'facilities',
         'description',
+        'image',
        
     ];
--
+
 }
