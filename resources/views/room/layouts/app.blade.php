@@ -13,7 +13,9 @@
     <title>SB Admin 2 - Dashboard</title>
 
     <!-- Custom fonts for this template-->
-    <link href="https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
    
@@ -78,8 +80,8 @@
     <script src="{{asset('rooms/vendor/chart.js/Chart.min.js')}}"></script>
     
     <!-- Page level custom scripts -->
-    <script src="{{asset('rooms/js/demo/chart-area-demo.js')}}"></script>
-    <script src="{{asset('rooms/js/demo/chart-pie-demo.js')}}"></script>
+    {{-- <script src="{{asset('rooms/js/demo/chart-area-demo.js')}}"></script>
+    <script src="{{asset('rooms/js/demo/chart-pie-demo.js')}}"></script> --}}
 
   </body>
 </html>
