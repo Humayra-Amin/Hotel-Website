@@ -1,151 +1,179 @@
-
+ 
 @extends('room.layouts.app')
 @section('app')
-<div id="content-wrapper" class="d-flex flex-column  justify-content-between">
+<div id="content-wrapper" class="d-flex flex-column">
 
-            <!-- Main Content -->
-            <div id="content">
+    <!-- Main Content -->
+    <div id="content">
 
-                <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-                    <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
+            <!-- Sidebar Toggle (Topbar) -->
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                <i class="fa fa-bars"></i>
+            </button>
 
-                    <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
+            <!-- Topbar Search -->
+            <form
+
+                class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                        aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-search fa-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Topbar Navbar -->
+                 </nav>
+
+
+
+                 <div class="container mt-3">
+                          <h2 class="text-left text-info1 custom-form-title">Edit Rooms</h2>
+                       
+                    <form>
+                      <div class="row custom-jumbotron box8">
+                        
+                        <div class="custom-form-inner">
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="room-title">Room Title</label>
+                              <input type="text" class="form-control" name="roomno." id="room-title" placeholder="Enter Room Name" required>
+                            </div>
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="building-no">Building No.</label>
+                              <input type="number" class="form-control" name="roomno." id="room-no" placeholder="Enter Room No." required>
+                            </div>
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="room-no">Room No.</label>
+                              <input type="number" class="form-control" name="roomno." id="room-no" placeholder="Enter Room No." required>
+                            </div>
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="name-l">Floor No.</label>
+                              <input type="number" class="form-control" name="floorno." id="name-l" placeholder="Enter Floor No." required>
+                            </div>
+                          
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="Category">Category</label>
+                              <select class="form-control custom-select browser-default">
+                                <option value="">Select your Room Category</option>
+                              <option>Normal</option>
+                              <option>Standard</option>
+                              <option >Premium</option>
+                              <option >Super Premium</option>
+                              <option >Queen</option>
+                            </select>
+                            </div>
+                            
+                            
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="Country">Room Type</label>
+                              <select class="form-control custom-select browser-default">
+                                <option value="">Select Room Type</option>
+                                <option>Single Room</option>
+                                <option>Double Room</option>
+                                <option >Quad Room</option>
+                                <option >Hollywood Twin Room</option>
+                                <option > Double-Double Room</option>
+                                <option >Interconnecting Room</option>
+                                <option > Adjoining Room</option>
+                                <option >Duplex Room</option>
+                              </select>
+                            </div>
+
+                          
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="size">Room Size</label>
+                              <input type="number" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" required>
+                            </div>
+
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="view">Room View</label>
+                              <select class="form-control custom-select browser-default">
+                                <option value="">Select Room View</option>
+                              <option>Sea View</option>
+                              <option>Mountain View</option>
+                              <option>Road View</option>
+                              </select>
+                            </div>
+
+
+
+
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="guest-service">Guest Service</label>
+                              <select class="form-control custom-select browser-default" multiple>
+                                <option value="">Select Services</option>
+                              <option>24-Hour room service</option>
+                              <option>Free wireless internet access</option>
+                              <option >Complimentary use of hotel bicycle</option>
+                              <option >Laundry service</option>
+                              <option >Tour & excursions</option>
+                              <option >24 Hour concierge</option>
+                              <option >E-Bike & horse cart rental</option>
+                              <option >Airport transfers</option>
+                              <option >Babysitting on request</option>
+                              </select>
+                            </div>
+
+
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="view">Facilities</label>
+                              <select class="form-control custom-select browser-default" multiple>
+                                <option value="">Select Facilities</option>
+                              <option>Free Wi-Fi</option>
+                              <option>Flat-screen TV</option>
+                              <option >Coffee Maker</option>
+                              <option >Pool</option>
+                              <option >24 Hour security</option>
+                              <option >Car parking</option>
+                              <option >Poolside bar</option>
+                              <option >Disable rooms & Interconnecting room</option>
+                              <option >Sunset boat trip</option>
+                              </select>
+                            </div>
+
+                        
+                            
+                            <div class="col-sm-12 form-group custom-form-group1">
+                              <label for="description" class="form-label">Description</label>
+                              <textarea class="form-control" id="description" rows="3"></textarea>
+                            </div>
+                            
+                            
+                            <div class="col-sm-12">
+                              <div class="upload__box">
+                                <div class="upload__btn-box">
+                                  <label class="upload__btn">
+                                    Upload Room Images
+                                    <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                                  </label>
+                                </div>
+                                <div class="upload__img-wrap"></div>
+                              </div>
+                            </div>
+    
+                        
+                            <div class="col-sm-4">
+                              <input type="checkbox" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label">&nbsp;I accept all terms and conditions.
+                              </label>
+                            </div>
+                      
+                            <div class="col-sm-12 form-group mb-0">
+                              <button class="btn btn-primary btn-lg float-right add-room-btn">Update Room</button>
                             </div>
                         </div>
+                  
+                      </div>
                     </form>
-                    <!-- Topbar Navbar -->
-                        </li>
-                </nav>
-
-  <div class="container">
-
-    <form class="well form-horizontal ms-end custom-form" action=" " method="post"  id="contact_form">
-<fieldset>
-
-<!-- Form Name -->
-<form class="form-group"><!--form-->
-    <h1 class="text-left">Edit Room</h1>
-
-
-       
-			<div class="row">
-				<div class="col-md-6">
-					<label>Room type</label>
-						<select id="dropdown" name="room" class="form-control" required>
-							<option disabled selected value>Room type</option>
-							<option value="Budget Double Room">Budget Double Room</option>
-							<option value="Deluex Room">Deluex Room</option>
-							<option value="King Room">King Room</option>
-							<option value="Queen Room">Queen Room</option>
-						</select>
-				</div>
-				<div class="col-md-6">
-					<div class="form-group">
-						<label>Category</label>
-						<select id="dropdown" name="room" class="form-control" required>
-							<option disabled selected value>Category</option>
-							<option value="Standard Room">Standard Room</option>
-							<option value="Premium Room">Premium Room</option>
-							<option value="Deluxe Room">Deluxe Room</option>
-							<option value="Suites Room">Suites Room</option>
-						</select>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-md-6">
-					<div class="form-group">
-						<label id="room-label" for="number">Room Size <small></small></label>
-						<input type="number" name="rent" id="number" min="200" max="1000" class="form-control" placeholder="room" >
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="form-group">
-						<label>Room Facilities</label>
-						<select id="dropdown" name="room" class="form-control" required>
-							<option disabled selected value>Room Facilities</option>
-							<option value="Free WiFi">Free WiFi</option>
-							<option value="Flat-screen TV">Flat-screen TV</option>
-							<option value="Coffee Maker">Coffee Maker</option>
-							<option value="King-sized Bed">King-sized Bed</option>
-              <option value="Pool">Pool</option>
-              <option value="Sound Proofing">Sound Proofing</option>
-              <option value="City View">City View</option>
-              <option value="Private Bathroom">Private Bathroom</option>
-						</select>
-					</div>
-				</div>
-			</div>
-
-
-
-			<div class="row">
-				<div class="col-md-12">
-					<div class="form-group">
-						<label>Description</label>
-						<textarea  id="description" class="form-control" name="description" placeholder="...."></textarea>
-					</div>
-				</div>
-			</div>
-      
-      <div class="col-md-12">
-        <label>Room View</label>
-          <select id="dropdown" name="room" class="form-control" required>
-            <option disabled selected value>Room View</option>
-            <option value="City View">City View</option>
-            <option value="Sea View">Sea View</option>
-            <option value="Mountain View">Mountain View</option>
-          </select>
-      </div>
-            
-			
-
-<!-- Upload  -->
-<form id="file-upload-form" class="uploader">
-  <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
-
-  <label for="file-upload" id="file-drag">
-    <img id="file-image" src="#" alt="Preview" class="hidden">
-    <div id="start">
-      <i class="fa fa-download" aria-hidden="true"></i>
-      <div>Select a file or drag here</div>
-      <div id="notimage" class="hidden">Please select an image</div>
-      <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
-    </div>
-    <div id="response" class="hidden">
-      <div id="messages"></div>
-      <progress class="progress" id="file-progress" value="0">
-        <span>0</span>%
-      </progress>
-    </div>
-  </label>
-</form>
-
-<!-- Button -->
-<div class="text-center" style="
-margin-top: 30px;
-">
-    <button class="btn btn-primary waves-effect waves-light " id="btn-submit">Update Room</button>
-  </div>
-  </fieldset>
-    </form>
-        </div>
-          </div> <!-- /.container -->
-          
-@endsection
- 
+                  </div>
+                                             
+                  
+                
+                  
+ @endsection
