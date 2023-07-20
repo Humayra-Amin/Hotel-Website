@@ -61,6 +61,10 @@
     
     <!-- Bootstrap core JavaScript-->
     <script src="{{asset('rooms/vendor/jquery/jquery.min.js')}}"></script>
+    
+    <!-- slick js -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
     <script src="{{asset('rooms/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
     <!-- Core plugin JavaScript-->
@@ -72,8 +76,6 @@
     <!-- Page level plugins -->
     <script src="{{asset('rooms/vendor/chart.js/Chart.min.js')}}"></script>
 
-    <!-- slick js -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
     <script src="{{asset('rooms/js/jaima.js')}}"></script>
