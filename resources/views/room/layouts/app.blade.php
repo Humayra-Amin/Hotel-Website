@@ -53,10 +53,10 @@
     </div>
 
     
-    @yield('content')
+    
 
     <script src="{{ asset('js/app.js') }}"></script>
-    @yield('scripts')
+
 
    <!--slicker-->
     {{-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
