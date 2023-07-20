@@ -10,13 +10,13 @@
       
       
       <div class="col-sm-6 form-group">
-    <h2 class="text-color">Personal Information</h2>
+    <h2 class="form-text-color">Personal Information</h2>
 </div>
 <div class="col-md-6 form-group input-image" >
       <div class="d-flex align-items-center justify-content-start">
         <img id="image_upload" src="http://placehold.it/100" alt="your image" class="upload-image" />
           <div class="input-image-upload">
-            <span class="upload-tag">Upload Image</span>
+            <span class="upload-label">Upload Image</span>
             <input type='file' onchange="readURL(this);" />
           </div>
       </div>
@@ -25,31 +25,31 @@
       </div>
                         
     <div class="col-sm-6  form-group">
-        <tag for="name-f">First Name</tag>
+        <label for="name-f" class="form-label">First Name</label>
         <input type="text" class="form-control" name="fname" id="name-f" placeholder="Enter first name" required>
       </div>
       <div class="col-sm-6 form-group">
-        <tag for="name-l">Last name</tag>
+        <label for="name-l" class="form-label">Last name</label>
         <input type="text" class="form-control" name="lname" id="name-l" placeholder="Enter last name" required>
       </div>
       <div class="col-sm-6 form-group">
-        <tag for="name-e">Employee Id</tag>
+        <label for="name-e" class="form-label">Employee Id</label>
         <input type="text" class="form-control" name="eid" id="number" placeholder="Enter Employee id" required>
       </div>
       <div class="col-sm-6 form-group">
-        <tag for="address-1">Present Address</tag>
+        <label for="address-1" class="form-label">Present Address</label>
         <input type="address" class="form-control" name="Locality" id="Present-address" placeholder="Locality/House/Street no." required>
       </div>
         <div class="col-sm-6 form-group">
-        <tag for="email">Email</tag>
+        <label for="email" class="form-label">Email</label>
         <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required>
       </div>
       <div class="col-sm-6 form-group">
-        <tag for="email">Input NID</tag>
+        <label for="email" class="form-label">Input NID</label>
         <input type="nid" class="form-control" name="nid" id="nid" placeholder="Enter NID" required>
       </div>
       <div class="col-sm-6 form-group">
-        <tag for="Country">Position</tag>
+        <label for="Country" class="form-label">Position</label>
         <select class="form-control custom-select browser-default">
         <option value="">Select your Position</option>
       <option>Manager</option>
@@ -62,11 +62,11 @@
         </select>
       </div>
       <div class="col-sm-6 form-group">
-        <tag for="Date">Date Of Birth</tag>
+        <label for="Date" class="form-label">Date Of Birth</label>
         <input type="Date" name="dob" class="form-control" id="Date" placeholder="" required>
       </div>
       <div class="col-sm-6 form-group">
-        <tag for="sex">Gender</tag>
+        <label for="sex" class="form-label">Gender</label>
         <select id="sex" class="form-control browser-default custom-select">
         <option value="">Select Gender</option>
           <option value="male">Male</option>
@@ -75,17 +75,17 @@
         </select>
       </div>
       <div class="col-sm-6 form-group">
-        <tag for="tel">Contact No.</tag>
+        <label for="tel" class="form-label">Contact No.</label>
         <input type="tel" name="phone" class="form-control" id="tel" placeholder="Enter Contact Number" required>
       </div>
       <div class="col-sm-6 form-group">
-      <tag for="name-f">Joining Date</tag>
+      <label for="name-f" class="form-label">Joining Date</label>
         <input type="text" class="form-control" name="fname" id="name-f" placeholder="Enter first name" required>
       </div>
       
       <div class="col-sm-12">
-        <input type="checkbox" class="form-check d-inline" id="chb" required><tag for="chb" class="form-check-tag">&nbsp;I accept all terms and conditions.
-        </tag>
+        <input type="checkbox" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label form-label">&nbsp;I accept all terms and conditions.
+</label>
       </div>
 
       <div class="col-sm-12 form-group mb-0">
