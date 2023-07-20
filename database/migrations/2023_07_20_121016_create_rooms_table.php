@@ -17,31 +17,22 @@ return new class extends Migration
             $table->id();
    
           
-           
+        
+            $table->string('roomtitle');
+            $table->string('buildingno');
+            $table->string('roomno');
+            $table->string('floorno');
+            $table->string('category');
+            $table->string('roomtype');
+            $table->string('roomsize');
+            $table->string('roomview');
+            $table->string('guestservice');
+            $table->string('facilities');
+            $table->text('description');
+            $table->text('image');
 
-<<<<<<< HEAD
-            $table->string(roomtitle);
-            $table->string(buildingno);
-            $table->string(roomno);
-            $table->string(floorno);
-            $table->string(category);
-            $table->string(roomtype);
-            $table->string(roomsize);
-            $table->string(roomview);
-            $table->string(guestservice);
-            $table->string(facilities);
-            $table->text(description);
-            $table->text(image);
-
-=======
-
-           $table->timestamps();
-          
->>>>>>> 65faa37f8eed8b949fcc808ad4839684d0bf9014
             
-      
-
-           
+    
         });
     }
 
