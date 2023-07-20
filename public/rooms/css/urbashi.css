@@ -16,6 +16,21 @@ body
               {
                 color: #1e2cc8;
               }
+          .custom-form-title{
+                font-family: 'Roboto';
+                font-weight: 500;
+                font-size: 19px;
+                color: #141414;
+                text-transform: capitalize;
+                position: relative;
+              }
+              .custom-form-inner{
+                display: flex;
+                row-gap: 20%;
+                width: 100%;
+                flex-wrap: wrap;
+                margin-top: 20px;
+              }
       label 
               {
                 font-weight: 600;
@@ -161,6 +176,7 @@ body
       margin          : 0;
       padding         : 0;
     }
+    
 
     
 

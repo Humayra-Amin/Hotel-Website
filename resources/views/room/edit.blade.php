@@ -38,12 +38,11 @@
 
 <!-- Form Name -->
 <form class="form-group"><!--form-->
-    <h1 class="text-left">Edit Room</h1>
+    <h1 class="text-left text-info1 custom-form-title">Edit Room</h1>
+    
 
-
-       
-			<div class="row">
-				<div class="col-md-6">
+      <div class="row box8">
+				<div class="col-sm-6 form-group custom-form-group">
 					<label>Room type</label>
 						<select id="dropdown" name="room" class="form-control" required>
 							<option disabled selected value>Room type</option>
@@ -53,7 +52,7 @@
 							<option value="Queen Room">Queen Room</option>
 						</select>
 				</div>
-				<div class="col-md-6">
+				<div class="col-sm-6 form-group custom-form-group">
 					<div class="form-group">
 						<label>Category</label>
 						<select id="dropdown" name="room" class="form-control" required>
@@ -68,13 +67,13 @@
 			</div>
 			
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-sm-6 form-group custom-form-group">
 					<div class="form-group">
 						<label id="room-label" for="number">Room Size <small></small></label>
-						<input type="number" name="rent" id="number" min="200" max="1000" class="form-control" placeholder="room" >
+						<input type="number" name="rent" id="number" min="200" max="1000" class="form-control" placeholder="room size" >
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-sm-6 form-group custom-form-group">
 					<div class="form-group">
 						<label>Room Facilities</label>
 						<select id="dropdown" name="room" class="form-control" required>
@@ -95,7 +94,7 @@
 
 
 			<div class="row">
-        <div class="col-md-12">
+        <div class="col-sm-12 form-group custom-form-group">
           <label>Room View</label>
             <select id="dropdown" name="room" class="form-control" required>
               <option disabled selected value>Room View</option>
@@ -104,7 +103,7 @@
               <option value="Mountain View">Mountain View</option>
             </select>
         </div>
-				<div class="col-md-12">
+        <div class="col-sm-12 form-group custom-form-group">
 					<div class="form-group">
 						<label>Description</label>
 						<textarea  id="description" class="form-control" name="description" placeholder="...."></textarea>
