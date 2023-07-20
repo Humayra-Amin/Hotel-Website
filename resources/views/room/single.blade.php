@@ -42,17 +42,18 @@
             <div class="col-md-6">
             {{-- <div id="roomImageSlider"> --}}
             <div class="slider">
-            <!-- room images here -->
-            <div>
-                <img src="{{ asset('image/room-image1.jpg') }}" class="d-block w-100" alt="Room Image 1">
+                <!-- room images here -->
+                <div>
+                    <img src="{{ asset('image/room-image1.jpg') }}" class="d-block w-100" alt="Room Image 1">
+                </div>
+                <div>
+                    <img src="{{ asset('image/room-image2.jpg') }}" class="d-block w-100" alt="Room Image 2">
+                </div>
+                <div>
+                    <img src="{{ asset('image/room-image3.jpg') }}" class="d-block w-100" alt="Room Image 2">
+                </div>
             </div>
-            <div>
-                <img src="{{ asset('image/room-image2.jpg') }}" class="d-block w-100" alt="Room Image 2">
-            </div>
-            <div>
-                <img src="{{ asset('image/room-image3.jpg') }}" class="d-block w-100" alt="Room Image 2">
-            </div>
-            </div>
+           
 
         </div>
     
@@ -67,30 +68,18 @@
             <span class=".d-block mr-2"> <i class="fas fa-coffee"></i> Coffee Maker</span> <span class=".d-block mr-2"><i class="fas fa-bed"></i> King-sized Bed</span>
             <span class=".d-block mr-2"><i class="fas fa-swimming-pool"></i>Pool</span> <span class=".d-block mr-2"> <i class="fa-solid fa-volume-xmark"></i></i>Sound Proofing</span>
              <span class=".d-block mr-2"><i class="fas fa-city facility-item"></i>City View</span>  <span class=".d-block mr-2"><i class="fas fa-bath facility-item"></i>Private Bathroom </span></p>
-
+        <p>View: City View</p>
         <p class="room-details">
-             Featuring free toiletries, this double room includes a private bathroom with a bath, a shower and a hairdryer. This double room has air conditioning, flat-screen TV with cable channels, city views, as well as fruit for guests. The unit has 1 bed.
+            Featuring free toiletries, this double room includes a private bathroom with a bath, a shower and a hairdryer. This double room has air conditioning, flat-screen TV with cable channels, city views, as well as fruit for guests. The unit has 1 bed.
+            Elegantly furnished with solid wood furniture along with teak wood flooring, king sized bed with orthopedic bedding.
+            
         </p>
-        {{-- <p>View: City View</p>
-        <p> Smoking: No Smoking</p>  --}}
-
         </div>
 
         </div>
         </div>
 
-        <div class="row">
-            <div class= "col-md-6">
-                <p class="room-description mt-3 mb-3">
-                    Elegantly furnished with solid wood furniture along with teak wood flooring, king sized bed with orthopedic bedding. All the rooms have ceiling height windows overlooking the front of the hotel and to the distance hills. Separate living room with a nice and cozy sitting arrangement make this ideal for business meeting or entertaining your guest without disturbing your partner.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <p>View: City View</p>
-                <p> Smoking: No Smoking</p>
-            </div>
-
-    </div>
+  
         
     
 
