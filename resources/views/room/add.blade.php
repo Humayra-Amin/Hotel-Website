@@ -41,22 +41,6 @@
                       <div class="row box8">
                         
                         <div class="custom-form-inner">
-                        </div>
-                        <form id="form" method="post">
-                          <div class="flexed">
-                            <div class="formInput-group">
-                              <div class="formInput-label"><label>Room No</label></div>
-                              <div class="formInput-inputs input-text">
-                                <input name="firstName" type="text" placeholder="room">
-                              </div>
-                            </div>
-                    
-                            <div class="formInput-group">
-                              <div class="formInput-label"><label>Floor No</label></div>
-                              <div class="formInput-inputs input-text">
-                                <input name="lastName" type="text" placeholder="floor no">
-                              </div>
-                            </div>
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="name-f">Room No.</label>
                               <input type="number" class="form-control" name="roomno." id="name-f" placeholder="Enter Room No." required>

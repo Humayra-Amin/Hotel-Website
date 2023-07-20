@@ -42,6 +42,7 @@
     
 
       <div class="row box8">
+
 				<div class="col-sm-6 form-group custom-form-group">
 					<label>Room type</label>
 						<select id="dropdown" name="room" class="form-control" required>
