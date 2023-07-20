@@ -20,6 +20,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
    
     <link rel="stylesheet" type="text/css" link href="{{asset('rooms/vendor/fontawesome-free/css/all.min.css')}}">
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
     {{-- <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet"> --}}
@@ -27,7 +33,7 @@
     <!-- Custom styles for this template-->
     <link rel="stylesheet" href="{{asset('rooms/css/sb-admin-2.min.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/karima.css')}}">
-    <link rel="stylesheet" href="{{asset('rooms/css/jaima.css')}}">
+    {{-- <link rel="stylesheet" href="{{asset('rooms/css/jaima.css')}}"> --}}
     <link rel="stylesheet" href="{{asset('rooms/css/urbashi.css')}}">
 
    
@@ -36,10 +42,6 @@
     <link rel="stylesheet" href="style.css">
     
 
-{{-- 
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}"> --}}
 
 
 </head>
@@ -57,13 +59,6 @@
 
     
     
-
-
-
-
-
-
-    
     <!-- Bootstrap core JavaScript-->
     <script src="{{asset('rooms/vendor/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('rooms/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
@@ -77,9 +72,13 @@
     <!-- Page level plugins -->
     <script src="{{asset('rooms/vendor/chart.js/Chart.min.js')}}"></script>
 
+    <!-- slick js -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 
     <script src="{{asset('rooms/js/jaima.js')}}"></script>
     <script src="{{asset('rooms/js/karima.js')}}"></script>
+    <script src="{{asset('rooms/js/urbashi.js')}}"></script>
     
     <!-- Page level custom scripts -->
     {{-- <script src="{{asset('rooms/js/demo/chart-area-demo.js')}}"></script>
