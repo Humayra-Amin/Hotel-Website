@@ -18,7 +18,7 @@
 
 
 
-    <link rel="stylesheet" href="{{asset('/css/humayra.css')}}">
+   <link rel="stylesheet" href="{{asset('employees/css/humayra.css')}}">
 
 
     

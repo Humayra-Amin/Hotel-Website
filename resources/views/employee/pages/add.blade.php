@@ -8,9 +8,20 @@
     
     <div class="row jumbotron box8">
       
+      
       <div class="col-sm-12 mx-t3 mb-4">
     <h2 class="text-center text-info">Personal Information</h2>
 </div>
+<div class="col-md-6 ml-auto mr-auto" ></div>
+<div class="input-file">
+
+													<img id="file_upload" src="http://placehold.it/100" alt="your image" class="upload-img" />
+													<div class="input-file-upload">
+														<span class="upload-label">Upload Image</span>
+														<input type='file' onchange="readURL(this);" />
+													</div>
+												</div>
+                        
     <div class="col-sm-6  form-group">
         <label for="name-f">First Name</label>
         <input type="text" class="form-control" name="fname" id="name-f" placeholder="Enter first name." required>
