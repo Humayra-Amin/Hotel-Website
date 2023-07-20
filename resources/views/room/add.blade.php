@@ -38,7 +38,7 @@
                           <h2 class="text-left text-info1 custom-form-title">Add Room</h2>
                        
                     <form>
-                      <div class="row box8">
+                      <div class="row custom-jumbotron box8">
                         
                         <div class="custom-form-inner">
                             <div class="col-sm-6 form-group custom-form-group">
@@ -87,26 +87,18 @@
                               <input type="text" name="roomview" class="form-control" placeholder="" required>
                             </div>
     
-                            <div class="col-sm-12 form-group custom-form-group">
+                            <div class="col-sm-12 form-group custom-form-group1">
                                 <label for="tel">Description</label>
                                 <input type="text" name="description" class="form-control" placeholder="" required>
                             </div>
     
-                            <div class="col-sm-12 form-group custom-form-group">
+                            <div class="col-sm-12 form-group custom-form-group1">
                                 <label for="tel">Facilities</label>
                                 <input type="text" name="phone" class="form-control" placeholder="" required>
                             </div>
     
     
-                            <div class="col-sm-12 form-group custom-form-group">
-                              <input type="file" id="upload-button" multiple accept="image/*" />
-                              <label for="upload-button"
-                                ><i class="fa-solid fa-upload"></i>&nbsp; Choose Or Drop Photos
-                              </label>
-                              <div id="error"></div>
-                              <div id="image-display"></div>
-                            </div>
-                            
+                         
     
     
                             <div class="col-sm-4">
