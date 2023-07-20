@@ -7,7 +7,7 @@
               {
                 box-shadow: 0px 0px 5px 1px #ddd;
               }
-     .text-info 
+     .text-primary
               {
                 color: #1e2cc8;
               }
@@ -30,7 +30,7 @@
                   height: 150px;
                   object-fit: cover;
                   object-position: 50% 50%;
-                  border: 3px solid #2023e5;
+                  border: 3px solid #ddd;
                   margin-right: 15px;
                   vertical-align: middle;
               }

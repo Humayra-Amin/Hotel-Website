@@ -10,9 +10,9 @@
       
       
       <div class="col-sm-12 mx-t3 mb-4">
-    <h2 class="text-center text-info">Personal Information</h2>
+    <h2 class="text-center text-primary">Personal Information</h2>
 </div>
-<div class="col-md-6 ml-auto mr-auto" ></div>
+<div class="col-md-2 ml-auto mr-auto" ></div>
 <div class="input-file">
 
 													<img id="file_upload" src="http://placehold.it/100" alt="your image" class="upload-img" />
