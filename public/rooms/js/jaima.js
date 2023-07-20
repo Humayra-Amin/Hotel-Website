@@ -1,77 +1,63 @@
-let uploadButton = document.getElementById("upload-button");
-let chosenImage = document.getElementById("chosen-image");
-let fileName = document.getElementById("file-name");
-let container = document.querySelector(".container");
-let error = document.getElementById("error");
-let imageDisplay = document.getElementById("image-display");
-const fileHandler = (file, name, type) => {
-  if (type.split("/")[0] !== "image") {
-    //File Type Error
-    error.innerText = "Please upload an image file";
-    return false;
-  }
-  error.innerText = "";
-  let reader = new FileReader();
-  reader.readAsDataURL(file);
-  reader.onloadend = () => {
-    //image and file name
-    let imageContainer = document.createElement("figure");
-    let img = document.createElement("img");
-    img.src = reader.result;
-    imageContainer.appendChild(img);
-    imageContainer.innerHTML += `<figcaption>${name}</figcaption>`;
-    imageDisplay.appendChild(imageContainer);
-  };
-};
-//Upload Button
-uploadButton.addEventListener("change", () => {
-  imageDisplay.innerHTML = "";
-  Array.from(uploadButton.files).forEach((file) => {
-    fileHandler(file, file.name, file.type);
-  });
+console.log('jaima script loaded.');
+
+jQuery(document).ready(function () {
+  
+  ImgUpload();
 });
-container.addEventListener(
-  "dragenter",
-  (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    container.classList.add("active");
-  },
-  false
-);
-container.addEventListener(
-  "dragleave",
-  (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    container.classList.remove("active");
-  },
-  false
-);
-container.addEventListener(
-  "dragover",
-  (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    container.classList.add("active");
-  },
-  false
-);
-container.addEventListener(
-  "drop",
-  (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    container.classList.remove("active");
-    let draggedData = e.dataTransfer;
-    let files = draggedData.files;
-    imageDisplay.innerHTML = "";
-    Array.from(files).forEach((file) => {
-      fileHandler(file, file.name, file.type);
+
+function ImgUpload() {
+  var imgWrap = "";
+  var imgArray = [];
+
+  jQuery('.upload__inputfile').each(function () {
+    jQuery(this).on('change', function (e) {
+      imgWrap = jQuery(this).closest('.upload__box').find('.upload__img-wrap');
+      var maxLength = jQuery(this).attr('data-max_length');
+
+      var files = e.target.files;
+      var filesArr = Array.prototype.slice.call(files);
+      var iterator = 0;
+      filesArr.forEach(function (f, index) {
+
+        if (!f.type.match('image.*')) {
+          return;
+        }
+
+        if (imgArray.length > maxLength) {
+          return false
+        } else {
+          var len = 0;
+          for (var i = 0; i < imgArray.length; i++) {
+            if (imgArray[i] !== undefined) {
+              len++;
+            }
+          }
+          if (len > maxLength) {
+            return false;
+          } else {
+            imgArray.push(f);
+
+            var reader = new FileReader();
+            reader.onload = function (e) {
+              var html = "<div class='upload__img-box'><div style='background-image: url(" + e.target.result + ")' data-number='" + jQuery(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'><div class='upload__img-close'></div></div></div>";
+              imgWrap.append(html);
+              iterator++;
+            }
+            reader.readAsDataURL(f);
+          }
+        }
+      });
     });
-  },
-  false
-);
-window.onload = () => {
-  error.innerText = "";
-};
+  });
+
+  jQuery('body').on('click', ".upload__img-close", function (e) {
+    var file = jQuery(this).parent().data("file");
+    for (var i = 0; i < imgArray.length; i++) {
+      if (imgArray[i].name === file) {
+        imgArray.splice(i, 1);
+        break;
+      }
+    }
+    jQuery(this).parent().parent().remove();
+  });
+}

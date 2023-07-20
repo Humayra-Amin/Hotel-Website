@@ -67,7 +67,7 @@
                 </div>
             </div>
             
-            <div class="col-md-12">
+            <div class="col-md-12 customize-fonts">
                 <div class="table-responsive-md mt-3">
                     <table class="table">
                         <thead>
@@ -99,9 +99,9 @@
                             <td>Single room</td>      
                             <td>1800 BDT</td>
                             <td class="text-right">
-                                <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></button>
-                                <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></button>
-                                <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
+                               <span> <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></button></span>
+                               <span> <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></button></span>
+                               <span> <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i></span>
                             </td>
 
                             </tr>
@@ -305,7 +305,18 @@
                       
                     </button>
                   </div> --}}
-
+                  <div>
+                    <ul class="pagination rounded-circle justify-content-center mt-2 mb-4">
+                      <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+          
+                      <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+{{-- 
                 <nav aria-label="Page navigation example ">
                     <ul class="pagination justify-content-center mt-2 mb-4">
                         <li class="page-item disabled">
@@ -319,7 +330,7 @@
                             <a class="page-link" href="#">Next</a>
                         </li>
                     </ul>
-                </nav>
+                </nav> --}}
             </div>
         </div>
         </div>
