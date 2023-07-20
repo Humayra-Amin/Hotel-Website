@@ -39,7 +39,7 @@
                 
         <div class=container>
         <div class= "row">
-            <div class="col-md-6">
+            <div class="col-md-6 mt-4 mb-2">
             {{-- <div id="roomImageSlider"> --}}
             <div class="slider">
                 <!-- room images here -->
@@ -59,7 +59,7 @@
     
     <div class="col-md-6 customize-fonts">
         <div class="room-details mt-4 mb-2">
-        <h2 class="room-title customize-fonts">Deluxe Double Room</h2>
+        <h2 class="room-title customize-fonts-title">Deluxe Double Room</h2>
         <p>Room Type: Deluxe</p>
         <p>Category: Standard</p>
         <p>Room Size: 256 square feet</p>
