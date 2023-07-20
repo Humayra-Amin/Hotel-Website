@@ -40,8 +40,8 @@
         <div class=container>
         <div class= "row">
             <div class="col-md-6">
-            <div id="roomImageSlider">
-            <div class="carosusel-item">
+            {{-- <div id="roomImageSlider"> --}}
+            <div class="slider">
             <!-- room images here -->
             <div>
                 <img src="{{ asset('image/room-image1.jpg') }}" class="d-block w-100" alt="Room Image 1">
@@ -52,21 +52,10 @@
             <div>
                 <img src="{{ asset('image/room-image3.jpg') }}" class="d-block w-100" alt="Room Image 2">
             </div>
-            <!--  more images as needed -->
-
-            <!-- image slider controls -->
-            {{-- <button class="carousel-control-prev" type="button" data-bs-target="#roomImageSlider" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#roomImageSlider" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button> --}}
             </div>
 
         </div>
-    </div>
+    
     <div class="col-md-6">
         <div class="room-details mt-4 mb-2">
         <h2 class="room-title">Deluxe Double Room</h2>
@@ -104,10 +93,27 @@
     </div>
     
 
-
-
-
-            
-
-        
-        @endsection
+ @section('styles')
+<link rel="stylesheet" href="{{ asset('css/slick.css') }}">
+<link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}">
+<style>
+  
+</style>
+@endsection
+    
+    @section('scripts')
+    <script src="{{ asset('js/slick.min.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $('.slider').slick({
+                // Slick slider options and configurations go here
+                // For example:
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+    @endsection

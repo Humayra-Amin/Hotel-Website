@@ -29,10 +29,15 @@
     <link rel="stylesheet" href="{{asset('rooms/css/urbashi.css')}}">
 
     <link rel="stylesheet" href="{{asset('rooms/js/jaima.js')}}">
-    <!--slicker--> 
-    {{-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    
+    <link rel="stylesheet" href="{{asset('rooms/js/karima.js')}}">
+    
 
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> --}}
+
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}">
+
 
 </head>
 <body id="page-top">
@@ -47,9 +52,15 @@
     
     </div>
 
+    
+    @yield('content')
+
+    <script src="{{ asset('js/app.js') }}"></script>
+    @yield('scripts')
+
    <!--slicker-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    {{-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> --}}
     {{-- <script type="text/javascript" src="slick/slick.min.js"></script> --}}
 
     
