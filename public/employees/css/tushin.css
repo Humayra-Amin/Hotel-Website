@@ -10,14 +10,14 @@
               {
                 box-shadow: 0px 0px 5px 1px #98bbd2;
               }
-     .text-color
+     .form-text-color
               {
-                color: #1e2cc8;
+                color: #2023e5;
                 font-size: 36px;
                 font-family: roboto;
               }
       
-      tag
+      .form-label
               {
                 font-weight: 600;
                 color: black;
