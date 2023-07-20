@@ -20,7 +20,7 @@
 
    <link rel="stylesheet" href="{{asset('employees/css/humayra.css')}}">
 
-
+   <script  src="{{asset('employees/js/humayra.js')}}"></script>
     
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link

@@ -1,52 +1,60 @@
  
-              h2
+      .custom-h2
               {
-                    color:#141414
+                    color:#141414;
+                    font-family: roboto;
+                  
               }
-            .box8
+      .custom-box8
               {
                 box-shadow: 0px 0px 5px 1px #ddd;
               }
-     .text-primary
+              
+     .text-font
               {
                 color: #1e2cc8;
+                font-size: 36px;
+                font-family: roboto;
               }
-      label 
+     .custom-label
               {
                 font-weight: 600;
-                color: #1e2cc8;
+                color: black;
+                font-family: roboto;
               }
-      .input-file 
+
+      .custom-input-file
               {
                 padding: 10px;
                 width: 50%;
                 margin: 0 auto;
                 
               }
-              .upload-img {
+      .custom-upload-img {
                   border-radius: 100%;
                   display: inline-block;
-                  width: 150px;
-                  height: 150px;
+                  width: 100px;
+                  height: 100px;
                   object-fit: cover;
-                  object-position: 50% 50%;
-                  border: 3px solid #ddd;
+                  object-position: 80% 80%;
+                  border: 3px solid #1e2cc8;
                   margin-right: 15px;
-                  vertical-align: middle;
+                  vertical-align: right;
               }
-              .input-file-upload 
+      .custom-input-file-upload 
               {
                   position: relative;
                   display: inline-block;
                   vertical-align: middle;
               }
-              .input-file-upload input[type="file"] {
+      .custom-input-file-upload input[type="file"] {
                 opacity: 0;
                 padding: 10px 0;
-                height:36px;
+                height:30px;
+                
               }
               
-              .upload-label {
+      .custom-upload-label {
                 width: 150px;
                 height: 36px;
                 background: #3b70f1;
@@ -60,7 +68,8 @@
                 font-weight: 700;
                 transition: all 0.3s ease-in-out;
               }
-              .input-file-upload:hover .upload-label {
+      .custom-input-file-upload:hover .upload-label {
                   background: #eaf5fe;
                 color: #3b70f1;
+                height: 10px;
               }
