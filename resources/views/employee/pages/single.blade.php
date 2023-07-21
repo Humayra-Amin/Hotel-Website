@@ -3,15 +3,17 @@
 @section('content')
 
 <div class="container mt-3">
+ <div class="card-text">
         <h1 class="form-h1">Single Employee</h1>
             
-            <div class="container">
-            <img src="{{asset('employees/images/JR.jpg')}}" style="width:16%" >
-                
-            </div>
+            
   <form>
-    <div class="row jumbotron box8">
-      
+          <div class="row jumbotron box8">
+       
+          <div class="container">
+            <img src="{{asset('employees/images/JR.jpg')}}" style="width:14%" >     
+          </div>
+
       <div class="col-sm-12 mx-t3 mb-4">
     <h2 class="text-center text-info"></h2>
 </div>    
