@@ -9,8 +9,8 @@
                  <h2>Employee</h2>
             <div class="d-flex align-items-center justify-content-between">
                 <form>
-                <input type="text" class="form-control bg-light border-0 large" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
+                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                aria-label="Search" aria-describedby="basic-addon2">
                 </form>
                 <button class="btn btn-outline-dark ml-2">
                     <i class="fa fa-plus"></i>
@@ -35,7 +35,7 @@
                 <th scope="col"> Id </th>
                 <th scope="col">First Name</th>
                 <th scope="col">last Name</th>
-                <th scope="col">Joining Date</th>
+                <th scope="col">Joining</th>
                 <th scope="col">Position</th>
                 <th scope="col">Email</th>
                 <th scope="col">Contact</th>
