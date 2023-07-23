@@ -19,7 +19,7 @@
 =======
 >>>>>>> 3e945932fc1db2d3feb73baedff7642aeba02445
    <link rel="stylesheet" href= "{{asset('css/tushin.css')}}">
-
+   <link rel="stylesheet" href="{{asset('employees/css/fardin.css')}}">
 
    <link rel="stylesheet" href="{{asset('employees/css/kayem.css')}}">
 
