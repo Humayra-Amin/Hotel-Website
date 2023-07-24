@@ -28,4 +28,8 @@ class RoomController extends Controller
     {
         return $request;
     }
+    public function update(Request $request)
+    {
+        return $request;
+    }
 }
