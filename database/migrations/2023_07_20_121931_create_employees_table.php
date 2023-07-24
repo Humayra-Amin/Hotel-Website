@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('phone');
             $table->string('date');
             $table->string('nid');
-            $table->string('country');
+            $table->string('position');
             $table->string('sex');
             $table->string('salary');
             $table->string('joiningdate');
