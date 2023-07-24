@@ -42,20 +42,20 @@
                         
                         <div class="custom-form-inner">
                             <div class="col-sm-6 form-group custom-form-group">
-                              <label for="room-title">Room Title</label>
+                              <label for="roomtitle">Room Title</label>
                               <input type="text" class="form-control" name="roomno." id="room-title" placeholder="Enter Room Name" required>
                             </div>
                             <div class="col-sm-6 form-group custom-form-group">
-                              <label for="building-no">Building No.</label>
+                              <label for="buildingno">Building No.</label>
                               <input type="number" class="form-control" name="roomno." id="room-no" placeholder="Enter Room No." required>
                             </div>
                             <div class="col-sm-6 form-group custom-form-group">
-                              <label for="room-no">Room No.</label>
+                              <label for="roomno">Room No.</label>
                               <input type="number" class="form-control" name="roomno." id="room-no" placeholder="Enter Room No." required>
                             </div>
                             <div class="col-sm-6 form-group custom-form-group">
-                              <label for="name-l">Floor No.</label>
-                              <input type="number" class="form-control" name="floorno." id="name-l" placeholder="Enter Floor No." required>
+                              <label for="floorno">Floor No.</label>
+                              <input type="number" class="form-control" name="floorno." id="floorno" placeholder="Enter Floor No." required>
                             </div>
                           
                             <div class="col-sm-6 form-group custom-form-group">
@@ -106,7 +106,7 @@
 
 
                             <div class="col-sm-6 form-group custom-form-group">
-                              <label for="guest-service">Guest Service</label>
+                              <label for="guestservice">Guest Service</label>
                               <select class="form-control custom-select browser-default" multiple>
                                 <option value="">Select Services</option>
                               <option>24-Hour room service</option>

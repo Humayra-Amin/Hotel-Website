@@ -23,4 +23,13 @@ class EmployeeController extends Controller
     {
         return view("employee.pages.single");
     }
+    
+    public function store(Request $request)
+{
+    return $request;
+}
+public function update(Request $request)
+{
+    return $request;
+}
 }
