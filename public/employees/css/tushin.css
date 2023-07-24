@@ -41,12 +41,12 @@
                   margin-right: 20px;
                   vertical-align: middle;
               }
-        /* .input-image-upload 
+        .input-image-upload 
               {
                   position: relative;
                   display: inline-block;
                   vertical-align: middle;
-              } */
+              }
         .input-image-upload input[type="file"] {
                 opacity: 0;
                 padding: 10px 0;
