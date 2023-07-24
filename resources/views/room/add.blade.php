@@ -74,21 +74,21 @@
                           
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="Category">Category</label>
-                              <select class="form-control custom-select browser-default">
-                                <option value="">Select your Room Category</option>
-                              <option>Normal</option>
-                              <option>Standered</option>
-                              <option >Premium</option>
-                              <option >Super Premium</option>
-                              <option >Queen</option>
+                              <select name="category" class="form-control custom-select browser-default">
+                                <option>Select your Room Category</option>
+                                <option>Normal</option>
+                                <option>Standered</option>
+                                <option >Premium</option>
+                                <option >Super Premium</option>
+                                <option >Queen</option>
                             </select>
                             </div>
                             
                             
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="roomtype">Room Type</label>
-                              <select class="form-control custom-select browser-default">
-                                <option value="">Select Room Type</option>
+                              <select name="roomtype" class="form-control custom-select browser-default">
+                                <option >Select Room Type</option>
                                 <option>Single Room</option>
                                 <option>Double Room</option>
                                 <option >Quad Room</option>
@@ -108,8 +108,8 @@
 
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="roomview">Room View</label>
-                              <select class="form-control custom-select browser-default">
-                                <option value="">Select Room View</option>
+                              <select name="roomview" class="form-control custom-select browser-default">
+                              <option>Select Room View</option>
                               <option>Sea View</option>
                               <option>Mountain View</option>
                               <option>Road View</option>
@@ -121,8 +121,8 @@
 
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="guestservice">Guest Service</label>
-                              <select class="form-control custom-select browser-default" multiple>
-                                <option value="">Select Services</option>
+                              <select name="guestservice" class="form-control custom-select browser-default" multiple>
+                              <option >Select Services</option>
                               <option>24-Hour room service</option>
                               <option>Free wireless internet access</option>
                               <option >Complimentary use of hotel bicycle</option>
@@ -138,8 +138,8 @@
 
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="facilities">Facilities</label>
-                              <select class="form-control custom-select browser-default" multiple>
-                                <option value="">Select Facilities</option>
+                              <select name="facilities" class="form-control custom-select browser-default" multiple>
+                              <option>Select Facilities</option>
                               <option>Free Wi-Fi</option>
                               <option>Flat-screen TV</option>
                               <option >Coffee Maker</option>
@@ -156,7 +156,7 @@
                             
                             <div class="col-sm-12 form-group custom-form-group1">
                               <label for="description" class="form-label">Description</label>
-                              <textarea class="form-control" id="description" rows="3"></textarea>
+                              <textarea name="description" class="form-control" id="description" rows="3"></textarea>
                             </div>
                             
                             
@@ -165,7 +165,7 @@
                                 <div class="upload__btn-box">
                                   <label class="upload__btn">
                                     Upload Room Images
-                                    <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                                    <input  name="image" type="file" multiple="" data-max_length="20" class="upload__inputfile">
                                   </label>
                                 </div>
                                 <div class="upload__img-wrap"></div>
