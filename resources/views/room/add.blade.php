@@ -39,7 +39,7 @@
                        
                     <form action="{{ url('room') }}" method="POST">
                       @csrf
-
+  
                       <div class="row custom-jumbotron box8">
                         
                         <div class="custom-form-inner">
