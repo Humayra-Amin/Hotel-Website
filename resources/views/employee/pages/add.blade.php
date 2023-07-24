@@ -3,6 +3,17 @@
 @section('content')
 
 <div class="container mt-3 ">
+  
+@if ($errors->any())
+  <div class="alert alert-danger">
+      <ul>
+          @foreach ($errors->all() as $error)
+              <li>{{ $error }}</li>
+          @endforeach
+      </ul>
+  </div>
+@endif
+
 <h2 class="custom-h2">Add Employee</h2>
   
   <form action="{{ url('employee') }}" method="POST">
@@ -64,7 +75,7 @@
         <input type="nid" class="form-control" name="nid" id="nid" placeholder="Enter NID" required>
       </div>
       <div class="col-sm-6 form-group">
-        <label for="Country" class="custom-label">Position</label>
+        <label for="position" class="custom-label">Position</label>
         <select class="form-control custom-select browser-default">
         <option value="">Select your Position</option>
       <option>Manager</option>
