@@ -4,8 +4,10 @@
 
 <div class="container mt-3 ">
 <h2 class="custom-h2">Add Employee</h2>
-  <form>
-    
+  
+  <form action="{{ url('employee') }}" method="POST">
+    @csrf
+
     <div class="row jumbotron custom-box8">
       
       

@@ -26,10 +26,11 @@ return new class extends Migration
             $table->string('sex');
             $table->string('salary');
             $table->string('joiningdate');
-            $table->text('image');
+            $table->text('image')->nullable();
 
             $table->timestamps();
-       });
+            
+        });
     }
 
     /**

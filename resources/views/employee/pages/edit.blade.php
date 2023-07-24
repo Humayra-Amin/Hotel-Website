@@ -4,7 +4,8 @@
 
 <div class="container mt-3">
 <h1 class="form-h1">Edit Employee</h1>
-  <form>
+<form action="{{ url('employee') }}" method="POST">
+    @csrf
     
   <div class="row jumbotron box">
       
@@ -12,11 +13,11 @@
       <div class="col-sm-6 form-group">
     <h2 class="form-text-color">Personal Information</h2>
 </div>
-<div class="col-md-6 form-group input-image" >
+<div class="col-md-6 form-group form-input-image" >
       <div class="d-flex align-items-center justify-content-start">
-        <img id="image_upload" src="http://placehold.it/100" alt="your image" class="upload-image" />
-          <div class="input-image-upload">
-            <span class="upload-label">Upload Image</span>
+        <img id="image_upload" src="http://placehold.it/100" alt="your image" class="form-upload-image" />
+          <div class="form-input-image-upload">
+            <span class="form-upload-label">Upload Image</span>
             <input type='file' onchange="readURL(this);" />
           </div>
       </div>
@@ -79,10 +80,13 @@
         <input type="tel" name="phone" class="form-control" id="tel" placeholder="Enter Contact Number" required>
       </div>
       <div class="col-sm-6 form-group">
-      <label for="name-f" class="form-label">Joining Date</label>
-        <input type="text" class="form-control" name="fname" id="name-f" placeholder="Enter first name" required>
+        <label for="Date" class="custom-label">Joining Date</label>
+        <input type="Date" name="joiningdate" class="form-control" id="jdate" placeholder="" required>
       </div>
-      
+      <div class="col-sm-6 form-group">
+        <label for="Date">Salary</label>
+        <input type="number" name="salary" class="form-control" id="Salary" placeholder="" required>
+      </div>
       <div class="col-sm-12">
         <input type="checkbox" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label form-label">&nbsp;I accept all terms and conditions.
 </label>
