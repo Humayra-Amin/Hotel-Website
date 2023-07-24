@@ -37,7 +37,9 @@
                  <div class="container mt-3">
                           <h2 class="text-left text-info1 custom-form-title">Add Rooms</h2>
                        
-                    <form>
+                    <form action="{{ url('room') }}" method="POST">
+                      @csrf
+
                       <div class="row custom-jumbotron box8">
                         
                         <div class="custom-form-inner">

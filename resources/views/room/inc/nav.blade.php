@@ -55,10 +55,10 @@
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Utilities:</h6>
-                <a class="collapse-item" href="">View Employee list</a>
-                <a class="collapse-item" href="">Add Employee</a>
-                <a class="collapse-item" href="">Edit Employee</a>
-                <a class="collapse-item" href="">Single Employee</a>
+                <a class="collapse-item" href="/employee/">View Employee list</a>
+                <a class="collapse-item" href="/employee/add">Add Employee</a>
+                <a class="collapse-item" href="/employee/edit">Edit Employee</a>
+                <a class="collapse-item" href="/employee/single">Single Employee</a>
                
             </div>
         </div>

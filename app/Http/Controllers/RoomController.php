@@ -22,5 +22,14 @@ class RoomController extends Controller
     public function single()
     {
         return view("room.single");
+
+    }
+    public function store(Request $request)
+    {
+        return $request;
+    }
+    public function update(Request $request)
+    {
+        return $request;
     }
 }
