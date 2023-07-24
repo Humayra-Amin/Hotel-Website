@@ -3,6 +3,17 @@
 @section('content')
 
 <div class="container mt-3 ">
+
+@if ($errors->any())
+  <div class="alert alert-danger">
+      <ul>
+          @foreach ($errors->all() as $error)
+              <li>{{ $error }}</li>
+          @endforeach
+      </ul>
+  </div>
+@endif
+
 <h2 class="custom-h2">Add Employee</h2>
   
   <form action="{{ url('employee') }}" method="POST">
@@ -64,9 +75,9 @@
         <input type="nid" class="form-control" name="nid" id="nid" placeholder="Enter NID" required>
       </div>
       <div class="col-sm-6 form-group">
-        <label for="Country" class="custom-label">Position</label>
-        <select class="form-control custom-select browser-default">
-        <option value="">Select your Position</option>
+        <label for="position" class="custom-label">Position</label>
+        <select class="form-control custom-select browser-default" name="position">
+        <option >Select your Position</option>
       <option>Manager</option>
       <option>Assistant Manager</option>
       <option >Accountent</option>
@@ -79,8 +90,8 @@
 
       <div class="col-sm-6 form-group">
         <label for="sex" class="custom-label">Gender</label>
-        <select id="sex" class="form-control browser-default custom-select">
-        <option value="">Select Gender</option>
+        <select id="sex" class="form-control browser-default custom-select" name="sex">
+        <option >Select Gender</option>
           <option value="male">Male</option>
           <option value="female">Female</option>
           <option value="other">Others</option>
@@ -92,7 +103,7 @@
         <input type="Date" name="joiningdate" class="form-control" id="jdate" placeholder="" required>
       </div>
       <div class="col-sm-6 form-group">
-        <label for="Date">Salary</label>
+        <label for="Salary">Salary</label>
         <input type="number" name="salary" class="form-control" id="Salary" placeholder="" required>
       </div>
       <div class="col-sm-12">

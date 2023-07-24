@@ -20,9 +20,9 @@ return new class extends Migration
             $table->string('Locality');
             $table->string('email');
             $table->string('phone');
-            $table->string('date');
+            $table->string('dob');
             $table->string('nid');
-            $table->string('country');
+            $table->string('position');
             $table->string('sex');
             $table->string('salary');
             $table->string('joiningdate');
