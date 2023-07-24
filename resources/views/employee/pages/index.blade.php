@@ -46,6 +46,8 @@
                 </thead>
                 </div>
                 <tbody>
+
+                @foreach ($employees as $employee)
                     <tr>
                     <th scope="row">    
                     <div class="form-check-left">
@@ -53,7 +55,7 @@
                         <label class="form-check-label" for="flexCheckIndeterminate"></label>
                     </div>
                     </th>
-                    <td>001</td>
+                    <td>{{$employee->id}}</td>
                     <td>Fardin</td>
                     <td>Farabi</td>
                     <td>01 January</td>
@@ -68,187 +70,9 @@
                             <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
                         </td>
                     </tr>
-                    <tr>
-                    <th scope="row">
-                    <div class="form-check right">
-                        <!-- <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"> -->
-                        <!-- <label class="form-check-label" for="flexCheckIndeterminate"></label> -->
-                    </div>
-                    </th>
-                    <td>002</td>
-                    <td>Safayet</td>
-                    <td>Hossain</td>
-                    <td>03 February</td>
-                    <td>Assistent Manager</td>
-                    <td>Safayet@gmail.com</td>
-                    <td>01829821975</td>
-                    <!-- <td><button type="button" class="btn btn-dark">Show Price</td> -->
-                    <td>
-                    <td class="text-right">
-                            
-                            <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></button>
-                            <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></button>
-                            <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
-                        </td>
-                   </tr>
-                    <tr>
-                    <th scope="row">
-                    <div class="form-check-left">
-                        <!-- <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"> -->
-                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
-                    </div>
-                    </th>
-                    <td>003</td>
-                    <td>Momen</td>
-                    <td>Hoque</td>
-                    <td>01 January</td>
-                    <td>Manager</td>
-                    <td>hoque@gmail.com</td>
-                    <td>01776789627</td>
-                    <!-- <td><button type="button" class="btn btn-dark">Show Price</td> -->
-                    <td>
-                    <td class="text-right">
-                            <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></button>
-                            <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></button>
-                            <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
-                        </td>
-                    </tr>
-                    <tr>
-                    <th scope="row">
-                    <div class="form-check-left">
-                        <!-- <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"> -->
-                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
-                    </div>
-                    </th>
-                    <td>004</td>
-                    <td>Rodshi</td>
-                    <td>Rafiq</td>
-                    <td>09 March</td>
-                    <td>Receptionist</td>
-                    <td>hraid@gmail.com</td>
-                    <td>01929789620</td>
-                    <!-- <td><button type="button" class="btn btn-dark">Show Price</td> -->
-                    <td>
-                    <td class="text-right">
-                            <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></button>
-                            <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></button>
-                            <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
-                        </td>
-                    </tr>
-                    <tr>
-                    <th scope="row">
-                    <div class="form-check-left">
-                        <!-- <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"> -->
-                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
-                    </div>
-                    </th>
-                    <td>005</td>
-                    <td>Rakibul</td>
-                    <td>Khan</td>
-                    <td>04 April</td>
-                    <td>Security</td>
-                    <td>khan@gmail.com</td>
-                    <td>01629769627</td>
-                    <!-- <td><button type="button" class="btn btn-dark">Show Price</td> -->
-                    <td>
-                    <td class="text-right">
-                            <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></button>
-                            <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></button>
-                            <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
-                        </td>
-                     </tr>
-                    <tr>
-
-                    <th scope="row">
-                    <div class="form-check-left">
-                        <!-- <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"> -->
-                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
-                    </div>
-                    </th>
-                    <td>006</td>
-                    <td>Noky</td>
-                    <td>Ali</td>
-                    <td>08 May</td>
-                    <td>Room Service</td>
-                    <td>noky@gmail.com</td>
-                    <td>018789557</td>
-                    <!-- <td><button type="button" class="btn btn-dark">Show Price</td> -->
-                    <td>
-                    <td class="text-right">
-                            <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></button>
-                            <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></button>
-                            <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
-                        </td>
-                    </tr>
-                    <tr>
-                    <th scope="row">
-                    <div class="form-check-left">
-                        <!-- <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"> -->
-                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
-                    </div>
-                    </th>
-                    <td>007</td>
-                    <td>Tasnim</td>
-                    <td>Jerry</td>
-                    <td>03 June</td>
-                    <td>Accountent</td>
-                    <td>iqbal@gmail.com</td>
-                    <td>0199789627</td>
-                    <!-- <td><button type="button" class="btn btn-dark">Show Price</td> -->
-                    <td>
-                    <td class="text-right">
-                            <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></button>
-                            <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></button>
-                            <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
-                        </td>
-                     </tr>
-                    <tr>
-                    <th scope="row">
-                    <div class="form-check-left">
-                        <!-- <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"> -->
-                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
-                    </div>
-                    </th>
-                    <td>008</td>
-                    <td>Antu</td>
-                    <td>Baura</td>
-                    <td>16 June</td>
-                    <td>Room Service</td>
-                    <td>antu@gmail.com</td>
-                    <td>01729782796</td>
-                    <!-- <td><button type="button" class="btn btn-dark">Show Price</td> -->
-                    <td>
-                    <td class="text-right">
-                            <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></button>
-                            <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></button>
-                            <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
-                        </td>
-                       </tr>
-                    <tr>
-                    <th scope="row">
-                    <div class="form-check-left">
-                        <!-- <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"> -->
-                        <label class="form-check-label" for="flexCheckIndeterminate"></label>
-                    </div>
-                    </th>
-                    <td>009</td>
-                    <td>Rubel</td>
-                    <td>khan</td>
-                    <td>04 August</td>
-                    <td>Janitor</td>
-                    <td>Rubel@gmail.com</td>
-                    <td>01757789627</td>
-                    <!-- <td><button type="button" class="btn btn-dark">Show Price</td> -->
-                    <td>
-                    <td class="text-right">
-                            <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></button>
-                            <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></button>
-                            <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
-                        </td>
-
-                    </tr>
-                    
-                    </tr>
+                
+                    @endforeach
+                   
                 </tbody>
             </table>
             <nav aria-label="Page navigation example ">
