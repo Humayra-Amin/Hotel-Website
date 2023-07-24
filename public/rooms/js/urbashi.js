@@ -1,4 +1,4 @@
-console.log('jaima script loaded.');
+console.log('urbashi script loaded.');
 
 jQuery(document).ready(function () {
   
