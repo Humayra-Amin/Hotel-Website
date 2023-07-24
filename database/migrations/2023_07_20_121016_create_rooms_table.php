@@ -19,7 +19,6 @@ return new class extends Migration
           
            
 
-<<<<<<< HEAD
             $table->string(roomtitle);
             $table->string(buildingno);
             $table->string(roomno);
@@ -33,11 +32,6 @@ return new class extends Migration
             $table->text(description);
             $table->text(image);
 
-=======
-
-           $table->timestamps();
-          
->>>>>>> 65faa37f8eed8b949fcc808ad4839684d0bf9014
             
       
 
