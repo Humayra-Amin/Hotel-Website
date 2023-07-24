@@ -28,7 +28,7 @@ return new class extends Migration
             $table->string('roomview');
             $table->string('guestservice');
             $table->string('facilities');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->text('image')->nullable();
 
 

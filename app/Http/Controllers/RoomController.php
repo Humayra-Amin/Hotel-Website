@@ -10,7 +10,9 @@ class RoomController extends Controller
     //
     public function index()
     {
-        return view("room.index");
+
+        $rooms = Room::all();
+        return view("room.index")->with('rooms',  $rooms);
     }
     public function add()
     {
@@ -27,14 +29,17 @@ class RoomController extends Controller
     }
     public function store(Request $request)
     {
+
+        // dd($request);
+       
         $request->validate([
             'roomtitle' => 'required|max:20',
-            'buildingno' => 'required|integer|size:5',
-            'roomno' => 'required|integer|size:5',
-            'floorno' => 'required|integer|size:5',
+            'buildingno' => 'required|integer',
+            'roomno' => 'required|integer',
+            'floorno' => 'required|integer',
             'category' => 'required',
             'roomtype' => 'required',
-            'roomtsize' => 'required|integer|size:5',
+            'roomsize' => 'required|integer',
             'roomview' => 'required',
             'guestservice' => 'required',
             'facilities' => 'required',
@@ -54,6 +59,7 @@ class RoomController extends Controller
         $room->roomview = $request->roomview;
         $room->guestservice = $request->guestservice;
         $room->facilities = $request->facilities;
+        $room->description = $request->description;
         $room->save();
 
         return redirect("room");
