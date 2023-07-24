@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Room;
 use Illuminate\Http\Request;
 
 class RoomController extends Controller
@@ -26,7 +27,18 @@ class RoomController extends Controller
     }
     public function store(Request $request)
     {
-        return $request;
+        $request->validate([
+            'roomtitle' => 'required',
+            'buildingno' => 'required',
+
+        ]);
+
+
+        $room = new Room();
+        $room->roomtitle = $request->roomtitle;
+        $room->save();
+
+        return redirect("room");
     }
     public function update(Request $request)
     {

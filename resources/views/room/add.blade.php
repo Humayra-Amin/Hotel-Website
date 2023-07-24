@@ -3,6 +3,18 @@
 @section('app')
 <div id="content-wrapper" class="d-flex flex-column">
 
+
+  @if ($errors->any())
+  <div class="alert alert-danger">
+      <ul>
+          @foreach ($errors->all() as $error)
+              <li>{{ $error }}</li>
+          @endforeach
+      </ul>
+  </div>
+@endif
+
+
     <!-- Main Content -->
     <div id="content">
 
@@ -45,7 +57,7 @@
                         <div class="custom-form-inner">
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="roomtitle">Room Title</label>
-                              <input type="text" class="form-control" name="roomtitle" id="roomtitle" placeholder="Enter Room Name" required>
+                              <input type="text" class="form-control" name="roomtitle" id="roomtitle" placeholder="Enter Room Name">
                             </div>
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="buildingno">Building No</label>
