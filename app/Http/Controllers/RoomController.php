@@ -28,14 +28,32 @@ class RoomController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'roomtitle' => 'required',
-            'buildingno' => 'required',
+            'roomtitle' => 'required|max:20',
+            'buildingno' => 'required|integer|size:5',
+            'roomno' => 'required|integer|size:5',
+            'floorno' => 'required|integer|size:5',
+            'category' => 'required',
+            'roomtype' => 'required',
+            'roomtsize' => 'required|integer|size:5',
+            'roomview' => 'required',
+            'guestservice' => 'required',
+            'facilities' => 'required',
+
 
         ]);
 
 
         $room = new Room();
         $room->roomtitle = $request->roomtitle;
+        $room->buildingno = $request->buildingno;
+        $room->roomno = $request->roomno;
+        $room->floorno = $request->floorno;
+        $room->category = $request->category ;
+        $room->roomtype = $request->roomtype;
+        $room->roomsize = $request->roomsize;
+        $room->roomview = $request->roomview;
+        $room->guestservice = $request->guestservice;
+        $room->facilities = $request->facilities;
         $room->save();
 
         return redirect("room");
