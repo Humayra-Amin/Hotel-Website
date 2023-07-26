@@ -35,7 +35,7 @@
                   display: inline-block;
                   width: 100px;
                   height: 100px;
-                  object-fit: cover;
+                  object-fit: contain;
                   object-position: 80% 80%;
                   border: 3px solid #1e2cc8;
                   margin-right: 15px;
