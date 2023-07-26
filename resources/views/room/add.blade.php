@@ -4,15 +4,7 @@
 <div id="content-wrapper" class="d-flex flex-column">
 
 
-  @if ($errors->any())
-  <div class="alert alert-danger">
-      <ul>
-          @foreach ($errors->all() as $error)
-              <li>{{ $error }}</li>
-          @endforeach
-      </ul>
-  </div>
-@endif
+  @include('room.inc.message')
 
 
     <!-- Main Content -->
@@ -49,7 +41,7 @@
                  <div class="container mt-3">
                           <h2 class="text-left text-info1 custom-form-title">Add Rooms</h2>
                        
-                    <form action="{{ url('room') }}" method="POST">
+                    <form action="{{ url('room') }}" method="POST" enctype="multipart/form-data">
                       @csrf
   
                       <div class="row custom-jumbotron box8">
@@ -72,6 +64,8 @@
                               <input type="number" class="form-control" name="floorno" id="floorno" placeholder="Enter Floor No." required>
                             </div>
                           
+
+
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="Category">Category</label>
                               <select name="category" class="form-control custom-select browser-default">
@@ -84,6 +78,7 @@
                             </select>
                             </div>
                             
+                          
                             
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="roomtype">Room Type</label>
@@ -105,6 +100,8 @@
                               <label for="roomsize">Room Size</label>
                               <input type="number" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" required>
                             </div>
+
+
 
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="roomview">Room View</label>
@@ -165,7 +162,7 @@
                                 <div class="upload__btn-box">
                                   <label class="upload__btn">
                                     Upload Room Images
-                                    <input  name="image" type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                                    <input  name="image[]" type="file" multiple data-max_length="20" class="upload__inputfile">
                                   </label>
                                 </div>
                                 <div class="upload__img-wrap"></div>

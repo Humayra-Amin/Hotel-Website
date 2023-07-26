@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\Employee;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class EmployeeController extends Controller
 {
     //
     public function index()
     {
-        return view("employee.pages.index");
+        $employees = Employee::all();
+        return view("employee.pages.index")->with('employees',  $employees);
     }
     public function add()
     {
@@ -33,7 +35,7 @@ class EmployeeController extends Controller
         'eid' => 'required',
         'Locality' => 'required|max:150',
         'email' => 'required|email',
-        'phone' => 'required|integer',
+        'phone' => 'required',
         'dob' => 'required',
         'nid' => 'required|integer',
         'position' => 'required',
@@ -60,8 +62,18 @@ class EmployeeController extends Controller
 
     $employee->save();
 
-    return redirect("employee");
+  
+    Storage::disk("public")->put("$employee->id", $request->file('image'));
+    $employee->image= Storage::disk("public")->files($employee->id);
+    $employee->update();
+
+
+
+    return redirect("employee")->with("success", "Employee created.");
 }
+
+
+
 public function update(Request $request)
 {
     return $request;
