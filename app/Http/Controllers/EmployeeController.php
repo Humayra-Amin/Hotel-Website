@@ -10,7 +10,8 @@ class EmployeeController extends Controller
     //
     public function index()
     {
-        return view("employee.pages.index");
+        $employees = Employee::all();
+        return view("employee.pages.index")->with('employees',  $employees);
     }
     public function add()
     {
