@@ -46,6 +46,11 @@
         <div class="container">
         <div class="row">
             
+
+
+            @include('room.inc.message')
+
+
             <div class="col-md-12 d-flex align-items-center justify-content-between">
                 <h2>Rooms</h2>
                 <div class="d-flex align-items-center justify-content-between">
@@ -104,12 +109,19 @@
                                     <label class="form-check-label" for="flexCheckIndeterminate"></label>
                                 </div>
                                 </th>
-                                <td >{{$room->id}}</td>
+
+                                <td>{{$room->id}}</td>  
                                 <td>{{$room->roomtitle}}</td>  
                                 <td>{{$room->floorno}}</td>
                                 <td>{{$room->category}}</td>    
                                 <td>{{$room->Price}}</td>  
                               
+                                
+                                    {{-- @foreach ($room->image as $img)
+                                        <img src="{{Storage::disk("public")->url($img)}}" alt="" srcset="">
+                                    @endforeach --}}
+
+
                                 <td class="text-right">
                                 <span> <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></button></span>
                                 <span> <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></button></span>
