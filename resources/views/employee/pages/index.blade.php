@@ -96,12 +96,12 @@
                               </th>
 
                          <td>{{$employee->id}}</td>
-                    <td>{{$employee->firstname}}</td>
-                    <td>{{$employee->lastname}}</td>
-                    <td>{{$employee->joining}}</td>
+                    <td>{{$employee->fname}}</td>
+                    <td>{{$employee->lname}}</td>
+                    <td>{{$employee->joiningdate}}</td>
                     <td>{{$employee->position}}</td>
                     <td>{{$employee->email}}</td>
-                    <td>{{$employee->contact}}</td>  
+                    <td>{{$employee->phone}}</td>  
                               
                                 <td class="text-right">
                                 <span> <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></button></span>
