@@ -8,7 +8,7 @@
             
             
   <form>
-          <div class="row jumbotron box8">
+          <div class="row jumbotron box6">
        
           <div class="container">
             <img src="{{asset('employees/images/JR.jpg')}}" style="width:14%" >     
@@ -17,7 +17,7 @@
       <div class="col-sm-12 mx-t3 mb-4">
     <h2 class="text-center text-info"></h2>
 </div>    
-    <div class="col-sm-6  form-group">
+    <div class="col-sm-6 form-group">
 
         <label for="name-f" class="group-label">First Name</label>
         <p class="card-text">Jason</p>
@@ -65,9 +65,22 @@
       </div>
       <div class="col-sm-6 form-group">
         <label for="tel" class="group-label">Contact No.</label>
-        <p class="card-text"> +1 123-456-7890</p>
+        <p class="card-text"> +1 123-456-7690</p>
        
       </div>
+
+      <div class="col-sm-6 form-group">
+        <label for="join" class="group-label">Joining Date:</label>
+        <p class="card-text"> 12/07/2023</p>
+       
+      </div>
+
+      <div class="col-sm-6 form-group">
+        <label for="Sal" class="group-label">Salary</label>
+        <p class="card-text"> 3000</p>
+       
+      </div>
+
 
     </div>
   </form>
