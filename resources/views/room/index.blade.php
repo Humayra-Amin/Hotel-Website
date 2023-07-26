@@ -60,8 +60,8 @@
                         <!-- <input type="text" placeholder="Search a room"> -->
                     </form>
                     <button class="btn btn-primary ml-3">
-                        <i class="fa fa-plus"></i>
-                        Add Room
+                        <i class="fa fa-plus" href="/room/add"></i>
+                         Add Room 
                     </button>
                 </div>
             </div>

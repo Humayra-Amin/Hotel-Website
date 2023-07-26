@@ -74,6 +74,7 @@
             Elegantly furnished with solid wood furniture along with teak wood flooring, king sized bed with orthopedic bedding.
             
         </p>
+        
         </div>
 
         </div>
