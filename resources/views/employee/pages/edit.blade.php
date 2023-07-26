@@ -3,27 +3,27 @@
 @section('content')
 
 <div class="container mt-3">
-<h1 class="form-h1">Edit Employee</h1>
+<h2 class="form-h2">Edit Employee</h2>
 <form action="{{ url('employee') }}" method="POST">
     @csrf
     
-  <div class="row jumbotron box">
+  <div class="row jumbotron form-box8">
       
       
-      <div class="col-sm-6 form-group">
+      <div class="col-sm-3 form-group">
     <h2 class="form-text-color">Personal Information</h2>
 </div>
-<div class="col-md-6 form-group form-input-image" >
-      <div class="d-flex align-items-center justify-content-start">
-        <img id="image_upload" src="http://placehold.it/100" alt="your image" class="form-upload-image" />
-          <div class="form-input-image-upload">
+<div class="col-md-6 form-group form-input-file" >
+<div class="d-flex align-items-center justify-content-end">
+        <img id="file_upload" src="http://placehold.it/100" alt="your image" class="form-upload-img" />
+          <div class="form-input-file-upload">
             <span class="form-upload-label">Upload Image</span>
-            <input type='file' onchange="readURL(this);" />
+            <input type='file' name="image" onchange="readURL(this);" />
           </div>
       </div>
-
+</div>
         
-      </div>
+     
                         
     <div class="col-sm-6  form-group">
         <label for="name-f" class="form-label">First Name</label>
