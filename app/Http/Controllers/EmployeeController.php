@@ -34,7 +34,7 @@ class EmployeeController extends Controller
         'eid' => 'required',
         'Locality' => 'required|max:150',
         'email' => 'required|email',
-        'phone' => 'required|integer',
+        'phone' => 'required',
         'dob' => 'required',
         'nid' => 'required|integer',
         'position' => 'required',
