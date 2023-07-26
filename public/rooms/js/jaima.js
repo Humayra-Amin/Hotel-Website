@@ -1,14 +1,8 @@
-console.log('jaima script loaded.');
-
-jQuery(document).ready(function () {
-  
-  ImgUpload();
-});
-
+//multiple file upload function
 function ImgUpload() {
   var imgWrap = "";
   var imgArray = [];
-
+ 
   jQuery('.upload__inputfile').each(function () {
     jQuery(this).on('change', function (e) {
       imgWrap = jQuery(this).closest('.upload__box').find('.upload__img-wrap');
@@ -17,9 +11,11 @@ function ImgUpload() {
       var files = e.target.files;
       var filesArr = Array.prototype.slice.call(files);
       var iterator = 0;
-      filesArr.forEach(function (f, index) {
+      filesArr.forEach(function (f, index) 
+      {
 
-        if (!f.type.match('image.*')) {
+        if (!f.type.match('image.*')) 
+        {
           return;
         }
 
@@ -61,3 +57,5 @@ function ImgUpload() {
     jQuery(this).parent().parent().remove();
   });
 }
+
+//
