@@ -19,7 +19,7 @@
 </div>    
     <div class="col-sm-6 form-group">
 
-        <label for="name-f" class="group-label">First Name</label>
+        <label for="name-f" class="group-label ">First Name</label>
         <p class="card-text">Jason</p>
         
       </div>

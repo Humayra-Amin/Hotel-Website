@@ -1,10 +1,9 @@
 function readURL(input) {
+    let elem = document.querySelector('#file_upload');
     if (input.files && input.files[0]) {
-        var reader = new FileReader();
-
+        let reader = new FileReader();
         reader.onload = function (e) {
-            $('#file_upload')
-                .attr('src', e.target.result);
+            elem.src = e.target.result;
         };
         reader.readAsDataURL(input.files[0]);
     }

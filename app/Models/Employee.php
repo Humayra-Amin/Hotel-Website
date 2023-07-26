@@ -25,4 +25,7 @@ class Employee extends Model
         'position',
         'image',
     ];
+    protected $casts = [
+        'image' => 'array',
+    ];
 }

@@ -4,20 +4,14 @@
 
 <div class="container mt-3 ">
 
-@if ($errors->any())
-  <div class="alert alert-danger">
-      <ul>
-          @foreach ($errors->all() as $error)
-              <li>{{ $error }}</li>
-          @endforeach
-      </ul>
-  </div>
-@endif
+
+@include('employee.inc.message')
+
 
 <h2 class="custom-h2">Add Employee</h2>
   
-  <form action="{{ url('employee') }}" method="POST">
-    @csrf
+       <form action="{{ url('employee') }}" method="POST" enctype="multipart/form-data">
+                      @csrf
 
     <div class="row jumbotron custom-box8">
       
@@ -31,7 +25,7 @@
 													<img id="file_upload" src="http://placehold.it/100" alt="your image" class="custom-upload-img" />
 													<div class="custom-input-file-upload">
 														<span class="custom-upload-label">Upload Image</span>
-														<input type='file' onchange="readURL(this);" />
+														<input type='file' name="image" onchange="readURL(this);" />
 													</div>
 												</div>
                         

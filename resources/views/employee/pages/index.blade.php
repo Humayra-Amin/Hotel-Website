@@ -7,7 +7,7 @@
 
 
 
-
+@include('employee.inc.message')
        
 
             <!-- Main Content -->
