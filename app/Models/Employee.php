@@ -22,6 +22,7 @@ class Employee extends Model
         'joiningdate',
         'sex',
         'salary',
+        'position',
         'image',
     ];
 }

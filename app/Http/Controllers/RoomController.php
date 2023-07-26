@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Room;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+
 
 class RoomController extends Controller
 {
@@ -29,9 +31,6 @@ class RoomController extends Controller
     }
     public function store(Request $request)
     {
-
-        // dd($request);
-       
         $request->validate([
             'roomtitle' => 'required|max:20',
             'buildingno' => 'required|integer',
@@ -62,7 +61,16 @@ class RoomController extends Controller
         $room->description = $request->description;
         $room->save();
 
-        return redirect("room");
+
+        foreach($request->file('image') as $img){
+            Storage::disk("public")->put("$room->id", $img);
+        }
+        $room->image= Storage::disk("public")->files($room->id);
+        $room->update();
+
+
+
+        return redirect("room")->with("success", "Room created.");
     }
     public function update(Request $request)
     {
