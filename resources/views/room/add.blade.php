@@ -72,6 +72,8 @@
                               <input type="number" class="form-control" name="floorno" id="floorno" placeholder="Enter Floor No." required>
                             </div>
                           
+
+                            
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="Category">Category</label>
                               <select name="category" class="form-control custom-select browser-default">
@@ -105,6 +107,8 @@
                               <label for="roomsize">Room Size</label>
                               <input type="number" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" required>
                             </div>
+
+
 
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="roomview">Room View</label>
