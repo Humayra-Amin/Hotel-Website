@@ -50,9 +50,9 @@
         <input type="nid" class="form-control" name="nid" id="nid" placeholder="Enter NID" required>
       </div>
       <div class="col-sm-6 form-group">
-        <label for="Country" class="form-label">Position</label>
-        <select class="form-control custom-select browser-default">
-        <option value="">Select your Position</option>
+        <label for="position" class="form-label">Position</label>
+        <select class="form-control custom-select browser-default" name="position">
+        <option >Select your Position</option>
       <option>Manager</option>
       <option>Assistant Manager</option>
       <option >Accountent</option>
@@ -68,8 +68,8 @@
       </div>
       <div class="col-sm-6 form-group">
         <label for="sex" class="form-label">Gender</label>
-        <select id="sex" class="form-control browser-default custom-select">
-        <option value="">Select Gender</option>
+        <select id="sex" class="form-control browser-default custom-select" name="sex">
+        <option >Select Gender</option>
           <option value="male">Male</option>
           <option value="female">Female</option>
           <option value="other">Others</option>
@@ -80,11 +80,11 @@
         <input type="tel" name="phone" class="form-control" id="tel" placeholder="Enter Contact Number" required>
       </div>
       <div class="col-sm-6 form-group">
-        <label for="Date" class="custom-label">Joining Date</label>
+        <label for="Date" class="form-label">Joining Date</label>
         <input type="Date" name="joiningdate" class="form-control" id="jdate" placeholder="" required>
       </div>
       <div class="col-sm-6 form-group">
-        <label for="Date">Salary</label>
+        <label for="Date" class="form-label">Salary</label>
         <input type="number" name="salary" class="form-control" id="Salary" placeholder="" required>
       </div>
       <div class="col-sm-12">
