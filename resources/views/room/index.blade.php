@@ -106,11 +106,11 @@
                                 </div>
                                 </th>
 
-                                <td>{{$room->id}}</td>  
+                                <td>{{$room->roomno}}</td>  
                                 <td>{{$room->roomtitle}}</td>  
                                 <td>{{$room->floorno}}</td>
                                 <td>{{$room->category}}</td>    
-                                <td>{{$room->Price}}</td>  
+                                <td>{{$room->price}}</td>  
                               
                                 
                                     {{-- @foreach ($room->image as $img)
