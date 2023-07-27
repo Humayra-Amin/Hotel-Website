@@ -33,9 +33,9 @@ class RoomController extends Controller
     {
         $request->validate([
             'roomtitle' => 'required|max:20',
-            'buildingno' => 'required|integer',
             'roomno' => 'required|integer',
             'floorno' => 'required|integer',
+            'price' => 'required|integer',
             'category' => 'required',
             'roomtype' => 'required',
             'roomsize' => 'required|integer',
@@ -49,9 +49,9 @@ class RoomController extends Controller
 
         $room = new Room();
         $room->roomtitle = $request->roomtitle;
-        $room->buildingno = $request->buildingno;
         $room->roomno = $request->roomno;
         $room->floorno = $request->floorno;
+        $room->price = $request->price;
         $room->category = $request->category ;
         $room->roomtype = $request->roomtype;
         $room->roomsize = $request->roomsize;
