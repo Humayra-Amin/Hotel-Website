@@ -4,13 +4,8 @@
 
 <div class="card-container ">
     
-<img id="file_upload" src="http://placehold.it/100" alt="your image" class="custom-upload-img" />
-													<div class="custom-input-file-upload">
-														<span class="custom-upload-label">Upload Image</span>
-														<input type='file' name="image" onchange="readURL(this);" />
-													</div>
-												
-                       
+ <img src="{{asset('employees/images/JR.jpg')}}" style="width:14%" >
+												   
 
     <div class="details">
                 <h2>Fardin Farabi Chowdhury</h2>
@@ -22,5 +17,5 @@
             </div>
 
     </div>
-</div>
+
 @endsection
