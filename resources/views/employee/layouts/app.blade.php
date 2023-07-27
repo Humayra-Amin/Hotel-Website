@@ -27,7 +27,8 @@
    <link rel="stylesheet" href="{{asset('employees/css/humayra.css')}}">
 
    <script  src="{{asset('employees/js/humayra.js')}}"></script>
-    
+   <script  src="{{asset('employees/js/tushin.js')}}"></script>
+
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="{{asset('employees/css/tushin.css')}}">

@@ -1,26 +1,5 @@
-            .group-container {
-                position: relative;
-                
-            }
-            
-            
-            img { 
-                
-              /* center */
-              margin-top: -45px;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-              }
-                
-              
-            
-        
-            .group-h1
-            {
-                  color: black;
-                  font-size: 40px;
 
+<<<<<<< HEAD
             }
         
         
@@ -45,3 +24,25 @@
 
 
              
+=======
+  
+ p {
+  font-size: 14px;
+  line-height: 21px;
+ }
+  
+ .card-container {
+  background-color: #eaecf4;
+  border-radius: 2px;
+  box-shadow: 10px 10px 15px #e3e6f0;
+  color: black;
+  padding: 30px 0 0;
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+  margin: 20px 0;
+ }
+
+  
+>>>>>>> 54ea1f82afa780e57363bf1e1c2a13aa8f139e24

@@ -21,14 +21,14 @@
 </div>
 <div class="col-md-6 form-group custom-input-file ">
 
-
+                           <div class="d-flex align-items-center justify-content-start">
 													<img id="file_upload" src="http://placehold.it/100" alt="your image" class="custom-upload-img" />
 													<div class="custom-input-file-upload">
 														<span class="custom-upload-label">Upload Image</span>
 														<input type='file' name="image" onchange="readURL(this);" />
 													</div>
 												</div>
-                        
+                       </div>
     <div class="col-sm-6  form-group">
         <label for="name-f" class="custom-label">First Name</label>
         <input type="text" class="form-control" name="fname" id="name-f" placeholder="Enter first name" required>
