@@ -45,6 +45,7 @@ class EmployeeController extends Controller
     ]);
 
 
+
     $employee = new Employee();
     $employee->fname = $request->fname;
     $employee->lname = $request->lname;
@@ -59,7 +60,7 @@ class EmployeeController extends Controller
     $employee->salary = $request->salary;
     $employee->joiningdate = $request->joiningdate;
 
-    $employee->save();
+    // $employee->save();
 
     return redirect("employee");
 }

@@ -95,7 +95,7 @@
                                 </div>
                               </th>
 
-                         <td>{{$employee->id}}</td>
+                         <td>{{$employee->eid}}</td>
                     <td>{{$employee->fname}}</td>
                     <td>{{$employee->lname}}</td>
                     <td>{{$employee->joiningdate}}</td>
@@ -123,8 +123,8 @@
                                 <span> <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></button></span>
                                 <span> <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i></span>
                                 </td>
-                                 </tr> -->
-                            
+                                 </tr>
+                             -->
 
                         @endforeach
                         </tbody>
