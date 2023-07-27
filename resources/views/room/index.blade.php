@@ -113,10 +113,7 @@
                                 <td>{{$room->price}}</td>  
                               
                                 
-                                    {{-- @foreach ($room->image as $img)
-                                        <img src="{{Storage::disk("public")->url($img)}}" alt="" srcset="">
-                                    @endforeach --}}
-
+                                
 
                                 <td class="text-right">
                                 <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></button>

@@ -12,7 +12,6 @@ class RoomController extends Controller
     //
     public function index()
     {
-
         $rooms = Room::all();
         return view("room.index")->with('rooms',  $rooms);
     }
@@ -75,5 +74,12 @@ class RoomController extends Controller
     public function update(Request $request)
     {
         return $request;
+    }
+
+    public function show($id)
+    { 
+       $room=Room::where("id",$id)->firstOrfail();
+       return view("room.single")->with('room',  $room);
+
     }
 }

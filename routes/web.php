@@ -20,6 +20,7 @@ use App\Http\Controllers\RoomController;
 
 Route::get('/', [Controller::class, "index"]);
 Route::get('/room/', [RoomController::class, "index"]);
+Route::get('/room/{id}', [RoomController::class, "show"]);
 Route::post('/room', [RoomController::class, "store"]);
 Route::put('/room', [RoomController::class, "update"]);
 Route::get('/room/add', [RoomController::class, "add"]);
