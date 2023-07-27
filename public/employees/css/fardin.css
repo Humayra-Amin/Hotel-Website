@@ -1,26 +1,34 @@
+.group-h2
+{
+  color:#141414;
+  font-family: roboto;
+
+}
+
 .group-container {
   position: relative;
   
 }
-
+.group-fonts{
+  font-family: roboto;
+ 
+}
 
 img { 
   
-/* center */
-margin-top: -45px;
-  /* display: block; */
+
+ margin-top: -25px;
+
   margin-left: auto;
   margin-right: auto;
 }
   
 
 
-
-.group-h1
+p
 {
-    color: black;
-    font-size: 40px;
-
+  color: black;
+  /* font-size: 40px; */
 }
 
 
@@ -43,16 +51,10 @@ margin-top: -45px;
   color: hsl(216, 100%, 2%);
 }
 
-.card-title 
-        {  font-family: roboto;
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: rgb(0, 4, 10);
-            
-            
-        }
-
-
-
-             
+.card-title { 
+  font-family: roboto;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: rgb(0, 4, 10);    
+}

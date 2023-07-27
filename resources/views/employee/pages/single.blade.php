@@ -2,93 +2,34 @@
 
 @section('content')
 
-<div class="container mt-3">
- <div class="card-text">
-        <h1 class="form-h1">Single Employee</h1>
-            
-            
-  <form>
-          <div class="row jumbotron box6">
-       
-          <div class="container">
-            <img src="{{asset('employees/images/JR.jpg')}}" style="width:14%" > 
-            <h2 class="card-title">Jason Roy</h2>    
-          </div>
+    
+<div class=container>
+<h2 class="group-h2">Employee Details</h2><br><br><br>
+<div class= "row">
+<div class="col-md-6 mt-4 mb-2">
+<div class="slider">
 
-      <div class="col-sm-10 mx-t3 mb-4">
-    <h2 class="text-center text-info"></h2>
-</div>    
-    <div class="col-sm-6 form-group">
-
-        <label for="name-f" class="group-label ">First Name</label>
-      
-        <p class="card-text">Jason</p>
-        
-      </div>
-      <div class="col-sm-6 form-group">
-        <label for="name-l" class="group-label">Last name</label>
-        <p class="card-text">Roy</p>
-        
-      </div>
-      <div class="col-sm-6 form-group">
-        <label for="name-e" class="group-label">Employee Id</label>
-        <p class="card-text">234</p>
-       
-      </div>
-      <div class="col-sm-6 form-group">
-        <label for="address-1" class="group-label">Present Address</label>
-        <p class="card-text" >House no-30,Flo Rida,USA</p>
-       
-      </div>
-        <div class="col-sm-6 form-group">
-        <label for="email" class="group-label">Email</label>
-        <p class="card-text">JasonRoy@gmail.com</p>
-        
-      </div>
-      <div class="col-sm-6 form-group">
-        <label for="email" class="group-label">Input NID</label>
-        <p class="card-text">234567</p>
-        
-      </div>
-      <div class="col-sm-6 form-group">
-        <label for="Country" class="group-label">Position</label>
-        <p class="card-text">Front Desk Receptionist</p>
-        
-      </div>
-      <div class="col-sm-6 form-group">
-        <label for="Date" class="group-label">Date Of Birth</label>
-        <p class="card-text"> 01/05/1995</p>
-        
-      </div>
-      <div class="col-sm-6 form-group">
-        <label for="sex" class="group-label">Gender</label>
-        <p class="card-text">Male</p>
-        
-      </div>
-      <div class="col-sm-6 form-group">
-        <label for="tel" class="group-label">Contact No.</label>
-        <p class="card-text"> +1 123-456-7690</p>
-       
-      </div>
-
-      <div class="col-sm-6 form-group">
-        <label for="join" class="group-label">Joining Date:</label>
-        <p class="card-text"> 12/07/2023</p>
-       
-      </div>
-
-      <div class="col-sm-6 form-group">
-        <label for="Sal" class="group-label">Salary</label>
-        <p class="card-text"> 3000</p>
-       
-      </div>
-
-
+    <div>
+    <img src="{{asset('employees/images/JR.jpg')}}" class="d-block w-50" >  
     </div>
-  </form>
 </div>
-    </form>
-        </div>
+
+</div>
+
+<div class="col-md-6 group-fonts">
+<div class="employee-details mt-4 mb-2">
+
+<h2 class="group-h2">Jason Roy</h2>
+                <p>Employee Id: 234</p>
+                <p>Position: Manager</p>
+                <p>email:Jasonroy10@gmail.com</p>
+                <p>Present Address: House no: 10</p>
+                <p>Gender: Male</p>
+                <p>Joining Date: 12/02/2023</p>
+                <p>Phone: +123 456 7890</p>
+</div>
+</div>
+</div>
 
 
 
