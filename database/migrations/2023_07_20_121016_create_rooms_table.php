@@ -19,9 +19,9 @@ return new class extends Migration
           
         
             $table->string('roomtitle');
-            $table->string('buildingno');
             $table->string('roomno');
             $table->string('floorno');
+            $table->string('price');
             $table->string('category');
             $table->string('roomtype');
             $table->string('roomsize');

@@ -43,15 +43,13 @@
             {{-- <div id="roomImageSlider"> --}}
             <div class="slider">
                 <!-- room images here -->
+              
+                 
+                @foreach ($room->image as $img)
                 <div>
-                    <img src="{{ asset('image/room-image1.jpg') }}" class="d-block w-100" alt="Room Image 1">
+                    <img src='{{Storage::disk("public")->url($img)}}' class="d-block w-100" alt="Room Image 1">
                 </div>
-                <div>
-                    <img src="{{ asset('image/room-image2.jpg') }}" class="d-block w-100" alt="Room Image 2">
-                </div>
-                <div>
-                    <img src="{{ asset('image/room-image3.jpg') }}" class="d-block w-100" alt="Room Image 2">
-                </div>
+                @endforeach
             </div>
            
 
@@ -59,20 +57,14 @@
     
     <div class="col-md-6 customize-fonts">
         <div class="room-details mt-4 mb-2">
-        <h2 class="room-title customize-fonts-title">Deluxe Double Room</h2>
-        <p>Room Type: Deluxe</p>
-        <p>Category: Standard</p>
-        <p>Room Size: 256 square feet</p>
-        <p class="mb-2"> Room Facilities: </p>
-           <p> <span class=".d-block mr-2"><i class="fas fa-wifi"></i> Free Wi-Fi</span>  <span class=".d-block mr-2"> <i class="fas fa-tv"></i> Flat-screen TV </span>
-            <span class=".d-block mr-2"> <i class="fas fa-coffee"></i> Coffee Maker</span> <span class=".d-block mr-2"><i class="fas fa-bed"></i> King-sized Bed</span>
-            <span class=".d-block mr-2"><i class="fas fa-swimming-pool"></i>Pool</span> <span class=".d-block mr-2"> <i class="fa-solid fa-volume-xmark"></i></i>Sound Proofing</span>
-             <span class=".d-block mr-2"><i class="fas fa-city facility-item"></i>City View</span>  <span class=".d-block mr-2"><i class="fas fa-bath facility-item"></i>Private Bathroom </span></p>
-        <p>View: City View</p>
-        <p class="room-details">
-            Featuring free toiletries, this double room includes a private bathroom with a bath, a shower and a hairdryer. This double room has air conditioning, flat-screen TV with cable channels, city views, as well as fruit for guests. The unit has 1 bed.
-            Elegantly furnished with solid wood furniture along with teak wood flooring, king sized bed with orthopedic bedding.
-            
+        <h2 class="room-title customize-fonts-title">{{$room->roomtitle}}</h2>
+        <p>Room Type: {{$room->roomtype}}</p>
+        <p>Category: {{$room->category}} </p>
+        <p>Room Size:{{$room->roomsize}}</p>
+        <p class="mb-2"> Room Facilities:{{$room->facilities}} </p>
+          
+        <p>View:{{$room->roomview}} </p>
+        <p class="room-details">{{$room->description}}
         </p>
         
         </div>

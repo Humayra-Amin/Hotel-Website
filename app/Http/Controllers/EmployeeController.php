@@ -46,6 +46,7 @@ class EmployeeController extends Controller
     ]);
 
 
+
     $employee = new Employee();
     $employee->fname = $request->fname;
     $employee->lname = $request->lname;
@@ -77,5 +78,12 @@ class EmployeeController extends Controller
 public function update(Request $request)
 {
     return $request;
+}
+public function show($id)
+{
+    $employee=Employee::where("id",$id)->firstOrfail();
+
+    
+    return view("employee.pages.single")->with('employee',  $employee);
 }
 }
