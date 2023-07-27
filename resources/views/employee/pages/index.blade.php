@@ -7,7 +7,6 @@
 
 
 
-@include('employee.inc.message')
        
 
             <!-- Main Content -->
@@ -38,6 +37,9 @@
             
             <div class="col-md-12 d-flex align-items-center justify-content-between">
                 <h2>Employee</h2>
+
+                @include('employee.inc.message')
+
                 <div class="d-flex align-items-center justify-content-between">
                     <form>
                     <div class="input-group">
@@ -90,7 +92,6 @@
                             <tr>
                                 <td scope="row">    
                                 <div class="form-check-left">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
                                     <label class="form-check-label" for="flexCheckIndeterminate"></label>
                                 </div>
                               </th>
@@ -141,7 +142,6 @@
                       <li class="page-item"><a class="page-link" href="#">2</a></li>
                       <li class="page-item"><a class="page-link" href="#">3</a></li>
                       <li class="page-item"><a class="page-link" href="#">4</a></li>
-          
                       <li class="page-item"><a class="page-link" href="#">&Rang;</a></li>
                     </ul>
                 </div>

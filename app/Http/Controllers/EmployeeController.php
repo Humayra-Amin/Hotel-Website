@@ -61,7 +61,7 @@ class EmployeeController extends Controller
     $employee->salary = $request->salary;
     $employee->joiningdate = $request->joiningdate;
 
-    // $employee->save();
+    $employee->save();
 
   
     Storage::disk("public")->put("$employee->id", $request->file('image'));
