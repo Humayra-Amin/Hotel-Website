@@ -78,4 +78,11 @@ public function update(Request $request)
 {
     return $request;
 }
+public function show($id)
+{
+    $employee=Employee::where("id",$id)->firstOrfail();
+
+    
+    return view("employee.pages.single")->with('employee',  $employee);
+}
 }
