@@ -64,10 +64,10 @@
                         
                         <!-- <input type="text" placeholder="Search a room"> -->
                     </form>
-                    <button class="btn btn-primary ml-3">
-                        <i class="fa fa-plus" href="/room/add"></i>
+                    <a class="btn btn-primary ml-3" href="/room/add">
+                        <i class="fa fa-plus"></i>
                          Add Room 
-                    </button>
+                    </a>
                 </div>
             </div>
             
@@ -116,8 +116,8 @@
                                 
 
                                 <td class="text-right">
-                                <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></button>
-                                <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></button>
+                                <a href="/room/{{$room->id}}" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></a>
+                                <a href="" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></a>
                                  <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
                                 </td>
 

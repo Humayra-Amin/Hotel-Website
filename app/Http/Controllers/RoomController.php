@@ -30,6 +30,7 @@ class RoomController extends Controller
     }
     public function store(Request $request)
     {
+
         $request->validate([
             'roomtitle' => 'required|max:20',
             'roomno' => 'required|integer',
