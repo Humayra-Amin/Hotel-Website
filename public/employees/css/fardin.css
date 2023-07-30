@@ -1,58 +1,79 @@
-.group-container {
-  position: relative;
-  
-}
 
 
-img { 
-  
-/* center */
-margin-top: -45px;
-  /* display: block; */
-  margin-left: auto;
-  margin-right: auto;
-}
-  
-
-
-
-.group-h1
-{
-    color: black;
-    font-size: 40px;
-
-}
-
-
-.group-box8
-{
-  box-shadow: 0px 0px 5px 1px #ddd;
-}
-
-.group-label 
-{
-  text-align: right;
-  font-weight: 600;
-  color: #2023e5;
-}
-.card-text
-{      
+.label{
   font-family: roboto;
-  margin-bottom: 30px;
+  font-weight:bold ;
+  color:black;
   font-size: 18px;
-  color: hsl(216, 100%, 2%);
 }
 
-.card-title 
-        {  font-family: roboto;
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: rgb(0, 4, 10);
-            
-            
-        }
 
 
-
-             
+.aaa{
+  margin-left: 65px;
+  
+  }
+  
+  .bbb
+  {
+      margin-left: 50px;
+  }
+  
+  .CCC{
+      margin-top: 20px;
+      margin-left: 40px;
+      font-weight: bold;
+  }
+  
+  
+  .group-container {
+      margin: 50px;
+      padding: 35px;
+      background-color: rgb(171, 208, 228);
+     
+   
+  }
+  
+  
+  
+  
+  .image
+  { 
+     border-radius: 70%;
+      margin-top: 45px;
+      margin-left: 45px;
+      width: 180px;
+      height: 200px;
+     
+      /* Border-radius: 4px; */
+     
+      /* object-fit: contain; */
+  }
+  
+  .group-card-title 
+  {  
+      font-size: 34px;
+      font-weight: bold;
+      margin-top: 14px;
+      margin-left: 55px;
+      color: black;
+  }
+  
+  
+  
+   .card-text 
+   {   
+      
+      font-family: 'Work Sans', sans-serif;
+      margin-bottom: 10px;
+      font-size: 16px;
+      font: bold;
+      color: black;
+      
+   }
+  
+  
+  
+  
+  
+  

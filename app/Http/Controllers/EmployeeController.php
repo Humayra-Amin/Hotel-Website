@@ -46,6 +46,7 @@ class EmployeeController extends Controller
     ]);
 
 
+
     $employee = new Employee();
     $employee->fname = $request->fname;
     $employee->lname = $request->lname;
