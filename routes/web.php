@@ -29,10 +29,16 @@ Route::get('/room/single', [RoomController::class, "single"]);
 Route::get('/employee/', [EmployeeController::class, "index"]);
 Route::get('/employee/add', [EmployeeController::class, "add"]);
 Route::get('/employee/edit', [EmployeeController::class, "edit"]);
+<<<<<<< HEAD
+=======
 Route::get('/employee/{id}', [EmployeeController::class, "show"]);
 Route::post('/employee', [EmployeeController::class, "store"]);
 Route::put('/employee', [EmployeeController::class, "update"]);
+>>>>>>> c6f2b38c7225d0145b6f124f3e2ed09cd00a55f5
 Route::get('/employee/single', [EmployeeController::class, "single"]);
+Route::get('/employee/{id}', [EmployeeController::class, "show"]);
+Route::post('/employee', [EmployeeController::class, "store"]);
+Route::put('/employee', [EmployeeController::class, "update"]);
 Route::get('/drag-and-drop', 'DragAndDropController@index')->name('drag-and-drop');
 Route::post('/drag-and-drop/update', 'DragAndDropController@update')->name('drag-and-drop.update');
 
