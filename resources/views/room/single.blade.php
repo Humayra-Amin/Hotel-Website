@@ -44,17 +44,14 @@
             <div class="slider">
                 <!-- room images here -->
               
-                 
-                {{-- @if (èmpty($room->image) >0)
+{{--                  
+                @if (empty($room->image) >0) --}}
                     @foreach ($room->image as $img)
                     <div>
-                        <img src='{{Storage::disk("public")->url($img)}}' class="d-block w-100" alt="Room Image 1">
+                        <img src='{{Storage::disk("public")->url($img)}}' class="d-block w-100" >
                     </div>
                     @endforeach
-                @else
-                    
-                @endif --}}
-                
+              
             
             </div>
            
