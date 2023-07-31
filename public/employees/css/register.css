@@ -1,0 +1,39 @@
+
+            .small{
+                margin-right: 50px;
+                font-weight: bold;
+            }
+
+
+            .container{         
+            background: linear-gradient(to right, rgb(96, 124, 185) , rgb(170, 209, 224));
+            padding: 140px;
+            font-family: 'PT Sans', sans-serif;
+            }
+
+
+            h2{
+
+            padding-top: 1.5rem;
+
+            }
+
+
+
+            .form-control{
+
+            margin-bottom: 1.3rem;
+            }
+
+
+            .form-control:focus {
+
+            color: #000000;
+            background-color: #226dc4;           
+            }
+
+            .form-control:hover {
+            background-color: rgb(161, 171, 226);
+            }
+
+
