@@ -19,10 +19,6 @@ class RoomController extends Controller
     {
         return view("room.add");
     }
-    public function edit()
-    {
-        return view("room.edit");
-    }
     public function single()
     {
         return view("room.single");
@@ -72,15 +68,61 @@ class RoomController extends Controller
 
         return redirect("room")->with("success", "Room created.");
     }
-    public function update(Request $request)
-    {
-        return $request;
+    public function update(Request $request,$id)
+    {   
+        $request->validate([
+            'roomtitle' => 'required|max:20',
+            'roomno' => 'required|integer',
+            'floorno' => 'required|integer',
+            'price' => 'required|integer',
+            'category' => 'required',
+            'roomtype' => 'required',
+            'roomsize' => 'required|integer',
+            'roomview' => 'required',
+            'guestservice' => 'required',
+            'facilities' => 'required',
+
+
+        ]);
+
+
+        $room = Room::find($id);
+        $room->roomtitle = $request->roomtitle;
+        $room->roomno = $request->roomno;
+        $room->floorno = $request->floorno;
+        $room->price = $request->price;
+        $room->category = $request->category ;
+        $room->roomtype = $request->roomtype;
+        $room->roomsize = $request->roomsize;
+        $room->roomview = $request->roomview;
+        $room->guestservice = $request->guestservice;
+        $room->facilities = $request->facilities;
+        $room->description = $request->description;
+        $room->update();
+
+
+        foreach($request->file('image') as $img){
+            Storage::disk("public")->put("$room->id", $img);
+        }
+        $room->image= Storage::disk("public")->files($room->id);
+        $room->update();
+
+        return redirect("room")->with("success", "Room updated.");
+
     }
 
     public function show($id)
     { 
        $room=Room::where("id",$id)->firstOrfail();
        return view("room.single")->with('room',  $room);
+
+    }
+
+    public function edit($id)
+    { 
+
+       $room=Room::where("id",$id)->firstOrfail();
+       return view("room.edit")->with('room',  $room);
 
     }
 }
