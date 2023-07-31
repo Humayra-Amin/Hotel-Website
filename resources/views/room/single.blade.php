@@ -73,7 +73,7 @@
         <p class="mb-2">{{$f}} </p>
         @endforeach
 
-        <p>View:{{$room->roomview}} </p>
+        <p>View: {{$room->roomview}} </p>
         <p class="room-details">{{$room->description}}
         </p>
         
