@@ -24,7 +24,6 @@ Route::get('/room/add', [RoomController::class, "add"]);
 Route::get('/room/{id}', [RoomController::class, "show"]);
 Route::post('/room', [RoomController::class, "store"]);
 Route::put('/room', [RoomController::class, "update"]);
-
 Route::get('/room/edit', [RoomController::class, "edit"]);
 Route::get('/room/single', [RoomController::class, "single"]);
 Route::get('/employee/', [EmployeeController::class, "index"]);
