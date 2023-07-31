@@ -132,15 +132,15 @@
                               <label for="view">Facilities</label>
                               <select class="form-control custom-select browser-default" multiple>
                                 {{-- <option value="{{$room->facilities}}">Select Facilities</option> --}}
-                              <option>Free Wi-Fi</option>
-                              <option>Flat-screen TV</option>
-                              <option >Coffee Maker</option>
-                              <option >Pool</option>
-                              <option >24 Hour security</option>
-                              <option >Car parking</option>
-                              <option >Poolside bar</option>
-                              <option >Disable rooms & Interconnecting room</option>
-                              <option >Sunset boat trip</option>
+                              <option {{in_array("Free Wi-Fi",$room->facilities) ? 'selected' : '' }}>Free Wi-Fi</option>
+                              <option {{in_array("Flat-screen TV",$room->facilities) ? 'selected' : '' }}>Flat-screen TV</option>
+                              <option {{in_array("Coffee Maker",$room->facilities) ? 'selected' : '' }}>Coffee Maker</option>
+                              <option {{in_array("Pool",$room->facilities) ? 'selected' : '' }}>Pool</option>
+                              <option {{in_array("24 Hour security",$room->facilities) ? 'selected' : '' }}>24 Hour security</option>
+                              <option {{in_array("Car parking",$room->facilities) ? 'selected' : '' }}>Car parking</option>
+                              <option {{in_array("Poolside bar",$room->facilities) ? 'selected' : '' }}>Poolside bar</option>
+                              <option {{in_array("Disable rooms & Interconnecting room",$room->facilities) ? 'selected' : '' }}>Disable rooms & Interconnecting room</option>
+                              <option {{in_array("Sunset boat trip",$room->facilities) ? 'selected' : '' }}>Sunset boat trip</option>
                               </select>
                             </div>
 
@@ -151,19 +151,24 @@
                               <textarea class="form-control" id="description" rows="3" >{{ $room->description}}</textarea>
                             </div>
                             
-                            
-                            <div class="col-sm-12">
-                              <div class="upload__box">
-                                <div class="upload__btn-box">
-                                  <label class="upload__btn">
-                                    Upload Room Images
-                                    <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
-                                  </label>
+                  
+                           
+                
+                              <div class="col-sm-12">
+                                <div class="upload__box">
+                                  <div class="upload__btn-box">
+                                    <label class="upload__btn">
+                                    
+                                      Upload Room Images
+                                    
+                                      <input type="file" multiple="" data-max_length="20" class="upload__inputfile" >
+                          
+                                    </label>
+                                  </div>
+                                  <div class="upload__img-wrap"></div>
                                 </div>
-                                <div class="upload__img-wrap"></div>
                               </div>
-                            </div>
-    
+                         
                         
                             <div class="col-sm-4">
                               <input type="checkbox" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label">&nbsp;I accept all terms and conditions.
