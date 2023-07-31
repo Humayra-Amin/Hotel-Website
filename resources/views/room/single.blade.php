@@ -45,11 +45,17 @@
                 <!-- room images here -->
               
                  
-                @foreach ($room->image as $img)
-                <div>
-                    <img src='{{Storage::disk("public")->url($img)}}' class="d-block w-100" alt="Room Image 1">
-                </div>
-                @endforeach
+                {{-- @if (èmpty($room->image) >0)
+                    @foreach ($room->image as $img)
+                    <div>
+                        <img src='{{Storage::disk("public")->url($img)}}' class="d-block w-100" alt="Room Image 1">
+                    </div>
+                    @endforeach
+                @else
+                    
+                @endif --}}
+                
+            
             </div>
            
 
@@ -61,8 +67,12 @@
         <p>Room Type: {{$room->roomtype}}</p>
         <p>Category: {{$room->category}} </p>
         <p>Room Size:{{$room->roomsize}}</p>
-        <p class="mb-2"> Room Facilities:{{$room->facilities}} </p>
-          
+
+        Room Facilities:
+        @foreach ($room->facilities as $f)
+        <p class="mb-2">{{$f}} </p>
+        @endforeach
+
         <p>View:{{$room->roomview}} </p>
         <p class="room-details">{{$room->description}}
         </p>

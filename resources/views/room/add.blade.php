@@ -117,7 +117,7 @@
 
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="guestservice">Guest Service</label>
-                              <select name="guestservice" class="form-control custom-select browser-default" multiple>
+                              <select name="guestservice[]" class="form-control custom-select browser-default" multiple>
                               <option >Select Services</option>
                               <option>24-Hour room service</option>
                               <option>Free wireless internet access</option>
@@ -134,7 +134,7 @@
 
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="facilities">Facilities</label>
-                              <select name="facilities" class="form-control custom-select browser-default" multiple>
+                              <select name="facilities[]" class="form-control custom-select browser-default" multiple>
                               <option>Select Facilities</option>
                               <option>Free Wi-Fi</option>
                               <option>Flat-screen TV</option>

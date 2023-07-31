@@ -30,6 +30,8 @@ class Room extends Model
 
     protected $casts = [
         'image' => 'array',
+        'guestservice' => 'array',
+        'facilities' => 'array',
     ];
 
 }

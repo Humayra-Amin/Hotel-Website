@@ -1,10 +1,10 @@
 <?php
 
-use Hamcrest\Description;
+
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Symfony\Component\Routing\Loader\ProtectedPhpFileLoader;
+
 
 return new class extends Migration
 {
@@ -26,8 +26,8 @@ return new class extends Migration
             $table->string('roomtype');
             $table->string('roomsize');
             $table->string('roomview');
-            $table->string('guestservice');
-            $table->string('facilities');
+            $table->text('guestservice');
+            $table->text('facilities');
             $table->text('description')->nullable();
             $table->text('image')->nullable();
 
