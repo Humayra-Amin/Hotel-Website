@@ -37,44 +37,50 @@
                  <div class="container mt-3">
                           <h2 class="text-left text-info1 custom-form-title">Edit Rooms</h2>
                        
-                    <form>
+                    <form action="/room/{{$room->id}}" method="POST" enctype="multipart/form-data">
+                      @csrf
+                      @method('PUT')
+
                       <div class="row custom-jumbotron box8">
                         
                         <div class="custom-form-inner">
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="roomtitle">Room Title</label>
-                              <input type="text" class="form-control" name="roomno." id="room-title" placeholder="Enter Room Name" required>
-                            </div>
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="buildingno">Building No.</label>
-                              <input type="number" class="form-control" name="roomno." id="room-no" placeholder="Enter Room No." required>
+                              <input type="text" class="form-control" name="roomno." id="room-title" placeholder="Enter Room Name" value="{{$room->roomtitle}}" required>
                             </div>
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="roomno">Room No.</label>
-                              <input type="number" class="form-control" name="roomno." id="room-no" placeholder="Enter Room No." required>
+                              <input type="number" class="form-control" name="roomno." id="room-no" placeholder="Enter Room No." value="{{$room->roomno}}" required>
                             </div>
                             <div class="col-sm-6 form-group custom-form-group">
-                              <label for="floorno">Floor No.</label>
-                              <input type="number" class="form-control" name="floorno." id="floorno" placeholder="Enter Floor No." required>
+                              <label for="buildingno">Floor No.</label>
+                              <input type="number" class="form-control" name="roomno." id="room-no" placeholder="Enter Floor No." value="{{$room->floorno}}" required>
+                            </div>
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="floorno">Price.</label>
+                              <input type="number" class="form-control" name="floorno." id="floorno" placeholder="Enter Price."  value="{{$room->price}}" required>
                             </div>
                           
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="Category">Category</label>
                               <select class="form-control custom-select browser-default">
-                                <option value="">Select your Room Category</option>
+                                @foreach($room as $room)
+                                    <option value="{$room->roomtype}"></option>
+                                @endforeach
+                                {{-- <option value="{{$room->category}}">Select your Room Category</option>
                               <option>Normal</option>
                               <option>Standard</option>
                               <option >Premium</option>
                               <option >Super Premium</option>
                               <option >Queen</option>
-                            </select>
+                            </select> --}}
                             </div>
                             
                             
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="Country">Room Type</label>
                               <select class="form-control custom-select browser-default">
-                                <option value="">Select Room Type</option>
+                                <option value="{{$room->roomtype}}">Select Room Type</option>
                                 <option>Single Room</option>
                                 <option>Double Room</option>
                                 <option >Quad Room</option>
@@ -89,13 +95,13 @@
                           
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="size">Room Size</label>
-                              <input type="number" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" required>
+                              <input type="number" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" value="{{$room->roomsize}}" required>
                             </div>
 
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="view">Room View</label>
                               <select class="form-control custom-select browser-default">
-                                <option value="">Select Room View</option>
+                                <option value="{{$room->roomview}}">Select Room View</option>
                               <option>Sea View</option>
                               <option>Mountain View</option>
                               <option>Road View</option>
@@ -108,7 +114,7 @@
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="guestservice">Guest Service</label>
                               <select class="form-control custom-select browser-default" multiple>
-                                <option value="">Select Services</option>
+                                {{-- <option value="{{$room->guestservice}}">Select Services</option> --}}
                               <option>24-Hour room service</option>
                               <option>Free wireless internet access</option>
                               <option >Complimentary use of hotel bicycle</option>
@@ -125,7 +131,7 @@
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="view">Facilities</label>
                               <select class="form-control custom-select browser-default" multiple>
-                                <option value="">Select Facilities</option>
+                                {{-- <option value="{{$room->facilities}}">Select Facilities</option> --}}
                               <option>Free Wi-Fi</option>
                               <option>Flat-screen TV</option>
                               <option >Coffee Maker</option>

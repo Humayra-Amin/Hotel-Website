@@ -82,7 +82,7 @@
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="roomtype">Room Type</label>
                               <select name="roomtype" class="form-control custom-select browser-default">
-                                <option >Select Room Type</option>
+                    
                                 <option>Single Room</option>
                                 <option>Double Room</option>
                                 <option >Quad Room</option>
@@ -105,7 +105,7 @@
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="roomview">Room View</label>
                               <select name="roomview" class="form-control custom-select browser-default">
-                              <option>Select Room View</option>
+                           
                               <option>Sea View</option>
                               <option>Mountain View</option>
                               <option>Road View</option>
@@ -118,7 +118,7 @@
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="guestservice">Guest Service</label>
                               <select name="guestservice[]" class="form-control custom-select browser-default" multiple>
-                              <option >Select Services</option>
+                           
                               <option>24-Hour room service</option>
                               <option>Free wireless internet access</option>
                               <option >Complimentary use of hotel bicycle</option>
@@ -135,7 +135,6 @@
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="facilities">Facilities</label>
                               <select name="facilities[]" class="form-control custom-select browser-default" multiple>
-                              <option>Select Facilities</option>
                               <option>Free Wi-Fi</option>
                               <option>Flat-screen TV</option>
                               <option >Coffee Maker</option>
