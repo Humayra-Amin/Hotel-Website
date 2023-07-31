@@ -123,8 +123,6 @@ public function show($id)
 public function edit($id)
 {
     $employee=Employee::where("id",$id)->firstOrfail();
-
-    
-    return view("employee.pages.single")->with('employee',  $employee);
+    return view("employee.pages.edit")->with('employee',  $employee);
 }
 }
