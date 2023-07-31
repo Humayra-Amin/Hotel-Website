@@ -24,18 +24,11 @@ Route::get('/room/add', [RoomController::class, "add"]);
 Route::get('/room/{id}', [RoomController::class, "show"]);
 Route::post('/room', [RoomController::class, "store"]);
 Route::put('/room', [RoomController::class, "update"]);
-
 Route::get('/room/edit', [RoomController::class, "edit"]);
 Route::get('/room/single', [RoomController::class, "single"]);
 Route::get('/employee/', [EmployeeController::class, "index"]);
 Route::get('/employee/add', [EmployeeController::class, "add"]);
 Route::get('/employee/edit', [EmployeeController::class, "edit"]);
-<<<<<<< HEAD
-=======
-Route::get('/employee/{id}', [EmployeeController::class, "show"]);
-Route::post('/employee', [EmployeeController::class, "store"]);
-Route::put('/employee', [EmployeeController::class, "update"]);
->>>>>>> c6f2b38c7225d0145b6f124f3e2ed09cd00a55f5
 Route::get('/employee/single', [EmployeeController::class, "single"]);
 Route::get('/employee/{id}', [EmployeeController::class, "show"]);
 Route::post('/employee', [EmployeeController::class, "store"]);

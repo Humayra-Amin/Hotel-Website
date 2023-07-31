@@ -32,7 +32,6 @@
 </div> -->
 
 
-
       <h2 class="CCC" style="color: black;">Employee Details</h2>
       <div class="group-container mt-3">
         <div class="group-card-text">
@@ -47,29 +46,23 @@
             @foreach ($employee->image as $image)
                     <img src='{{Storage::disk("public")->url($image)}}' class="image">     
                 @endforeach
-                <h2 class="group-card-title">Jason Roy</h2>
+                <h2 class="group-card-title">{{$employee->employeetitle}}</h2>
                 </div>
             </div>
 
 
             <div class="col-3 bbb fs-5 ">
-                <b class="label">First Name :{{$employee->employeefirstname}}</b>
-                <p class="card-text">Jason</p>
+                <h2 class="label">First Name :{{$employee->fname}}</h2>
 
-                <b class="label">Date of Birth :{{$employee->employeedateofbirth}}</b>
-                <p class="card-text"> 01/05/1995</p>
+                <h2 class="label">Date of Birth :{{$employee->dob}}</h2>
     
-                <b class="label">Position:{{$employee->employeeposition}}</b>
-                <p class="card-text">Front Desk Receptionist</p>
+                <h2 class="label">Position:{{$employee->position}}</h2>
     
-                <b  class="label">Present Address :{{$employee->employeepresentaddress}}</b>
-                <p class="card-text" >House no-30,Flo Rida,USA</p>
+                <h2 class="label">Present Address :{{$employee->Locality}}</h2>
     
-                <b  class="label">Gender:{{$employee->employeegender}}</b>
-                <p class="card-text">Male</p>
+                <h2 class="label">Gender:{{$employee->sex}}</h2>
     
-                <b  class="label">Contact No :{{$employee->employeecontactno}}</b>
-                <p class="card-text"> +1 123-456-7690</p>
+                <h2 class="label">Contact No :{{$employee->phone}}</h2>
                 
                 
             </div>
@@ -79,23 +72,17 @@
             <div class="col-3 aaa fs-5">
       
               
-                <b  class="label"> Last Name :{{$employee->employeelastname}}</b>
-                <p class="card-text">Roy</p>
+                <h2 class="label"> Last Name :{{$employee->lname}}</h2>
 
-                <b  class="label">Employee Id:{{$employee->employeeemployeeid}}</b>
-                <p class="card-text">234</p>
+                <h2  class="label">Employee Id:{{$employee->eid}}</h2>
     
-                <b  class="label">Joining Date :{{$employee->employeejoiningdate}}</b>
-                <p class="card-text"> 12/07/2023</p>
+                <h2  class="label">Joining Date :{{$employee->joiningdate}}</h2>
     
-                <b  class="label">Salary :{{$employee->employeesalary}}</b>
-                <p class="card-text"> 3000</p>
+                <h2  class="label">Salary :{{$employee->salary}}</h2>
     
-                <b  class="label">Email :{{$employee->employeeemail}}</b>
-                <p class="card-text">JasonRoy@gmail.com</p>
+                <h2  class="label">Email :{{$employee->email}}</h2>
                        
-                <b  class="label">Input Nid :{{$employee->employeeinputnid}}</b>
-                <p class="card-text">234567</p>              
+                <h2  class="label">Input Nid :{{$employee->nid}}</h2>
                 
                 
             </div>
@@ -108,12 +95,6 @@
         </div>
     
     
-    
-    
-
-
-
-
 @endsection
 
 
