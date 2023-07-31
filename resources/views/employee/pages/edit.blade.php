@@ -16,9 +16,7 @@
 <div class="col-md-6 form-group form-input-file" >
 <div class="d-flex align-items-center justify-content-start">
         <img id="file_upload" src="http://placehold.it/100" alt="your image" class="form-upload-img" />
-        @foreach ($employee->image as $image)
-                    <img src='{{Storage::disk("public")->url($image)}}' class="image">     
-                @endforeach
+        
           <div class="form-input-file-upload">
             <span class="form-upload-label">Upload Image</span>
             <input type='file' name="image" onchange="readURL(this);" />
