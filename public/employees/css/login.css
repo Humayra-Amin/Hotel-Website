@@ -1,0 +1,44 @@
+         
+         
+         
+         .medium{
+            margin-right: 20px;
+            font-weight: bold;
+         }
+
+         .container{         
+            background: linear-gradient(to right, rgb(96, 124, 185) , rgb(170, 209, 224));
+            padding-left: auto;  
+            padding: 199px;
+            font-family: 'PT Sans', sans-serif;
+         }
+         
+
+
+
+            h2{
+
+            padding-top: 1.5rem;
+            
+         }
+
+
+
+         .form-control{
+            background-color: #062868e7;
+            margin-bottom: 1.3rem;
+         }
+
+
+         .form-control:focus {
+
+            color: #000000;
+            background-color: #226dc4;
+            border: 3px solid #000000;
+            outline: 0;
+            box-shadow:none;
+         }
+
+         .form-control:hover {
+            background-color: rgb(161, 171, 226);
+         }
