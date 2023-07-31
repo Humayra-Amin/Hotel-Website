@@ -4,9 +4,9 @@
 
 <div class="container mt-3">
 <h2 class="form-h2">Edit Employee</h2>
-<form action="{{ url('employee') }}" method="POST">
+<form action="{{ url('employee') }}" method="POST" enctype="multipart/form-data">
     @csrf
-    
+    @method('PUT')
   <div class="row jumbotron form-box8">
       
       
