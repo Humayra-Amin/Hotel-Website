@@ -36,5 +36,3 @@ Route::post('/employee', [EmployeeController::class, "store"]);
 Route::put('/employee', [EmployeeController::class, "update"]);
 Route::get('/drag-and-drop', 'DragAndDropController@index')->name('drag-and-drop');
 Route::post('/drag-and-drop/update', 'DragAndDropController@update')->name('drag-and-drop.update');
-
-
