@@ -1,13 +1,12 @@
-                .group-h2 
-                {
-                    font-weight:bold ;
-                    font-size: 20px;
-                    color:black;
-                }
+            .group-h2 
+            {
+                 font-weight:bold ;
+                 font-size: 20px;
+                 color:black;
+             }
             p
             {
-                font-family: roboto;
-                
+                font-family: roboto;                
                 color:black;
                 font-size: 18px; 
             }
@@ -29,21 +28,22 @@
             }
             .CCC
             {
-                margin-top: 20px;
+                margin-top: 10px;
                 margin-left: 40px;
                 font-weight: bold;
             }
             .group-container 
-            {
-                margin: 50px;
-                padding: 35px;
+            {  
+                /* margin: 10px; */
+                padding-top: 10px;
                 background-color: rgb(171, 208, 228);
+               
             }
             .image
             { 
                 border-radius: 70%;
-                margin-top: 45px;
-                margin-left: 45px;
+                margin-top: 105px;
+                margin-left: 75px;
                 width: 180px;
                 height: 200px;
                 
@@ -51,7 +51,7 @@
                 
                 /* object-fit: contain; */
             }
-            .group-card-title 
+            .card-title 
             {  
                 font-size: 34px;
                 font-weight: bold;
@@ -64,7 +64,7 @@
                 
                 font-family: 'Work Sans', sans-serif;
                 margin-bottom: 10px;
-                font-size: 16px;
+                font-size: 20px;
                 font: bold;
                 color: black;
             }
