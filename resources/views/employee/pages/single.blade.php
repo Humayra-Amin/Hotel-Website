@@ -52,37 +52,36 @@
 
 
             <div class="col-3 bbb fs-5 ">
-                <h2 class="label">First Name :{{$employee->fname}}</h2>
-
-                <h2 class="label">Date of Birth :{{$employee->dob}}</h2>
-    
-                <h2 class="label">Position:{{$employee->position}}</h2>
-    
-                <h2 class="label">Present Address :{{$employee->Locality}}</h2>
-    
-                <h2 class="label">Gender:{{$employee->sex}}</h2>
-    
-                <h2 class="label">Contact No :{{$employee->phone}}</h2>
-                
+                <h2 class="group-h2">First Name:</h2>
+                <p>{{$employee->fname}}</p>
+                <h2 class="group-h2">Date of Birth:</h2>
+                <p>{{$employee->dob}}</p>
+                <h2 class="group-h2">Position:</h2>
+                <p>{{$employee->position}}</p>
+                <h2 class="group-h2">Present Address:</h2>
+                <p>{{$employee->Locality}}</p>
+                <h2 class="group-h2">Gender:</h2>
+                <p>{{$employee->sex}}</p>
+                <h2 class="group-h2">Contact No:</h2>
+                <p>{{$employee->phone}}</p>
                 
             </div>
 
             
 
             <div class="col-3 aaa fs-5">
-      
-              
-                <h2 class="label"> Last Name :{{$employee->lname}}</h2>
-
-                <h2  class="label">Employee Id:{{$employee->eid}}</h2>
-    
-                <h2  class="label">Joining Date :{{$employee->joiningdate}}</h2>
-    
-                <h2  class="label">Salary :{{$employee->salary}}</h2>
-    
-                <h2  class="label">Email :{{$employee->email}}</h2>
-                       
-                <h2  class="label">Input Nid :{{$employee->nid}}</h2>
+                <h2 class="group-h2">Last Name:</h2>
+                <p>{{$employee->lname}}</p>
+                <h2 class="group-h2">Employee Id:</h2>
+                <p>{{$employee->eid}}</p>
+                <h2 class="group-h2">Joining Date:</h2>
+                <p>{{$employee->joiningdate}}</p>
+                <h2 class="group-h2">Salary:</h2>
+                <p>{{$employee->salary}}</p>
+                <h2 class="group-h2">Email:</h2>
+                <p>{{$employee->email}}</p>
+                <h2 class="group-h2">Input Nid:</h2>
+                <p>{{$employee->nid}}</p>
                 
                 
             </div>
