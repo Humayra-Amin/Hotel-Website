@@ -16,7 +16,6 @@
 <div class="col-md-6 form-group form-input-file" >
 <div class="d-flex align-items-center justify-content-start">
         <img id="file_upload" src="http://placehold.it/100" alt="your image" class="form-upload-img" />
-        
           <div class="form-input-file-upload">
             <span class="form-upload-label">Upload Image</span>
             <input type='file' name="image" onchange="readURL(this);" />
@@ -53,6 +52,7 @@
       <div class="col-sm-6 form-group">
         <label for="position" class="form-label">Position</label>
         <select class="form-control custom-select browser-default" name="position">
+          <option >Select your Position</option>
       <option @if($employee->position == 'Manager') selected @endif>Manager</option>
       <option @if($employee->position == 'Assistant Manager') selected @endif>Assistant Manager</option>
       <option @if($employee->position == 'Accountent') selected @endif>Accountent</option>
@@ -69,6 +69,7 @@
       <div class="col-sm-6 form-group">
         <label for="sex" class="form-label">Gender</label>
         <select id="sex" class="form-control browser-default custom-select" name="sex">
+          <option >Select Gender</option>
           <option  @if($employee->sex == 'Male') selected @endif>Male</option>
           <option  @if($employee->sex == 'Female') selected @endif>Female</option>
           <option  @if($employee->sex == 'Others') selected @endif>Others</option>
