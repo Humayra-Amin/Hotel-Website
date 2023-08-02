@@ -21,8 +21,6 @@
                 <h2 class="group-card-title">{{$employee->employeetitle}}</h2>
                 </div>
             </div>
-
-
             <div class="col-3 bbb fs-5 ">
                 <h2 class="group-h2">First Name:</h2>
                 <p>{{$employee->fname}}</p>

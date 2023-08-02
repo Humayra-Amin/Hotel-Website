@@ -21,6 +21,9 @@
             <input type='file' name="image" onchange="readURL(this);" />
           </div>
       </div>
+      @foreach ($employee->image as $image)
+      <img src='{{Storage::disk("public")->url($image)}}' class="image">     
+  @endforeach
 </div>
         
      
