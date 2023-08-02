@@ -4,7 +4,7 @@
 
 <div class="container mt-3">
 <h2 class="form-h2">Edit Employee</h2>
-<form action="/employee/{{$employee->id}}" method="PUT" enctype="multipart/form-data">
+<form action="/employee/{{$employee->id}}" method="POST" enctype="multipart/form-data">
     @csrf
     @method ('PUT')
   <div class="row jumbotron form-box8">
@@ -70,9 +70,9 @@
         <label for="sex" class="form-label">Gender</label>
         <select id="sex" class="form-control browser-default custom-select" name="sex">
           <option >Select Gender</option>
-          <option  @if($employee->sex == 'Male') selected @endif>Male</option>
-          <option  @if($employee->sex == 'Female') selected @endif>Female</option>
-          <option  @if($employee->sex == 'Others') selected @endif>Others</option>
+          <option @if($employee->sex == 'male')  @endif>Male</option>
+          <option @if($employee->sex == 'female') selected @endif>Female</option>
+          <option @if($employee->sex == 'others') selected @endif>Others</option>
         </select>
       </div>
       <div class="col-sm-6 form-group">
