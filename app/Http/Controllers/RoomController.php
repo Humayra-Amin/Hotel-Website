@@ -100,10 +100,13 @@ class RoomController extends Controller
         $room->description = $request->description;
         $room->update();
 
+       
 
+       if($request->file('image')){
         foreach($request->file('image') as $img){
             Storage::disk("public")->put("$room->id", $img);
         }
+    }
         $room->image= Storage::disk("public")->files($room->id);
         $room->update();
 

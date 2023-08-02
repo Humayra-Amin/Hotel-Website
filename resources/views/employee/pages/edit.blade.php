@@ -4,7 +4,7 @@
 
 <div class="container mt-3">
 <h2 class="form-h2">Edit Employee</h2>
-<form action="/employee/{{$employee->id}}" method="PUT" enctype="multipart/form-data">
+<form action="/employee/{{$employee->id}}" method="POST" enctype="multipart/form-data">
     @csrf
     @method ('PUT')
   <div class="row jumbotron form-box8">
@@ -21,6 +21,9 @@
             <input type='file' name="image" onchange="readURL(this);" />
           </div>
       </div>
+      @foreach ($employee->image as $image)
+      <img src='{{Storage::disk("public")->url($image)}}' class="image">     
+  @endforeach
 </div>
         
      
@@ -52,6 +55,7 @@
       <div class="col-sm-6 form-group">
         <label for="position" class="form-label">Position</label>
         <select class="form-control custom-select browser-default" name="position">
+          <option >Select your Position</option>
       <option @if($employee->position == 'Manager') selected @endif>Manager</option>
       <option @if($employee->position == 'Assistant Manager') selected @endif>Assistant Manager</option>
       <option @if($employee->position == 'Accountent') selected @endif>Accountent</option>
@@ -68,9 +72,10 @@
       <div class="col-sm-6 form-group">
         <label for="sex" class="form-label">Gender</label>
         <select id="sex" class="form-control browser-default custom-select" name="sex">
-          <option  @if($employee->sex == 'Male') selected @endif>Male</option>
-          <option  @if($employee->sex == 'Female') selected @endif>Female</option>
-          <option  @if($employee->sex == 'Others') selected @endif>Others</option>
+          <option >Select Gender</option>
+          <option @if($employee->sex == 'male')  @endif>Male</option>
+          <option @if($employee->sex == 'female') selected @endif>Female</option>
+          <option @if($employee->sex == 'others') selected @endif>Others</option>
         </select>
       </div>
       <div class="col-sm-6 form-group">
