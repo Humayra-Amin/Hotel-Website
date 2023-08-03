@@ -13,7 +13,7 @@
             </div>
            
 
-            <div class="im col-4">
+            <div class="col-4">
             <div class="slider">
             @foreach ($employee->image as $image)
                     <img src='{{Storage::disk("public")->url($image)}}' class="image">     
@@ -21,6 +21,7 @@
                 <h2 class="group-card-title">{{$employee->employeetitle}}</h2>
                 </div>
             </div>
+
             <div class="col-3 bbb fs-5 ">
                 <h2 class="group-h2">First Name:</h2>
                 <p>{{$employee->fname}}</p>
@@ -34,10 +35,7 @@
                 <p>{{$employee->sex}}</p>
                 <h2 class="group-h2">Contact No:</h2>
                 <p>{{$employee->phone}}</p>
-                
             </div>
-
-            
 
             <div class="col-3 aaa fs-5">
                 <h2 class="group-h2">Last Name:</h2>
