@@ -14,7 +14,6 @@
         <h2 class="form-text-color">Personal Information</h2>
     </div>
   <div class="col-md-6 form-group form-input-file" >
-
     <div class="d-flex align-items-center justify-content-start">
             <img id="file_upload" src="http://placehold.it/100" alt="your image" class="form-upload-img" />
                 <div class="form-input-file-upload">
@@ -23,8 +22,6 @@
                 </div>
           </div>
   </div>
-        
-     
                         
     <div class="col-sm-6  form-group">
         <label for="name-f" class="form-label">First Name</label>
@@ -71,9 +68,9 @@
         <label for="sex" class="form-label">Gender</label>
         <select id="sex" class="form-control browser-default custom-select" name="sex">
           <option >Select Gender</option>
-          <option @if($employee->sex == 'Male') selected @endif>Male</option>
-          <option @if($employee->sex == 'Female') selected @endif>Female</option>
-          <option @if($employee->sex == 'Others') selected @endif>Others</option>
+          <option @if($employee->sex == 'male') selected @endif>Male</option>
+          <option @if($employee->sex == 'female') selected @endif>Female</option>
+          <option @if($employee->sex == 'others') selected @endif>Others</option>
         </select>
       </div>
       <div class="col-sm-6 form-group">
