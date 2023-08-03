@@ -18,7 +18,6 @@ class EmployeeController extends Controller
     {
         return view("employee.pages.add");
     }
-
     public function single()
     {
         return view("employee.pages.single");

@@ -4,7 +4,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\RoomController;
-use App\Http\Controllers\AuthController;
+use App\Http\Controllers\EmployeeAuthController;
 
 
 /*
@@ -30,8 +30,8 @@ Route::put('/room/{id}', [RoomController::class, "update"]);
 Route::get('/room/edit', [RoomController::class, "edit"]);
 Route::get('/room/single', [RoomController::class, "single"]);
 Route::get('/employee/', [EmployeeController::class, "index"]);
-Route::get('/employee/login', [AuthController::class, "login"]);
-Route::get('/employee/register', [AuthController::class, "register"]);
+Route::get('/employee/login', [EmployeeAuthController::class, "login"]);
+Route::get('/employee/register', [EmployeeAuthController::class, "register"]);
 Route::get('/employee/add', [EmployeeController::class, "add"]);
 Route::get('/employee/single', [EmployeeController::class, "single"]);
 Route::get('/employee/{id}', [EmployeeController::class, "show"]);
