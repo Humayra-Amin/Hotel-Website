@@ -26,16 +26,14 @@
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
-    {{-- <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet"> --}}
 
     <!-- Custom styles for this template-->
     <link rel="stylesheet" href="{{asset('rooms/css/sb-admin-2.min.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/karima.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/jaima.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/urbashi.css')}}">
-
+    <link rel="stylesheet" href="{{asset(rooms/css/login.css)}}">
+    <link rel="stylesheet" href="{{asset(rooms/css/register.css)}}">
    
 
     <!--drag and drop -->
@@ -76,6 +74,10 @@
     <!-- Page level plugins -->
     <script src="{{asset('rooms/vendor/chart.js/Chart.min.js')}}"></script>
 
+    <!--login register-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  
 
 
     <script src="{{asset('rooms/js/jaima.js')}}"></script>
