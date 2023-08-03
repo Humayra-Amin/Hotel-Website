@@ -39,7 +39,7 @@
                         
                 <div class=container>
                 <div class= "row">
-                    <div class="col-md-6 mt-4 mb-2">
+                    <div class="col-md-6 mt-5">
                     {{-- <div id="roomImageSlider"> --}}
                     <div class="slider">
                         <!-- room images here -->
@@ -57,24 +57,30 @@
 
                 </div>
         
-        <div class="col-md-6 customize-fonts">
+        <div class="col-md-6">
             <div class="room-details mt-4 mb-2">
             <h2 class="room-title customize-fonts-title">{{$room->roomtitle}}</h2>
-            <p>Room Type: {{$room->roomtype}}</p>
-            <p>Category: {{$room->category}} </p>
-            <p>Room Size:{{$room->roomsize}}</p>
+            <h6 class=".customize-fonts">Room Type : {{$room->roomtype}}</h6>
+            <h6 class=".customize-fonts">  Category   : {{$room->category}} </h6>
+            <h6 class=".customize-fonts">Room Size : {{$room->roomsize}}</h6>
 
-            Room Facilities:
-            @foreach ($room->facilities as $f)
-            <p class="mb-2">{{$f}} </p>
-            @endforeach
-
-            <p>View: {{$room->roomview}} </p>
+            <div class="facilities-sec">
+                <p class="facility-title">Room Facilities:</p>
+                <ul  class="facilities-list">
+                @foreach ($room->facilities as $f)
+                
+                    <li class="facilities-item"><i class="fas fa-check"></i>{{$f}} </li>
+                
+                @endforeach  
+                </ul>
+            </div>
             <p class="room-details">{{$room->description}}</p>
-            
+            <p>View :  {{$room->roomview}} </p>
          </div>
 
      </div>
+   
+     
      </div>
 
     
