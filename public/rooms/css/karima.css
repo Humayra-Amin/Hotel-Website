@@ -2,11 +2,17 @@
 
 .customize-fonts{
     font-family: roboto;
+
+  
+
    
 }
 .customize-fonts-title{
     font-family: roboto;
-    font-size:larger; 
+    font-size:x-large;
+    font-weight:400;
+    font-style:inherit;
+
    
 }
 
@@ -27,4 +33,16 @@
     color: #fff; 
      border-color: #007bff;
   } */
-  
+.facilities-list{
+   
+    margin-left: 20px;
+    font-size: 12px;
+    display: flex;
+    padding: 0;
+    list-style: none;
+    flex-direction:inherit;
+    flex-wrap: wrap;
+    align-content:space-evenly;
+
+
+}
