@@ -52,10 +52,10 @@
                             </div>
                     </div> 
                 </form>
-                    <button class="btn btn-outline-dark ml-2">
+                    <a class="btn btn-outline-dark ml-2" href="/employee/add">
                     <i class="fa fa-plus"></i>
                     Add Employee
-                </button>
+                    </a>
                 </div>
             </div>
             

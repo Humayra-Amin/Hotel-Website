@@ -86,9 +86,9 @@
         <label for="sex" class="custom-label">Gender</label>
         <select id="sex" class="form-control browser-default custom-select" name="sex">
         <option >Select Gender</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="other">Others</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Others</option>
         </select>
       </div>
 
