@@ -68,9 +68,9 @@
         <label for="sex" class="form-label">Gender</label>
         <select id="sex" class="form-control browser-default custom-select" name="sex">
           <option >Select Gender</option>
-          <option @if($employee->sex == 'male') selected @endif>Male</option>
-          <option @if($employee->sex == 'female') selected @endif>Female</option>
-          <option @if($employee->sex == 'others') selected @endif>Others</option>
+          <option @if($employee->sex == 'Male') selected @endif>Male</option>
+          <option @if($employee->sex == 'Female') selected @endif>Female</option>
+          <option @if($employee->sex == 'Others') selected @endif>Others</option>
         </select>
       </div>
       <div class="col-sm-6 form-group">
