@@ -13,7 +13,7 @@
             </div>
            
 
-            <div class="im col-4">
+            <div class="col-4">
             <div class="slider">
             @foreach ($employee->image as $image)
                     <img src='{{Storage::disk("public")->url($image)}}' class="image">     
