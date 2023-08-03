@@ -1,6 +1,5 @@
 @extends('room.layouts.app')
 
-
 @section('app')
 
             <div class="W3-container">
