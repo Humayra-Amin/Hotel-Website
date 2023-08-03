@@ -15,7 +15,14 @@ class AuthController extends Controller
     {
         return view("employee.register");
     }
-
+    public function rooomlogin()
+    {
+        return view("room.login");
+    }
+    public function roomregister()
+    {
+        return view("room.register");
+    }
    
 }
 
