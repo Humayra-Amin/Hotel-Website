@@ -9,6 +9,9 @@
 
           <div class="W3-container">
             <div class="row justify-content-center">
+              <div class="image">
+                <img src="public/LR.jpg">
+              </div>
               <div class="col-md-5">
                 <div class="card bg-success-subtle text-emphasis-success ">
                   <h3 class="card-title text-center">Login </h3>
@@ -35,7 +38,7 @@
                         <p>Don't have an Account? <a href="register">Register</a></p>
                       </div>
                     </form>
-
+                  
                   </div>
-
+                
         </html>
