@@ -105,14 +105,16 @@ public function update(Request $request,$id)
     $employee->joiningdate = $request->joiningdate;
     $employee->update();
 
-
+    if($request->file('image'))
+    {
     Storage::disk("public")->put("$employee->id", $request->file('image'));
+    }
     $employee->image= Storage::disk("public")->files($employee->id);
     $employee->update();
 
 
 
-    return redirect("employee")->with("success", "Employee created.");
+    return redirect("employee")->with("success", "Employee updated.");
 }
 public function show($id)
 { 
