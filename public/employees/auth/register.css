@@ -16,9 +16,10 @@
                background-repeat: no-repeat;
                background-size: cover;
                background: #226dc4;    
-            background: linear-gradient(to right, rgb(96, 124, 185) , rgb(170, 209, 224));
-              padding: 197.3px;          
+           
+              padding: 107.4px;          
               font-family: 'PT Sans', sans-serif;
+
          }
          h2
          {
@@ -28,15 +29,16 @@
    
 
    
-         .form-control-group{
-         
-            margin-bottom: 1.2rem;
+         .form-control{
+            
+            margin-bottom: 0.9rem;
          }
 
    
-         /* .form-control:hover {
-            background-color: rgb(232, 233, 240);
-         } */
+         .form-control:hover {
+            background-color: rgb(161, 171, 226);
+         
+         }
 
          
          

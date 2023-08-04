@@ -30,7 +30,7 @@
                         </div>
                          <div class="text-center">
                      
-                                    <button class="btn btn-primary button5">Create New Account</button>                              
+                                    <button class="btn btn-success button5">Create New Account</button>                              
                           
                            </div>
                            <div class="d-flex align-items-center justify-content-center small">

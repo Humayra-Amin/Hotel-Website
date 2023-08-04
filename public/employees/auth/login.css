@@ -2,7 +2,7 @@
 
 
                .button2{
-                  width: 320px;
+                     width: 260px;
                      height: 45px;  
                      font-weight: bold;
                   }
@@ -10,16 +10,16 @@
 
 
                .W3-container{    
-/* 
-                  background: url("auth image/LR.jpg");                  */
+
+                  /* background: url("employees/auth/LR.jpg");                  */
                   background-position: center;
                   background-repeat: no-repeat;
                   background-size: cover;
 
                   
                   background: #226dc4;     
-                  background: linear-gradient(to right, rgb(96, 124, 185) , rgb(170, 209, 224));         
-                  padding: 188px;
+                      
+                  padding: 143.2px;
                   font-family: 'PT Sans', sans-serif;
                   background-size: cover;
 
@@ -37,8 +37,9 @@
                   
                }
                .form-control{
-                  margin-bottom: 2rem;
-
+                  margin-bottom: 1rem;
+                  margin-left: 10px;
+                  margin-right: 10px;
                }
                .form-control:hover {
                   background-color: rgb(161, 171, 226);
