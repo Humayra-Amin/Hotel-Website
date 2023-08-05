@@ -12,12 +12,12 @@ class RoomAuthController extends Controller
 {
     public function login()
     {
-        return view("auth.login");
+        return view("room.auth.login");
     }  
       
     public function registration()
     {
-        return view("auth.registration");
+        return view("room.auth.registration");
     }
       
     

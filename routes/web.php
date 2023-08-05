@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\EmployeeAuthController;
-use App\Models\Room;
+use App\Http\Controllers\RoomAuthController;
 
 /*
 |--------------------------------------------------------------------------
