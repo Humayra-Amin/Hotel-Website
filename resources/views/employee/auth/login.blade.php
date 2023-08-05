@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-
-
-
 <title>Login</title>
-<link rel="stylesheet" href="Login.css">
+<link rel="stylesheet" href="{{asset('employees/auth/login.css')}}">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
@@ -12,6 +9,9 @@
 
           <div class="W3-container">
             <div class="row justify-content-center">
+              {{-- <div class="image">
+                <img src="public/LR.jpg">
+              </div> --}}
               <div class="col-md-5">
                 <div class="card bg-success-subtle text-emphasis-success ">
                   <h3 class="card-title text-center">Login </h3>
@@ -35,10 +35,10 @@
 
                       <a class=" d-flex align-items-center justify-content-center medium" href=#>Forget Password?</a>
                       <div class="d-flex align-items-center justify-content-center medium ">
-                        <p>Don't have an Account? <a href="Register.html">Register</a></p>
+                        <p>Don't have an Account? <a href="register">Register</a></p>
                       </div>
                     </form>
-
+                  
                   </div>
-
+                
         </html>

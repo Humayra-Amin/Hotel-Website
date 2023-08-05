@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-
 <head>
    
     <title>Register</title>
-    <link rel="stylesheet" href="Register.css">
+    <link rel="stylesheet" href="{{asset('employees/auth/register.css')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
   </head>
@@ -31,11 +30,11 @@
                         </div>
                          <div class="text-center">
                      
-                                    <button class="btn btn-primary button5">Create New Account</button>                              
+                                    <button class="btn btn-success button5">Create New Account</button>                              
                           
                            </div>
                            <div class="d-flex align-items-center justify-content-center small">
-                              <p>Already have an Account? <a href="Login.html">Login</a></p>
+                              <p>Already have an Account? <a href="login">Login</a></p>
                            </div>
    
    
