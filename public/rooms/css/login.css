@@ -1,0 +1,54 @@
+
+
+
+.button2{
+  width: 260px;
+  height: 45px;  
+  font-weight: bold;
+}
+
+
+
+.W3-container{    
+
+/* background: url("employees/auth/LR.jpg");                  */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+background: #226dc4;     
+   
+padding: 143.2px;
+font-family: 'PT Sans', sans-serif;
+background-size: cover;
+
+}
+
+.medium{ 
+margin-top: 8px;
+
+
+}
+h3
+{
+
+padding-top: 1.5rem;
+
+}
+.form-control{
+margin-bottom: 1rem;
+margin-left: 10px;
+margin-right: 10px;
+}
+.form-control:hover {
+background-color: rgb(161, 171, 226);
+}
+.card-body-group
+{
+margin: 50px;
+padding: 8px;
+display: flex;
+position: relative;
+
+}

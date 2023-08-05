@@ -1,0 +1,44 @@
+         
+         
+           .button5{
+            width: 310px;
+            height: 45px;  
+            font-family: 'roboto';
+            }
+
+           .small{ 
+            margin-top: 8px;
+             }
+
+
+         .W3-container{    
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               background: #226dc4;    
+           
+              padding: 107.4px;          
+              font-family: 'PT Sans', sans-serif;
+
+         }
+         h2
+         {
+      
+            padding-top: 1.5rem;
+         }
+   
+
+   
+         .form-control{
+            
+            margin-bottom: 0.9rem;
+         }
+
+   
+         .form-control:hover {
+            background-color: rgb(161, 171, 226);
+         
+         }
+
+         
+         
