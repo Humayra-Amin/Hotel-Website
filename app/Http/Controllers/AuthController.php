@@ -6,22 +6,22 @@ use Illuminate\Http\Request;
 
 class AuthController extends Controller
 {
-    //
+    
+    // public function login()
+    // {
+    //     return view("employee.auth.login");
+    // }
+    // public function register()
+    // {
+    //     return view("employee.auth.register");
+    // }
     public function login()
     {
-        return view("employee.login");
+        return view("room.auth.login");
     }
     public function register()
     {
-        return view("employee.register");
-    }
-    public function rooomlogin()
-    {
-        return view("room.login");
-    }
-    public function roomregister()
-    {
-        return view("room.register");
+        return view("room.auth.register");
     }
    
 }

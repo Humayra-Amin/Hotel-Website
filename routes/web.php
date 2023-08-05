@@ -22,6 +22,7 @@ use App\Http\Controllers\AuthController;
 
 Route::get('/', [Controller::class, "index"]);
 Route::get('/room/', [RoomController::class, "index"]);
+
 Route::get('/room/add', [RoomController::class, "add"]);
 Route::get('/room/{id}', [RoomController::class, "show"]);
 Route::get('/room/{id}/edit', [RoomController::class, "edit"]);
@@ -29,8 +30,7 @@ Route::post('/room', [RoomController::class, "store"]);
 Route::put('/room/{id}', [RoomController::class, "update"]);
 Route::get('/room/edit', [RoomController::class, "edit"]);
 Route::get('/room/single', [RoomController::class, "single"]);
-Route::get('/room/login', [AuthController::class, "roomlogin"]);
-Route::get('/room/register', [AuthController::class, "roomregister"]);
+
 Route::get('/employee/', [EmployeeController::class, "index"]);
 Route::get('/employee/login', [AuthController::class, "login"]);
 Route::get('/employee/register', [AuthController::class, "register"]);
