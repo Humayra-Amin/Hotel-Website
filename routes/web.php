@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\EmployeeAuthController;
-
+use App\Models\Room;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,11 +23,11 @@ use App\Http\Controllers\EmployeeAuthController;
 Route::get('/', [Controller::class, "index"]);
 Route::get('/room/', [RoomController::class, "index"]);
 
-Route::get('login', [AuthController::class, 'index'])->name('login');
-Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.post'); 
-Route::get('registration', [AuthController::class, 'registration'])->name('register');
-Route::post('post-registration', [AuthController::class, 'postRegistration'])->name('register.post'); 
-Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+Route::get('login', [RoomAuthController::class, 'login'])->name('login');
+Route::post('post-login', [RoomAuthController::class, 'postLogin'])->name('login.post'); 
+Route::get('registration', [RoomAuthController::class, 'registration'])->name('register');
+Route::post('post-registration', [RoomAuthController::class, 'postRegistration'])->name('register.post'); 
+Route::get('logout', [RoomAuthController::class, 'logout'])->name('logout');
 
 Route::get('/room/add', [RoomController::class, "add"]);
 Route::get('/room/{id}', [RoomController::class, "show"]);

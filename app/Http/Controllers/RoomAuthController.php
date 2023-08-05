@@ -10,14 +10,14 @@ use Illuminate\Support\Facades\Hash;
 
 class RoomAuthController extends Controller
 {
-    public function index()
+    public function login()
     {
-        return view('auth.login');
+        return view("auth.login");
     }  
       
     public function registration()
     {
-        return view('auth.registration');
+        return view("auth.registration");
     }
       
     
@@ -53,14 +53,14 @@ class RoomAuthController extends Controller
     }
     
  
-    public function dashboard()
-    {
-        if(Auth::check()){
-            return view('dashboard');
-        }
+    // public function dashboard()
+    // {
+    //     if(Auth::check()){
+    //         return view('dashboard');
+    //     }
   
-        return redirect("login")->withSuccess('Opps! You do not have access');
-    }
+    //     return redirect("login")->withSuccess('Opps! You do not have access');
+    // }
     
     
     public function create(array $data)
