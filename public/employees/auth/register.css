@@ -1,36 +1,41 @@
          
          
            .button5{
-            width: 310px;
+            width: 185px;
             height: 45px;  
-            font-family: 'roboto';
+            font-family: 'bold';
             }
 
-           .small{ 
-            margin-top: 8px;
-             }
+         
 
 
-         .W3-container{    
-               background-position: center;
-               background-repeat: no-repeat;
-               background-size: cover;
-               background: #226dc4;    
+         .main{    
+                 
            
-              padding: 107.4px;          
+              padding: 100.4px;          
               font-family: 'PT Sans', sans-serif;
 
          }
+
+         .small{ 
+            margin-top: 11px;
+            
+
+
+             }
+
+
+
          h2
          {
-      
+           
             padding-top: 1.5rem;
          }
    
 
    
          .form-control{
-            
+         
             margin-bottom: 0.9rem;
          }
 
