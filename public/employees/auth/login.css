@@ -1,35 +1,46 @@
 
+         /* .wrp{
+            position: relative;
+            width: 300px;
+            height:100px;
+        background: transparent;
+            border: 2px solid black;
 
-
+         } */
+                      
                .button2{
-                     width: 260px;
+                     width: 180px;
                      height: 45px;  
                      font-weight: bold;
                   }
                
 
 
-               .W3-container{    
+               .part{    
 
-                  /* background: url("employees/auth/LR.jpg");                  */
-                  background-position: center;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-
-                  
-                  background: #226dc4;     
+                
+                  /* background: #226dc4;      */
                       
-                  padding: 143.2px;
+                  padding: 126.2px;
                   font-family: 'PT Sans', sans-serif;
-                  background-size: cover;
+                 
 
                }
 
-               .medium{ 
-               margin-top: 8px;
+                     .slow{
+
+                        margin-top: 8px;
+                        padding-left: 10px;
+
+                     }
 
 
-               }
+
+
+                     .small{ 
+                       margin-top: 8px;
+              
+                        }
                h3
                {
 
@@ -38,8 +49,7 @@
                }
                .form-control{
                   margin-bottom: 1rem;
-                  margin-left: 10px;
-                  margin-right: 10px;
+                 
                }
                .form-control:hover {
                   background-color: rgb(161, 171, 226);
