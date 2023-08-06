@@ -32,8 +32,7 @@
     <link rel="stylesheet" href="{{asset('rooms/css/karima.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/jaima.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/urbashi.css')}}">
-    <link rel="stylesheet" href="{{asset('rooms/css/login.css')}}">
-    <link rel="stylesheet" href="{{asset('rooms/css/register.css')}}">
+ 
    
 
     <!--drag and drop -->
