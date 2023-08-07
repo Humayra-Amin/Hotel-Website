@@ -12,19 +12,30 @@
   @section('content')
   <div class="form-container">
    <div class="log-container">
-       <form class="login-form">
+       <form class="login-form" action="{{ route('register.post') }}" method="POST">
+        @csrf
            <h1>Register</h1>
            <div class="login-form">
-           <input type="text" class="label" id="name" placeholder="Name" required>
+           <input type="text" class="label" name="name" id="name" placeholder="Name" required>
+           @if ($errors->has('name'))
+           <span class="text-danger">{{ $errors->first('name') }}</span>
+           @endif
            </div>
            <div class="login-form">
-           <input type="email" class="label" id="email" placeholder="Email" required>
+           <input type="email" class="label" name="email" id="email" placeholder="Email" required>
+           @if ($errors->has('email'))
+            <span class="text-danger">{{ $errors->first('email') }}</span>
+           @endif
            </div>
+
            <div class="login-form">
-            <input type="password" class="label" id="password" placeholder="Password">
+            <input type="password" class="label"name="password" id="password" placeholder="Password">
+            @if ($errors->has('password'))
+            <span class="text-danger">{{ $errors->first('password') }}</span>
+             @endif
           </div>
           <div class="login-form">
-            <input type="password" class="label" id="confirm-password" placeholder="Confirm Password">
+            <input type="password" class="label"  name="password_confirmation" id="confirm-password" placeholder="Confirm Password">
           </div>
     
            <div class="login-form">

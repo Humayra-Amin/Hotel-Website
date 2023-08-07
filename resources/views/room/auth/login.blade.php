@@ -8,13 +8,17 @@
 
  @extends('room.auth.layout.create')
   
- @section('content')      
+ @section('content') 
+ 
+ @include('room.inc.message')
+
         <div class="form-container">
             <div class="log-container">
-                <form class="login-form">
+                <form class="login-form" action="{{ route('login.post') }}" method="POST">
+                    @csrf
                     <h1>Login</h1>
                     <div class="login-form">
-                    <input type="email" class="label" id="email" placeholder="Email" required>
+                    <input type="email" class="label" name="email" id="email" placeholder="Email" required>
                     @if ($errors->has('email'))
                     <span class="text-danger">{{ $errors->first('email') }}</span>
                     @endif
@@ -22,7 +26,7 @@
                     </div>
         
                     <div class="login-form">
-                    <input type="password" class="label" id="password" placeholder="Password" required>
+                    <input type="password" class="label" name="password" id="password" placeholder="Password" required>
                     @if ($errors->has('password'))
                     <span class="text-danger">{{ $errors->first('password') }}</span>
                     @endif

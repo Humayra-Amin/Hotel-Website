@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
 
 class RoomAuthController extends Controller
 {
@@ -23,18 +23,21 @@ class RoomAuthController extends Controller
     
     public function postLogin(Request $request)
     {
+
         $request->validate([
             'email' => 'required',
             'password' => 'required',
         ]);
    
         $credentials = $request->only('email', 'password');
+
+
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('dashboard')
-                        ->withSuccess('You have Successfully loggedin');
+            $request->session()->regenerate();
+            return redirect()->intended('/')->withSuccess('You have Successfully loggedin');
         }
-  
-        return redirect("login")->withSuccess('Oppes! You have entered invalid credentials');
+
+        return redirect("room/login")->withErrors('Oppes! You have entered invalid credentials');
     }
       
 
@@ -43,24 +46,15 @@ class RoomAuthController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users',
-            'password' => 'required|min:6',
+            'password' => 'required|confirmed',
         ]);
            
         $data = $request->all();
         $check = $this->create($data);
          
-        return redirect("dashboard")->withSuccess('Great! You have Successfully loggedin');
+        return redirect("/")->withSuccess('Great! You have Successfully loggedin');
     }
     
- 
-    public function dashboard()
-    {
-        if(Auth::check()){
-            return view('dashboard');
-        }
-  
-        return redirect("login")->withSuccess('Opps! You do not have access');
-    }
     
     
     public function create(array $data)
@@ -77,7 +71,7 @@ class RoomAuthController extends Controller
         Session::flush();
         Auth::logout();
   
-        return Redirect('login');
+        return Redirect('room/login');
     }
 
 }
