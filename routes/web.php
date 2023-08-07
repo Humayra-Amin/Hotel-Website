@@ -23,11 +23,12 @@ use App\Http\Controllers\RoomAuthController;
 Route::get('/', [Controller::class, "index"]);
 Route::get('/room/', [RoomController::class, "index"]);
 
-Route::get('login', [RoomAuthController::class, 'login'])->name('login');
-Route::post('post-login', [RoomAuthController::class, 'postLogin'])->name('login.post'); 
-Route::get('registration', [RoomAuthController::class, 'registration'])->name('register');
-Route::post('post-registration', [RoomAuthController::class, 'postRegistration'])->name('register.post'); 
-Route::get('logout', [RoomAuthController::class, 'logout'])->name('logout');
+Route::get('/room/login', [RoomAuthController::class, 'login'])->name('login');
+Route::post('/room/post-login', [RoomAuthController::class, 'postLogin'])->name('login.post'); 
+Route::get('/room/registration', [RoomAuthController::class, 'registration'])->name('register');
+Route::post('/room/post-registration', [RoomAuthController::class, 'postRegistration'])->name('register.post'); 
+Route::get('/room/dashboard', [RoomAuthController::class, 'dashboard']);
+Route::get('/room/logout', [RoomAuthController::class, 'logout'])->name('logout');
 
 Route::get('/room/add', [RoomController::class, "add"]);
 Route::get('/room/{id}', [RoomController::class, "show"]);

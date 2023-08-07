@@ -53,14 +53,14 @@ class RoomAuthController extends Controller
     }
     
  
-    // public function dashboard()
-    // {
-    //     if(Auth::check()){
-    //         return view('dashboard');
-    //     }
+    public function dashboard()
+    {
+        if(Auth::check()){
+            return view('dashboard');
+        }
   
-    //     return redirect("login")->withSuccess('Opps! You do not have access');
-    // }
+        return redirect("login")->withSuccess('Opps! You do not have access');
+    }
     
     
     public function create(array $data)

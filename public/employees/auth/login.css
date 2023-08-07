@@ -7,58 +7,55 @@
             border: 2px solid black;
 
          } */
-                      
-               .button2{
-                     width: 180px;
-                     height: 45px;  
-                     font-weight: bold;
-                  }
-               
+                                                                                                                                          
+ .button2{                                                                                                          
+      width: 180px ;                                                                                                     
+      height: 45px; 
+      font-weight: bold; 
+  }                                                                                                                                 }
+                                                                                                                                                                  
 
 
-               .part{    
+ .part{    
 
                 
                   /* background: #226dc4;      */
                       
-                  padding: 126.2px;
-                  font-family: 'PT Sans', sans-serif;
+   padding: 126.2px;
+    font-family: "roboto";
                  
+ }
+ .slow{
 
-               }
+      margin-top: 8px;
+       padding-left: 10px;
 
-                     .slow{
-
-                        margin-top: 8px;
-                        padding-left: 10px;
-
-                     }
+  }
 
 
-
-
-                     .small{ 
-                       margin-top: 8px;
+  .small{ 
+      margin-top: 8px;
               
-                        }
-               h3
-               {
+   }
+             
+   h3 {
 
-                  padding-top: 1.5rem;
+     padding-top: 1.5rem;
                   
-               }
-               .form-control{
-                  margin-bottom: 1rem;
+    }
+   
+    .form-control{
+           margin-bottom: 1rem;
                  
-               }
-               .form-control:hover {
-                  background-color: rgb(161, 171, 226);
-               }
-               .card-body-group
-               {
-               margin: 50px;
-               padding: 8px;
-               display: flex;
-               position: relative;
+    }
+  .form-control:hover {
+       background-color: rgb(161, 171, 226);
+    }
+            
+    .card-body-group  {
+        margin: 50px;
+        padding: 8px;
+        display: flex;
+        position: relative;
                 
-               }
+  }
