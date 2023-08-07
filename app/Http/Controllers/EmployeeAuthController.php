@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-use Illuminate\Contracts\Session\Session;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
 
 class EmployeeAuthController extends Controller
 {
@@ -24,30 +24,32 @@ class EmployeeAuthController extends Controller
     {
         $request->validate([
             'email' => 'required',
-            'password' => 'required|confirmation',
+            'password' => 'required',
     ]);
    
     $credentials = $request->only('email', 'password');
-    if (Auth::attempt($credentials)) {
-        return redirect()->intended('dashboard')
-                    ->withSuccess('You have Successfully loggedin');
+
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            return redirect()->intended('/')->withSuccess('You have Successfully loggedin');
     }
    
-    return redirect("login")->withSuccess('Oppes! You have entered invalid credentials');
+    return redirect("employee/login")->withErrors('Oppes! You have entered invalid credentials');
 }
 
 public function postRegistration(Request $request)
 {  
     $request->validate([
         'name' => 'required',
-        'email' => 'required|email',
-        'password' => 'required|confirmation',
+        'email' => 'required|email|unique:users',
+        'password' => 'required|confirmed',
     ]);
        
     $data = $request->all();
     $check = $this->create($data);
      
-    return redirect("dashboard")->withSuccess('Great! You have Successfully loggedin');
+    return redirect("/")->withSuccess('Great! You have Successfully loggedin');
 }
 
 public function create(array $data)
@@ -64,7 +66,7 @@ public function logout() {
     Session::flush();
     Auth::logout();
 
-    return Redirect('login');
+    return Redirect('employee/login');
 }
 
 }

@@ -52,8 +52,6 @@ Route::post('/employee/post-login', [EmployeeAuthController::class, "postLogin"]
 Route::get('/employee/register', [EmployeeAuthController::class, "register"]);
 Route::post('/employee/post-register', [EmployeeAuthController::class, "postRegister"]);
 Route::get('/employee/logout', [EmployeeAuthController::class, "logout"]);
-Route::get('/employee/dashboard', [EmployeeAuthController::class, 'dashboard']);
-Route::get('/employee/logout', [EmployeeAuthController::class, 'logout']);
 
 Route::get('/employee/', [EmployeeController::class, "index"]);
 Route::get('/employee/add', [EmployeeController::class, "add"]);

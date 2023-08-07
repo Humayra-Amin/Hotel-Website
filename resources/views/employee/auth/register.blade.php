@@ -20,55 +20,46 @@
          @extends('employee.auth.layout.create')
   
          @section('content')
-               <div class="container main">
-                  <div class="row justify-content-center ">
-                  <div class="col-md-4">
-                  <div class="card bg-success-subtle text-emphasis-success">
-                     <h2 class="card-title text-center">Register </h2>
-                  <div class="card-body d-flex justify-content-center">
-                     
-                     <form class="col-md-10" action="{{ route('register.post') }}" method="POST">
-                           @csrf
+         
+  <div class="form-container">
+   <div class="log-container">
+       <form class="login-form" action="{{ route('register.post') }}" method="POST">
+        @csrf
+           <h1>Register</h1>
+           <div class="login-form">
+           <input type="text" class="label" name="name" id="name" placeholder="Name" required>
+           @if ($errors->has('name'))
+           <span class="text-danger">{{ $errors->first('name') }}</span>
+           @endif
+           </div>
+           <div class="login-form">
+           <input type="email" class="label" name="email" id="email" placeholder="Email" required>
+           @if ($errors->has('email'))
+            <span class="text-danger">{{ $errors->first('email') }}</span>
+           @endif
+           </div>
 
-                           <div class="form-group ">
-                              <input type="text" class="form-control" name="name" id="name" placeholder="Name">
-                              @if ($errors->has('name'))
-                                      <span class="text-danger">{{ $errors->first('name') }}</span>
-                               @endif
-                           </div>
-                           <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-                            @if ($errors->has('email'))
-                              <span class="text-danger">{{ $errors->first('email') }}</span>
-                          @endif
-                            </div>
-                                             
-                               
-                         <div class="form-group">
-                             <input type="password" class="form-control" name="password" id="password" placeholder="Password">
-                             @if ($errors->has('password'))
-                             <span class="text-danger">{{ $errors->first('password') }}</span>
-                         @endif
-                        </div>
-                         <div class="form-group">
-                             <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password">
-                            @if ($errors->has('confirm-password'))
-                             <span class="text-danger">{{ $errors->first('confirm-password') }}</span>
-                         @endif
-                        </div>
-                         <div class="text-center">
-                     
-                                    <button class="btn btn-success button5">Create New Account</button>                              
-                          
-                           </div>
-                           <div class="d-flex align-items-center justify-content-center small">
-                              <p>Already have an Account? <a href="login">Login</a></p>
-                           </div>
-   
-   
-                          </form>
-                      </div>
-                      @endsection 
+           <div class="login-form">
+            <input type="password" class="label"name="password" id="password" placeholder="Password">
+            @if ($errors->has('password'))
+            <span class="text-danger">{{ $errors->first('password') }}</span>
+             @endif
+          </div>
+          <div class="login-form">
+            <input type="password" class="label"  name="password_confirmation" id="confirm-password" placeholder="Confirm Password">
+          </div>
+    
+           <div class="login-form">
+           <button type="submit">Create New Account</button>
+           </div>
+
+           <div class="login-link">
+            <p>Already have an Account? <a href="/employee/login">Login</a></p>
+           </div>
+       </form>
+   </div>
+ </div>
+ @endsection 
                   {{-- </body>
                 
             </html> --}}
