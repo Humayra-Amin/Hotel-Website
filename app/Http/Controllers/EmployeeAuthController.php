@@ -24,7 +24,7 @@ class EmployeeAuthController extends Controller
     {
         $request->validate([
             'email' => 'required',
-            'password' => 'required',
+            'password' => 'required|confirmation',
     ]);
    
     $credentials = $request->only('email', 'password');
@@ -41,7 +41,7 @@ public function postRegistration(Request $request)
     $request->validate([
         'name' => 'required',
         'email' => 'required|email',
-        'password' => 'required',
+        'password' => 'required|confirmation',
     ]);
        
     $data = $request->all();

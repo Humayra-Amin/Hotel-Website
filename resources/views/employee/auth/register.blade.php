@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <head>
    
     <title>Register</title>
@@ -16,27 +16,45 @@
    </style>
 
   </head>
-      <body>
+      <body> --}}
+         @extends('employee.auth.layout.create')
+  
+         @section('content')
                <div class="container main">
                   <div class="row justify-content-center ">
                   <div class="col-md-4">
                   <div class="card bg-success-subtle text-emphasis-success">
                      <h2 class="card-title text-center">Register </h2>
                   <div class="card-body d-flex justify-content-center">
-                        <form class="col-md-10">
+                     
+                     <form class="col-md-10" action="{{ route('register.post') }}" method="POST">
+                           @csrf
+
                            <div class="form-group ">
-                              <input type="text" class="form-control" id="name" placeholder="Name">
+                              <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                              @if ($errors->has('name'))
+                                      <span class="text-danger">{{ $errors->first('name') }}</span>
+                               @endif
                            </div>
                            <div class="form-group">
-                              <input type="email" class="form-control" id="email" placeholder="Email">
-                           </div>
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                            @if ($errors->has('email'))
+                              <span class="text-danger">{{ $errors->first('email') }}</span>
+                          @endif
+                            </div>
                                              
                                
                          <div class="form-group">
-                             <input type="password" class="form-control" id="password" placeholder="Password">
+                             <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                             @if ($errors->has('password'))
+                             <span class="text-danger">{{ $errors->first('password') }}</span>
+                         @endif
                         </div>
                          <div class="form-group">
                              <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password">
+                            @if ($errors->has('confirm-password'))
+                             <span class="text-danger">{{ $errors->first('confirm-password') }}</span>
+                         @endif
                         </div>
                          <div class="text-center">
                      
@@ -50,7 +68,8 @@
    
                           </form>
                       </div>
-                  </body>
+                      @endsection 
+                  {{-- </body>
                 
-            </html>
+            </html> --}}
             

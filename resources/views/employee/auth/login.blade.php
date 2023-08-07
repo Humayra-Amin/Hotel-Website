@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <title>Login</title>
 <link rel="stylesheet" href="{{asset('employees/auth/login.css')}}">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,9 +16,11 @@
                
          </style>
 
-<body>
+<body> --}}
   {{-- <div id="loading" style="background-image: url('{{ asset('auth-image/LR.jpg')}}') background-position: center background-repeat: no-repeat background-size: cover;"> --}}
+    @extends('employee.auth.layout.create')
   
+    @section('content') 
    
           <div class="container part">
     
@@ -29,20 +31,25 @@
                 <div class="card bg-success-subtle text-emphasis-success">
                   <h3 class="card-title text-center">Login </h3>
                   <div class="card-body d-flex justify-content-center">
-                    <form class="col-md-10">
+                    <form class="col-md-10" action="{{ route('login.post') }}" method="POST">
+                      @csrf
                       <div class="form-group d-flex ">
-                        <input type="email" class="form-control" id="email" placeholder="Email">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                        @if ($errors->has('email'))
+                        <span class="text-danger">{{ $errors->first('email') }}</span>
+                    @endif
                       </div>
 
                       <div class="form-group d-flex">
-                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                        @if ($errors->has('password'))
+                        <span class="text-danger">{{ $errors->first('password') }}</span>
+                    @endif
                       </div>
 
                       <div class=" d-flex align-items-center justify-content-center ">
 
                         <button class="btn btn-primary button2">Login</button>
-
-
 
                       </div>
 
@@ -53,5 +60,6 @@
                     </form>
                   
                   </div>
-                <body>
-        </html>
+                  @endsection
+                {{-- <body>
+        </html> --}}
