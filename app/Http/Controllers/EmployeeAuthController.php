@@ -60,12 +60,12 @@ public function create(array $data)
 }
 
 
-// public function logout() {
-//     Session::flush();
-//     Auth::logout();
+public function logout() {
+    Session::flush();
+    Auth::logout();
 
-//     return Redirect('login');
-// }
+    return Redirect('login');
+}
 
 }
 
