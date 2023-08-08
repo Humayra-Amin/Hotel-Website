@@ -4,11 +4,6 @@
 @section('app')
     
 
-
-
-
-       
-
             <!-- Main Content -->
             <div id="content">
 
