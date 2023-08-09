@@ -47,6 +47,12 @@ Route::middleware(["auth"])->group(function () {
 
 
 
+Route::get('/employee/login', [EmployeeAuthController::class, "login"]);
+Route::post('/employee/post-login', [EmployeeAuthController::class, "postLogin"]);
+Route::get('/employee/register', [EmployeeAuthController::class, "register"]);
+Route::post('/employee/post-register', [EmployeeAuthController::class, "postRegister"]);
+Route::get('/employee/logout', [EmployeeAuthController::class, "logout"]);
+
 Route::get('/employee/', [EmployeeController::class, "index"]);
 Route::get('/employee/add', [EmployeeController::class, "add"]);
 Route::get('/employee/single', [EmployeeController::class, "single"]);
@@ -55,11 +61,7 @@ Route::get('/employee/{id}/edit', [EmployeeController::class, "edit"]);
 Route::post('/employee', [EmployeeController::class, "store"]);
 Route::put('/employee/{id}', [EmployeeController::class, "update"]);
 
-Route::get('/employee/login', [EmployeeAuthController::class, "login"]);
-Route::post('/employee/post-login', [EmployeeAuthController::class, "postLogin"]);
-Route::get('/employee/register', [EmployeeAuthController::class, "register"]);
-Route::post('/employee/post-register', [EmployeeAuthController::class, "postRegister"]);
-Route::get('/employee/logout', [EmployeeAuthController::class, "logout"]);
+
 
 Route::get('/drag-and-drop', 'DragAndDropController@index')->name('drag-and-drop');
 Route::post('/drag-and-drop/update', 'DragAndDropController@update')->name('drag-and-drop.update');
