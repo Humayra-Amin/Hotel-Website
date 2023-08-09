@@ -15,5 +15,10 @@ class Controller extends BaseController
     {
         return view("room.dashboard");
     }
+     
+    public function home()
+    {
+        return view("room.home");
+    }
     
 }

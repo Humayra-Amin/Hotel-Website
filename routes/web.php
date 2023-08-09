@@ -30,7 +30,8 @@ Route::post('/room/post-register', [RoomAuthController::class, 'postRegister'])-
 
 
 Route::middleware(["auth"])->group(function () {
-   
+    
+    Route::get('/home',[Controller::class, "home"]);
     Route::get('/', [Controller::class, "index"]);
     Route::get('/room/', [RoomController::class, "index"]);
     Route::get('/room/logout', [RoomAuthController::class, 'logout']);
