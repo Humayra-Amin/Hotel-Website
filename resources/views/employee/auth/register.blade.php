@@ -15,8 +15,8 @@
          }
    </style>
 
-  </head>
-      <body> --}}
+  </head> --}}
+      <body>
          @extends('employee.auth.layout.create')
   
          @section('content')
