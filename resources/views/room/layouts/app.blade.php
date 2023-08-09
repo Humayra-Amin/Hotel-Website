@@ -32,7 +32,9 @@
     <link rel="stylesheet" href="{{asset('rooms/css/karima.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/jaima.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/urbashi.css')}}">
- 
+    <link rel="stylesheet" href="{{asset('rooms/css/register.css')}}">
+    <link rel="stylesheet" href="{{asset('rooms/css/login.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
    
 
     <!--drag and drop -->
@@ -82,6 +84,8 @@
     <script src="{{asset('rooms/js/jaima.js')}}"></script>
     <script src="{{asset('rooms/js/karima.js')}}"></script>
     <script src="{{asset('rooms/js/urbashi.js')}}"></script>
+    <!--login register -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     
     <!-- Page level custom scripts -->
     {{-- <script src="{{asset('rooms/js/demo/chart-area-demo.js')}}"></script>

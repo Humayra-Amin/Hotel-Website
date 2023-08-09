@@ -15,9 +15,9 @@ class RoomAuthController extends Controller
         return view("room.auth.login");
     }  
       
-    public function registration()
+    public function register()
     {
-        return view("room.auth.registration");
+        return view("room.auth.register");
     }
       
     
@@ -41,7 +41,7 @@ class RoomAuthController extends Controller
     }
       
 
-    public function postRegistration(Request $request)
+    public function postRegister(Request $request)
     {  
         $request->validate([
             'name' => 'required',
