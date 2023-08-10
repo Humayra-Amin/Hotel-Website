@@ -35,7 +35,7 @@
                       </div>
 
                       <div class="form-group d-flex">
-                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <input type="text" class="form-control" id="password" placeholder="Password">
                       </div>
 
                       <div class=" d-flex align-items-center justify-content-center ">
