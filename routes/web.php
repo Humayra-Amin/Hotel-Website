@@ -23,8 +23,8 @@ use App\Http\Controllers\RoomAuthController;
 
 Route::get('/room/login', [RoomAuthController::class, 'login'])->name('login');
 Route::post('/room/post-login', [RoomAuthController::class, 'postLogin'])->name('login.post'); 
-Route::get('/room/registration', [RoomAuthController::class, 'registration'])->name('register');
-Route::post('/room/post-registration', [RoomAuthController::class, 'postRegistration'])->name('register.post'); 
+Route::get('/room/register', [RoomAuthController::class, 'register'])->name('register');
+Route::post('/room/post-register', [RoomAuthController::class, 'postRegister'])->name('register.post'); 
 
 
 

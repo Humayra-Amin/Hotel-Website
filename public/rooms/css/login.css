@@ -1,19 +1,25 @@
 .form-container{
+
+  background-image: url("auth-image/LR.jpg");                 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;                 
+
   font-family: "roboto";
-  margin: 0;
-  padding: 0;
+ 
   display: flex;
   justify-content:space-around;
   align-items:center;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
 .log-container {
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom:50px;
 }
 
 .login-form {
