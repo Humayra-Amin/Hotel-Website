@@ -47,7 +47,7 @@
         
                     <div class="form-options">
                         <label class="remember">
-                            <input type="checkbox" name="remember"> Remember me
+                            <input type= "checkbox" name= "remember">  Remember me
                         </label>
                         <a href="#">Forgot password?</a>
                     </div>

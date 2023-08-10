@@ -25,10 +25,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('register') }}">Register</a>
                         </li>
-                    @else
+                    {{-- @else
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('logout') }}">Logout</a>
-                        </li>
+                        </li> --}}
                     @endguest
                 </ul>
       
