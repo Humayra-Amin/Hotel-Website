@@ -15,10 +15,15 @@
 
    
 }
+.table-line{
+    padding: 20px;
+    margin:20px;
+
+}
 
 .pagination.rounded-circle .page-link{
     margin:5px;
-    border-radius: 50%;
+    border-radius: 100%;
     width: 40px;
     height: 40px;
     display: flex;
