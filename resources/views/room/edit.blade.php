@@ -95,11 +95,11 @@
                               </div>
                               <div class="col-sm-6 form-group custom-form-group">
                                 <label for="buildingno">Floor No.</label>
-                                <input type="number" class="form-control" name="floorno" id="room-no" placeholder="Enter Floor No." value="{{$room->floorno}}" required>
+                                <input type="text" class="form-control" name="floorno" id="room-no" placeholder="Enter Floor No." value="{{$room->floorno}}" required>
                               </div>
                               <div class="col-sm-6 form-group custom-form-group">
                                 <label for="floorno">Price.</label>
-                                <input type="number" class="form-control" name="price" id="floorno" placeholder="Enter Price."  value="{{$room->price}}" required>
+                                <input type="text" class="form-control" name="price" id="floorno" placeholder="Enter Price."  value="{{$room->price}}" required>
                               </div>
                             
                               <div class="col-sm-6 form-group custom-form-group">
