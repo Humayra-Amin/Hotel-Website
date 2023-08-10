@@ -13,8 +13,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top bg-transparent">
+  <header class="header-outer">
 
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="header-inner responsive-wrapper">
         <a class="navbar-brand fw-bold" href="#">Hotel Paradise</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -41,9 +43,10 @@
             </li>
           </ul>
         </div>
-   
+      </div>
       </nav>
-  
+
+    </header>
   <!-- slider add -->
   {{-- <div class="row">
   <div class="col-md-12"> --}}
@@ -111,57 +114,164 @@
     </div>
 </div>
 <div class=row>
-    <div class="">
-    <div class="room-list-inner d-flex flex-wrap mt-3">
-      <div class="col-lg-3 col-md-6">
-        <div class="card room-card">
-          <img src="image/single room.jpg" class="card-img-top" alt="Single Room">
-          <div class="card-body">
+    <div class="col-md-6 col-lg-4 mb-5">
+    <div class="hotel-room">
+     
+    
+          <img src="image/luxary room.jpg" class="img-fluid" alt="Single Room">
+          <div class="hotel-room-body">
             <h5 class="card-title">Single Room</h5>
             <p class="card-text">Cozy and comfortable single room.</p>
             <p class="card-text"><strong>Price:</strong> $100/night</p>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card room-card">
-          <img src="image/deluxe room.jpg" class="card-img-top" alt="Deluxe Room">
-          <div class="card-body">
+    
+    </div>
+      <div class="col-md-6 col-lg-4  mb-5">
+        <div class="hotel-room">
+     
+          <img src="image/deluxe room.jpg" class="img-fluid" alt="Deluxe Room">
+          <div class="hotel-room-body">
             <h5 class="card-title">Deluxe Room</h5>
             <p class="card-text">Spacious and luxurious deluxe room.</p>
             <p class="card-text"><strong>Price:</strong> $200/night</p>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card room-card">
-          <img src="image/family room.jpg" class="card-img-top" alt="Family Room">
-          <div class="card-body">
+   
+    </div>
+      <div class="col-md-6 col-lg-4  mb-5 ">
+        <div class="hotel-room">
+     
+    
+          <img src="image/family room.jpg" class="img-fluid" alt="Family Room">
+          <div class="hotel-room-body">
             <h5 class="card-title">Family Room</h5>
             <p class="card-text">Perfect for a family getaway.</p>
             <p class="card-text"><strong>Price:</strong> $250/night</p>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card room-card">
-          <img src="image/luxary room.jpg" class="card-img-top" alt="Luxury Room">
-          <div class="card-body">
-            <h5 class="card-title">Luxury Room</h5>
-            <p class="card-text">Ultimate luxury and comfort.</p>
-            <p class="card-text"><strong>Price:</strong> $350/night</p>
+  
+    </div>
+    <div class="col-md-6 col-lg-4 mb-5">
+      <div class="hotel-room">
+       
+      
+            <img src="image/luxary room.jpg" class="img-fluid" alt="Single Room">
+            <div class="hotel-room-body">
+              <h5 class="card-title">Single Room</h5>
+              <p class="card-text">Cozy and comfortable single room.</p>
+              <p class="card-text"><strong>Price:</strong> $100/night</p>
+            </div>
           </div>
-        </div>
+      
+      </div>
+        <div class="col-md-6 col-lg-4  mb-5">
+          <div class="hotel-room">
+       
+            <img src="image/deluxe room.jpg" class="img-fluid" alt="Deluxe Room">
+            <div class="hotel-room-body">
+              <h5 class="card-title">Deluxe Room</h5>
+              <p class="card-text">Spacious and luxurious deluxe room.</p>
+              <p class="card-text"><strong>Price:</strong> $200/night</p>
+            </div>
+          </div>
+     
+      </div>
+        <div class="col-md-6 col-lg-4  mb-5 ">
+          <div class="hotel-room">
+       
+      
+            <img src="image/family room.jpg" class="img-fluid" alt="Family Room">
+            <div class="hotel-room-body">
+              <h5 class="card-title">Family Room</h5>
+              <p class="card-text">Perfect for a family getaway.</p>
+              <p class="card-text"><strong>Price:</strong> $250/night</p>
+            </div>
+          </div>
+    
       </div>
     </div>
   </div>
-
-
 </div>
-<footer>
-  <p>&copy; Hotel Pradise. All rights reserved.</p>
+<!--aboutus-->
+
+<section class="about-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <img src="image/hotelbackground.jpg" alt="Hotel Paradise" class="img-fluid rounded">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="mb-6">About Us</h2>
+        <p>Welcome to Hotel Paradise,where luxury meets tranquility.Our establishment offers a unique blend of modern amenities and classic elegance,ensuring an unforgettable experience for our guests.With a range of facilities including a spa,fitness center,and elegant event spaces, we cater to both leisure and business travelers.Our dedicated staff is committed to providing exceptional service, making your stay truly special.</p>
+        <p>Complimentary breakfast,high-speed Wi-Fi,and attentive concierge services are just a few of the features that await you at Hotel Paradise.We invite you to indulge in a world of comfort and indulgence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--footer-->
+<footer class="bg-footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-3">
+           
+                  <h6 class="footer-heading">Information</h6>
+                  <ul class="list-unstyled footer-link">
+                      <li><a href="">Pages</a></li>
+                      <li><a href="">Our Team</a></li>
+                      <li><a href="">Pricing</a></li>
+                  </ul>
+            
+          </div>
+
+          <div class="col-lg-3">
+ 
+                  <h6 class="footer-heading">Resources</h6>
+                  <ul class="list-unstyled footer-link">
+                      <li><a href="">Video Tutorial</a></li>
+                      <li><a href="">Term &amp; Service</a></li>
+                  </ul>
+         
+          </div>
+
+          <div class="col-lg-3">
+         
+                  <h6 class="footer-heading">Help</h6>
+                  <ul class="list-unstyled footer-link">
+                      <li><a href="">Sign Up </a></li>
+                      <li><a href="">Login</a></li>
+                      <li><a href="">Terms of Services</a></li>
+                      <li><a href="">Privacy Policy</a></li>
+                  </ul>
+           
+          </div>
+
+          <div class="col-lg-3">
+              
+                  <h6 class="footer-heading">Contact Us</h6>
+                  <p class="contact-info"><a href="">info@gmail.com</a></p>
+                  <p class="contact-info"><a href="">+8801896755116</a></p>
+                  <div class="mt-5">
+                      <ul class="list-inline">
+                          <li class="list-inline-item"><a href="#"><i class="fab facebook footer-social-icon fa-facebook-f"></i></a></li>
+                          <li class="list-inline-item"><a href="#"><i class="fab twitter footer-social-icon fa-twitter"></i></a></li>
+                          <li class="list-inline-item"><a href="#"><i class="fab google footer-social-icon fa-google"></i></a></li>
+                      </ul>
+                  </div>
+              
+          </div>
+
+      </div>
+  </div>
+
+  <div class="text-center mt-2">
+      <p class="footer-alt mb-0 f-14">2023 Copyright, All Rights Reserved</p>
+  </div>
 </footer>
 
+<script src="{{asset('rooms/js/home.js')}}">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
