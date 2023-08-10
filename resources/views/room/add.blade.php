@@ -98,11 +98,11 @@
                             </div>
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="floorno">Floor No</label>
-                              <input type="number" class="form-control" name="floorno" id="floorno" placeholder="Enter Floor No." required>
+                              <input type="text" class="form-control" name="floorno" id="floorno" placeholder="Enter Floor No." required>
                             </div>
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="price">Price</label>
-                              <input type="number" class="form-control" name="price" id="price" placeholder="Enter Price." required>
+                              <input type="text" class="form-control" name="price" id="price" placeholder="Enter Price." required>
                             </div>
 
 

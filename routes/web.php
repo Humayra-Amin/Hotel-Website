@@ -27,13 +27,13 @@ Route::get('/room/login', [RoomAuthController::class, 'login'])->name('login');
 Route::post('/room/post-login', [RoomAuthController::class, 'postLogin'])->name('login.post'); 
 Route::get('/room/register', [RoomAuthController::class, 'register'])->name('register');
 Route::post('/room/post-register', [RoomAuthController::class, 'postRegister'])->name('register.post'); 
-Route::get('/room/home', [HomeController::class, "home"]);
+ 
+Route::get('/home', [HomeController::class, "home"]);
 
 
 
 Route::middleware(["auth"])->group(function () {
-    
-    Route::get('/home',[Controller::class, "home"]);
+   
     Route::get('/', [Controller::class, "index"]);
     Route::get('/room/', [RoomController::class, "index"]);
     Route::get('/room/logout', [RoomAuthController::class, 'logout']);

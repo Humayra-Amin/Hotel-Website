@@ -105,93 +105,41 @@
     </a>
   </div>
   <!-- slider end -->
+
+
 <div class="section-site">
-  
 
   <div class="row">
     <div class="col-md-12 mb-5 text-center">
         <h1>Our Rooms</h1>
     </div>
 </div>
+
 <div class=row>
+  @foreach ($rooms as $room)
     <div class="col-md-6 col-lg-4 mb-5">
     <div class="hotel-room">
-     
-    
-          <img src="image/luxary room.jpg" class="img-fluid" alt="Single Room">
+      @if ($room->image)
+              @foreach ($room->image as $img)
+              <div>
+                  <img src='{{Storage::disk("public")->url($img)}}' class="d-block w-100" >
+              </div>
+              @endforeach
+              @endif
+        
           <div class="hotel-room-body">
-            <h5 class="card-title">Single Room</h5>
-            <p class="card-text">Cozy and comfortable single room.</p>
-            <p class="card-text"><strong>Price:</strong> $100/night</p>
+            <h5 class="card-title">{{$room->roomtitle}}</h5>
+            <p class="card-text">{{$room->price}}</p>
           </div>
         </div>
     
     </div>
-      <div class="col-md-6 col-lg-4  mb-5">
-        <div class="hotel-room">
-     
-          <img src="image/deluxe room.jpg" class="img-fluid" alt="Deluxe Room">
-          <div class="hotel-room-body">
-            <h5 class="card-title">Deluxe Room</h5>
-            <p class="card-text">Spacious and luxurious deluxe room.</p>
-            <p class="card-text"><strong>Price:</strong> $200/night</p>
-          </div>
-        </div>
-   
-    </div>
-      <div class="col-md-6 col-lg-4  mb-5 ">
-        <div class="hotel-room">
-     
+@endforeach
     
-          <img src="image/family room.jpg" class="img-fluid" alt="Family Room">
-          <div class="hotel-room-body">
-            <h5 class="card-title">Family Room</h5>
-            <p class="card-text">Perfect for a family getaway.</p>
-            <p class="card-text"><strong>Price:</strong> $250/night</p>
-          </div>
-        </div>
-  
     </div>
-    <div class="col-md-6 col-lg-4 mb-5">
-      <div class="hotel-room">
-       
-      
-            <img src="image/luxary room.jpg" class="img-fluid" alt="Single Room">
-            <div class="hotel-room-body">
-              <h5 class="card-title">Single Room</h5>
-              <p class="card-text">Cozy and comfortable single room.</p>
-              <p class="card-text"><strong>Price:</strong> $100/night</p>
-            </div>
-          </div>
-      
-      </div>
-        <div class="col-md-6 col-lg-4  mb-5">
-          <div class="hotel-room">
-       
-            <img src="image/deluxe room.jpg" class="img-fluid" alt="Deluxe Room">
-            <div class="hotel-room-body">
-              <h5 class="card-title">Deluxe Room</h5>
-              <p class="card-text">Spacious and luxurious deluxe room.</p>
-              <p class="card-text"><strong>Price:</strong> $200/night</p>
-            </div>
-          </div>
-     
-      </div>
-        <div class="col-md-6 col-lg-4  mb-5 ">
-          <div class="hotel-room">
-       
-      
-            <img src="image/family room.jpg" class="img-fluid" alt="Family Room">
-            <div class="hotel-room-body">
-              <h5 class="card-title">Family Room</h5>
-              <p class="card-text">Perfect for a family getaway.</p>
-              <p class="card-text"><strong>Price:</strong> $250/night</p>
-            </div>
-          </div>
-    
-      </div>
-    </div>
+
   </div>
+
 </div>
 <!--aboutus-->
 
