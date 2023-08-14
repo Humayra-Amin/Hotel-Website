@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "PT Seri";
+}
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(241, 234, 234);
+    font-size: 22px;
+    padding-right: 50px;
+    
+    
+  }
+
+  .navbar-light .navbar-brand{
+    color: rgb(248, 248, 248);
+    font-size: 40px;
+    padding-left: 100px;
+  
+  }
+
+  :root {
+    --header-outer-height: 100px;
+    --header-inner-height: 70px;
+    --header-height-difference: calc(var(--header-outer-height) - var(--header-inner-height));
+    --header-bg: rgb(19, 18, 18);
+  }
+  
+  .header-outer {
+    height: var(--header-outer-height);
+    position: fixed;
+    width: 100%;
+    top: calc(var(--header-height-difference) * -1); 
+    display: flex;
+    align-items: center;
+    z-index: 9;
+    margin-top: 20px;
+  }
+  
+  .header-outer.sticky-header{
+    background-color: var(--header-bg); 
+    box-shadow: 0 2px 10px 0 rgba(0,0,0, 0.1);
+  }
+  
+  .header-inner {
+    height: var(--header-inner-height);
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .responsive-wrapper {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 120px;
+    margin-right: 10px;
+  }
+
+
+
+  .bio{
+      margin-bottom:210px;
+      color: rgb(228, 228, 228)88, 95, 95;
+      font-size: 30px;
+     
+  }
+
+
+  .LL{
+      font-size: 50px;
+      
+  }
+
+  .slider-img {
+     
+      width: 1800px;
+      height: 700px;
+    object-fit: cover;
+
+    
+  }
+  .room-card {
+    margin-bottom: 20px;
+  }
+
+
+  .logo{
+      font-size:2em;
+      color:#ffffffd0;
+      font-style: italic;
+
+
+      }
+    
+.section-site{
+    padding: 6rem;
+    background: #fcf7f7;
+}
+
+
+   
+
+
+.hotel-room .hotel-room-body{
+  padding: 30px;
+
+}
+.hotel-room{
+  text-align: center;
+  background:#ffffff;
+  transition: .3s all ease;
+}
+
+.about-us {
+  background-color: #f8f9fa;
+  padding-bottom: 5rem;
+}
+
+.about-us img {
+  padding-top:30px;
+  padding-bottom: 10px;
+  width: 90%;
+}
+
+
+.about-us h2 {
+
+  padding-bottom: 5px;
+  padding-left: 0px;
+  font-size: 34px;
+  font-family: "roboto";
+}
+
+.about-us p {
+  font-size: 18px;
+  color: #272626cd ;
+ 
+}
+
+.bg-footer {
+  padding: 4em 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+}
+.footer-heading {
+  letter-spacing: 2px;
+  color: white;
+
+
+}
+
+.footer-link a {
+  color: #ffffff;
+  line-height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+ ;
+}
+
+.footer-link a:hover {
+  color: #1bbc9b;
+ 
+}
+
+.contact-info {
+  color: #acacac;
+  font-size: 14px;
+  font-family: 'roboto';
+}
+
+.footer-social-icon {
+  font-size: 15px;
+  height: 34px;
+  width: 34px;
+  line-height: 34px;
+  border-radius: 3px;
+  text-align: center;
+  display: inline-block;
+}
+
+.facebook {
+  background-color: #4e71a8;
+  color: #ffffff;
+}
+
+.twitter {
+  background-color: #55acee;
+  color: #ffffff;
+}
+
+.google {
+  background-color: #d65e2f;
+  color: #ffffff;
+}
+
+.footer-alt {
+  color: #acacac;
+
+  font-weight: bold;
+}
+
+.footer-heading {
+  position: relative;
+  padding-bottom: 12px;
+
+}
+
+.footer-heading:after {
+  content: '';
+  width: 30px;
+  border-bottom: 1px solid #FFF;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  border-bottom: 1px solid #1bbc9b;
+}

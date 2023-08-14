@@ -32,9 +32,8 @@
     <link rel="stylesheet" href="{{asset('rooms/css/karima.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/jaima.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/urbashi.css')}}">
-    <link rel="stylesheet" href="{{asset('rooms/css/login.css')}}">
-    <link rel="stylesheet" href="{{asset('rooms/css/register.css')}}">
-   
+  
+ 
 
     <!--drag and drop -->
     <link rel="stylesheet" href="style.css">
@@ -83,6 +82,7 @@
     <script src="{{asset('rooms/js/jaima.js')}}"></script>
     <script src="{{asset('rooms/js/karima.js')}}"></script>
     <script src="{{asset('rooms/js/urbashi.js')}}"></script>
+
     
     <!-- Page level custom scripts -->
     {{-- <script src="{{asset('rooms/js/demo/chart-area-demo.js')}}"></script>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <title>Login</title>
 <link rel="stylesheet" href="{{asset('employees/auth/login.css')}}">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,24 +16,27 @@
                
          </style>
 
-<body>
+<body> --}}
   {{-- <div id="loading" style="background-image: url('{{ asset('auth-image/LR.jpg')}}') background-position: center background-repeat: no-repeat background-size: cover;"> --}}
+    @extends('employee.auth.layout.create')
   
-   
-          <div class="container part">
-    
-           
-            <div class="row justify-content-center">
-            
-              <div class="col-sm-4">
-                <div class="card bg-success-subtle text-emphasis-success">
-                  <h3 class="card-title text-center">Login </h3>
-                  <div class="card-body d-flex justify-content-center">
-                    <form class="col-md-10">
-                      <div class="form-group d-flex ">
-                        <input type="email" class="form-control" id="email" placeholder="Email">
-                      </div>
+    @section('content') 
 
+    @include('employee.inc.message')
+
+   
+          <div class="form-container">
+            <div class="log-container">
+                <form class="login-form" action="{{ route('login.post') }}" method="POST">
+                    @csrf
+                    <h1>Login</h1>
+                    <div class="login-form">
+                    <input type="email" class="label" name="email" id="email" placeholder="Email" required>
+                    @if ($errors->has('email'))
+                    <span class="text-danger">{{ $errors->first('email') }}</span>
+                    @endif
+
+<<<<<<< HEAD
                       <div class="form-group d-flex">
                         <input type="text" class="form-control" id="password" placeholder="Password">
                       </div>
@@ -55,3 +58,32 @@
                   </div>
                 <body>
         </html>
+=======
+                    </div>
+        
+                    <div class="login-form">
+                    <input type="password" class="label" name="password" id="password" placeholder="Password" required>
+                    @if ($errors->has('password'))
+                    <span class="text-danger">{{ $errors->first('password') }}</span>
+                    @endif
+                    </div>
+        
+                    <div class="form-options">
+                        <label class="remember">
+                            <input type= "checkbox" name= "remember">  Remember me
+                        </label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+        
+                    <button type="submit">Login</button>
+        
+                    <div class="signup-link">
+                        Don't have an account? <a href="/employee/register">Sign Up</a>
+                    </div>
+                </form>
+            </div>
+          </div>
+@endsection
+                {{-- <body>
+        </html> --}}
+>>>>>>> 3093245a05e32bc2acb5d4e035f81cfecb674db2
