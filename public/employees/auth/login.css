@@ -1,4 +1,4 @@
-*{
+/* *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body{
   background: rgb(219, 226, 226);
-}
+} */
 
 .row{
   background: rgb(192, 210, 210);
@@ -47,4 +47,8 @@ img{
   -moz-box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75);
   box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75);
 }
+
+/* .dd{
+  margin-top: 20px;
+} */
 
