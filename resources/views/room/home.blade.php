@@ -13,40 +13,34 @@
 </head>
 
 <body>
-  <header class="header-outer">
-
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="header-inner responsive-wrapper">
-        <a class="navbar-brand fw-bold" href="#">Hotel Paradise</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#rooms">Rooms</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#login">Login</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      </nav>
-
-    </header>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Hotel Paradise</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#login">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  
   <!-- slider add -->
   {{-- <div class="row">
   <div class="col-md-12"> --}}
