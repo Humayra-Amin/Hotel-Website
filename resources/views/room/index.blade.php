@@ -112,24 +112,18 @@
                 </div>
             </div>
             
-            <div class="col-md-12 customize-fonts">
+            <div class="col-md-12 customize-fonts table-line">
                 <div class="table-responsive-md mt-3">
                     <table class="table">
                         <thead>
                         <tr>
-                        <th scope="row">
-                        
-                        <div class="form-check-left">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-                            <label class="form-check-label" for="flexCheckIndeterminate"></label>
-                        </div>
-                        </th>
-                        <th scope="col">Room no</th>
-                        <th scope="col">Room Title</th>
-                        <th scope="col">Floor No</th>
-                        <th scope="col">Category</th>
-                        <th scope="col">Price</th>
-                        <th></th>
+                    
+                        <th class=col-md-2>Room no</th>
+                        <th class=col-md-2>Room Title</th>
+                        <th class=col-md-2>Floor No</th>
+                        <th class=col-md-2>Category</th>
+                        <th class=col-md-2>Price</th>
+                        <th class=col-md-2></th>
                         </tr>
                         </thead>
                         <tbody>
@@ -140,29 +134,18 @@
         
 
                             <tr>
-                                <td scope="row">    
-                                <div class="form-check-left">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-                                    <label class="form-check-label" for="flexCheckIndeterminate"></label>
-                                </div>
-                                </th>
-
                                 <td>{{$room->roomno}}</td>  
                                 <td>{{$room->roomtitle}}</td>  
                                 <td>{{$room->floorno}}</td>
                                 <td>{{$room->category}}</td>    
                                 <td>{{$room->price}}</td>  
-                              
-                                
-                                
-
-                                <td class="text-right">
+                                <td class="text-center">
                                 <a href="/room/{{$room->id}}" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></a>
                                 <a href="/room/{{$room->id}}/edit/" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></a>
                                  <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
                                 </td>
 
-                            </tr>
+                             </tr>
                             
 
                         @endforeach

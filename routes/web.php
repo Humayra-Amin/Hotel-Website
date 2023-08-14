@@ -7,6 +7,7 @@ use App\Http\Controllers\RoomController;
 use App\Http\Controllers\EmployeeAuthController;
 use App\Http\Controllers\RoomAuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CustomerController;
 
 
 /*
@@ -47,7 +48,11 @@ Route::middleware(["auth"])->group(function () {
     Route::get('/room/single', [RoomController::class, "single"]);
 });
 
-
+Route::get('/employee/login', [CustomerController::class, "login"]);
+Route::post('/employee/post-login', [CustomerController::class, "postLogin"]);
+Route::get('/employee/register', [CustomerController::class, "register"]);
+Route::post('/employee/post-register', [CustomerController::class, "postRegister"]);
+Route::get('/employee/logout', [CustomerController::class, "logout"]);
 
 
 Route::get('/employee/login', [EmployeeAuthController::class, "login"]);
@@ -55,6 +60,7 @@ Route::post('/employee/post-login', [EmployeeAuthController::class, "postLogin"]
 Route::get('/employee/register', [EmployeeAuthController::class, "register"]);
 Route::post('/employee/post-register', [EmployeeAuthController::class, "postRegister"]);
 Route::get('/employee/logout', [EmployeeAuthController::class, "logout"]);
+
 
 Route::get('/employee/', [EmployeeController::class, "index"]);
 Route::get('/employee/add', [EmployeeController::class, "add"]);
