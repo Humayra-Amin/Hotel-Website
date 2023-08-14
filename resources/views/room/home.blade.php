@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hotel Paradise</title>
-  <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{asset('rooms/css/home.css')}}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,33 +20,23 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-collapse " id="navbarNav">
-      <div class="navbar-nav ml-auto">
-        <div class="nav-item">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
           <a class="nav-link" href="#">Home</a>
-        </div>
-        <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Rooms
-          </a>
-          <div class="dropdown-menu bg-white" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item text-dark" href="#">Single Room</a>
-            <a class="dropdown-item text-dark" href="#">Deluxe Room</a>
-            <a class="dropdown-item text-dark" href="#">Family Room</a>
-          </div>
-        </div>
-        <div class="nav-item">
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
-        </div>
-        <div class="nav-item">
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#services">Services</a>
-        </div>
-        <div class="nav-item">
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
-        </div>
-        <div class="nav-item">
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#login">Login</a>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   </div>
   </nav>

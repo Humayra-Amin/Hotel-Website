@@ -1,14 +1,10 @@
-.form-container{
-  font-family: "roboto";
-  margin: 0;
+/* *{
   padding: 0;
-  display: flex;
-  justify-content:space-around;
-  align-items:center;
-  height: 100vh;
-  background-color: #8990f5;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
          /* .bg{
             position: relative;
@@ -22,70 +18,54 @@
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+=======
+body{
+  background: rgb(219, 226, 226);
+} */
+
+.row{
+  background: rgb(192, 210, 210);
+  border-radius: 30px;
+  box-shadow: 12px 12px 22px grey;
+>>>>>>> 243198bf78d90620b0af2e3de7f41f8b2efe2a79
 }
 >>>>>>> 3093245a05e32bc2acb5d4e035f81cfecb674db2
 
-.login-form {
-  max-width: 350px;
-  margin: 6px 8px;
+img{
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
-.login-form h1 {
-  text-align: center;
-}
-
-label {
-  display: block;
-  margin-top: 10px;
-}
-
-input[type="email"],
-input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.form-options {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.remember {
-  display: flex;
-  margin-bottom:10px;
-  margin-left:8px;
-}
-
-button {
-  width: 100%;
-  padding: 10px;
-  margin: 10px;
-  background-color: #007BFF;
-  color: #fff;
+.btn1{
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  outline: none;
+  height: 50px;
+  width: 50%;
+  background-color: blue;
+  color: white;
+  border-radius: 60px;
+  font-weight: 600;
 }
 
-button:hover {
-  background-color: #0056b3;
+.btn1:hover{
+  background: white;
+  border: 1px solid;
+  color: black;
+  transition: 0.5s;
 }
 
-.signup-link {
-  text-align: center;
-  margin-top: 15px;
+.inp{
+  height: 50px;
+  width: 450px;
+  border: none;
+  outline: none;
+  border-radius: 60px;
+  -webkit-box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75);
+  box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75);
 }
 
-.signup-link a {
-  color: #007BFF;
-  text-decoration: none;
-}
+/* .dd{
+  margin-top: 20px;
+} */
 
-.signup-link a:hover {
-  text-decoration: underline;
-}
