@@ -2,16 +2,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-body{
-  background: rgb(219, 226, 226);
 } */
 
+.custom{
+  background: rgb(240, 238, 238);
+}
 .row{
   background: rgb(192, 210, 210);
   border-radius: 30px;
-  box-shadow: 12px 12px 22px grey;
+  box-shadow: 5px 5px 10px rgb(219, 216, 216);
 }
 
 img{
@@ -41,14 +40,15 @@ img{
   height: 50px;
   width: 450px;
   border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   outline: none;
-  border-radius: 60px;
-  -webkit-box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75);
+  margin-bottom: 20px;
+  /* border-radius: 60px; */
+  background: transparent;
+  color: #40414a;
+  /* -webkit-box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75);
   -moz-box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75);
-  box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75);
+  box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75); */
 }
 
-/* .dd{
-  margin-top: 20px;
-} */
 

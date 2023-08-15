@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="{{asset('employees/auth/login.css')}}">
 </head>
   <body>
-     <section class="Form my-5 mx-6 py-5">        
+     <section class="Form my-7 mx-6 py-5">        
         <div class="container">
             <div class="row g-0">
                 <div class="col-lg-5">
-                    <img src="{{asset('image/2.jpg')}}" class="img-fluid" alt="">
+                    <img src="{{asset('image/9.jpg')}}" class="img-fluid" alt="">
                 </div>
-                <div class="col-lg-7 px-5 pt-5 text-center py-5">
+                <div class="col-lg-7 px-3 pt-3 text-center py-5">
                     <h1 class="font-weight-bold py-3">Register</h1>
                     <form>
                         <div class="form-row">
@@ -28,7 +28,7 @@
                           </div>
                         <div class="form-row">
                             <div class="offset-1 col-lg-10">
-                                <input type="password" placeholder="Password" name="password" class="inp my-3 p-3">
+                                <input type="password" placeholder="Password" name="password" class="inp px-3">
                             </div>
                         </div>
                           <div class="form-row">
@@ -40,7 +40,7 @@
                               <button type="button" class="btn1 mt-2 mb-4">Create New Account</button>                           
                           </div>
                           <div class="form-row">
-                            <p>Already have an Account? <a href="/employee/login">Login</a></p>
+                            <p>Already have an Account? <a href="/employee/login">Login Here</a></p>
                            </div>
                     </form>
                 </div>
