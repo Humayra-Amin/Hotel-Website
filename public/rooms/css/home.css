@@ -226,16 +226,26 @@
           }
 
           .bi-facebook {
+            justify-content:space-evenly;
+            width: 25px;
+            height: 20px;
             background-color: #4e71a8;
             color: #ffffff;
           }
 
           .bi-twitter{
+            justify-content:space-evenly;
+            width: 25px;
+            height: 20px;
             background-color: #55acee;
             color: #ffffff;
           }
 
           .bi-google  {
+         
+            justify-content:space-evenly;
+            width: 25px;
+            height: 20px;
             background-color: #d65e2f;
             color: #ffffff;
           }
