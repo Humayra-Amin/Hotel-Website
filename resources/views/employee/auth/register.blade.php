@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Register</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="reg.css">
+    <link rel="stylesheet" href="{{asset('employees/auth/register.css')}}">
 </head>
   <body>
-    <section class="Form my-2">        
+    <section class="Form my-2 mx-6 py-5">        
         <div class="container">
             <div class="row g-0">
                 <div class="col-lg-5">
-                    <img src="./5.jpg" class="img-fluid" alt="">
+                    <img src="{{asset('image/9.jpg')}}" class="img-fluid" alt="">
                 </div>
-                <div class="col-lg-7 px-5 pt-5 text-center py-5">
+                <div class="col-lg-7 px-3 pt-3 text-center py-5">
                     <h1 class="font-weight-bold py-3">Register</h1>
                     <form>
                         <div class="form-row mt-3">

@@ -1,4 +1,4 @@
-*{
+/* *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body{
   background: rgb(219, 226, 226);
-}
+} */
 
 .row{
   background: rgb(192, 210, 210);

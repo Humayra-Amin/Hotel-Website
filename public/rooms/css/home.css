@@ -188,90 +188,95 @@
 
             /* footer */
 
-          .bg-footer {
-            padding: 4em 0;
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-color:#c5874e;
-            position: relative;
-          }
-          .footer-link a {
-            color: #ffffff;
-            line-height: 40px;
-            font-size: 14px;
-            transition: all 0.5s;
-            font-family: "poppins";
-          }
-
-          .footer-link a:hover {
-            color: #181a19;
           
-          }
+/* .row{
+  display: flex;
+  flex-wrap: wrap;
+} */
 
-          .contact-info {
-            color: #acacac;
-            font-size: 14px;
-            font-family: "poppins";
-          }
+ul{
+  list-style: none;
+}
 
-          .footer-social-icon {
-            font-size: 15px;
-            height: 34px;
-            width: 34px;
-            line-height: 34px;
-            border-radius: 3px;
-            text-align: center;
-            display: inline-block;
-          }
+.footer{
+  background-color: #c5874e;
+  padding: 70px 0;
+}
 
-          .bi-facebook {
-            justify-content:space-evenly;
-            width: 25px;
-            height: 20px;
-            background-color: #4e71a8;
-            color: #ffffff;
-          }
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
 
-          .bi-twitter{
-            justify-content:space-evenly;
-            width: 25px;
-            height: 20px;
-            background-color: #55acee;
-            color: #ffffff;
-          }
+.footer-col h4{
+font-size: 20px;
+color: black;
+text-transform: capitalize;
+margin-bottom: 35px;
+font-weight: 500;
+position: relative;
+}
 
-          .bi-google  {
-         
-            justify-content:space-evenly;
-            width: 25px;
-            height: 20px;
-            background-color: #d65e2f;
-            color: #ffffff;
-          }
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
 
-          .footer-alt {
-            padding-top: 40px;
-            color: #ffffff;
-            font-family: "poppins";
-            font-size: 17px;
-          }
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
 
-          .footer-heading {
-            letter-spacing: 2px;
-            color: white;
-            position: relative;
-            padding-bottom: 12px;
-            font-family: "poppins";
-          }
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+  display: block;
+  transition: all 0.3s ease;
+}
 
-          .footer-heading:after {
-            content: '';
-            width: 30px;
-            border-bottom: 1px solid #FFF;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            display: block;
-            border-bottom: 1px solid #1c1d1d;
-          }
+.footer-col ul li a:hover{
+color: #ffffff;
+padding-left: 8px;
+}
+
+.footer-col .social-links a{
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  font-size: 1.5em;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/* .fa-brands fa-facebook {
+  background-color: #4e71a8;
+  color: #ffffff;
+} */
+
+.footer-alt {
+  padding-top: 40px;
+  color: #181a19;
+  font-family: "poppins";
+  font-size: 17px;
+  margin: 0px 5px;
+  margin-top: 1px;
+}
