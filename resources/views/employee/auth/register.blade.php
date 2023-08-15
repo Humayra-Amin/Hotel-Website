@@ -3,21 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login form</title>
+    <title>Register</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{asset('employees/auth/login.css')}}">
+    <link rel="stylesheet" href="reg.css">
 </head>
   <body>
-     <section class="Form my-7 mx-6 py-5">        
+    <section class="Form my-2">        
         <div class="container">
             <div class="row g-0">
                 <div class="col-lg-5">
-                    <img src="{{asset('image/9.jpg')}}" class="img-fluid" alt="">
+                    <img src="./5.jpg" class="img-fluid" alt="">
                 </div>
-                <div class="col-lg-7 px-3 pt-3 text-center py-5">
+                <div class="col-lg-7 px-5 pt-5 text-center py-5">
                     <h1 class="font-weight-bold py-3">Register</h1>
                     <form>
-                        <div class="form-row">
+                        <div class="form-row mt-3">
                             <div class="offset-1 col-lg-10">
                                 <input type="name" placeholder="Username" name="name" class="inp px-3 my-3">
                             </div>
@@ -28,7 +28,7 @@
                           </div>
                         <div class="form-row">
                             <div class="offset-1 col-lg-10">
-                                <input type="password" placeholder="Password" name="password" class="inp px-3">
+                                <input type="password" placeholder="Password" name="password" class="inp  px-3">
                             </div>
                         </div>
                           <div class="form-row">
@@ -40,7 +40,7 @@
                               <button type="button" class="btn1 mt-2 mb-4">Create New Account</button>                           
                           </div>
                           <div class="form-row">
-                            <p>Already have an Account? <a href="/employee/login">Login Here</a></p>
+                            <p>Already have an Account? <a href="/employee/login">Login</a></p>
                            </div>
                     </form>
                 </div>

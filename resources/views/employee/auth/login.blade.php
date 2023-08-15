@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{asset('employees/auth/login.css')}}"></head>
-  <body class="custom">
+    <link rel="stylesheet" href="login.css">
+</head>
+  <body>
      <section class="Form my-5 mx-6 py-5">        
         <div class="container">
             <div class="row g-0">
                 <div class="col-lg-5">
-                    <img src="{{asset('image/2.jpg')}}" class="img-fluid" alt="">
+                    <img src="./2.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-7 px-5 pt-5 text-center py-5">
                     <h1 class="font-weight-bold py-3">Login</h1>
@@ -33,12 +34,11 @@
                             </div>
                         </div>
                         <a href="#" class="px-5 pt-5">Forgot Password?</a>
-                        <p class="mt-2 mb-4">Don't have an Account? <a href="#">Register Here</a></p>
+                        <p class="mt-2 mb-4">Don't have an Account? <a href="#">Register here</a></p>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
