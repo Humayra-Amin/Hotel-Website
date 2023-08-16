@@ -144,10 +144,10 @@
             /* footer */
 
           
-/* .row{
+.row-custom{
   display: flex;
   flex-wrap: wrap;
-} */
+}
 
 ul{
   list-style: none;
@@ -221,10 +221,6 @@ padding-left: 8px;
   background-color: #ffffff;
 }
 
-/* .fa-brands fa-facebook {
-  background-color: #4e71a8;
-  color: #ffffff;
-} */
 
 .footer-alt {
   padding-top: 40px;
