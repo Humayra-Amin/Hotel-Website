@@ -13,7 +13,7 @@
     
   }
   .navbar-light.sticky-header{
-    background-color:#c5874e;
+    background-color:#000000;
   }
 
   .navbar-light .navbar-brand{
@@ -25,47 +25,6 @@
   }
 
 
-   /* :root {
-    --header-outer-height: 100px;
-    --header-inner-height: 70px;
-    --header-height-difference: calc(var(--header-outer-height) - var(--header-inner-height));
-    --header-bg: rgb(19, 18, 18);
-  }
-  
-  .header-outer {
-    height: var(--header-outer-height);
-    position: fixed;
-    width: 100%;
-    top: calc(var(--header-height-difference) * -1); 
-    display: flex;
-    align-items: center;
-    z-index: 9;
-    margin-top: 20px;
-  }
-  
-  .header-outer.sticky-header{
-    background-color: var(--header-bg); 
-    box-shadow: 0 2px 10px 0 rgba(0,0,0, 0.1);
-  }
-  
-  .header-inner {
-    height: var(--header-inner-height);
-    position: sticky;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .responsive-wrapper {
-    width: 90%;
-    margin-top: 20px;
-    margin-left: 120px;
-    margin-right: 10px;
-  }  */
-
-
-      /* slider-img */
 
   .bio{
       margin-bottom:210px;
@@ -76,90 +35,84 @@
   }
 
 
-  .title{
+.title{
       font-size: 65px;
       font-family: 'Signika';
   
   }
 
-  .slider-img {
+.slider-img {
      
       width: 1800px;
-      height: 640px;
-    object-fit: cover;
+      height: 700px;
+      object-fit: cover;
 
     
   }
           /* rooms */
   
-          .section-heading {
-            position: relative;
-        
-            font-family: "poppins";
-           
-            color: rgb(0, 0, 0);
-          }
+.section-heading {
+    position: relative;
+    font-family: "poppins";
+    color: rgb(0, 0, 0);
+ }
 
-          .section-heading:after {
-            content: '';
-            width: 80px;
-            
-            position: absolute;
-            left: 480px;
-            margin-bottom: 10px;
-            display: block;
-            border-bottom: 2px solid #c5874e;
-          }
+.section-heading:after {
+   content: '';
+   width: 80px;
+   position: absolute;
+   left: 480px;
+   margin-bottom: 10px;
+   display: block;
+   border-bottom: 2px solid #c5874e;
+}
 
        
-         .room-card {
-          margin-bottom: 20px;
-        }
+.room-card {
+    margin-bottom: 20px;
+}
  
-    
-          .section-site{
-              padding: 6rem;
-              background: #fcf7f7;
-          }
+.section-site{
+    padding: 6rem;
+    background: #fcf7f7;
+ }
 
 
 
-          .hotel-room .hotel-room-body{
-            padding: 30px;
-
-          }
+.hotel-room .hotel-room-body{
+    padding: 30px;
+        
+}
           /* .hotel-room{
             text-align: center;
             background:#ffffff;
             transition: .3s all ease;
           } */
 
-          .hotel-room{
-            text-align: center;
-            background:#ffffff;
-            cursor: pointer;
-            transition: transform 0.7s ease-in-out;
-          }
+.hotel-room{
+     text-align: center;
+     background:#ffffff;
+     cursor: pointer;
+     transition: transform 0.7s ease-in-out;
+ }
 
-          .hotel-room:hover {
+.hotel-room:hover {
            
-            transform: scale(1.1);}
+    transform: scale(1.1);}
 
 
               /* about us */
-
-
-          .about-us {
-            background-color: #f8f9fa;
-            padding-bottom: 5rem;
-            font-family: 'Poppins';
+.about-us {
+   background-color: #f8f9fa;
+   padding-bottom: 5rem;
+   font-family: 'Poppins';
           }
 
-          .about-us img {
-            padding-top:30px;
-            padding-bottom: 10px;
-            width: 90%;
-          }
+.about-us img {
+   padding-top:30px;
+   padding-bottom: 10px;
+   width: 90%;
+}
 
 
           .about-us h2 {
@@ -199,7 +152,7 @@ ul{
 }
 
 .footer{
-  background-color: #c5874e;
+  background-color: #000000;
   padding: 70px 0;
 }
 
@@ -210,7 +163,7 @@ ul{
 
 .footer-col h4{
 font-size: 20px;
-color: black;
+color: rgb(255, 255, 255);
 text-transform: capitalize;
 margin-bottom: 35px;
 font-weight: 500;
@@ -235,10 +188,9 @@ position: relative;
 .footer-col ul li a{
   font-size: 16px;
   text-transform: capitalize;
-  color: black;
   text-decoration: none;
   font-weight: 300;
-  color: black;
+  color: white;
   display: block;
   transition: all 0.3s ease;
 }
