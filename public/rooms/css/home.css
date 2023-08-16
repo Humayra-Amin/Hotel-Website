@@ -1,242 +1,230 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Signika';
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Signika';
 }
 /* navbar */
 .navbar-light .navbar-nav .nav-link{
-    color: rgb(241, 234, 234);
-    font-size: 18px;
-    padding-right: 30px;
-    font-family: sans-serif;
-    
-  }
-  .navbar-light.sticky-header{
-    background-color:#c5874e;
-  }
-
-          .navbar-light .navbar-brand{
-            color: rgb(248, 248, 248);
-            font-size: 30px;
-          padding-right: 20px;
-          font-family: sans-serif;
-          
-          }
-
- 
-
-
-          .bio{
-              margin-bottom:210px;
-              color: rgb(228, 228, 228)88, 95, 95;
-              font-size: 30px;
-              font-family: 'Poppins';
-            
-          }
-
-
-          .title{
-              font-size: 65px;
-              font-family: 'Signika';
-          
-          }
-
-  .slider-img {
-     
-      width: 1800px;
-      height: 640px;
-    object-fit: cover;
-
-            
-          }
-
-
-          /* rooms */
+  color: rgb(241, 234, 234);
+  font-size: 18px;
+  padding-right: 30px;
+  font-family: sans-serif;
   
-          .section-heading {
-            position: relative;
-        
-            font-family: "poppins";
-           
-            color: rgb(0, 0, 0);
-          }
-
-          .section-heading:after {
-            content: '';
-            width: 80px;
-            
-            position: absolute;
-            left: 480px;
-            margin-bottom: 10px;
-            display: block;
-            border-bottom: 2px solid #c5874e;
-          }
-
-       
-         .room-card {
-          margin-bottom: 20px;
-        }
- 
-    
-          .section-site{
-              padding: 6rem;
-              background: #fcf7f7;
-          }
-
-
-
-          .hotel-room .hotel-room-body{
-            padding: 30px;
-
-          }
-          /* .hotel-room{
-            text-align: center;
-            background:#ffffff;
-            transition: .3s all ease;
-          } */
-
-          .hotel-room{
-            text-align: center;
-            background:#ffffff;
-            cursor: pointer;
-            transition: transform 0.7s ease-in-out;
-          }
-
-          .hotel-room:hover {
-           
-            transform: scale(1.1);}
-
-
-              /* about us */
-.about-us {
-   background-color: #f8f9fa;
-   padding-bottom: 5rem;
-   font-family: 'Poppins';
-          }
-
-          .about-us img {
-            padding-top:30px;
-            padding-bottom: 10px;
-            width: 90%;
-          }
-
-
-          .about-us h2 {
-
-            padding-bottom: 5px;
-            padding-left: 0px;
-            font-size: 34px;
-            font-family: "poppins";
-          }
-          .about-us h2:after{
-            content: '';
-            width: 80px;        
-            position: absolute;
-            left: 20px;
-            margin-bottom: 10px;
-            display: block;
-            border-bottom: 2px solid #c5874e;
-          }
-
-          .about-us p {
-            font-size: 18px;
-            color: #272626cd ;
-          
-          }
-
-
-            /* footer */
-
-          
-/* .row{
-  display: flex;
-  flex-wrap: wrap;
-} */
-
-            ul{
-              list-style: none;
-            }
-
-.footer{
-  background-color: #c5874e;
-  padding: 70px 0;
+}
+.navbar-light.sticky-header{
+  background-color:#000000;
 }
 
-            .footer-col{
-              width: 25%;
-              padding: 0 15px;
-            }
+.navbar-light .navbar-brand{
+  color: rgb(248, 248, 248);
+  font-size: 30px;
+ padding-right: 20px;
+ font-family: sans-serif;
+
+}
+
+
+
+.bio{
+    margin-bottom:210px;
+    color: rgb(228, 228, 228)88, 95, 95;
+    font-size: 30px;
+    font-family: 'Poppins';
+   
+}
+
+
+.title{
+    font-size: 65px;
+    font-family: 'Signika';
+
+}
+
+.slider-img {
+   
+    width: 1800px;
+    height: 700px;
+    object-fit: cover;
+
+  
+}
+        /* rooms */
+
+.section-heading {
+  position: relative;
+  font-family: "poppins";
+  color: rgb(0, 0, 0);
+}
+
+.section-heading:after {
+ content: '';
+ width: 80px;
+ position: absolute;
+ left: 480px;
+ margin-bottom: 10px;
+ display: block;
+ border-bottom: 2px solid #c5874e;
+}
+
+     
+.room-card {
+  margin-bottom: 20px;
+}
+
+.section-site{
+  padding: 6rem;
+  background: #fcf7f7;
+}
+
+
+
+.hotel-room .hotel-room-body{
+  padding: 30px;
+      
+}
+        /* .hotel-room{
+          text-align: center;
+          background:#ffffff;
+          transition: .3s all ease;
+        } */
+
+.hotel-room{
+   text-align: center;
+   background:#ffffff;
+   cursor: pointer;
+   transition: transform 0.7s ease-in-out;
+}
+
+.hotel-room:hover {
+         
+  transform: scale(1.1);}
+
+
+            /* about us */
+.about-us {
+ background-color: #f8f9fa;
+ padding-bottom: 5rem;
+ font-family: 'Poppins';
+        }
+
+.about-us img {
+ padding-top:30px;
+ padding-bottom: 10px;
+ width: 90%;
+}
+
+
+        .about-us h2 {
+
+          padding-bottom: 5px;
+          padding-left: 0px;
+          font-size: 34px;
+          font-family: "poppins";
+        }
+        .about-us h2:after{
+          content: '';
+          width: 80px;        
+          position: absolute;
+          left: 20px;
+          margin-bottom: 10px;
+          display: block;
+          border-bottom: 2px solid #c5874e;
+        }
+
+        .about-us p {
+          font-size: 18px;
+          color: #272626cd ;
+        
+        }
+
+
+          /* footer */
+
+        
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+
+ul{
+list-style: none;
+}
+
+.footer{
+background-color: #000000;
+padding: 70px 0;
+}
+
+.footer-col{
+width: 25%;
+padding: 0 15px;
+}
 
 .footer-col h4{
 font-size: 20px;
-color: black;
+color: rgb(255, 255, 255);
 text-transform: capitalize;
 margin-bottom: 35px;
 font-weight: 500;
 position: relative;
 }
 
-            .footer-col h4::before{
-              content: '';
-              position: absolute;
-              left: 0;
-              bottom: -10px;
-              background-color: #e91e63;
-              height: 2px;
-              box-sizing: border-box;
-              width: 50px;
-            }
-
-            .footer-col ul li:not(:last-child){
-              margin-bottom: 10px;
-            }
-
-.footer-col ul li a{
-  font-size: 16px;
-  text-transform: capitalize;
-  color: black;
-  text-decoration: none;
-  font-weight: 300;
-  color: black;
-  display: block;
-  transition: all 0.3s ease;
+.footer-col h4::before{
+content: '';
+position: absolute;
+left: 0;
+bottom: -10px;
+background-color: #e91e63;
+height: 2px;
+box-sizing: border-box;
+width: 50px;
 }
 
-            .footer-col ul li a:hover{
-            color: #ffffff;
-            padding-left: 8px;
-            }
+.footer-col ul li:not(:last-child){
+margin-bottom: 10px;
+}
 
-            .footer-col .social-links a{
-              display: inline-block;
-              height: 42px;
-              width: 42px;
-              font-size: 1.5em;
-              background-color: rgba(255, 255, 255, 0.2);
-              margin: 0 10px 10px 0;
-              text-align: center;
-              line-height: 40px;
-              border-radius: 50%;
-              color: #ffffff;
-              transition: all 0.5s ease;
-            }
+.footer-col ul li a{
+font-size: 16px;
+text-transform: capitalize;
+text-decoration: none;
+font-weight: 300;
+color: white;
+display: block;
+transition: all 0.3s ease;
+}
 
-            .footer-col .social-links a:hover{
-              color: #24262b;
-              background-color: #ffffff;
-            }
+.footer-col ul li a:hover{
+color: #ffffff;
+padding-left: 8px;
+}
 
-            /* .fa-brands fa-facebook {
-              background-color: #4e71a8;
-              color: #ffffff;
-            } */
+.footer-col .social-links a{
+display: inline-block;
+height: 42px;
+width: 42px;
+font-size: 1.5em;
+background-color: rgba(255, 255, 255, 0.2);
+margin: 0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: all 0.5s ease;
+}
 
-            .footer-alt {
-              padding-top: 40px;
-              color: #181a19;
-              font-family: "poppins";
-              font-size: 17px;
-              margin: 0px 5px;
-              margin-top: 1px;
-            }
+.footer-col .social-links a:hover{
+color: #24262b;
+background-color: #ffffff;
+}
+
+
+.footer-alt {
+padding-top: 40px;
+color: #181a19;
+font-family: "poppins";
+font-size: 17px;
+margin: 0px 5px;
+margin-top: 1px;
+}
