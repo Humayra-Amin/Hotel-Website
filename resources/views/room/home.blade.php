@@ -30,6 +30,9 @@
           <a class="nav-link" href="#rooms">Rooms</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#relaxation">Relaxation</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
         <li class="nav-item">
@@ -201,6 +204,9 @@
 		  
 		  </div>
     </div>
+    <div class="text-center mt-5">
+      <p class="footer-alt mb-0 f-14">2023 Copyright, All Rights Reserved</p>
+  </div>
 	</footer>
 
 <script src="{{asset('rooms/js/home.js')}}">
