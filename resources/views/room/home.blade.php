@@ -10,7 +10,7 @@
   <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -21,7 +21,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="navbar-collapse " id="navbarNav">
+    <div class="collapse navbar-collapse " id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="#">Home</a>
@@ -50,8 +50,8 @@
   </nav>
   
   <!-- slider add -->
-  {{-- <div class="row">
-  <div class="col-md-12"> --}}
+  {{-- <div class="row"> --}}
+  {{-- <div class="col-md-12">  --}}
   <div id="roomCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#roomCarousel" data-slide-to="0" class="active"></li>
@@ -159,7 +159,12 @@
     </div>
   </div>
 </section>
-
+<!--features-->
+{{-- 
+<div class="row">
+  <div class="col-sm-6 col-md-4 col-log-3">
+    <div class="text-center p-4 item">
+      <span class= ""> --}}
 
 <!--footer-->
 <footer class="footer">

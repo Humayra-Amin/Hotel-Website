@@ -37,7 +37,7 @@ Route::middleware(["auth"])->group(function () {
    
     Route::get('/', [Controller::class, "index"]);
     Route::get('/room/', [RoomController::class, "index"]);
-    Route::get('/room/logout', [RoomAuthController::class, 'logout']);
+    Route::get('/room/logout', [RoomAuthController::class, 'logout'])->name('logout');
 
     Route::get('/room/add', [RoomController::class, "add"]);
     Route::get('/room/{id}', [RoomController::class, "show"]);

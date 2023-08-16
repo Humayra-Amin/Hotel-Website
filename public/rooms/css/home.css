@@ -5,6 +5,7 @@
   font-family: 'Signika';
 }
 /* navbar */
+
 .navbar-light .navbar-nav .nav-link{
   color: #dee2e6;
   font-size: 18px;
@@ -47,7 +48,7 @@
 .slider-img {
    
     width: 1800px;
-    height: 700px;
+    height: 710px;
     object-fit: cover;
 
   
