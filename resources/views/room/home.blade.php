@@ -162,7 +162,7 @@
 
 
 <!--footer-->
-    <footer class="footer">
+<footer class="footer">
 	<div class="container">
 	            <div class="row">
 				<div class="footer-col">
@@ -200,19 +200,10 @@
                       <a href="#"><i class="fa-brands fa-twitter"></i></a>
                       <a href="#"><i class="fa-brands fa-google"></i></a>
                   </div>
-{{-- 
-                  <div class="footer-col">
-                    <h4>Contact us</h4>
-                    <p class="contact-info"><a href=""><h6>info@gmail.com</h6></a></p>
-                    <p class="contact-info"><a href=""><h6>+8801896755116</h6></a></p>
-            </div> --}}
-
           </div>
+		  
 		  </div>
     </div>
-    <div class="text-center">
-      <p class="footer-alt mb-0 f-14">2023 Copyright, All Rights Reserved</p>
-  </div>
 	</footer>
 
 <script src="{{asset('rooms/js/home.js')}}">
