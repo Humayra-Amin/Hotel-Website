@@ -189,10 +189,10 @@
             /* footer */
 
           
-/* .row{
+.row{
   display: flex;
   flex-wrap: wrap;
-} */
+}
 
 ul{
   list-style: none;
@@ -267,10 +267,6 @@ padding-left: 8px;
   background-color: #ffffff;
 }
 
-/* .fa-brands fa-facebook {
-  background-color: #4e71a8;
-  color: #ffffff;
-} */
 
 .footer-alt {
   padding-top: 40px;
@@ -279,4 +275,28 @@ padding-left: 8px;
   font-size: 17px;
   margin: 0px 5px;
   margin-top: 1px;
+}
+
+.fa-google {
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+  background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93% );
+  background-size: 55%;
+  background-position: 70% 0;
+  background-repeat: no-repeat;
+}
+
+.fa-instagram-square {
+  color: #ec5295;
+}
+
+.fa-twitter-square {
+  color: #3a67c9;
 }
