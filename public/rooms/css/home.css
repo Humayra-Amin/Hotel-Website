@@ -35,74 +35,70 @@
   }
 
 
-  .title{
+.title{
       font-size: 65px;
       font-family: 'Signika';
   
   }
 
-  .slider-img {
+.slider-img {
      
       width: 1800px;
       height: 700px;
-    object-fit: cover;
+      object-fit: cover;
 
     
   }
           /* rooms */
   
-          .section-heading {
-            position: relative;
-        
-            font-family: "poppins";
-           
-            color: rgb(0, 0, 0);
-          }
+.section-heading {
+    position: relative;
+    font-family: "poppins";
+    color: rgb(0, 0, 0);
+ }
 
-          .section-heading:after {
-            content: '';
-            width: 80px;
-            
-            position: absolute;
-            left: 480px;
-            margin-bottom: 10px;
-            display: block;
-            border-bottom: 2px solid #c5874e;
-          }
+.section-heading:after {
+   content: '';
+   width: 80px;
+   position: absolute;
+   left: 480px;
+   margin-bottom: 10px;
+   display: block;
+   border-bottom: 2px solid #c5874e;
+}
 
        
-         .room-card {
-          margin-bottom: 20px;
-        }
+.room-card {
+    margin-bottom: 20px;
+}
  
-    
-          .section-site{
-              padding: 6rem;
-              background: #fcf7f7;
-          }
+.section-site{
+    padding: 6rem;
+    background: #fcf7f7;
+ }
 
 
 
-          .hotel-room .hotel-room-body{
-            padding: 30px;
-
-          }
+.hotel-room .hotel-room-body{
+    padding: 30px;
+        
+}
           /* .hotel-room{
             text-align: center;
             background:#ffffff;
             transition: .3s all ease;
           } */
 
-          .hotel-room{
-            text-align: center;
-            background:#ffffff;
-            cursor: pointer;
-            transition: transform 0.7s ease-in-out;
-          }
+.hotel-room{
+     text-align: center;
+     background:#ffffff;
+     cursor: pointer;
+     transition: transform 0.7s ease-in-out;
+ }
 
-          .hotel-room:hover {
+.hotel-room:hover {
            
-            transform: scale(1.1);}
+    transform: scale(1.1);}
 
 
               /* about us */
@@ -112,11 +108,11 @@
    font-family: 'Poppins';
           }
 
-          .about-us img {
-            padding-top:30px;
-            padding-bottom: 10px;
-            width: 90%;
-          }
+.about-us img {
+   padding-top:30px;
+   padding-bottom: 10px;
+   width: 90%;
+}
 
 
           .about-us h2 {
