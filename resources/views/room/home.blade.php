@@ -201,6 +201,9 @@
 		  
 		  </div>
     </div>
+    <div class="text-center mt-5">
+      <p class="footer-alt mb-0 f-14">2023 Copyright, All Rights Reserved</p>
+  </div>
 	</footer>
 
 <script src="{{asset('rooms/js/home.js')}}">
