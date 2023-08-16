@@ -142,7 +142,7 @@
           /* footer */
 
           
-.row{
+.row-custom{
   display: flex;
   flex-wrap: wrap;
 }

@@ -164,7 +164,7 @@
 <!--footer-->
 <footer class="footer">
 	<div class="container">
-	            <div class="row">
+	            <div class="row-custom">
 				<div class="footer-col">
                   <h4>Information</h4>
                   <ul>
