@@ -1,9 +1,10 @@
 *{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-  font-family: 'Signika';
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Signika';
 }
+<<<<<<< HEAD
 /* navbar */
 
 .navbar-light .navbar-nav .nav-link{
@@ -12,15 +13,28 @@
   padding-right: 30px;
   font-family: sans-serif;
   
+=======
+
+     /* navbar */
+
+.navbar-light .navbar-nav .nav-link{
+    color: #dee2e6;
+    font-size: 18px;
+    padding-right: 30px;
+    font-family: sans-serif;
+>>>>>>> 576d052c566a0cb9f07e7e3a75fed794065cc980
 }
+
 .navbar-light .navbar-nav .nav-link:hover{
-   color:#ffffff;
+    color:#ffffff;
 }
+
 .navbar-light.sticky-header{
-  background-color:#172d44;
+    background-color:#172d44;
 }
 
 .navbar-light .navbar-brand{
+<<<<<<< HEAD
   color: rgb(248, 248, 248);
   font-size: 34px;
   padding-right: 20px;
@@ -29,35 +43,40 @@
 }
 
 
+=======
+    color: rgb(248, 248, 248);
+    font-size: 30px;
+    padding-right: 20px;
+    font-family: sans-serif;
+}
+   
+         
+>>>>>>> 576d052c566a0cb9f07e7e3a75fed794065cc980
 .bio{
     margin-bottom:210px;
     color: rgb(228, 228, 228)88, 95, 95;
     font-size: 30px;
     font-family: 'Poppins';
-   
 }
 
-
+     /* sliderimage */
+     
 .title{
     font-size: 65px;
     font-family: 'Signika';
-
 }
 
-.slider-img {
-   
+.slider-img {  
     width: 1800px;
     height: 710px;
     object-fit: cover;
-
-  
 }
         /* rooms */
 
 .section-heading {
-  position: relative;
-  font-family: "poppins";
-  color: rgb(0, 0, 0);
+    position: relative;
+    font-family: "poppins";
+    color: rgb(0, 0, 0);
 }
 
 .section-heading:after {
@@ -69,22 +88,18 @@
    display: block;
    border-bottom: 2px solid #c5874e;
 }
-
-     
+  
 .room-card {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .section-site{
-  padding: 6rem;
-  background: #fcf7f7;
+    padding: 6rem;
+    background: #fcf7f7;
 }
 
-
-
 .hotel-room .hotel-room-body{
-  padding: 30px;
-      
+    padding: 30px;    
 }
         /* .hotel-room{
           text-align: center;
@@ -93,51 +108,51 @@
         } */
 
 .hotel-room{
-   text-align: center;
-   background:#ffffff;
-   cursor: pointer;
-   transition: transform 0.7s ease-in-out;
+    text-align: center;
+    background:#ffffff;
+    cursor: pointer;
+    transition: transform 0.7s ease-in-out;
 }
 
-.hotel-room:hover {
-         
-  transform: scale(1.1);}
+.hotel-room:hover {         
+    transform: scale(1.1);
+}
 
 
             /* about us */
+
 .about-us {
- background-color: #f8f9fa;
- padding-bottom: 5rem;
- font-family: 'Poppins';
-        }
+    background-color: #f8f9fa;
+    padding-bottom: 5rem;
+    font-family: 'Poppins';
+}
 
 .about-us img {
- padding-top:30px;
- padding-bottom: 10px;
- width: 90%;
+    padding-top:30px;
+    padding-bottom: 10px;
+    width: 90%;
 }
 
 .about-us h2 {
-
-   padding-bottom: 5px;
-   padding-left: 0px;
-   font-size: 34px;
-   font-family: "poppins";
+    padding-bottom: 5px;
+    padding-left: 0px;
+    font-size: 34px;
+    font-family: "poppins";
 }
+
 .about-us h2:after{
-  content: '';
-  width: 80px;        
-  position: absolute;
-  left: 20px;
-  margin-bottom: 10px;
-  display: block;
-  border-bottom: 2px solid #c5874e;
+    content: '';
+    width: 80px;        
+    position: absolute;
+    left: 20px;
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #c5874e;
 }
 
 .about-us p {
-
- font-size: 18px;
- color: #272626cd ;
+    font-size: 18px;
+    color: #272626cd;
 }
 
 
@@ -145,84 +160,85 @@
 
         
 .row-custom{
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 ul{
-list-style: none;
+    list-style: none;
 }
 
 .footer{
-background-color: #172d44;
-padding: 20px 10px;
+    background-color: #172d44;
+    padding: 20px 10px;
 }
 
 .footer-col{
-width: 25%;
-padding: 0 15px;
+    width: 25%;
+    padding: 0 15px;
 }
 
 .footer-col h4{
-font-size: 20px;
-color: rgb(255, 255, 255);
-text-transform: capitalize;
-margin-bottom: 35px;
-font-weight: 500;
-position: relative;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
 }
 
 .footer-col h4::before{
-content: '';
-position: absolute;
-left: 0;
-bottom: -10px;
-background-color: #e91e63;
-height: 2px;
-box-sizing: border-box;
-width: 50px;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
 }
 
 .footer-col ul li:not(:last-child){
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .footer-col ul li a{
-font-size: 16px;
-text-transform: capitalize;
-text-decoration: none;
-font-weight: 300;
-color: white;
-display: block;
-transition: all 0.3s ease;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: white;
+    display: block;
+    transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover{
-color: #ffffff;
-padding-left: 8px;
+    color: #ffffff;
+    padding-left: 8px;
 }
 
 .footer-col .social-links a{
-display: inline-block;
-height: 42px;
-width: 42px;
-font-size: 1.5em;
-background-color: rgba(255, 255, 255, 0.2);
-margin: 0 10px 10px 0;
-text-align: center;
-line-height: 40px;
-border-radius: 50%;
-color: #ffffff;
-transition: all 0.5s ease;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
 }
 
 .footer-col .social-links a:hover{
-color: #24262b;
-background-color: #ffffff;
+    color: #24262b;
+    background-color: #ffffff;
 }
 
 
 .footer-alt {
+<<<<<<< HEAD
 padding-top: 40px;
 color: hsl(0, 0%, 100%);
 font-family: "poppins";
@@ -235,4 +251,12 @@ margin-top: 1px;
   width: 100%;
   object-fit: cover;
   height: 203px;
+=======
+    padding-top: 40px;
+    color: hsl(0, 0%, 100%);
+    font-family: "poppins";
+    font-size: 17px;
+    margin: 0px 5px;
+    margin-top: 1px;
+>>>>>>> 576d052c566a0cb9f07e7e3a75fed794065cc980
 }
