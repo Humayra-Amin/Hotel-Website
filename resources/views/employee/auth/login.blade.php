@@ -28,6 +28,7 @@
                             <div class="offset-1 col-lg-10">
                                 <input type="password" placeholder="Password" name="password" class="inp my-3 p-3">
                             </div>
+                            {{-- <p id="wrong_id" style=" color:red; font-size:12px; "></p> --}}
                         </div>
                         <div class="form-row py-3">
                             <div class="offset-1 col-lg-10">
