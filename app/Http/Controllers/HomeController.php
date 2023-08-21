@@ -13,6 +13,7 @@ class HomeController extends Controller
         $rooms=Room::all();
         return view("room.home")->with('rooms',  $rooms);
     }
+    
 
 
 }

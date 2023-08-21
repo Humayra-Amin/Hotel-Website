@@ -121,10 +121,10 @@
   @foreach ($rooms as $room)
     <div class="col-md-6 col-lg-4 mb-5">
     <div class="hotel-room">
-      @if ($room->image)
+      @if ($room->image[0])
               @foreach ($room->image as $img)
               <div>
-                  <img src='{{Storage::disk("public")->url($img)}}' class="d-block w-100" >
+                  <img src='{{Storage::disk("public")->url($img)}}' class="d-block w-100 home-image" >
               </div>
               @endforeach
               @endif
@@ -215,8 +215,8 @@
 	</footer>
 
 <script src="{{asset('rooms/js/home.js')}}">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 </body>
 </html>

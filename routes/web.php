@@ -30,6 +30,7 @@ Route::get('/room/register', [RoomAuthController::class, 'register'])->name('reg
 Route::post('/room/post-register', [RoomAuthController::class, 'postRegister'])->name('register.post'); 
  
 Route::get('/home', [HomeController::class, "home"]);
+Route::get('/singleroom', [HomeController::class, "singleroom"]);
 
 
 
