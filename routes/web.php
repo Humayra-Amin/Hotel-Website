@@ -49,6 +49,7 @@ Route::middleware(["auth"])->group(function () {
     Route::get('/room/single', [RoomController::class, "single"]);
 });
 
+
 Route::get('/employee/login', [CustomerController::class, "login"]);
 Route::post('/employee/post-login', [CustomerController::class, "postLogin"]);
 Route::get('/employee/register', [CustomerController::class, "register"]);
