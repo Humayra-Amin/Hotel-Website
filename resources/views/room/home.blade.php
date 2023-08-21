@@ -10,7 +10,7 @@
   <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -21,7 +21,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="navbar-collapse " id="navbarNav">
+    <div class="collapse navbar-collapse " id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="#">Home</a>
@@ -50,8 +50,8 @@
   </nav>
   
   <!-- slider add -->
-  {{-- <div class="row">
-  <div class="col-md-12"> --}}
+  {{-- <div class="row"> --}}
+  {{-- <div class="col-md-12">  --}}
   <div id="roomCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#roomCarousel" data-slide-to="0" class="active"></li>
@@ -121,10 +121,10 @@
   @foreach ($rooms as $room)
     <div class="col-md-6 col-lg-4 mb-5">
     <div class="hotel-room">
-      @if ($room->image)
+      @if ($room->image[0])
               @foreach ($room->image as $img)
               <div>
-                  <img src='{{Storage::disk("public")->url($img)}}' class="d-block w-100" >
+                  <img src='{{Storage::disk("public")->url($img)}}' class="d-block w-100 home-image" >
               </div>
               @endforeach
               @endif
@@ -159,7 +159,12 @@
     </div>
   </div>
 </section>
-
+<!--features-->
+{{-- 
+<div class="row">
+  <div class="col-sm-6 col-md-4 col-log-3">
+    <div class="text-center p-4 item">
+      <span class= ""> --}}
 
 <!--footer-->
 <footer class="footer">
@@ -210,8 +215,8 @@
 	</footer>
 
 <script src="{{asset('rooms/js/home.js')}}">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 </body>
 </html>
