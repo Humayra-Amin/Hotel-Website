@@ -11,7 +11,7 @@
     <div class="custom-file">
      <section class="Form my-5 mx-6 py-5">        
         <div class="container">
-            <div class="row g-0">
+            <div class="row g-0 custom-card-group" >
                 <div class="col-lg-5">
                     <img src="{{asset('image/2.jpg')}}" class="img-fluid" alt="">
                 </div>

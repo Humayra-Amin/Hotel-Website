@@ -92,10 +92,7 @@
                               <label for="roomtitle">Room Title</label>
                               <input type="text" class="form-control" name="roomtitle" id="roomtitle" placeholder="Enter Room Name">
                             </div>
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="roomno">Room No</label>
-                              <input type="number" class="form-control" name="roomno" id="roomno" placeholder="Enter Room No." required>
-                            </div>
+
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="floorno">Floor No</label>
                               <input type="text" class="form-control" name="floorno" id="floorno" placeholder="Enter Floor No." required>

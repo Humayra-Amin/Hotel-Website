@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Signika';
 }
-<<<<<<< HEAD
 /* navbar */
 
 .navbar-light .navbar-nav .nav-link{
@@ -13,16 +12,6 @@
   padding-right: 30px;
   font-family: sans-serif;
   
-=======
-
-     /* navbar */
-
-.navbar-light .navbar-nav .nav-link{
-    color: #dee2e6;
-    font-size: 18px;
-    padding-right: 30px;
-    font-family: sans-serif;
->>>>>>> 576d052c566a0cb9f07e7e3a75fed794065cc980
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
@@ -34,7 +23,6 @@
 }
 
 .navbar-light .navbar-brand{
-<<<<<<< HEAD
   color: rgb(248, 248, 248);
   font-size: 34px;
   padding-right: 20px;
@@ -43,15 +31,6 @@
 }
 
 
-=======
-    color: rgb(248, 248, 248);
-    font-size: 30px;
-    padding-right: 20px;
-    font-family: sans-serif;
-}
-   
-         
->>>>>>> 576d052c566a0cb9f07e7e3a75fed794065cc980
 .bio{
     margin-bottom:210px;
     color: rgb(228, 228, 228)88, 95, 95;
@@ -238,7 +217,6 @@ ul{
 
 
 .footer-alt {
-<<<<<<< HEAD
 padding-top: 40px;
 color: hsl(0, 0%, 100%);
 font-family: "poppins";
@@ -251,12 +229,4 @@ margin-top: 1px;
   width: 100%;
   object-fit: cover;
   height: 203px;
-=======
-    padding-top: 40px;
-    color: hsl(0, 0%, 100%);
-    font-family: "poppins";
-    font-size: 17px;
-    margin: 0px 5px;
-    margin-top: 1px;
->>>>>>> 576d052c566a0cb9f07e7e3a75fed794065cc980
 }
