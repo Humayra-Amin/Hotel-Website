@@ -11,7 +11,7 @@
     <div class="group-file">
     <section class="Form my-2 mx-6 py-5">        
         <div class="container">
-            <div class="row g-0">
+            <div class="row g-0 form-card-group">
                 <div class="col-lg-5">
                     <img src="{{asset('image/9.jpg')}}" class="img-fluid" alt="">
                 </div>
