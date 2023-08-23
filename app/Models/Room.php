@@ -22,6 +22,8 @@ class Room extends Model
         'roomview',
         'guestservice',
         'facilities',
+        'availablerooms',
+        'maxoccupancy',
         'description',
         'image',
        

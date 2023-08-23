@@ -13,14 +13,24 @@ class HomeController extends Controller
         $rooms=Room::all();
         return view("room.home")->with('rooms',  $rooms);
     }
-    public function singleroom()
-    {
-        return view("room.singleroom");
+    // public function singleroom()
+    // {
+    //     return view("room.singleroom");
 
-    }
-    public function show($id)
+    // }
+    public function singleroom($id)
     { 
        $room=Room::where("id",$id)->firstOrfail();
+       return view("room.singleroom")->with('room',  $room);
+
+    }
+
+    public function roombook(Request $request, $id)
+    { 
+       $room=Room::where("id",$id)->firstOrfail();
+
+       
+    
        return view("room.singleroom")->with('room',  $room);
 
     }
