@@ -30,7 +30,8 @@ Route::get('/room/register', [RoomAuthController::class, 'register'])->name('reg
 Route::post('/room/post-register', [RoomAuthController::class, 'postRegister'])->name('register.post'); 
  
 Route::get('/home', [HomeController::class, "home"]);
-Route::get('/singleroom', [HomeController::class, "singleroom"]);
+Route::get('/singleroom/{id}', [HomeController::class, "singleroom"]);
+Route::put('/roombook/{id}', [HomeController::class, "roombook"]);
 
 
 
@@ -48,6 +49,7 @@ Route::middleware(["auth"])->group(function () {
     Route::get('/room/edit', [RoomController::class, "edit"]);
     Route::get('/room/single', [RoomController::class, "single"]);
 });
+
 
 
 Route::get('/employee/login', [CustomerController::class, "login"]);

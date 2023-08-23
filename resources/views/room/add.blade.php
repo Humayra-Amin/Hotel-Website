@@ -101,6 +101,14 @@
                               <label for="price">Price</label>
                               <input type="text" class="form-control" name="price" id="price" placeholder="Enter Price." required>
                             </div>
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="availablerooms">Room Availability</label>
+                              <input type="text" class="form-control" name="availablerooms" id="availablerooms" placeholder="Enter Available Room." required>
+                            </div>
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="maxoccupancy">Max Occupancy</label>
+                              <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter maxoccupancy." required>
+                            </div>
 
 
                             <div class="col-sm-6 form-group custom-form-group">
@@ -135,7 +143,7 @@
                           
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="roomsize">Room Size</label>
-                              <input type="number" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" required>
+                              <input type="text" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" required>
                             </div>
 
 

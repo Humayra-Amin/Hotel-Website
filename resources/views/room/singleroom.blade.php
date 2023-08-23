@@ -42,7 +42,11 @@
                 <li class="group-item">Complimentary Breakfast</li>
             </ul> --}}
             <p class="lead font-weight-bold"> {{$room->price}}</p>
-            <button id="bookButton" class="btn btn-primary">Book Now</button>
+            <form action="/roombook/{{$room->id}}" method="POST" enctype="multipart/form-data">
+                @csrf
+                @method('PUT')
+                    <button id="bookButton" class="btn btn-primary">Book Now</button>
+            </form>
         </div>
     </div>
 </div>
