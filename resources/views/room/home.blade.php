@@ -130,7 +130,7 @@
               @endif
 
            <div class="hotel-room-body">
-            <a href="/singleroom/{{$room->id}}">
+            <a href="/singleroom/  {{$room->id}}">
             <h5 class="card-title">{{$room->roomtitle}}</h5>
             <p class="card-text">{{$room->price}}</p>
           </div>

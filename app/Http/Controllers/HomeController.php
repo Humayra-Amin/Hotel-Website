@@ -28,9 +28,10 @@ class HomeController extends Controller
     public function roombook(Request $request, $id)
     { 
        $room=Room::where("id",$id)->firstOrfail();
+        
+      
 
-       
-    
+   
        return view("room.singleroom")->with('room',  $room);
 
     }
