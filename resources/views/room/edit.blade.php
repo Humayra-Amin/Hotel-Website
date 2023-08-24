@@ -89,15 +89,23 @@
                                 <label for="roomtitle">Room Title</label>
                                 <input type="text" class="form-control" name="roomtitle" id="room-title" placeholder="Enter Room Name" value="{{$room->roomtitle}}" required>
                               </div>
+
                               <div class="col-sm-6 form-group custom-form-group">
                                 <label for="roomno">Room No.</label>
                                 <input type="number" class="form-control" name="roomno" id="room-no" placeholder="Enter Room No." value="{{$room->roomno}}" required>
                               </div>
+
                               <div class="col-sm-6 form-group custom-form-group">
                                 <label for="buildingno">Floor No.</label>
                                 <input type="text" class="form-control" name="floorno" id="room-no" placeholder="Enter Floor No." value="{{$room->floorno}}" required>
                               </div>
+
                               <div class="col-sm-6 form-group custom-form-group">
+                                <label for="size">Room Size</label>
+                                <input type="number" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" value="{{$room->roomsize}}" required>
+                              </div>
+
+                              {{-- <div class="col-sm-6 form-group custom-form-group">
                                 <label for="floorno">Price.</label>
                                 <input type="text" class="form-control" name="price" id="floorno" placeholder="Enter Price."  value="{{$room->price}}" required>
                               </div>
@@ -106,10 +114,11 @@
                                 <label for="availablerooms">Room Availability</label>
                                 <input type="text" class="form-control" name="availablerooms" id="availablerooms" placeholder="Enter Available Room." required>
                               </div>
+                              
                               <div class="col-sm-6 form-group custom-form-group">
                                 <label for="maxoccupancy">Max Occupancy</label>
                                 <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter maxoccupancy." required>
-                              </div>
+                              </div> --}}
                               
                               <div class="col-sm-6 form-group custom-form-group">
                                 <label for="Category">Category</label>
@@ -141,11 +150,20 @@
                                 </select>
                               </div>
 
-                            
                               <div class="col-sm-6 form-group custom-form-group">
+                                <label for="availablerooms">Room Availability</label>
+                                <input type="text" class="form-control" name="availablerooms" id="availablerooms" placeholder="Enter Available Room." value="{{$room->availablerooms}}" required>
+                              </div>
+                              
+                              <div class="col-sm-6 form-group custom-form-group">
+                                <label for="maxoccupancy">Max Occupancy</label>
+                                <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter maxoccupancy." value="{{$room->maxoccupancy}}" required>
+                              </div>
+
+                              {{-- <div class="col-sm-6 form-group custom-form-group">
                                 <label for="size">Room Size</label>
                                 <input type="number" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" value="{{$room->roomsize}}" required>
-                              </div>
+                              </div> --}}
 
                               <div class="col-sm-6 form-group custom-form-group">
                                 <label for="view">Room View</label>
@@ -157,7 +175,10 @@
                                 </select>
                               </div>
 
-
+                              <div class="col-sm-6 form-group custom-form-group">
+                                <label for="price">Price.</label>
+                                <input type="text" class="form-control" name="price" id="price" placeholder="Enter Price."  value="{{$room->price}}" required>
+                              </div>
 
 
                               <div class="col-sm-6 form-group custom-form-group">
