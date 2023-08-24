@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Room;
+use App\Models\RoomBook;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -22,7 +23,6 @@ class HomeController extends Controller
     { 
        $room=Room::where("id",$id)->firstOrfail();
        return view("room.singleroom")->with('room',  $room);
-
     }
 
     public function roombook(Request $request, $id)
@@ -35,6 +35,4 @@ class HomeController extends Controller
        return view("room.singleroom")->with('room',  $room);
 
     }
-
-
 }
