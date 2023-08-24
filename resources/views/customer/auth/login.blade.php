@@ -18,15 +18,22 @@
                 <div class="col-lg-7 px-5 pt-5 text-center py-5">
                     <h1 class="font-weight-bold py-3">Login</h1>
                     <!-- <h4>Sign in to your account</h4> -->
-                    <form>
+                    <form class="login-form" action="{{ route('login.post') }}" method="POST">
+                        @csrf
                         <div class="form-row">
                             <div class="offset-1 col-lg-10">
-                                <input type="email" placeholder="Email" name="email" class="inp px-3">
+                                <input type="email" class="label" name="email" id="email" placeholder="Email" required>
+                                @if ($errors->has('email'))
+                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                                @endif
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="offset-1 col-lg-10">
-                                <input type="password" placeholder="Password" name="password" class="inp my-3 p-3">
+                                <input type="password" class="label" name="password" id="password" placeholder="Password" required>
+                                @if ($errors->has('password'))
+                                <span class="text-danger">{{ $errors->first('password') }}</span>
+                                @endif
                             </div>
                             {{-- <p id="wrong_id" style=" color:red; font-size:12px; "></p> --}}
                         </div>
@@ -36,7 +43,7 @@
                             </div>
                         </div>
                         <a href="#" class="px-5 pt-5">Forgot Password?</a>
-                        <p class="mt-2 mb-4">Don't have an Account? <a href="#">Register here</a></p>
+                        <p class="mt-2 mb-4">Don't have an Account? <a href="/register">Register here</a></p>
                     </form>
                 </div>
             </div>
