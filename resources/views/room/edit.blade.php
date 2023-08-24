@@ -78,6 +78,11 @@
                   <div class="container mt-3">
                             <h2 class="text-left text-info1 custom-form-title">Edit Rooms</h2>
                         
+
+                            @include('room.inc.message')
+
+
+
                       <form action="/room/{{$room->id}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')

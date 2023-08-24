@@ -29,7 +29,7 @@ Route::post('/room/post-login', [RoomAuthController::class, 'postLogin'])->name(
 Route::get('/room/register', [RoomAuthController::class, 'register'])->name('register');
 Route::post('/room/post-register', [RoomAuthController::class, 'postRegister'])->name('register.post'); 
  
-Route::get('/home', [HomeController::class, "home"]);
+Route::get('/', [HomeController::class, "home"]);
 Route::get('/singleroom/{id}', [HomeController::class, "singleroom"]);
 Route::put('/roombook/{id}', [HomeController::class, "roombook"]);
 
@@ -37,7 +37,7 @@ Route::put('/roombook/{id}', [HomeController::class, "roombook"]);
 
 Route::middleware(["auth"])->group(function () {
    
-    Route::get('/', [Controller::class, "index"]);
+    Route::get('admin/', [Controller::class, "index"]);
     Route::get('/room/', [RoomController::class, "index"]);
     Route::get('/room/logout', [RoomAuthController::class, 'logout'])->name('logout');
 
@@ -52,18 +52,21 @@ Route::middleware(["auth"])->group(function () {
 
 
 
-Route::get('/employee/login', [CustomerController::class, "login"]);
-Route::post('/employee/post-login', [CustomerController::class, "postLogin"]);
-Route::get('/employee/register', [CustomerController::class, "register"]);
-Route::post('/employee/post-register', [CustomerController::class, "postRegister"]);
-Route::get('/employee/logout', [CustomerController::class, "logout"]);
 
 
-Route::get('/employee/login', [EmployeeAuthController::class, "login"]);
-Route::post('/employee/post-login', [EmployeeAuthController::class, "postLogin"]);
-Route::get('/employee/register', [EmployeeAuthController::class, "register"]);
-Route::post('/employee/post-register', [EmployeeAuthController::class, "postRegister"]);
-Route::get('/employee/logout', [EmployeeAuthController::class, "logout"]);
+
+Route::get('/login', [CustomerController::class, "login"]);
+Route::post('/post-login', [CustomerController::class, "postLogin"]);
+Route::get('/register', [CustomerController::class, "register"]);
+Route::post('/post-register', [CustomerController::class, "postRegister"]);
+Route::get('/logout', [CustomerController::class, "logout"]);
+
+
+// Route::get('/employee/login', [EmployeeAuthController::class, "login"]);
+// Route::post('/employee/post-login', [EmployeeAuthController::class, "postLogin"]);
+// Route::get('/employee/register', [EmployeeAuthController::class, "register"]);
+// Route::post('/employee/post-register', [EmployeeAuthController::class, "postRegister"]);
+// Route::get('/employee/logout', [EmployeeAuthController::class, "logout"]);
 
 
 Route::get('/employee/', [EmployeeController::class, "index"]);

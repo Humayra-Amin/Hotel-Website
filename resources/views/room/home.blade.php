@@ -110,12 +110,11 @@
 
 
 <div class="section-site">
-
-  <div class="row">
+    <div class="row">
     <div class="col-md-12 mb-5 text-center">
         <h1 class="section-heading">Our Rooms</h1>
     </div>
-</div>
+    </div>
 
 <div class=row>
   @foreach ($rooms as $room)
@@ -134,19 +133,14 @@
             <h5 class="card-title">{{$room->roomtitle}}</h5>
             <p class="card-text">{{$room->price}}</p>
           </div>
-        </div>
-    
     </div>
-@endforeach
-    
     </div>
-
+  @endforeach  
   </div>
-
 </div>
 <!--aboutus-->
 
-<section class="about-us">
+<div class="about-us">
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
@@ -159,20 +153,14 @@
       </div>
     </div>
   </div>
-</section>
-<!--features-->
-{{-- 
-<div class="row">
-  <div class="col-sm-6 col-md-4 col-log-3">
-    <div class="text-center p-4 item">
-      <span class= ""> --}}
+</div>
 
 <!--footer-->
 <footer class="footer">
 	<div class="container">
-	            <div class="row-custom">
+	      <div class="row-custom">
 				<div class="footer-col">
-                  <h4>Information</h4>
+             <h4>Information</h4>
                   <ul>
                       <li><a href="#">Pages</a></li>
                       <li><a href="#">Our Team</a></li>

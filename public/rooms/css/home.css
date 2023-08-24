@@ -50,7 +50,7 @@
     height: 710px;
     object-fit: cover;
 }
-        /* rooms */
+/* rooms */
 
 .section-heading {
     position: relative;
@@ -97,8 +97,7 @@
     transform: scale(1.1);
 }
 
-
-            /* about us */
+/* about us */
 
 .about-us {
     background-color: #f8f9fa;

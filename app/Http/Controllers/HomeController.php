@@ -27,25 +27,19 @@ class HomeController extends Controller
 
     public function roombook(Request $request, $id)
     { 
+
        $room=Room::where("id",$id)->firstOrfail();
 
-       $request->validate([
-        'room_id' => 'required',
-        'book' => 'required',
-    ]);
-
-        $roombook = RoomBook::find($id);
+        $roombook = new RoomBook();
         $roombook->room_id = $id;
         $roombook->book = 1;
         $roombook->save();
-
-        $room->availablerooms = $$room->availablerooms - 1;
+        
+        $room->availablerooms = $room->availablerooms - 1;
         $room->update();
         
-        // if (Room::table('singleroom')->where('room_id', $request->room_id)->exists()) {
-        //     return to_route('room')->with('error', 'Sorry! The room is already booked!');
-        // }
-       return view("room.singleroom")->with('room',  $room);
+        
+        return redirect("singleroom/$room->id")->with("success", "Room booked.");
 
     }
 }

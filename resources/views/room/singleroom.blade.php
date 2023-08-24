@@ -9,6 +9,8 @@
 </head>
 <body>
 
+
+
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-6">
@@ -42,6 +44,9 @@
                 <li class="group-item">Complimentary Breakfast</li>
             </ul> --}}
             <p class="lead font-weight-bold"> {{$room->price}}</p>
+
+            @include('room.inc.message')
+
             <form action="/roombook/{{$room->id}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
