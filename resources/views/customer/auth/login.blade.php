@@ -20,22 +20,24 @@
                     <!-- <h4>Sign in to your account</h4> -->
                     <form class="login-form" action="{{ route('login.post') }}" method="POST">
                         @csrf
-                        <div class="form-row">
+
+                        <div class="form-row mt-3">
                             <div class="offset-1 col-lg-10">
-                                <input type="email" class="label" name="email" id="email" placeholder="Email" required>
-                                @if ($errors->has('email'))
-                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                                <input type="name" placeholder="Username" name="name" class="inp px-3 my-3">
+                                @if ($errors->has('name'))
+                                <span class="text-danger">{{ $errors->first('name') }}</span>
                                 @endif
                             </div>
                         </div>
+                    
                         <div class="form-row">
                             <div class="offset-1 col-lg-10">
-                                <input type="password" class="label" name="password" id="password" placeholder="Password" required>
+                                <input type="password" placeholder="Password" name="password" class="inp  px-3">
                                 @if ($errors->has('password'))
                                 <span class="text-danger">{{ $errors->first('password') }}</span>
-                                @endif
+                                 @endif
                             </div>
-                            {{-- <p id="wrong_id" style=" color:red; font-size:12px; "></p> --}}
+                       
                         </div>
                         <div class="form-row py-3">
                             <div class="offset-1 col-lg-10">

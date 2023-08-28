@@ -41,9 +41,22 @@
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/login">Login</a>
-        </li>
+ 
+          @if(Auth::user())
+          <li class="nav-item">
+              <a class="nav-link" href="{{ route('login') }}">Login</a>
+          </li>
+    
+          <li class="nav-item">
+              <a class="nav-link" href="{{ route('register') }}">Register</a>
+          </li>
+          @else
+          <li class="nav-item">
+              <a class="nav-link" href="{{ route('logout') }}">Logout</a>
+          </li>
+          @endif
+
+     
       </ul>
     </div>
   </div>
