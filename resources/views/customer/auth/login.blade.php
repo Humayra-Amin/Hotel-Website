@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="{{asset('employees/auth/login.css')}}">
 </head>
   <body>
+    
+    @include('employee.inc.message') 
+
     <div class="custom-file">
      <section class="Form my-5 mx-6 py-5">        
         <div class="container">
@@ -21,14 +24,22 @@
                     <form class="login-form" action="{{ route('login.post') }}" method="POST">
                         @csrf
 
-                        <div class="form-row mt-3">
+                        {{-- <div class="form-row mt-3">
                             <div class="offset-1 col-lg-10">
                                 <input type="name" placeholder="Username" name="name" class="inp px-3 my-3">
                                 @if ($errors->has('name'))
                                 <span class="text-danger">{{ $errors->first('name') }}</span>
                                 @endif
                             </div>
-                        </div>
+                        </div> --}}
+
+                        <div class="form-row mt-3">
+                            <div class="offset-1 col-lg-10">
+                                <input type="email" placeholder="Email" name="email" class="inp px-3 my-3">
+                                @if ($errors->has('email'))
+                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                               @endif
+                            </div>
                     
                         <div class="form-row">
                             <div class="offset-1 col-lg-10">
@@ -41,7 +52,8 @@
                         </div>
                         <div class="form-row py-3">
                             <div class="offset-1 col-lg-10">
-                                <button type="button" class="btn1 mt-2 mb-4">Login</button>                           
+                                {{-- <button type="button" class="btn1 mt-2 mb-4">Login</button>                            --}}
+                                <button type="submit" class="btn1 mt-2 mb-4" >Login</button>
                             </div>
                         </div>
                         <a href="#" class="px-5 pt-5">Forgot Password?</a>

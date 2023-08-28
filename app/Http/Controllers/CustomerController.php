@@ -25,6 +25,35 @@ class CustomerController extends Controller
         return view("customer.auth.customerlist");
     }
     
+    public function store(Request $request)
+    {
+        $request->validate([
+            'id' => 'required|max:50',
+            'name' => 'required|max:50',
+            'email' => 'required|email',
+            'roomno' => 'required|integer',
+            'status' => 'required',
+            'checkin' => 'required|integer',
+            'checkout' => 'required|integer',
+        ]);
+    
+    
+    
+        $customer = new Customer();
+        $customer->name = $request->name;
+        $customer->email = $request->email;
+        $customer->roomno = $request->phone;
+        $customer->status = $request->dob;
+        $customer->checkin = $request->nid;
+        $customer->checkout = $request->position;
+    
+        $customer->save();
+    
+    
+        return redirect("customer")->with("success", "Customer added.");
+    }
+
+
     public function postLogin(Request $request)
     {
 

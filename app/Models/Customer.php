@@ -20,6 +20,12 @@ class Customer extends Model
         'name',
         'email',
         'password',
+        'id',
+        'roomno',
+        'status',
+        'checkin',
+        'checkout',
+
     ];
 
     /**
@@ -41,4 +47,6 @@ class Customer extends Model
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    
 }
