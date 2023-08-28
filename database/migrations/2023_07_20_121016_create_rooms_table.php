@@ -26,6 +26,8 @@ return new class extends Migration
             $table->string('roomtype');
             $table->string('roomsize');
             $table->string('roomview');
+            $table->text('availablerooms');
+            $table->text('maxoccupancy');
             $table->text('guestservice');
             $table->text('facilities');
             $table->text('description')->nullable();

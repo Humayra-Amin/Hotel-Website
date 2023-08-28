@@ -8,34 +8,56 @@
     <link rel="stylesheet" href="{{asset('employees/auth/login.css')}}">
 </head>
   <body>
+    
+    @include('employee.inc.message') 
+
     <div class="custom-file">
      <section class="Form my-5 mx-6 py-5">        
         <div class="container">
-            <div class="row g-0">
+            <div class="row g-0 custom-card-group" >
                 <div class="col-lg-5">
                     <img src="{{asset('image/2.jpg')}}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-7 px-5 pt-5 text-center py-5">
                     <h1 class="font-weight-bold py-3">Login</h1>
                     <!-- <h4>Sign in to your account</h4> -->
-                    <form>
+                    <form class="login-form" action="{{ route('login.post') }}" method="POST">
+                        @csrf
+
+                        {{-- <div class="form-row mt-3">
+                            <div class="offset-1 col-lg-10">
+                                <input type="name" placeholder="Username" name="name" class="inp px-3 my-3">
+                                @if ($errors->has('name'))
+                                <span class="text-danger">{{ $errors->first('name') }}</span>
+                                @endif
+                            </div>
+                        </div> --}}
+
+                        <div class="form-row mt-3">
+                            <div class="offset-1 col-lg-10">
+                                <input type="email" placeholder="Email" name="email" class="inp px-3 my-3">
+                                @if ($errors->has('email'))
+                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                               @endif
+                            </div>
+                    
                         <div class="form-row">
                             <div class="offset-1 col-lg-10">
-                                <input type="email" placeholder="Email" name="email" class="inp px-3">
+                                <input type="password" placeholder="Password" name="password" class="inp  px-3">
+                                @if ($errors->has('password'))
+                                <span class="text-danger">{{ $errors->first('password') }}</span>
+                                 @endif
                             </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="offset-1 col-lg-10">
-                                <input type="password" placeholder="Password" name="password" class="inp my-3 p-3">
-                            </div>
+                       
                         </div>
                         <div class="form-row py-3">
                             <div class="offset-1 col-lg-10">
-                                <button type="button" class="btn1 mt-2 mb-4">Login</button>                           
+                                {{-- <button type="button" class="btn1 mt-2 mb-4">Login</button>                            --}}
+                                <button type="submit" class="btn1 mt-2 mb-4" >Login</button>
                             </div>
                         </div>
                         <a href="#" class="px-5 pt-5">Forgot Password?</a>
-                        <p class="mt-2 mb-4">Don't have an Account? <a href="#">Register here</a></p>
+                        <p class="mt-2 mb-4">Don't have an Account? <a href="/register">Register here</a></p>
                     </form>
                 </div>
             </div>

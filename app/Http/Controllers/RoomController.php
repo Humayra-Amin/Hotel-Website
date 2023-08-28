@@ -32,6 +32,8 @@ class RoomController extends Controller
             'roomno' => 'required|integer',
             'floorno' => 'required',
             'price' => 'required',
+            'availablerooms' => 'required',
+            'maxoccupancy' => 'required',
             'category' => 'required',
             'roomtype' => 'required',
             'roomsize' => 'required|integer',
@@ -48,6 +50,8 @@ class RoomController extends Controller
         $room->roomno = $request->roomno;
         $room->floorno = $request->floorno;
         $room->price = $request->price;
+        $room->availablerooms = $request->availablerooms;
+        $room->maxoccupancy = $request->maxoccupancy;
         $room->category = $request->category ;
         $room->roomtype = $request->roomtype;
         $room->roomsize = $request->roomsize;
@@ -75,14 +79,14 @@ class RoomController extends Controller
             'roomno' => 'required|integer',
             'floorno' => 'required',
             'price' => 'required',
+            'availablerooms' => 'required',
+            'maxoccupancy' => 'required',
             'category' => 'required',
             'roomtype' => 'required',
             'roomsize' => 'required|integer',
             'roomview' => 'required',
             'guestservice' => 'required',
             'facilities' => 'required',
-
-
         ]);
 
 
@@ -91,6 +95,8 @@ class RoomController extends Controller
         $room->roomno = $request->roomno;
         $room->floorno = $request->floorno;
         $room->price = $request->price;
+        $room->availablerooms = $request->availablerooms;
+        $room->maxoccupancy = $request->maxoccupancy;
         $room->category = $request->category ;
         $room->roomtype = $request->roomtype;
         $room->roomsize = $request->roomsize;

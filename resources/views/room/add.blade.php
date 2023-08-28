@@ -92,18 +92,36 @@
                               <label for="roomtitle">Room Title</label>
                               <input type="text" class="form-control" name="roomtitle" id="roomtitle" placeholder="Enter Room Name">
                             </div>
+
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="roomno">Room No</label>
                               <input type="number" class="form-control" name="roomno" id="roomno" placeholder="Enter Room No." required>
                             </div>
+
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="floorno">Floor No</label>
                               <input type="text" class="form-control" name="floorno" id="floorno" placeholder="Enter Floor No." required>
                             </div>
+
                             <div class="col-sm-6 form-group custom-form-group">
+                              <label for="roomsize">Room Size</label>
+                              <input type="text" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" required>
+                            </div>
+
+                            {{-- <div class="col-sm-6 form-group custom-form-group">
                               <label for="price">Price</label>
                               <input type="text" class="form-control" name="price" id="price" placeholder="Enter Price." required>
+                            </div> --}}
+
+                            {{-- <div class="col-sm-6 form-group custom-form-group">
+                              <label for="availablerooms">Room Availability</label>
+                              <input type="text" class="form-control" name="availablerooms" id="availablerooms" placeholder="Enter Available Room." required>
                             </div>
+
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="maxoccupancy">Max Occupancy</label>
+                              <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter maxoccupancy." required>
+                            </div> --}}
 
 
                             <div class="col-sm-6 form-group custom-form-group">
@@ -135,11 +153,20 @@
                               </select>
                             </div>
 
-                          
                             <div class="col-sm-6 form-group custom-form-group">
-                              <label for="roomsize">Room Size</label>
-                              <input type="number" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" required>
+                              <label for="availablerooms">Room Availability</label>
+                              <input type="text" class="form-control" name="availablerooms" id="availablerooms" placeholder="Enter Available Room." required>
                             </div>
+                            
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="maxoccupancy">Max Occupancy</label>
+                              <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter maxoccupancy." required>
+                            </div>
+
+                            {{-- <div class="col-sm-6 form-group custom-form-group">
+                              <label for="roomsize">Room Size</label>
+                              <input type="text" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" required>
+                            </div> --}}
 
 
 
@@ -153,7 +180,10 @@
                               </select>
                             </div>
 
-
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="price">Price</label>
+                              <input type="text" class="form-control" name="price" id="price" placeholder="Enter Price." required>
+                            </div>
 
 
                             <div class="col-sm-6 form-group custom-form-group">
