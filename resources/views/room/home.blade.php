@@ -42,7 +42,7 @@
           <a class="nav-link" href="#about">About</a>
         </li>
  
-          @if(Auth::user())
+        @guest
           <li class="nav-item">
               <a class="nav-link" href="{{ route('login') }}">Login</a>
           </li>
@@ -54,7 +54,7 @@
           <li class="nav-item">
               <a class="nav-link" href="{{ route('logout') }}">Logout</a>
           </li>
-          @endif
+          @endguest
 
      
       </ul>
