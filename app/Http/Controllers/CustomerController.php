@@ -19,7 +19,11 @@ class CustomerController extends Controller
     {
         return view("customer.auth.register");
     }
-      
+
+    public function customerlist()
+    {
+        return view("customer.auth.customerlist");
+    }
     
     public function postLogin(Request $request)
     {

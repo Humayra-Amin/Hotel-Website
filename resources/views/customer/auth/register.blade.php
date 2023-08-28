@@ -52,13 +52,14 @@
                             <div class="offset-1 col-lg-10">
                                 <input type="password" placeholder="Confirm-password" name="password_confirmation" class="inp px-3">
                             </div>
-                        <div class="form-row py-3">
-                          <div class="offset-1 col-lg-10">
-                              <button type="button" class="btn1 mt-2 mb-4">Create New Account</button>                           
-                          </div>
-                          <div class="form-row">
-                            <p>Already have an Account? <a href="/login">Login</a></p>
-                           </div>
+
+                           <div class="form-row py-3">
+                            <button type="submit" class="btn1 mt-2 mb-4">Create New Account</button>
+                            </div>
+                 
+                            <div class="login-link">
+                             <p>Already have an Account? <a href="/login">Login</a></p>
+                            </div>
                     </form>
                 </div>
             </div>

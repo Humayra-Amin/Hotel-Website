@@ -54,7 +54,7 @@ Route::middleware(["auth"])->group(function () {
 
 
 
-
+Route::get('/customerlist', [CustomerController::class, "customerlist"]);
 Route::get('/login', [CustomerController::class, "login"]);
 Route::post('/post-login', [CustomerController::class, "postLogin"]);
 Route::get('/register', [CustomerController::class, "register"]);
