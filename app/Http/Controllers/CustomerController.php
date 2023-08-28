@@ -24,7 +24,8 @@ class CustomerController extends Controller
     {
         return view("customer.auth.customerlist");
     }
-    
+
+
     public function postLogin(Request $request)
     {
 
