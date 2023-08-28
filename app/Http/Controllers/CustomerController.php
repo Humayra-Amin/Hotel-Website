@@ -73,10 +73,11 @@ class CustomerController extends Controller
     
   
     public function logout() {
+
         Session::flush();
-        Auth::guard("emp")->logout();
+        Auth::logout();
   
-        return Redirect('/login');
+        return Redirect('/');
     }
  }
 

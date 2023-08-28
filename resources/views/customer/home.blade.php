@@ -42,24 +42,32 @@
           <a class="nav-link" href="#about">About</a>
         </li>
  
-        @if (Auth::guard("emp")->user())
+        @if (Auth::user())
+       
+        
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('login') }}">Login</a>
+          <form action="{{url('/logout')}}" method="GET">
+            @csrf
+
+            <button class="nav-link"  type="submit">LOGOUT</button> 
+        </form>
+      
         </li>
 
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('register') }}">Register</a>
-        </li>
+        
         @else
-            
-        {{-- <li class="nav-item">
-          <a class="nav-link" href="{{ route('logout') }}">Logout</a>
-        </li> --}}
-        <form action="{{route('logout')}}" method="DELETE">
-          @csrf
-          <a class="nav-link" href="{{ route('logout') }}">Logout</a>
-    
-        </form>
+        
+        
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url('login') }}">Login</a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('register') }}">Register</a>
+                </li>
+        
+
+       
         @endif
          
 
@@ -149,9 +157,10 @@
               @endif
 
            <div class="hotel-room-body">
-            <a href="/singleroom/  {{$room->id}}"></a>
+            <a href="/singleroom/  {{$room->id}}">
             <h5 class="card-title">{{$room->roomtitle}}</h5>
             <p class="card-text">{{$room->price}}</p>
+            </a>
           </div>
     </div>
     </div>
@@ -222,6 +231,7 @@
       <p class="footer-alt mb-0 f-14">2023 Copyright, All Rights Reserved</p>
   </div>
 	</footer>
+    
 
 <script src="{{asset('rooms/js/home.js')}}">
 

@@ -52,7 +52,7 @@ class RoomAuthController extends Controller
         $data = $request->all();
         $check = $this->create($data);
          
-        return redirect("/")->withSuccess('Great! You have Successfully loggedin');
+        return redirect("/admin")->withSuccess('Great! You have Successfully loggedin');
     }
     
     

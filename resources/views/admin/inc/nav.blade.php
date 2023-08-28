@@ -36,7 +36,7 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Components:</h6>
-                <a class="collapse-item" href="/admin/">View room</a>
+                <a class="collapse-item" href="/admin/room">View room</a>
                 <a class="collapse-item" href="/admin/add">Add room</a>
                 <a class="collapse-item" href="/admin/edit">Edit room</a>
                 <a class="collapse-item" href="/admin/single">Single room</a>

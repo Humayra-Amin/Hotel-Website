@@ -38,8 +38,8 @@ Route::put('/roombook/{id}', [HomeController::class, "roombook"]);
 Route::middleware(["auth"])->group(function () {
    
     Route::get('admin/', [Controller::class, "index"]);
-    Route::get('/admin/', [RoomController::class, "index"]);
-    Route::get('/admin/logout', [RoomAuthController::class, 'logout'])->name('logout');
+    Route::get('/admin/room', [RoomController::class, "index"]);
+    Route::get('/admin/logout', [RoomAuthController::class, 'logout'])->name('adminlogout');
 
     Route::get('/admin/add', [RoomController::class, "add"]);
     Route::get('/admin/{id}', [RoomController::class, "show"]);
