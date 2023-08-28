@@ -1,10 +1,10 @@
  
-@extends('room.layouts.app')
+@extends('admin.layouts.app')
 @section('app')
 <div id="content-wrapper" class="d-flex flex-column">
 
 
-  @include('room.inc.message')
+  @include('admin.inc.message')
 
 
     <!-- Main Content -->
@@ -62,11 +62,11 @@
                           Logout
                       </a>
                   @else
-                      <a class="dropdown-item" href="room/login">
+                      <a class="dropdown-item" href="admin/login">
                           <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                           Login
                       </a>
-                      <a class="dropdown-item" href="room/login">
+                      <a class="dropdown-item" href="admin/login">
                           <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                           Login
                       </a>

@@ -13,15 +13,15 @@ class RoomController extends Controller
     public function index()
     {
         $rooms = Room::all();
-        return view("room.index")->with('rooms',  $rooms);
+        return view("admin.index")->with('rooms',  $rooms);
     }
     public function add()
     {
-        return view("room.add");
+        return view("admin.add");
     }
     public function single()
     {
-        return view("room.single");
+        return view("admin.single");
 
     }
     public function store(Request $request)
@@ -70,7 +70,7 @@ class RoomController extends Controller
 
 
 
-        return redirect("room")->with("success", "Room created.");
+        return redirect("admin")->with("success", "Room created.");
     }
     public function update(Request $request,$id)
     {   
@@ -116,14 +116,14 @@ class RoomController extends Controller
         $room->image= Storage::disk("public")->files($room->id);
         $room->update();
 
-        return redirect("room")->with("success", "Room updated.");
+        return redirect("admin")->with("success", "Room updated.");
 
     }
 
     public function show($id)
     { 
        $room=Room::where("id",$id)->firstOrfail();
-       return view("room.single")->with('room',  $room);
+       return view("admin.single")->with('room',  $room);
 
     }
 
@@ -131,7 +131,7 @@ class RoomController extends Controller
     { 
 
        $room=Room::where("id",$id)->firstOrfail();
-       return view("room.edit")->with('room',  $room);
+       return view("admin.edit")->with('room',  $room);
 
     }
 }

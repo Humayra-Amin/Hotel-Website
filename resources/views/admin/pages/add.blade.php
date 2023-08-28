@@ -1,4 +1,4 @@
-@extends('employee.layouts.app')
+@extends('admin.layouts.app')
 
 @section('app')
 <div id="content-wrapper" class="d-flex flex-column">
@@ -31,7 +31,7 @@
 <div class="container mt-3 ">
 
 
-@include('employee.inc.message')
+@include('admin.inc.message')
 
 
 <h2 class="custom-h2">Add Employee</h2>

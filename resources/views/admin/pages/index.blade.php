@@ -1,4 +1,4 @@
-@extends('room.layouts.app')
+@extends('admin.layouts.app')
 
 
 @section('app')
@@ -33,7 +33,7 @@
             <div class="col-md-12 d-flex align-items-center justify-content-between">
                 <h2>Employee</h2>
 
-                @include('employee.inc.message')
+                @include('admin.inc.message')
 
                 <div class="d-flex align-items-center justify-content-between">
                     <form>

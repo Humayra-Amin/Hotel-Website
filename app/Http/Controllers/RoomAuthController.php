@@ -12,12 +12,12 @@ class RoomAuthController extends Controller
 {
     public function login()
     {
-        return view("room.auth.login");
+        return view("admin.auth.login");
     }  
       
     public function register()
     {
-        return view("room.auth.register");
+        return view("admin.auth.register");
     }
       
     
@@ -37,7 +37,7 @@ class RoomAuthController extends Controller
             return redirect()->intended('/')->withSuccess('You have Successfully loggedin');
         }
 
-        return redirect("room/login")->withErrors('Oppes! You have entered invalid credentials');
+        return redirect("admin/adminlogin")->withErrors('Oppes! You have entered invalid credentials');
     }
       
 
@@ -71,7 +71,7 @@ class RoomAuthController extends Controller
         Session::flush();
         Auth::logout();
   
-        return Redirect('room/login');
+        return Redirect('admin/adminlogin');
     }
 
 }

@@ -42,19 +42,26 @@
           <a class="nav-link" href="#about">About</a>
         </li>
  
-        @guest
-          <li class="nav-item">
-              <a class="nav-link" href="{{ route('login') }}">Login</a>
-          </li>
+        @if (Auth::guard("emp")->user())
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('login') }}">Login</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('register') }}">Register</a>
+        </li>
+        @else
+            
+        {{-- <li class="nav-item">
+          <a class="nav-link" href="{{ route('logout') }}">Logout</a>
+        </li> --}}
+        <form action="{{route('logout')}}" method="DELETE">
+          @csrf
+          <a class="nav-link" href="{{ route('logout') }}">Logout</a>
     
-          <li class="nav-item">
-              <a class="nav-link" href="{{ route('register') }}">Register</a>
-          </li>
-          @else
-          <li class="nav-item">
-              <a class="nav-link" href="{{ route('logout') }}">Logout</a>
-          </li>
-          @endguest
+        </form>
+        @endif
+         
 
      
       </ul>
@@ -142,7 +149,7 @@
               @endif
 
            <div class="hotel-room-body">
-            <a href="/singleroom/  {{$room->id}}">
+            <a href="/singleroom/  {{$room->id}}"></a>
             <h5 class="card-title">{{$room->roomtitle}}</h5>
             <p class="card-text">{{$room->price}}</p>
           </div>

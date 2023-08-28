@@ -48,7 +48,7 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-        @include('room.inc.nav')
+        @include('admin.inc.nav')
 
         @yield('app')
     

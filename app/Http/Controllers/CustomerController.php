@@ -42,7 +42,7 @@ class CustomerController extends Controller
             return redirect()->intended('/')->withSuccess('You have Successfully loggedin');
         }
 
-        return redirect("customer/login")->withErrors('Oppes! You have entered invalid credentials');
+        return redirect("/login")->withErrors('Oppes! You have entered invalid credentials');
     }
       
 
@@ -76,7 +76,7 @@ class CustomerController extends Controller
         Session::flush();
         Auth::guard("emp")->logout();
   
-        return Redirect('customer/login');
+        return Redirect('/login');
     }
  }
 

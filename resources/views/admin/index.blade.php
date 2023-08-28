@@ -1,4 +1,4 @@
-@extends('room.layouts.app')
+@extends('admin.layouts.app')
 
 
 @section('app')
@@ -85,7 +85,7 @@
             
 
 
-            @include('room.inc.message')
+            @include('admin.inc.message')
 
 
             <div class="col-md-12 d-flex align-items-center justify-content-between">
@@ -105,7 +105,7 @@
                         
                         <!-- <input type="text" placeholder="Search a room"> -->
                     </form>
-                    <a class="btn btn-primary ml-3" href="/room/add">
+                    <a class="btn btn-primary ml-3" href="/admin/add">
                         <i class="fa fa-plus"></i>
                          Add Room 
                     </a>
@@ -140,8 +140,8 @@
                                 <td>{{$room->category}}</td>    
                                 <td>{{$room->price}}</td>  
                                 <td class="text-center">
-                                <a href="/room/{{$room->id}}" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></a>
-                                <a href="/room/{{$room->id}}/edit/" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></a>
+                                <a href="/admin/{{$room->id}}" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></a>
+                                <a href="/admin/{{$room->id}}/edit/" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></a>
                                  <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
                                 </td>
 

@@ -1,4 +1,4 @@
-@extends('room.layouts.app')
+@extends('admin.layouts.app')
 
 
 @section('app')
@@ -61,11 +61,11 @@
                                             Logout
                                         </a>
                                     @else
-                                        <a class="dropdown-item" href="room/login">
+                                        <a class="dropdown-item" href="admin/login">
                                             <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                             Login
                                         </a>
-                                        <a class="dropdown-item" href="room/login">
+                                        <a class="dropdown-item" href="admin/login">
                                             <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                             Login
                                         </a>
@@ -239,7 +239,7 @@
                     </div>
                     <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                     <div class="modal-footer">
-                        <form action="{{url('/room/logout')}}" method="DELETE">
+                        <form action="{{url('/admin/logout')}}" method="DELETE">
                             @csrf
                       
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
