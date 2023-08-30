@@ -1,4 +1,4 @@
-<!doctype html>
+{{-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -7,11 +7,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('employees/auth/register.css')}}">
 </head>
-  <body>
+  <body> --}}
+
+    @extends('customer.layouts.apps')
+
+    @section('apps')
+
+
     <div class="group-file">
-    <section class="Form my-2 mx-6 py-5">        
+    <section class="Form my-3 mx-6 py-5">        
         <div class="container">
-            <div class="row g-0 form-card-group">
+            <div class="row g-0 my-3 form-card-group">
                 
                 <div class="col-lg-5">
                     <img src="{{asset('image/9.jpg')}}" class="img-fluid" alt="">
@@ -22,7 +28,7 @@
                     <form class="login-form" action="{{ route('register.post') }}" method="POST">
                         @csrf
 
-                        <div class="form-row mt-3">
+                        <div class="title-row mt-3">
                             <div class="offset-1 col-lg-10">
                                 <input type="name" placeholder="Username" name="name" class="inp px-3 my-3">
                                 @if ($errors->has('name'))
@@ -31,7 +37,7 @@
                             </div>
                         </div>
                         
-                        <div class="form-row">
+                        <div class="title-row">
                           <div class="offset-1 col-lg-10">
                               <input type="email" placeholder="Email" name="email" class="inp px-3">
                               @if ($errors->has('email'))
@@ -39,7 +45,7 @@
                              @endif
                           </div>
                         
-                          <div class="form-row">
+                          <div class="title-row d-flex flex-column">
                             <div class="offset-1 col-lg-10">
                                 <input type="password" placeholder="Password" name="password" class="inp  px-3">
                                 @if ($errors->has('password'))
@@ -48,13 +54,13 @@
                             </div>
                        
                         </div>
-                          <div class="form-row">
+                          <div class="title-row">
                             <div class="offset-1 col-lg-10">
                                 <input type="password" placeholder="Confirm-password" name="password_confirmation" class="inp px-3">
                             </div>
 
-                           <div class="form-row py-3">
-                            <button type="submit" class="btn1 mt-2 mb-4">Create New Account</button>
+                           <div class="title-row d-flex justify-content-center py-3 ">
+                            <button type="submit" class="register-btn1 mt-2 mb-4">Create New Account</button>
                             </div>
                  
                             <div class="login-link">
@@ -66,8 +72,10 @@
         </div>
     </section>
 </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-</body>
-</html>
+{{-- </body>
+</html> --}} 
+
+@endsection

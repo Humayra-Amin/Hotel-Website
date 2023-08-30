@@ -7,10 +7,10 @@
 body{
   background: rgb(219, 226, 226);
 } */
-.group-file{
+/* .group-file{
   background: #33445a;
   padding: 3px 3px;
-}
+} */
 
 .form-card-group{
   background: rgb(164, 174, 255);
@@ -23,7 +23,7 @@ img{
   border-bottom-left-radius: 30px;
 }
 
-.btn1{
+.register-btn1{
   border: none;
   outline: none;
   height: 50px;
@@ -34,7 +34,7 @@ img{
   font-weight: 600;
 }
 
-.btn1:hover{
+.register-btn1:hover{
   background: white;
   border: 1px solid;
   color: black;

@@ -35,41 +35,36 @@
                             </div>
                         </div> --}}
 
-                        <div class="form-row mt-3">
+                        <div class="title-row d-flex flex-column mt-3">
                             <div class="offset-1 col-lg-10">
-                                <input type="email" placeholder="Email" name="email" class="inp px-3 my-3">
+                                <input type="email" placeholder="Email" name="email" class="inp">
                                 @if ($errors->has('email'))
                                 <span class="text-danger">{{ $errors->first('email') }}</span>
                                @endif
                             </div>
-                    
-                        <div class="form-row">
+                        </div>
+                        <div class="title-row">
                             <div class="offset-1 col-lg-10">
-                                <input type="password" placeholder="Password" name="password" class="inp  px-3">
+                                <input type="password" placeholder="Password" name="password" class="inp">
                                 @if ($errors->has('password'))
                                 <span class="text-danger">{{ $errors->first('password') }}</span>
                                  @endif
                             </div>
                        
                         </div>
-                        <div class="form-row py-3">
+                        <div class="title-row py-3">
                             <div class="offset-1 col-lg-10">
                                 {{-- <button type="button" class="btn1 mt-2 mb-4">Login</button>                            --}}
                                 <button type="submit" class="login-btn1 mt-2 mb-4" >Login</button>
                             </div>
                         </div>
-                        <a href="#" class="px-5 pt-5">Forgot Password?</a>
-                        <p class="mt-2 mb-4">Don't have an Account? <a href="/register">Register here</a></p>
+                        <a href="#" class="px-5 pt-10">Forgot Password?</a>
+                        <p class="mt-0 mb-0">Don't have an Account? <a href="/register">Register here</a></p>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-{{-- </body>
-</html> --}}
-
+   
 @endsection

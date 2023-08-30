@@ -3,7 +3,7 @@
 	      <div class="row-custom">
 				<div class="footer-col">
              <h4>Information</h4>
-                  <ul>
+                  <ul class="pl-0">
                       <li><a href="#">Pages</a></li>
                       <li><a href="#">Our Team</a></li>
                       <li><a href="#">Pricing</a></li>
@@ -12,7 +12,7 @@
 		  
 		  				<div class="footer-col">
                   <h4>Resources</h4>
-                  <ul>
+                  <ul  class="pl-0">
                       <li><a href="#">Video Tutorial</a></li>
                       <li><a href="#">Term &amp; Service</a></li>
                   </ul>
@@ -20,7 +20,7 @@
 		  
 		  				<div class="footer-col">
                   <h4>Help</h4>
-                  <ul>
+                  <ul  class="pl-0">
                       <li><a href="#">Sign Up </a></li>
                       <li><a href="#">FAQ</a></li>
                       <li><a href="#">Terms of Services</a></li>
