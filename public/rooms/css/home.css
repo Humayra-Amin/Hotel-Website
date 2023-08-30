@@ -30,6 +30,15 @@
 
 }
 
+.nav-link-groups{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 50%;
+    color: white;
+    /* border-radius: 60px; */
+    font-weight: 600;
+}
 
 .bio{
     margin-bottom:210px;

@@ -49,7 +49,7 @@
           <form action="{{url('/logout')}}" method="GET">
             @csrf
 
-            <button class="nav-link"  type="submit">LOGOUT</button> 
+            <button class="nav-link-groups"  type="submit">LOGOUT</button> 
         </form>
       
         </li>
