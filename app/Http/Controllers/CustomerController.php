@@ -12,17 +12,17 @@ class CustomerController extends Controller
 {
     public function login()
     {
-        return view("customer.auth.login");
+        return view("customer.login");
     }  
       
     public function register()
     {
-        return view("customer.auth.register");
+        return view("customer.register");
     }
 
     public function customerlist()
     {
-        return view("customer.auth.customerlist");
+        return view("customer.customerlist");
     }
 
 
