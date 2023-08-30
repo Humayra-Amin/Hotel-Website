@@ -25,6 +25,7 @@
       @include('customer.inc.nav')
 
       @yield('apps')
+      @include('customer.inc.footer')
   
   </div>
 
