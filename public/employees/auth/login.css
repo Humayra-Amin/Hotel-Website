@@ -7,10 +7,10 @@
 body{
   background: rgb(219, 226, 226);
 } */
-.custom-file{
+/* .custom-file{
   background: #33445a;
   padding: 3px 3px;
-}
+} */
 
 .custom-card-group{
   background: rgb(164, 174, 255);
@@ -21,6 +21,7 @@ body{
 img{
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
+  height: auto;
 }
 
 .login-btn1{

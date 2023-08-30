@@ -35,31 +35,31 @@
                             </div>
                         </div> --}}
 
-                        <div class="form-row mt-3">
+                        <div class="title-row d-flex flex-column mt-3">
                             <div class="offset-1 col-lg-10">
-                                <input type="email" placeholder="Email" name="email" class="inp px-3 my-3">
+                                <input type="email" placeholder="Email" name="email" class="inp">
                                 @if ($errors->has('email'))
                                 <span class="text-danger">{{ $errors->first('email') }}</span>
                                @endif
                             </div>
                     
-                        <div class="form-row">
+                        <div class="title-row">
                             <div class="offset-1 col-lg-10">
-                                <input type="password" placeholder="Password" name="password" class="inp  px-3">
+                                <input type="password" placeholder="Password" name="password" class="inp">
                                 @if ($errors->has('password'))
                                 <span class="text-danger">{{ $errors->first('password') }}</span>
                                  @endif
                             </div>
                        
                         </div>
-                        <div class="form-row py-3">
+                        <div class="title-row py-3">
                             <div class="offset-1 col-lg-10">
                                 {{-- <button type="button" class="btn1 mt-2 mb-4">Login</button>                            --}}
                                 <button type="submit" class="login-btn1 mt-2 mb-4" >Login</button>
                             </div>
                         </div>
-                        <a href="#" class="px-5 pt-5">Forgot Password?</a>
-                        <p class="mt-2 mb-4">Don't have an Account? <a href="/register">Register here</a></p>
+                        <a href="#" class="px-5 pt-10">Forgot Password?</a>
+                        <p class="mt-0 mb-0">Don't have an Account? <a href="/register">Register here</a></p>
                     </form>
                 </div>
             </div>
