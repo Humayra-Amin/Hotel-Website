@@ -45,7 +45,7 @@
             </ul> --}}
             <p class="lead font-weight-bold"> {{$room->price}}</p>
 
-            @include('room.inc.message')
+            @include('admin.inc.message')
 
             <form action="/roombook/{{$room->id}}" method="POST" enctype="multipart/form-data">
                 @csrf

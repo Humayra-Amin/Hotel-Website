@@ -12,7 +12,7 @@ class HomeController extends Controller
     public function home()
     {   
         $rooms=Room::all();
-        return view("room.home")->with('rooms',  $rooms);
+        return view("customer.home")->with('rooms',  $rooms);
     }
     // public function singleroom()
     // {
@@ -22,7 +22,7 @@ class HomeController extends Controller
     public function singleroom($id)
     { 
        $room=Room::where("id",$id)->firstOrfail();
-       return view("room.singleroom")->with('room',  $room);
+       return view("customer.singleroom")->with('room',  $room);
     }
 
     public function roombook(Request $request, $id)

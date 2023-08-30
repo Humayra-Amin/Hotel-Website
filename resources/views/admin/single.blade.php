@@ -1,4 +1,4 @@
- @extends('room.layouts.app')
+ @extends('admin.layouts.app')
 
 
  @section('app')

@@ -12,17 +12,17 @@ class CustomerController extends Controller
 {
     public function login()
     {
-        return view("customer.auth.login");
+        return view("customer.login");
     }  
       
     public function register()
     {
-        return view("customer.auth.register");
+        return view("customer.register");
     }
 
     public function customerlist()
     {
-        return view("customer.auth.customerlist");
+        return view("customer.customerlist");
     }
 
 
@@ -42,7 +42,7 @@ class CustomerController extends Controller
             return redirect()->intended('/')->withSuccess('You have Successfully loggedin');
         }
 
-        return redirect("customer/login")->withErrors('Oppes! You have entered invalid credentials');
+        return redirect("/login")->withErrors('Oppes! You have entered invalid credentials');
     }
       
 
@@ -73,10 +73,11 @@ class CustomerController extends Controller
     
   
     public function logout() {
+
         Session::flush();
-        Auth::guard("emp")->logout();
+        Auth::logout();
   
-        return Redirect('customer/login');
+        return Redirect('/');
     }
  }
 

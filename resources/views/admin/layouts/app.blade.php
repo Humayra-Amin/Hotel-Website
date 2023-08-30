@@ -32,6 +32,12 @@
     <link rel="stylesheet" href="{{asset('rooms/css/karima.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/jaima.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/urbashi.css')}}">
+
+    <link rel="stylesheet" href="{{asset('employees/css/humayra.css')}}">
+    <link rel="stylesheet" href="{{asset('employees/css/tushin.css')}}">
+    <link rel="stylesheet" href="{{asset('employees/css/kayem.css')}}">
+    <link rel="stylesheet" href="{{asset('employees/css/fardin.css')}}">
+
   
  
 
@@ -48,7 +54,7 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-        @include('room.inc.nav')
+        @include('admin.inc.nav')
 
         @yield('app')
     
@@ -82,6 +88,11 @@
     <script src="{{asset('rooms/js/jaima.js')}}"></script>
     <script src="{{asset('rooms/js/karima.js')}}"></script>
     <script src="{{asset('rooms/js/urbashi.js')}}"></script>
+
+    <script src="{{asset('employees/js/humayra.js')}}"></script>
+    <script src="{{asset('employees/js/tushin.js')}}"></script>
+    <script src="{{asset('employees/js/kayem.js')}}"></script>
+
 
     
     <!-- Page level custom scripts -->

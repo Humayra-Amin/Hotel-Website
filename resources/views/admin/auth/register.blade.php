@@ -1,4 +1,4 @@
-@extends('room.auth.layout.create')
+@extends('admin.auth.layout.create')
   
 @section('content') 
 

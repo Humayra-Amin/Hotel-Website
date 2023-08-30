@@ -1,8 +1,8 @@
- @extends('room.auth.layout.create')
+ @extends('admin.auth.layout.create')
   
  @section('content') 
  
- @include('room.inc.message') 
+ @include('admin.inc.message') 
 
  <div id="content-wrapper" class="d-flex flex-column">
 

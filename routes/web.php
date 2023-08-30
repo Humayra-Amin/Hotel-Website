@@ -24,10 +24,10 @@ use App\Http\Controllers\CustomerController;
 
 
 
-Route::get('/room/login', [RoomAuthController::class, 'login'])->name('login');
-Route::post('/room/post-login', [RoomAuthController::class, 'postLogin'])->name('login.post'); 
-Route::get('/room/register', [RoomAuthController::class, 'register'])->name('register');
-Route::post('/room/post-register', [RoomAuthController::class, 'postRegister'])->name('register.post'); 
+Route::get('/admin/login', [RoomAuthController::class, 'login'])->name('adminlogin');
+Route::post('/admin/post-login', [RoomAuthController::class, 'postLogin'])->name('login.post'); 
+Route::get('/admin/register', [RoomAuthController::class, 'register'])->name('adminregister');
+Route::post('/admin/post-register', [RoomAuthController::class, 'postRegister'])->name('register.post'); 
  
 Route::get('/', [HomeController::class, "home"]);
 Route::get('/singleroom/{id}', [HomeController::class, "singleroom"]);
@@ -38,16 +38,16 @@ Route::put('/roombook/{id}', [HomeController::class, "roombook"]);
 Route::middleware(["auth"])->group(function () {
    
     Route::get('admin/', [Controller::class, "index"]);
-    Route::get('/room/', [RoomController::class, "index"]);
-    Route::get('/room/logout', [RoomAuthController::class, 'logout'])->name('logout');
+    Route::get('/admin/room', [RoomController::class, "index"]);
+    Route::get('/admin/logout', [RoomAuthController::class, 'logout'])->name('adminlogout');
 
-    Route::get('/room/add', [RoomController::class, "add"]);
-    Route::get('/room/{id}', [RoomController::class, "show"]);
-    Route::get('/room/{id}/edit', [RoomController::class, "edit"]);
-    Route::post('/room', [RoomController::class, "store"]);
-    Route::put('/room/{id}', [RoomController::class, "update"]);
-    Route::get('/room/edit', [RoomController::class, "edit"]);
-    Route::get('/room/single', [RoomController::class, "single"]);
+    Route::get('/admin/add', [RoomController::class, "add"]);
+    Route::get('/admin/{id}', [RoomController::class, "show"]);
+    Route::get('/admin/{id}/edit', [RoomController::class, "edit"]);
+    Route::post('/admin', [RoomController::class, "store"]);
+    Route::put('/admin/{id}', [RoomController::class, "update"]);
+    Route::get('/admin/edit', [RoomController::class, "edit"]);
+    Route::get('/admin/single', [RoomController::class, "single"]);
 });
 
 

@@ -1,6 +1,7 @@
-@extends('employee.layouts.app')
+@extends('admin.layouts.app')
 
 @section('app')
+
 <div id="content-wrapper" class="d-flex flex-column">
 <!-- Topbar -->
 <div id="content">
@@ -40,17 +41,17 @@
           <div class="col-sm-3 form-group">
         <h2 class="form-text-color">Personal Information</h2>
     </div>
-  <div class="col-md-6 form-group form-input-file" >
-    <div class="d-flex align-items-center justify-content-start">
-      @foreach ($employee->image as $image)
-            <img id="file_upload" src="{{Storage::disk("public")->url($image)}}" alt="your image" class="form-upload-img" />
-      @endforeach
-                <div class="form-input-file-upload">
-                  <span class="form-upload-label">Upload Image</span>
-                  <input type='file' name="image" onchange="readURL(this);" />
-                </div>
-          </div>
-  </div>
+    <div class="col-md-6 form-group form-input-file" >
+      <div class="d-flex align-items-center justify-content-start">
+        @foreach ($employee->image as $image)
+              <img id="file_upload" src="{{Storage::disk("public")->url($image)}}" alt="your image" class="form-upload-img" />
+        @endforeach
+                  <div class="form-input-file-upload">
+                    <span class="form-upload-label">Upload Image</span>
+                    <input type='file' name="image" onchange="readURL(this);" />
+                  </div>
+            </div>
+    </div>
                         
     <div class="col-sm-6  form-group">
         <label for="name-f" class="form-label">First Name</label>

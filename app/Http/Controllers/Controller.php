@@ -14,13 +14,13 @@ class Controller extends BaseController
    
     public function index()
     {
-        return view("room.dashboard");
+        return view("admin.dashboard");
     }
      
     public function home()
     {
         $rooms = Room::all();
-        return view("room.home");
+        return view("admin.home");
     }
     
 }
