@@ -42,7 +42,7 @@
                                 <span class="text-danger">{{ $errors->first('email') }}</span>
                                @endif
                             </div>
-                        </div>
+                        
                         <div class="title-row">
                             <div class="offset-1 col-lg-10">
                                 <input type="password" placeholder="Password" name="password" class="inp">
