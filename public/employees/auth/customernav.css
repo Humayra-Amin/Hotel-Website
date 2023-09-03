@@ -1,0 +1,79 @@
+/* .nav-style{
+    background-color:#172d44;
+} */
+.nav-file{
+    color: black;
+    margin-inline: 10px;
+    font-size: large;
+}
+
+.user-icon{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size:51px;
+   }
+   .user-name{
+      position: relative;
+      top: -35px;
+      left: 60px;
+      font-size: 22px;
+      font-family:serif;
+   }
+      /* Sidebar styling */
+      .sidebar {
+          height: 100%;
+          width: 320px;
+          margin-top: 20px;
+          position: fixed;
+          top: 0;
+          left:0;
+          background-color: #283b8b;
+          padding-top: 120px;
+          color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Card styling */
+      .card {
+          background-color: #3d4c8f;
+          margin: 6px;
+          padding: 1px;
+          border: 1px solid  #3d4c8f;
+          border-radius: 4px;
+          }
+          .card:hover{
+              cursor: pointer;
+          background-color: #b2bbd8;
+          color: rgb(63, 140, 190);
+          }
+          .ml{
+              margin-left: 15px;
+          }
+          .mr{
+          margin-right: 15px;
+      }
+      
+          .font{
+          text-align: center;
+          color: #fff;
+         }
+      .font:hover{
+              color: black;
+          }
+         
+      /* Icon styling */
+      .icon {
+          text-align: center;
+          font-size: 24px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+      }
+
+      /* Sign-out button */
+      .sign-out {position: relative;
+          left: 135px;
+          margin-top: 185px;
+      }
+      

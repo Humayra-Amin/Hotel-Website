@@ -24,7 +24,14 @@ class CustomerController extends Controller
     {
         return view("customer.customerlist");
     }
-
+    public function personalInfo()
+    {
+        return view("customer.personalInfo");
+    }
+    public function customernav()
+    {
+        return view("customer.customernav");
+    }
 
     public function postLogin(Request $request)
     {
