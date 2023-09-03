@@ -35,14 +35,14 @@
                             </div>
                         </div> --}}
 
-                        <div class="title-row d-flex flex-column mt-3">
+                        <div class="title-row d-flex flex-column ">
                             <div class="offset-1 col-lg-10">
                                 <input type="email" placeholder="Email" name="email" class="inp">
                                 @if ($errors->has('email'))
                                 <span class="text-danger">{{ $errors->first('email') }}</span>
                                @endif
                             </div>
-                        </div>
+                        
                         <div class="title-row">
                             <div class="offset-1 col-lg-10">
                                 <input type="password" placeholder="Password" name="password" class="inp">
