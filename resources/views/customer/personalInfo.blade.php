@@ -13,9 +13,10 @@
  @extends('customer.layouts.app')
  @section('app')
     
+ @include('admin.inc.message')
 
 
-<div class="container-xl px-4 mt-4">
+<div class="container-xl complex px-4 mt-4">
 <div class="body-change">
     <div class="row g-0">
         <div class="col-xl-4">
@@ -29,7 +30,7 @@
                           <img class="image" src="http://via.placeholder.com/700x500">
                         </div>
                       </div>
-                      <p class="text-center para ">ABC</p>
+                      <p class="text-center para">ABC</p>
                     <button type="submit" class= "btn btn-primary upload-img">Upload new image</button>
 
                 </div>
