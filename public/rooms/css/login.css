@@ -1,12 +1,9 @@
 .form-container{
-
-  background-image: url("image/hotelbackground");                 
+                
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;                 
-
-  font-family: "roboto";
- 
+  font-family: 'Signika';
   display: flex;
   justify-content:space-around;
   align-items:center;

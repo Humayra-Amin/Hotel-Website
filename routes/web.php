@@ -60,12 +60,16 @@ Route::post('/post-login', [CustomerController::class, "postLogin"]);
 Route::get('/register', [CustomerController::class, "register"]);
 Route::post('/post-register', [CustomerController::class, "postRegister"]);
 Route::get('/logout', [CustomerController::class, "logout"]);
+<<<<<<< HEAD
+Route::get('/update-password',[CustomerController::class,"password"]);
+=======
 Route::get('/personalInfo', [CustomerController::class, "personalInfo"]);
 Route::get('/customernav', [CustomerController::class, "customernav"]);
 Route::get('/bookinglist', [CustomerController::class, "bookinglist"]);
 Route::get('/changepass', [CustomerController::class, "changepass"]);
 
 
+>>>>>>> 366d333fd8ac8756c7061c1468b74a986f2c88a3
 
 // Route::get('/employee/login', [EmployeeAuthController::class, "login"]);
 // Route::post('/employee/post-login', [EmployeeAuthController::class, "postLogin"]);
