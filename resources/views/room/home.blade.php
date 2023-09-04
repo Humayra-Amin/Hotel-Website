@@ -10,7 +10,8 @@
   <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -22,7 +23,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse " id="navbarNav">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav d-flex space-between-evenly">
         <li class="nav-item">
           <a class="nav-link" href="#">Home</a>
         </li>
@@ -42,34 +43,19 @@
           <a class="nav-link" href="#about">About</a>
         </li>
  
-        @if (Auth::user())
-       
-        
-        <li class="nav-item">
-          <form action="{{url('/logout')}}" method="GET">
-            @csrf
-
-            <button class="nav-link"  type="submit">LOGOUT</button> 
-        </form>
-      
-        </li>
-
-        
-        @else
-        
-        
-                <li class="nav-item">
-                  <a class="nav-link" href="{{ url('login') }}">Login</a>
-                </li>
-        
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('register') }}">Register</a>
-                </li>
-        
-
-       
-        @endif
-         
+        @guest
+          <li class="nav-item">
+              <a class="nav-link" href="{{ route('login') }}">Login</a>
+          </li>
+    
+          <li class="nav-item">
+              <a class="nav-link" href="{{ route('register') }}">Register</a>
+          </li>
+          @else
+          <li class="nav-item">
+              <a class="nav-link" href="{{ route('logout') }}">Logout</a>
+          </li>
+          @endguest
 
      
       </ul>
@@ -78,10 +64,10 @@
   </nav>
   
   <!-- slider add -->
-  {{-- <div class="row"> --}}
+  {{-- <div class="row "> --}}
   {{-- <div class="col-md-12">  --}}
   <div id="roomCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
+    <ol class="carousel-indicators slider">
       <li data-target="#roomCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#roomCarousel" data-slide-to="1"></li>
       <li data-target="#roomCarousel" data-slide-to="2"></li>
@@ -160,7 +146,6 @@
             <a href="/singleroom/  {{$room->id}}">
             <h5 class="card-title">{{$room->roomtitle}}</h5>
             <p class="card-text">{{$room->price}}</p>
-            </a>
           </div>
     </div>
     </div>
@@ -231,12 +216,12 @@
       <p class="footer-alt mb-0 f-14">2023 Copyright, All Rights Reserved</p>
   </div>
 	</footer>
-    
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="{{asset('rooms/js/home.js')}}">
-
+  $('.slider').slick();
+  </script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-
 </body>
 </html>

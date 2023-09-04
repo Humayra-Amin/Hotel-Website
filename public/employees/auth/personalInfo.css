@@ -1,0 +1,118 @@
+/* body{
+    margin-top:20px;
+    background-color:#f2f6fc;
+    color:#69707a;
+    } */
+
+.file-card .custom-card-header 
+    {
+        font-weight: 700;
+    }
+
+.custom-card-header 
+    {
+        padding: 1rem 1.35rem;
+        background-color: #f2f6fc;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);;
+    }
+
+
+.form-control, .dataTable-input 
+    {
+        display: block;
+        width: 100%;
+        padding: 0.875rem 1.125rem;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1;
+        color: #69707a;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #c5ccd6;
+        appearance: none;
+        border-radius: 0.35rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+.imageWrapper
+    {    
+        margin-top: 35px;
+        border: 3px solid #888;
+        width:60%;
+        padding-bottom:60%;
+        border-radius:50%;
+        overflow:hidden;
+        position:absolute;
+        top:40%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+
+img
+    { 
+        height:105%;
+        width:initial;
+        max-height:100%;
+        max-width: initial;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+.files-img
+    {
+        height:195px;
+        position:relative;
+        max-width: 320px;
+        margin: auto;
+    }
+
+.body-change
+    {
+        margin: 150px;
+    }
+
+.para
+    {
+    
+        font-size: large;
+        font-weight: bold;
+    }
+.upload-img
+    {
+        margin-bottom: 30px;
+    }
+
+.file-card 
+    {
+        padding: 0px;
+        background-color: #ffffff;        
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 10px;
+        height: 95%;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+    }
+
+.custom-card-body
+    {
+        padding: 25px;
+    }
+
+
+
+        /* .img-account-profile {
+        height: 10rem;
+    }
+    .rounded-circle {
+        border-radius: 30% ;
+    }
+    .file-card {
+        box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+    }
+
+        .file-card-header:first-child {
+        border-radius: 0.35rem 0.35rem 0 0;
+    } */
