@@ -1,7 +1,5 @@
-
-
-<!-- Sidebar -->
-<div class="sidebar">
+ <!-- Sidebar -->
+ <div class="sidebar">
     <i class='fa fa-user-circle user-icon'><p class="user-name">Abdhur Rahman</p></i>
     <!-- Row 1 -->
     <div class="row">
@@ -46,6 +44,6 @@
 </div>
     <!-- Sign-out button -->
     <div class="sign-out">
-        <button class="btn btn-danger text-center">Sign Out</button>
+        <button class="btn btn-danger">Sign Out</button>
     </div>    
 </div>
