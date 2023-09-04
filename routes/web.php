@@ -65,6 +65,8 @@ Route::get('/update-password',[CustomerController::class,"password"]);
 =======
 Route::get('/personalInfo', [CustomerController::class, "personalInfo"]);
 Route::get('/customernav', [CustomerController::class, "customernav"]);
+Route::get('/bookinglist', [CustomerController::class, "bookinglist"]);
+
 
 >>>>>>> 366d333fd8ac8756c7061c1468b74a986f2c88a3
 

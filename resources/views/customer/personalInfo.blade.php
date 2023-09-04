@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="{{asset('employees/auth/personalInfo.css')}}">
 </head>
     
-  <body>
+  <body> --}}
+
+    @extends('customer.layouts.app')
+    @section('app')
+    
+
+
 <div class="container-xl px-4 mt-4">
 <div class="body-change">
     <div class="row g-0">
@@ -108,5 +114,6 @@
     </div>
 </div>
 </div>
-  </body>
-</html>
+  {{-- </body>
+</html> --}}
+@endsection
