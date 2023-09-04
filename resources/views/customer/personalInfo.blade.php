@@ -10,9 +10,8 @@
 </head>
     
   <body> --}}
-
-    @extends('customer.layouts.app')
-    @section('app')
+ @extends('customer.layouts.app')
+ @section('app')
     
 
 
