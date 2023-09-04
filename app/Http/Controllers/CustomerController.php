@@ -79,5 +79,10 @@ class CustomerController extends Controller
   
         return Redirect('/');
     }
+
+    public function password()
+    {
+        return view("customer.changepass");
+    } 
  }
 

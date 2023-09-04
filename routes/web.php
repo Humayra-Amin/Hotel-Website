@@ -60,7 +60,7 @@ Route::post('/post-login', [CustomerController::class, "postLogin"]);
 Route::get('/register', [CustomerController::class, "register"]);
 Route::post('/post-register', [CustomerController::class, "postRegister"]);
 Route::get('/logout', [CustomerController::class, "logout"]);
-
+Route::get('/update-password',[CustomerController::class,"password"]);
 
 // Route::get('/employee/login', [EmployeeAuthController::class, "login"]);
 // Route::post('/employee/post-login', [EmployeeAuthController::class, "postLogin"]);
