@@ -1,6 +1,6 @@
 @extends('customer.layouts.app')
 @section('app')
-
+@include('admin.inc.message')
 <div class="container px-8">
     <div class="change-body">
       <form>

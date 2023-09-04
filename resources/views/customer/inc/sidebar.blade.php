@@ -5,7 +5,7 @@
     <div class="row">
         <!-- Card 1: Booking History -->
         <div class="col-sm-6">
-            <div class="card ml">
+            <div class="card mx">
                     <i class="fa fa-list icon"></i>
                     <p class="font ">  Booking List</p>
         </div>
@@ -20,7 +20,7 @@
    
         <!-- Card 3: Profile Information -->
         <div class="col-sm-6">
-            <div class="card ml">
+            <div class="card mx">
                     <i class="fa fa-address-card icon"></i>
                     <p class="font"> Profile Information</p>
             </div>
@@ -36,7 +36,7 @@
 
     <!-- Card 5: Customer-List -->
     <div class="col-sm-6">
-        <div class="card ml">
+        <div class="card mx">
             <i class="fa fa-users icon"></i>
                 <p class="font">Customer List</p>
         </div>
