@@ -59,15 +59,11 @@ Route::get('/register', [CustomerController::class, "register"]);
 Route::post('/post-register', [CustomerController::class, "postRegister"]);
 Route::get('/logout', [CustomerController::class, "logout"]);
 
-Route::get('/update-password',[CustomerController::class,"password"]);
+
 Route::get('/personalInfo', [CustomerController::class, "personalInfo"]);
 Route::get('/customernav', [CustomerController::class, "customernav"]);
 Route::get('/bookinglist', [CustomerController::class, "bookinglist"]);
-<<<<<<< HEAD
-Route::get('/customerlist', [CustomerController::class, "customerlist"]);
-=======
 Route::get('/changepass', [CustomerController::class, "changepass"]);
->>>>>>> 7100da6c34e150683bd3589cbf2a9a6816e91e29
 
 
 
