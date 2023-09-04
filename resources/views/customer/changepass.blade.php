@@ -25,10 +25,5 @@
 </form>
 </div>
 </div>
-<<<<<<< HEAD
-
-@endsection
-=======
 @endsection
 
->>>>>>> 37f8e0402eb9b2f43d132ca20efaebb3241e0a40
