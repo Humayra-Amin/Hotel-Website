@@ -53,13 +53,18 @@ Route::middleware(["auth"])->group(function () {
 
 
 
-
-Route::get('/customerlist', [CustomerController::class, "customerlist"]);
 Route::get('/login', [CustomerController::class, "login"]);
 Route::post('/post-login', [CustomerController::class, "postLogin"]);
 Route::get('/register', [CustomerController::class, "register"]);
 Route::post('/post-register', [CustomerController::class, "postRegister"]);
 Route::get('/logout', [CustomerController::class, "logout"]);
+
+
+Route::get('/personalInfo', [CustomerController::class, "personalInfo"]);
+Route::get('/customernav', [CustomerController::class, "customernav"]);
+Route::get('/bookinglist', [CustomerController::class, "bookinglist"]);
+Route::get('/changepass', [CustomerController::class, "changepass"]);
+
 
 
 // Route::get('/employee/login', [EmployeeAuthController::class, "login"]);

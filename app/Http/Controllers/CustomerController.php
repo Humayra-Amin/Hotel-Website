@@ -24,7 +24,22 @@ class CustomerController extends Controller
     {
         return view("customer.customerlist");
     }
-
+    public function personalInfo()
+    {
+        return view("customer.personalInfo");
+    }
+    public function customernav()
+    {
+        return view("customer.customernav");
+    }
+    public function bookinglist()
+    {
+        return view("customer.bookinglist");
+    }
+    public function changepass()
+    {
+        return view("customer.changepass");
+    }
 
     public function postLogin(Request $request)
     {
@@ -79,5 +94,10 @@ class CustomerController extends Controller
   
         return Redirect('/');
     }
+
+    public function password()
+    {
+        return view("customer.changepass");
+    } 
  }
 
