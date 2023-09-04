@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{asset('employees/auth/customernav.css')}}">
     <link rel="stylesheet" href="{{asset('employees/auth/personalInfo.css')}}">
     <link rel="stylesheet" href="{{asset('employees/auth/bookinglist.css')}}">
+    <link rel="stylesheet" href="{{asset('employees/auth/changepass.css')}}">
 
 
 </head>

@@ -36,6 +36,10 @@ class CustomerController extends Controller
     {
         return view("customer.bookinglist");
     }
+    public function changepass()
+    {
+        return view("customer.changepass");
+    }
 
     public function postLogin(Request $request)
     {
