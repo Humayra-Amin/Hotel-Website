@@ -23,7 +23,7 @@
       /* Sidebar styling */
       .sidebar {
           height: 100%;
-          width: 320px;
+          width: 380px;
           margin-top: 20px;
           position: fixed;
           top: 0;
@@ -69,6 +69,8 @@
           font-size: 24px;
           margin-top: 5px;
           margin-bottom: 5px;
+          color: #fff;
+
       }
 
       /* Sign-out button */
@@ -76,4 +78,3 @@
           left: 135px;
           margin-top: 185px;
       }
-      
