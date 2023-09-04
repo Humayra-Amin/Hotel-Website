@@ -8,6 +8,6 @@ document.addEventListener("scroll", (event) => {
   }else{
       headerEl.classList.remove('sticky-header')
   }
+
+$('.slider').slick();
 });
-
-
