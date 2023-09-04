@@ -5,7 +5,7 @@
  
  
     {{-- <div class="content-box"> --}}
-   <div class="container px-6 mt-4">
+   <div class="container px-8">
     <div class="change-body">
       <form>
         <h2 class="text-center">CHANGE PASSWORD</h2>
