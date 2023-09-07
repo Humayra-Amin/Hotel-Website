@@ -25,22 +25,6 @@
                     <p class="font"> Profile Information</p>
             </div>
         </div>
-
-        <!-- Card 4: Admin -->
-        <div class="col-sm-6">
-            <div class="card mr">
-                    <i class="fa fa-user icon"></i>
-                   <p class="font">Admin</p>
-            </div>
-        </div>
-
-    <!-- Card 5: Customer-List -->
-    <div class="col-sm-6">
-        <div class="card mx">
-            <i class="fa fa-users icon"></i>
-                <p class="font">Customer List</p>
-        </div>
-    </div>
 </div>
     <!-- Sign-out button -->
     <div class="sign-out">

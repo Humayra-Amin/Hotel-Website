@@ -35,25 +35,25 @@
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
 
-/* Card styling */
-.card {
-        background-color: #3d4c8f;
-        margin: 6px;
-        padding: 1px;
-        border: 1px solid  #3d4c8f;
-        border-radius: 4px;
-}
-.card:hover{
-        cursor: pointer;
-        background-color: #b2bbd8;
-        color: rgb(63, 140, 190);
-}
-.mx{
-        margin-left: 15px;
-}
-.mr{
-     margin-right: 15px;
-}
+      /* Card styling */
+      .card {
+          background-color: #3d4c8f;
+          margin: 6px;
+          padding: 1px;
+          border: 1px solid  #3d4c8f;
+          border-radius: 4px;
+          }
+          .card:hover{
+              cursor: pointer;
+          background-color: #b2bbd8;
+          color: rgb(63, 140, 190);
+          }
+          .ml{
+              margin-left: 15px;
+          }
+          .mr{
+          margin-right: 15px;
+      }
       
 .font{
       text-align: center;
@@ -77,7 +77,8 @@
         color: black;
 }
       /* Sign-out button */
-.sign-out {position: relative;
+      .sign-out {
+        position: relative;
         left: 135px;
-        margin-top: 185px;
-}
+        margin-top: 300px;
+      }

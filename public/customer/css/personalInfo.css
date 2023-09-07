@@ -87,6 +87,8 @@ img
 .upload-img
     {
         margin-bottom: 30px;
+        position: relative;
+
     }
 
 .file-card 
@@ -105,35 +107,49 @@ img
     {
         padding: 25px;
     }
+      
+.file-upload 
+    {
+        position: relative;
+        margin: 10px;
+        margin-bottom: 30px;
+        width:180px;
+        max-width:150px;
+        text-align:center;
+        color:#ffffff;
+        font-size:16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        border: 2px solid #ffffff;
+        padding: 6px 12px;
+        background:#0d6efd;
 
-input[type="Submit"] {
-        background-color: #007bff;
-   
-        border: none;
-        border-radius: 4px;
-        padding: 10px 15px;
+    }
+.file-input
+    {
+        height: 50px;
+    }
+       
+.file-upload :hover
+    {
+        background:#3412dd;
+    }
+      
+.file-upload input.file-input 
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 14px 16px;
+        font-size: 20px;
         cursor: pointer;
-      }
-    
-input[type="Submit"]:hover {
-        background-color: #0056b3;
-      }
-
-        /* .img-account-profile {
-        height: 10rem;
-    }
-    .rounded-circle {
-        border-radius: 30% ;
-    }
-    .file-card {
-        box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+        opacity: 0;
+        filter: alpha(opacity=0);
+        height:20px;
     }
 
-        .file-card-header:first-child {
-        border-radius: 0.35rem 0.35rem 0 0;
-    } */
-/* 
-    .complex {
+    /* .complex {
         margin: 0 auto;
         margin-top: 40px;
         padding: 250px;
@@ -147,4 +163,4 @@ input[type="Submit"]:hover {
         left: 60px;
         width: 90%;
         text-align: center;
-        } */
+        }  */
