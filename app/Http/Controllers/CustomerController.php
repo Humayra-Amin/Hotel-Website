@@ -41,6 +41,31 @@ class CustomerController extends Controller
         return view("customer.changepass");
     }
 
+
+    public function store(Request $request)
+{
+    $request->validate([
+        'name' => 'required|max:50',
+        'email' => 'required|email',
+        'roomno' => 'required',
+        'status' => 'required',
+
+    ]);
+
+    $customer = new Customer();
+    $customer->name = $request->name;
+    $customer->email = $request->email;
+    $customer->roomno = $request->roomno;
+    $customer->status = $request->status;
+
+    $customer->save();
+
+    return redirect("customer")->with("success", "Customer listed");
+}
+
+
+
+
     public function postLogin(Request $request)
     {
 

@@ -11,6 +11,10 @@
 <body>
   <div class="container">
     <h1 class="my-5">Customer List - Hotel Paradise</h1>
+
+    @include('admin.inc.message')
+
+
     <table class="table table-striped">
       <thead>
         <tr>
@@ -24,17 +28,41 @@
         </tr>
       </thead>
       <tbody>
+
+
+        @foreach ($customers as $customer)
+
         <tr>
+        <td>{{$customer->name}}</td>
+        <td>{{$customer->email}}</td>
+        <td>{{$customer->roomno}}</td>  
+        <td>{{$customer->status}}</td>  
+        <span> <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="bi bi-eye"></i></button></span>
+      </tr>
+
+
+        {{-- <tr>
           <td>1</td>
           <td>John Doe</td>
           <td>john@gmail.com</td>
           <td>101</td>
           <td>2023-08-25</td>
           <td>2023-08-28</td>
-          <td>Booked</td>
-          <td><i class="bi bi-eye-fill text-primary"></i></td>
-        </tr>
-        <tr>
+          <td>Booked</td> --}}
+          {{-- <td><i class="bi bi-eye-fill text-primary"></i></td> --}}
+          {{-- <td class="text-right">
+            <span> <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="bi bi-eye"></i></button></span>
+            </td>
+        </tr> --}}
+
+
+
+        @endforeach
+
+
+
+
+        {{-- <tr>
           <td>2</td>
           <td>Jane Smith</td>
           <td>jane@gmail.com</td>
@@ -42,8 +70,9 @@
           <td>2023-08-26</td>
           <td>2023-08-30</td>
           <td>Booked</td>
-          <td><i class="bi bi-eye-fill text-primary"></i></td>
-        </tr>
+          <td class="text-right">
+            <span> <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="bi bi-eye"></i></button></span>
+            </td>        </tr>
         <tr>
             <td>3</td>
             <td>Abdur Rahman</td>
@@ -52,8 +81,10 @@
             <td>2023-08-29</td>
             <td>2023-09-07</td>
             <td>Booked</td>
-            <td><i class="bi bi-eye-fill text-primary"></i></td>
-          </tr>
+            <td class="text-right">
+              <span> <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="bi bi-eye"></i></button></span>
+              </td>          
+            </tr>
           <tr>
             <td>4</td>
             <td>Humaira Amin</td>
@@ -62,8 +93,10 @@
             <td>2023-08-30</td>
             <td>2023-09-09</td>
             <td>Booked</td>
-            <td><i class="bi bi-eye-fill text-primary"></i></td>
-          </tr>
+            <td class="text-right">
+              <span> <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="bi bi-eye"></i></button></span>
+              </td>
+          </tr> --}}
        
       </tbody>
     </table>
