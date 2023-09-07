@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="{{asset('customer/css/login.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/register.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/footer.css')}}">
+  <link rel="stylesheet" href="{{asset('customer/css/singleroom.css')}}">
 </head>
 <body class="title-nav">
 
