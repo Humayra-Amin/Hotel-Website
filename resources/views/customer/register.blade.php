@@ -9,9 +9,9 @@
 </head>
   <body> --}}
 
-    @extends('customer.layouts.apps')
+@extends('customer.layouts.apps')
 
-    @section('apps')
+ @section('apps')
 
 
     <div class="group-file">
