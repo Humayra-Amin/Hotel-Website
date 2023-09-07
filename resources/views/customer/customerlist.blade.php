@@ -30,7 +30,7 @@
       <tbody>
 
 
-        @foreach ($customers as $customer)
+        @foreach($customers as $customer)
 
         <tr>
         <td>{{$customer->name}}</td>

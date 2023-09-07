@@ -44,12 +44,12 @@
           border-radius: 4px;
           }
           .card:hover{
-              cursor: pointer;
+          cursor: pointer;
           background-color: #b2bbd8;
           color: rgb(63, 140, 190);
           }
           .ml{
-              margin-left: 15px;
+          margin-left: 15px;
           }
           .mr{
           margin-right: 15px;
