@@ -21,7 +21,7 @@ class Customer extends Model
         'email',
         'password',
         
-        'name',
+        'id',
         'roomno',            
         'status',
         'image',
