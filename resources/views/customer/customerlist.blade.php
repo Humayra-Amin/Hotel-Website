@@ -18,7 +18,7 @@
     <table class="table table-striped">
       <thead>
         <tr>
-          <th>#</th>
+          <th>id</th>
           <th>Name</th>
           <th>Email</th>
           <th>Room No</th>
@@ -33,6 +33,7 @@
         @foreach ($customers as $customer)
 
         <tr>
+        <td>{{$customer->id}}</td>
         <td>{{$customer->name}}</td>
         <td>{{$customer->email}}</td>
         <td>{{$customer->roomno}}</td>  

@@ -45,6 +45,7 @@ class CustomerController extends Controller
     public function store(Request $request)
 {
     $request->validate([
+        'id' => 'required',
         'name' => 'required|max:50',
         'email' => 'required|email',
         'roomno' => 'required',
@@ -53,6 +54,7 @@ class CustomerController extends Controller
     ]);
 
     $customer = new Customer();
+    $customer->id = $request->id;
     $customer->name = $request->name;
     $customer->email = $request->email;
     $customer->roomno = $request->roomno;
