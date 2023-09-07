@@ -18,7 +18,7 @@
         <div class="container">
             <div class="row g-0 custom-card-group" >
                 <div class="col-lg-5">
-                    <img src="{{asset('image/2.jpg')}}" class="img-fluid" alt="">
+                    <img src="{{asset('image/2.jpg')}}" class="img-fluid fileimg" alt="">
                 </div>
                 <div class="col-lg-7 px-5 pt-5 text-center py-5">
                     <h1 class="font-weight-bold py-3">Login</h1>

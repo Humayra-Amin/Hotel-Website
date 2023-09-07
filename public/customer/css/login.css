@@ -18,7 +18,7 @@ body{
   /* box-shadow: 4px 4px 8px rgb(219, 216, 216); */
 }
 
-img{
+.fileimg{
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   height: auto;
