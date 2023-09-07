@@ -60,6 +60,7 @@ Route::post('/post-register', [CustomerController::class, "postRegister"]);
 Route::get('/logout', [CustomerController::class, "logout"]);
 
 
+Route::get('/customerlist', [CustomerController::class, "customerlist"]);
 Route::get('/personalInfo', [CustomerController::class, "personalInfo"]);
 Route::get('/customernav', [CustomerController::class, "customernav"]);
 Route::get('/bookinglist', [CustomerController::class, "bookinglist"]);
