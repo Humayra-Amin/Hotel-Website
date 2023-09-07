@@ -17,11 +17,12 @@
 
 
 <div class="container-xl complex px-4 mt-4">
-<div class="body-change">
+ <div class="body-change">
     <div class="row g-0">
         <div class="col-xl-4">
             <div class="file-card mb-10 mb-xl-0">
-                <div class="custom-card-header">Profile Picture</div>
+                <div class="custom-card-header">Profile Picture
+                </div>
                 <div class="custom-card-body text-center">
                  
                     <div class=" files-img">
@@ -31,24 +32,11 @@
                         </div>
                       </div>
                       <p class="text-center para">ABC</p>
-                    <button type="submit" class= "btn btn-primary upload-img">Upload new image</button>
-
-                </div>
-                <!-- <div class="small-12 large-4 columns">
-    
-                    <div class=" files-img">
-                      
-                      <div class="imageWrapper">
-                        <img class="image" src="http://via.placeholder.com/700x500">
-                      </div>
-                    </div>
-                    
+                    {{-- <button type="file" class= "btn btn-primary upload-img">Upload new image</button> --}}
                     <button class="file-upload">            
-                      <input type="file" class="file-input">Choose File
-                    </button>
-                  </div> -->
-            
+                        <input type="file" class="file-input">Upload Image</button>
                 </div>
+            </div>
                 
         </div>
         <div class="col-xl-8">
@@ -112,7 +100,7 @@
             </div>
         </div>
     </div>
-</div>
+ </div>
 </div>
   {{-- </body>
 </html> --}}
