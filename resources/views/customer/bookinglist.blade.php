@@ -13,7 +13,7 @@
     @extends('customer.layouts.app')
     @section('app')
     
-  <div class="container contain">
+  <div class="contain">
     <div class="row">
       <div class="col-sm-3">
         <div class="search-container">
@@ -26,7 +26,7 @@
     </div>
     <h1 class="mt-4 mb-4 ml section-heading">ALL Booking List</h1>
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-">
         <div class="card booking-card">
           <div class="price-tag">$250</div>
           <div class="card-body">

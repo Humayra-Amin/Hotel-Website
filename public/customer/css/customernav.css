@@ -36,14 +36,14 @@
       }
 
       /* Card styling */
-      .card {
+      .text-card {
           background-color: #3d4c8f;
           margin: 6px;
           padding: 1px;
           border: 1px solid  #3d4c8f;
           border-radius: 4px;
           }
-          .card:hover{
+          .text-card:hover{
               cursor: pointer;
           background-color: #b2bbd8;
           color: rgb(63, 140, 190);

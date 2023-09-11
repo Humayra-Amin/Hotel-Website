@@ -4,20 +4,16 @@ h1{
 
 .contain {
 width: 700px;
-margin: 20px;
+margin: 10px;
 margin-top: 40px;
-padding: 15px;
+padding: 10px;
 background-color: rgb(231, 232, 238);
 border-radius: 5px;
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-position: absolute;
-top: 2em;
-right: 0;
 
 }
 .booking-card {
-  margin-bottom: 15px;
-  position: relative;
+  margin-bottom: 5px;
 }
 .price-tag {
   position: absolute;

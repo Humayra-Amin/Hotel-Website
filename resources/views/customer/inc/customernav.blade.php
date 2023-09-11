@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-sm nav-style nav-dark fixed-top">
 
-    <ul class="navbar-nav m-auto">
+    <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link nav-file" href="#">Home</a>
       </li>
