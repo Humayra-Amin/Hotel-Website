@@ -24,94 +24,100 @@
         </div>
       </div>
     </div>
+
     <h1 class="mt-4 mb-4 ml section-heading">ALL Booking List</h1>
     <div class="row">
-      <div class="col-sm-">
+      <div class="col-sm-4">
         <div class="card booking-card">
           <div class="price-tag">$250</div>
-          <div class="card-body">
-            <h5 class="card-title mt-4">Guest-name: Abdur Rahman</h5>
+          <div class="group-card-body">
+            <h5 class="card-title mt-4">Name: Abdur Rahman</h5>
             <ul class="details">
               <li> Room Type: Deluxe</li>
               <li> Capacity: 4 guests</li>
               <li> Check-In: 2023-09-01</li>
               <li> Check-Out: 2023-09-07</li>
-              <button class="button"> View More </button>
+              <button class="button"> View</button>
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
+
+      <div class="col-sm-3">
         <div class="card booking-card">
           <div class="price-tag">$250</div>
-          <div class="card-body">
-            <h5 class="card-title mt-4">Guest-name: Abdur Rahman</h5>
+          <div class="group-card-body">
+            <h5 class="card-title mt-4">Name: Abdur Rahman</h5>
             <ul class="details">
               <li> Room Type: Deluxe</li>
               <li> Capacity: 4 guests</li>
               <li> Check-In: 2023-09-01</li>
               <li> Check-Out: 2023-09-07</li>
-              <button class="button"> View More</button>
+              <button class="button"> View</button>
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
+
+      <div class="col-sm-3">
         <div class="card booking-card">
           <div class="price-tag">$250</div>
-          <div class="card-body">
-            <h5 class="card-title mt-4">Guest-name: Abdur Rahman</h5>
+          <div class="group-card-body">
+            <h5 class="card-title mt-4">Name: Abdur Rahman</h5>
             <ul class="details">
               <li> Room Type: Deluxe</li>
               <li> Capacity: 4 guests</li>
               <li> Check-In: 2023-09-01</li>
               <li> Check-Out: 2023-09-07</li>
-              <button class="button"> View More</button>
+              <button class="button"> View</button>
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
+
+      <div class="col-sm-3">
         <div class="card booking-card">
           <div class="price-tag">$250</div>
-          <div class="card-body">
-            <h5 class="card-title mt-4">Guest-name: Abdur Rahman</h5>
+          <div class="group-card-body">
+            <h5 class="card-title mt-4">Name: Abdur Rahman</h5>
             <ul class="details">
               <li> Room Type: Deluxe</li>
               <li> Capacity: 4 guests</li>
               <li> Check-In: 2023-09-01</li>
               <li> Check-Out: 2023-09-07</li>
-              <button class="button"> View More</button>
+              <button class="button"> View</button>
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
+
+      <div class="col-sm-3">
         <div class="card booking-card">
           <div class="price-tag">$250</div>
-          <div class="card-body">
-            <h5 class="card-title mt-4">Guest-name: Abdur Rahman</h5>
+          <div class="group-card-body">
+            <h5 class="card-title mt-4">Name: Abdur Rahman</h5>
             <ul class="details">
               <li> Room Type: Deluxe</li>
               <li> Capacity: 4 guests</li>
               <li> Check-In: 2023-09-01</li>
               <li> Check-Out: 2023-09-07</li>
-              <button class="button"> View More</button>
+              <button class="button"> View</button>
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
+
+      <div class="col-sm-3">
         <div class="card booking-card">
           <div class="price-tag">$250</div>
-          <div class="card-body">
-            <h5 class="card-title mt-4">Guest-name: Abdur Rahman</h5>
+          <div class="group-card-body">
+            <h5 class="card-title mt-4">Name: Abdur Rahman</h5>
             <ul class="details">
               <li> Room Type: Deluxe</li>
               <li> Capacity: 4 guests</li>
               <li> Check-In: 2023-09-01</li>
               <li> Check-Out: 2023-09-07</li>
-              <button class="button"> View More</button>
+              <button class="button"> View</button>
             </ul>
           </div>
         </div>

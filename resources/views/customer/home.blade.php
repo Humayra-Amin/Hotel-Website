@@ -1,85 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hotel Paradise</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{asset('rooms/css/home.css')}}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+@extends('customer.layouts.apps')
 
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+@section('apps')
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="top-navbar">
-    <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Hotel Paradise</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse " id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#rooms">Rooms</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#relaxation">Relaxation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#services">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
- 
-        @if (Auth::user())
-       
-        
-        <li class="nav-item">
-          <form action="{{url('/logout')}}" method="GET">
-            @csrf
-
-            <button class="nav-link"  type="submit">LOGOUT</button> 
-        </form>
-      
-        </li>
-
-        
-        @else
-        
-        
-                <li class="nav-item">
-                  <a class="nav-link" href="{{ url('login') }}">Login</a>
-                </li>
-        
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('register') }}">Register</a>
-                </li>
-        
-
-       
-        @endif
-         
-
-     
-      </ul>
-    </div>
-  </div>
-  </nav>
-  
-  <!-- slider add -->
-  {{-- <div class="row"> --}}
-  {{-- <div class="col-md-12">  --}}
   <div id="roomCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#roomCarousel" data-slide-to="0" class="active"></li>
@@ -184,59 +106,8 @@
   </div>
 </div>
 
-<!--footer-->
-<footer class="footer">
-	<div class="container">
-	      <div class="row-custom">
-				<div class="footer-col">
-             <h4>Information</h4>
-                  <ul>
-                      <li><a href="#">Pages</a></li>
-                      <li><a href="#">Our Team</a></li>
-                      <li><a href="#">Pricing</a></li>
-                  </ul>
-          </div>
-		  
-		  				<div class="footer-col">
-                  <h4>Resources</h4>
-                  <ul>
-                      <li><a href="#">Video Tutorial</a></li>
-                      <li><a href="#">Term &amp; Service</a></li>
-                  </ul>
-          </div>
-		  
-		  				<div class="footer-col">
-                  <h4>Help</h4>
-                  <ul>
-                      <li><a href="#">Sign Up </a></li>
-                      <li><a href="#">FAQ</a></li>
-                      <li><a href="#">Terms of Services</a></li>
-                      <li><a href="#">Privacy Policy</a></li>
-                  </ul>
-          </div>
-		  
-		  				<div class="footer-col">
-                  <h4>Follow Us</h4>
-                  <div class="social-links">
-                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                      <a href="#"><i class="fa-brands fa-google"></i></a>
-                  </div>
-          </div>
-		  
-		  </div>
-    </div>
-    <div class="text-center mt-5">
-      <p class="footer-alt mb-0 f-14">2023 Copyright, All Rights Reserved</p>
-  </div>
-	</footer>
-    
 
-<script src="{{asset('rooms/js/home.js')}}">
+  
+  @endsection
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 
-</body>
-</html>

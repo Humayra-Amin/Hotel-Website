@@ -4,9 +4,9 @@
 
 
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-6">
+<div class="container single-context">
+ 
+        <div class="col-md-6 mb-5 mt-5">
             <div id="roomCarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner mt-5">
                     @if ($room->image)
@@ -23,8 +23,9 @@
              
             </div>
         </div>
-        <div class="col-md-6">
-            <h1 class="mb-3">{{$room->roomtitle}}</h1>
+     
+        <div class="col-md-6 mt-5 mb-5">
+            <h1 class="room-text">{{$room->roomtitle}}</h1>
             <p class="lead">{{$room->description}}</p>
             <p class="lead">{{$room->roomtype}}</p>
             <p class="lead">{{$room->roomsize}}</p>
@@ -43,10 +44,11 @@
             <form action="/roombook/{{$room->id}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
-                    <button id="bookButton" class="btn btn-primary">Book Now</button>
+                    <button id="bookButton" class="btn btn-primary" href="customer/bookmodal">Book Now</button>
+                    
             </form>
         </div>
-    </div>
+   
 </div>
 {{-- 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

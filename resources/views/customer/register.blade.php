@@ -9,9 +9,9 @@
 </head>
   <body> --}}
 
-    @extends('customer.layouts.apps')
+@extends('customer.layouts.apps')
 
-    @section('apps')
+ @section('apps')
 
 
     <div class="group-file">
@@ -20,7 +20,7 @@
             <div class="row g-0 my-3 form-card-group">
                 
                 <div class="col-lg-5">
-                    <img src="{{asset('image/9.jpg')}}" class="img-fluid" alt="">
+                    <img src="{{asset('image/9.jpg')}}" class="img-fluid imagefile" alt="">
                 </div>
                 <div class="col-lg-7 px-3 pt-3 text-center py-5">
                     <h1 class="font-weight-bold py-3">Register</h1>

@@ -1,7 +1,7 @@
 @extends('customer.layouts.app')
 @section('app')
+@include('admin.inc.message')
 
-<div class="container px-8">
     <div class="change-body">
       <form>
         <h2 class="text-center">CHANGE PASSWORD</h2>
@@ -23,7 +23,7 @@
       
   </div>
 </form>
-</div>
+
 </div>
 @endsection
 

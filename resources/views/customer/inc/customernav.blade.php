@@ -2,13 +2,10 @@
 
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link nav-file" href="#">Home</a>
+        <a class="nav-link nav-file" href="/">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link nav-file" href="#">Customer Portal</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav-file" href="#">Checkout</a>
       </li>
     </ul>
 </nav>
