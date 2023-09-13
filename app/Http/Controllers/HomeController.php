@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\Customer;
 use App\Models\Room;
 use App\Models\RoomBook;
 use Illuminate\Http\Request;
@@ -42,4 +44,36 @@ class HomeController extends Controller
         return redirect("singleroom/$room->id")->with("success", "Room booked.");
 
     }
+
+    public function bookinglist()
+    { 
+        $booklist = Customer::all();
+        return view("customer.bookinglist")->with('booklist',  $booklist);
+    
+    }
+    public function store(Request $request)
+    {
+    $request->validate([
+        'price' => 'required',
+        'name' => 'required',
+        'roomtype' => 'required',
+        'capacity' => 'required',
+        'checkin' => 'required',
+        'checkout' => 'required',
+
+    ]);
+
+    $booking=new RoomBook();
+    $booking->price = $request->price;
+    $booking->name = $request->name;
+    $booking->customer_id = auth()->user()->id;
+    $booking->roomtype = $request->roomtype;
+    $booking->capacity = $request->capacity;
+    $booking->checkin = $request->checkin;
+    $booking->checkout = $request->checkout;
+
+    $booking->save();
+
+    return redirect("booking")->with("success", "Room Booked listed");
+}
 }

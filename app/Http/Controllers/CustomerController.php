@@ -32,10 +32,7 @@ class CustomerController extends Controller
     {
         return view("customer.customernav");
     }
-    public function bookinglist()
-    {
-        return view("customer.bookinglist");
-    }
+  
     public function changepass()
     {
         return view("customer.changepass");
@@ -43,7 +40,7 @@ class CustomerController extends Controller
 
 
     public function store(Request $request)
-{
+    {
     $request->validate([
         'id' => 'required',
         'name' => 'required|max:50',

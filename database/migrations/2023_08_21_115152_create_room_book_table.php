@@ -16,6 +16,13 @@ return new class extends Migration
             $table->string('room_id')->nullable();
             $table->string('book')->nullable();
             $table->timestamps();
+            $table->string('price');
+            $table->string('customer_id');
+            $table->string('name');
+            $table->string('roomtype');
+            $table->string('capacity');
+            $table->string('checkin');
+            $table->string('checkout');
         });
     }
 

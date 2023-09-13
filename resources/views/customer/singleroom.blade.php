@@ -6,9 +6,9 @@
 
 <div class="container single-context">
  
-        <div class="col-md-6 mb-5 mt-5">
+        <div class="col-md-6 mt-5">
             <div id="roomCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner mt-5">
+                <div class="carousel-inner mt-4">
                     @if ($room->image)
                     @foreach ($room->image as $img)
                     <div>
@@ -24,20 +24,14 @@
             </div>
         </div>
      
-        <div class="col-md-6 mt-5 mb-5">
+        <div class="col-md-6">
             <h1 class="room-text">{{$room->roomtitle}}</h1>
             <p class="lead">{{$room->description}}</p>
             <p class="lead">{{$room->roomtype}}</p>
             <p class="lead">{{$room->roomsize}}</p>
             <p class="lead">{{$room->roomview}}</p>
-            {{-- <ul class="group mb-6">
-                <li class="group-item">Single Bed</li>
-                <li class="group-item">En-suite Bathroom</li>
-                <li class="group-item">Stunning city view</li>
-                <li class="group-item">Complimentary Wi-Fi</li>
-                <li class="group-item">Complimentary Breakfast</li>
-            </ul> --}}
-            <p class="lead font-weight-bold"> {{$room->price}}</p>
+      
+            <p class="lead"> {{$room->price}}</p>
 
             @include('admin.inc.message')
 

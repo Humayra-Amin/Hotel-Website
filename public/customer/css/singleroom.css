@@ -1,0 +1,13 @@
+.single-context{
+    padding: 5px;
+    margin: 60px;
+    display: flex;
+}
+.room-text{
+    margin-top:10px;
+    font-family: 'Signika';
+}
+.lead{
+    font-family: 'Signika';
+    font-size: 20px;
+}

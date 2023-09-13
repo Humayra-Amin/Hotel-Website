@@ -12,15 +12,15 @@ class EmployeeController extends Controller
     public function index()
     {
         $employees = Employee::all();
-        return view("admin.pages.index")->with('employees',  $employees);
+        return view("admin.employee.index")->with('employees',  $employees);
     }
     public function add()
     {
-        return view("admin.pages.add");
+        return view("admin.employee.add");
     }
     public function single()
     {
-        return view("admin.pages.single");
+        return view("admin.employee.single");
     }
     
     public function store(Request $request)
@@ -118,12 +118,12 @@ public function update(Request $request,$id)
 public function show($id)
 { 
    $employee=Employee::where("id",$id)->firstOrfail();
-   return view("admin.pages.single")->with('employee',  $employee);
+   return view("admin.employee.single")->with('employee',  $employee);
 
 }
 public function edit($id)
 {
     $employee=Employee::where("id",$id)->firstOrfail();
-    return view("admin.pages.edit")->with('employee',  $employee);
+    return view("admin.employee.edit")->with('employee',  $employee);
 }
 }
