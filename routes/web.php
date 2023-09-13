@@ -71,13 +71,6 @@ Route::get('/bookmodal', [CustomerController::class, "bookmodal"]);
 
 
 
-// Route::get('/employee/login', [EmployeeAuthController::class, "login"]);
-// Route::post('/employee/post-login', [EmployeeAuthController::class, "postLogin"]);
-// Route::get('/employee/register', [EmployeeAuthController::class, "register"]);
-// Route::post('/employee/post-register', [EmployeeAuthController::class, "postRegister"]);
-// Route::get('/employee/logout', [EmployeeAuthController::class, "logout"]);
-
-
 Route::get('/employee/', [EmployeeController::class, "index"]);
 Route::get('admin/employee/add', [EmployeeController::class, "add"]);
 Route::get('admin/employee/single', [EmployeeController::class, "single"]);

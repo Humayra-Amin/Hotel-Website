@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Employee;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 
 class EmployeeController extends Controller
@@ -38,10 +40,16 @@ class EmployeeController extends Controller
         'sex' => 'required',
         'salary' => 'required|integer',
         'joiningdate' => 'required',
-
     ]);
 
 
+        $user = new User();
+        $user->fname = $request->fname;
+        $user->lname = $request->lname;
+        $user->password = $request->password;
+        // 'password' => Hash::make($request->password)
+        $user->save();
+     
 
     $employee = new Employee();
     $employee->fname = $request->fname;
@@ -58,6 +66,7 @@ class EmployeeController extends Controller
     $employee->joiningdate = $request->joiningdate;
 
     $employee->save();
+
 
   
     Storage::disk("public")->put("$employee->id", $request->file('image'));

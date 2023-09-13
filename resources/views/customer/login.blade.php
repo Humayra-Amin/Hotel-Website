@@ -37,7 +37,7 @@
 
                         <div class="title-row d-flex flex-column ">
                             <div class="offset-1 col-lg-10">
-                                <input type="email" placeholder="Email" name="email" class="inp">
+                                <input type="email" placeholder="Email" name="email" class="file-inp">
                                 @if ($errors->has('email'))
                                 <span class="text-danger">{{ $errors->first('email') }}</span>
                                @endif
@@ -45,7 +45,7 @@
                         
                         <div class="title-row">
                             <div class="offset-1 col-lg-10">
-                                <input type="password" placeholder="Password" name="password" class="inp">
+                                <input type="password" placeholder="Password" name="password" class="file-inp">
                                 @if ($errors->has('password'))
                                 <span class="text-danger">{{ $errors->first('password') }}</span>
                                  @endif

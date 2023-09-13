@@ -20,10 +20,14 @@ class CustomerController extends Controller
         return view("customer.register");
     }
 
+
     public function customerlist()
     {
-        return view("customer.customerlist");
+        $customers = Customer::all();
+        return view("customer.customerlist")->with('customers',  $customers);
     }
+
+
     public function personalInfo()
     {
         return view("customer.personalInfo");
@@ -50,6 +54,9 @@ class CustomerController extends Controller
         'email' => 'required|email',
         'roomno' => 'required',
         'status' => 'required',
+        'password'=> 'required',
+        'password'=> 'required',
+
 
     ]);
 
@@ -121,6 +128,9 @@ class CustomerController extends Controller
   
         return Redirect('/');
     }
+
+
+
 
     public function password()
     {
