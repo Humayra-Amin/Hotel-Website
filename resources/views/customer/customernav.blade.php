@@ -34,14 +34,14 @@
     <div class="row">
         <!-- Card 1: Booking History -->
         <div class="col-sm-6">
-            <div class="card ml">
+            <div class="text-card ml">
                     <i class="fa fa-list icon"></i>
                     <p class="font ">  Booking List</p>
         </div>
     </div>
         <!-- Card 2: Change Password -->
         <div class="col-sm-6">
-            <div class="card mr">
+            <div class="text-card mr">
                     <i class="fa fa-key icon"></i>
                     <p class="font"> Change Password</p>
             </div>
@@ -49,7 +49,7 @@
    
         <!-- Card 3: Profile Information -->
         <div class="col-sm-6">
-            <div class="card ml">
+            <div class="text-card ml">
                     <i class="fa fa-address-card icon"></i>
                     <p class="font"> Profile Information</p>
             </div>
@@ -57,7 +57,7 @@
 
         <!-- Card 4: Admin -->
         <div class="col-sm-6">
-            <div class="card mr">
+            <div class="text-card mr">
                     <i class="fa fa-user icon"></i>
                    <p class="font">Admin</p>
             </div>
@@ -65,7 +65,7 @@
 
     <!-- Card 5: Customer-List -->
     <div class="col-sm-6">
-        <div class="card ml">
+        <div class="text-card ml">
             <i class="fa fa-users icon"></i>
                 <p class="font">Customer List</p>
         </div>

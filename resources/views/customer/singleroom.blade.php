@@ -35,11 +35,13 @@
 
             @include('admin.inc.message')
 
-            <form action="/roombook/{{$room->id}}" method="POST" enctype="multipart/form-data">
+            {{-- <form action="/roombook/{{$room->id}}" method="POST" enctype="multipart/form-data">
                 @csrf
-                @method('PUT')
-                    <button id="bookButton" class="btn btn-primary">Book Now</button>
-            </form>
+                @method('PUT') --}}
+                    {{-- <button id="bookButton" class="btn btn-primary" href="customer/bookmodal">Book Now</button> --}}
+                    <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#reservationModal">Book Now</button>
+
+            {{-- </form> --}}
         </div>
    
 </div>
@@ -50,4 +52,23 @@
 <script src="script.js"></script>
 </body>
 </html> --}}
+
+
+
+<div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+               <p>Name,Email,Check-in Date,Check-out Date,Room Type</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Reservation</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 @endsection

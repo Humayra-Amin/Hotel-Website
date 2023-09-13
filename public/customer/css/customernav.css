@@ -36,15 +36,20 @@
       }
 
       /* Card styling */
-      .card {
+      .text-card {
           background-color: #3d4c8f;
           margin: 6px;
           padding: 1px;
           border: 1px solid  #3d4c8f;
           border-radius: 4px;
           }
+<<<<<<< HEAD
+          .text-card:hover{
+              cursor: pointer;
+=======
           .card:hover{
           cursor: pointer;
+>>>>>>> b19574ea29872c20a518c172be42566080848177
           background-color: #b2bbd8;
           color: rgb(63, 140, 190);
           }

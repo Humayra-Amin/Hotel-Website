@@ -37,7 +37,10 @@ class CustomerController extends Controller
     {
         return view("customer.changepass");
     }
-
+    public function bookmodal()
+    {
+        return view("customer.bookmodal");
+    }
 
     public function store(Request $request)
     {
