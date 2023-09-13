@@ -1,259 +1,145 @@
- 
-@extends('admin.layouts.app')
+@extends('employee.layouts.app')
+
 @section('app')
 <div id="content-wrapper" class="d-flex flex-column">
+<!-- Topbar -->
+<div id="content">
+<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
+  <!-- Sidebar Toggle (Topbar) -->
+  <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+      <i class="fa fa-bars"></i>
+  </button>
 
-  @include('admin.inc.message')
+  <!-- Topbar Search -->
+  <form
 
+      class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+      <div class="input-group">
+          <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+              aria-label="Search" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+              <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+              </button>
+          </div>
+      </div>
+  </form>
 
-    <!-- Main Content -->
-    <div id="content">
-
-        <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-            <!-- Sidebar Toggle (Topbar) -->
-            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                <i class="fa fa-bars"></i>
-            </button>
-
-            <!-- Topbar Search -->
-            <form
-
-                class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                        aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="button">
-                            <i class="fas fa-search fa-sm"></i>
-                        </button>
-                    </div>
-                </div>
-            </form>
-
-            <!-- Topbar Navbar -->
-             <!-- Nav Item - User Information -->
-             <li class="nav-item dropdown no-arrow">
-              <a  class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
-                  <img class="img-profile rounded-circle"
-                      src="{{asset('image/undraw_profile.svg')}}">
-              </a>
-              <!-- Dropdown - User Information -->
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                  aria-labelledby="userDropdown">
-
-                  @auth
-                      <a class="dropdown-item" href="#">
-                          <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                          Profile
-                      </a>
-                      <a class="dropdown-item" href="#">
-                          <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                          Settings
-                      </a>
-                      
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                          <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                          Logout
-                      </a>
-                  @else
-                      <a class="dropdown-item" href="admin/login">
-                          <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                          Login
-                      </a>
-                      <a class="dropdown-item" href="admin/login">
-                          <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                          Login
-                      </a>
-                  @endauth
-
-                  
-              </div>
-          </li>   
+  <!-- Topbar Navbar -->
        </nav>
+<div class="container mt-3 ">
 
 
+@include('employee.inc.message')
 
-                 <div class="container mt-3">
-                          <h2 class="text-left text-info1 custom-form-title">Add Rooms</h2>
-                       
-                    <form action="{{ url('room') }}" method="POST" enctype="multipart/form-data">
-                      @csrf
+
+<h2 class="custom-h2">Add Employee</h2>
   
-                      <div class="row custom-jumbotron box8">
-                        
-                        <div class="custom-form-inner">
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="roomtitle">Room Title</label>
-                              <input type="text" class="form-control" name="roomtitle" id="roomtitle" placeholder="Enter Room Name">
-                            </div>
+       <form action="{{ url('employee') }}" method="POST" enctype="multipart/form-data">
+                      @csrf
 
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="roomno">Room No</label>
-                              <input type="number" class="form-control" name="roomno" id="roomno" placeholder="Enter Room No." required>
-                            </div>
+    <div class="row jumbotron custom-box8">
+      
+      
+      <div class="col-sm-3 form-group">
+    <h2 class=" text-font ">Personal Information</h2>
+</div>
+<div class="col-md-6 form-group custom-input-file ">
 
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="floorno">Floor No</label>
-                              <input type="text" class="form-control" name="floorno" id="floorno" placeholder="Enter Floor No." required>
-                            </div>
+                           <div class="d-flex align-items-center justify-content-start">
+													<img id="file_upload" src="http://placehold.it/100" alt="your image" class="custom-upload-img" />
+													<div class="custom-input-file-upload">
+														<span class="custom-upload-label">Upload Image</span>
+														<input type='file' name="image" onchange="readURL(this);" />
+													</div>
+												</div>
+                       </div>
+      <div class="col-sm-6  form-group">
+        <label for="name-f" class="custom-label">First Name</label>
+        <input type="text" class="form-control" name="fname" id="name-f" placeholder="Enter first name" required>
+      </div>
 
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="roomsize">Room Size</label>
-                              <input type="text" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" required>
-                            </div>
+      <div class="col-sm-6 form-group">
+        <label for="name-l" class="custom-label">Last name</label>
+        <input type="text" class="form-control" name="lname" id="name-l" placeholder="Enter last name" required>
+      </div>
 
-                            {{-- <div class="col-sm-6 form-group custom-form-group">
-                              <label for="price">Price</label>
-                              <input type="text" class="form-control" name="price" id="price" placeholder="Enter Price." required>
-                            </div> --}}
+      <div class="col-sm-6 form-group">
+        <label for="name-e" class="custom-label">Employee Id</label>
+        <input type="text" class="form-control" name="eid" id="number" placeholder="Enter Employee id" required>
+      </div>
 
-                            {{-- <div class="col-sm-6 form-group custom-form-group">
-                              <label for="availablerooms">Room Availability</label>
-                              <input type="text" class="form-control" name="availablerooms" id="availablerooms" placeholder="Enter Available Room." required>
-                            </div>
+      <div class="col-sm-6 form-group">
+        <label for="address-1" class="custom-label">Present Address</label>
+        <input type="address" class="form-control" name="Locality" id="Present-address" placeholder="Locality/House/Street no." required>
+      </div>
 
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="maxoccupancy">Max Occupancy</label>
-                              <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter maxoccupancy." required>
-                            </div> --}}
+        <div class="col-sm-6 form-group">
+        <label for="email" class="custom-label">Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email." required>
+      </div>
 
+      <div class="col-sm-6 form-group">
+        <label for="tel" class="custom-label">Contact No.</label>
+        <input type="tel" name="phone" class="form-control" id="tel" placeholder="Enter Contact Number." required>
+      </div>
 
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="Category">Category</label>
-                              <select name="category" class="form-control custom-select browser-default">
-                                <option>Select your Room Category</option>
-                                <option>Normal</option>
-                                <option>Standered</option>
-                                <option >Premium</option>
-                                <option >Super Premium</option>
-                                <option >Queen</option>
-                            </select>
-                            </div>
-                            
-                          
-                            
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="roomtype">Room Type</label>
-                              <select name="roomtype" class="form-control custom-select browser-default">
-                    
-                                <option>Single Room</option>
-                                <option>Double Room</option>
-                                <option >Quad Room</option>
-                                <option >Hollywood Twin Room</option>
-                                <option > Double-Double Room</option>
-                                <option >Interconnecting Room</option>
-                                <option > Adjoining Room</option>
-                                <option >Duplex Room</option>
-                              </select>
-                            </div>
+      <div class="col-sm-6 form-group">
+        <label for="Date" class="custom-label">Date Of Birth</label>
+        <input type="Date" name="dob" class="form-control" id="Date" placeholder="" required>
+      </div>
 
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="availablerooms">Room Availability</label>
-                              <input type="text" class="form-control" name="availablerooms" id="availablerooms" placeholder="Enter Available Room." required>
-                            </div>
-                            
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="maxoccupancy">Max Occupancy</label>
-                              <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter maxoccupancy." required>
-                            </div>
+      <div class="col-sm-6 form-group">
+        <label for="email" class="custom-label">Input NID</label>
+        <input type="nid" class="form-control" name="nid" id="nid" placeholder="Enter NID" required>
+      </div>
+      <div class="col-sm-6 form-group">
+        <label for="position" class="custom-label">Position</label>
+        <select class="form-control custom-select browser-default" name="position">
+        <option >Select your Position</option>
+      <option>Manager</option>
+      <option>Assistant Manager</option>
+      <option >Accountent</option>
+      <option >Receptionist</option>
+      <option >Security</option>
+      <option >Room Service</option>
+      <option >Janitor</option>
+        </select>
+      </div>
 
-                            {{-- <div class="col-sm-6 form-group custom-form-group">
-                              <label for="roomsize">Room Size</label>
-                              <input type="text" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" required>
-                            </div> --}}
+      <div class="col-sm-6 form-group">
+        <label for="sex" class="custom-label">Gender</label>
+        <select id="sex" class="form-control browser-default custom-select" name="sex">
+        <option >Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Others</option>
+        </select>
+      </div>
 
+      <div class="col-sm-6 form-group">
+        <label for="Date" class="custom-label">Joining Date</label>
+        <input type="Date" name="joiningdate" class="form-control" id="jdate" placeholder="" required>
+      </div>
+      <div class="col-sm-6 form-group">
+        <label for="Salary">Salary</label>
+        <input type="number" name="salary" class="form-control" id="Salary" placeholder="" required>
+      </div>
+      <div class="col-sm-12">
+        <input type="checkbox" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label custom-label">&nbsp;I accept all terms and conditions.
+        </label>
+      </div>
 
+      <div class="col-sm-12 form-group mb-0">
+        <button class="btn btn-primary float-right">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+    </form>
+        </div>
+      </div>
+      </div>
 
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="roomview">Room View</label>
-                              <select name="roomview" class="form-control custom-select browser-default">
-                           
-                              <option>Sea View</option>
-                              <option>Mountain View</option>
-                              <option>Road View</option>
-                              </select>
-                            </div>
-
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="price">Price</label>
-                              <input type="text" class="form-control" name="price" id="price" placeholder="Enter Price." required>
-                            </div>
-
-
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="guestservice">Guest Service</label>
-                              <select name="guestservice[]" class="form-control custom-select browser-default" multiple>
-                           
-                              <option>24-Hour room service</option>
-                              <option>Free wireless internet access</option>
-                              <option >Complimentary use of hotel bicycle</option>
-                              <option >Laundry service</option>
-                              <option >Tour & excursions</option>
-                              <option >24 Hour concierge</option>
-                              <option >E-Bike & horse cart rental</option>
-                              <option >Airport transfers</option>
-                              <option >Babysitting on request</option>
-                              </select>
-                            </div>
-
-
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="facilities">Facilities</label>
-                              <select name="facilities[]" class="form-control custom-select browser-default" multiple>
-                              <option>Free Wi-Fi</option>
-                              <option>Flat-screen TV</option>
-                              <option >Coffee Maker</option>
-                              <option >Pool</option>
-                              <option >24 Hour security</option>
-                              <option >Car parking</option>
-                              <option >Poolside bar</option>
-                              <option >Disable rooms & Interconnecting room</option>
-                              <option >Sunset boat trip</option>
-                              </select>
-                            </div>
-
-                        
-                            
-                            <div class="col-sm-12 form-group custom-form-group1">
-                              <label for="description" class="form-label">Description</label>
-                              <textarea name="description" class="form-control" id="description" rows="3"></textarea>
-                            </div>
-                            
-                            
-                            <div class="col-sm-12">
-                              <div class="upload__box">
-                                <div class="upload__btn-box">
-                                  <label class="upload__btn">
-                                    Upload Room Images
-                                    <input  name="image[]" type="file" multiple data-max_length="20" class="upload__inputfile">
-                                  </label>
-                                </div>
-                                <div class="upload__img-wrap"></div>
-                              </div>
-                            </div>
-    
-                        
-                            <div class="col-sm-4">
-                              <input type="checkbox" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label">&nbsp;I accept all terms and conditions.
-                              </label>
-                            </div>
-                      
-                            <div class="col-sm-12 form-group mb-0">
-                              <button class="btn btn-primary btn-lg float-right add-room-btn">Submit</button>
-                            </div>
-                        </div>
-                  
-                      </div>
-                    </form>
-                  </div>
-                                             
-                  
-                
-                  
- @endsection
+@endsection
