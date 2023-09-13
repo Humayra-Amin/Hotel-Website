@@ -1,0 +1,26 @@
+
+.category-fonts{
+    font-family:'roboto';
+   
+}
+.category-fonts-title{
+    font-family:'roboto';
+    font-size:x-large;
+    font-weight:400;
+    font-style:inherit;
+}
+   
+.table-category{
+    padding: 20px;
+    margin:25px;
+}
+.line-gap{
+    margin-left: 10px;
+    margin-right: 15px;
+     padding: 10px;
+     align-items: center;
+}
+.mar{
+    margin-left: 10px;
+    margin-right: 15px;
+}

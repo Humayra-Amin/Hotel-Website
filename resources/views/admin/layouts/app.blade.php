@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="{{asset('rooms/css/category.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/addcategory.css')}}">
 
+    <link rel="stylesheet" href="{{asset('rooms/css/categorylist.css')}}">
 
     <link rel="stylesheet" href="{{asset('employees/css/humayra.css')}}">
     <link rel="stylesheet" href="{{asset('employees/css/tushin.css')}}">
