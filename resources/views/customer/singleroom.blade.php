@@ -43,7 +43,7 @@
             <form action="/roombook/{{$room->id}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
-                    <button id="bookButton" class="btn btn-primary">Book Now</button>
+                    <button id="bookButton" class="btn btn-primary" href="">Book Now</button>
             </form>
         </div>
     </div>

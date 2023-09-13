@@ -1,21 +1,6 @@
-/* *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body{
-  background: rgb(219, 226, 226);
-} */
-/* .group-file{
-  background: #33445a;
-  padding: 3px 3px;
-} */
-
 .form-card-group{
   background: rgb(164, 174, 255);
   border-radius: 30px;
-  /* box-shadow: 2px 2px 6px rgb(219, 216, 216); */
 }
 
 .imagefile{
@@ -48,12 +33,8 @@ body{
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   outline: none;
   margin-bottom: 20px;
-  /* border-radius: 60px; */
   background: transparent;
   color: #40414a;
-  /* -webkit-box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75);
-  -moz-box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75);
-  box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75); */
 }
 
 

@@ -125,8 +125,21 @@
       </div>
       <div class="col-sm-6 form-group">
         <label for="Salary">Salary</label>
-        <input type="number" name="salary" class="form-control" id="Salary" placeholder="" required>
+        <input type="number" name="salary" class="form-control" id="Salary" placeholder="Enter Salary" required>
       </div>
+
+      <div class="col-sm-6 form-group">
+        <label for="Password">Password</label>
+        <input type="password" name="password" class="form-control" id="password" placeholder="Enter Password" required>
+      </div>
+
+
+      <div class="col-sm-6 form-group">
+        <label for="Password">Confirm Password</label>
+        <input type="password" name="password_confirmation" class="form-control" id="confirm-password" placeholder="Enter Confirm Password" required>
+      </div>
+
+
       <div class="col-sm-12">
         <input type="checkbox" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label custom-label">&nbsp;I accept all terms and conditions.
         </label>
