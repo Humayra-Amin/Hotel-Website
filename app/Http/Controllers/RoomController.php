@@ -139,9 +139,14 @@ class RoomController extends Controller
     {
         return view("admin.room.category");
     }
+    public function categorylist()
+    {
+        return view("admin.room.categorylist");
+    }
     public function addcategory()
     {
         return view("admin.room.addcategory");
 
     }
+
 }

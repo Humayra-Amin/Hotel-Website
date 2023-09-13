@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="{{asset('rooms/css/jaima.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/urbashi.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/category.css')}}">
+    <link rel="stylesheet" href="{{asset('rooms/css/categorylist.css')}}">
 
     <link rel="stylesheet" href="{{asset('employees/css/humayra.css')}}">
     <link rel="stylesheet" href="{{asset('employees/css/tushin.css')}}">
