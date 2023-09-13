@@ -27,24 +27,24 @@
 
     <h1 class="mt-4 mb-4 ml section-heading">ALL Booking List</h1>
     <div class="row">
-
+      @foreach($booklist as $Customer)
       <div class="col-sm-3">
         <div class="card booking-card">
-          <div class="price-tag">$250</div>
+          <div class="price-tag">{{$booking->price}}</div>
           <div class="group-card-body">
-            <h5 class="card-title mt-4">Name: Abdur Rahman</h5>
+            <h5 class="card-title mt-4">Name: {{$booking->name}}</h5>
             <ul class="details">
-              <li> Room Type: Deluxe</li>
-              <li> Capacity: 4 guests</li>
-              <li> Check-In: 2023-09-01</li>
-              <li> Check-Out: 2023-09-07</li>
+              <li> Room Type: {{$booking->roomtype}}</li>
+              <li> Capacity: {{$booking->capacity}}</li>
+              <li> Check-In: {{$booking->checkin}}</li>
+              <li> Check-Out: {{$booking->checkout}}</li>
               <button class="button"> View </button>
             </ul>
           </div>
         </div>
       </div>
-
-      <div class="col-sm-3">
+      @endforeach
+      {{-- <div class="col-sm-3">
         <div class="card booking-card">
           <div class="price-tag">$250</div>
           <div class="group-card-body">
@@ -155,7 +155,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
   </div>
   {{-- <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>

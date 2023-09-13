@@ -4,11 +4,11 @@
 
 
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-6">
+<div class="container single-context">
+ 
+        <div class="col-md-6 mt-5">
             <div id="roomCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner mt-5">
+                <div class="carousel-inner mt-4">
                     @if ($room->image)
                     @foreach ($room->image as $img)
                     <div>
@@ -23,30 +23,33 @@
              
             </div>
         </div>
+     
         <div class="col-md-6">
-            <h1 class="mb-3">{{$room->roomtitle}}</h1>
+            <h1 class="room-text">{{$room->roomtitle}}</h1>
             <p class="lead">{{$room->description}}</p>
             <p class="lead">{{$room->roomtype}}</p>
             <p class="lead">{{$room->roomsize}}</p>
             <p class="lead">{{$room->roomview}}</p>
-            {{-- <ul class="group mb-6">
-                <li class="group-item">Single Bed</li>
-                <li class="group-item">En-suite Bathroom</li>
-                <li class="group-item">Stunning city view</li>
-                <li class="group-item">Complimentary Wi-Fi</li>
-                <li class="group-item">Complimentary Breakfast</li>
-            </ul> --}}
-            <p class="lead font-weight-bold"> {{$room->price}}</p>
+      
+            <p class="lead"> {{$room->price}}</p>
 
             @include('admin.inc.message')
 
-            <form action="/roombook/{{$room->id}}" method="POST" enctype="multipart/form-data">
+            {{-- <form action="/roombook/{{$room->id}}" method="POST" enctype="multipart/form-data">
                 @csrf
+<<<<<<< HEAD
                 @method('PUT')
                     <button id="bookButton" class="btn btn-primary" href="">Book Now</button>
             </form>
+=======
+                @method('PUT') --}}
+                    {{-- <button id="bookButton" class="btn btn-primary" href="customer/bookmodal">Book Now</button> --}}
+                    <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#reservationModal">Book Now</button>
+
+            {{-- </form> --}}
+>>>>>>> 3535379535d82240066524540b584955519185c6
         </div>
-    </div>
+   
 </div>
 {{-- 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -55,4 +58,23 @@
 <script src="script.js"></script>
 </body>
 </html> --}}
+
+
+
+<div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+               <p>Name,Email,Check-in Date,Check-out Date,Room Type</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Reservation</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 @endsection

@@ -10,6 +10,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CustomerController;
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,16 +42,17 @@ Route::middleware(["auth"])->group(function () {
     Route::get('/admin/room', [RoomController::class, "index"]);
     Route::get('/admin/logout', [RoomAuthController::class, 'logout'])->name('adminlogout');
 
-    Route::get('/admin/add', [RoomController::class, "add"]);
-    Route::get('/admin/{id}', [RoomController::class, "show"]);
-    Route::get('/admin/{id}/edit', [RoomController::class, "edit"]);
-    Route::post('/admin', [RoomController::class, "store"]);
-    Route::put('/admin/{id}', [RoomController::class, "update"]);
-    Route::get('/admin/edit', [RoomController::class, "edit"]);
-    Route::get('/admin/single', [RoomController::class, "single"]);
+    Route::get('/admin/room/add', [RoomController::class, "add"]);
+    Route::get('/admin/room/{id}', [RoomController::class, "show"]);
+    Route::get('/admin/room/{id}/edit', [RoomController::class, "edit"]);
+    Route::post('/admin/room', [RoomController::class, "store"]);
+    Route::put('/admin//room{id}', [RoomController::class, "update"]);
+    Route::get('/admin/room/edit', [RoomController::class, "edit"]);
+    Route::get('/admin/room/single', [RoomController::class, "single"]);
 });
 
-
+   Route::get('/admin/room/category', [RoomController::class, "category"]);
+   Route::get('/admin/room/addcategory', [RoomController::class, "addcategory"]);
 
 
 Route::get('/login', [CustomerController::class, "login"]);
@@ -63,18 +65,19 @@ Route::get('/logout', [CustomerController::class, "logout"]);
 Route::get('/customerlist', [CustomerController::class, "customerlist"]);
 Route::get('/personalInfo', [CustomerController::class, "personalInfo"]);
 Route::get('/customernav', [CustomerController::class, "customernav"]);
-Route::get('/bookinglist', [CustomerController::class, "bookinglist"]);
+Route::get('/bookinglist', [HomeController::class, "bookinglist"]);
 Route::get('/changepass', [CustomerController::class, "changepass"]);
+Route::get('/bookmodal', [CustomerController::class, "bookmodal"]);
 
 
 
 Route::get('/employee/', [EmployeeController::class, "index"]);
-Route::get('/employee/add', [EmployeeController::class, "add"]);
-Route::get('/employee/single', [EmployeeController::class, "single"]);
-Route::get('/employee/{id}', [EmployeeController::class, "show"]);
-Route::get('/employee/{id}/edit', [EmployeeController::class, "edit"]);
-Route::post('/employee', [EmployeeController::class, "store"]);
-Route::put('/employee/{id}', [EmployeeController::class, "update"]);
+Route::get('admin/employee/add', [EmployeeController::class, "add"]);
+Route::get('admin/employee/single', [EmployeeController::class, "single"]);
+Route::get('admin/employee/{id}', [EmployeeController::class, "show"]);
+Route::get('admin/employee/{id}/edit', [EmployeeController::class, "edit"]);
+Route::post('admin/employee', [EmployeeController::class, "store"]);
+Route::put('admin/employee/{id}', [EmployeeController::class, "update"]);
 
 
 

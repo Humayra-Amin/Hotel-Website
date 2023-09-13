@@ -28,6 +28,21 @@
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse"
+            aria-expanded="true" aria-controls="collapse">
+           <i class="fa-solid fa-list-ul"></i>
+            <span>Category</span>
+        </a>
+        <div id="collapse" class="collapse" aria-labelledby="heading" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Custom Categories:</h6>
+                <a class="collapse-item" href="/admin/">View Category</a>
+                <a class="collapse-item" href="/admin/">Add Category</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
             aria-expanded="true" aria-controls="collapseTwo">
             <i class="fa-sharp fa-solid fa-hotel"></i>
@@ -36,10 +51,10 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Components:</h6>
-                <a class="collapse-item" href="/admin/room">View room</a>
-                <a class="collapse-item" href="/admin/add">Add room</a>
-                <a class="collapse-item" href="/admin/edit">Edit room</a>
-                <a class="collapse-item" href="/admin/single">Single room</a>
+                <a class="collapse-item" href="/admin/room">View Room</a>
+                <a class="collapse-item" href="/admin/room/add">Add Room</a>
+                <a class="collapse-item" href="/admin/room/edit">Edit Room</a>
+                <a class="collapse-item" href="/admin/room/single">Single Room</a>
             </div>
         </div>
     </li>
