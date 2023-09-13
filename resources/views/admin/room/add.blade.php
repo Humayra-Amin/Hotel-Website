@@ -82,7 +82,7 @@
                  <div class="container mt-3">
                           <h2 class="text-left text-info1 custom-form-title">Add Rooms</h2>
                        
-                    <form action="{{ url('room') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ url('admin/room') }}" method="POST" enctype="multipart/form-data">
                       @csrf
   
                       <div class="row custom-jumbotron box8">

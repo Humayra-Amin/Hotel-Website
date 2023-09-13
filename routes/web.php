@@ -34,6 +34,9 @@ Route::get('/', [HomeController::class, "home"]);
 Route::get('/singleroom/{id}', [HomeController::class, "singleroom"]);
 Route::put('/roombook/{id}', [HomeController::class, "roombook"]);
 
+Route::get('/admin/room/category', [RoomController::class, "category"]);
+Route::get('/admin/room/addcategory', [RoomController::class, "addcategory"]);
+Route::get('/admin/room/categorylist', [RoomController::class, "categorylist"]);
 
 
 Route::middleware(["auth"])->group(function () {
@@ -50,9 +53,8 @@ Route::middleware(["auth"])->group(function () {
     Route::get('/admin/room/edit', [RoomController::class, "edit"]);
     Route::get('/admin/room/single', [RoomController::class, "single"]);
 });
-
-   Route::get('/admin/room/category', [RoomController::class, "category"]);
-   Route::get('/admin/room/addcategory', [RoomController::class, "addcategory"]);
+     
+  
 
 
 Route::get('/login', [CustomerController::class, "login"]);
