@@ -1,4 +1,4 @@
-@extends('employee.layouts.app')
+@extends('admin.layouts.app')
 
 @section('app')
 <div id="content-wrapper" class="d-flex flex-column">
@@ -31,7 +31,7 @@
 <div class="container mt-3 ">
 
 
-@include('employee.inc.message')
+@include('admin.inc.message')
 
 
 <h2 class="custom-h2">Add Employee</h2>
@@ -47,14 +47,15 @@
 </div>
 <div class="col-md-6 form-group custom-input-file ">
 
-                           <div class="d-flex align-items-center justify-content-start">
-													<img id="file_upload" src="http://placehold.it/100" alt="your image" class="custom-upload-img" />
-													<div class="custom-input-file-upload">
-														<span class="custom-upload-label">Upload Image</span>
-														<input type='file' name="image" onchange="readURL(this);" />
-													</div>
-												</div>
-                       </div>
+                    <div class="d-flex align-items-center justify-content-start">
+                      <img id="file_upload" src="http://placehold.it/100" alt="your image" class="custom-upload-img" />
+                      <div class="custom-input-file-upload">
+                        <span class="custom-upload-label">Upload Image</span>
+                        <input type='file' name="image" onchange="readURL(this);" />
+                      </div>
+                    </div>
+                  </div>
+
       <div class="col-sm-6  form-group">
         <label for="name-f" class="custom-label">First Name</label>
         <input type="text" class="form-control" name="fname" id="name-f" placeholder="Enter first name" required>
@@ -124,8 +125,21 @@
       </div>
       <div class="col-sm-6 form-group">
         <label for="Salary">Salary</label>
-        <input type="number" name="salary" class="form-control" id="Salary" placeholder="" required>
+        <input type="number" name="salary" class="form-control" id="Salary" placeholder="Enter Salary" required>
       </div>
+
+      <div class="col-sm-6 form-group">
+        <label for="Password">Password</label>
+        <input type="password" name="password" class="form-control" id="password" placeholder="Enter Password" required>
+      </div>
+
+
+      <div class="col-sm-6 form-group">
+        <label for="Password">Confirm Password</label>
+        <input type="password" name="password_confirmation" class="form-control" id="confirm-password" placeholder="Enter Confirm Password" required>
+      </div>
+
+
       <div class="col-sm-12">
         <input type="checkbox" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label custom-label">&nbsp;I accept all terms and conditions.
         </label>
