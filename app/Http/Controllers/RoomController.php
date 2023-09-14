@@ -70,7 +70,7 @@ class RoomController extends Controller
 
 
 
-        return redirect("admin.room")->with("success", "Room created.");
+        return redirect("admin/room")->with("success", "Room created.");
     }
     public function update(Request $request,$id)
     {   
@@ -116,7 +116,7 @@ class RoomController extends Controller
         $room->image= Storage::disk("public")->files($room->id);
         $room->update();
 
-        return redirect("admin.room")->with("success", "Room updated.");
+        return redirect("admin/room")->with("success", "Room updated.");
 
     }
 

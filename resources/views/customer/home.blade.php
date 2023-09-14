@@ -71,11 +71,11 @@
     <div class="col-md-6 col-lg-4 mb-5">
     <div class="hotel-room">
       @if ($room->image[0])
-              @foreach ($room->image as $img)
+              {{-- @foreach ($room->image as $img) --}}
               <div>
-                  <img src='{{Storage::disk("public")->url($img)}}' class="d-block w-100 home-image" >
+                  <img src='{{Storage::disk("public")->url($room->image[0])}}' class="d-block w-100 h-100 home-image" >
               </div>
-              @endforeach
+              {{-- @endforeach --}}
               @endif
 
            <div class="hotel-room-body">

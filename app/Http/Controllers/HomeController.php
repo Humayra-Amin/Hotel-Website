@@ -13,7 +13,7 @@ class HomeController extends Controller
     //
     public function home()
     {   
-        $rooms=Room::all();
+        $rooms=Room::all()->take(3);
         return view("customer.home")->with('rooms',  $rooms);
     }
     // public function singleroom()
