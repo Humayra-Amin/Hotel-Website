@@ -3,13 +3,13 @@
     height: 600px;
     line-height: 15px;
     margin-top: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     padding: 20px;
     background-color: rgb(236, 237, 240);
     border-radius: 5px;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   }
-  .btn{
+  .button-file{
     width: min-content;
     margin-left: 180px;
   }

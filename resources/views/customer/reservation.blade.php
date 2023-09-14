@@ -43,7 +43,7 @@
                     <option value="suite">Suite</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary button-file">Submit</button>
         </form>
     </div>
 </div>
