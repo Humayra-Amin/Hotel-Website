@@ -80,7 +80,7 @@
 
 
 <div class="bodyfiles">
-    <form action="{{ url('admin/room') }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ url('admin/category') }}" method="POST" enctype="multipart/form-data">
         @csrf
       <h2 class="text-center">Add Room Category</h2>
       <div class=" formfiles">
