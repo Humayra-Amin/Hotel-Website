@@ -83,7 +83,7 @@
 
 
 
-                      <form action="/admin/{{$room->id}}" method="POST" enctype="multipart/form-data">
+                      <form action="/admin/room/{{$room->id}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
 

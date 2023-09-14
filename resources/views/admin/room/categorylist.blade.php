@@ -89,7 +89,7 @@
 
 
             <div class="col-md-12 d-flex align-items-center justify-content-between">
-                <h2 class="category-fonts-title">CATEGORIES</h2>
+                <h2 class="category-fonts-title mx-3">CATEGORIES</h2>
                 <div class="d-flex align-items-center justify-content-between">
                     <form>
                     <div class="input-group">
@@ -105,16 +105,16 @@
                         
                         <!-- <input type="text" placeholder="Search a room"> -->
                     </form>
-                    <a class="btn btn-primary ml-3 category-fonts-title" href="/admin/add">
+                    <a class="btn btn-primary ml-3 category-fonts-title" href="/admin/room/categorylist">
                         <i class="fa fa-plus"></i>
                          Add Room Categories
                     </a>
                 </div>
             </div>
             
-            <div class="col-md-12 category-fonts table-category">
+            <div class="col-md-12 category-fonts">
                 <div class="table-responsive-md mt-3">
-                    <table class="table">
+                    <table class="table table-group">
                         <thead>
                         <tr>
                         <th class="line-gap">Category No</th>
@@ -124,14 +124,6 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="mar">1</td>
-                                <td>LUXARY SUITS</td>
-                                <td class="text-center">
-                                 <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></button></i>
-                                 <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
-                                 </td>
-                              </tr>
-                              <tr>
                                 <td>1</td>
                                 <td>LUXARY SUITS</td>
                                 <td class="text-center">
@@ -140,32 +132,40 @@
                                  </td>
                               </tr>
                               <tr>
-                                <td>1</td>
-                                <td>LUXARY SUITS</td>
+                                <td>2</td>
+                                <td>DULUXE DOUBLE SUITS</td>
                                 <td class="text-center">
                                  <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></button></i>
                                  <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
                                  </td>
                               </tr>
                               <tr>
-                                <td>1</td>
-                                <td>LUXARY SUITS</td>
+                                <td>3</td>
+                                <td>EXECUTIVE TWIN SUITS</td>
                                 <td class="text-center">
                                  <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></button></i>
                                  <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
                                  </td>
                               </tr>
                               <tr>
-                                <td>1</td>
-                                <td>LUXARY SUITS</td>
+                                <td>4</td>
+                                <td>SINGLE SUITS</td>
                                 <td class="text-center">
                                  <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></button></i>
                                  <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
                                  </td>
                               </tr>
                               <tr>
-                                <td>1</td>
-                                <td>LUXARY SUITS</td>
+                                <td>5</td>
+                                <td>PERMIUM SUITS</td>
+                                <td class="text-center">
+                                 <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></button></i>
+                                 <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
+                                 </td>
+                              </tr>
+                              <tr>
+                                <td>6</td>
+                                <td>QUEEN SUITS</td>
                                 <td class="text-center">
                                  <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></button></i>
                                  <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
