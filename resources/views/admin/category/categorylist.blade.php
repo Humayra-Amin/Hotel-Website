@@ -105,7 +105,7 @@
                         <tbody>
                           @foreach ($categories as $category)
                             <tr>
-                                <td>{{$category->categoryid}}</td>
+                                <td>{{$category->id}}</td>
                                 <td>{{$category->categoryname}}</td>
                                 <td class="text-center">
                                  <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></button></i>
