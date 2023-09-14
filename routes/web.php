@@ -8,6 +8,8 @@ use App\Http\Controllers\EmployeeAuthController;
 use App\Http\Controllers\RoomAuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\CategoryController;
+
 
 
 
@@ -33,10 +35,6 @@ Route::post('/admin/post-register', [RoomAuthController::class, 'postRegister'])
 Route::get('/', [HomeController::class, "home"]);
 Route::get('/singleroom/{id}', [HomeController::class, "singleroom"]);
 Route::put('/roombook/{id}', [HomeController::class, "roombook"]);
-
-Route::get('/admin/room/category', [RoomController::class, "category"]);
-Route::get('/admin/room/addcategory', [RoomController::class, "addcategory"]);
-Route::get('/admin/room/categorylist', [RoomController::class, "categorylist"]);
 
 
 Route::middleware(["auth"])->group(function () {
@@ -83,7 +81,9 @@ Route::get('admin/employee/{id}/edit', [EmployeeController::class, "edit"]);
 Route::post('admin/employee', [EmployeeController::class, "store"]);
 Route::put('admin/employee/{id}', [EmployeeController::class, "update"]);
 
-
+Route::get('/admin/category/viewcategory', [CategoryController::class, "viewcategory"]);
+Route::get('/admin/category/addcategory', [CategoryController::class, "addcategory"]);
+Route::get('/admin/category/categorylist', [CategoryController::class, "categorylist"]);
 
 Route::get('/drag-and-drop', 'DragAndDropController@index')->name('drag-and-drop');
 Route::post('/drag-and-drop/update', 'DragAndDropController@update')->name('drag-and-drop.update');

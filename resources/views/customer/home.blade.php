@@ -73,7 +73,7 @@
       @if ($room->image[0])
               {{-- @foreach ($room->image as $img) --}}
               <div>
-                  <img src='{{Storage::disk("public")->url($room->image[0])}}' class="d-block w-100 h-100 home-image" >
+                  <img src='{{Storage::disk("public")->url($room->image[0])}}' class="d-block w-100  home-image" >
               </div>
               {{-- @endforeach --}}
               @endif
