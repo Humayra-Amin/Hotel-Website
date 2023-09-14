@@ -59,11 +59,34 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
-               <p>Name,Email,Check-in Date,Check-out Date,Room Type</p>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text"  placeholder="Enter your name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email"  placeholder="Enter your email"class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkInDate">Check-in Date:</label>
+                    <input type="date" class="form-control" id="checkInDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkOutDate">Check-out Date:</label>
+                    <input type="date" class="form-control" id="checkOutDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="roomType">Room Type:</label>
+                    <select class="form-control" id="roomType" required>
+                        <option value="single">Single</option>
+                        <option value="double">Double</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">  <a class="bbbb" href="/reservation" >Reservation</a></button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Reserve</button>
             </div>
         </div>
     </div>
