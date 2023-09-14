@@ -46,6 +46,12 @@ class CustomerController extends Controller
         return view("customer.bookmodal");
     }
 
+    public function reservation()
+    {
+        return view("customer.reservation");
+    }
+
+
     public function store(Request $request)
     {
     $request->validate([

@@ -70,6 +70,8 @@ Route::get('/customernav', [CustomerController::class, "customernav"]);
 Route::get('/bookinglist', [HomeController::class, "bookinglist"]);
 Route::get('/changepass', [CustomerController::class, "changepass"]);
 Route::get('/bookmodal', [CustomerController::class, "bookmodal"]);
+Route::get('/reservation', [CustomerController::class, "reservation"]);
+
 
 
 

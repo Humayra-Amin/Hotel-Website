@@ -84,40 +84,13 @@
       <h2 class="text-center">Add Room Category</h2>
       <div class=" formfiles">
         <div class=" groupform">
-            <input type="Category" class="form-control" name="Category" id="Category" placeholder="Enter Room Category" required>
+            <input type="Category" class="file-control" name="Category" id="Category" placeholder="Enter Room Category" required>
         </div>
 
         <button type="submit" class="btn btn-primary btn-files">Submit</button>
 
-    
-    
+      </div>
+    </form>
 </div>
-</form>
-
-</div>
-
-
-{{-- <form class="row row-cols-lg-auto g-1">
-	<div class="col-1">
-		<label class="visually-hidden" for="inline-form-category">Category</label> <select
-			class="form-control" id="inline-form-category">
-			<option value="">Category</option>
-			<option value="Toys">Toys</option>
-			<option value="Books">Books</option>
-			<option value="Stationaries">Stationaries</option>
-			</select>
-	</div>
-
-	<div class="col-4">
-		<label class="visually-hidden" for="inline-form-email">Email</label>
-		<input type="text" class="form-control" id="inline-form-email"
-			placeholder="Enter email address">
-	</div>
-
-	<div class="col">
-		<button type="submit" class="btn btn-primary">Submit</button>
-	</div>
-</form>            --}}
-
 
 @endsection

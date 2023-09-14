@@ -37,17 +37,11 @@
 
             {{-- <form action="/roombook/{{$room->id}}" method="POST" enctype="multipart/form-data">
                 @csrf
-<<<<<<< HEAD
-                @method('PUT')
-                    <button id="bookButton" class="btn btn-primary" href="">Book Now</button>
-            </form>
-=======
                 @method('PUT') --}}
                     {{-- <button id="bookButton" class="btn btn-primary" href="customer/bookmodal">Book Now</button> --}}
                     <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#reservationModal">Book Now</button>
 
             {{-- </form> --}}
->>>>>>> 3535379535d82240066524540b584955519185c6
         </div>
    
 </div>
@@ -69,7 +63,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Reservation</button>
+                <button type="button" class="btn btn-primary"><a href="/reservation">Reservation</a></button>
             </div>
         </div>
     </div>
