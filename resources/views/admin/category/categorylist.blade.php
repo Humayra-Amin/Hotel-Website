@@ -108,13 +108,10 @@
                                 <td>{{$category->id}}</td>
                                 <td>{{$category->categoryname}}</td>
                                 <td class="text-center">
-<<<<<<< HEAD
                                  <a href="/admin/category/{{$category->id}}/edit/" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></a>
                                  <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
-=======
                                  <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></button></i>
                                  <a href="/admin/{{$category->id}}/delete/" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></i></a>
->>>>>>> 6695c8430cfa3ce12f9a3687a8187c71bc85f14e
                                  </td>
                               </tr>
                            @endforeach
