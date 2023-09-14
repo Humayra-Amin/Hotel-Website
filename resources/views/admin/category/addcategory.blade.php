@@ -80,14 +80,14 @@
 
 
 <div class="bodyfiles">
-    <form action="{{ url('admin/room') }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ url('admin/category') }}" method="POST" enctype="multipart/form-data">
         @csrf
       <h2 class="text-center">Add Room Category</h2>
       <div class=" formfiles">
         <div class=" groupform">
             <input type="Category" class="file-control" name="Category" id="Category" placeholder="Enter Room Category" required>
         </div>
-        <button type="submit" class="btn btn-primary btn-files">Submit</button>
+        <button type="submit" class="btn btn-primary btn-files">Add</button>
 
       </div>
     </form>
