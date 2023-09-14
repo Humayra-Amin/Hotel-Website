@@ -108,7 +108,7 @@
                                 <td>{{$category->id}}</td>
                                 <td>{{$category->categoryname}}</td>
                                 <td class="text-center">
-                                 <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></button></i>
+                                 <a href="/admin/category/{{$category->id}}/edit/" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></a>
                                  <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
                                  </td>
                               </tr>
