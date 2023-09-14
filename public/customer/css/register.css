@@ -1,3 +1,8 @@
+.group-file{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .form-card-group{
   background: rgb(164, 174, 255);
   border-radius: 30px;
