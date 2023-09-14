@@ -87,7 +87,7 @@
         <div class=" groupform">
             <input type="Category" class="file-control" name="Category" id="Category" placeholder="Enter Room Category" required>
         </div>
-        <button type="submit" class="btn btn-primary btn-files">Submit</button>
+        <button type="submit" class="btn btn-primary btn-files">Add</button>
 
       </div>
     </form>
