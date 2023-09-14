@@ -81,7 +81,7 @@ Route::get('admin/employee/{id}/edit', [EmployeeController::class, "edit"]);
 Route::post('admin/employee', [EmployeeController::class, "store"]);
 Route::put('admin/employee/{id}', [EmployeeController::class, "update"]);
 
-Route::get('/admin/category/category', [CategoryController::class, "category"]);
+Route::get('/admin/category/viewcategory', [CategoryController::class, "viewcategory"]);
 Route::get('/admin/category/addcategory', [CategoryController::class, "addcategory"]);
 Route::get('/admin/category/categorylist', [CategoryController::class, "categorylist"]);
 

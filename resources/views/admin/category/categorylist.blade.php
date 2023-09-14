@@ -103,15 +103,17 @@
                         </tr>
                         </thead>
                         <tbody>
+                          @foreach ($categories as $category)
                             <tr>
-                                <td>1</td>
-                                <td>LUXARY SUITS</td>
+                                <td>{{$category->categoryid}}</td>
+                                <td>{{$category->categoryname}}</td>
                                 <td class="text-center">
                                  <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></button></i>
                                  <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
                                  </td>
                               </tr>
-                              <tr>
+                           @endforeach
+                              {{-- <tr>
                                 <td>2</td>
                                 <td>DULUXE DOUBLE SUITS</td>
                                 <td class="text-center">
@@ -150,7 +152,7 @@
                                  <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></button></i>
                                  <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
                                  </td>
-                              </tr>
+                              </tr> --}}
                             </tbody>
                         </table>
 

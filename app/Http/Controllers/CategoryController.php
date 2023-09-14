@@ -10,13 +10,15 @@ use Illuminate\Http\Request;
 class CategoryController extends Controller
 {
     //
-    public function category()
+    public function viewcategory()
     {
-        return view("admin.category.category");
+        return view("admin.category.viewcategory");
     }
     public function categorylist()
     {
-        return view("admin.category.categorylist");
+        $categories = Category::all();
+        return view("admin.category.categorylist")->with('categories',  $categories);
+    
     }
     public function addcategory()
     {
