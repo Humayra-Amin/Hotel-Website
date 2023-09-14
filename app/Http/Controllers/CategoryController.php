@@ -29,13 +29,13 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'categoryid' => 'required',
+            // 'categoryid' => 'required',
             'categoryname' => 'required|max:50',
         ]);
          
     
         $category = new Category();
-        $category->categoryid = $request->categoryid;
+        // $category->categoryid = $request->categoryid;
         $category->categoryname = $request->categoryname;
     
         $category->save();
