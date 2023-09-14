@@ -36,8 +36,9 @@
         <div id="collapse" class="collapse" aria-labelledby="heading" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Categories:</h6>
-                <a class="collapse-item" href="/admin/room/category">View Category</a>
-                <a class="collapse-item" href="/admin/room/addcategory">Add Category</a>
+                <a class="collapse-item" href="/admin/category/categorylist">Category List</a>
+                <a class="collapse-item" href="/admin/category/viewcategory">View Category</a>
+                <a class="collapse-item" href="/admin/category/addcategory">Add Category</a>
             </div>
         </div>
     </li>
