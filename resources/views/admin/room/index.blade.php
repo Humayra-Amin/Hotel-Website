@@ -141,8 +141,8 @@
                                 <td class="text-center">
                                 <a href="/admin/{{$room->id}}" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></a>
                                 <a href="/admin/{{$room->id}}/edit/" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></a>
-                                 <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
-                                </td>
+                                <a href="/admin/{{$room->id}}/delete/" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></i></a>
+                            </td>
 
                              </tr>
                             
