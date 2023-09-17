@@ -34,6 +34,8 @@
     <link rel="stylesheet" href="{{asset('rooms/css/urbashi.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/category.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/addcategory.css')}}">
+    <link rel="stylesheet" href="{{asset('rooms/css/editcategory.css')}}">
+
 
     <link rel="stylesheet" href="{{asset('rooms/css/categorylist.css')}}">
 
