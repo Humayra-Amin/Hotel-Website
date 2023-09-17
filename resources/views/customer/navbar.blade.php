@@ -49,7 +49,10 @@
                     <a class="nav-link" href="{{ url('register') }}">Register</a>
                 </li>
         
-
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url('relaxation') }}">Relaxation</a>
+              </li>
+      
        
         @endif
          
