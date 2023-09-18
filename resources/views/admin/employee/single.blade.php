@@ -1,5 +1,4 @@
-@extends('employee.layouts.app')
-
+@extends('admin.layouts.app')
 @section('app')
 
 <div id="content-wrapper" class="d-flex flex-column">
@@ -41,7 +40,7 @@
            
 
             <div class="col-4">
-            <div class="slider">
+            <div class="ddd">
             @foreach ($employee->image as $image)
                     <img src='{{Storage::disk("public")->url($image)}}' class="image">     
                 @endforeach

@@ -74,7 +74,7 @@ Route::get('/relaxation', [CustomerController::class, "relaxation"]);
 
 
 
-Route::get('/employee/', [EmployeeController::class, "index"]);
+Route::get('admin/employee/', [EmployeeController::class, "index"]);
 Route::get('admin/employee/add', [EmployeeController::class, "add"]);
 Route::get('admin/employee/single', [EmployeeController::class, "single"]);
 Route::get('admin/employee/{id}', [EmployeeController::class, "show"]);

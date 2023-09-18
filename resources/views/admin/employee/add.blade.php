@@ -1,6 +1,7 @@
 @extends('admin.layouts.app')
-
 @section('app')
+
+
 <div id="content-wrapper" class="d-flex flex-column">
 <!-- Topbar -->
 <div id="content">
@@ -39,7 +40,7 @@
        <form action="{{ url('employee') }}" method="POST" enctype="multipart/form-data">
                       @csrf
 
-    <div class="row jumbotron custom-box8">
+    <div class="add-row files-jumbotron custom-box8">
       
       
       <div class="col-sm-3 form-group">
@@ -124,18 +125,18 @@
         <input type="Date" name="joiningdate" class="form-control" id="jdate" placeholder="" required>
       </div>
       <div class="col-sm-6 form-group">
-        <label for="Salary">Salary</label>
+        <label for="Salary" class="custom-label">Salary</label>
         <input type="number" name="salary" class="form-control" id="Salary" placeholder="Enter Salary" required>
       </div>
 
       <div class="col-sm-6 form-group">
-        <label for="Password">Password</label>
+        <label for="Password" class="custom-label">Password</label>
         <input type="password" name="password" class="form-control" id="password" placeholder="Enter Password" required>
       </div>
 
 
       <div class="col-sm-6 form-group">
-        <label for="Password">Confirm Password</label>
+        <label for="Password" class="custom-label">Confirm Password</label>
         <input type="password" name="password_confirmation" class="form-control" id="confirm-password" placeholder="Enter Confirm Password" required>
       </div>
 
