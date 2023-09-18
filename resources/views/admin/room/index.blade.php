@@ -104,7 +104,7 @@
                         
                         <!-- <input type="text" placeholder="Search a room"> -->
                     </form>
-                    <a class="btn btn-primary ml-3" href="/admin/add">
+                    <a class="btn btn-primary ml-3" href="/admin/room/add">
                         <i class="fa fa-plus"></i>
                          Add Room 
                     </a>

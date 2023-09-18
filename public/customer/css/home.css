@@ -237,4 +237,9 @@ font-size: 17px;
 margin: 0px 5px;
 margin-top: 1px;
 }
+.home-image{
+    width: 100%;
+    object-fit: cover;
+    height: 203px;
+}
 
