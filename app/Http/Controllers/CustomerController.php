@@ -51,7 +51,10 @@ class CustomerController extends Controller
         return view("customer.reservation");
     }
 
-
+    public function relaxation()
+    {
+        return view("customer.relaxation");
+    }
 
 
     public function store(Request $request)
