@@ -139,9 +139,9 @@
                                 <td>{{$room->category}}</td>    
                                 <td>{{$room->price}}</td>  
                                 <td class="text-center">
-                                <a href="/admin/{{$room->id}}" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></a>
-                                <a href="/admin/{{$room->id}}/edit/" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></a>
-                                <a href="/admin/{{$room->id}}/delete/" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></i></a>
+                                <a href="/admin/room/{{$room->id}}" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></a>
+                                <a href="/admin/room/{{$room->id}}/edit/" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></a>
+                                <a href="/admin/room/{{$room->id}}/delete/" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></i></a>
                             </td>
 
                              </tr>

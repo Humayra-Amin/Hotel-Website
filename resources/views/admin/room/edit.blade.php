@@ -76,7 +76,7 @@
 
 
                   <div class="container mt-3">
-                            <h2 class="text-left text-info1 custom-form-title">Edit Rooms</h2>
+                            <h2 class="text-info1">Edit Rooms</h2>
                         
 
                             @include('admin.inc.message')

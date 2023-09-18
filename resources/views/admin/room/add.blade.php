@@ -80,7 +80,7 @@
 
 
                  <div class="container mt-3">
-                          <h2 class="text-left text-info1 custom-form-title">Add Rooms</h2>
+                          <h2 class="text-left">Add Rooms</h2>
                        
                     <form action="{{ url('admin/room') }}" method="POST" enctype="multipart/form-data">
                       @csrf

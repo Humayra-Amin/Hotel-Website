@@ -1,6 +1,6 @@
-@extends('employee.layouts.app')
-
+@extends('admin.layouts.app')
 @section('app')
+
 <div id="content-wrapper" class="d-flex flex-column">
 <!-- Topbar -->
 <div id="content">
@@ -34,7 +34,7 @@
 <form action="/employee/{{$employee->id}}" method="POST" enctype="multipart/form-data">
     @csrf
     @method ('PUT')
-  <div class="row jumbotron form-box8">
+  <div class="edit-row form-jumbotron form-box8">
       
       
           <div class="col-sm-3 form-group">

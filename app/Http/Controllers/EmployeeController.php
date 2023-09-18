@@ -75,7 +75,7 @@ class EmployeeController extends Controller
 
 
 
-    return redirect("admin")->with("success", "Employee created.");
+    return redirect("admin/employee")->with("success", "Employee created.");
 }
 
 public function update(Request $request,$id)
@@ -122,7 +122,7 @@ public function update(Request $request,$id)
 
 
 
-    return redirect("admin")->with("success", "Employee updated.");
+    return redirect("admin/employee")->with("success", "Employee updated.");
 }
 public function show($id)
 { 

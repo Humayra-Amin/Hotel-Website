@@ -6,15 +6,34 @@
                    font-size: 40px;
 
              }
-      .form-box8
+      /* .form-box8
               {
                 box-shadow: 0px 0px 5px 1px #98bbd2;
+              } */
+        .form-jumbotron
+              {
+                width:1100px;
+                margin-bottom: 2rem;
+                background-color: #eaecf4;
+                border-radius: 0.3rem;
+              }
+      .edit-row
+              {
+                padding: 1.5rem;
+                padding-top: 0;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 50px;
+                margin-right: 70px;
+                margin-left: 90px;
               }
      .form-text-color
               {
                 color: #2023e5;
                 font-size: 36px;
                 font-family: roboto;
+                margin-top: 20px;
+                margin-bottom: 20px;
               }
       
       .form-label
@@ -29,7 +48,7 @@
                 width: 50%;
                 margin: 0 auto;
                 }
-          .form-upload-img {
+      .form-upload-img {
                   border-radius: 100%;
                   display: inline-block;
                   width: 130px;
@@ -39,6 +58,8 @@
                   border: 3px solid #1e2cc8;
                   margin-right: 15px;
                   vertical-align: right;
+                  margin-top: 20px;
+                  margin-bottom: 20px;
               }
         .form-input-file-upload 
               {
