@@ -13,7 +13,7 @@
           <a class="nav-link" href="#rooms">Rooms</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#relaxation">Relaxation</a>
+          <a class="nav-link" href="/relaxation">Relaxation</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
