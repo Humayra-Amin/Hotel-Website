@@ -89,7 +89,7 @@
                         @if ($room->image)
                             @foreach ($room->image as $img)
                             <div>
-                                <img src='{{Storage::disk("public")->url($img)}}' class="d-block w-100" >
+                                <img src='{{Storage::disk("public")->url($img)}}' class="d-block w-100 single-image-file" >
                             </div>
                             @endforeach
                          @endif
@@ -102,12 +102,12 @@
         <div class="col-md-6">
             <div class="room-details mt-4 mb-2">
             <h2 class="room-title customize-fonts-title">{{$room->roomtitle}}</h2>
-            <h6 class=".customize-fonts">Room Type : {{$room->roomtype}}</h6>
-            <h6 class=".customize-fonts">  Category   : {{$room->category}} </h6>
-            <h6 class=".customize-fonts">Room Size : {{$room->roomsize}}</h6>
+            <h6 class="customize-fonts">Room Type : {{$room->roomtype}}</h6>
+            <h6 class="customize-fonts">  Category   : {{$room->category}} </h6>
+            <h6 class="customize-fonts">Room Size : {{$room->roomsize}}</h6>
 
             <div class="facilities-sec">
-                <p class="facility-title">Room Facilities:</p>
+                <p class="facility-title customize-fonts">Room Facilities:</p>
                 <ul  class="facilities-list">
                 @foreach ($room->facilities as $f)
                 
@@ -116,8 +116,8 @@
                 @endforeach  
                 </ul>
             </div>
-            <p class="room-details">{{$room->description}}</p>
-            <p>View :  {{$room->roomview}} </p>
+            <p class="room-details customize-fonts">{{$room->description}}</p>
+            <p class="customize-fonts">View :  {{$room->roomview}} </p>
          </div>
 
      </div>

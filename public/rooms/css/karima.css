@@ -2,6 +2,8 @@
 
 .customize-fonts{
     font-family: 'roboto';
+    font-size: 18px;
+    font-weight: 300;
    
 }
 .customize-fonts-title{
@@ -9,7 +11,7 @@
     font-size:x-large;
     font-weight:400;
     font-style:inherit;
-   
+   font-size: 40px;
 }
 .table-line{
     padding: 20px;
@@ -36,14 +38,21 @@
   } */
 .facilities-list{
    
-    margin-left: 20px;
-    font-size: 12px;
+    margin-left: 15px;
+    font-size: 18px;
     display: flex;
     padding: 0;
     list-style: none;
-    flex-direction:inherit;
+    flex-direction:column;
     flex-wrap: wrap;
-    align-content:space-evenly;
+    align-content:start;
 
+
+}
+.single-image-file{
+    margin-top: 40px;
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
 
 }

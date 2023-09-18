@@ -6,6 +6,12 @@
     margin-inline: 10px;
     font-size: large;
 }
+/* .nav-item-customer
+{   
+    margin-left: 30px;
+    display: inline-block;
+    justify-content: center;
+} */
 
 .user-icon{
     position: absolute;
@@ -36,54 +42,48 @@
       }
 
       /* Card styling */
-      .text-card {
+.text-card {
           background-color: #3d4c8f;
           margin: 6px;
           padding: 1px;
           border: 1px solid  #3d4c8f;
           border-radius: 4px;
-          }
-<<<<<<< HEAD
-          .text-card:hover{
+}
+.text-card:hover{
               cursor: pointer;
-=======
-          .card:hover{
-          cursor: pointer;
->>>>>>> b19574ea29872c20a518c172be42566080848177
           background-color: #b2bbd8;
           color: rgb(63, 140, 190);
-          }
-          .ml{
-          margin-left: 15px;
-          }
-          .mr{
-          margin-right: 15px;
-      }
-      
-.font{
-      text-align: center;
-      color: #fff;
 }
-.font:hover{
+.customer-ml{
+          margin-left: 15px;
+}
+.customer-mr{
+          margin-right: 15px;
+ }
+      
+.font-customer{
+      text-align: center;
+      font-weight: bold;
+}
+.font-customer:hover{
        color: black;
  }
          
       /* Icon styling */
-.icon {
+.icon-customer {
        text-align: center;
        font-size: 24px;
        margin-top: 5px;
        margin-bottom: 5px;
-       color: #fff;
 
  }
      
- .icon:hover{
+ .icon-customer:hover{
         color: black;
 }
       /* Sign-out button */
-      .sign-out {
+.sign-out-customer {
         position: relative;
         left: 135px;
         margin-top: 300px;
-      }
+}
