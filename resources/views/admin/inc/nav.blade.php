@@ -36,9 +36,10 @@
         <div id="collapse" class="collapse" aria-labelledby="heading" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Categories:</h6>
-                <a class="collapse-item" href="/admin/category/categorylist">Category List</a>
-                <a class="collapse-item" href="/admin/category/viewcategory">View Category</a>
-                <a class="collapse-item" href="/admin/category/addcategory">Add Category</a>
+                <a class="collapse-item" href="/admin/category/">Category List</a>
+                {{-- <a class="collapse-item" href="/admin/category/viewcategory">View Category</a> --}}
+                <a class="collapse-item" href="/admin/category/create">Add Category</a>
+                <a class="collapse-item" href="/admin/category/edit">Edit Category</a>
             </div>
         </div>
     </li>
@@ -71,10 +72,10 @@
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Utilities:</h6>
-                <a class="collapse-item" href="admin/employee">View Employee list</a>
-                <a class="collapse-item" href="admin/employee/add">Add Employee</a>
-                <a class="collapse-item" href="admin/employee/edit">Edit Employee</a>
-                <a class="collapse-item" href="admin/employee/single">Single Employee</a>
+                <a class="collapse-item" href="/admin/employee">View Employee list</a>
+                <a class="collapse-item" href="/admin/employee/add">Add Employee</a>
+                <a class="collapse-item" href="/admin/employee/edit">Edit Employee</a>
+                <a class="collapse-item" href="/admin/employee/single">Single Employee</a>
                
             </div>
         </div>

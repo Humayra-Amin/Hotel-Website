@@ -74,13 +74,13 @@ Route::get('/relaxation', [CustomerController::class, "relaxation"]);
 
 
 
-Route::get('admin/employee/', [EmployeeController::class, "index"]);
-Route::get('admin/employee/add', [EmployeeController::class, "add"]);
-Route::get('admin/employee/single', [EmployeeController::class, "single"]);
-Route::get('admin/employee/{id}', [EmployeeController::class, "show"]);
-Route::get('admin/employee/{id}/edit', [EmployeeController::class, "edit"]);
+Route::get('/admin/employee/', [EmployeeController::class, "index"]);
+Route::get('/admin/employee/add', [EmployeeController::class, "add"]);
+Route::get('/admin/employee/single', [EmployeeController::class, "single"]);
+Route::get('/admin/employee/{id}', [EmployeeController::class, "show"]);
+Route::get('/admin/employee/{id}/edit', [EmployeeController::class, "edit"]);
 Route::post('admin/employee', [EmployeeController::class, "store"]);
-Route::put('admin/employee/{id}', [EmployeeController::class, "update"]);
+Route::put('/admin/employee/{id}', [EmployeeController::class, "update"]);
 
 Route::resource('/admin/category', CategoryController::class);
 // Route::get('/admin/category/viewcategory', [CategoryController::class, "viewcategory"]);
