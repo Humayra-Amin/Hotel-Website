@@ -9,5 +9,5 @@ document.addEventListener("scroll", (event) => {
       headerEl.classList.remove('sticky-header')
   }
 
-$('.slider').slick();
+// $('.slider').slick();
 });

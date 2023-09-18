@@ -16,3 +16,32 @@
     color: #fff;
     text-decoration: none;
 }
+
+
+/* .room-slider {
+    max-height: 400px;
+    overflow: hidden;
+  }
+  .room-slider img {
+    width: 100%;
+    height: auto;
+  }
+  .room-details {
+    margin-top: 55px;
+    margin-bottom: 55px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #e8eef0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .room-details h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  .room-details p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+  } */

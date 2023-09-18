@@ -12,14 +12,21 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="image/lobby.jpg" alt="lobby" class="slider-img">
+        <img src="image/front-view.jpg" alt="front-view" class="slider-img">
         <div class="carousel-caption bio d-md-block">
           <h1 class="title">Welcome to Our Hotel</h1>
         <p>Experience luxury and comfort</p>
       </div>
       </div>
       <div class="carousel-item">
-        <img src="image/deluxe room.jpg" alt="Room" class="slider-img">
+        <img src="image/lobby2.jpg" alt="lobby" class="slider-img">
+        <div class="carousel-caption bio d-md-block">
+          <h4 class="title">Welcome to Our Hotel</h4>
+        <p>Experience luxury and comfort</p>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/room.jpg" alt="Room" class="slider-img">
         <div class="carousel-caption bio  d-md-block">
           <h2 class="title">Welcome to Our Hotel</h2>
         <p>Experience luxury and comfort</p>
@@ -32,13 +39,7 @@
         <p>Experience luxury and comfort</p>
       </div>
       </div>
-      <div class="carousel-item">
-        <img src="image/gym.jpg" alt="Gym" class="slider-img">
-        <div class="carousel-caption bio d-md-block">
-          <h4 class="title">Welcome to Our Hotel</h4>
-        <p>Experience luxury and comfort</p>
-      </div>
-      </div>
+      
       <div class="carousel-item">
         <img src="image/pool.jpg" alt="swimmingpool" class="slider-img">
         <div class="carousel-caption bio d-md-block">

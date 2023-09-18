@@ -5,9 +5,11 @@
     font-family: 'Signika';
 }
 /* navbar */
-
+.navbar-light.sticky-header{
+    background-color:#172d44;
+}
 .navbar-light .navbar-nav .nav-link{
-  color: #dee2e6;
+  color: rgb(15, 0, 0);
   font-size: 19px;
   padding-right: 15px;
   font-family: sans-serif;
@@ -18,15 +20,17 @@
     color:#ffffff;
 }
 
-.navbar-light.sticky-header{
-    background-color:#172d44;
+.navbar-light.sticky-header  .navbar-nav .nav-link {
+    color: rgb(252, 243, 243);
 }
-
 .navbar-light .navbar-brand{
-  color: rgb(248, 248, 248);
+  color: rgb(15, 0, 0);
   font-size: 34px;
   padding-right: 20px;
   font-family: sans-serif;
+}
+.navbar-light.sticky-header.navbar-light .navbar-brand{
+    color: #f2f4f8;
 }
 
 .nav-link-groups{
@@ -57,20 +61,21 @@
     width: 1800px;
     height: 710px;
     object-fit: cover;
+
 }
 /* rooms */
 
 .section-heading {
     position: relative;
     font-family: "poppins";
-    color: rgb(0, 0, 0);
+    color: rgb(10, 0, 0);
 }
 
 .section-heading:after {
    content: '';
    width: 80px;
    position: absolute;
-   left: 560px;
+   left: 480px;
    margin-bottom: 10px;
    display: block;
    border-bottom: 2px solid #c5874e;
@@ -82,18 +87,13 @@
 
 .section-site{
     padding: 6rem;
-    background: #fcf7f7;
+    background: linear-gradient(90deg,  rgb(77, 96, 117) 0%, rgba(245,245,255,1) 100%);
 }
 
 .hotel-room .hotel-room-body{
     padding: 30px;    
 }
-        /* .hotel-room{
-          text-align: center;
-          background:#ffffff;
-          transition: .3s all ease;
-        } */
-
+       
 .hotel-room{
     text-align: center;
     background:#ffffff;
@@ -108,7 +108,7 @@
 /* about us */
 
 .about-us {
-    background-color: #f8f9fa;
+    background:linear-gradient(90deg,  rgb(77, 96, 117) 0%, rgba(245,245,255,1) 100%);
     padding-bottom: 5rem;
     font-family: 'Poppins';
 }
@@ -124,7 +124,9 @@
     padding-left: 0px;
     font-size: 34px;
     font-family: "poppins";
+    color: rgb(15, 0, 0);
 }
+
 
 .about-us h2:after{
     content: '';
@@ -138,7 +140,7 @@
 
 .about-us p {
     font-size: 18px;
-    color: #272626cd;
+    color:linear-gradient(90deg, rgb(156, 165, 175) 5%, rgba(245,245,255,1) 100%);
 }
 
 
