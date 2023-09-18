@@ -86,7 +86,7 @@
       <h2 class="text-center">Edit Room Category</h2>
       <div class=" customfiles">
         <div class=" customform">
-            <input type="categoryname" class="file-group" name="categoryname" id="categoryname" placeholder="Enter Room Category" required>
+            <input type="categoryname" class="file-group" name="categoryname" id="categoryname" value="{{$category->categoryname}}" placeholder="Enter Room Category" required>
         </div>
         <button type="submit" class="btn btn-primary btn-files">Edit</button>
 
