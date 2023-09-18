@@ -19,7 +19,7 @@
       </div>
       </div>
       <div class="carousel-item">
-        <img src="image/lobby2.jpg" alt="lobby" class="slider-img">
+        <img src="image/lobby10.jpg" alt="lobby" class="slider-img">
         <div class="carousel-caption bio d-md-block">
           <h4 class="title">Welcome to Our Hotel</h4>
         <p>Experience luxury and comfort</p>
@@ -41,7 +41,7 @@
       </div>
       
       <div class="carousel-item">
-        <img src="image/pool.jpg" alt="swimmingpool" class="slider-img">
+        <img src="image/pool2.jpg" alt="swimmingpool" class="slider-img">
         <div class="carousel-caption bio d-md-block">
           <h5 class="title">Welcome to Our Hotel</h5>
         <p>Experience luxury and comfort</p>
