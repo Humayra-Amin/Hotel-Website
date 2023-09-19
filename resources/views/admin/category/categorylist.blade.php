@@ -85,7 +85,7 @@
                         
                         <!-- <input type="text" placeholder="Search a room"> -->
                     </form>
-                    <a class="btn btn-primary ml-3 category-fonts-title" href="/admin/category/addcategory">
+                    <a class="btn btn-primary ml-3 category-fonts-title" href="/admin/category/create">
                         <i class="fa fa-plus"></i>
                          Add Room Categories
                     </a>

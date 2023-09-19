@@ -20,8 +20,8 @@ class RoomController extends Controller
 
     public function roomcategory(Request $request)
     {
-        $categories = Room::where('category_id',$request->id)->get();
-        return view("admin.room.index")->with('categories',  $categories);
+        $rooms = Room::where('category_id',$request->id)->get();
+        return view("admin.room.index")->with('rooms',  $rooms);
     }
 
 
