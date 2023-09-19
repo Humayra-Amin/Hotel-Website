@@ -2,11 +2,6 @@
 @extends('admin.layouts.app')
 @section('app')
 <div id="content-wrapper" class="d-flex flex-column">
-
-
-  @include('admin.inc.message')
-
-
     <!-- Main Content -->
     <div id="content">
 
@@ -77,6 +72,7 @@
           </li>   
        </nav>
 
+       @include('admin.inc.message')
 
 
 <div class="bodyfiles">
@@ -92,5 +88,6 @@
       </div>
     </form>
 </div>
+
 
 @endsection
