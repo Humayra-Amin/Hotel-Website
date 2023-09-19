@@ -120,7 +120,7 @@
                         <th class=col-md-2>Room no</th>
                         <th class=col-md-2>Room Title</th>
                         <th class=col-md-2>Floor No</th>
-                        <th class=col-md-2>Category</th>
+                
                         <th class=col-md-2>Price</th>
                         <th class=col-md-2></th>
                         </tr>
