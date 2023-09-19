@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="{{asset('customer/css/footer.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/singleroom.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/reservation.css')}}">
+  <link rel="stylesheet" href="{{asset('customer/css/relaxation.css')}}">
+
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 

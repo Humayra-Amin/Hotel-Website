@@ -18,7 +18,7 @@ class Room extends Model
         'price',
         'maxoccupancy',
         'description',
-        'category',
+        'category_id',
         'roomtype',
         'roomsize',
         'roomview',

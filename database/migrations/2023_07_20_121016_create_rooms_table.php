@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('roomno');
             $table->string('floorno');
             $table->string('price');
-            $table->string('category');
+            $table->string('category_id');
             $table->string('roomtype');
             $table->string('roomsize');
             $table->string('roomview');
