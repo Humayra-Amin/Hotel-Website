@@ -47,9 +47,10 @@ Route::middleware(["auth"])->group(function () {
     Route::get('/admin/room/{id}', [RoomController::class, "show"]);
     Route::get('/admin/room/{id}/edit', [RoomController::class, "edit"]);
     Route::post('/admin/room', [RoomController::class, "store"]);
-    Route::put('/admin//room{id}', [RoomController::class, "update"]);
+    Route::put('/admin//room/{id}', [RoomController::class, "update"]);
     Route::get('/admin/room/edit', [RoomController::class, "edit"]);
     Route::get('/admin/room/single', [RoomController::class, "single"]);
+    Route::get('/admin/room/roomcategory/{id}', [RoomController::class, "roomcategory"]);
 });
      
   
@@ -83,7 +84,7 @@ Route::post('admin/employee', [EmployeeController::class, "store"]);
 Route::put('/admin/employee/{id}', [EmployeeController::class, "update"]);
 
 Route::resource('/admin/category', CategoryController::class);
-// Route::get('/admin/category/viewcategory', [CategoryController::class, "viewcategory"]);
+Route::get('/admin/category/viewcategory', [CategoryController::class, "viewcategory"]);
 // Route::get('/admin/category/addcategory', [CategoryController::class, "addcategory"]);
 // Route::post('admin/category', [CategoryController::class, "store"]);
 
