@@ -1,4 +1,4 @@
-.single-context{
+/* .single-context{
     padding: 5px;
     margin: 60px;
     display: flex;
@@ -15,10 +15,10 @@
 .bbbb{
     color: #fff;
     text-decoration: none;
-}
+} */
 
 
-/* .room-slider {
+.room-slider {
     max-height: 400px;
     overflow: hidden;
   }
@@ -44,4 +44,4 @@
     font-size: 18px;
     line-height: 1.6;
     color: #666;
-  } */
+  }
