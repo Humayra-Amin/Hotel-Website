@@ -49,23 +49,11 @@
                         <div class="row gx-3 mb-3">
 
                             <div class="col-md-6">
-                                <input class="form-control" id="inputFirstName" type="text" placeholder="First name" value="">
+                                <input class="personalform-control" id="inputFirstName" type="text" placeholder="First name" value="">
                             </div>
 
                             <div class="col-md-6">
-                                <input class="form-control" id="inputLastName" type="text" placeholder="Last name" value="">
-                            </div>
-
-                        </div>
-
-                        <div class="row gx-3 mb-3">
-
-                            <div class="col-md-6">
-                                <input class="form-control" id="inputEmailAddress" type="text" placeholder="Email Address" value="">
-                            </div>
-
-                            <div class="col-md-6">
-                                <input class="form-control" id="inputPhoneNumber" type="text" placeholder="Phone Number" value="">
+                                <input class="personalform-control" id="inputLastName" type="text" placeholder="Last name" value="">
                             </div>
 
                         </div>
@@ -73,11 +61,11 @@
                         <div class="row gx-3 mb-3">
 
                             <div class="col-md-6">
-                                <input class="form-control" id="inputZip" type="text" placeholder="Zip" value="">
+                                <input class="personalform-control" id="inputEmailAddress" type="text" placeholder="Email Address" value="">
                             </div>
 
                             <div class="col-md-6">
-                                <input class="form-control" id="inputCountry" type="text" placeholder="Country" value="">
+                                <input class="personalform-control" id="inputPhoneNumber" type="text" placeholder="Phone Number" value="">
                             </div>
 
                         </div>
@@ -85,11 +73,23 @@
                         <div class="row gx-3 mb-3">
 
                             <div class="col-md-6">
-                                <input class="form-control" id="inputState" type="text" placeholder="State" value="">
+                                <input class="personalform-control" id="inputZip" type="text" placeholder="Zip" value="">
                             </div>
 
                             <div class="col-md-6">
-                                <input class="form-control" id="inputCity" type="text" placeholder="City" value="">
+                                <input class="personalform-control" id="inputCountry" type="text" placeholder="Country" value="">
+                            </div>
+
+                        </div>
+
+                        <div class="row gx-3 mb-3">
+
+                            <div class="col-md-6">
+                                <input class="personalform-control" id="inputState" type="text" placeholder="State" value="">
+                            </div>
+
+                            <div class="col-md-6">
+                                <input class="personalform-control" id="inputCity" type="text" placeholder="City" value="">
                             </div>
                         </div>
                         

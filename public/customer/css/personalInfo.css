@@ -11,7 +11,7 @@
     }
 
 
-.form-control, .dataTable-input 
+.personalform-control, .dataTable-input 
     {
         display: block;
         width: 100%;
@@ -68,12 +68,7 @@ img
         margin-left: auto;
         margin-top:200px;
         margin-right:60px;
-        /* margin: 150px; */
-        /* position: absolute;
-        top: 2rem;
-        right: 0; */
         width: 60%;
-        /* text-align: center; */
     }
 
 .para
@@ -146,19 +141,3 @@ img
         filter: alpha(opacity=0);
         height:20px;
     }
-
-    /* .complex {
-        margin: 0 auto;
-        margin-top: 40px;
-        padding: 250px;
-        background-color: rgb(231, 232, 238);
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        margin: 15px;
-        position: absolute;
-        top: 2em;
-        right: 100px;
-        left: 60px;
-        width: 90%;
-        text-align: center;
-        }  */
