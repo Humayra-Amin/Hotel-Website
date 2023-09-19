@@ -80,24 +80,36 @@
            <div class="row">
              <div class="col-md-3">
                <div class="search-place">
-                 <input type="text" class="form-control" placeholder="Search for Booking-List">
+                 <input type="text" class="form-control" placeholder="Search for RoomCategories">
                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search icon-box" viewBox="0 0 16 16">
                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                  </svg>  
                </div>
              </div>
            </div>
-           <h1 class="mt-4 mb-4 mop section-head">ROOM CATEGORIES</h1>
+           
+           
+           <h1 class="mt-4 mb-4 mop section-head-category">ROOM CATEGORIES</h1>
            <div class="row">
+       
+
+      @foreach($categories as $category)
             <div class="col-md-4">
-                <div class="card box-card">
+                <div class="box-card">
+                  <a href="/admin/room/roomcategory/{{$category->id}}">
                   <div class="field-body">
-                    <img src="{{asset('image/hotel1.jpg')}}" class="img-fluid image-file" alt="">
-                    <div class="centered">LUXURY  SUITS</div>
+                    {{-- <img src="{{asset('image/hotel1.jpg')}}" class="img-fluid image-file" alt=""> --}}
+
+                    <div class="centered"><a href= "/admin/room/roomcategory/{{$category->id}}">{{$category->categoryname}}</a></div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+            </a>
+              @endforeach
+           
+           
+           
+              {{-- <div class="col-md-4">
                 <div class="card box-card">
                   <div class="field-body">
                     <img src="{{asset('image/hotel1.jpg')}}" class="img-fluid image-file" alt="">
@@ -136,7 +148,94 @@
                     <div class="centered">SINGLE SUITS</div>
                   </div>
                 </div>
-              </div>
-     
+              </div> --}}
+            
+
+
+
+               
+
+
+
+             {{-- <div class="col-sm-4">
+               <div class="card booking-card">
+                 <div class="price-tag">$250</div>
+                 <div class="card-body">
+                   <h5 class="card-title mt-4">Guest-name: Abdur Rahman</h5>
+                   <ul class="details">
+                     <li> Room Type: Deluxe</li>
+                     <li> Capacity: 4 guests</li>
+                     <li> Check-In: 2023-09-01</li>
+                     <li> Check-Out: 2023-09-07</li>
+                     <button class="button"> View More</button>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             <div class="col-sm-4">
+               <div class="card booking-card">
+                 <div class="price-tag">$250</div>
+                 <div class="card-body">
+                   <h5 class="card-title mt-4">Guest-name: Abdur Rahman</h5>
+                   <ul class="details">
+                     <li> Room Type: Deluxe</li>
+                     <li> Capacity: 4 guests</li>
+                     <li> Check-In: 2023-09-01</li>
+                     <li> Check-Out: 2023-09-07</li>
+                     <button class="button"> View More</button>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             <div class="col-sm-4">
+               <div class="card booking-card">
+                 <div class="price-tag">$250</div>
+                 <div class="card-body">
+                   <h5 class="card-title mt-4">Guest-name: Abdur Rahman</h5>
+                   <ul class="details">
+                     <li> Room Type: Deluxe</li>
+                     <li> Capacity: 4 guests</li>
+                     <li> Check-In: 2023-09-01</li>
+                     <li> Check-Out: 2023-09-07</li>
+                     <button class="button"> View More</button>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             <div class="col-sm-4">
+               <div class="card booking-card">
+                 <div class="price-tag">$250</div>
+                 <div class="card-body">
+                   <h5 class="card-title mt-4">Guest-name: Abdur Rahman</h5>
+                   <ul class="details">
+                     <li> Room Type: Deluxe</li>
+                     <li> Capacity: 4 guests</li>
+                     <li> Check-In: 2023-09-01</li>
+                     <li> Check-Out: 2023-09-07</li>
+                     <button class="button"> View More</button>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             <div class="col-sm-4">
+               <div class="card booking-card">
+                 <div class="price-tag">$250</div>
+                 <div class="card-body">
+                   <h5 class="card-title mt-4">Guest-name: Abdur Rahman</h5>
+                   <ul class="details">
+                     <li> Room Type: Deluxe</li>
+                     <li> Capacity: 4 guests</li>
+                     <li> Check-In: 2023-09-01</li>
+                     <li> Check-Out: 2023-09-07</li>
+                     <button class="button"> View More</button>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div> --}}
+    
+   
+                
                   
  @endsection

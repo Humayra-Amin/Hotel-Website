@@ -13,8 +13,15 @@ class RoomController extends Controller
     //
     public function index()
     {
-        $rooms = Room::all();
-        return view("admin.room.index")->with('rooms',  $rooms);
+        $categories = Category::all();
+        return view("admin.category.viewcategory")->with('categories',  $categories);
+    }
+
+
+    public function roomcategory(Request $request)
+    {
+        $categories = Room::where('category_id',$request->id)->get();
+        return view("admin.room.index")->with('categories',  $categories);
     }
 
 

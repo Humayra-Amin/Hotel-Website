@@ -13,10 +13,14 @@
       height: 300px;
       width: 350px;
       margin-bottom: 15px;
+      cursor: pointer;
+      transition: transform 0.9s ease-in-out;
+      background-color: rgb(193, 198, 255);
+      /* color: linear-gradient(90deg, rgb(59, 112, 173) 5%, rgb(1, 1, 15) 100%);; */
 }
 .field-body{
     padding: 2px 2px;
-    color: blue;
+    color: rgb(2, 2, 2);
   }
     .mop{
         padding-left: 20px;
@@ -25,14 +29,14 @@
         padding-left: 20px;
     }  */
 
-.section-head {
+.section-head-category {
     position: relative;
     font-family: 'Signika';
     font-size: 25px;
     color: rgb(0, 0, 0);
 }
 
-    .section-head:after {
+    .section-head-.section-head-category {
       content: '';
       width: 80px;
       position: absolute;
@@ -69,11 +73,11 @@
     
   }
 
-.image-file{
+/* .image-file{
     transition: transform 0.9s ease-in-out;
-}
+} */
 
-.image-file:hover {         
+.box-card:hover {         
    
-    opacity: 0.3;
+    opacity: 0.2;
 }

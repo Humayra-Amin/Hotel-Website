@@ -12,8 +12,8 @@ class CategoryController extends Controller
     //
     public function show($id)
     {
-        $category=Category::where("id",$id)->firstOrfail();
-        return view("admin.category.viewcategory")->with('category',  $category);        
+        $categories=Category::where("id",$id)->firstOrfail();
+        return view("admin.category.viewcategory")->with('categories',  $categories);        
     }
     public function index()
     {
