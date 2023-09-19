@@ -37,7 +37,7 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Categories:</h6>
                 <a class="collapse-item" href="/admin/category/">Category List</a>
-                {{-- <a class="collapse-item" href="/admin/category/viewcategory">View Category</a> --}}
+                <a class="collapse-item" href="/admin/category/show">View Category</a>
                 <a class="collapse-item" href="/admin/category/create">Add Category</a>
                 <a class="collapse-item" href="/admin/category/edit">Edit Category</a>
             </div>

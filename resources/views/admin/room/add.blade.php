@@ -126,13 +126,11 @@
 
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="Category">Category</label>
-                              <select name="category" class="form-control custom-select browser-default">
+                              <select name="category_id" class="form-control custom-select browser-default">
                                 <option>Select your Room Category</option>
-                                <option>Normal</option>
-                                <option>Standered</option>
-                                <option >Premium</option>
-                                <option >Super Premium</option>
-                                <option >Queen</option>
+                                @foreach ($categories as $category)
+                                <option value="{{$category->id}}"> {{$category->categoryname}} </option>
+                                @endforeach
                             </select>
                             </div>
                             
