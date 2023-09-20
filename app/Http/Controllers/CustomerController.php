@@ -55,6 +55,10 @@ class CustomerController extends Controller
     {
         return view("customer.relaxation");
     }
+    public function contact()
+    {
+        return view("customer.contact");
+    }
 
 
     public function store(Request $request)

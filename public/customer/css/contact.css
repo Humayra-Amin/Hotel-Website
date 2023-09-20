@@ -1,0 +1,22 @@
+.contactimage {
+    height:400px;
+   width: 1350px;
+   opacity: .9;
+    
+}
+/* .contact{
+    padding: 50px;
+} */
+.map-container {
+    height: 300px; /* Adjust the height as needed */
+}
+.contact-detail{
+    padding-top: 70px;
+    left: 10px;
+}
+.contact-title{
+font-family:sans-serif;
+}
+.writetop{
+padding-top: 250px;
+}
