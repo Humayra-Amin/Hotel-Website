@@ -1,10 +1,13 @@
 .custom-file{
   margin-bottom: 700px;
   margin-top: 0;
+  
 }
-
+.logfile{
+  background-color:#aabbce;
+}
 .custom-card-group{
-  background: rgb(164, 174, 255);
+  background: rgb(119, 126, 175);
   border-radius: 30px;
   margin-top: 25px;
 }

@@ -12,7 +12,7 @@
     @extends('customer.layouts.apps')
     @section('apps')
     @include('admin.inc.message') 
-
+ <div class="logfile">
     <div class="custom-file">
      <section class="Form my-5 mx-6 py-5">        
         <div class="container">
@@ -66,6 +66,6 @@
             </div>
         </div>
     </section>
+ </div>
 </div>
-   
 @endsection

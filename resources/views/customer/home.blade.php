@@ -2,7 +2,7 @@
 
 @section('apps')
 
-  <div id="roomCarousel" class="carousel slide" data-ride="carousel">
+  <div id="roomCarousel" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#roomCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#roomCarousel" data-slide-to="1"></li>
@@ -13,47 +13,47 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="image/front-view.jpg" alt="front-view" class="slider-img">
-        <div class="carousel-caption bio d-md-block">
-          <h1 class="title">Welcome to Our Hotel</h1>
-        <p>Experience luxury and comfort</p>
+        <div class="carousel-caption ">
+          <h1 class="slider-title">Welcome to Our Hotel</h1>
+        <h2>Experience luxury and comfort</h2>
       </div>
       </div>
       <div class="carousel-item">
         <img src="image/lobby10.jpg" alt="lobby" class="slider-img">
-        <div class="carousel-caption bio d-md-block">
-          <h4 class="title">Welcome to Our Hotel</h4>
-        <p>Experience luxury and comfort</p>
+        <div class="carousel-caption">
+          <h1 class="slider-title">Welcome to Our Hotel</h1>
+        <h2>Experience luxury and comfort</h2>
       </div>
       </div>
       <div class="carousel-item">
         <img src="image/room.jpg" alt="Room" class="slider-img">
-        <div class="carousel-caption bio  d-md-block">
-          <h2 class="title">Welcome to Our Hotel</h2>
-        <p>Experience luxury and comfort</p>
+        <div class="carousel-caption ">
+          <h1 class="slider-title">Welcome to Our Hotel</h1>
+        <h2>Experience luxury and comfort</h2>
       </div>
       </div>
       <div class="carousel-item">
         <img src="image/yard.jpg" alt="yard" class="slider-img">
-        <div class="carousel-caption bio d-md-block">
-          <h3 class="title">Welcome to Our Hotel</h3>
-        <p>Experience luxury and comfort</p>
+        <div class="carousel-caption">
+          <h1 class="slider-title">Welcome to Our Hotel</h1>
+        <h2>Experience luxury and comfort</h2>
       </div>
       </div>
       
       <div class="carousel-item">
         <img src="image/pool2.jpg" alt="swimmingpool" class="slider-img">
-        <div class="carousel-caption bio d-md-block">
-          <h5 class="title">Welcome to Our Hotel</h5>
-        <p>Experience luxury and comfort</p>
+        <div class="carousel-caption">
+          <h1 class="slider-title">Welcome to Our Hotel</h1>
+        <h2>Experience luxury and comfort</h2>
       </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#roomCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <a class="carousel-control-prev " href="#roomCarousel"  role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon slider-arrow" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#roomCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <a class="carousel-control-next" href="#roomCarousel"  role="button" data-slide="next">
+      <span class="carousel-control-next-icon slider-arrow" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
   </div>
@@ -90,6 +90,10 @@
   @endforeach  
   </div>
 </div>
+
+
+
+
 <!--aboutus-->
 
 <div class="about-us">
@@ -107,6 +111,50 @@
   </div>
 </div>
 
+<!-- Services Section -->
+<div class="home-services px-3 py-5">
+  <h2 class="text-center services-title">Services that Hotel Pradise provide </h2>
+
+  <!-- Service Cards -->
+  <div class="row">
+      <div class="col-sm-3 mb-4">
+          <div class="services-card">
+              <img src="image/swimming pool.jpeg" class="card-img-top services-image" alt="Service 1">
+              <div class="services-card-body">
+                  <h5 class="services-card-title">The Infinity Pool</h5>
+                  <a href="/relaxation" class="services-view">View More</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-3 mb-4">
+          <div class="services-card">
+              <img src="image/Spa.jpg" class="card-img-top services-image" alt="Service 2">
+              <div class="services-card-body">
+                  <h5 class="services-card-title">Spa</h5>
+                  <a href="/relaxation" class="services-view">View More</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-3 mb-4">
+          <div class="services-card">
+              <img src="image/gym (2).jpg" class="card-img-top services-image" alt="Service 3">
+              <div class="services-card-body">
+                  <h5 class="services-card-title ">Gym</h5>
+                  <a href="/relaxation" class="services-view">View More</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-3 mb-4">
+        <div class="services-card">
+            <img src="image/Biliard zone.jpg" class="card-img-top services-image" alt="Service 3">
+            <div class="services-card-body">
+                <h5 class="services-card-title ">Billiard Zone</h5>
+                <a href="/relaxation" class="services-view">View More</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
 
   
   @endsection

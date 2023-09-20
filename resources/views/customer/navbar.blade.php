@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="top-navbar">
     <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Hotel Paradise</a>
+    <a class="navbar-brand fw-bold" href="#"><img src="image/logo.png" alt="Hotel Pradise" class="logo mt-5" height="30">Hotel Paradise</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

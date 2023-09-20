@@ -28,7 +28,6 @@
   font-size: 34px;
   padding-right: 20px;
   font-family: sans-serif;
-  font-style: italic;
 }
 .navbar-light.sticky-header.navbar-light .navbar-brand{
     color: #f2f4f8;
@@ -44,18 +43,22 @@
     font-weight: 600;
 }
 
-.bio{
-    margin-bottom:210px;
-    color: rgb(228, 228, 228)88, 95, 95;
-    font-size: 30px;
-    font-family: 'Poppins';
-}
+
 
      /* sliderimage */
-     
-.title{
-    font-size: 65px;
-    font-family: 'Signika';
+     .carousel-caption{
+        padding-bottom:210px;
+        color:#ffffff;
+        font-size: 30px;
+        font-weight: bold;
+        font-family:'Poppins';
+    }
+.slider-title{
+    padding-bottom:2px;
+    color: #f3f3f2;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Poppins';
 }
 
 .slider-img {  
@@ -63,6 +66,9 @@
     height: 710px;
     object-fit: cover;
 
+}
+.slider-arrow{
+   background-color: black;
 }
 /* rooms */
 
@@ -106,6 +112,8 @@
     transform: scale(1.1);
 }
 
+
+
 /* about us */
 
 .about-us {
@@ -144,6 +152,59 @@
     color:linear-gradient(90deg, rgb(156, 165, 175) 5%, rgba(245,245,255,1) 100%);
 }
 
+/* Services */
+.services-title{
+    padding-bottom: 75px;
+    padding-left: 0px;
+    font-size: 34px;
+    font-family: "poppins";
+    color: rgb(15, 0, 0);
+}
+.services-title:after{
+    content: '';
+    width: 250px;        
+    position: absolute;
+    left: 380px;
+    margin-bottom: 5px;
+    display: block;
+    border-bottom: 2px solid #c5874e;
+}
+
+
+.home-services{
+    background:linear-gradient(90deg,  rgb(77, 96, 117) 0%, rgba(245,245,255,1) 100%);
+}
+.services-card {
+    width: 300px;
+    padding: 0px 0px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+.services-card-title {
+    margin-top: 5px;
+    font-family:serif;
+    font-size: 25px;
+    padding-left: 10px;
+}
+.services-view{
+    text-decoration: none;
+    color: #c5874e;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.services-view:hover{
+    color: #c5874e;
+    text-decoration: none;
+}
+.services-image{
+    cursor: pointer;
+    transition: transform 0.7s ease-in;
+}
+.services-image:hover {         
+    transform: scale(.9);
+}
 
           /* footer */
 
