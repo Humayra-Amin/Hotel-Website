@@ -120,7 +120,7 @@
                         <th class=col-md-2>Room no</th>
                         <th class=col-md-2>Room Title</th>
                         <th class=col-md-2>Floor No</th>
-                        <th class=col-md-2>Category</th>
+                
                         <th class=col-md-2>Price</th>
                         <th class=col-md-2></th>
                         </tr>
@@ -136,7 +136,7 @@
                                 <td>{{$room->roomno}}</td>  
                                 <td>{{$room->roomtitle}}</td>  
                                 <td>{{$room->floorno}}</td>
-                                <td>{{$room->category}}</td>    
+                                {{-- <td>{{$room->category_id}}</td>     --}}
                                 <td>{{$room->price}}</td>  
                                 <td class="text-center">
                                 <a href="/admin/room/{{$room->id}}" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></a>

@@ -80,7 +80,7 @@
 
 
 <div class="bodycustom">
-    <form action="admin/category/{{$category->id}}" method="POST" enctype="multipart/form-data">
+    <form action="/admin/category/{{$category->id}}" method="POST" enctype="multipart/form-data">
         @csrf
         @method ('PUT')
       <h2 class="text-center">Edit Room Category</h2>
@@ -88,7 +88,7 @@
         <div class=" customform">
             <input type="categoryname" class="file-group" name="categoryname" id="categoryname" value="{{$category->categoryname}}" placeholder="Enter Room Category" required>
         </div>
-        <button type="submit" class="btn btn-primary btn-files">Edit</button>
+        <button type="submit" class="btn btn-primary btn-files">Save</button>
 
       </div>
     </form>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Room;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -12,13 +13,26 @@ class RoomController extends Controller
     //
     public function index()
     {
-        $rooms = Room::all();
+        $categories = Category::all();
+        return view("admin.category.viewcategory")->with('categories',  $categories);
+    }
+
+
+    public function roomcategory(Request $request)
+    {
+        $rooms = Room::where('category_id',$request->id)->get();
         return view("admin.room.index")->with('rooms',  $rooms);
     }
+
+
     public function add()
-    {
-        return view("admin.room.add");
+    {   
+        $categories = Category::all();
+        return view("admin.room.add")->with('categories',  $categories);
     }
+
+
+
     public function single()
     {
         return view("admin.room.single");
@@ -34,9 +48,9 @@ class RoomController extends Controller
             'price' => 'required',
             'availablerooms' => 'required',
             'maxoccupancy' => 'required',
-            'category' => 'required',
+            'category_id' => 'required',
             'roomtype' => 'required',
-            'roomsize' => 'required|integer',
+            'roomsize' => 'required',
             'roomview' => 'required',
             'guestservice' => 'required',
             'facilities' => 'required',
@@ -52,7 +66,7 @@ class RoomController extends Controller
         $room->price = $request->price;
         $room->availablerooms = $request->availablerooms;
         $room->maxoccupancy = $request->maxoccupancy;
-        $room->category = $request->category ;
+        $room->category_id = $request->category_id ;
         $room->roomtype = $request->roomtype;
         $room->roomsize = $request->roomsize;
         $room->roomview = $request->roomview;
@@ -81,9 +95,9 @@ class RoomController extends Controller
             'price' => 'required',
             'availablerooms' => 'required',
             'maxoccupancy' => 'required',
-            'category' => 'required',
+            'category_id' => 'required',
             'roomtype' => 'required',
-            'roomsize' => 'required|integer',
+            'roomsize' => 'required',
             'roomview' => 'required',
             'guestservice' => 'required',
             'facilities' => 'required',
@@ -97,7 +111,7 @@ class RoomController extends Controller
         $room->price = $request->price;
         $room->availablerooms = $request->availablerooms;
         $room->maxoccupancy = $request->maxoccupancy;
-        $room->category = $request->category ;
+        $room->category_id = $request->category_id;
         $room->roomtype = $request->roomtype;
         $room->roomsize = $request->roomsize;
         $room->roomview = $request->roomview;

@@ -103,7 +103,7 @@
             <div class="room-details mt-4 mb-2">
             <h2 class="room-title customize-fonts-title">{{$room->roomtitle}}</h2>
             <h6 class="customize-fonts">Room Type : {{$room->roomtype}}</h6>
-            <h6 class="customize-fonts">  Category   : {{$room->category}} </h6>
+            <h6 class="customize-fonts">  Category   : {{$room->category_id}} </h6>
             <h6 class="customize-fonts">Room Size : {{$room->roomsize}}</h6>
 
             <div class="facilities-sec">

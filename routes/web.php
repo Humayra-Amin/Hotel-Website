@@ -47,9 +47,10 @@ Route::middleware(["auth"])->group(function () {
     Route::get('/admin/room/{id}', [RoomController::class, "show"]);
     Route::get('/admin/room/{id}/edit', [RoomController::class, "edit"]);
     Route::post('/admin/room', [RoomController::class, "store"]);
-    Route::put('/admin//room{id}', [RoomController::class, "update"]);
+    Route::put('/admin//room/{id}', [RoomController::class, "update"]);
     Route::get('/admin/room/edit', [RoomController::class, "edit"]);
     Route::get('/admin/room/single', [RoomController::class, "single"]);
+    Route::get('/admin/room/roomcategory/{id}', [RoomController::class, "roomcategory"]);
 });
      
   
