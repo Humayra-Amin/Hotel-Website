@@ -3,8 +3,8 @@
 @section('apps')
 <div class="contact">
     <div class="row">
-            <img src="image/lobby4.jpg" alt="Contact Image" class="contactimage">
-           <div class="tect-caption">
+            <img src="image/deluxe room.jpg" media="min-width:600px" alt="Contact Image" class="contactimage">
+           <div class="text-caption">
             <h1 class="text-contact">Contact Us</h1>
        </div>
     </div>
@@ -42,9 +42,15 @@
         </div>
         <div class="col contact-detail">
             <h3 class="contact-title">Contact Us</h3>
-            <p>Email: hotelpradise@email.com</p>
-            <p>Phone: +123456789</p>
-            <p>Address: 123 Main St, Cityville</p>
+            <i class="fa-solid fa-envelope contact-icon"></i>
+             <p class="icon-title"> hotelpradise@email.com</p>
+           
+            <i class="fa-solid fa-phone contact-icon"></i> 
+            <p class="icon-title">+123456789</p>
+           
+            <i class="fa-solid fa-location-dot contact-icon"></i>
+            <p class="icon-title">123 Main St, Cityville</p>
+        
         </div>
     </div>
 </div>

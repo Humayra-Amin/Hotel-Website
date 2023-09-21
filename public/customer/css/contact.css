@@ -1,26 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
 .contactimage {
     height:400px;
-   width: 1350px;
-   opacity: .9;
+   max-width:100%;
+   object-fit: cover;
+   opacity: .7;
     
 }
 
-
-.text-caption{
-       
-}
 .text-contact{
-        font-size: 44px;
+        font-size: 54px;
         font-family: "Playfair Display", serif;
         font-weight: bold;
         text-align: center;
-        color: #4d0909;
+        color: #ffffff;
 
 }
-
+.text-caption{
+    position: absolute;
+    top:25%;
+    padding: 20px;
+}
 
 .maptop{
-    padding-bottom: 140px;
+    padding-bottom: 32px;
 }
 .map-container {
     height: 300px; /* Adjust the height as needed */
@@ -44,6 +51,19 @@ font-weight: bold;
     display: block;
     border-bottom: 2px solid #c5874e;
  }
+.fa-solid{
+    font-size: 30px;
+    color: #c5874e;
+}
+.icon-title{
+    font-size: 18px;
+    font-family: serif;
+    font-weight:inherit;
+    color: black;
+}
+
+
+
    .title-writeus{
     padding-bottom: 80px;
     font-size: 45px;

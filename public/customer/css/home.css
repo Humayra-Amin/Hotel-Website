@@ -51,14 +51,14 @@
         color:#ffffff;
         font-size: 30px;
         font-weight: bold;
-        font-family:'Poppins';
+        font-family:"Playfair Display", serif;
     }
 .slider-title{
     padding-bottom:2px;
     color: #f3f3f2;
     font-size: 55px;
     font-weight: bold;
-    font-family: 'Poppins';
+    font-family: "Playfair Display", serif;
 }
 
 .slider-img {  
@@ -73,8 +73,9 @@
 /* rooms */
 
 .section-heading {
-    position: relative;
-    font-family: "poppins";
+    font-size: 34px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
     color: rgb(10, 0, 0);
 }
 
@@ -82,7 +83,7 @@
    content: '';
    width: 80px;
    position: absolute;
-   left: 480px;
+   left: 500px;
    margin-bottom: 10px;
    display: block;
    border-bottom: 2px solid #c5874e;
@@ -132,7 +133,8 @@
     padding-bottom: 5px;
     padding-left: 0px;
     font-size: 34px;
-    font-family: "poppins";
+    font-weight: bold;
+    font-family:"Playfair Display", serif;
     color: rgb(15, 0, 0);
 }
 
@@ -157,14 +159,15 @@
     padding-bottom: 75px;
     padding-left: 0px;
     font-size: 34px;
-    font-family: "poppins";
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
     color: rgb(15, 0, 0);
 }
 .services-title:after{
     content: '';
     width: 250px;        
     position: absolute;
-    left: 380px;
+    left: 420px;
     margin-bottom: 5px;
     display: block;
     border-bottom: 2px solid #c5874e;
