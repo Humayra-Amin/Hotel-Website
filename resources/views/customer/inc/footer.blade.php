@@ -1,7 +1,7 @@
 <footer class="footer">
 	<div class="container">
 	      <div class="row-custom">
-				<div class="footer-col">
+				<div class="footer-col mt-5">
                   <h4>Information</h4>
                   <ul class="pl-0">
                       <li><a href="#">Pages</a></li>
@@ -10,7 +10,7 @@
                   </ul>
                 </div>
 		  
-		  		<div class="footer-col">
+		  		<div class="footer-col mt-5">
                   <h4>Resources</h4>
                   <ul  class="pl-0">
                       <li><a href="#">Video Tutorial</a></li>
@@ -18,7 +18,7 @@
                   </ul>
                 </div>
 		  
-		  		  <div class="footer-col">
+		  		  <div class="footer-col mt-5">
                   <h4>Help</h4>
                   <ul  class="pl-0">
                       <li><a href="#">Sign Up </a></li>
@@ -28,7 +28,7 @@
                   </ul>
                   </div>
 		  
-		  		  <div class="footer-col">
+		  		  <div class="footer-col mt-5">
                   <h4>Follow Us</h4>
                   <div class="social-links">
                       <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -40,7 +40,7 @@
 		  
 		  </div>
     </div>
-    <div class="text-center mt-5">
+    <div class="text-center mb-2">
       <p class="footer-alt mb-0 f-14">2023 Copyright, All Rights Reserved</p>
    </div>
 </footer>

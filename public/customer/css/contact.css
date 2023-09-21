@@ -3,7 +3,9 @@
     padding: 0;
 }
 
-
+.iconflex{
+    display: flex;
+}
 .contactimage {
     height:400px;
    max-width:100%;
@@ -27,20 +29,30 @@
 }
 
 .maptop{
-    padding-bottom: 32px;
+    padding-bottom: 83px;
 }
 .map-container {
     height: 300px; /* Adjust the height as needed */
 }
 .contact-detail{
-    padding-top: 70px;
+    padding-top: 60px;
     left: 10px;
 }
 .contact-title{
     font-size: 50px;
-    margin-bottom: 60px;
-font-family:'Playfair Display', serif;
-font-weight: bold;
+    margin-bottom: 40px;
+    font-family:'Playfair Display', serif;
+    font-weight: bold;
+}
+.contact-heading{
+    font-family: "Cinzel Decorative";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2.14;
+    letter-spacing: 2.8px;
+    text-align: left;
+    color: #b0914f;
+    margin: 0px;
 }
 .contact-title:after {
     content: '';
@@ -56,6 +68,7 @@ font-weight: bold;
     color: #c5874e;
 }
 .icon-title{
+    padding-left: 20px;
     font-size: 18px;
     font-family: serif;
     font-weight:inherit;
@@ -70,9 +83,9 @@ font-weight: bold;
     font-family:'Playfair Display', serif;
     font-weight: bold;
     color: rgb(15, 0, 0);
-   display: flex;
-   justify-content: center;
-   padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
    }
    .title-writeus:after {
     padding-bottom: 50px;
@@ -111,7 +124,10 @@ font-weight: bold;
     border-radius: 4px;
    
 }
+.send-btn:hover{
+    color: black;
+}
 .send-btn-primary{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }

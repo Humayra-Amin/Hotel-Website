@@ -63,7 +63,7 @@
 <div class="section-site">
     <div class="row">
     <div class="col-md-12 mb-5 text-center">
-        <h1 class="section-heading">Our Rooms</h1>
+        <h1 class="room-section-heading">Our Rooms</h1>
     </div>
     </div>
 
@@ -151,6 +151,47 @@
                 <h5 class="services-card-title ">Billiard Zone</h5>
                 <a href="/relaxation" class="services-view">View More</a>
             </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+  {{-- features --}}
+
+<div class="allfeatures">
+  <h1 class="text-center features-title">Hotel Features</h1>
+  <div class="row">
+      <div class="col-sm-3">
+          <div class="feature-list px-5">
+            <img src="image/icon/Airport.png" class="feature-image" alt="">
+            <p class="features-text">Airport Shuttle</p>
+            <img src="image/icon/Airport.png" class="feature-image" alt="">
+            <p class="features-text">Airport Shuttle</p>
+          </div>
+      </div>
+      <div class="col-sm-3">
+          <div class="feature-list">
+            <img src="image/icon/car parking.png" class="feature-image" alt="">
+            <p class="features-text">Airport Shuttle</p>
+            <img src="image/icon/Airport.png" class="feature-image" alt="">
+            <p class="features-text">Airport Shuttle</p>
+          </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="feature-list">
+          <img src="image/icon/fire-exit.png" class="feature-image" alt="">
+          <p class="features-text">Airport Shuttle</p>
+          <img src="image/icon/Airport.png" class="feature-image" alt="">
+          <p class="features-text">Airport Shuttle</p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="feature-list">
+          <img src="image/icon/room service.png" class="feature-image" alt="">
+          <p class="features-text">Airport Shuttle</p>
+          <img src="image/icon/Airport.png" class="feature-image" alt="">
+          <p class="features-text">Airport Shuttle</p>
         </div>
     </div>
   </div>
