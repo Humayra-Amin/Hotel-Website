@@ -1,16 +1,38 @@
 @extends('customer.layouts.apps')
 
 @section('apps')
-
 <div class="contact">
     <div class="row">
-            <img src="image/lobby4.jpg" alt="Contact Image" class="contactimage">
-            <!-- <div>
-                <h1 class="text">Contact Us</h1>
-            </div>
-            -->
+            <img src="image/deluxe room.jpg" media="min-width:600px" alt="Contact Image" class="contactimage">
+           <div class="text-caption">
+            <h1 class="text-contact">Contact Us</h1>
+       </div>
     </div>
-    <div class="row">
+    <div class="row px-5 py-5">
+            <h3 class="title-writeus">Write Us</h3>
+            <div class="col-md-4 ">
+            <form>
+                <div class="form-group">
+                    <input type="text"placeholder="Your name..."class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your email..." class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject..." class="form-control" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Message..."id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="send-btn-primary">
+                <button type="submit" class="send-btn  send-btn-block ">SEND
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row maptop">
         <div class="col">
             <!-- Add your map code here (e.g., using Google Maps) -->
             <div class="map-container">
@@ -19,41 +41,18 @@
             </div>
         </div>
         <div class="col contact-detail">
-            <h3 class="contact-title">Contact Details</h3>
-            <p>Email: hotelpradise@email.com</p>
-            <p>Phone: +123456789</p>
-            <p>Address: 123 Main St, Cityville</p>
-            <div class="social-links">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-google"></i></a>
-            </div>
+            <h3 class="contact-title">Contact Us</h3>
+            <i class="fa-solid fa-envelope contact-icon"></i>
+             <p class="icon-title"> hotelpradise@email.com</p>
+           
+            <i class="fa-solid fa-phone contact-icon"></i> 
+            <p class="icon-title">+123456789</p>
+           
+            <i class="fa-solid fa-location-dot contact-icon"></i>
+            <p class="icon-title">123 Main St, Cityville</p>
+        
         </div>
     </div>
-    <div class="row px-5 py-5">
-        <div class="col-md-4 writetop">
-            <h3>Write us</h3>
-            <form>
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" class="form-control" id="subject" name="subject" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
-        </div>
-    </div>
+</div>
 </div>
 @endsection
