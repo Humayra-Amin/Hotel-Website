@@ -29,7 +29,7 @@
             </div>
             <div class="col-sm-12">
                 <div class="form-group">
-                    <textarea class="form-control" placeholder="Message..."id="message" name="message" rows="5" required></textarea>
+                    <textarea class="form-control form-message"  placeholder="Message..."id="message" name="message" rows="5" required></textarea>
                 </div>
             </div>
                 </div>
@@ -66,7 +66,5 @@
         </div>
             </div>
         </div>
-    </div>
-</div>
-</div>
+
 @endsection

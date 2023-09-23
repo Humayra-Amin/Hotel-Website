@@ -167,21 +167,21 @@
             <img src="image/icon/Airport.png" class="feature-image" alt="">
             <p class="features-text">Airport Shuttle</p>
             <img src="image/icon/Airport.png" class="feature-image" alt="">
-            <p class="features-text">Airport Shuttle</p>
+            <p class="features-text">Car Parking</p>
           </div>
       </div>
       <div class="col-sm-3">
           <div class="feature-list">
             <img src="image/icon/car parking.png" class="feature-image" alt="">
-            <p class="features-text">Airport Shuttle</p>
+            <p class="features-text">Car Parking</p>
             <img src="image/icon/Airport.png" class="feature-image" alt="">
-            <p class="features-text">Airport Shuttle</p>
+            <p class="features-text">Room service</p>
           </div>
       </div>
       <div class="col-sm-3">
         <div class="feature-list">
           <img src="image/icon/fire-exit.png" class="feature-image" alt="">
-          <p class="features-text">Airport Shuttle</p>
+          <p class="features-text">Fire Exit</p>
           <img src="image/icon/Airport.png" class="feature-image" alt="">
           <p class="features-text">Airport Shuttle</p>
         </div>
@@ -189,7 +189,7 @@
     <div class="col-sm-3">
         <div class="feature-list">
           <img src="image/icon/room service.png" class="feature-image" alt="">
-          <p class="features-text">Airport Shuttle</p>
+          <p class="features-text">Room Service</p>
           <img src="image/icon/Airport.png" class="feature-image" alt="">
           <p class="features-text">Airport Shuttle</p>
         </div>
@@ -197,7 +197,17 @@
   </div>
 </div>
 
-  
+<div class="home-map">
+  <h2 class="text-center homemap-title">Location</h2>
+  <p class="hopemap-details px-5">The Hotel Pradise, Chittagong is conveniently located within touching distance to prominent tourist attractions in and around Chittagong. Our hotel in Chittagong is also the perfect destination for a blissful getaway from Dhaka. Enjoy our warm hospitality and service that make you feel at home. Explore the all meals inclusive 4D Travel offer to plan your next stay.<p>
+<div class="row any">
+  <!-- Add your map code here (e.g., using Google Maps) -->
+  <div class=" col map-container">
+      <!-- Add your map embed code here -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.781722834278!2d91.81870947103317!3d22.361869295692408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd972a7c0913d%3A0xa89bedab30fca683!2sAscii%20System!5e0!3m2!1sen!2sbd!4v1695225952836!5m2!1sen!2sbd" width="1349" height="400" class="home-map"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+</div>
   @endsection
 
 

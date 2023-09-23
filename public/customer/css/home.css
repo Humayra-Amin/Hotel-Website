@@ -312,7 +312,7 @@ margin-top: 1px;
 
 /* features */
 .allfeatures{
-    padding: 160px 180px;
+    padding: 40px 180px;
     background:linear-gradient(90deg,  rgb(77, 96, 117) 0%, rgba(245,245,255,1) 100%);
 }
 
@@ -340,7 +340,36 @@ margin-top: 1px;
 }
 .feature-image{
     height: 100%;
-    width: 90px;
+    width: 60px;
     object-fit: cover;
     margin-bottom: 20px;
+}
+
+.any{
+    margin-bottom: 100px;
+   
+}
+.home-map{
+    background:linear-gradient(90deg,  rgb(77, 96, 117) 0%, rgba(245,245,255,1) 100%);
+}
+.homemap-title{
+    font-size: 34px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: rgb(15, 0, 0);
+   padding-bottom: 30px;
+}
+
+.homemap-title:after{
+    content: '';
+    width: 80px;        
+    position: absolute;
+    left: 47%;
+    margin-bottom: 5px;
+    display: block;
+    border-bottom: 2px solid #c5874e;
+}
+.hopemap-details{
+font-size: 18px;
+padding-bottom: 30px;
 }
