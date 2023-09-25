@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="{{asset('customer/css/footer.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/singleroom.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/reservation.css')}}">
-  <link rel="stylesheet" href="{{asset('customer/css/relaxation.css')}}">
+  <link rel="stylesheet" href="{{asset('customer/css/services.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/contact.css')}}">
 
 

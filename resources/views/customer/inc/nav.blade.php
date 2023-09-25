@@ -13,18 +13,15 @@
           <a class="nav-link" href="#rooms">Rooms</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/relaxation">Relaxation</a>
+          <a class="nav-link" href="/relaxation">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallary">Gallary</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/contact">Contact</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#services">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
- 
+    
         @if (Auth::user())
        
         

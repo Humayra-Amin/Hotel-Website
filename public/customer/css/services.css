@@ -1,0 +1,49 @@
+ .lol{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+ }
+ 
+    .service-section{
+    background:  #aabbce;
+  }
+  
+  .serviceheading {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    font-family:'Playfair Display', serif;
+  }
+  .serviceheading:after {
+    content: '';
+    width: 100px;
+    position: absolute;
+    left: 46%;
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #c5874e;
+  }
+  .services-description{
+    font-family: 'poppins';
+    font-style:inherit;
+    padding: 10px 0;
+  }
+  .service-title{
+    font-size: 30px;
+    font-family:'Playfair Display', serif;
+  }
+  
+  .service-image-container {
+    margin-top: 0px;
+  }
+
+.service-imgfile{
+  width: 90%;
+  height: 50%;
+  object-fit: cover;
+}
+ .service-imgfile1{
+  width: 90%;
+  height: 40%;
+  object-fit: cover;
+ }

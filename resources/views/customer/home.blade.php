@@ -122,16 +122,16 @@
               <img src="image/swimming pool.jpeg" class="card-img-top services-image" alt="Service 1">
               <div class="services-card-body">
                   <h5 class="services-card-title">The Infinity Pool</h5>
-                  <a href="/relaxation" class="services-view">View More</a>
+                  <a href="/services" class="services-view">View More</a>
               </div>
           </div>
       </div>
       <div class="col-sm-3 mb-4">
           <div class="services-card">
-              <img src="image/Spa.jpg" class="card-img-top services-image" alt="Service 2">
+              <img src="image/restaurant.jpg" class="card-img-top services-image" alt="Service 2">
               <div class="services-card-body">
-                  <h5 class="services-card-title">Spa</h5>
-                  <a href="/relaxation" class="services-view">View More</a>
+                  <h5 class="services-card-title">Restaurant</h5>
+                  <a href="/services" class="services-view">View More</a>
               </div>
           </div>
       </div>
@@ -140,7 +140,7 @@
               <img src="image/gym (2).jpg" class="card-img-top services-image" alt="Service 3">
               <div class="services-card-body">
                   <h5 class="services-card-title ">Gym</h5>
-                  <a href="/relaxation" class="services-view">View More</a>
+                  <a href="/services" class="services-view">View More</a>
               </div>
           </div>
       </div>
@@ -149,7 +149,7 @@
             <img src="image/Biliard zone.jpg" class="card-img-top services-image" alt="Service 3">
             <div class="services-card-body">
                 <h5 class="services-card-title ">Billiard Zone</h5>
-                <a href="/relaxation" class="services-view">View More</a>
+                <a href="/services" class="services-view">View More</a>
             </div>
         </div>
     </div>
