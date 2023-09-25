@@ -378,7 +378,9 @@ padding-bottom: 30px;
 
 
 /* our room */
-.room-section-heading {
+
+
+/* .room-section-heading {
     font-size: 34px;
     font-weight: bold;
     font-family: "Playfair Display", serif;
@@ -445,4 +447,4 @@ padding-bottom: 30px;
     width: 100%;
     height: 60%;
     object-fit: cover;
-  }
+  } */
