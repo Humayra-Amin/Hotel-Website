@@ -17,12 +17,8 @@
   <link rel="stylesheet" href="{{asset('customer/css/register.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/footer.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/singleroom.css')}}">
-<<<<<<< HEAD
-  <link rel="stylesheet" href="{{asset('customer/css/relaxation.css')}}">
-=======
   <link rel="stylesheet" href="{{asset('customer/css/reservation.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/services.css')}}">
->>>>>>> 5aa0c793215dd6831da0a082bda2604a91e3c8eb
   <link rel="stylesheet" href="{{asset('customer/css/contact.css')}}">
 
 
