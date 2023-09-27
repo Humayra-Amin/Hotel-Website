@@ -37,12 +37,19 @@
     <link rel="stylesheet" href="{{asset('rooms/css/editcategory.css')}}">
 
 
+
     <link rel="stylesheet" href="{{asset('rooms/css/categorylist.css')}}">
 
     <link rel="stylesheet" href="{{asset('employees/css/humayra.css')}}">
     <link rel="stylesheet" href="{{asset('employees/css/tushin.css')}}">
     <link rel="stylesheet" href="{{asset('employees/css/kayem.css')}}">
     <link rel="stylesheet" href="{{asset('employees/css/fardin.css')}}">
+    <link rel="stylesheet" href="{{asset('employees/css/singleview.css')}}">
+    <link rel="stylesheet" href="{{asset('employees/css/reservation.css')}}">
+    <link rel="stylesheet" href="{{asset('employees/css/booklists.css')}}">
+
+
+
 
   
  

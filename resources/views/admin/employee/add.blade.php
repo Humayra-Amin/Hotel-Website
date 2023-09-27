@@ -37,10 +37,10 @@
 
 <h2 class="custom-h2">Add Employee</h2>
   
-       <form action="{{ url('employee') }}" method="POST" enctype="multipart/form-data">
+       <form action="{{ url('booklists') }}" method="POST" enctype="multipart/form-data">
                       @csrf
 
-    <div class="add-row files-jumbotron custom-box8">
+    <div class="reserve-row reserve-jumbotron custom-box8">
       
       
       <div class="col-sm-3 form-group">
