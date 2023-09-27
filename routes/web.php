@@ -69,7 +69,7 @@ Route::get('/customernav', [CustomerController::class, "customernav"]);
 Route::get('/bookinglist', [HomeController::class, "bookinglist"]);
 Route::get('/changepass', [CustomerController::class, "changepass"]);
 Route::get('/bookmodal', [CustomerController::class, "bookmodal"]);
-Route::get('/relaxation', [CustomerController::class, "relaxation"]);
+Route::get('/services', [CustomerController::class, "services"]);
 Route::get('/contact', [CustomerController::class, "contact"]);
 
 
