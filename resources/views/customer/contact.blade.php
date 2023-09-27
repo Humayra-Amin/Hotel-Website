@@ -40,7 +40,6 @@
                 </div>
             </form>
         </div>
-    </div>
     <div class="row maptop">
         <div class="col">
             <!-- Add your map code here (e.g., using Google Maps) -->
@@ -66,5 +65,5 @@
         </div>
             </div>
         </div>
-
+    </div>
 @endsection

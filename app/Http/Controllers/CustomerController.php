@@ -51,7 +51,7 @@ class CustomerController extends Controller
         return view("customer.reservation");
     }
 
-    public function relaxation()
+    public function services()
     {
         return view("customer.services");
     }

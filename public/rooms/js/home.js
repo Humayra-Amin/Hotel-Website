@@ -9,5 +9,11 @@ document.addEventListener("scroll", (event) => {
       headerEl.classList.remove('sticky-header')
   }
 
-// $('.slider').slick();
 });
+
+
+// $(function(){
+//   $('.carousal') .carousal({
+//     interval: 1000* 5 // 1000 x 1= 1 second
+//   });
+// });

@@ -22,9 +22,9 @@
     <link rel="stylesheet" type="text/css" link href="{{asset('rooms/vendor/fontawesome-free/css/all.min.css')}}">
 
     <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    {{-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> --}}
     <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    {{-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> --}}
 
 
     <!-- Custom styles for this template-->
@@ -72,7 +72,7 @@
     <script src="{{asset('rooms/vendor/jquery/jquery.min.js')}}"></script>
     
     <!-- slick js -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    {{-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> --}}
     
     <script src="{{asset('rooms/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
