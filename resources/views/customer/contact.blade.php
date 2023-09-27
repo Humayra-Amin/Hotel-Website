@@ -8,21 +8,30 @@
             <h1 class="text-contact">Contact Us</h1>
        </div>
     </div>
-    <div class="row px-5 py-5">
+    <div class="writeus px-5 py-5">
             <h3 class="title-writeus">Write Us</h3>
-            <div class="col-md-4 ">
             <form>
+                <div class="row">
+                <div class="col-sm-4">
                 <div class="form-group">
                     <input type="text"placeholder="Your name..."class="form-control" id="name" name="name" required>
                 </div>
+                </div>
+                <div class="col-sm-4">
                 <div class="form-group">
                     <input type="email" placeholder="Your email..." class="form-control" id="email" name="email" required>
                 </div>
+            </div>
+            <div class="col-sm-4">
                 <div class="form-group">
                     <input type="text" placeholder="Subject..." class="form-control" id="subject" name="subject" required>
                 </div>
+            </div>
+            <div class="col-sm-12">
                 <div class="form-group">
-                    <textarea class="form-control" placeholder="Message..."id="message" name="message" rows="5" required></textarea>
+                    <textarea class="form-control form-message"  placeholder="Message..."id="message" name="message" rows="5" required></textarea>
+                </div>
+            </div>
                 </div>
                 <div class="send-btn-primary">
                 <button type="submit" class="send-btn  send-btn-block ">SEND
@@ -41,18 +50,21 @@
             </div>
         </div>
         <div class="col contact-detail">
+            <h2 class="contact-heading">GET IN TOUCH</h2>
             <h3 class="contact-title">Contact Us</h3>
+            <div class="iconflex mb-3">
             <i class="fa-solid fa-envelope contact-icon"></i>
              <p class="icon-title"> hotelpradise@email.com</p>
-           
+            </div>
+            <div class="iconflex mb-3">
             <i class="fa-solid fa-phone contact-icon"></i> 
             <p class="icon-title">+123456789</p>
-           
+        </div>
+        <div class="iconflex mb-3">
             <i class="fa-solid fa-location-dot contact-icon"></i>
             <p class="icon-title">123 Main St, Cityville</p>
-        
         </div>
-    </div>
-</div>
-</div>
+            </div>
+        </div>
+
 @endsection

@@ -63,7 +63,7 @@
 <div class="section-site">
     <div class="row">
     <div class="col-md-12 mb-5 text-center">
-        <h1 class="section-heading">Our Rooms</h1>
+        <h1 class="room-section-heading">Our Rooms</h1>
     </div>
     </div>
 
@@ -122,16 +122,16 @@
               <img src="image/swimming pool.jpeg" class="card-img-top services-image" alt="Service 1">
               <div class="services-card-body">
                   <h5 class="services-card-title">The Infinity Pool</h5>
-                  <a href="/relaxation" class="services-view">View More</a>
+                  <a href="/services" class="services-view">View More</a>
               </div>
           </div>
       </div>
       <div class="col-sm-3 mb-4">
           <div class="services-card">
-              <img src="image/Spa.jpg" class="card-img-top services-image" alt="Service 2">
+              <img src="image/restaurant.jpg" class="card-img-top services-image" alt="Service 2">
               <div class="services-card-body">
-                  <h5 class="services-card-title">Spa</h5>
-                  <a href="/relaxation" class="services-view">View More</a>
+                  <h5 class="services-card-title">Restaurant</h5>
+                  <a href="/services" class="services-view">View More</a>
               </div>
           </div>
       </div>
@@ -140,7 +140,7 @@
               <img src="image/gym (2).jpg" class="card-img-top services-image" alt="Service 3">
               <div class="services-card-body">
                   <h5 class="services-card-title ">Gym</h5>
-                  <a href="/relaxation" class="services-view">View More</a>
+                  <a href="/services" class="services-view">View More</a>
               </div>
           </div>
       </div>
@@ -149,14 +149,144 @@
             <img src="image/Biliard zone.jpg" class="card-img-top services-image" alt="Service 3">
             <div class="services-card-body">
                 <h5 class="services-card-title ">Billiard Zone</h5>
-                <a href="/relaxation" class="services-view">View More</a>
+                <a href="/services" class="services-view">View More</a>
             </div>
         </div>
     </div>
   </div>
 </div>
 
-  
+
+  {{-- features --}}
+
+<div class="allfeatures">
+  <h1 class="text-center features-title">Hotel Features</h1>
+  <div class="row">
+      <div class="col-sm-3">
+          <div class="feature-list px-5">
+            <img src="image/icon/Airport.png" class="feature-image" alt="">
+            <p class="features-text">Airport Shuttle</p>
+            <img src="image/icon/Airport.png" class="feature-image" alt="">
+            <p class="features-text">Car Parking</p>
+          </div>
+      </div>
+      <div class="col-sm-3">
+          <div class="feature-list">
+            <img src="image/icon/car parking.png" class="feature-image" alt="">
+            <p class="features-text">Car Parking</p>
+            <img src="image/icon/Airport.png" class="feature-image" alt="">
+            <p class="features-text">Room service</p>
+          </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="feature-list">
+          <img src="image/icon/fire-exit.png" class="feature-image" alt="">
+          <p class="features-text">Fire Exit</p>
+          <img src="image/icon/Airport.png" class="feature-image" alt="">
+          <p class="features-text">Airport Shuttle</p>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="feature-list">
+          <img src="image/icon/room service.png" class="feature-image" alt="">
+          <p class="features-text">Room Service</p>
+          <img src="image/icon/Airport.png" class="feature-image" alt="">
+          <p class="features-text">Airport Shuttle</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="home-map">
+  <h2 class="text-center homemap-title">Location</h2>
+  <p class="hopemap-details px-5">The Hotel Pradise, Chittagong is conveniently located within touching distance to prominent tourist attractions in and around Chittagong. Our hotel in Chittagong is also the perfect destination for a blissful getaway from Dhaka. Enjoy our warm hospitality and service that make you feel at home. Explore the all meals inclusive 4D Travel offer to plan your next stay.<p>
+<div class="row any">
+  <!-- Add your map code here (e.g., using Google Maps) -->
+  <div class=" col map-container">
+      <!-- Add your map embed code here -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.781722834278!2d91.81870947103317!3d22.361869295692408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd972a7c0913d%3A0xa89bedab30fca683!2sAscii%20System!5e0!3m2!1sen!2sbd!4v1695225952836!5m2!1sen!2sbd" width="1349" height="400" class="home-map"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+</div>
   @endsection
 
+{{-- our rooms --}}
 
+  {{-- <div class="section-site">
+    <div class="row">
+    <div class="col-md-12 mb-5 text-center">
+        <h1 class="room-section-heading">Our Rooms</h1>
+    </div>
+    </div>
+
+  <div class="row">
+    <div class="col-md-4 mb-5 ">
+      <div class="hotel-room">
+        <img src="images/deluxe room.jpg" class="homeimage-card" alt="Single Room">
+        <div class="hotel-room-body">
+          <h5 class="roomcard-title">Single Room</h5>
+          <p class="roomcard-text1">Cozy and comfortable single room.</p>
+          <p class="roomcard-text2">$100</p>
+          <p class="roomcard-text3">Per Night</p>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 mb-5 ">
+        <div class="hotel-room">
+          <img src="images/deluxe room.jpg" class="homeimage-card" alt="Single Room">
+          <div class="hotel-room-body">
+            <h5 class="roomcard-title">Single Room</h5>
+            <p class="roomcard-text1">Cozy and comfortable single room.</p>
+            <p class="roomcard-text2">$100</p>
+            <p class="roomcard-text3">Per Night</p>
+          </div>
+        </div>
+      </div>
+        <div class="col-md-4 mb-5 ">
+          <div class="hotel-room">
+            <img src="images/deluxe room.jpg" class="homeimage-card" alt="Single Room">
+            <div class="hotel-room-body">
+              <h5 class="roomcard-title">Single Room</h5>
+              <p class="roomcard-text1">Cozy and comfortable single room.</p>
+              <p class="roomcard-text2">$100</p>
+              <p class="roomcard-text3">Per Night</p>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-4 mb-5">
+            <div class="hotel-room">
+              <img src="images/deluxe room.jpg" class="homeimage-card" alt="Single Room">
+              <div class="hotel-room-body">
+                <h5 class="roomcard-title">Single Room</h5>
+                <p class="roomcard-text1">Cozy and comfortable single room.</p>
+                <p class="roomcard-text2">$100</p>
+                <p class="roomcard-text3">Per Night</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5 ">
+            <div class="hotel-room">
+              <img src="images/deluxe room.jpg" class="homeimage-card" alt="Single Room">
+              <div class="hotel-room-body">
+                <h5 class="roomcard-title">Single Room</h5>
+                <p class="roomcard-text1">Cozy and comfortable single room.</p>
+                <p class="roomcard-text2">$100</p>
+                <p class="roomcard-text3">Per Night</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5 ">
+            <div class="hotel-room">
+              <img src="images/deluxe room.jpg" class="homeimage-card" alt="Single Room">
+              <div class="hotel-room-body">
+                <h5 class="roomcard-title">Single Room</h5>
+                <p class="roomcard-text1">Cozy and comfortable single room.</p>
+                <p class="roomcard-text2">$100</p>
+                <p class="roomcard-text3">Per Night</p>
+              </div>
+            </div>
+          </div>
+  </div>
+
+
+</div> --}}
