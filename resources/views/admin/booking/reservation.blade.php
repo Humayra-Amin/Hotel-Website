@@ -1,10 +1,7 @@
     @extends('admin.layouts.app')
     @section('app')
     <div id="content-wrapper" class="d-flex flex-column">
-    
-    
-      @include('admin.inc.message')
-    
+        
     
         <!-- Main Content -->
         <div id="content">
@@ -87,9 +84,11 @@
     
     <h2 class="file-h2">Add Reservation</h2>
       
-           <form>
+    <form action="{{ url('admin/booking') }}" method="POST" enctype="multipart/form-data">
+      @csrf
+
     
-        <div class="add-row files-jumbotron custom-box8">
+        <div class="reserve-row reserve-jumbotron custom-box8">
           
           
           <div class="col-sm-8 form-group">
@@ -108,7 +107,7 @@
 
           <div class="col-sm-6 form-group">
             <label for="tel" class="reserve-label">Contact No.</label>
-            <input type="tel" name="phone" class="form-control" id="tel" placeholder="Enter Contact Number." required>
+            <input type="tel" name="tel" class="form-control" id="tel" placeholder="Enter Contact Number" required>
           </div>
 
           <div class="col-sm-6 form-group">
@@ -118,10 +117,15 @@
 
           <div class="col-sm-6 form-group">
             <label for="roomType" class="reserve-label">Room Type </label>
-            <select class="form-control" id="roomType" required>
-                <option value="single">Single</option>
-                <option value="double">Double</option>
-                <option value="suite">Suite</option>
+            <select class="form-control" name="roomType" id="roomType" required>
+                <option value="Single">Single Room</option>
+                <option value="Double">Double Room</option>
+                <option value="Quad">Quad Room</option>
+                <option value="Hollywood Twin">Hollywood Twin Room</option>
+                <option value="Double-Double">Double-Double Room</option>
+                <option value="Interconnecting">Interconnecting Room</option>
+                <option value="Adjoining"> Adjoining Room</option>
+                <option value="Duplex">Duplex Room</option>
             </select>
           </div>
 
@@ -131,12 +135,12 @@
           </div>
 
           <div class="col-sm-6 form-group">
-            <label for="checkInDate" class="reserve-label">Check-in Date:</label>
+            <label for="checkInDate" class="reserve-label">Check-in Date</label>
                 <input type="date" class="form-control" name="checkInDate" id="checkInDate" required>
           </div>
 
           <div class="col-sm-6 form-group">
-            <label for="checkOutDate" class="reserve-label">Check-out Date:</label>
+            <label for="checkOutDate" class="reserve-label">Check-out Date</label>
             <input type="date" class="form-control" name="checkOutDate" id="checkOutDate" required>
           </div>
     

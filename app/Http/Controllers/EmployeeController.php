@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Employee;
-use App\Models\Booklist;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -135,25 +134,6 @@ public function edit($id)
 {
     $employee=Employee::where("id",$id)->firstOrfail();
     return view("admin.employee.edit")->with('employee',  $employee);
-}
-
-
-public function reservation()
-{
-    // $booklists = Booklist::all();
-    // return view("admin.employee.reservation")->with('booklists',  $booklists);
-
-    return view("admin.employee.reservation");
-}
-
-public function singleview()
-{
-    return view("admin.employee.singleview");
-}
-
-public function booklists()
-{
-    return view("admin.employee.booklists");
 }
 
 

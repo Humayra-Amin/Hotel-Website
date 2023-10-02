@@ -131,30 +131,50 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
+
+              <form action="{{ url('admin/booking') }}" method="POST" enctype="multipart/form-data">
+                @csrf 
+
                 <div class="form-group">
-                    <label for="name">Name:</label>
+                    <label for="name">Name</label>
                     <input type="text"  placeholder="Enter your name" class="form-control" id="name" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label>
+                    <label for="email">Email</label>
                     <input type="email"  placeholder="Enter your email"class="form-control" id="email" required>
                 </div>
+
+                <div class="col-sm-6 form-group custom-form-group">
+                  <label for="roomcategory">Room Title</label>
+                  <input type="text" class="form-control" name="roomcategory" id="roomcategory" placeholder="Enter Room Category">
+                </div>
+
+                <div class="col-sm-6 form-group">
+                  <label for="roomType">Room Type </label>
+                  <select class="form-control" name="roomType" id="roomType" required>
+                      <option value="Single">Single Room</option>
+                      <option value="Double">Double Room</option>
+                      <option value="Quad">Quad Room</option>
+                      <option value="Hollywood Twin">Hollywood Twin Room</option>
+                      <option value="Double-Double">Double-Double Room</option>
+                      <option value="Interconnecting">Interconnecting Room</option>
+                      <option value="Adjoining"> Adjoining Room</option>
+                      <option value="Duplex">Duplex Room</option>
+                  </select>
+                </div>
+
                 <div class="form-group">
-                    <label for="checkInDate">Check-in Date:</label>
+                    <label for="checkInDate">Check-in Date</label>
                     <input type="date" class="form-control" id="checkInDate" required>
                 </div>
                 <div class="form-group">
-                    <label for="checkOutDate">Check-out Date:</label>
+                    <label for="checkOutDate">Check-out Date</label>
                     <input type="date" class="form-control" id="checkOutDate" required>
                 </div>
-                <div class="form-group">
-                    <label for="roomType">Room Type:</label>
-                    <select class="form-control" id="roomType" required>
-                        <option value="single">Single</option>
-                        <option value="double">Double</option>
-                        <option value="suite">Suite</option>
-                    </select>
-                </div>
+
+
+              </form>
+              
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
