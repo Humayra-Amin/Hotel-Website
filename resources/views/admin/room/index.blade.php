@@ -141,7 +141,9 @@
                                 <td class="text-center">
                                 <a href="/admin/room/{{$room->id}}" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></a>
                                 <a href="/admin/room/{{$room->id}}/edit/" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></a>
-                                <a href="/admin/room/{{$room->id}}/delete/" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></i></a>
+                                <form action="/admin/room/{{$room->id}}/delete/" method="DELETE">
+                                <button type="submit" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></i></button>
+                                </form>
                             </td>
 
                              </tr>

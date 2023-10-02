@@ -83,7 +83,7 @@
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsecustomer"
             aria-expanded="true" aria-controls="collapsecustomer">
-           <i class="fa-solid fa-list-ul"></i>
+            <i class="fa-solid fa-users"></i>
             <span>Customer</span>
         </a>
         <div id="collapsecustomer" class="collapse" aria-labelledby="headingcustomer" data-parent="#accordionSidebar">
@@ -97,7 +97,7 @@
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsebooking"
             aria-expanded="true" aria-controls="collapsebooking">
-           <i class="fa-solid fa-list-ul"></i>
+            <i class="fa-solid fa-clipboard-list"></i>
             <span>Booking</span>
         </a>
         <div id="collapsebooking" class="collapse" aria-labelledby="headingbooking" data-parent="#accordionSidebar">
