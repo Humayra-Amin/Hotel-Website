@@ -103,8 +103,8 @@
         <div id="collapsebooking" class="collapse" aria-labelledby="headingbooking" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Booking:</h6>
-                <a class="collapse-item" href="/bookinglist">Booking List</a>
-                <a class="collapse-item" href="/">Add Reservation</a>
+                <a class="collapse-item" href="/admin/employee/booklists">Booking List</a>
+                <a class="collapse-item" href="/admin/employee/reservation">Add Reservation</a>
            
         </div>
     </li>

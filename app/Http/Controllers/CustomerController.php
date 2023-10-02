@@ -46,14 +46,9 @@ class CustomerController extends Controller
         return view("customer.bookmodal");
     }
 
-    public function reservation()
+    public function services()
     {
-        return view("customer.reservation");
-    }
-
-    public function relaxation()
-    {
-        return view("customer.relaxation");
+        return view("customer.services");
     }
     public function contact()
     {
