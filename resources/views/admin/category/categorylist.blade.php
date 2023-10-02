@@ -110,9 +110,9 @@
                                 <td>{{$category->categoryname}}</td>
                                 <td class="text-center">
                                  <a href="/admin/category/{{$category->id}}/edit/" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></a>
-                                 <a href="/admin/category/{{$category->id}}/delete/" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></i></a>
-                                 </td>
-                              </tr>
+                                 <form action="/admin/category/{{$category->id}}/delete/" method="DELETE">
+                                  <button type="submit" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></i></button>
+                              </form>
                            @endforeach
                               {{-- <tr>
                                 <td>2</td>

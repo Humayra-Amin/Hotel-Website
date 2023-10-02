@@ -136,5 +136,12 @@ public function edit($id)
     return view("admin.employee.edit")->with('employee',  $employee);
 }
 
+public function delete(Request $request)
+{ 
+
+   Employee::destroy($request->id);
+   return redirect()->back();
+
+}
 
 }

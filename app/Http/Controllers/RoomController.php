@@ -148,5 +148,13 @@ class RoomController extends Controller
        return view("admin.room.edit")->with('room',  $room);
 
     }
+    public function delete(Request $request)
+    { 
+
+       Room::destroy($request->id);
+       return redirect()->back();
+
+    }
+
 
 }
