@@ -17,24 +17,26 @@ class BookingController extends Controller
 public function store(Request $request)
 {
     $request->validate([
-        'roomcategory' => 'required|max:20',
         'name' => 'required|max:50',
         'email' => 'required|email',
         'tel' => 'required',
         'nid' => 'required|integer',
         'roomType' => 'required',
+        'roomcategory' => 'required|max:20',
+        'roomno' => 'required|integer',
         'maxoccupancy' => 'required',
         'checkInDate' => 'required',
         'checkOutDate' => 'required',
     ]);
 
     $booking = new Booking();
-    $booking->roomcategory = $request->roomcategory;
     $booking->name = $request->name;
     $booking->email = $request->email;
     $booking->tel = $request->tel;
     $booking->nid = $request->nid;
     $booking->roomType = $request->roomType;
+    $booking->roomcategory = $request->roomcategory;
+    $booking->roomno = $request->roomno;
     $booking->maxoccupancy = $request->maxoccupancy;
     $booking->checkInDate = $request->checkInDate;
     $booking->checkOutDate = $request->checkOutDate;
@@ -56,12 +58,13 @@ public function editReservation($id)
 public function update(Request $request,$id)
 {
     $request->validate([
-        'roomcategory' => 'required|max:20',
         'name' => 'required|max:50',
         'email' => 'required|email',
         'tel' => 'required',
         'nid' => 'required|integer',
         'roomType' => 'required',
+        'roomcategory' => 'required|max:20',
+        'roomno' => 'required|integer',
         'maxoccupancy' => 'required',
         'checkInDate' => 'required',
         'checkOutDate' => 'required',
@@ -71,18 +74,19 @@ public function update(Request $request,$id)
 
 
     $booking = Booking::find ($id);
-    $booking->roomcategory = $request->roomcategory;
     $booking->name = $request->name;
     $booking->email = $request->email;
     $booking->tel = $request->tel;
     $booking->nid = $request->nid;
     $booking->roomType = $request->roomType;
+    $booking->roomcategory = $request->roomcategory;
+    $booking->roomno = $request->roomno;
     $booking->maxoccupancy = $request->maxoccupancy;
     $booking->checkInDate = $request->checkInDate;
     $booking->checkOutDate = $request->checkOutDate;
     $booking->update();
 
-    return redirect("admin/booking/")->with("success", "BookingList Updated....");
+    return redirect("admin/booking/booklists")->with("success", "BookingList Updated....");
 }
 
 

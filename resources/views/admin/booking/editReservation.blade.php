@@ -117,6 +117,17 @@
       </div>
 
       <div class="col-sm-6 form-group">
+        <label for="roomcategory" class="reserve-label">Room Category </label>
+        <select class="form-control" name="roomcategory" id="roomcategory" required>
+            <option @if($booking->roomcategory == 'Normal') selected @endif>Normal</option>
+            <option @if($booking->roomcategory == 'Standered') selected @endif>Standered</option>
+            <option @if($booking->roomcategory == 'Premium') selected @endif>Premium</option>
+            <option @if($booking->roomcategory == 'Super Premium') selected @endif>Super Premium</option>
+            <option @if($booking->roomcategory == 'Queen') selected @endif>Queen</option>
+        </select>
+      </div>
+
+      <div class="col-sm-6 form-group">
         <label for="roomType" class="editreserve-label">Room Type </label>
         <select class="form-control" name="roomType" id="roomType" required>
             <option @if($booking->roomType == 'Single Room') selected @endif>Single Room</option>
@@ -128,6 +139,11 @@
             <option @if($booking->roomType == 'Adjoining Room') selected @endif> Adjoining Room</option>
             <option @if($booking->roomType == 'Duplex Room') selected @endif>Duplex Room</option>
         </select>
+      </div>
+
+      <div class="col-sm-6 form-group">
+        <label for="roomno" class="reserve-label">Room No.</label>
+        <input type="number" class="form-control" name="roomno" id="roomno" placeholder="Enter Room No." value="{{$booking->roomno}}" required>
       </div>
 
       <div class="col-sm-6 form-group">

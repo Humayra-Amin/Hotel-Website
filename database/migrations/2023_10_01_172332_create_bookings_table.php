@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('email');
             $table->string('tel');
             $table->string('nid');
+            $table->string('roomcategory');
+            $table->string('roomno');
             $table->string('roomType');
             $table->string('maxoccupancy');
             $table->string('checkInDate');

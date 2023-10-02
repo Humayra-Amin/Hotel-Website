@@ -137,19 +137,25 @@
 
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text"  placeholder="Enter your name" class="form-control" id="name" required>
+                    <input type="text"  placeholder="Enter your name" name="name" class="form-control" id="name" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email"  placeholder="Enter your email"class="form-control" id="email" required>
+                    <input type="email"  placeholder="Enter your email" name="email" class="form-control" id="email" required>
                 </div>
 
-                <div class="col-sm-6 form-group custom-form-group">
-                  <label for="roomcategory">Room Title</label>
-                  <input type="text" class="form-control" name="roomcategory" id="roomcategory" placeholder="Enter Room Category">
+                <div class="form-group">
+                  <label for="roomcategory" class="reserve-label">Room Category </label>
+                  <select class="form-control" name="roomcategory" id="roomcategory" required>
+                      <option value="Normal">Normal</option>
+                      <option value="Standered">Standered</option>
+                      <option value="Premium">Premium</option>
+                      <option value="Super Premium">Super Premium</option>
+                      <option value="Queen">Queen</option>
+                  </select>
                 </div>
 
-                <div class="col-sm-6 form-group">
+                <div class="form-group">
                   <label for="roomType">Room Type </label>
                   <select class="form-control" name="roomType" id="roomType" required>
                       <option value="Single">Single Room</option>
@@ -165,11 +171,11 @@
 
                 <div class="form-group">
                     <label for="checkInDate">Check-in Date</label>
-                    <input type="date" class="form-control" id="checkInDate" required>
+                    <input type="date" class="form-control" name="checkInDate" id="checkInDate" required>
                 </div>
                 <div class="form-group">
                     <label for="checkOutDate">Check-out Date</label>
-                    <input type="date" class="form-control" id="checkOutDate" required>
+                    <input type="date" class="form-control" name="checkOutDate" id="checkOutDate" required>
                 </div>
 
 
