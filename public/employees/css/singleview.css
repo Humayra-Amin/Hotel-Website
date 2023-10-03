@@ -2,13 +2,13 @@
 {        
     font-family: roboto;                
     color:#1e2cc8;
-    font-size: 45px; 
+    font-size: 40px; 
  }
 .singleview 
 {
     font-family: roboto;                
     color:black;
-    font-size: 16px;
+    font-size: 19px;
     font-weight: bold; 
 }
 
@@ -16,7 +16,7 @@
 {
     font-family: roboto;                
     color:black;
-    font-size: 14px; 
+    font-size: 17px; 
 }
 
 .bookinfo

@@ -93,6 +93,9 @@ Route::get('/admin/booking/singleview', [BookingController::class, "singleview"]
 Route::get('/admin/booking/{id}', [BookingController::class, "show"]);
 Route::post('admin/booking', [BookingController::class, "store"]);
 Route::put('/admin/booking/{id}', [BookingController::class, "update"]);
+Route::post('/admin/booking/{id}/accept', [BookingController::class, "accept"])->name('admin.booking.accept');
+Route::post('/admin/booking/{id}/deny', [BookingController::class, "deny"])->name('admin.booking.deny');
+
 
 
 
