@@ -83,7 +83,7 @@
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsecustomer"
             aria-expanded="true" aria-controls="collapsecustomer">
-           <i class="fa-solid fa-list-ul"></i>
+            <i class="fa-solid fa-users"></i>
             <span>Customer</span>
         </a>
         <div id="collapsecustomer" class="collapse" aria-labelledby="headingcustomer" data-parent="#accordionSidebar">
@@ -97,14 +97,16 @@
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsebooking"
             aria-expanded="true" aria-controls="collapsebooking">
-           <i class="fa-solid fa-list-ul"></i>
+            <i class="fa-solid fa-clipboard-list"></i>
             <span>Booking</span>
         </a>
         <div id="collapsebooking" class="collapse" aria-labelledby="headingbooking" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Booking:</h6>
-                <a class="collapse-item" href="/admin/employee/booklists">Booking List</a>
-                <a class="collapse-item" href="/admin/employee/reservation">Add Reservation</a>
+                <a class="collapse-item" href="/admin/booking/booklists">Booking List</a>
+                <a class="collapse-item" href="/admin/booking/reservation">Add Reservation</a>
+                <a class="collapse-item" href="/admin/booking/editReservation">Edit Reservation</a>
+                <a class="collapse-item" href="/admin/booking/singleview">SingleView</a>
            
         </div>
     </li>

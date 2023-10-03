@@ -229,17 +229,32 @@
                         </tr>
                         </thead>
                         <tbody>
+
+
+                          roomcategory
+
+
+                          @foreach ($bookings as $booking)
+
+
                             <tr>
-                              <td>01</td>
-                              <td>Tushin</td>
-                              <td>Tushin@gmail.com</td>
-                              <td>20/09/2023</td>
-                              <td>26/09/2023</td>
+                              <td>{{$booking->id}}</td>
+                              <td>{{$booking->name}}</td>
+                              <td>{{$booking->email}}</td>
+                              <td>{{$booking->roomcategory}}</td>
+                              <td>{{$booking->checkInDate}}</td>
+                              <td>{{$booking->checkOutDate}}</td>
 
                                 <td class="text-center">
-                                  <a href="" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></a>
+                                  <a href="/admin/booking/{{$booking->id}}" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></a>
+                                  <a href="/admin/booking/{{$booking->id}}/editReservation/" title="editReservation" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></a>
+
                                 </td>
                               </tr>
+
+
+                              @endforeach
+
                             </tbody>
                         </table>
             </div>

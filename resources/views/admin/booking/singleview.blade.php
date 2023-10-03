@@ -89,31 +89,36 @@
 
             <div class="col-12 bookinfo">
 
-                  <h2 class="single-view">Deluxe Room</h2>
-                  <p class="singleview">Experience luxury and comfort in our Deluxe Room. 
-                    This spacious room features modern amenities, a king-sized bed, and a breathtaking view of the city skyline.
-                    Experience luxury and comfort in our Deluxe Room. 
-                    This spacious room features modern amenities, a king-sized bed, and a breathtaking view of the city skyline.
-                    Experience luxury and comfort in our Deluxe Room. 
-                    This spacious room features modern amenities, a king-sized bed, and a breathtaking view of the city skyline.
-                    Experience luxury and comfort in our Deluxe Room. 
-                    This spacious room features modern amenities, a king-sized bed, and a breathtaking view of the city skyline.</p>
+                  <h2 class="single-view">{{$booking->roomcategory}}</h2>
+                
+                    <div class= "row">
+
+
+                    <div class="col-6">
                     <h2 class="singleview">Name:</h2>
-                    <p class="single-p">Tushin</p>
+                    <p class="single-p">{{$booking->name}}</p>
                     <h2 class="singleview">Email:</h2>
-                    <p class="single-p">tushin@gmail.com</p>
+                    <p class="single-p">{{$booking->email}}</p>
                     <h2 class="singleview">Contact No.:</h2>
-                    <p class="single-p">01864593241</p>
-                    <h2 class="singleview">Present Address:</h2>
-                    <p class="single-p">Hill view</p>
+                    <p class="single-p">{{$booking->tel}}</p>
+                    <h2 class="singleview">NID No.:</h2>
+                    <p class="single-p">{{$booking->nid}}</p>
+                </div>
+
+
+
+
+                    <div class="col-6">
                     <h2 class="singleview">Room Type:</h2>
-                    <p class="single-p">Deluxe Room</p>
+                    <p class="single-p">{{ $booking->roomType}}</p>
                     <h2 class="singleview">Max Occupancy:</h2>
-                    <p class="single-p">2 adult, 2 children</p>
+                    <p class="single-p">{{ $booking->maxoccupancy}}</p>
                     <h2 class="singleview">Check-in Date:</h2>
-                    <p class="single-p">23.09.23</p>
+                    <p class="single-p">{{$booking->checkInDate}}</p>
                     <h2 class="singleview">Check-out Date:</h2>
-                    <p class="single-p">30.09.23</p>
+                    <p class="single-p">{{ $booking->checkOutDate}}</p>
+                </div>
+                    </div>
                 <button class="btn-primary singleview-button">Accept</button>
                 <button class="btn-danger singleview-button">Deny</button>
             </div>

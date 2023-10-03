@@ -4,11 +4,12 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\RoomController;
-use App\Http\Controllers\EmployeeAuthController;
 use App\Http\Controllers\RoomAuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\BookingController;
+
 
 
 
@@ -48,6 +49,7 @@ Route::middleware(["auth"])->group(function () {
     Route::get('/admin/room/{id}/edit', [RoomController::class, "edit"]);
     Route::post('/admin/room', [RoomController::class, "store"]);
     Route::put('/admin//room/{id}', [RoomController::class, "update"]);
+    Route::delete('/admin/room/{id}/delete/', [RoomController::class, "delete"]);
     Route::get('/admin/room/edit', [RoomController::class, "edit"]);
     Route::get('/admin/room/single', [RoomController::class, "single"]);
     Route::get('/admin/room/roomcategory/{id}', [RoomController::class, "roomcategory"]);
@@ -73,23 +75,31 @@ Route::get('/services', [CustomerController::class, "services"]);
 Route::get('/contact', [CustomerController::class, "contact"]);
 
 
-Route::get('/admin/employee/singleview', [EmployeeController::class, "singleview"]);
-Route::get('/admin/employee/reservation', [EmployeeController::class, "reservation"]);
-// Route::post('admin/employee/reservation', [EmployeeController::class, "reservation"]);
-Route::get('/admin/employee/booklists', [EmployeeController::class, "booklists"]);
 
 Route::get('/admin/employee/', [EmployeeController::class, "index"]);
 Route::get('/admin/employee/add', [EmployeeController::class, "add"]);
 Route::get('/admin/employee/single', [EmployeeController::class, "single"]);
 Route::get('/admin/employee/{id}', [EmployeeController::class, "show"]);
 Route::get('/admin/employee/{id}/edit', [EmployeeController::class, "edit"]);
+Route::delete('/admin/employee/{id}/delete', [EmployeeController::class, "delete"]);
 Route::post('admin/employee', [EmployeeController::class, "store"]);
 Route::put('/admin/employee/{id}', [EmployeeController::class, "update"]);
+
+
+Route::get('/admin/booking/booklists', [BookingController::class, "booklists"]);
+Route::get('/admin/booking/reservation', [BookingController::class, "reservation"]);
+Route::get('/admin/booking/{id}/editReservation', [BookingController::class, "editReservation"]);
+Route::get('/admin/booking/singleview', [BookingController::class, "singleview"]);
+Route::get('/admin/booking/{id}', [BookingController::class, "show"]);
+Route::post('admin/booking', [BookingController::class, "store"]);
+Route::put('/admin/booking/{id}', [BookingController::class, "update"]);
+
 
 
 
 
 Route::resource('/admin/category', CategoryController::class);
+// Route::get('/admin/category/{id}/delete', [CategoryController::class, "delete"]);
 // Route::get('/admin/category/viewcategory', [CategoryController::class, "viewcategory"]);
 // Route::get('/admin/category/addcategory', [CategoryController::class, "addcategory"]);
 // Route::post('admin/category', [CategoryController::class, "store"]);

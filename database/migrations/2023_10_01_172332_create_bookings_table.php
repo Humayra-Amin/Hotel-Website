@@ -1,0 +1,40 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('bookings', function (Blueprint $table) {
+            $table->id();
+
+            $table->string('name');
+            $table->string('email');
+            $table->string('tel');
+            $table->string('nid');
+            $table->string('roomcategory');
+            $table->string('roomno');
+            $table->string('roomType');
+            $table->string('maxoccupancy');
+            $table->string('checkInDate');
+            $table->string('checkOutDate');
+            $table->boolean('status');
+
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('booking');
+    }
+};

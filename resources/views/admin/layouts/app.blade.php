@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="{{asset('employees/css/fardin.css')}}">
     <link rel="stylesheet" href="{{asset('employees/css/singleview.css')}}">
     <link rel="stylesheet" href="{{asset('employees/css/reservation.css')}}">
+    <link rel="stylesheet" href="{{asset('employees/css/editReservation.css')}}">
     <link rel="stylesheet" href="{{asset('employees/css/booklists.css')}}">
 
 
