@@ -47,3 +47,9 @@
 }
 
 
+.linkbtn{
+  color: aliceblue;
+}
+.linkbtn:hover{
+  color: rgb(61, 61, 175);
+}

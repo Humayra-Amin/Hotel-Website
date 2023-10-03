@@ -20,11 +20,12 @@
             <div class="modal fade service-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered model-frame" role="document">
                   <div class="modal-content service-modal">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                    <i class="fa fa-solid fa-xmark closemark" data-dismiss="modal" aria-label="Close"></i>
+                      {{-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
+                      </button> --}}
+                  
                   <div id="serviceCarousel" class="carousel carousel-slide" data-interval="5000" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
