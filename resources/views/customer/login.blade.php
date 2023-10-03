@@ -59,8 +59,8 @@
                                 <button type="submit" class="login-btn1 mt-2 mb-4" >Login</button>
                             </div>
                         </div>
-                        <a href="#" class="px-5 pt-10">Forgot Password?</a>
-                        <p class="mt-0 mb-0">Don't have an Account? <a href="/register">Register here</a></p>
+                        <a href="#" class="px-5 pt-10 linkbtn">Forgot Password?</a>
+                        <p class="mt-0 mb-0 ">Don't have an Account? <a href="/register" class="linkbtn">Register here</a></p>
                     </form>
                 </div>
             </div>

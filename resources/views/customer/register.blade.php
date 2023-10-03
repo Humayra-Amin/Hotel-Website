@@ -64,7 +64,7 @@
                             </div>
                  
                             <div class="login-link">
-                             <p>Already have an Account? <a href="/login">Login</a></p>
+                             <p>Already have an Account? <a href="/login" class="btnlogin">Login</a></p>
                             </div>
                     </form>
                 </div>

@@ -1,10 +1,11 @@
 .group-file{
   margin-top: 0;
   margin-bottom: 0;
+  background-color:#aabbce;
 }
 
 .form-card-group{
-  background: rgb(164, 174, 255);
+  background: rgb(119, 126, 175);
   border-radius: 30px;
 }
 
@@ -43,3 +44,6 @@
 }
 
 
+.btnlogin{
+  color: aliceblue;
+}
