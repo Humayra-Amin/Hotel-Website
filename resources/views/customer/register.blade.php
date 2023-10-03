@@ -25,7 +25,7 @@
                 <div class="col-lg-7 px-3 pt-3 text-center py-5">
                     <h1 class="font-weight-bold py-3">Register</h1>
                     
-                    <form class="login-form" action="{{ route('register.post') }}" method="POST">
+                    <form class="login-form" action="{{ url('/post-register') }}" method="POST">
                         @csrf
 
                         <div class="title-row mt-3">
@@ -64,7 +64,7 @@
                             </div>
                  
                             <div class="login-link">
-                             <p>Already have an Account? <a href="/login">Login</a></p>
+                             <p>Already have an Account? <a href="/login" class="btnlogin">Login</a></p>
                             </div>
                     </form>
                 </div>

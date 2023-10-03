@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Booking;
-
+use App\Models\Customer;
 use Illuminate\Http\Request;
 
 class BookingController extends Controller
@@ -10,7 +10,6 @@ class BookingController extends Controller
     //
     public function reservation()
 {
-
     return view("admin.booking.reservation");
 }
 
@@ -29,6 +28,20 @@ public function store(Request $request)
         'checkOutDate' => 'required',
     ]);
 
+
+
+
+    // check customer 
+    $customer = Customer::where("email", $request->email)->first();
+    if(!$customer){
+        $customer->name = $request->name;
+        $customer->email = $request->email;
+        // $customer->password = ;
+    }
+
+
+
+
     $booking = new Booking();
     $booking->name = $request->name;
     $booking->email = $request->email;
@@ -40,7 +53,6 @@ public function store(Request $request)
     $booking->maxoccupancy = $request->maxoccupancy;
     $booking->checkInDate = $request->checkInDate;
     $booking->checkOutDate = $request->checkOutDate;
-
     $booking->save();
 
     return redirect("admin/booking/booklists")->with("success", "Booking Done....");
