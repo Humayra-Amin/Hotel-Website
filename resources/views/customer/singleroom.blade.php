@@ -183,8 +183,8 @@
               
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" >Close</button>
-                <button type="button" class="btn btn-primary" >Reserve</button>
+                <button type="button" class="btn btn-secondary" id="closeButton">Close</button>
+                <button type="button" class="btn btn-primary" id="reserveButton">Reserve</button>
             </div>
         </div>
     </div>

@@ -28,6 +28,9 @@ class CustomerController extends Controller
     }
 
 
+
+
+
     public function personalInfo()
     {
         return view("customer.personalInfo");
@@ -56,32 +59,6 @@ class CustomerController extends Controller
     }
 
 
-    public function store(Request $request)
-    {
-    $request->validate([
-        'id' => 'required',
-        'name' => 'required|max:50',
-        'email' => 'required|email',
-        'roomno' => 'required',
-        'status' => 'required',
-        'password'=> 'required',
-        'password'=> 'required',
-
-
-    ]);
-
-    $customer = new Customer();
-    $customer->id = $request->id;
-    $customer->name = $request->name;
-    $customer->email = $request->email;
-    $customer->roomno = $request->roomno;
-    $customer->status = $request->status;
-
-    $customer->save();
-
-    return redirect("customer")->with("success", "Customer listed");
-}
-
 
 
 
@@ -96,7 +73,9 @@ class CustomerController extends Controller
         $credentials = $request->only('email', 'password');
 
 
-        if (Auth::guard("emp")->attempt($credentials)) {
+
+
+        if (Auth::guard("customers")->attempt($credentials)) {
             $request->session()->regenerate();
             return redirect()->intended('/')->withSuccess('You have Successfully loggedin');
         }
@@ -109,7 +88,7 @@ class CustomerController extends Controller
     {  
         $request->validate([
             'name' => 'required',
-            'email' => 'required|email|unique:users',
+            'email' => 'required|email|unique:customers',
             'password' => 'required|confirmed',
         ]);
            
@@ -140,10 +119,21 @@ class CustomerController extends Controller
     }
 
 
+
+
+
+
+
     public function password()
     {
         return view("customer.changepass");
     } 
+
+
+
+
+
+
 
 
     public function Allrooms()

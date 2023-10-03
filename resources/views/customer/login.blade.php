@@ -23,7 +23,7 @@
                 <div class="col-lg-7 px-5 pt-5 text-center py-5">
                     <h1 class="font-weight-bold py-3">Login</h1>
                     <!-- <h4>Sign in to your account</h4> -->
-                    <form class="login-form" action="{{ route('login.post') }}" method="POST">
+                    <form class="login-form" action="{{ url('/post-login') }}" method="POST">
                         @csrf
 
                         {{-- <div class="form-row mt-3">
