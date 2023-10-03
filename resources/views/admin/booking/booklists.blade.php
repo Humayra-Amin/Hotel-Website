@@ -224,15 +224,12 @@
                         <th class="book-line-gap">Id</th>
                         <th class="book-line-gap">Name</th>
                         <th class="book-line-gap">Email</th>
+                        <th class="book-line-gap">Room Category</th>
                         <th class="book-line-gap">Check-in Date</th>
                         <th class="book-line-gap">Check-out Date</th>
                         </tr>
                         </thead>
                         <tbody>
-
-
-                          roomcategory
-
 
                           @foreach ($bookings as $booking)
 

@@ -211,83 +211,83 @@
 </div>
   @endsection
 
+
+
 {{-- our rooms --}}
 
-  {{-- <div class="section-site">
-    <div class="row">
-    <div class="col-md-12 mb-5 text-center">
-        <h1 class="room-section-heading">Our Rooms</h1>
-    </div>
-    </div>
-
+{{-- <div class="section-site">
   <div class="row">
+  <div class="col-md-12 mb-5 text-center">
+      <h1 class="room-section-heading">Our Rooms</h1>
+  </div>
+  </div>
+
+<div class="row">
+  <div class="col-md-4 mb-5 ">
+    <div class="hotel-room">
+      <img src="images/deluxe room.jpg" class="homeourimage-card" alt="Single Room">
+      <div class="hotel-room-body">
+        <h5 class="roomcard-title">Single Room</h5>
+        <p class="roomcard-text1">Cozy and comfortable single room.</p>
+        <p class="roomcard-text2">$100</p>
+        <p class="roomcard-text3 my-2">Per Night</p>
+      </div>
+    </div>
+  </div>
     <div class="col-md-4 mb-5 ">
       <div class="hotel-room">
-        <img src="images/deluxe room.jpg" class="homeimage-card" alt="Single Room">
+        <img src="images/deluxe room.jpg" class="homeourimage-card" alt="Single Room">
         <div class="hotel-room-body">
           <h5 class="roomcard-title">Single Room</h5>
           <p class="roomcard-text1">Cozy and comfortable single room.</p>
           <p class="roomcard-text2">$100</p>
-          <p class="roomcard-text3">Per Night</p>
+          <p class="roomcard-text3 my-2">Per Night</p>
         </div>
       </div>
     </div>
       <div class="col-md-4 mb-5 ">
         <div class="hotel-room">
-          <img src="images/deluxe room.jpg" class="homeimage-card" alt="Single Room">
+          <img src="images/deluxe room.jpg" class="homeourimage-card" alt="Single Room">
           <div class="hotel-room-body">
             <h5 class="roomcard-title">Single Room</h5>
             <p class="roomcard-text1">Cozy and comfortable single room.</p>
             <p class="roomcard-text2">$100</p>
-            <p class="roomcard-text3">Per Night</p>
+            <p class="roomcard-text3 my-2">Per Night</p>
           </div>
         </div>
       </div>
-        <div class="col-md-4 mb-5 ">
+        <div class="col-md-4 mb-5">
           <div class="hotel-room">
-            <img src="images/deluxe room.jpg" class="homeimage-card" alt="Single Room">
+            <img src="images/deluxe room.jpg" class="homeourimage-card" alt="Single Room">
             <div class="hotel-room-body">
               <h5 class="roomcard-title">Single Room</h5>
               <p class="roomcard-text1">Cozy and comfortable single room.</p>
               <p class="roomcard-text2">$100</p>
-              <p class="roomcard-text3">Per Night</p>
+              <p class="roomcard-text3 my-2">Per Night</p>
             </div>
           </div>
         </div>
-          <div class="col-md-4 mb-5">
-            <div class="hotel-room">
-              <img src="images/deluxe room.jpg" class="homeimage-card" alt="Single Room">
-              <div class="hotel-room-body">
-                <h5 class="roomcard-title">Single Room</h5>
-                <p class="roomcard-text1">Cozy and comfortable single room.</p>
-                <p class="roomcard-text2">$100</p>
-                <p class="roomcard-text3">Per Night</p>
-              </div>
+        <div class="col-md-4 mb-5 ">
+          <div class="hotel-room">
+            <img src="images/deluxe room.jpg" class="homeourimage-card" alt="Single Room">
+            <div class="hotel-room-body">
+              <h5 class="roomcard-title">Single Room</h5>
+              <p class="roomcard-text1">Cozy and comfortable single room.</p>
+              <p class="roomcard-text2">$100</p>
+              <p class="roomcard-text3 my-2">Per Night</p>
             </div>
           </div>
-          <div class="col-md-4 mb-5 ">
-            <div class="hotel-room">
-              <img src="images/deluxe room.jpg" class="homeimage-card" alt="Single Room">
-              <div class="hotel-room-body">
-                <h5 class="roomcard-title">Single Room</h5>
-                <p class="roomcard-text1">Cozy and comfortable single room.</p>
-                <p class="roomcard-text2">$100</p>
-                <p class="roomcard-text3">Per Night</p>
-              </div>
+        </div>
+        <div class="col-md-4 mb-5 ">
+          <div class="hotel-room">
+            <img src="images/deluxe room.jpg" class="homeourimage-card" alt="Single Room">
+            <div class="hotel-room-body">
+              <h5 class="roomcard-title">Single Room</h5>
+              <p class="roomcard-text1">Cozy and comfortable single room.</p>
+              <p class="roomcard-text2">$100</p>
+              <p class="roomcard-text3 my-2">Per Night</p>
             </div>
           </div>
-          <div class="col-md-4 mb-5 ">
-            <div class="hotel-room">
-              <img src="images/deluxe room.jpg" class="homeimage-card" alt="Single Room">
-              <div class="hotel-room-body">
-                <h5 class="roomcard-title">Single Room</h5>
-                <p class="roomcard-text1">Cozy and comfortable single room.</p>
-                <p class="roomcard-text2">$100</p>
-                <p class="roomcard-text3">Per Night</p>
-              </div>
-            </div>
-          </div>
-  </div>
-
-
+        </div>
+</div>
 </div> --}}

@@ -112,4 +112,34 @@ public function booklists()
     return view("admin.booking.booklists")->with('bookings',  $bookings);
 }
 
+
+public function accept(Request $request, $id)
+    {
+        $booking = Booking::find($id);
+
+        if (!$booking) {
+
+            return redirect()->back()->with('error', 'Booking not found.');
+        }
+
+        $booking->status = 'Accepted';
+        $booking->save();
+
+        return redirect()->back()->with('success', 'Booking accepted successfully!!!!');
+    }
+
+    public function deny(Request $request, $id)
+    {
+        $booking = Booking::find($id);
+
+        if (!$booking) {
+
+            return redirect()->back()->with('error', 'Booking not found.');
+        }
+
+        $booking->status = 'Denied';
+        $booking->save();
+
+        return redirect()->back()->with('success', 'Booking denied!!!!');
+    }
 }

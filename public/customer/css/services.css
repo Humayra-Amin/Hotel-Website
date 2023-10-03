@@ -5,7 +5,9 @@
   object-fit: cover;
 
 }
-
+.modal-content{
+     size: 100%;
+}
     .service-section{
     background:  #aabbce;
   }

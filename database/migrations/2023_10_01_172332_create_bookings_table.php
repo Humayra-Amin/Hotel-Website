@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('maxoccupancy');
             $table->string('checkInDate');
             $table->string('checkOutDate');
-            $table->boolean('status');
+            $table->string('status');
 
             $table->timestamps();
         });
