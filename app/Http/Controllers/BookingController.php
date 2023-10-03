@@ -36,7 +36,7 @@ public function store(Request $request)
     if(!$customer){
         $customer->name = $request->name;
         $customer->email = $request->email;
-        $customer->password = ;
+        // $customer->password = ;
     }
 
 
