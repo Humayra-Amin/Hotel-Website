@@ -1,7 +1,6 @@
 
-
-    @extends('customer.layouts.apps')
-    @section('apps')
+ @extends('customer.layouts.apps')
+ @section('apps')
     
   <div class="contain">
     <div class="row">

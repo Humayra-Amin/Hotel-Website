@@ -116,24 +116,6 @@ class CustomerController extends Controller
 
 
 
-<<<<<<< HEAD
-=======
-
-
-
-
-    public function password()
-    {
-        return view("customer.changepass");
-    } 
->>>>>>> 1f5417ea1077c9282945dad927fa6d5514998de2
-
-
-
-
-
-
-
 
     public function Allrooms()
     {

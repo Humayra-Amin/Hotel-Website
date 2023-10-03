@@ -31,9 +31,9 @@
           height: 100%;
           width: 380px;
           margin-top: 20px;
-          position: fixed;
+          /* position: fixed;
           top: 0;
-          left:0;
+          left:0; */
           background-color: #283b8b;
           padding-top: 120px;
           color: #fff;
