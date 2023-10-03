@@ -64,9 +64,9 @@ class CategoryController extends Controller
     
         return redirect("admin/category")->with("success", "Category added.");
     }
- public function destroy(Request $request)
+ public function delete(Request $request)
  {
    Category::destroy($request->id);
-   return redirect()->back();
+   return redirect()->back()->with('success','Record Successfully Deleted');
  }
 }

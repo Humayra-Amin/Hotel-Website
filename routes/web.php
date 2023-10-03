@@ -35,7 +35,7 @@ Route::post('/admin/post-register', [RoomAuthController::class, 'postRegister'])
  
 Route::get('/', [HomeController::class, "home"]);
 Route::get('/singleroom/{id}', [HomeController::class, "singleroom"]);
-Route::put('/roombook/{id}', [HomeController::class, "roombook"]);
+Route::put('/roombook', [HomeController::class, "roombook"]);
 
 
 Route::middleware(["auth"])->group(function () {
@@ -82,7 +82,7 @@ Route::get('/admin/employee/add', [EmployeeController::class, "add"]);
 Route::get('/admin/employee/single', [EmployeeController::class, "single"]);
 Route::get('/admin/employee/{id}', [EmployeeController::class, "show"]);
 Route::get('/admin/employee/{id}/edit', [EmployeeController::class, "edit"]);
-Route::delete('/admin/employee/{id}/delete', [EmployeeController::class, "delete"]);
+Route::get('/admin/employee/{id}/delete', [EmployeeController::class, "delete"]);
 Route::post('admin/employee', [EmployeeController::class, "store"]);
 Route::put('/admin/employee/{id}', [EmployeeController::class, "update"]);
 
@@ -103,7 +103,7 @@ Route::post('/admin/booking/{id}/deny', [BookingController::class, "deny"])->nam
 
 
 Route::resource('/admin/category', CategoryController::class);
-// Route::get('/admin/category/{id}/delete', [CategoryController::class, "delete"]);
+Route::get('/admin/category/{id}/delete', [CategoryController::class, "delete"]);
 // Route::get('/admin/category/viewcategory', [CategoryController::class, "viewcategory"]);
 // Route::get('/admin/category/addcategory', [CategoryController::class, "addcategory"]);
 // Route::post('admin/category', [CategoryController::class, "store"]);

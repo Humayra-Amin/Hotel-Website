@@ -11,7 +11,9 @@ class RoomBook extends Model
     protected $fillable = [
         'price',
         'name ',
+        'email ',
         'customer_id',
+        'roomcategory',
         'roomtype',
         'capacity',
         'checkin',

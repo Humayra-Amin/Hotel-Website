@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('price');
             $table->string('customer_id');
             $table->string('name');
+            $table->string('email');
+            $table->string('roomcategory');
             $table->string('roomtype');
             $table->string('capacity');
             $table->string('checkin');

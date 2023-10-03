@@ -140,7 +140,7 @@ public function delete(Request $request)
 { 
 
    Employee::destroy($request->id);
-   return redirect()->back();
+   return redirect()->back()->with('success','Record Successfully Deleted');
 
 }
 

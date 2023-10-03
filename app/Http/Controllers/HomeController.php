@@ -56,6 +56,8 @@ class HomeController extends Controller
     $request->validate([
         'price' => 'required',
         'name' => 'required',
+        'email' => 'required',
+        'roomcategory'=>'required',
         'roomtype' => 'required',
         'capacity' => 'required',
         'checkin' => 'required',
@@ -66,7 +68,9 @@ class HomeController extends Controller
     $booking=new RoomBook();
     $booking->price = $request->price;
     $booking->name = $request->name;
+    $booking->email = $request->email;
     $booking->customer_id = auth()->user()->id;
+    $booking->roomcategory = $request->roomcategory;
     $booking->roomtype = $request->roomtype;
     $booking->capacity = $request->capacity;
     $booking->checkin = $request->checkin;
