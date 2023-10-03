@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="{{asset('customer/css/reservation.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/services.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/contact.css')}}">
+  <link rel="stylesheet" href="{{asset('customer/css/rooms.css')}}">
+
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
