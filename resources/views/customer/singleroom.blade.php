@@ -132,7 +132,7 @@
         <div class="modal-content">
             <div class="modal-body">
 
-              <form action="{{ url('admin/booking') }}" method="POST" enctype="multipart/form-data">
+              <form action="{{ url('/roombook') }}" method="POST" enctype="multipart/form-data">
                 @csrf 
 
                 <div class="form-group">
