@@ -14,7 +14,7 @@
         <div class="col-sm-6">
             <div class="card customer-mr">
                     <i class="fa fa-key icon-customer"></i>
-                    <p class="font-customer"> <a href="/changepass">Change Password</a></p>
+                    <p class="font-customer"> <a href="/changepassword">Change Password</a></p>
             </div>
         </div>
    

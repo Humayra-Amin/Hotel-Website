@@ -1,5 +1,5 @@
-@extends('customer.layouts.app')
-@section('app')
+@extends('customer.layouts.apps')
+@section('apps')
 @include('admin.inc.message')
 
     <div class="change-body">

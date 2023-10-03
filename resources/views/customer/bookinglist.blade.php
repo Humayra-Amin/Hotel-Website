@@ -1,10 +1,7 @@
-@extends('customer.layouts.app')
 
 
-@section('app')
-
-
-
+    @extends('customer.layouts.apps')
+    @section('apps')
     
   <div class="contain">
     <div class="row">
@@ -40,121 +37,8 @@
         </div>
       </div>
       @endforeach
-
-
-
-      {{-- <div class="col-sm-3">
-        <div class="card booking-card">
-          <div class="price-tag">$250</div>
-          <div class="group-card-body">
-            <h5 class="card-title mt-4">Name: Abdur Rahman</h5>
-            <ul class="details">
-              <li> Room Type: Deluxe</li>
-              <li> Capacity: 4 guests</li>
-              <li> Check-In: 2023-09-01</li>
-              <li> Check-Out: 2023-09-07</li>
-              <button class="button"> View</button>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-3">
-        <div class="card booking-card">
-          <div class="price-tag">$250</div>
-          <div class="group-card-body">
-            <h5 class="card-title mt-4">Name: Abdur Rahman</h5>
-            <ul class="details">
-              <li> Room Type: Deluxe</li>
-              <li> Capacity: 4 guests</li>
-              <li> Check-In: 2023-09-01</li>
-              <li> Check-Out: 2023-09-07</li>
-              <button class="button"> View</button>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-3">
-        <div class="card booking-card">
-          <div class="price-tag">$250</div>
-          <div class="group-card-body">
-            <h5 class="card-title mt-4">Name: Abdur Rahman</h5>
-            <ul class="details">
-              <li> Room Type: Deluxe</li>
-              <li> Capacity: 4 guests</li>
-              <li> Check-In: 2023-09-01</li>
-              <li> Check-Out: 2023-09-07</li>
-              <button class="button"> View</button>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-3">
-        <div class="card booking-card">
-          <div class="price-tag">$250</div>
-          <div class="group-card-body">
-            <h5 class="card-title mt-4">Name: Abdur Rahman</h5>
-            <ul class="details">
-              <li> Room Type: Deluxe</li>
-              <li> Capacity: 4 guests</li>
-              <li> Check-In: 2023-09-01</li>
-              <li> Check-Out: 2023-09-07</li>
-              <button class="button"> View</button>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-3">
-        <div class="card booking-card">
-          <div class="price-tag">$250</div>
-          <div class="group-card-body">
-            <h5 class="card-title mt-4">Name: Abdur Rahman</h5>
-            <ul class="details">
-              <li> Room Type: Deluxe</li>
-              <li> Capacity: 4 guests</li>
-              <li> Check-In: 2023-09-01</li>
-              <li> Check-Out: 2023-09-07</li>
-              <button class="button"> View</button>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-3">
-        <div class="card booking-card">
-          <div class="price-tag">$250</div>
-          <div class="group-card-body">
-            <h5 class="card-title mt-4">Name: Abdur Rahman</h5>
-            <ul class="details">
-              <li> Room Type: Deluxe</li>
-              <li> Capacity: 4 guests</li>
-              <li> Check-In: 2023-09-01</li>
-              <li> Check-Out: 2023-09-07</li>
-              <button class="button"> View</button>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-3">
-        <div class="card booking-card">
-          <div class="price-tag">$250</div>
-          <div class="group-card-body">
-            <h5 class="card-title mt-4">Name: Abdur Rahman</h5>
-            <ul class="details">
-              <li> Room Type: Deluxe</li>
-              <li> Capacity: 4 guests</li>
-              <li> Check-In: 2023-09-01</li>
-              <li> Check-Out: 2023-09-07</li>
-              <button class="button"> View</button>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div> --}}
+      
   </div>
+
 
 @endsection
