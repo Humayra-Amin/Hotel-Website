@@ -51,13 +51,10 @@
                       <span class="carousel-control-next-icon slider-arrow" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </a>
-                  </div>
-              
+                  </div>        
                   </div>
               </div>
           </div>
-
-
           <h2 class="mt-3 service-title text-center">Infinity Swimming Pool</h2>
           <p class="services-description">The infinity swimming pool is a breathtaking architectural feature commonly found in upscale hotels, designed to provide an awe-inspiring visual experience by seamlessly blending the pool's water with the surrounding  landscape or cityscape. Imagine yourself lounging beside this luxurious oasis, soaking in the panoramic views of the bustling city below.</p>
         </div>
@@ -90,7 +87,6 @@
                       <div class="carousel-item">
                         <img src="image/yard.jpg" class="service-slider-img">
                       </div>
-                      
                       <div class="carousel-item">
                         <img src="image/pool2.jpg"  class="service-slider-img">
                       </div>
@@ -107,7 +103,6 @@
                   </div>
               </div>
           </div>
-
         <h2 class="mt-3 service-title text-center">Restaurant</h2>
         <p  class="services-description">Restaurants & Bar at Hotel Pradise turns up the heat on culinary glamour. Dine, drink and chill at our fabulous dining destinations, all overseen by our team of culinary expert lead by internationally experienced Chef & his team. Savor creative cocktails and delectable dishes at our four can't-miss Our Restaurant,Infinity Pool Café and Sunset Bar & Grill.</p>
       </div>
@@ -120,7 +115,6 @@
       <div class="row service-image-container">
         <div class="col-sm-6">
             <img src="{{asset('image/gym (2).jpg')}}" class="img-fluid service-imgfile" alt="">
-
             <button class="btn  service-view-btn" data-toggle="modal" data-target="#myModal">More Photos</button>
 
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -145,7 +139,6 @@
                       <div class="carousel-item">
                         <img src="image/yard.jpg" class="service-slider-img">
                       </div>
-                      
                       <div class="carousel-item">
                         <img src="image/pool2.jpg"  class="service-slider-img">
                       </div>
