@@ -1,17 +1,10 @@
-{{-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hotel Booking List</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{asset('employees/auth/bookinglist.css')}}">
+@extends('customer.layouts.app')
 
-</head>
-<body> --}}
 
-    @extends('customer.layouts.app')
-    @section('app')
+@section('app')
+
+
+
     
   <div class="contain">
     <div class="row">
@@ -24,6 +17,9 @@
         </div>
       </div>
     </div>
+
+
+
 
     <h1 class="mt-4 mb-4 ml section-heading">ALL Booking List</h1>
     <div class="row">
@@ -44,6 +40,9 @@
         </div>
       </div>
       @endforeach
+
+
+
       {{-- <div class="col-sm-3">
         <div class="card booking-card">
           <div class="price-tag">$250</div>
@@ -157,8 +156,5 @@
       </div>
     </div> --}}
   </div>
-  {{-- <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</body>
-</html> --}}
 
 @endsection
