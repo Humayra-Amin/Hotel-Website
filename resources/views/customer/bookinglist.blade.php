@@ -14,6 +14,9 @@
       </div>
     </div>
 
+
+
+
     <h1 class="mt-4 mb-4 ml section-heading">ALL Booking List</h1>
     <div class="row">
       @foreach($booklist as $Customer)
@@ -35,6 +38,6 @@
       @endforeach
       
   </div>
-
+</div>
 
 @endsection

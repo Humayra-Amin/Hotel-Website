@@ -113,14 +113,15 @@
                     <input type="date" class="form-control" name="checkOutDate" id="checkOutDate" required>
                 </div>
 
-
-              </form>
               
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" id="closeButton">Close</button>
                 <button type="button" class="btn btn-primary" id="reserveButton">Reserve</button>
             </div>
+
+          </form>
+          
         </div>
     </div>
 </div>
