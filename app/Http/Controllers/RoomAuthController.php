@@ -71,7 +71,7 @@ class RoomAuthController extends Controller
         Session::flush();
         Auth::logout();
   
-        return Redirect('admin/adminlogin');
+        return Redirect('admin/login');
     }
 
 }

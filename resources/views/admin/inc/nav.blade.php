@@ -89,7 +89,7 @@
         <div id="collapsecustomer" class="collapse" aria-labelledby="headingcustomer" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Customer:</h6>
-                <a class="collapse-item" href="/customerlist">Customer List</a>
+                <a class="collapse-item" href="/admin/customerlist">Customer List</a>
        
             </div>
         </div>

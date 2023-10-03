@@ -24,7 +24,7 @@ class CustomerController extends Controller
     public function customerlist()
     {
         $customers = Customer::all();
-        return view("customer.customerlist")->with('customers',  $customers);
+        return view("admin.customerlist")->with('customers',  $customers);
     }
 
 
@@ -32,14 +32,10 @@ class CustomerController extends Controller
     {
         return view("customer.personalInfo");
     }
-    public function customernav()
-    {
-        return view("customer.customernav");
-    }
   
-    public function changepass()
+    public function changepassword()
     {
-        return view("customer.changepass");
+        return view("customer.changepassword");
     }
     public function bookmodal()
     {
@@ -140,10 +136,7 @@ class CustomerController extends Controller
     }
 
 
-    public function password()
-    {
-        return view("customer.changepass");
-    } 
+
 
 
     public function Allrooms()
