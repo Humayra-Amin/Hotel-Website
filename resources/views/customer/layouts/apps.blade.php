@@ -48,7 +48,7 @@
 
       @yield('apps')
 
-      @include('customer.inc.sidebar')
+   
 
       @include('customer.inc.footer')
   
