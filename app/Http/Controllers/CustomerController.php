@@ -140,11 +140,17 @@ class CustomerController extends Controller
     }
 
 
-
-
     public function password()
     {
         return view("customer.changepass");
     } 
+
+
+    public function Allrooms()
+    {
+        return view("customer.Allrooms");
+    } 
+
+
  }
 

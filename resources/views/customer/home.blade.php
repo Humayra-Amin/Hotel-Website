@@ -60,14 +60,19 @@
   <!-- slider end -->
 
 
-<div class="section-site">
+
+
+  <!-- Our room -->
+
+
+  <div class="section-site">
     <div class="row">
     <div class="col-md-12 mb-5 text-center">
         <h1 class="room-section-heading">Our Rooms</h1>
     </div>
     </div>
 
-<div class=row>
+    <div class=row>
   @foreach ($rooms as $room)
     <div class="col-md-6 col-lg-4 mb-5">
     <div class="hotel-room">
@@ -209,7 +214,9 @@
 </div>
 </div>
 </div>
-  @endsection
+  
+
+@endsection
 
 
 
