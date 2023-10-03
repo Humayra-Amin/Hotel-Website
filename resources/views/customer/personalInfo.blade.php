@@ -16,7 +16,7 @@
                     <div class=" files-img">
                       
                         <div class="imageWrapper">
-                          <img class="image" src="http://via.placeholder.com/700x500">
+                          <img class="image-info" src="http://via.placeholder.com/700x500">
                         </div>
                       </div>
                       <p class="text-center para">ABC</p>

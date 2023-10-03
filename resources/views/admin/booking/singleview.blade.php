@@ -126,6 +126,9 @@
                     
                 {{-- <button class="btn-primary singleview-button">Accept</button>
                 <button class="btn-danger singleview-button">Deny</button> --}}
+
+                @include('admin.inc.message')
+
                 <div class="d-flex">
 
                         <form method="POST" action="{{ route('admin.booking.accept', ['id' => $booking->id]) }}">
