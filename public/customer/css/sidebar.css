@@ -29,8 +29,9 @@
       /* Sidebar styling */
 .sidebar {
           height: 100%;
-          width: 380px;
-          margin-top: 20px;
+          width: 370px;
+          margin-top: 100px;
+          margin-bottom: 20px;
           /* position: fixed;
           top: 0;
           left:0; */
