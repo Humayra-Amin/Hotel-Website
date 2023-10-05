@@ -1,5 +1,9 @@
 @extends('admin.layouts.app')
+
+
 @section('app')
+
+
 <div id="content-wrapper" class="d-flex flex-column">
     
 
@@ -76,16 +80,21 @@
 
 
 
+
 <div class="container mt-3 ">
+
 
 
 @include('admin.inc.message')
 
 
+
 <h2 class="edit-h2">Edit Reservation</h2>
+
   
 <form action="admin/booking{{$booking->id}}" method="POST" enctype="multipart/form-data">
     @csrf
+
     @method ('PUT')
 
 
@@ -93,28 +102,40 @@
       
       
       <div class="col-sm-8 form-group">
+
         <h2 class="text-center">Reservation</h2>
+
       </div>
+
+
 
       <div class="col-sm-6  form-group">
         <label for="name" class="editreserve-label">Name</label>
         <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" value="{{$booking->name}}" required>
       </div>
 
+
+
       <div class="col-sm-6 form-group">
         <label for="email" class="editreserve-label">Email</label>
         <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" value="{{$booking->email}}" required>
       </div>
+
+
 
       <div class="col-sm-6 form-group">
         <label for="tel" class="editreserve-label">Contact No.</label>
         <input type="tel" name="tel" class="form-control" id="tel" placeholder="Enter Contact Number" value="{{$booking->tel}}" required>
       </div>
 
+
+
       <div class="col-sm-6 form-group">
         <label for="email" class="editreserve-label">Input NID</label>
         <input type="nid" class="form-control" name="nid" id="nid" placeholder="Enter NID" value="{{$booking->nid}}" required>
       </div>
+
+
 
       <div class="col-sm-6 form-group">
         <label for="roomcategory" class="reserve-label">Room Category </label>
@@ -126,6 +147,8 @@
             <option @if($booking->roomcategory == 'Queen') selected @endif>Queen</option>
         </select>
       </div>
+
+
 
       <div class="col-sm-6 form-group">
         <label for="roomType" class="editreserve-label">Room Type </label>
@@ -141,20 +164,28 @@
         </select>
       </div>
 
+
+
       <div class="col-sm-6 form-group">
         <label for="roomno" class="reserve-label">Room No.</label>
         <input type="number" class="form-control" name="roomno" id="roomno" placeholder="Enter Room No." value="{{$booking->roomno}}" required>
       </div>
+
+
 
       <div class="col-sm-6 form-group">
         <label for="maxoccupancy" class="editreserve-label">Max Occupancy</label>
         <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter maxoccupancy" value="{{$booking->maxoccupancy}}" required>
       </div>
 
+
+
       <div class="col-sm-6 form-group">
         <label for="checkInDate" class="editreserve-label">Check-in Date</label>
             <input type="date" class="form-control" name="checkInDate" id="checkInDate" value="{{$booking->checkInDate}}" required>
       </div>
+
+
 
       <div class="col-sm-6 form-group">
         <label for="checkOutDate" class="editreserve-label">Check-out Date</label>
@@ -162,21 +193,22 @@
       </div>
 
 
+
+
       <button type="submit" class="btn btn-primary button-form">Save</button>
 
+
+
     </div>
+
+
     </form>
+
+
 </div>
 
 
 
-{{-- <!-- Add Bootstrap JS and jQuery scripts -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- Add custom JS -->
-<script src="script.js"></script>
-</body>
-</html> --}}
-
 @endsection
+
+

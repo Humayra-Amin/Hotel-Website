@@ -11,35 +11,54 @@ use Illuminate\Support\Facades\Storage;
 class RoomController extends Controller
 {
     //
+
+
     public function index()
     {
+
         $categories = Category::all();
         return view("admin.category.viewcategory")->with('categories',  $categories);
+
     }
+
+
 
 
     public function roomcategory(Request $request)
     {
+
         $rooms = Room::where('category_id',$request->id)->get();
         return view("admin.room.index")->with('rooms',  $rooms);
+
     }
+
+
 
 
     public function add()
     {   
+
         $categories = Category::all();
         return view("admin.room.add")->with('categories',  $categories);
+
     }
+
 
 
 
     public function single()
     {
+
         return view("admin.room.single");
 
     }
+
+
+
+
     public function store(Request $request)
     {
+
 
         $request->validate([
             'roomtitle' => 'required|max:20',
@@ -55,8 +74,8 @@ class RoomController extends Controller
             'guestservice' => 'required',
             'facilities' => 'required',
 
-
         ]);
+
 
 
         $room = new Room();
@@ -76,18 +95,29 @@ class RoomController extends Controller
         $room->save();
 
 
+
         foreach($request->file('image') as $img){
             Storage::disk("public")->put("$room->id", $img);
+
+
         }
+
+        
         $room->image= Storage::disk("public")->files($room->id);
         $room->update();
 
 
 
         return redirect("admin/room")->with("success", "Room created.");
+
     }
+
+
+
     public function update(Request $request,$id)
     {   
+
+
         $request->validate([
             'roomtitle' => 'required|max:20',
             'roomno' => 'required|integer',
@@ -102,6 +132,7 @@ class RoomController extends Controller
             'guestservice' => 'required',
             'facilities' => 'required',
         ]);
+
 
 
         $room = Room::find($id);
@@ -125,21 +156,36 @@ class RoomController extends Controller
        if($request->file('image')){
         foreach($request->file('image') as $img){
             Storage::disk("public")->put("$room->id", $img);
+
         }
+
     }
+
+
         $room->image= Storage::disk("public")->files($room->id);
         $room->update();
 
+
+
         return redirect("admin/room")->with("success", "Room updated.");
+
+
 
     }
 
+
+
+
     public function show($id)
     { 
+
        $room=Room::where("id",$id)->firstOrfail();
        return view("admin.room.single")->with('room',  $room);
 
     }
+
+
+
 
     public function edit($id)
     { 
@@ -148,6 +194,10 @@ class RoomController extends Controller
        return view("admin.room.edit")->with('room',  $room);
 
     }
+
+
+
+    
     public function delete(Request $request)
     { 
 

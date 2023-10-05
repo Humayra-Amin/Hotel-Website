@@ -74,7 +74,9 @@
 
                   
               </div>
-          </li>   
+
+          </li>
+             
        </nav>
 
 
@@ -82,7 +84,7 @@
                  <div class="container mt-3">
                           <h2 class="text-left">Add Rooms</h2>
                        
-                    <form action="{{ url('admin/room') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ url('/admin/room') }}" method="POST" enctype="multipart/form-data">
                       @csrf
   
                       <div class="row custom-jumbotron box8">

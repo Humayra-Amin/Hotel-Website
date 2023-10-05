@@ -11,21 +11,27 @@ use Illuminate\Support\Facades\Storage;
 class HomeController extends Controller
 {
     //
+
+
     public function home()
     {   
+
         $rooms=Room::all()->take(6);
         return view("customer.home")->with('rooms',  $rooms);
-    }
-    // public function singleroom()
-    // {
-    //     return view("room.singleroom");
 
-    // }
+    }
+
+
+
     public function singleroom($id)
     { 
+
        $room=Room::where("id",$id)->firstOrfail();
        return view("customer.singleroom")->with('room',  $room);
+
     }
+
+
 
     public function roombook(Request $request, $id)
     { 
@@ -45,14 +51,21 @@ class HomeController extends Controller
 
     }
 
+
+
     public function bookinglist()
     { 
+
         $booklist = Customer::all();
         return view("customer.bookinglist")->with('booklist',  $booklist);
     
     }
+
+
+
     public function store(Request $request)
     {
+
     $request->validate([
         'price' => 'required',
         'name' => 'required',
@@ -63,21 +76,23 @@ class HomeController extends Controller
         'checkin' => 'required',
         'checkout' => 'required',
 
-    ]);
+        ]);
 
-    $booking=new RoomBook();
-    $booking->price = $request->price;
-    $booking->name = $request->name;
-    $booking->email = $request->email;
-    $booking->customer_id = auth()->user()->id;
-    $booking->roomcategory = $request->roomcategory;
-    $booking->roomtype = $request->roomtype;
-    $booking->capacity = $request->capacity;
-    $booking->checkin = $request->checkin;
-    $booking->checkout = $request->checkout;
+        $booking=new RoomBook();
+        $booking->price = $request->price;
+        $booking->name = $request->name;
+        $booking->email = $request->email;
+        $booking->customer_id = auth()->user()->id;
+        $booking->roomcategory = $request->roomcategory;
+        $booking->roomtype = $request->roomtype;
+        $booking->capacity = $request->capacity;
+        $booking->checkin = $request->checkin;
+        $booking->checkout = $request->checkout;
+        $booking->save();
 
-    $booking->save();
+        return redirect("booking")->with("success", "Room Booked listed");
 
-    return redirect("booking")->with("success", "Room Booked listed");
-}
+    }
+
+    
 }

@@ -81,6 +81,10 @@
  
                   
 
+@include('admin.inc.message')
+
+
+
       <h2 class="single-h2">Booking Info</h2>
 
       <div class="book-container mt-3">
@@ -157,15 +161,6 @@
 
 
                     </div>
-                    
-                {{-- <button class="btn-primary singleview-button">Accept</button>
-                <button class="btn-danger singleview-button">Deny</button> --}}
-
-
-
-
-@include('admin.inc.message')
-
 
 
 

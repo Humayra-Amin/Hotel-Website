@@ -1,11 +1,11 @@
 @extends('customer.layouts.apps')
 
+
 @section('apps')
 
 
 
   <div class="room-details">
-
 
 
     <!-- Room Details Section -->
@@ -17,22 +17,29 @@
 
           <!-- Slider Carousel -->
           <div id="roomSlider" class="carousel slide" data-ride="carousel">
+
             <div class="carousel-inner">
 
               @if ($room->image)
+
               @foreach ($room->image as $img)
+
+
               <div>
                   <img src='{{Storage::disk("public")->url($img)}}' class="d-block w-100" >
               </div>
 
 
+
               @endforeach
               
+
               
               @endif  
 
 
             </div>
+
 
 
 
@@ -50,6 +57,7 @@
 
 
 
+
           </div>
 
         </div>
@@ -57,28 +65,37 @@
 
         <div class="col-md-6">
 
+
           <!-- Room Details -->
             <h2>{{$room->roomtitle}}</h2>
+
             <p>Description: {{$room->description}}</p>
+
             <p>Room Availability: {{$room->availablerooms}}</p>
+
             <p>Max Occupancy: {{$room->maxoccupancy}}</p>
+
             <p>Price: {{$room->price}}</p>
+
             <p>Facilities: </p>
+
             @foreach ($room->facilities as $f)
            
             <li class="facilities-item"> {{$f}} </li>
         
         @endforeach   
+
         
             <p>{{$room->roomprice}}</p>
+
 
 
 
 @include('admin.inc.message')
 
 
-
             <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#reservationModal">Book Now</button>
+
 
           </div>
 
@@ -99,9 +116,12 @@
 
 <div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     
+
   <div class="modal-dialog" role="document">
 
+
         <div class="modal-content">
+
 
             <div class="modal-body">
 
@@ -158,11 +178,13 @@
                     <label for="checkInDate">Check-in Date</label>
                     <input type="date" class="form-control" name="checkInDate" id="checkInDate" required>
                 </div>
+
+
+
                 <div class="form-group">
                     <label for="checkOutDate">Check-out Date</label>
                     <input type="date" class="form-control" name="checkOutDate" id="checkOutDate" required>
                 </div>
-
 
 
               

@@ -23,11 +23,13 @@ class Employee extends Model
         'sex',
         'salary',
         'position',
-        // 'password',
-        // 'confirm-password',
         'image',
     ];
+
+
     protected $casts = [
         'image' => 'array',
     ];
+
+    
 }

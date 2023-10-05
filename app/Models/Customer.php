@@ -16,6 +16,9 @@ class Customer extends Authenticatable
      *
      * @var array<int, string>
      */
+
+
+     
     protected $fillable = [
         'name',
         'email',
@@ -28,6 +31,9 @@ class Customer extends Authenticatable
 
     ];
 
+
+
+
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -38,6 +44,10 @@ class Customer extends Authenticatable
         'remember_token',
     ];
 
+
+
+
+
     /**
      * The attributes that should be cast.
      *
@@ -47,6 +57,8 @@ class Customer extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+
 
     
 }

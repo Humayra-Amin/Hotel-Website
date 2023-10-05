@@ -69,7 +69,6 @@
 
                         <div class="title-row py-3">
                             <div class="offset-1 col-lg-10">
-                                {{-- <button type="button" class="btn1 mt-2 mb-4">Login</button>                            --}}
                                 <button type="submit" class="login-btn1 mt-2 mb-4" >Login</button>
                             </div>
                         </div>

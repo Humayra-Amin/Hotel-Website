@@ -53,7 +53,7 @@
 
     <h1 class="mt-4 mb-4 ml section-heading">ALL Booking List</h1>
     <div class="row">
-      @foreach($booklist as $Customer)
+      @foreach($booklist as $booking)
       <div class="col-sm-3">
         <div class="card booking-card">
           <div class="price-tag">{{$booking->price}}</div>
