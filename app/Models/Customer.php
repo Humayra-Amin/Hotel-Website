@@ -23,10 +23,7 @@ class Customer extends Authenticatable
         'name',
         'email',
         'password',
-        
-        'id',
-        'roomno',            
-        'status',
+        'id',           
         'image',
 
     ];
