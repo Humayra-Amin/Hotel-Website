@@ -1,11 +1,6 @@
 @extends('customer.layouts.apps')
-
-
 @section('apps')
-
-
-    
- @include('admin.inc.message')
+@include('admin.inc.message')
 
 
 <!-- Sidebar -->

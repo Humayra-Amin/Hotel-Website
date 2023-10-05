@@ -104,8 +104,6 @@
 
   <div class="section-site">
 
-
-
     <div class="row">
     <div class="col-md-12 mb-5 text-center">
         <h1 class="room-section-heading">Our Rooms</h1>
