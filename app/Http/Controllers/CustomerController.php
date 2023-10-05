@@ -53,20 +53,24 @@ class CustomerController extends Controller
     public function changepassword(Request $request)
     {
 
-        // return view("customer.changepassword");
-
         $request->validate([
-            'password' => 'required',
-            'newpassword' => 'required|confirmed',
-
+            'old_password' => 'required',
+            'new_password' => 'required|confirmed',
         ]);
 
-           
-        $data = $request->all();
-        $check = $this->create($data);
 
-         
-        return redirect("/")->withSuccess('Great! You have Successfully loggedin');
+        #Match The Old Password
+        if(!Hash::check($request->old_password, auth()->user()->password)){
+            return back()->with("error", "Old Password Doesn't match!");
+        }
+
+
+        #Update the new Password
+        User::whereId(auth()->user()->id)->update([
+            'password' => Hash::make($request->new_password)
+        ]);
+
+        return back()->with("status", "Password changed successfully!");
 
     }
 

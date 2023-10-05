@@ -68,17 +68,17 @@
         <div class=" change-password-form">
 
           <div class=" form-group">
-              <input type="password" class="labelp" id="old-password" placeholder="OLD PASSWORD" name="password" required>
+              <input type="password" class="labelp" id="old-password" placeholder="OLD PASSWORD" name="old_password" required>
           </div>
 
 
           <div class="form-group">
-                <input type="password" class="labelp" id="new-password" placeholder="NEW PASSWORD" name="newpassword" required>
+                <input type="password" class="labelp" id="new-password" placeholder="NEW PASSWORD" name="new_password" required>
           </div>
 
 
           <div class="form-group">
-                <input type="password" class="labelp" id="confirm-password" placeholder="CONFIRM PASSWORD" name="confirmpassword" required>
+                <input type="password" class="labelp" id="confirm-password" placeholder="CONFIRM PASSWORD" name="confirm_password" required>
           </div>
 
         </div>
