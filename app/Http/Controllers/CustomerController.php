@@ -53,20 +53,7 @@ class CustomerController extends Controller
     public function changepassword(Request $request)
     {
 
-        // return view("customer.changepassword");
-
-        $request->validate([
-            'password' => 'required',
-            'newpassword' => 'required|confirmed',
-
-        ]);
-
-           
-        $data = $request->all();
-        $check = $this->create($data);
-
-         
-        return redirect("/")->withSuccess('Great! You have Successfully loggedin');
+        return view("customer.changepassword");
 
     }
 
