@@ -39,7 +39,7 @@
       <div class="col-sm-6">
           <div class="card customer-ml my-3">
                   <i class="fa fa-address-card icon-customer"></i>
-                  <p class="font-customer"> <a href="/personalInfo">Profile Information</a></p>
+                  <p class="font-customer"> <a href="/Account">Account</a></p>
           </div>
       </div>
 </div>
