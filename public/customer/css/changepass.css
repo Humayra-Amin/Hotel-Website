@@ -8,20 +8,27 @@
     display: flex;
     justify-content: center;
    
-    width:calc(100% - 700px);
+    /* width:calc(100% - 700px); */
+    width: 570px;
     margin-left: auto;
     margin-top:200px;
-    margin-right:130px;
+    margin-right:300px;
     position: absolute;
     top: 5vh;
     right: 10px; 
+    background: rgb(195, 200, 235);
   }  
+.texts
+  {
+    margin-right: 5px;
 
+  }
   .change-password-form {
   
     align-items: center;
-    background-color: #ffffff;
+    background: rgb(195, 200, 235);
     padding: 5px;
+    margin-right: 60px;
 
   }
 
@@ -33,16 +40,19 @@
     display: block;
     margin-top: 5px;
     font-weight: bold;
-    
-
-  }
-
-  input[type="password"] {
     width: 270px;
     padding: 18px;
     border: 1px solid #ccc;
     border-radius: 4px;
+
   }
+
+  /* input[type="password"] {
+    width: 270px;
+    padding: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  } */
 
   input[type="submit"] {
     background-color:#0056b3; 
@@ -51,6 +61,7 @@
     border-radius: 4px;
     padding: 15px 25px;
     cursor: pointer;
+    margin-left: 10px;
   }
 
   input[type="submit"]:hover {

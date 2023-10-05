@@ -104,7 +104,7 @@ Route::middleware(["auth"])->group(function () {
     Route::get('/register', [CustomerController::class, "register"]);
     Route::post('/post-register', [CustomerController::class, "postRegister"]);
     Route::get('/logout', [CustomerController::class, "logout"]);
-    Route::get('/personalInfo', [CustomerController::class, "personalInfo"]);
+    Route::get('/Account', [CustomerController::class, "Account"]);
     Route::get('/changepassword', [CustomerController::class, "changepassword"]);
     Route::get('/bookmodal', [CustomerController::class, "bookmodal"]);
     Route::get('/services', [CustomerController::class, "services"]);

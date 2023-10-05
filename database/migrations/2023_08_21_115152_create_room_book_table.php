@@ -6,11 +6,17 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+
+
     /**
      * Run the migrations.
      */
+
+
     public function up(): void
     {
+
+
         Schema::create('room_book', function (Blueprint $table) {
             $table->id();
             $table->string('room_id')->nullable();
@@ -26,13 +32,20 @@ return new class extends Migration
             $table->string('checkin');
             $table->string('checkout');
         });
+
+
     }
+
+
 
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
+        
         Schema::dropIfExists('room_book');
+
     }
+    
 };

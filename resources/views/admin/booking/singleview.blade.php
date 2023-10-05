@@ -78,14 +78,27 @@
                    </li>   
                   </nav>
                        
-                       
+ 
+                  
+
+@include('admin.inc.message')
+
+
+
       <h2 class="single-h2">Booking Info</h2>
+
       <div class="book-container mt-3">
+
         <div class="book-card-text">
+
         </div>
+
           <div class="book-row">
+
             <div class="col-12">
+
             </div>
+
 
             <div class="col-12 bookinfo">
 
@@ -95,55 +108,93 @@
 
 
                     <div class="col-6">
+
                     <h2 class="singleview">Name:</h2>
+
                     <p class="single-p">{{$booking->name}}</p>
+
                     <h2 class="singleview">Email:</h2>
+
                     <p class="single-p">{{$booking->email}}</p>
+
                     <h2 class="singleview">Contact No.:</h2>
+
                     <p class="single-p">{{$booking->tel}}</p>
+
                     <h2 class="singleview">NID No.:</h2>
+
                     <p class="single-p">{{$booking->nid}}</p>
+
                     <h2 class="singleview">Room Category:</h2>
+
                     <p class="single-p">{{$booking->roomcategory}}</p>
+
+
                 </div>
 
 
 
 
                     <div class="col-6">
-                    <h2 class="singleview">Room Type:</h2>
-                    <p class="single-p">{{ $booking->roomType}}</p>
-                    <h2 class="singleview">Room No.:</h2>
-                    <p class="single-p">{{ $booking->roomno}}</p>
-                    <h2 class="singleview">Max Occupancy:</h2>
-                    <p class="single-p">{{ $booking->maxoccupancy}}</p>
-                    <h2 class="singleview">Check-in Date:</h2>
-                    <p class="single-p">{{$booking->checkInDate}}</p>
-                    <h2 class="singleview">Check-out Date:</h2>
-                    <p class="single-p">{{ $booking->checkOutDate}}</p>
-                </div>
-                    </div>
-                    
-                {{-- <button class="btn-primary singleview-button">Accept</button>
-                <button class="btn-danger singleview-button">Deny</button> --}}
 
-                @include('admin.inc.message')
+                    <h2 class="singleview">Room Type:</h2>
+
+                    <p class="single-p">{{ $booking->roomType}}</p>
+
+                    <h2 class="singleview">Room No.:</h2>
+
+                    <p class="single-p">{{ $booking->roomno}}</p>
+
+                    <h2 class="singleview">Max Occupancy:</h2>
+
+                    <p class="single-p">{{ $booking->maxoccupancy}}</p>
+
+                    <h2 class="singleview">Check-in Date:</h2>
+
+                    <p class="single-p">{{$booking->checkInDate}}</p>
+
+                    <h2 class="singleview">Check-out Date:</h2>
+
+                    <p class="single-p">{{ $booking->checkOutDate}}</p>
+
+                </div>
+
+
+                    </div>
+
+
 
                 <div class="d-flex">
 
+                        
+                    
                         <form method="POST" action="{{ route('admin.booking.accept', ['id' => $booking->id]) }}">
                             @csrf
                             <button type="submit" class="btn-primary singleview-button">Accept</button>
                         </form>
 
+
+
                         <form method="POST" action="{{ route('admin.booking.deny', ['id' => $booking->id]) }}">
                             @csrf
                             <button type="submit" class="btn-danger singleview-button mx-2">Deny</button>
                         </form>
-                </div>
+                
+                
+                
+                    </div>
+
+
+
                 
             </div>
-        </div>    
+
+
+        </div> 
+        
+        
         </div>
+
+        
            
  @endsection

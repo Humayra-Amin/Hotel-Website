@@ -25,45 +25,80 @@
   
         
 
+
+
         <div class="container">
+
+
         <div class="row">
             
+
             <div class="col-md-12 d-flex align-items-center justify-content-between">
+
                 <h2>Employee</h2>
 
-                @include('admin.inc.message')
+
+@include('admin.inc.message')
+
 
                 <div class="d-flex align-items-center justify-content-between">
+
+
                     <form>
+
+
                     <div class="input-group">
+
                             <input type="text" class="form-control bg-light border-1 small" placeholder="Search a room"
                                 aria-label="Search" aria-describedby="basic-addon2">
                                 <div class="input-group-append">
                                 <button class="btn btn-dark" type="button">
                                 <i class="fas fa-search fa-sm"></i>
                                 </button>
+
                             </div>
+
                     </div> 
+
+
                 </form>
+
+                
                     <a class="btn btn-outline-dark ml-2" href="/employee/add">
                     <i class="fa fa-plus"></i>
                     Add Employee
                     </a>
+
+
                 </div>
+
+
             </div>
             
+
+
             <div class="col-md-12 customize-fonts">
+
                 <div class="table-responsive-md mt-3">
+
                     <table class="table">
+
                         <thead>
+
                         <tr>
+
                         <th scope="row">
                         
+
                         <div class="form-check-left">
                             <!-- <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"> -->
                             <label class="form-check-label" for="flexCheckIndeterminate"></label>
                         </div>
+
                         </th>
+
+
+
                         <th scope="col"> Id </th>
                 <th scope="col">First Name</th>
                 <th scope="col">last Name</th>
@@ -73,6 +108,7 @@
                 <th scope="col">Contact</th>
                 <th></th>
                  
+
                         </tr>
                         </thead>
                         <tbody>
@@ -89,25 +125,38 @@
                                 </div>
                               </th>
 
+
+
                          <td>{{$employee->eid}}</td>
                     <td>{{$employee->fname}}</td>
                     <td>{{$employee->lname}}</td>
                     <td>{{$employee->joiningdate}}</td>
                     <td>{{$employee->position}}</td>
                     <td>{{$employee->email}}</td>
-                    <td>{{$employee->phone}}</td>  
+                    <td>{{$employee->phone}}</td> 
+                    
+                    
                               
                                 <td class="text-right">
                                 <div class="d-flex">
                                 <a href="/admin/employee/{{$employee->id}}" title="view" class="btn btn-outline-primary btn-eye my-2"><i class="fa-solid fa-eye"></i></a>
                                 <a href="/admin/employee/{{$employee->id}}/edit/" title="edit" class="btn btn-outline-dark btn-pencil mx-2 my-2 "><i class="fa-solid fa-pencil"></i></a>
+                                
                                 <form action="/admin/employee/{{$employee->id}}/delete/" method="DELETE">
-                                    <button type="submit" title="delete" class="btn btn-outline-danger btn-trash mb-2"><i class="fa-solid fa-trash"></i></button>
+                                    <button type="submit" title="delete" class="btn btn-outline-danger btn-trash mb-1"><i class="fa-solid fa-trash"></i></button>
                                 </form>
+
+
                             </div>
+
+
                             </td>
 
+
+
                           </tr>
+
+
                             <!-- <tr>
                             <td>00012</td>
                     <td>fardin</td>
@@ -125,13 +174,24 @@
                              -->
 
                         @endforeach
+
+
+
                         </tbody>
+
+
                     </table>
+
+
                 </div>
 
+
                 <div class="pagination justify-content center mt-2 mb-2">
+
                    
                   </div>
+
+
                   <div>
                     <ul class="pagination rounded-circle justify-content-center mt-2 mb-4">
                       <li class="page-item"><a class="page-link" href="#">&Lang;</a></li>
@@ -144,6 +204,7 @@
                 </div>
 
     
+                
             </div>
         
 

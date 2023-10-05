@@ -64,9 +64,10 @@
 
 .body-change
     {
-        width:calc(100% - 230px);
+        /* width:calc(100% - 700px); */
         margin-left: auto;
-        margin-top:200px;
+        margin-top:-600px;
+        /* margin-bottom:460px; */
         margin-right:60px;
         width: 60%;
     }

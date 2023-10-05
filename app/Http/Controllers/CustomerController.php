@@ -10,50 +10,79 @@ use Illuminate\Support\Facades\Session;
 
 class CustomerController extends Controller
 {
+
+
     public function login()
     {
+
         return view("customer.login");
+
     }  
       
+
+
     public function register()
     {
+
         return view("customer.register");
+
     }
+
 
 
     public function customerlist()
     {
+
         $customers = Customer::all();
         return view("admin.customerlist")->with('customers',  $customers);
+
     }
 
 
 
-
-
-    public function personalInfo()
+    public function Account()
     {
-        return view("customer.personalInfo");
+
+        return view("customer.Account");
+
     }
   
+
+
     public function changepassword()
     {
+
         return view("customer.changepassword");
+
     }
-    public function bookmodal()
-    {
-        return view("customer.bookmodal");
-    }
+
+
 
     public function services()
     {
+
         return view("customer.services");
-    }
-    public function contact()
-    {
-        return view("customer.contact");
+
     }
 
+
+
+    public function contact()
+    {
+
+        return view("customer.contact");
+
+    }
+
+
+    
+
+    public function Allrooms()
+    {
+
+        return view("customer.Allrooms");
+        
+    } 
 
 
 
@@ -70,57 +99,60 @@ class CustomerController extends Controller
 
 
 
-
         if (Auth::guard("customers")->attempt($credentials)) {
             $request->session()->regenerate();
             return redirect()->intended('/')->withSuccess('You have Successfully loggedin');
         }
 
+
         return redirect("/login")->withErrors('Oppes! You have entered invalid credentials');
+
     }
       
 
+
     public function postRegister(Request $request)
     {  
+
         $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:customers',
             'password' => 'required|confirmed',
         ]);
+
            
         $data = $request->all();
         $check = $this->create($data);
+
          
         return redirect("/")->withSuccess('Great! You have Successfully loggedin');
+
     }
     
     
     
     public function create(array $data)
     {
-      return Customer::create([
-        'name' => $data['name'],
-        'email' => $data['email'],
-        'password' => Hash::make($data['password'])
-      ]);
+
+        return Customer::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password'])
+        ]);
+
     }
     
+
+
   
     public function logout() {
 
-        Session::flush();
-        Auth::logout();
-  
-        return Redirect('/');
+            Session::flush();
+            Auth::logout();
+    
+            return Redirect('/');
+
     }
-
-
-
-
-    public function Allrooms()
-    {
-        return view("customer.Allrooms");
-    } 
 
 
  }
