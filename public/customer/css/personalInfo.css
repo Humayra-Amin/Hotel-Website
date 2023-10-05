@@ -6,7 +6,7 @@
 .custom-card-header 
     {
         padding: 1rem 1.35rem;
-        background-color: #f2f6fc;
+        background-color: #aebfd8;
         border-bottom: 1px solid rgba(0, 0, 0, 0.125);;
     }
 
@@ -28,7 +28,7 @@
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     }
 
-.imageWrapper
+/* .imageWrapper
     {    
         margin-top: 35px;
         border: 3px solid #888;
@@ -52,7 +52,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
+    } */
 
 .files-img
     {
@@ -62,12 +62,10 @@
         margin: auto;
     }
 
-.body-change
+/* .body-change
     {
-        /* width:calc(100% - 700px); */
         margin-left: auto;
         margin-top:-600px;
-        /* margin-bottom:460px; */
         margin-right:60px;
         width: 60%;
     }
@@ -83,18 +81,28 @@
         margin-bottom: 30px;
         position: relative;
 
-    }
+    } */
 
 .file-card 
     {
         padding: 0px;
-        background-color: #ffffff;        
+        background: rgb(222, 224, 237);
         position: relative;
         display: flex;
         flex-direction: column;
         min-width: 10px;
         height: 91%;
         border: 1px solid rgba(0, 0, 0, 0.125);
+
+        margin-left: 650px;
+        margin-top:-500px;
+        width: 60%;
+    }
+
+    .body-change
+    {
+        background-color: #ffffff;
+        border:  1px solid rgba(255, 255, 255, 0.125);
     }
 
 .custom-card-body
@@ -102,7 +110,18 @@
         padding: 25px;
     }
       
-.file-upload 
+
+.account-row
+    {
+
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0;
+        margin-right: 1.5rem;
+    
+    }
+
+/* .file-upload 
     {
         position: relative;
         margin: 10px;
@@ -112,9 +131,8 @@
         text-align:center;
         color:#ffffff;
         font-size:16px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bold;
-        border: 2px solid #ffffff;
+        font-family: 'Signika';
+        border: 2px solid #0d6efd;
         padding: 6px 12px;
         background:#0d6efd;
 
@@ -141,4 +159,4 @@
         opacity: 0;
         filter: alpha(opacity=0);
         height:20px;
-    }
+    } */

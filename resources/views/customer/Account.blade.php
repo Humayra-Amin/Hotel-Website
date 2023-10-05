@@ -61,16 +61,16 @@
 
 
 
-<div class="container-xl complex px-4 mt-4">
+{{-- <div class="container-xl complex px-4 mt-4"> --}}
 
 
  <div class="body-change">
 
 
-    <div class="row g-0">
+    {{-- <div class="row g-0"> --}}
 
 
-        <div class="col-xl-4">
+        {{-- <div class="col-xl-4">
 
 
             <div class="file-card mb-10 mb-xl-0">
@@ -108,7 +108,7 @@
 
 
                 
-        </div>
+        </div> --}}
 
 
         <div class="col-xl-8">
@@ -124,21 +124,21 @@
 
                     <form>
 
-                        <div class="row gx-3 mb-3">
+                        <div class="account-row gx-3 mb-3">
 
                             <div class="col-md-6">
-                                <input class="personalform-control" id="inputFirstName" type="text" placeholder="First name" value="">
+                                <input class="personalform-control" id="inputFirstName" name="name" type="text" placeholder="Name" value="{{auth()->user()->name}}">
                             </div>
 
                             <div class="col-md-6">
-                                <input class="personalform-control" id="inputLastName" type="text" placeholder="Last name" value="">
+                                <input class="personalform-control" id="inputEmailAddress" name="email" type="text" placeholder="Email Address" value="{{auth()->user()->email}}">
                             </div>
 
                         </div>
 
 
 
-                        <div class="row gx-3 mb-3">
+                        {{-- <div class="row gx-3 mb-3">
 
                             <div class="col-md-6">
                                 <input class="personalform-control" id="inputEmailAddress" type="text" placeholder="Email Address" value="">
@@ -148,11 +148,11 @@
                                 <input class="personalform-control" id="inputPhoneNumber" type="text" placeholder="Phone Number" value="">
                             </div>
 
-                        </div>
+                        </div> --}}
 
 
 
-                        <div class="row gx-3 mb-3">
+                        {{-- <div class="row gx-3 mb-3">
 
                             <div class="col-md-6">
                                 <input class="personalform-control" id="inputZip" type="text" placeholder="Zip" value="">
@@ -162,11 +162,11 @@
                                 <input class="personalform-control" id="inputCountry" type="text" placeholder="Country" value="">
                             </div>
 
-                        </div>
+                        </div> --}}
 
 
 
-
+{{-- 
                         <div class="row gx-3 mb-3">
 
                             <div class="col-md-6">
@@ -176,12 +176,12 @@
                             <div class="col-md-6">
                                 <input class="personalform-control" id="inputCity" type="text" placeholder="City" value="">
                             </div>
-                        </div>
+                        </div> --}}
 
 
 
                         
-                        <button class="btn btn-primary" type="submit">Save Details</button>
+                        <button class="btn btn-primary ml-4" type="submit">Save Details</button>
 
 
                     </form>
@@ -195,7 +195,7 @@
         </div>
 
 
-    </div>
+    {{-- </div> --}}
 
 
  </div>
