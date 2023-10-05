@@ -3,7 +3,7 @@
 @include('admin.inc.message')
  <!-- Sidebar -->
  <div class="sidebar">
-  <i class='fa fa-user-circle user-icon'><p class="user-name">Abdhur Rahman</p></i>
+  <i class='fa fa-user-circle user-icon'></i><p class="user-name">Abdhur Rahman</p>
   <!-- Row 1 -->
   <div class="row">
       <!-- Card 1: Booking History -->
