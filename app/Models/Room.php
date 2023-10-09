@@ -19,7 +19,6 @@ class Room extends Model
         'maxoccupancy',
         'description',
         'category_id',
-        'roomtype',
         'roomsize',
         'roomview',
         'guestservice',

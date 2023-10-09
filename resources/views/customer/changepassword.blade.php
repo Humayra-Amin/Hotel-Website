@@ -61,8 +61,8 @@
 
     <div class="change-body">
 
-      <form>
-
+      <form action="{{url('/updatepassword')}}" method="POST">
+       @csrf
         <h2 class="text-center texts">CHANGE PASSWORD</h2>
 
         <div class=" change-password-form">
@@ -73,12 +73,12 @@
 
 
           <div class="form-group">
-                <input type="password" class="labelp" id="new-password" placeholder="NEW PASSWORD" name="new_password" required>
+                <input type="password" class="labelp" id="new-password" placeholder="NEW PASSWORD" name="password" required>
           </div>
 
 
           <div class="form-group">
-                <input type="password" class="labelp" id="confirm-password" placeholder="CONFIRM PASSWORD" name="confirm_password" required>
+                <input type="password" class="labelp" id="confirm-password" placeholder="CONFIRM PASSWORD" name="password_confirmation" required>
           </div>
 
         </div>

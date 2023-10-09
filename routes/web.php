@@ -48,7 +48,7 @@ Route::middleware(["auth"])->group(function () {
     Route::get('/admin/room/{id}/edit', [RoomController::class, "edit"]);
     Route::post('/admin/room', [RoomController::class, "store"]);
     Route::put('/admin//room/{id}', [RoomController::class, "update"]);
-    Route::delete('/admin/room/{id}/delete/', [RoomController::class, "delete"]);
+    Route::get('/admin/room/{id}/delete/', [RoomController::class, "delete"]);
     Route::get('/admin/room/edit', [RoomController::class, "edit"]);
     Route::get('/admin/room/single', [RoomController::class, "single"]);
     Route::get('/admin/room/roomcategory/{id}', [RoomController::class, "roomcategory"]);
@@ -106,6 +106,7 @@ Route::middleware(["auth"])->group(function () {
     Route::get('/logout', [CustomerController::class, "logout"]);
     Route::get('/Account', [CustomerController::class, "Account"]);
     Route::get('/changepassword', [CustomerController::class, "changepassword"]);
+    Route::post('/updatepassword', [CustomerController::class, "updatepassword"]);
     Route::get('/bookmodal', [CustomerController::class, "bookmodal"]);
     Route::get('/services', [CustomerController::class, "services"]);
     Route::get('/contact', [CustomerController::class, "contact"]);

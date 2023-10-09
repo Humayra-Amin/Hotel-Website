@@ -159,22 +159,6 @@
 
 
                 <div class="form-group">
-                  <label for="roomType">Room Type </label>
-                  <select class="form-control" name="roomType" id="roomType" required>
-                      <option value="Single">Single Room</option>
-                      <option value="Double">Double Room</option>
-                      <option value="Quad">Quad Room</option>
-                      <option value="Hollywood Twin">Hollywood Twin Room</option>
-                      <option value="Double-Double">Double-Double Room</option>
-                      <option value="Interconnecting">Interconnecting Room</option>
-                      <option value="Adjoining"> Adjoining Room</option>
-                      <option value="Duplex">Duplex Room</option>
-                  </select>
-                </div>
-
-
-
-                <div class="form-group">
                     <label for="checkInDate">Check-in Date</label>
                     <input type="date" class="form-control" name="checkInDate" id="checkInDate" required>
                 </div>

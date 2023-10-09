@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Customer;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -47,15 +48,23 @@ class CustomerController extends Controller
         // $user = auth()-
 
     }
+    public function changepassword()
+    {
+
+        return view("customer.changepassword");
+     
+
+    }
+  
   
 
 
-    public function changepassword(Request $request)
+    public function updatepassword(Request $request)
     {
 
         $request->validate([
             'old_password' => 'required',
-            'new_password' => 'required|confirmed',
+            'password' => 'required|confirmed',
         ]);
 
 
@@ -66,11 +75,11 @@ class CustomerController extends Controller
 
 
         #Update the new Password
-        User::whereId(auth()->user()->id)->update([
+             User::whereId(auth()->user()->id)->update([
             'password' => Hash::make($request->new_password)
         ]);
 
-        return back()->with("status", "Password changed successfully!");
+        return back()->with("success", "Password changed successfully!");
 
     }
 

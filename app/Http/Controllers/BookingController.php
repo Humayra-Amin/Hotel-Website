@@ -28,7 +28,6 @@ class BookingController extends Controller
         'email' => 'required|email',
         'tel' => 'required',
         'nid' => 'required|integer',
-        'roomType' => 'required',
         'roomcategory' => 'required|max:20',
         'roomno' => 'required|integer',
         'maxoccupancy' => 'required',
@@ -55,7 +54,6 @@ class BookingController extends Controller
     $booking->email = $request->email;
     $booking->tel = $request->tel;
     $booking->nid = $request->nid;
-    $booking->roomType = $request->roomType;
     $booking->roomcategory = $request->roomcategory;
     $booking->roomno = $request->roomno;
     $booking->maxoccupancy = $request->maxoccupancy;
@@ -90,7 +88,6 @@ class BookingController extends Controller
             'email' => 'required|email',
             'tel' => 'required',
             'nid' => 'required|integer',
-            'roomType' => 'required',
             'roomcategory' => 'required|max:20',
             'roomno' => 'required|integer',
             'maxoccupancy' => 'required',
@@ -106,7 +103,6 @@ class BookingController extends Controller
         $booking->email = $request->email;
         $booking->tel = $request->tel;
         $booking->nid = $request->nid;
-        $booking->roomType = $request->roomType;
         $booking->roomcategory = $request->roomcategory;
         $booking->roomno = $request->roomno;
         $booking->maxoccupancy = $request->maxoccupancy;

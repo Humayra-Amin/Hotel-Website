@@ -14,7 +14,6 @@ class Booking extends Model
             'email',
             'tel',
             'nid',
-            'roomType',
             'roomno',
             'roomcategory',
             'maxoccupancy',

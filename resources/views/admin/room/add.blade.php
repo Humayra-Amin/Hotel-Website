@@ -137,21 +137,6 @@
                             </div>
                             
                           
-                            
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="roomtype">Room Type</label>
-                              <select name="roomtype" class="form-control custom-select browser-default">
-                    
-                                <option>Single Room</option>
-                                <option>Double Room</option>
-                                <option >Quad Room</option>
-                                <option >Hollywood Twin Room</option>
-                                <option > Double-Double Room</option>
-                                <option >Interconnecting Room</option>
-                                <option > Adjoining Room</option>
-                                <option >Duplex Room</option>
-                              </select>
-                            </div>
 
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="availablerooms">Room Availability</label>
