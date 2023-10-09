@@ -42,14 +42,13 @@ class RoomAuthController extends Controller
 
         $credentials = $request->only('email', 'password');
 
-
-        if (Auth::attempt($credentials)) {
+        if (Auth::guard("emps")->attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended('/')->withSuccess('You have Successfully loggedin');
+            return redirect()->intended('/admin')->withSuccess('You have Successfully loggedin');
         }
 
 
-        return redirect("admin/adminlogin")->withErrors('Oppes! You have entered invalid credentials');
+        return redirect("admin/login")->withErrors('Oppes! You have entered invalid credentials');
 
     }
       
@@ -87,11 +86,10 @@ class RoomAuthController extends Controller
     
   
 
-    public function logout() 
+    public function logout(Request $request) 
     {
 
-        Session::flush();
-        Auth::logout();
+        Auth::guard("emps")->logout();
   
         return Redirect('admin/login');
 

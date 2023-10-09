@@ -124,8 +124,6 @@ class CustomerController extends Controller
    
         $credentials = $request->only('email', 'password');
 
-
-
         if (Auth::guard("customers")->attempt($credentials)) {
             $request->session()->regenerate();
             return redirect()->intended('/')->withSuccess('You have Successfully loggedin');
@@ -172,10 +170,9 @@ class CustomerController extends Controller
 
 
   
-    public function logout() {
+    public function logout(Request $request) {
 
-            Session::flush();
-            Auth::logout();
+            Auth::guard("customers")->logout();
     
             return Redirect('/');
 

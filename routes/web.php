@@ -35,7 +35,7 @@ Route::post('/admin/post-register', [RoomAuthController::class, 'postRegister'])
  
 
 
-Route::middleware(["auth"])->group(function () {
+Route::middleware(["auth:emps"])->group(function () {
 
                             //admin.room route
    
@@ -103,30 +103,29 @@ Route::middleware(["auth"])->group(function () {
     Route::post('/post-login', [CustomerController::class, "postLogin"]);
     Route::get('/register', [CustomerController::class, "register"]);
     Route::post('/post-register', [CustomerController::class, "postRegister"]);
-    Route::get('/logout', [CustomerController::class, "logout"]);
-    Route::get('/Account', [CustomerController::class, "Account"]);
-    Route::get('/changepassword', [CustomerController::class, "changepassword"]);
-    Route::post('/updatepassword', [CustomerController::class, "updatepassword"]);
-    Route::get('/bookmodal', [CustomerController::class, "bookmodal"]);
+   
     Route::get('/services', [CustomerController::class, "services"]);
     Route::get('/contact', [CustomerController::class, "contact"]);
     Route::get('/Allrooms', [CustomerController::class, "Allrooms"]);
-
-
- 
-
-                               //home route
     Route::get('/', [HomeController::class, "home"]);
     Route::get('/singleroom/{id}', [HomeController::class, "singleroom"]);
     Route::put('/roombook', [HomeController::class, "roombook"]);
-    Route::get('/bookinglist', [HomeController::class, "bookinglist"]);
+
+
+
+    Route::middleware(["auth:customers"])->group(function () {
+        Route::get('/logout', [CustomerController::class, "logout"]);
+        Route::get('/Account', [CustomerController::class, "Account"]);
+        Route::get('/changepassword', [CustomerController::class, "changepassword"]);
+        Route::get('/bookmodal', [CustomerController::class, "bookmodal"]);
+        Route::get('/bookinglist', [HomeController::class, "bookinglist"]);
+    });
+
+
+                               //home route
+    
 
 
 
 
 
-
-
-
-// Route::get('/drag-and-drop', 'DragAndDropController@index')->name('drag-and-drop');
-// Route::post('/drag-and-drop/update', 'DragAndDropController@update')->name('drag-and-drop.update');
