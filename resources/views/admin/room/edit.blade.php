@@ -139,7 +139,7 @@
                               </select>
                               </div>
                               
-                              
+{{--                               
                               <div class="col-sm-6 form-group custom-form-group">
                                 <label for="Country">Room Type</label>
                                 <select name="roomtype" class="form-control custom-select browser-default">
@@ -153,7 +153,7 @@
                                   <option @if($room->roomtype == 'Adjoining Room') selected @endif> Adjoining Room</option>
                                   <option @if($room->roomtype == 'Duplex Room') selected @endif>Duplex Room</option>
                                 </select>
-                              </div>
+                              </div> --}}
 
                               <div class="col-sm-6 form-group custom-form-group">
                                 <label for="availablerooms">Room Availability</label>

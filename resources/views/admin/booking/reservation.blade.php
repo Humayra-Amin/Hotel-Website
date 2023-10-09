@@ -141,22 +141,6 @@
               <option value="Queen">Queen</option>
           </select>
         </div>
-
-
-
-        <div class="col-sm-6 form-group">
-          <label for="roomType" class="reserve-label">Room Type </label>
-          <select class="form-control" name="roomType" id="roomType" required>
-              <option value="Single">Single Room</option>
-              <option value="Double">Double Room</option>
-              <option value="Quad">Quad Room</option>
-              <option value="Hollywood Twin">Hollywood Twin Room</option>
-              <option value="Double-Double">Double-Double Room</option>
-              <option value="Interconnecting">Interconnecting Room</option>
-              <option value="Adjoining"> Adjoining Room</option>
-              <option value="Duplex">Duplex Room</option>
-          </select>
-        </div>
         
 
 

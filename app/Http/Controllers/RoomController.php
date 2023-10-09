@@ -68,7 +68,6 @@ class RoomController extends Controller
             'availablerooms' => 'required',
             'maxoccupancy' => 'required',
             'category_id' => 'required',
-            'roomtype' => 'required',
             'roomsize' => 'required',
             'roomview' => 'required',
             'guestservice' => 'required',
@@ -86,7 +85,6 @@ class RoomController extends Controller
         $room->availablerooms = $request->availablerooms;
         $room->maxoccupancy = $request->maxoccupancy;
         $room->category_id = $request->category_id ;
-        $room->roomtype = $request->roomtype;
         $room->roomsize = $request->roomsize;
         $room->roomview = $request->roomview;
         $room->guestservice = $request->guestservice;
@@ -126,7 +124,6 @@ class RoomController extends Controller
             'availablerooms' => 'required',
             'maxoccupancy' => 'required',
             'category_id' => 'required',
-            'roomtype' => 'required',
             'roomsize' => 'required',
             'roomview' => 'required',
             'guestservice' => 'required',
@@ -143,7 +140,6 @@ class RoomController extends Controller
         $room->availablerooms = $request->availablerooms;
         $room->maxoccupancy = $request->maxoccupancy;
         $room->category_id = $request->category_id;
-        $room->roomtype = $request->roomtype;
         $room->roomsize = $request->roomsize;
         $room->roomview = $request->roomview;
         $room->guestservice = $request->guestservice;

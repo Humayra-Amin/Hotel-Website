@@ -137,17 +137,9 @@
 
                     <div class="col-6">
 
-                    <h2 class="singleview">Room Type:</h2>
-
-                    <p class="single-p">{{ $booking->roomType}}</p>
-
                     <h2 class="singleview">Room No.:</h2>
 
                     <p class="single-p">{{ $booking->roomno}}</p>
-
-                    <h2 class="singleview">Max Occupancy:</h2>
-
-                    <p class="single-p">{{ $booking->maxoccupancy}}</p>
 
                     <h2 class="singleview">Check-in Date:</h2>
 

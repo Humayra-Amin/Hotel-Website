@@ -22,7 +22,6 @@ return new class extends Migration
             $table->string('nid');
             $table->string('roomcategory');
             $table->string('roomno');
-            $table->string('roomType');
             $table->string('maxoccupancy');
             $table->string('checkInDate');
             $table->string('checkOutDate');

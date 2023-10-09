@@ -150,21 +150,6 @@
 
 
 
-      <div class="col-sm-6 form-group">
-        <label for="roomType" class="editreserve-label">Room Type </label>
-        <select class="form-control" name="roomType" id="roomType" required>
-            <option @if($booking->roomType == 'Single Room') selected @endif>Single Room</option>
-            <option @if($booking->roomType == 'Double Room') selected @endif>Double Room</option>
-            <option @if($booking->roomType == 'Quad Room') selected @endif>Quad Room</option>
-            <option @if($booking->roomType == 'Hollywood Twin Room') selected @endif>Hollywood Twin Room</option>
-            <option @if($booking->roomType == 'Double-Double Room') selected @endif> Double-Double Room</option>
-            <option @if($booking->roomType == 'Interconnecting Room') selected @endif>Interconnecting Room</option>
-            <option @if($booking->roomType == 'Adjoining Room') selected @endif> Adjoining Room</option>
-            <option @if($booking->roomType == 'Duplex Room') selected @endif>Duplex Room</option>
-        </select>
-      </div>
-
-
 
       <div class="col-sm-6 form-group">
         <label for="roomno" class="reserve-label">Room No.</label>
