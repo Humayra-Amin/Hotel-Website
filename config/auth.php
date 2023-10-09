@@ -38,11 +38,11 @@ return [
     'guards' => [
         'customers' => [
             'driver' => 'session',
-            'provider' => 'customers',
+            'provider' => 'customer',
         ],
         'emps' => [
             'driver' => 'session',
-            'provider' => 'emps',
+            'provider' => 'emp',
         ],
     ],
 
@@ -64,11 +64,11 @@ return [
     */
 
     'providers' => [
-        'customers' => [
+        'customer' => [
             'driver' => 'eloquent',
             'model' => App\Models\Customer::class,
         ],
-        'emps' => [
+        'emp' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],

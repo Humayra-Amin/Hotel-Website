@@ -190,8 +190,8 @@
               
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" id="closeButton">Close</button>
-                <button type="button" class="btn btn-primary" id="reserveButton">Reserve</button>
+                <button type="submit" class="btn btn-secondary" id="closeButton">Close</button>
+                <button type="submit" class="btn btn-primary" id="reserveButton">Reserve</button>
             </div>
 
 
