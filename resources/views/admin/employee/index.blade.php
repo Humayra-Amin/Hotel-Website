@@ -64,7 +64,7 @@
                 </form>
 
                 
-                    <a class="btn btn-outline-dark ml-2" href="/employee/add">
+                    <a class="btn btn-outline-dark ml-2" href="employee/add">
                     <i class="fa fa-plus"></i>
                     Add Employee
                     </a>

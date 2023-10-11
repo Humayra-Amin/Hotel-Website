@@ -1,8 +1,19 @@
 .text-info1{
-  color: #000000;
+  color:#141414;
+  font-family: 'roboto';
   font-size: 40px;
+  margin-right: 170px;
 }
-.custom-jumbotron {
+.editroom-row
+{
+  padding: 1.5rem;
+  padding-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-right: 100px;
+}
+.editroom-jumbotron {
   width: 1300px;
   padding: 3rem 3rem;
   margin-bottom: 2rem;

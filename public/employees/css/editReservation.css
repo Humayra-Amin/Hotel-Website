@@ -1,7 +1,7 @@
   .edit-h2
   {
         color:#141414;
-        font-family: roboto;
+        font-family: 'roboto';
         font-size: 40px;
   }
 
@@ -19,14 +19,13 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
-    margin-right: 70px;
-    margin-left: 90px;
+    margin-right: 170px;
   }
 .text-center
   {
     color: #1e2cc8;
     font-size: 36px;
-    font-family: roboto;
+    font-family: 'roboto';
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 280px;
@@ -36,7 +35,7 @@
   {
     font-weight: 600;
     color: black;
-    font-family: roboto;
+    font-family: 'roboto';
   }
 
   .button-form{

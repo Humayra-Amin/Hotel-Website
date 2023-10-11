@@ -104,29 +104,29 @@
 
     
           <div class="col-sm-6  form-group">
-            <label for="name" class="reserve-label">Name</label>
-            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
+            <label for="cname" class="reserve-label">Customer Name</label>
+            <input type="text" class="form-control" name="cname" id="cname" placeholder="Name" required>
           </div>
     
 
 
           <div class="col-sm-6 form-group">
             <label for="email" class="reserve-label">Email</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
           </div>
 
 
 
           <div class="col-sm-6 form-group">
             <label for="tel" class="reserve-label">Contact No.</label>
-            <input type="tel" name="tel" class="form-control" id="tel" placeholder="Enter Contact Number" required>
+            <input type="tel" name="tel" class="form-control" id="tel" placeholder="Contact Number" required>
           </div>
 
 
 
           <div class="col-sm-6 form-group">
             <label for="email" class="reserve-label">Input NID</label>
-            <input type="nid" class="form-control" name="nid" id="nid" placeholder="Enter NID" required>
+            <input type="nid" class="form-control" name="nid" id="nid" placeholder="NID" required>
           </div>
 
 
@@ -146,14 +146,14 @@
 
         <div class="col-sm-6 form-group">
           <label for="roomno" class="reserve-label">Room No.</label>
-          <input type="number" class="form-control" name="roomno" id="roomno" placeholder="Enter Room No." required>
+          <input type="number" class="form-control" name="roomno" id="roomno" placeholder="Room No." required>
         </div>
 
 
 
           <div class="col-sm-6 form-group">
-            <label for="maxoccupancy" class="reserve-label">Max Occupancy</label>
-            <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter maxoccupancy" required>
+            <label for="guestnumber" class="reserve-label">Number of Guests</label>
+            <input type="text" class="form-control" name="guestnumber" id="guestnumber" placeholder="Number of Guests" required>
           </div>
 
 
@@ -168,6 +168,18 @@
           <div class="col-sm-6 form-group">
             <label for="checkOutDate" class="reserve-label">Check-out Date</label>
             <input type="date" class="form-control" name="checkOutDate" id="checkOutDate" required>
+          </div>
+
+
+          <div class="col-sm-6 form-group">
+            <label for="price" class="reserve-label">Price</label>
+            <input type="number" name="price" class="form-control" id="price" placeholder="Price" required>
+          </div>
+
+
+          <div class="col-sm-6 form-group">
+            <label for="discount" class="reserve-label">Discount</label>
+            <input type="number" name="discount" class="form-control" id="Discount" placeholder="discount" required>
           </div>
 
     

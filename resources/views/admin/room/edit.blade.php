@@ -87,7 +87,7 @@
                         @csrf
                         @method('PUT')
 
-                        <div class="row custom-jumbotron box8">
+                        <div class="editroom-row editroom-jumbotron box8">
                           
                           <div class="custom-form-inner">
                               <div class="col-sm-6 form-group custom-form-group">
