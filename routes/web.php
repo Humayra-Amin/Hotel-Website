@@ -9,6 +9,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\DashboardController;
+
 
 
 
@@ -122,7 +124,10 @@ Route::middleware(["auth:emps"])->group(function () {
     });
 
 
-                               //home route
+                               //dashboard route
+
+    Route::get('/admin/dashboards', [DashboardController::class, "dashboards"]);
+
     
 
 

@@ -19,18 +19,20 @@ return new class extends Migration
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
 
-            $table->string('fname');
-            $table->string('lname');
-            $table->string('eid');
-            $table->string('Locality');
+            $table->string('ename'); 
             $table->string('email');
-            $table->string('phone');
-            $table->string('dob');
-            $table->string('nid');
-            $table->string('position');
-            $table->string('sex');
-            $table->string('salary');
-            $table->string('joiningdate');
+            $table->string('phone'); 
+            $table->string('emergencyContact');
+            $table->string('fatherName');
+            $table->string('motherName');
+            $table->string('Locality');
+            $table->date('dob');
+            $table->string('nid'); 
+            $table->string('position'); 
+            $table->string('gender'); 
+            $table->date('joiningdate'); 
+            $table->string('salary'); 
+            $table->boolean('verified')->default(false);
             $table->text('image')->nullable();
 
             $table->timestamps();

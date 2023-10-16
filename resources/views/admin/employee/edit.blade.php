@@ -2,32 +2,77 @@
 @section('app')
 
 <div id="content-wrapper" class="d-flex flex-column">
-<!-- Topbar -->
-<div id="content">
-<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-  <!-- Sidebar Toggle (Topbar) -->
-  <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-      <i class="fa fa-bars"></i>
-  </button>
 
-  <!-- Topbar Search -->
-  <form
+    <!-- Main Content -->
+    <div id="content">
 
-      class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-      <div class="input-group">
-          <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-              aria-label="Search" aria-describedby="basic-addon2">
-          <div class="input-group-append">
-              <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-              </button>
-          </div>
-      </div>
-  </form>
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-  <!-- Topbar Navbar -->
-       </nav>
+            <!-- Sidebar Toggle (Topbar) -->
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Topbar Search -->
+            <form
+
+                class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                        aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-search fa-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Topbar Navbar -->
+             <!-- Nav Item - User Information -->
+             <li class="nav-item dropdown no-arrow">
+              <a  class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
+                  <img class="img-profile rounded-circle"
+                      src="{{asset('image/undraw_profile.svg')}}">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                  aria-labelledby="userDropdown">
+
+                  @auth
+                      <a class="dropdown-item" href="#">
+                          <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                          Profile
+                      </a>
+                      <a class="dropdown-item" href="#">
+                          <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                          Settings
+                      </a>
+                      
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                          <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                          Logout
+                      </a>
+                  @else
+                      <a class="dropdown-item" href="admin/login">
+                          <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                          Login
+                      </a>
+                      <a class="dropdown-item" href="admin/login">
+                          <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                          Login
+                      </a>
+                  @endauth
+
+                  
+              </div>
+          </li>   
+        </nav>
 
 
 
@@ -79,53 +124,83 @@
 
   </div>
 
-            
-  
-    <div class="col-sm-6  form-group">
-        <label for="name-f" class="form-label">First Name</label>
-        <input type="text" class="form-control" name="fname" id="name-f" placeholder="Enter first name" value="{{$employee->fname}}" required>
+
+    
+      <div class="col-sm-6  form-group">
+        <label for="ename" class="form-label">Employee Name</label>
+        <input type="text" class="form-control" name="ename" id="ename" placeholder="Employee name" value="{{$employee->ename}}" required>
       </div>
       
 
 
-    
+
+
       <div class="col-sm-6 form-group">
-        <label for="name-l" class="form-label">Last name</label>
-        <input type="text" class="form-control" name="lname" id="name-l" placeholder="Enter last name" value="{{$employee->lname}}" required>
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" value="{{$employee->email}}" required>
       </div>
-      
 
 
-    
+
+
+
       <div class="col-sm-6 form-group">
-        <label for="name-e" class="form-label">Employee Id</label>
-        <input type="text" class="form-control" name="eid" id="number" placeholder="Enter Employee id" value="{{$employee->eid}}" required>
-      </div>
+        <label for="tel" class="form-label">Contact No.</label>
+        <input type="tel" name="phone" class="form-control" id="tel" placeholder="Enter Contact Number" value="{{$employee->phone}}" required>
+      </div>   
+      
       
 
 
+        <div class="col-sm-6 form-group">
+          <label for="emergencyContact" class="form-label">Emergency Contact</label>
+          <input type="text" name="emergencyContact" class="form-control" id="emergencyContact" placeholder="Emergency Contact" value="{{$employee->emergencyContact}}" required>
+      </div>
+
+
+
     
+
+      <div class="col-sm-6 form-group">
+        <label for="fatherName" class="form-label">Father's Name</label>
+        <input type="text" name="fatherName" class="form-control" id="fatherName" placeholder="Father's Name" value="{{$employee->fatherName}}" required>
+    </div>
+
+
+
+
+      <div class="col-sm-6 form-group">
+          <label for="motherName" class="form-label">Mother's Name</label>
+          <input type="text" name="motherName" class="form-control" id="motherName" placeholder="Mother's Name" value="{{$employee->motherName}}" required>
+      </div>
+
+
+
+
       <div class="col-sm-6 form-group">
         <label for="address-1" class="form-label">Present Address</label>
         <input type="address" class="form-control" name="Locality" id="Present-address" placeholder="Locality/House/Street no." value="{{$employee->Locality}}" required>
       </div>
       
 
-    
 
-        <div class="col-sm-6 form-group">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" value="{{$employee->email}}" required>
-      </div>
-      
 
-    
 
       <div class="col-sm-6 form-group">
-        <label for="email" class="form-label">Input NID</label>
+        <label for="Date" class="form-label">Date Of Birth</label>
+        <input type="Date" name="dob" class="form-control" id="Date" placeholder="" value="{{$employee->dob}}" required>
+      </div>
+
+
+
+
+
+      <div class="col-sm-6 form-group">
+        <label for="email" class="form-label">National Id</label>
         <input type="nid" class="form-control" name="nid" id="nid" placeholder="Enter NID" value="{{$employee->nid}}" required>
       </div>
       
+
 
 
     
@@ -144,34 +219,17 @@
       </div>
       
 
-    
-
-      <div class="col-sm-6 form-group">
-        <label for="Date" class="form-label">Date Of Birth</label>
-        <input type="Date" name="dob" class="form-control" id="Date" placeholder="" value="{{$employee->dob}}" required>
-      </div>
-      
-
 
     
       <div class="col-sm-6 form-group">
-        <label for="sex" class="form-label">Gender</label>
-        <select id="sex" class="form-control browser-default custom-select" name="sex">
+        <label for="gender" class="form-label">Gender</label>
+        <select id="gender" class="form-control browser-default custom-select" name="gender">
           <option >Select Gender</option>
-          <option @if($employee->sex == 'Male') selected @endif>Male</option>
-          <option @if($employee->sex == 'Female') selected @endif>Female</option>
-          <option @if($employee->sex == 'Others') selected @endif>Others</option>
+          <option @if($employee->gender == 'Male') selected @endif>Male</option>
+          <option @if($employee->gender == 'Female') selected @endif>Female</option>
+          <option @if($employee->gender == 'Others') selected @endif>Others</option>
         </select>
       </div>
-      
-
-    
-
-      <div class="col-sm-6 form-group">
-        <label for="tel" class="form-label">Contact No.</label>
-        <input type="tel" name="phone" class="form-control" id="tel" placeholder="Enter Contact Number" value="{{$employee->phone}}" required>
-      </div>      
-
     
 
      

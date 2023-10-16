@@ -109,9 +109,9 @@
 
                     <div class="col-6">
 
-                    <h2 class="singleview">Name:</h2>
+                    <h2 class="singleview">Customer Name:</h2>
 
-                    <p class="single-p">{{$booking->name}}</p>
+                    <p class="single-p">{{$booking->cname}}</p>
 
                     <h2 class="singleview">Email:</h2>
 
@@ -121,7 +121,7 @@
 
                     <p class="single-p">{{$booking->tel}}</p>
 
-                    <h2 class="singleview">NID No.:</h2>
+                    <h2 class="singleview">National Id.:</h2>
 
                     <p class="single-p">{{$booking->nid}}</p>
 
