@@ -34,7 +34,7 @@
                         <!-- Topbar Navbar -->
                         
                         <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
+                        <div class="nav-item dropdown no-arrow">
                                 <a  class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
@@ -73,11 +73,43 @@
 
                                     
                                 </div>
-                            </li>   
+                            </div>   
 
                             
 
                     </nav>
+
+
+                    <div class="container-dashboard">
+                        <h2>Dashboard</h2>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="card-dashboard">
+                                    <div class="container-dashboard">
+                                        <h4><b>Available Rooms</b></h4>
+                                        <p>Total number of available rooms in the hotel.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card-dashboard">
+                                    <div class="container-dashboard">
+                                        <h4><b>Bookings</b></h4>
+                                        <p>Total number of bookings made by the guests.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card-dashboard">
+                                    <div class="container-dashboard">
+                                        <h4><b>Today's Checkouts</b></h4>
+                                        <p>Number of guests checking out today.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
                     <!-- End of Topbar -->
 
                     <!-- Begin Page Content -->
@@ -88,7 +120,7 @@
                     
                             
 
-
+{{-- 
                         <!-- Content Row -->
                         <div class="row">
 
@@ -219,13 +251,16 @@
             
 
             </div>
-            <!-- End of Content Wrapper -->
+            <!-- End of Content Wrapper --> --}}
 
 
-        <!-- Scroll to Top Button-->
+        {{-- <!-- Scroll to Top Button-->
         <a class="scroll-to-top rounded" href="#page-top">
             <i class="fas fa-angle-up"></i>
-        </a>
+        </a> --}}
+
+
+        
         <!-- Logout Modal-->
         <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">

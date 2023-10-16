@@ -20,40 +20,6 @@
   background-color: #eaecf4;
   border-radius: 0.3rem;
 }
-/* .custom-form-title{
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 30px;
-  color: #0b88db;
-  text-transform: capitalize;
-  position: relative;
-} */
-/* .custom-form-title::first-letter{
-    color: rgb(4, 4, 129);
-    font-size: 1.5em;
-}
-.custom-form-title::before{
-  content: '';
-    width: 10px;
-    height: 3px;
-    border-radius: 45px;
-    position: absolute;
-    bottom: -4px;
-    background: #012a46;
-    display: block;
-    left: 0;
-}
-.custom-form-title::after{
-  content: '';
-    width: 30px;
-    height: 3px;
-    border-radius: 45px;
-    position: absolute;
-    bottom: -4px;
-    background: #012a46;
-    display: block;
-    left: 15px;
-} */
 .custom-form-inner{
   display: flex;
   row-gap: 20%;
