@@ -102,8 +102,9 @@
             <h2 class="text-center">Reservation</h2>
           </div>
 
+
     
-          <div class="col-sm-6  form-group">
+          <div class="col-sm-12  form-group">
             <label for="cname" class="reserve-label">Customer Name</label>
             <input type="text" class="form-control" name="cname" id="cname" placeholder="Name" required>
           </div>
@@ -125,7 +126,7 @@
 
 
           <div class="col-sm-6 form-group">
-            <label for="email" class="reserve-label">Input NID</label>
+            <label for="email" class="reserve-label">National Id</label>
             <input type="nid" class="form-control" name="nid" id="nid" placeholder="NID" required>
           </div>
 
@@ -179,7 +180,14 @@
 
           <div class="col-sm-6 form-group">
             <label for="discount" class="reserve-label">Discount</label>
-            <input type="number" name="discount" class="form-control" id="Discount" placeholder="discount" required>
+            <input type="number" name="discount" class="form-control" id="Discount" placeholder="discount">
+          </div>
+
+
+
+          <div class="col-sm-12 form-group">
+            <label for="specialrequest" class="reserve-label">Special Request, Ex. extra bed, comforter.....</label>
+            <textarea name="specialrequest" class="form-control" id="specialrequest" rows="3"></textarea>
           </div>
 
     

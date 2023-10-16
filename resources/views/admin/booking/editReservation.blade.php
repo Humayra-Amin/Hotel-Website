@@ -109,9 +109,9 @@
 
 
 
-      <div class="col-sm-6  form-group">
-        <label for="name" class="editreserve-label">Name</label>
-        <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" value="{{$booking->name}}" required>
+      <div class="col-sm-12  form-group">
+        <label for="cname" class="editreserve-label">Customer Name</label>
+        <input type="text" class="form-control" name="cname" id="cname" placeholder="Name" value="{{$booking->cname}}" required>
       </div>
 
 
@@ -178,6 +178,25 @@
       </div>
 
 
+
+      <div class="col-sm-6 form-group">
+        <label for="price" class="editreserve-label">Price</label>
+        <input type="number" name="price" class="form-control" id="price" placeholder="Price" value="{{$booking->price}}" required>
+      </div>
+
+
+
+      <div class="col-sm-6 form-group">
+        <label for="discount" class="editreserve-label">Discount</label>
+        <input type="number" name="discount" class="form-control" id="discount" placeholder="discount" value="{{$booking->discount}}">
+      </div>
+
+
+
+      <div class="col-sm-12 form-group">
+        <label for="specialrequest" class="editreserve-label">Special Request, Ex. extra bed, comforter.....</label>
+        <textarea name="specialrequest" class="form-control" id="specialrequest" value="{{$booking->specialrequest}}" rows="3"></textarea>
+      </div>
 
 
       <button type="submit" class="btn btn-primary button-form">Save</button>

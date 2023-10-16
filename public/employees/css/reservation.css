@@ -38,6 +38,19 @@
         font-family: 'roboto';
   }
 
+  .reserve-label::after
+  {
+      content:" *";
+      color: red;
+  }
+  label[for="discount"]::after {
+      content: "";
+  }
+
+  label[for="specialrequest"]::after {
+      content: "";
+  }
+
   .button-file{
         width: min-content;
         margin-left: 958px;

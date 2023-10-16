@@ -23,16 +23,30 @@ class BookingController extends Controller
     {
 
 
+    // $request->validate([
+    //     'name' => 'required|max:50',
+    //     'email' => 'required|email',
+    //     'tel' => 'required',
+    //     'nid' => 'required|integer',
+    //     'roomcategory' => 'required|max:20',
+    //     'roomno' => 'required|integer',
+    //     'maxoccupancy' => 'required',
+    //     'checkInDate' => 'required',
+    //     'checkOutDate' => 'required',
+
+
     $request->validate([
-        'name' => 'required|max:50',
-        'email' => 'required|email',
-        'tel' => 'required',
-        'nid' => 'required|integer',
-        'roomcategory' => 'required|max:20',
-        'roomno' => 'required|integer',
-        'maxoccupancy' => 'required',
-        'checkInDate' => 'required',
-        'checkOutDate' => 'required',
+            'cname' => 'required|max:50',
+            'email' => 'required|email',
+            'tel' => 'required',
+            'nid' => 'required',
+            'roomcategory' => 'required',
+            'roomno' => 'required',
+            'guestnumber' => 'required',
+            'checkInDate' => 'required|date',
+            'checkOutDate' => 'required|date',
+            'price' => 'required',
+            'discount' => 'nullable|numeric',
     ]);
 
 
@@ -50,15 +64,18 @@ class BookingController extends Controller
 
 
     $booking = new Booking();
-    $booking->name = $request->name;
+    $booking->cname = $request->cname;
     $booking->email = $request->email;
     $booking->tel = $request->tel;
     $booking->nid = $request->nid;
     $booking->roomcategory = $request->roomcategory;
     $booking->roomno = $request->roomno;
-    $booking->maxoccupancy = $request->maxoccupancy;
+    $booking->guestnumber = $request->guestnumber;
     $booking->checkInDate = $request->checkInDate;
     $booking->checkOutDate = $request->checkOutDate;
+    $booking->price = $request->price;
+    $booking->discount = $request->discount;
+    $booking->specialrequest = $request->specialrequest;
     $booking->save();
 
 
@@ -83,33 +100,62 @@ class BookingController extends Controller
     {
 
 
+        // $request->validate([
+        //     'name' => 'required|max:50',
+        //     'email' => 'required|email',
+        //     'tel' => 'required',
+        //     'nid' => 'required|integer',
+        //     'roomcategory' => 'required|max:20',
+        //     'roomno' => 'required|integer',
+        //     'maxoccupancy' => 'required',
+        //     'checkInDate' => 'required',
+        //     'checkOutDate' => 'required',
+
+        // ]);
+
         $request->validate([
-            'name' => 'required|max:50',
+            'cname' => 'required|max:50',
             'email' => 'required|email',
             'tel' => 'required',
-            'nid' => 'required|integer',
-            'roomcategory' => 'required|max:20',
-            'roomno' => 'required|integer',
-            'maxoccupancy' => 'required',
-            'checkInDate' => 'required',
-            'checkOutDate' => 'required',
+            'nid' => 'required',
+            'roomcategory' => 'required',
+            'roomno' => 'required',
+            'guestnumber' => 'required',
+            'checkInDate' => 'required|date',
+            'checkOutDate' => 'required|date',
+            'price' => 'required',
+            'discount' => 'nullable|numeric',
+    ]);
 
-        ]);
 
 
+        // $booking = Booking::find ($id);
+        // $booking->name = $request->name;
+        // $booking->email = $request->email;
+        // $booking->tel = $request->tel;
+        // $booking->nid = $request->nid;
+        // $booking->roomcategory = $request->roomcategory;
+        // $booking->roomno = $request->roomno;
+        // $booking->maxoccupancy = $request->maxoccupancy;
+        // $booking->checkInDate = $request->checkInDate;
+        // $booking->checkOutDate = $request->checkOutDate;
+        // $booking->update();
 
         $booking = Booking::find ($id);
-        $booking->name = $request->name;
+        $booking->cname = $request->cname;
         $booking->email = $request->email;
         $booking->tel = $request->tel;
         $booking->nid = $request->nid;
         $booking->roomcategory = $request->roomcategory;
         $booking->roomno = $request->roomno;
-        $booking->maxoccupancy = $request->maxoccupancy;
+        $booking->guestnumber = $request->guestnumber;
         $booking->checkInDate = $request->checkInDate;
         $booking->checkOutDate = $request->checkOutDate;
+        $booking->price = $request->price;
+        $booking->discount = $request->discount;
+        $booking->specialrequest = $request->specialrequest;
         $booking->update();
-
+        
 
         return redirect("admin/booking/booklists")->with("success", "BookingList Updated....");
 

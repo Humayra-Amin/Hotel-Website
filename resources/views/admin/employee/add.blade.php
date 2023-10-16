@@ -1,34 +1,78 @@
 @extends('admin.layouts.app')
 @section('app')
 
-
 <div id="content-wrapper" class="d-flex flex-column">
-<!-- Topbar -->
-<div id="content">
-<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-  <!-- Sidebar Toggle (Topbar) -->
-  <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-      <i class="fa fa-bars"></i>
-  </button>
 
-  <!-- Topbar Search -->
-  <form
+    <!-- Main Content -->
+    <div id="content">
 
-      class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-      <div class="input-group">
-          <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-              aria-label="Search" aria-describedby="basic-addon2">
-          <div class="input-group-append">
-              <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-              </button>
-          </div>
-      </div>
-  </form>
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-  <!-- Topbar Navbar -->
-       </nav>
+            <!-- Sidebar Toggle (Topbar) -->
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Topbar Search -->
+            <form
+
+                class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                        aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-search fa-sm"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Topbar Navbar -->
+             <!-- Nav Item - User Information -->
+             <li class="nav-item dropdown no-arrow">
+              <a  class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
+                  <img class="img-profile rounded-circle"
+                      src="{{asset('image/undraw_profile.svg')}}">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                  aria-labelledby="userDropdown">
+
+                  @auth
+                      <a class="dropdown-item" href="#">
+                          <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                          Profile
+                      </a>
+                      <a class="dropdown-item" href="#">
+                          <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                          Settings
+                      </a>
+                      
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                          <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                          Logout
+                      </a>
+                  @else
+                      <a class="dropdown-item" href="admin/login">
+                          <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                          Login
+                      </a>
+                      <a class="dropdown-item" href="admin/login">
+                          <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                          Login
+                      </a>
+                  @endauth
+
+                  
+              </div>
+          </li>   
+        </nav>
 
 
 
@@ -82,48 +126,56 @@
 
 
       <div class="col-sm-6  form-group">
-        <label for="name-f" class="custom-label">First Name</label>
-        <input type="text" class="form-control" name="fname" id="name-f" placeholder="Enter first name" required>
-      </div>
-
-
-
-
-      <div class="col-sm-6 form-group">
-        <label for="name-l" class="custom-label">Last name</label>
-        <input type="text" class="form-control" name="lname" id="name-l" placeholder="Enter last name" required>
+        <label for="ename" class="custom-label">Employee Name</label>
+        <input type="text" class="form-control" name="ename" id="ename" placeholder="Employee name" required>
       </div>
 
 
 
       
       <div class="col-sm-6 form-group">
-        <label for="name-e" class="custom-label">Employee Id</label>
-        <input type="text" class="form-control" name="eid" id="number" placeholder="Enter Employee id" required>
+        <label for="email" class="custom-label">Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Email." required>
       </div>
 
 
 
-      
+
+      <div class="col-sm-6 form-group">
+        <label for="tel" class="custom-label">Contact No.</label>
+        <input type="tel" name="phone" class="form-control" id="tel" placeholder="Contact Number." required>
+      </div>
+
+
+
+
+      <div class="col-sm-6 form-group">
+        <label for="emergencyContact" class="custom-label">Emergency Contact</label>
+        <input type="text" name="emergencyContact" class="form-control" id="emergencyContact" placeholder="Emergency Contact" required>
+    </div>
+
+
+
+
+      <div class="col-sm-6 form-group">
+        <label for="fatherName" class="custom-label">Father's Name</label>
+        <input type="text" name="fatherName" class="form-control" id="fatherName" placeholder="Father's Name" required>
+    </div>
+
+
+
+
+    <div class="col-sm-6 form-group">
+        <label for="motherName" class="custom-label">Mother's Name</label>
+        <input type="text" name="motherName" class="form-control" id="motherName" placeholder="Mother's Name" required>
+    </div>
+
+
+
+ 
       <div class="col-sm-6 form-group">
         <label for="address-1" class="custom-label">Present Address</label>
         <input type="address" class="form-control" name="Locality" id="Present-address" placeholder="Locality/House/Street no." required>
-      </div>
-
-
-
-      
-        <div class="col-sm-6 form-group">
-        <label for="email" class="custom-label">Email</label>
-        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email." required>
-      </div>
-
-
-
-      
-      <div class="col-sm-6 form-group">
-        <label for="tel" class="custom-label">Contact No.</label>
-        <input type="tel" name="phone" class="form-control" id="tel" placeholder="Enter Contact Number." required>
       </div>
 
 
@@ -138,8 +190,8 @@
 
       
       <div class="col-sm-6 form-group">
-        <label for="email" class="custom-label">Input NID</label>
-        <input type="nid" class="form-control" name="nid" id="nid" placeholder="Enter NID" required>
+        <label for="email" class="custom-label">National Id</label>
+        <input type="nid" class="form-control" name="nid" id="nid" placeholder="NID" required>
       </div>
 
 
@@ -163,8 +215,8 @@
 
       
       <div class="col-sm-6 form-group">
-        <label for="sex" class="custom-label">Gender</label>
-        <select id="sex" class="form-control browser-default custom-select" name="sex">
+        <label for="gender" class="custom-label">Gender</label>
+        <select id="gender" class="form-control browser-default custom-select" name="gender">
         <option >Select Gender</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
@@ -190,29 +242,22 @@
 
 
 
-      
-      <div class="col-sm-6 form-group">
-        <label for="Password" class="custom-label">Password</label>
-        <input type="password" name="password" class="form-control" id="password" placeholder="Enter Password" required>
-      </div>
-
-
-
-      
-
-      <div class="col-sm-6 form-group">
-        <label for="Password" class="custom-label">Confirm Password</label>
-        <input type="password" name="password_confirmation" class="form-control" id="confirm-password" placeholder="Enter Confirm Password" required>
-      </div>
-
-
-
-      
 
       <div class="col-sm-12">
-        <input type="checkbox" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label custom-label">&nbsp;I accept all terms and conditions.
-        </label>
+        <input type="checkbox" class="form-check-input ml-1" id="chb" required>
+        <label for="chb" class="form-check-label custom-label ml-4">I accept all terms and conditions.</label>
       </div>
+
+
+
+
+
+      <div class="col-sm-12 form-group">
+        <input type="checkbox" name="verified" id="verified" class="form-check-input ml-1">
+        <label for="verified" name="verified" class="form-check-label custom-label ml-4">Verified</label>
+    </div>
+
+
 
 
 
@@ -220,6 +265,7 @@
       <div class="col-sm-12 form-group mb-0">
         <button class="btn btn-primary float-right">Submit</button>
       </div>
+  
       
 
 
