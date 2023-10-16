@@ -36,7 +36,7 @@
                       <!-- Topbar Navbar -->
 
                        <!-- Nav Item - User Information -->
-                       <li class="nav-item dropdown no-arrow">
+                       <div class="nav-item dropdown no-arrow">
                         <a  class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
@@ -75,7 +75,7 @@
 
                             
                         </div>
-                    </li>   
+                    </div>   
                    </nav>
                         
                         
@@ -103,8 +103,10 @@
             <div class="room-details mt-4 mb-2">
             <h2 class="room-title customize-fonts-title">{{$room->roomtitle}}</h2>
 
-            <h6 class="customize-fonts"> Room Category   : {{$room->category_id}} </h6>
-            <h6 class="customize-fonts">Room Size : {{$room->roomsize}}</h6>
+            {{-- <h6 class="customize-fonts"> Room Category   : {{$room->category_id}} </h6> --}}
+            <p class="customize-fonts">Room No : {{$room->roomno}}</p>
+            <p class="customize-fonts">Floor No :  {{$room->floorno}} </p>
+            <p class="customize-fonts">Room size : {{$room->roomsize}}</p>
 
             <div class="facilities-sec">
                 <p class="facility-title customize-fonts">Room Facilities:</p>
@@ -116,8 +118,9 @@
                 @endforeach  
                 </ul>
             </div>
-            <p class="room-details customize-fonts">{{$room->description}}</p>
+
             <p class="customize-fonts">View :  {{$room->roomview}} </p>
+            <p class="customize-fonts">Price :  {{$room->price}} </p>
          </div>
 
      </div>

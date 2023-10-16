@@ -62,16 +62,14 @@ class RoomController extends Controller
 
         $request->validate([
             'roomtitle' => 'required|max:20',
-            'roomno' => 'required|integer',
+            'roomno' => 'required|integer|unique:rooms',
             'floorno' => 'required',
             'price' => 'required',
-            'availablerooms' => 'required',
             'maxoccupancy' => 'required',
             'category_id' => 'required',
             'roomsize' => 'required',
-            'roomview' => 'required',
-            'guestservice' => 'required',
             'facilities' => 'required',
+           
 
         ]);
 
@@ -82,22 +80,21 @@ class RoomController extends Controller
         $room->roomno = $request->roomno;
         $room->floorno = $request->floorno;
         $room->price = $request->price;
-        $room->availablerooms = $request->availablerooms;
         $room->maxoccupancy = $request->maxoccupancy;
         $room->category_id = $request->category_id ;
         $room->roomsize = $request->roomsize;
         $room->roomview = $request->roomview;
         $room->guestservice = $request->guestservice;
         $room->facilities = $request->facilities;
-        $room->description = $request->description;
         $room->save();
 
 
+        if($request->file('image')){
+            foreach($request->file('image') as $img){
+                Storage::disk("public")->put("$room->id", $img);
 
-        foreach($request->file('image') as $img){
-            Storage::disk("public")->put("$room->id", $img);
 
-
+            }
         }
 
         
@@ -114,20 +111,16 @@ class RoomController extends Controller
 
     public function update(Request $request,$id)
     {   
-
-
         $request->validate([
             'roomtitle' => 'required|max:20',
-            'roomno' => 'required|integer',
+            'roomno' => 'required|integer|unique:rooms,roomno,'.$id,
             'floorno' => 'required',
             'price' => 'required',
-            'availablerooms' => 'required',
             'maxoccupancy' => 'required',
             'category_id' => 'required',
             'roomsize' => 'required',
-            'roomview' => 'required',
-            'guestservice' => 'required',
             'facilities' => 'required',
+         
         ]);
 
 
@@ -137,14 +130,12 @@ class RoomController extends Controller
         $room->roomno = $request->roomno;
         $room->floorno = $request->floorno;
         $room->price = $request->price;
-        $room->availablerooms = $request->availablerooms;
         $room->maxoccupancy = $request->maxoccupancy;
         $room->category_id = $request->category_id;
         $room->roomsize = $request->roomsize;
         $room->roomview = $request->roomview;
         $room->guestservice = $request->guestservice;
         $room->facilities = $request->facilities;
-        $room->description = $request->description;
         $room->update();
 
        
@@ -187,7 +178,11 @@ class RoomController extends Controller
     { 
 
        $room=Room::where("id",$id)->firstOrfail();
-       return view("admin.room.edit")->with('room',  $room);
+       $categories = Category::all();
+       return view("admin.room.edit")->with('room',  $room)->with('categories', $categories);
+
+    //    $categories = Category::all();
+    //    return view("admin.room.edit")->with('categories',  $categories);
 
     }
 
