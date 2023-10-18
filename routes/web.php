@@ -127,6 +127,7 @@ Route::middleware(["auth:emps"])->group(function () {
                                //dashboard route
 
     Route::get('/admin/dashboards', [DashboardController::class, "dashboards"]);
+    Route::get('/admin/utility', [DashboardController::class, "utility"]);
 
     
 
