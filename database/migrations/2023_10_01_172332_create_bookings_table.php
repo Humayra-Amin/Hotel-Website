@@ -34,7 +34,7 @@ return new class extends Migration
             $table->string('nid');
             $table->string('roomcategory');
             $table->integer('roomno');
-            $table->integer('guestnumber');
+            $table->string('guestnumber');
             $table->date('checkInDate');
             $table->date('checkOutDate');
             $table->decimal('price', 10, 2);

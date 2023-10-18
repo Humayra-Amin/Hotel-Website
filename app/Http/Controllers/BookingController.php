@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Booking;
 use App\Models\Customer;
+use App\Models\Room;
 use Illuminate\Http\Request;
 
 class BookingController extends Controller
@@ -10,10 +11,11 @@ class BookingController extends Controller
     //
 
 
-    public function reservation()
+    public function reservation(Request $request)
     {
-
-        return view("admin.booking.reservation");
+        $rooms = Room::where('id',$request->id)->get();
+        return view("admin.booking.reservation")->with('rooms',  $rooms);
+        // return view("admin.booking.reservation");
         
     }
 

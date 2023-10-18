@@ -252,10 +252,10 @@
 
 
 
-      <div class="col-sm-12 form-group">
+      {{-- <div class="col-sm-12 form-group">
         <input type="checkbox" name="verified" id="verified" class="form-check-input ml-1">
         <label for="verified" name="verified" class="form-check-label custom-label ml-4">Verified</label>
-    </div>
+    </div> --}}
 
 
 

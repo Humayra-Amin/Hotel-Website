@@ -120,18 +120,6 @@
 
             </div>
 
-            <table>
-                <tr>
-                    <td>Verification Status:</td>
-                    <td>
-                        @if ($employee->verified)
-                            <span class="verified">Verified</span>
-                        @else
-                            <span class="not-verified">Not Verified</span>
-                        @endif
-                    </td>
-                </tr>
-            </table>
         
 
         </div>

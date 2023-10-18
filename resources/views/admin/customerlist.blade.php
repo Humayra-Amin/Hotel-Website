@@ -165,7 +165,7 @@
                                 <td>{{$customer->name}}</td>
                                 <td>{{$customer->email}}</td>
                                 <td class="text-center">
-                                 <a href="" title="view" class="btn btn-outline-primary btn-eye"><i class="bi bi-eye"></i></a>
+                                  <a href="/admin/customerlist/{{$customer->id}}" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></a>
                                  </td>
                               </tr>
 

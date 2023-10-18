@@ -36,6 +36,8 @@ class CustomerController extends Controller
 
         $customers = Customer::all();
         return view("admin.customerlist")->with('customers',  $customers);
+        // $customers=Customer::where("id")->firstOrfail();
+        // return view("admin.customerlist")->with('customers',  $customers);
 
     }
 
