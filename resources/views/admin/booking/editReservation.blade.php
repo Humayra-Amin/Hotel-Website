@@ -140,10 +140,16 @@
       <div class="col-sm-6 form-group">
         <label for="roomcategory" class="reserve-label">Room Category </label>
         <select class="form-control" name="roomcategory" id="roomcategory" required>
-            <option @if($booking->roomcategory == 'Single Room') selected @endif>Single Room</option>
-            <option @if($booking->roomcategory == 'Double Room') selected @endif>Double Room</option>
-            <option @if($booking->roomcategory == 'Couple Room') selected @endif>Couple Room</option>
-            <option @if($booking->roomcategory == 'VIP Room') selected @endif>VIP Room</option>
+
+          @foreach ($rooms as $room)
+            <option value="{{ $rooms }}">{{ $rooms }}>({{$id->roomtitle}} - {{$id->roomno}})</option>
+        @endforeach
+
+        
+            {{-- <option @if($booking->room_id == 'Single Room') selected @endif>Single Room</option>
+            <option @if($booking->room_id == 'Double Room') selected @endif>Double Room</option>
+            <option @if($booking->room_id == 'Couple Room') selected @endif>Couple Room</option>
+            <option @if($booking->room_id == 'VIP Room') selected @endif>VIP Room</option> --}}
         </select>
       </div>
 

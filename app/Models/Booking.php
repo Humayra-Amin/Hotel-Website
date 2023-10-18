@@ -26,7 +26,7 @@ class Booking extends Model
             'email',
             'tel',
             'nid',
-            'roomcategory',
+            'room_id',
             'roomno',
             'guestnumber',
             'checkInDate',

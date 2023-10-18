@@ -32,7 +32,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('tel');
             $table->string('nid');
-            $table->string('roomcategory');
+            $table->string('room_id');
             $table->integer('roomno');
             $table->string('guestnumber');
             $table->date('checkInDate');
