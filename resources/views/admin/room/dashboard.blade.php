@@ -80,185 +80,152 @@
                     </nav>
 
 
-                    <div class="container-dashboard">
-                        <h2>Dashboard</h2>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="card-dashboard">
-                                    <div class="container-dashboard">
-                                        <h4><b>Available Rooms</b></h4>
-                                        <p>Total number of available rooms in the hotel.</p>
-                                    </div>
+                    <div class="dash-container">
+<div class="row">
+                            <h3 class="rtitle">BOOKINGS</h3>
+        
+
+                            <div class="room-cards">
+                                <!-- Room Card 1 -->
+
+                                <div class="col-md-3">
+                                <div class="room-card">
+                                    <img src="{{asset('image/9.jpg')}}" class="img-fluid imagefile" alt="">
+                                    <h2 class=roomh2>SINGLE ROOM</h2>
+                                    <p>Occupied</p>
+                                    <p>Price: $150/night</p>
+                                    <a href="#" class="btn btn-primary">View Details</a>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
-                                <div class="card-dashboard">
-                                    <div class="container-dashboard">
-                                        <h4><b>Bookings</b></h4>
-                                        <p>Total number of bookings made by the guests.</p>
-                                    </div>
+
+
+                                <!-- Room Card 2 -->
+                                <div class="col-md-3">
+                                <div class="room-card">
+                                    <img src="{{asset('image/9.jpg')}}" class="img-fluid imagefile" alt="">                
+                                    <h2 class=roomh2>DOUBLE ROOM</h2>
+                                    <p>Available</p>
+                                    <p>Price: $120/night</p>
+                                    <a href="#" class="btn btn-primary">View Details</a>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
-                                <div class="card-dashboard">
-                                    <div class="container-dashboard">
-                                        <h4><b>Today's Checkouts</b></h4>
-                                        <p>Number of guests checking out today.</p>
-                                    </div>
+
+
+
+                                <!-- Room Card 3 -->
+                                <div class="col-md-3">
+                                <div class="room-card">
+                                    <img src="{{asset('image/9.jpg')}}" class="img-fluid imagefile" alt="">
+                                    <h2 class=roomh2>COUPLE ROOM</h2>
+                                    <p>Occupied</p>
+                                    <p>Price: $150/night</p>
+                                    <a href="#" class="btn btn-primary">View Details</a>
                                 </div>
                             </div>
                         </div>
+        
+        
+                                                    <!-- Room Card 3 -->
+                                                    <div class="col-md-3">
+                                                    <div class="room-card">
+                                                        <img src="{{asset('image/9.jpg')}}" class="img-fluid imagefile" alt="">
+                                                        <h2 class=roomh2>VIP ROOM</h2>
+                                                        <p>Occupied</p>
+                                                        <p>Price: $150/night</p>
+                                                        <a href="#" class="btn btn-primary">View Details</a>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                            <div class="dash-row">
+            
+            
+                                <div class="col-md-3">
+                                    <div class="dash-card">
+                                        <div class="dash-card-body">
+                                            <h5 class="dash-card-title"><i class="fas fa-bed"></i> Available Rooms</h5>
+                                            {{-- <p class="dash-card-text">Total reservations: 50</p>
+                                            <p class="dash-card-text">Pending reservations: 10</p>
+                                            <p class="dash-card-text">Occupied rooms: 40</p> --}}
+                                            <p class="dash-card-text">Available rooms: 10</p>
+                                            <a href="" class="btn btn-primary">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                             
+                                
+                                
                         
-                    </div>
-                    <!-- End of Topbar -->
-
-                    <!-- Begin Page Content -->
-                
-
-                        <!-- Content Row -->
-
-                    
-                            
-
-{{-- 
-                        <!-- Content Row -->
-                        <div class="row">
-
-                            <!-- Content Column -->
-                            <div class="col-lg-6 mb-4">
-
-                                <!-- Project Card Example -->
-                                <div class="card shadow mb-4">
-                                    <div class="card-header py-3">
-                                        <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
+                                <div class="col-md-3">
+                                    <div class="dash-card">
+                                        <div class="dash-card-body">
+                                            <h5 class="dash-card-title"><i class="fas fa-sign-out-alt"></i> Checkout</h5>
+                                            {{-- <p class="dash-card-text">Available rooms: 30</p>
+                                            <p class="dash-card-text">Occupied rooms: 20</p>
+                                            <p class="dash-card-text">Rooms under cleaning: 5</p>
+                                            <p class="dash-card-text">Maintenance in progress: 2</p> --}}
+                                            <p class="dash-card-text">Today's checkouts: 10</p>
+                                            <a href="" class="btn btn-primary">View Details</a>
+                                        </div>
                                     </div>
-                                    <div class="card-body">
-                                        <h4 class="small font-weight-bold">Server Migration <span
-                                                class="float-right">20%</span></h4>
-                                        <div class="progress mb-4">
-                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
-                                                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <h4 class="small font-weight-bold">Sales Tracking <span
-                                                class="float-right">40%</span></h4>
-                                        <div class="progress mb-4">
-                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
-                                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <h4 class="small font-weight-bold">Customer Database <span
-                                                class="float-right">60%</span></h4>
-                                        <div class="progress mb-4">
-                                            <div class="progress-bar" role="progressbar" style="width: 60%"
-                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <h4 class="small font-weight-bold">Payout Details <span
-                                                class="float-right">80%</span></h4>
-                                        <div class="progress mb-4">
-                                            <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
-                                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <h4 class="small font-weight-bold">Account Setup <span
-                                                class="float-right">Complete!</span></h4>
-                                        <div class="progress">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
-                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                
+            
+            
+                                <div class="col-md-3">
+                                    <div class="dash-card">
+                                        <div class="dash-card-body">
+                                            <h5 class="dash-card-title"><i class="fas fa-bed"></i> Bookings</h5>
+                                            {{-- <p class="dash-card-text">Total reservations: 50</p>
+                                            <p class="dash-card-text">Pending reservations: 10</p>
+                                            <p class="dash-card-text">Occupied rooms: 40</p> --}}
+                                            <p class="dash-card-text">Today's booking: 10</p>
+                                            <a href="" class="btn btn-primary">View Details</a>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Color System -->
-                                <div class="row">
-                                    <div class="col-lg-6 mb-4">
-                                        <div class="card bg-primary text-white shadow">
-                                            <div class="card-body">
-                                                Primary
-                                                <div class="text-white-50 small">#4e73df</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 mb-4">
-                                        <div class="card bg-success text-white shadow">
-                                            <div class="card-body">
-                                                Success
-                                                <div class="text-white-50 small">#1cc88a</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 mb-4">
-                                        <div class="card bg-info text-white shadow">
-                                            <div class="card-body">
-                                                Info
-                                                <div class="text-white-50 small">#36b9cc</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 mb-4">
-                                        <div class="card bg-warning text-white shadow">
-                                            <div class="card-body">
-                                                Warning
-                                                <div class="text-white-50 small">#f6c23e</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 mb-4">
-                                        <div class="card bg-danger text-white shadow">
-                                            <div class="card-body">
-                                                Danger
-                                                <div class="text-white-50 small">#e74a3b</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 mb-4">
-                                        <div class="card bg-secondary text-white shadow">
-                                            <div class="card-body">
-                                                Secondary
-                                                <div class="text-white-50 small">#858796</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 mb-4">
-                                        <div class="card bg-light text-black shadow">
-                                            <div class="card-body">
-                                                Light
-                                                <div class="text-black-50 small">#f8f9fc</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 mb-4">
-                                        <div class="card bg-dark text-white shadow">
-                                            <div class="card-body">
-                                                Dark
-                                                <div class="text-white-50 small">#5a5c69</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                            </div>
-
-
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- /.container-fluid -->
-
-
-                </div>
-                <!-- End of Main Content -->
 
             
+                                <div class="col-md-3">
+                                    <div class="dash-card">
+                                        <div class="dash-card-body">
+                                            <h5 class="dash-card-title"><i class="fas fa-credit-card"></i> Payments</h5>
+                                            {{-- <p class="dash-card-text">Check-ins today: 5</p>
+                                            <p class="dash-card-text">Check-outs today: 3</p> --}}
+                                            <p class="dash-card-text">Total revenue: $2000</p>
+                                            {{-- <p class="dash-card-text">Outstanding payments: $500</p>
+                                            <p class="dash-card-text">Average daily rate: $150</p> --}}
+                                            <a href="" class="btn btn-primary">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+            
+            
+            
+            
+                            {{-- <div class="row">
+                                <div class="col-md-12">
+                                    <canvas id="bookingStatusChart"></canvas>
+                                </div>
+                            </div> --}}
+             
+                    
+            
+                    {{-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> --}}
 
+
+                {{-- </div> --}}
             </div>
-            <!-- End of Content Wrapper --> --}}
-
-
-        {{-- <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-        </a> --}}
-
 
         
         <!-- Logout Modal-->

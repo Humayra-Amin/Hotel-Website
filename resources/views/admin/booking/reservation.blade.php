@@ -134,12 +134,14 @@
 
         <div class="col-sm-6 form-group">
           <label for="roomcategory" class="reserve-label">Room Category </label>
-          <select class="form-control" name="roomcategory" id="roomcategory" required>
-              <option value="Normal">Normal</option>
-              <option value="Standered">Standered</option>
-              <option value="Premium">Premium</option>
-              <option value="Super Premium">Super Premium</option>
-              <option value="Queen">Queen</option>
+          <select class="form-control" name="roomcategory" id="roomcategory" placeholder="Room Category" required>
+            @foreach ($rooms as $room)
+            <option value="{{ $rooms }}">{{ $rooms }}>({{$id->roomtitle}} - {{$id->roomno}})</option>
+        @endforeach
+              {{-- <option value="Normal">Single Room</option>
+              <option value="Standered">Double Room</option>
+              <option value="Premium">Couple Room</option>
+              <option value="Super Premium">VIP Room</option> --}}
           </select>
         </div>
         
@@ -174,7 +176,7 @@
 
           <div class="col-sm-6 form-group">
             <label for="price" class="reserve-label">Price</label>
-            <input type="number" name="price" class="form-control" id="price" placeholder="Price" required>
+            <input type="text" name="price" class="form-control" id="price" placeholder="Price" required>
           </div>
 
 

@@ -74,7 +74,7 @@ class EmployeeController extends Controller
             'gender' => 'required',
             'joiningdate' => 'required',
             'salary' => 'required|integer',
-            'verified' => 'boolean',
+            // 'verified' => 'boolean',
         ]);
 
 
@@ -119,7 +119,7 @@ class EmployeeController extends Controller
         $employee->gender = $request->gender;
         $employee->joiningdate = $request->joiningdate;
         $employee->salary = $request->salary;
-        $employee->verified = $request->has('verified');
+        // $employee->verified = $request->has('verified');
         $employee->save();
 
 
@@ -209,6 +209,7 @@ class EmployeeController extends Controller
 
         if($request->file('image'))
         {
+            Storage::disk("public")->deleteDirectory("$employee->id");
         Storage::disk("public")->put("$employee->id", $request->file('image'));
         }
         $employee->image= Storage::disk("public")->files($employee->id);

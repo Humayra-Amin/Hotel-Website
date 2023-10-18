@@ -135,7 +135,7 @@
 
                             <tr>
                               <td>{{$booking->id}}</td>
-                              <td>{{$booking->name}}</td>
+                              <td>{{$booking->cname}}</td>
                               <td>{{$booking->email}}</td>
                               <td>{{$booking->roomcategory}}</td>
                               <td>{{$booking->checkInDate}}</td>
