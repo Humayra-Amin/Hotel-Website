@@ -22,6 +22,7 @@ class Room extends Model
         'facilities',
         'guestservice',
         'image',
+        'status',
        
     ];
 

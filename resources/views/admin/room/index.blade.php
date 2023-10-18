@@ -122,6 +122,7 @@
                         <th class=col-md-2>Floor No</th>
                 
                         <th class=col-md-2>Price</th>
+                        <th class=col-md-2>Status</th>
                         <th class=col-md-2></th>
                         </tr>
                         </thead>
@@ -138,6 +139,7 @@
                                 <td>{{$room->floorno}}</td>
                                 {{-- <td>{{$room->category_id}}</td>     --}}
                                 <td>{{$room->price}}</td>  
+                                <td>{{$room->status}}</td>
                                 <td class="text-center">
                                 <div class="d-flex">
                                 <a href="/admin/room/{{$room->id}}" title="view" class="btn btn-outline-primary btn-eye my-2 "><i class="fa-solid fa-eye"></i></a>

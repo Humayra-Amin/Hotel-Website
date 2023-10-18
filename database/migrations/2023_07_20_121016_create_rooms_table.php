@@ -33,6 +33,7 @@ return new class extends Migration
             $table->text('facilities');
             $table->text('guestservice')->nullable();
             $table->text('image')->nullable();
+            $table->string('status')->nullable();
 
 
             $table->timestamps();

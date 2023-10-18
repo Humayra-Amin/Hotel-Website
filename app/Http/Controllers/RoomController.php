@@ -69,7 +69,7 @@ class RoomController extends Controller
             'category_id' => 'required',
             'roomsize' => 'required',
             'facilities' => 'required',
-           
+    
 
         ]);
 
@@ -86,6 +86,7 @@ class RoomController extends Controller
         $room->roomview = $request->roomview;
         $room->guestservice = $request->guestservice;
         $room->facilities = $request->facilities;
+        $room->status = $request->status;
         $room->save();
 
 
@@ -118,8 +119,9 @@ class RoomController extends Controller
             'price' => 'required',
             'maxoccupancy' => 'required',
             'category_id' => 'required',
-            'roomsize' => 'required',
+            'roomsize' => 'required',                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
             'facilities' => 'required',
+
          
         ]);
 
@@ -136,6 +138,7 @@ class RoomController extends Controller
         $room->roomview = $request->roomview;
         $room->guestservice = $request->guestservice;
         $room->facilities = $request->facilities;
+        $room->status = $request->status;
         $room->update();
 
        
@@ -196,6 +199,7 @@ class RoomController extends Controller
        return redirect()->back()->with('success','Record Successfully Deleted');
 
     }
+    
 
 
 }
