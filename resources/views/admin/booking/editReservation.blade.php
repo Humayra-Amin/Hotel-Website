@@ -153,14 +153,7 @@
         </select>
       </div>
 
-
-
-
-      <div class="col-sm-6 form-group">
-        <label for="roomno" class="reserve-label">Room No.</label>
-        <input type="number" class="form-control" name="roomno" id="roomno" placeholder="Enter Room No." value="{{$booking->roomno}}" required>
-      </div>
-
+      
 
 
       <div class="col-sm-6 form-group">

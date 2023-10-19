@@ -43,7 +43,6 @@ class BookingController extends Controller
             'tel' => 'required',
             'nid' => 'required',
             'room_id' => 'required',
-            'roomno' => 'required',
             'guestnumber' => 'required',
             'checkInDate' => 'required|date',
             'checkOutDate' => 'required|date',
@@ -71,7 +70,6 @@ class BookingController extends Controller
     $booking->tel = $request->tel;
     $booking->nid = $request->nid;
     $booking->room_id = $request->room_id;
-    $booking->roomno = $request->roomno;
     $booking->guestnumber = $request->guestnumber;
     $booking->checkInDate = $request->checkInDate;
     $booking->checkOutDate = $request->checkOutDate;
@@ -124,7 +122,6 @@ class BookingController extends Controller
             'tel' => 'required',
             'nid' => 'required',
             'room_id' => 'required',
-            'roomno' => 'required',
             'guestnumber' => 'required',
             'checkInDate' => 'required|date',
             'checkOutDate' => 'required|date',
@@ -152,7 +149,6 @@ class BookingController extends Controller
         $booking->tel = $request->tel;
         $booking->nid = $request->nid;
         $booking->room_id = $request->room_id;
-        $booking->roomno = $request->roomno;
         $booking->guestnumber = $request->guestnumber;
         $booking->checkInDate = $request->checkInDate;
         $booking->checkOutDate = $request->checkOutDate;

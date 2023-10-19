@@ -113,22 +113,17 @@
 
                     <p class="single-p">{{$booking->cname}}</p>
 
-                    <h2 class="singleview">Email:</h2>
-
-                    <p class="single-p">{{$booking->email}}</p>
-
-                    <h2 class="singleview">Contact No.:</h2>
-
-                    <p class="single-p">{{$booking->tel}}</p>
-
                     <h2 class="singleview">National Id.:</h2>
 
                     <p class="single-p">{{$booking->nid}}</p>
 
                     <h2 class="singleview">Room Category:</h2>
+    
+                    <p class="single-p">{{$booking->room->roomtitle}}-{{$booking->room->roomno}}</p>
 
-                    <p class="single-p">{{$booking->roomcategory}}</p>
+                    <h2 class="singleview">Check-out Date:</h2>
 
+                    <p class="single-p">{{ $booking->checkOutDate}}</p>
 
                 </div>
 
@@ -137,17 +132,18 @@
 
                     <div class="col-6">
 
-                    <h2 class="singleview">Room No.:</h2>
+                    <h2 class="singleview">Email:</h2>
 
-                    <p class="single-p">{{ $booking->roomno}}</p>
+                    <p class="single-p">{{$booking->email}}</p>
+    
+                    <h2 class="singleview">Contact No.:</h2>
+
+                    <p class="single-p">{{$booking->tel}}</p>
 
                     <h2 class="singleview">Check-in Date:</h2>
 
                     <p class="single-p">{{$booking->checkInDate}}</p>
 
-                    <h2 class="singleview">Check-out Date:</h2>
-
-                    <p class="single-p">{{ $booking->checkOutDate}}</p>
 
                 </div>
 
