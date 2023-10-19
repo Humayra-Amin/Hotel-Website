@@ -40,7 +40,6 @@ return new class extends Migration
             $table->decimal('price');
             $table->decimal('discount')->nullable();
             $table->text('specialrequest')->nullable();
-            $table->string('status');
 
             $table->timestamps();
         });

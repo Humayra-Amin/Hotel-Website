@@ -104,7 +104,7 @@
 
 
     
-          <div class="col-sm-12  form-group">
+          <div class="col-sm-6  form-group">
             <label for="cname" class="reserve-label">Customer Name</label>
             <input type="text" class="form-control" name="cname" id="cname" placeholder="Name" required>
           </div>
@@ -135,19 +135,14 @@
         <div class="col-sm-6 form-group">
           <label for="roomcategory" class="reserve-label">Room Category </label>
           <select class="form-control" name="id" id="roomcategory" placeholder="Room Category" required>
+            <option >Select Room Category</option>
             @foreach ($rooms as $room)
             <option value="{{ $room->id }}">{{$room->roomtitle}} - {{$room->roomno}}</option>
             @endforeach
               
           </select>
         </div>
-        
-
-
-        <div class="col-sm-6 form-group">
-          <label for="roomno" class="reserve-label">Room No.</label>
-          <input type="number" class="form-control" name="roomno" id="roomno" placeholder="Room No." required>
-        </div>
+      
 
 
 
