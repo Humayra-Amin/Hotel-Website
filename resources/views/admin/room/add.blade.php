@@ -129,9 +129,16 @@
                               <label for="Category">Category</label>
                               <select name="category_id" class="form-control custom-select browser-default">
                                 <option>Select your Room Category</option>
-                                @foreach ($categories as $category)
+                                {{-- @foreach ($categories as $category)
                                 <option value="{{$category->id}}"> {{$category->categoryname}} </option>
-                                @endforeach
+                                @endforeach --}}
+
+
+                                <option value="Normal">Single Room</option>
+                                <option value="Standered">Double Room</option>
+                                <option value="Premium">Couple Room</option>
+                                <option value="Super Premium">VIP Room</option>
+                                
                             </select>
                             </div>
                             

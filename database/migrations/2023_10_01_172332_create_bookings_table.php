@@ -37,8 +37,8 @@ return new class extends Migration
             $table->string('guestnumber');
             $table->date('checkInDate');
             $table->date('checkOutDate');
-            $table->decimal('price', 10, 2);
-            $table->decimal('discount', 10, 2)->nullable();
+            $table->decimal('price');
+            $table->decimal('discount')->nullable();
             $table->text('specialrequest')->nullable();
             $table->string('status');
 
