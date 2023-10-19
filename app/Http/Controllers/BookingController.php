@@ -13,7 +13,7 @@ class BookingController extends Controller
 
     public function reservation(Request $request)
     {
-        $rooms = Room::where('id',$request->id)->get();
+        $rooms = Room::all();
         return view("admin.booking.reservation")->with('rooms',  $rooms);
         // return view("admin.booking.reservation");
         
