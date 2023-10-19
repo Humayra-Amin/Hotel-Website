@@ -10,6 +10,8 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AccountController;
+
 
 
 
@@ -128,6 +130,12 @@ Route::middleware(["auth:emps"])->group(function () {
 
     Route::get('/admin/dashboards', [DashboardController::class, "dashboards"]);
     Route::get('/admin/utility', [DashboardController::class, "utility"]);
+
+
+                                   //accounts route
+
+    Route::get('/admin/Account/expense', [AccountController::class, "expense"]);
+    Route::get('/admin/Account/income', [AccountController::class, "income"]);
 
     
 

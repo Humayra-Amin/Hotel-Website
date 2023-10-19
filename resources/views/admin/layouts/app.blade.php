@@ -55,6 +55,8 @@
 
     <link rel="stylesheet" href="{{asset('employees/css/dashboards.css')}}">
 
+    <link rel="stylesheet" href="{{asset('Accounts/css/expense.css')}}">
+    <link rel="stylesheet" href="{{asset('Accounts/css/income.css')}}">
 
 
 
