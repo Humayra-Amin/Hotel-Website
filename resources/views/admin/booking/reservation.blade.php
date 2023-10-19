@@ -134,8 +134,7 @@
 
         <div class="col-sm-6 form-group">
           <label for="roomcategory" class="reserve-label">Room Category </label>
-          <select class="form-control" name="id" id="roomcategory" placeholder="Room Category" required>
-            <option >Select Room Category</option>
+          <select class="form-control" name="room_id" id="roomcategory" placeholder="Room Category" required>
             @foreach ($rooms as $room)
             <option value="{{ $room->id }}">{{$room->roomtitle}} - {{$room->roomno}}</option>
             @endforeach

@@ -80,6 +80,9 @@ class BookingController extends Controller
     $booking->specialrequest = $request->specialrequest;
     $booking->save();
 
+    $room = Room::where('id', $request->room_id)->first();
+    $room->status = 'Booked';
+    $room->update();
 
 
     return redirect("admin/booking/booklists")->with("success", "Booking Done....");

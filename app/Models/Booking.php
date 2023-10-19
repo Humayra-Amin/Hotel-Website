@@ -35,4 +35,9 @@ class Booking extends Model
             'discount',
             'specialrequest',
     ];
+
+    public function room()
+    {
+        return $this->belongsTo(Room::class); 
+    }
 }
