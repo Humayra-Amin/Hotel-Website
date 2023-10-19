@@ -82,26 +82,26 @@
 
                     <div class="dash-container">
                         <div class="card">
-                          <div class="card-body">
-                            <h3 class="card-title">Overview</h3>
+                          <div class="dash-card-body">
+                            <h3 class="dash-h3">Overview</h3>
                             <div class="dash-row">
                         <div class="col-lg-12">
-                          <div class="row">
+                          <div class="dash-row">
                             <div class="col-sm-3 Overview-body">
-                              <h5 class="card-title text-center">Today's Check-in</h5>
-                              <p class="overview-text text-center">5</p>
+                              <h5 class="dash-card-title dash-text-center">Today's Check-in</h5>
+                              <p class="overview-text dashp-text-center">5</p>
                             </div>
                             <div class="col-sm-3 Overview-body">
-                              <h5 class="card-title text-center">Today's Check-out</h5>
-                              <p class="overview-text text-center">4</p>
+                              <h5 class="dash-card-title dash-text-center">Today's Check-out</h5>
+                              <p class="overview-text dashp-text-center">4</p>
                             </div>
                             <div class="col-lg-3 Overview-body">
-                              <h5 class="card-title text-center">Available Room</h5>
-                              <p class="overview-text text-center">5</p>
+                              <h5 class="dash-card-title dash-text-center">Available Room</h5>
+                              <p class="overview-text dashp-text-center">5</p>
                             </div>
                             <div class="col-lg-3 Overview-body">
-                              <h5 class="card-title text-center">Occupied Room</h5>
-                              <p class="overview-text text-center">10</p>
+                              <h5 class="dash-card-title dash-text-center">Occupied Room</h5>
+                              <p class="overview-text dashp-text-center">10</p>
                             </div>
                             </div>
                           </div>
@@ -110,13 +110,12 @@
                     </div>
                   
                       <div class="row">
-                  
-                  
+                        <h3 class="dashtitle-h3">Available Rooms</h3>
                         <!-- 1st room -->
                   
                         <div class="col-md-3">
                           <div class="card">
-                            <img src="family room.jpg" class="card-img-top" alt="Image 1">
+                            <img src="{{asset('image/luxary room.jpg')}}" class="img-fluid imagefile" alt="">
                             <div class="card-body">
                               <h5 class="card-title">Single Room</h5>
                               <p class="card-text">Available Rooms: 6</p>
@@ -148,7 +147,7 @@
                   
                       <div class="col-md-3">
                         <div class="card">
-                          <img src="deluxe room.jpg" class="card-img-top" alt="Image 2">
+                            <img src="{{asset('image/luxary room.jpg')}}" class="img-fluid imagefile" alt="">
                           <div class="card-body">
                             <h5 class="card-title">Double Room</h5>
                             <p class="card-text">Available Rooms: 2</p>
@@ -177,7 +176,7 @@
                   <!-- 3rd room -->
                         <div class="col-md-3">
                           <div class="card">
-                            <img src="family room.jpg" class="card-img-top" alt="Image 3">
+                            <img src="{{asset('image/luxary room.jpg')}}" class="img-fluid imagefile" alt="">
                             <div class="card-body">
                               <h5 class="card-title">Couple Room</h5>
                               <p class="card-text">Available Rooms: 2</p>
@@ -210,7 +209,7 @@
                   
                     <div class="col-md-3">
                       <div class="card">
-                        <img src="luxary room.jpg" class="card-img-top" alt="Image 4">
+                        <img src="{{asset('image/luxary room.jpg')}}" class="img-fluid imagefile" alt="">
                         <div class="card-body">
                           <h5 class="card-title">VIP Room</h5>
                           <p class="card-text">Available Rooms: 3</p>
