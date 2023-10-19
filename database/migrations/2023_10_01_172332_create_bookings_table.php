@@ -33,14 +33,12 @@ return new class extends Migration
             $table->string('tel');
             $table->string('nid');
             $table->string('room_id');
-            $table->integer('roomno');
             $table->string('guestnumber');
             $table->date('checkInDate');
             $table->date('checkOutDate');
             $table->decimal('price');
             $table->decimal('discount')->nullable();
             $table->text('specialrequest')->nullable();
-            $table->string('status');
 
             $table->timestamps();
         });

@@ -27,7 +27,6 @@ class Booking extends Model
             'tel',
             'nid',
             'room_id',
-            'roomno',
             'guestnumber',
             'checkInDate',
             'checkOutDate',

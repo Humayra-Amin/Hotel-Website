@@ -113,37 +113,13 @@
 
                     <p class="single-p">{{$booking->cname}}</p>
 
-                    <h2 class="singleview">Email:</h2>
-
-                    <p class="single-p">{{$booking->email}}</p>
-
-                    <h2 class="singleview">Contact No.:</h2>
-
-                    <p class="single-p">{{$booking->tel}}</p>
-
                     <h2 class="singleview">National Id.:</h2>
 
                     <p class="single-p">{{$booking->nid}}</p>
 
                     <h2 class="singleview">Room Category:</h2>
-
-                    <p class="single-p">{{$booking->roomcategory}}</p>
-
-
-                </div>
-
-
-
-
-                    <div class="col-6">
-
-                    <h2 class="singleview">Room No.:</h2>
-
-                    <p class="single-p">{{ $booking->roomno}}</p>
-
-                    <h2 class="singleview">Check-in Date:</h2>
-
-                    <p class="single-p">{{$booking->checkInDate}}</p>
+    
+                    <p class="single-p">{{$booking->room->roomtitle}}-{{$booking->room->roomno}}</p>
 
                     <h2 class="singleview">Check-out Date:</h2>
 
@@ -152,11 +128,31 @@
                 </div>
 
 
+
+
+                    <div class="col-6">
+
+                    <h2 class="singleview">Email:</h2>
+
+                    <p class="single-p">{{$booking->email}}</p>
+    
+                    <h2 class="singleview">Contact No.:</h2>
+
+                    <p class="single-p">{{$booking->tel}}</p>
+
+                    <h2 class="singleview">Check-in Date:</h2>
+
+                    <p class="single-p">{{$booking->checkInDate}}</p>
+
+
+                </div>
+
+
                     </div>
 
 
 
-                <div class="d-flex">
+                {{-- <div class="d-flex">
 
                         
                     
@@ -174,7 +170,7 @@
                 
                 
                 
-                    </div>
+                    </div> --}}
 
 
 

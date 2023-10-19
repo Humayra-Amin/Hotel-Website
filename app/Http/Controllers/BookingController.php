@@ -30,7 +30,6 @@ class BookingController extends Controller
             'tel' => 'required',
             'nid' => 'required',
             'room_id' => 'required',
-            'roomno' => 'required',
             'guestnumber' => 'required',
             'checkInDate' => 'required|date',
             'checkOutDate' => 'required|date',
@@ -46,7 +45,6 @@ class BookingController extends Controller
     $booking->tel = $request->tel;
     $booking->nid = $request->nid;
     $booking->room_id = $request->room_id;
-    $booking->roomno = $request->roomno;
     $booking->guestnumber = $request->guestnumber;
     $booking->checkInDate = $request->checkInDate;
     $booking->checkOutDate = $request->checkOutDate;
@@ -85,7 +83,6 @@ class BookingController extends Controller
             'tel' => 'required',
             'nid' => 'required',
             'room_id' => 'required',
-            'roomno' => 'required',
             'guestnumber' => 'required',
             'checkInDate' => 'required|date',
             'checkOutDate' => 'required|date',
@@ -100,7 +97,6 @@ class BookingController extends Controller
         $booking->tel = $request->tel;
         $booking->nid = $request->nid;
         $booking->room_id = $request->room_id;
-        $booking->roomno = $request->roomno;
         $booking->guestnumber = $request->guestnumber;
         $booking->checkInDate = $request->checkInDate;
         $booking->checkOutDate = $request->checkOutDate;
@@ -147,47 +143,47 @@ class BookingController extends Controller
 
 
 
-    public function accept(Request $request, $id)
-    {
+    // public function accept(Request $request, $id)
+    // {
 
-        $booking = Booking::find($id);
-
-
-        if (!$booking) {
-
-            return redirect()->back()->with('error', 'Booking not found.');
-        }
+    //     $booking = Booking::find($id);
 
 
-        $booking->status = 'Accepted';
-        $booking->save();
+    //     if (!$booking) {
+
+    //         return redirect()->back()->with('error', 'Booking not found.');
+    //     }
 
 
-        return redirect()->back()->with('success', 'Booking accepted successfully!!!!');
-
-    }
-
+    //     $booking->status = 'Accepted';
+    //     $booking->save();
 
 
+    //     return redirect()->back()->with('success', 'Booking accepted successfully!!!!');
 
-    public function deny(Request $request, $id)
-    {
-
-        $booking = Booking::find($id);
+    // }
 
 
-        if (!$booking) {
-
-            return redirect()->back()->with('error', 'Booking not found.');
-        }
 
 
-        $booking->status = 'Denied';
-        $booking->save();
+    // public function deny(Request $request, $id)
+    // {
 
-        return redirect()->back()->with('error', 'Booking denied!!!!');
+    //     $booking = Booking::find($id);
 
-    }
+
+    //     if (!$booking) {
+
+    //         return redirect()->back()->with('error', 'Booking not found.');
+    //     }
+
+
+    //     $booking->status = 'Denied';
+    //     $booking->save();
+
+    //     return redirect()->back()->with('error', 'Booking denied!!!!');
+
+    // }
 
     
 }
