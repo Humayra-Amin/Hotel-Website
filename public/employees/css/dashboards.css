@@ -154,12 +154,13 @@ flex: 1 1 auto;
 
         }
 
-        .dash-text-center
-    {
+        .dash-text-center{
+    
             color: #000000;
             font-size: 20px;
             font-family: 'roboto';
             margin-top: 10px;
+            text-align: center;
 
     }
 
