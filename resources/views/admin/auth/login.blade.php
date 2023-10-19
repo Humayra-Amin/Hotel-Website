@@ -39,7 +39,7 @@
                     <button type="submit">Login</button>
         
                     <div class="signup-link">
-                        Don't have an account? <a href="/room/registration">Sign Up</a>
+                        Don't have an account? <a href="/admin/register">Sign Up</a>
                     </div>
                 </form>
             </div>

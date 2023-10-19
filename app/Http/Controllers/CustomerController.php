@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Customer;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -10,77 +11,107 @@ use Illuminate\Support\Facades\Session;
 
 class CustomerController extends Controller
 {
+
+
     public function login()
     {
+
         return view("customer.login");
+
     }  
       
+
+
     public function register()
     {
+
         return view("customer.register");
+
     }
+
 
 
     public function customerlist()
     {
+
         $customers = Customer::all();
-        return view("customer.customerlist")->with('customers',  $customers);
+        return view("admin.customerlist")->with('customers',  $customers);
+        // $customers=Customer::where("id")->firstOrfail();
+        // return view("admin.customerlist")->with('customers',  $customers);
+
     }
 
 
-    public function personalInfo()
+
+    public function Account()
     {
-        return view("customer.personalInfo");
+
+        return view("customer.Account");
+        // $user = auth()-
+
     }
-    public function customernav()
+    public function changepassword()
     {
-        return view("customer.customernav");
+
+        return view("customer.changepassword");
+     
+
     }
   
-    public function changepass()
+  
+
+
+    public function updatepassword(Request $request)
     {
-        return view("customer.changepass");
+
+        $request->validate([
+            'old_password' => 'required',
+            'password' => 'required|confirmed',
+        ]);
+
+
+        #Match The Old Password
+        if(!Hash::check($request->old_password, auth()->user()->password)){
+            return back()->with("error", "Old Password Doesn't match!");
+        }
+
+
+        #Update the new Password
+             User::whereId(auth()->user()->id)->update([
+            'password' => Hash::make($request->new_password)
+        ]);
+
+        return back()->with("success", "Password changed successfully!");
+
     }
-    public function bookmodal()
-    {
-        return view("customer.bookmodal");
-    }
+
+
 
     public function services()
     {
+
         return view("customer.services");
+
     }
+
+
+
     public function contact()
     {
+
         return view("customer.contact");
+
     }
 
 
-    public function store(Request $request)
+    
+
+    public function Allrooms()
     {
-    $request->validate([
-        'id' => 'required',
-        'name' => 'required|max:50',
-        'email' => 'required|email',
-        'roomno' => 'required',
-        'status' => 'required',
-        'password'=> 'required',
-        'password'=> 'required',
 
-
-    ]);
-
-    $customer = new Customer();
-    $customer->id = $request->id;
-    $customer->name = $request->name;
-    $customer->email = $request->email;
-    $customer->roomno = $request->roomno;
-    $customer->status = $request->status;
-
-    $customer->save();
-
-    return redirect("customer")->with("success", "Customer listed");
-}
+        return view("customer.Allrooms");
+        
+    } 
 
 
 
@@ -95,61 +126,59 @@ class CustomerController extends Controller
    
         $credentials = $request->only('email', 'password');
 
-
-        if (Auth::guard("emp")->attempt($credentials)) {
+        if (Auth::guard("customers")->attempt($credentials)) {
             $request->session()->regenerate();
             return redirect()->intended('/')->withSuccess('You have Successfully loggedin');
         }
 
+
         return redirect("/login")->withErrors('Oppes! You have entered invalid credentials');
+
     }
       
 
+
     public function postRegister(Request $request)
     {  
+
         $request->validate([
             'name' => 'required',
-            'email' => 'required|email|unique:users',
+            'email' => 'required|email|unique:customers',
             'password' => 'required|confirmed',
         ]);
+
            
         $data = $request->all();
         $check = $this->create($data);
+
          
         return redirect("/")->withSuccess('Great! You have Successfully loggedin');
+
     }
     
     
     
     public function create(array $data)
     {
-      return Customer::create([
-        'name' => $data['name'],
-        'email' => $data['email'],
-        'password' => Hash::make($data['password'])
-      ]);
+
+        return Customer::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password'])
+        ]);
+
     }
     
-  
-    public function logout() {
 
-        Session::flush();
-        Auth::logout();
+
   
-        return Redirect('/');
+    public function logout(Request $request) {
+
+            Auth::guard("customers")->logout();
+    
+            return Redirect('/');
+
     }
-
-
-    public function password()
-    {
-        return view("customer.changepass");
-    } 
-
-
-    public function Allrooms()
-    {
-        return view("customer.Allrooms");
-    } 
 
 
  }

@@ -53,15 +53,15 @@
 }
 
 
-
-     /* sliderimage */
-     .carousel-caption{
+/* sliderimage */
+.carousel-caption{
         padding-bottom:210px;
         color:#ffffff;
         font-size: 30px;
         font-weight: bold;
         font-family:"Playfair Display", serif;
-    }
+ }
+
 .slider-title{
     padding-bottom:2px;
     color: #f3f3f2;
@@ -319,41 +319,6 @@ margin-top: 1px;
     height: 203px;
 }
 
-/* features */
-
-/* .allfeatures{
-    padding: 40px 180px;
-    background:linear-gradient(90deg,  rgb(77, 96, 117) 0%, rgba(245,245,255,1) 100%);
-}
-
-.features-title{ 
-    margin-bottom: 90px;
-    font-size: 34px;
-    font-family: "Playfair Display", serif;
-    font-weight: bold;
-    color: rgb(15, 0, 0);
-}
-.features-title:after{
-    content: '';
-    width: 140px;        
-    position: absolute;
-    left: 45%;
-    margin-bottom: 5px;
-    display: block;
-    border-bottom: 2px solid #c5874e;
-}
-
-.features-text{
-    font-size: 18px;
-    font-family: "Playfair Display", serif;
-    font-weight: bold;
-}
-.feature-image{
-    height: 100%;
-    width: 60px;
-    object-fit: cover;
-    margin-bottom: 20px;
-} */
 
 .mapsize{
     margin-bottom: 100px;
@@ -387,74 +352,3 @@ padding-bottom: 30px;
 
 
 
-/* our room */
-
-
-/* .room-section-heading {
-    font-size: 34px;
-    font-weight: bold;
-    font-family: "Playfair Display", serif;
-    color: rgb(10, 0, 0);
-  }
-  
-  .room-section-heading:after {
-   content: '';
-   width: 90px;
-   position: absolute;
-   left: 45%;
-   margin-bottom: 10px;
-   display: block;
-   border-bottom: 2px solid #c5874e;
-  }
-  
-  .section-site{
-    padding: 6rem;
-    background: linear-gradient(90deg,  rgb(77, 96, 117) 0%, rgba(245,245,255,1) 100%);
-  }
-  
-       .roomcard-title{
-        margin-top: 10px;
-        padding-left: 15px;
-        font-size: 24px;
-        font-weight: bold;
-  
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-       }
-  .roomcard-text1{
-    padding-left: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-  }
-  .roomcard-text2{
-    margin-bottom: 10px;
-    color: #c5874e;
-    font-size: 28px;
-    font-weight: bold;
-     padding-left: 15px;
-  }
-  .roomcard-text3{
-    position: absolute;
-    bottom:1%;
-    color: #010300;
-    font-size: 13px;
-    font-weight: bold;
-   padding-left: 15px;
-  }
-  
-  .hotel-room{
-    height: 360px;
-    width: 100%;
-    background:#ffffff;
-    cursor: pointer;
-    transition: transform 0.8s ease-in-out;
-  }
-  
-  .hotel-room:hover {         
-    transform: scale(1.1);
-  }
-  
-  .homeourimage-card{
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-  } */

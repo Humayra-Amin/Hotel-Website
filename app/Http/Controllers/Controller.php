@@ -16,6 +16,11 @@ class Controller extends BaseController
     {
         return view("admin.room.dashboard");
     }
+    
+    public function utility()
+    {
+        return view("admin.utility");
+    }
      
     // public function home()
     // {

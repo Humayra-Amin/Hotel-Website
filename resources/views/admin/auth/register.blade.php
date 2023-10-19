@@ -40,7 +40,7 @@
            </div>
 
            <div class="login-link">
-            <p>Already have an Account? <a href="/room/login">Login</a></p>
+            <p>Already have an Account? <a href="/admin/login">Login</a></p>
            </div>
        </form>
      </div>

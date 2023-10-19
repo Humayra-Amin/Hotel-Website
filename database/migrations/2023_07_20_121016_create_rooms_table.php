@@ -11,8 +11,12 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
+
+
     public function up(): void
     {
+
+
         Schema::create('rooms', function (Blueprint $table) {
             $table->id();
    
@@ -23,21 +27,23 @@ return new class extends Migration
             $table->string('floorno');
             $table->string('price');
             $table->string('category_id');
-            $table->string('roomtype');
             $table->string('roomsize');
-            $table->string('roomview');
-            $table->text('availablerooms');
+            $table->string('roomview')->nullable();
             $table->text('maxoccupancy');
-            $table->text('guestservice');
             $table->text('facilities');
-            $table->text('description')->nullable();
+            $table->text('guestservice')->nullable();
             $table->text('image')->nullable();
+            $table->string('status')->nullable();
 
 
             $table->timestamps();
+
         });
+
     }
 
+
+    
     /**
      * Reverse the migrations.
      */

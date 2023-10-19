@@ -16,16 +16,13 @@ class Room extends Model
         'roomno',
         'floorno',
         'price',
-        'maxoccupancy',
-        'description',
         'category_id',
-        'roomtype',
         'roomsize',
         'roomview',
-        'guestservice',
         'facilities',
-        'availablerooms',
+        'guestservice',
         'image',
+        'status',
        
     ];
 

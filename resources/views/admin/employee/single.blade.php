@@ -48,40 +48,80 @@
                 </div>
             </div>
 
+
+
+
             <div class="col-3 bbb fs-5 ">
-                <h2 class="group-h2">First Name:</h2>
-                <p>{{$employee->fname}}</p>
-                <h2 class="group-h2">Date of Birth:</h2>
-                <p>{{$employee->dob}}</p>
-                <h2 class="group-h2">Position:</h2>
-                <p>{{$employee->position}}</p>
+
+
+                <h2 class="group-h2">Employee Name:</h2>
+                <p>{{$employee->ename}}</p>
+
+
+                <h2 class="group-h2">Mother's Name:</h2>
+                <p>{{$employee->motherName}}</p>
+
+
+                <h2 class="group-h2">Gender:</h2>
+                <p>{{$employee->gender}}</p>
+
+
                 <h2 class="group-h2">Present Address:</h2>
                 <p>{{$employee->Locality}}</p>
-                <h2 class="group-h2">Gender:</h2>
-                <p>{{$employee->sex}}</p>
-                <h2 class="group-h2">Contact No:</h2>
-                <p>{{$employee->phone}}</p>
-            </div>
 
-            <div class="col-3 aaa fs-5">
-                <h2 class="group-h2">Last Name:</h2>
-                <p>{{$employee->lname}}</p>
-                <h2 class="group-h2">Employee Id:</h2>
-                <p>{{$employee->eid}}</p>
+
+                <h2 class="group-h2">Emergency Contact:</h2>
+                <p>{{$employee->emergencyContact}}</p>
+
+
                 <h2 class="group-h2">Joining Date:</h2>
                 <p>{{$employee->joiningdate}}</p>
+
+
                 <h2 class="group-h2">Salary:</h2>
                 <p>{{$employee->salary}}</p>
-                <h2 class="group-h2">Email:</h2>
-                <p>{{$employee->email}}</p>
-                <h2 class="group-h2">Input Nid:</h2>
-                <p>{{$employee->nid}}</p>
                 
+
                 
             </div>
 
-           
+
+
+
+
+
+            <div class="col-3 aaa fs-5">
+
+
+                <h2 class="group-h2">Email:</h2>
+                <p>{{$employee->email}}</p>
+
+
+                <h2 class="group-h2">Father's Name:</h2>
+                <p>{{$employee->fatherName}}</p>
+
+
+                <h2 class="group-h2">Date of Birth:</h2>
+                <p>{{$employee->dob}}</p>
+
+
+                <h2 class="group-h2">Contact No:</h2>
+                <p>{{$employee->phone}}</p>
+
+
+                <h2 class="group-h2">National ID:</h2>
+                <p>{{$employee->nid}}</p>
+
+
+                <h2 class="group-h2">Position:</h2>
+                <p>{{$employee->position}}</p>
+                
+                
+
+            </div>
+
         
+
         </div>
     
           

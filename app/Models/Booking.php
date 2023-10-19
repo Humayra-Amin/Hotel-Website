@@ -10,15 +10,29 @@ class Booking extends Model
     use HasFactory;
     protected $fillable = 
     [
-            'name',
+            // 'name',
+            // 'email',
+            // 'tel',
+            // 'nid',
+            // 'roomno',
+            // 'roomcategory',
+            // 'maxoccupancy',
+            // 'checkInDate',            
+            // 'checkOutDate',
+
+
+
+            'cname',
             'email',
             'tel',
             'nid',
-            'roomType',
+            'room_id',
             'roomno',
-            'roomcategory',
-            'maxoccupancy',
-            'checkInDate',            
+            'guestnumber',
+            'checkInDate',
             'checkOutDate',
+            'price',
+            'discount',
+            'specialrequest',
     ];
 }

@@ -1,17 +1,9 @@
-{{-- <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Register</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{asset('employees/auth/register.css')}}">
-</head>
-  <body> --}}
-
 @extends('customer.layouts.apps')
 
- @section('apps')
+
+
+@section('apps')
+
 
 
     <div class="group-file">
@@ -19,14 +11,26 @@
         <div class="container">
             <div class="row g-0 my-3 form-card-group">
                 
+                
+                
+                
                 <div class="col-lg-5">
                     <img src="{{asset('image/9.jpg')}}" class="img-fluid imagefile" alt="">
                 </div>
+
+
+
                 <div class="col-lg-7 px-3 pt-3 text-center py-5">
                     <h1 class="font-weight-bold py-3">Register</h1>
+
+
+
                     
-                    <form class="login-form" action="{{ route('register.post') }}" method="POST">
+                    <form class="login-form" action="{{ url('/post-register') }}" method="POST">
                         @csrf
+
+
+
 
                         <div class="title-row mt-3">
                             <div class="offset-1 col-lg-10">
@@ -36,6 +40,9 @@
                                 @endif
                             </div>
                         </div>
+
+
+
                         
                         <div class="title-row">
                           <div class="offset-1 col-lg-10">
@@ -44,6 +51,10 @@
                               <span class="text-danger">{{ $errors->first('email') }}</span>
                              @endif
                           </div>
+                        </div>
+
+
+
                         
                           <div class="title-row d-flex flex-column">
                             <div class="offset-1 col-lg-10">
@@ -52,25 +63,43 @@
                                 <span class="text-danger">{{ $errors->first('password') }}</span>
                                  @endif
                             </div>
-                       
-                        </div>
+                       </div>
+
+
+
+
+
                           <div class="title-row">
                             <div class="offset-1 col-lg-10">
                                 <input type="password" placeholder="Confirm-password" name="password_confirmation" class="inp px-3">
                             </div>
+                          </div>
 
-                           <div class="title-row d-flex justify-content-center py-3 ">
+
+
+
+
+                        <div class="title-row d-flex justify-content-center py-3 ">
                             <button type="submit" class="register-btn1 mt-2 mb-4">Create New Account</button>
-                            </div>
+                        </div>
                  
                             <div class="login-link">
                              <p>Already have an Account? <a href="/login" class="btnlogin">Login</a></p>
                             </div>
-                    </form>
+                            
+                    
+                        </form>
+
+
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
+
 </div>
    
 

@@ -1,5 +1,9 @@
     @extends('admin.layouts.app')
+
+    
     @section('app')
+
+
     <div id="content-wrapper" class="d-flex flex-column">
         
     
@@ -76,10 +80,13 @@
 
 
 
+
+
 <div class="container mt-3 ">
 
 
-    @include('admin.inc.message')
+
+ @include('admin.inc.message')
     
     
     <h2 class="file-h2">Add Reservation</h2>
@@ -94,89 +101,110 @@
           <div class="col-sm-8 form-group">
             <h2 class="text-center">Reservation</h2>
           </div>
+
+
     
-          <div class="col-sm-6  form-group">
-            <label for="name" class="reserve-label">Name</label>
-            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
+          <div class="col-sm-12  form-group">
+            <label for="cname" class="reserve-label">Customer Name</label>
+            <input type="text" class="form-control" name="cname" id="cname" placeholder="Name" required>
           </div>
     
+
+
           <div class="col-sm-6 form-group">
             <label for="email" class="reserve-label">Email</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
           </div>
+
+
 
           <div class="col-sm-6 form-group">
             <label for="tel" class="reserve-label">Contact No.</label>
-            <input type="tel" name="tel" class="form-control" id="tel" placeholder="Enter Contact Number" required>
+            <input type="tel" name="tel" class="form-control" id="tel" placeholder="Contact Number" required>
           </div>
 
+
+
           <div class="col-sm-6 form-group">
-            <label for="email" class="reserve-label">Input NID</label>
-            <input type="nid" class="form-control" name="nid" id="nid" placeholder="Enter NID" required>
+            <label for="email" class="reserve-label">National Id</label>
+            <input type="nid" class="form-control" name="nid" id="nid" placeholder="NID" required>
           </div>
+
 
 
         <div class="col-sm-6 form-group">
           <label for="roomcategory" class="reserve-label">Room Category </label>
-          <select class="form-control" name="roomcategory" id="roomcategory" required>
-              <option value="Normal">Normal</option>
-              <option value="Standered">Standered</option>
-              <option value="Premium">Premium</option>
-              <option value="Super Premium">Super Premium</option>
-              <option value="Queen">Queen</option>
-          </select>
-        </div>
-
-        <div class="col-sm-6 form-group">
-          <label for="roomType" class="reserve-label">Room Type </label>
-          <select class="form-control" name="roomType" id="roomType" required>
-              <option value="Single">Single Room</option>
-              <option value="Double">Double Room</option>
-              <option value="Quad">Quad Room</option>
-              <option value="Hollywood Twin">Hollywood Twin Room</option>
-              <option value="Double-Double">Double-Double Room</option>
-              <option value="Interconnecting">Interconnecting Room</option>
-              <option value="Adjoining"> Adjoining Room</option>
-              <option value="Duplex">Duplex Room</option>
+          <select class="form-control" name="roomcategory" id="roomcategory" placeholder="Room Category" required>
+            @foreach ($rooms as $room)
+            <option value="{{ $rooms }}">{{ $rooms }}>({{$id->roomtitle}} - {{$id->roomno}})</option>
+        @endforeach
+              {{-- <option value="Normal">Single Room</option>
+              <option value="Standered">Double Room</option>
+              <option value="Premium">Couple Room</option>
+              <option value="Super Premium">VIP Room</option> --}}
           </select>
         </div>
         
+
+
         <div class="col-sm-6 form-group">
           <label for="roomno" class="reserve-label">Room No.</label>
-          <input type="number" class="form-control" name="roomno" id="roomno" placeholder="Enter Room No." required>
+          <input type="number" class="form-control" name="roomno" id="roomno" placeholder="Room No." required>
         </div>
 
+
+
           <div class="col-sm-6 form-group">
-            <label for="maxoccupancy" class="reserve-label">Max Occupancy</label>
-            <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter maxoccupancy" required>
+            <label for="guestnumber" class="reserve-label">Number of Guests</label>
+            <input type="text" class="form-control" name="guestnumber" id="guestnumber" placeholder="Number of Guests" required>
           </div>
+
+
 
           <div class="col-sm-6 form-group">
             <label for="checkInDate" class="reserve-label">Check-in Date</label>
                 <input type="date" class="form-control" name="checkInDate" id="checkInDate" required>
           </div>
 
+
+
           <div class="col-sm-6 form-group">
             <label for="checkOutDate" class="reserve-label">Check-out Date</label>
             <input type="date" class="form-control" name="checkOutDate" id="checkOutDate" required>
           </div>
+
+
+          <div class="col-sm-6 form-group">
+            <label for="price" class="reserve-label">Price</label>
+            <input type="text" name="price" class="form-control" id="price" placeholder="Price" required>
+          </div>
+
+
+          <div class="col-sm-6 form-group">
+            <label for="discount" class="reserve-label">Discount</label>
+            <input type="number" name="discount" class="form-control" id="Discount" placeholder="discount">
+          </div>
+
+
+
+          <div class="col-sm-12 form-group">
+            <label for="specialrequest" class="reserve-label">Special Request, Ex. extra bed, comforter.....</label>
+            <textarea name="specialrequest" class="form-control" id="specialrequest" rows="3"></textarea>
+          </div>
+
     
     
           <button type="submit" class="btn btn-primary button-file">Submit</button>
 
+
         </div>
+
+
         </form>
+
+
     </div>
 
 
-
-    {{-- <!-- Add Bootstrap JS and jQuery scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Add custom JS -->
-    <script src="script.js"></script>
-</body>
-</html> --}}
-
 @endsection
+

@@ -21,6 +21,13 @@
   <link rel="stylesheet" href="{{asset('customer/css/services.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/contact.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/rooms.css')}}">
+  
+
+  <link rel="stylesheet" href="{{asset('customer/css/personalInfo.css')}}">
+  <link rel="stylesheet" href="{{asset('customer/css/bookinglist.css')}}">
+  <link rel="stylesheet" href="{{asset('customer/css/changepass.css')}}">
+  <link rel="stylesheet" href="{{asset('customer/css/sidebar.css')}}">
+
 
 
 
@@ -40,6 +47,9 @@
       @include('customer.inc.nav')
 
       @yield('apps')
+
+   
+
       @include('customer.inc.footer')
   
   </div>

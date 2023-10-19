@@ -31,7 +31,7 @@
 
               <!-- Topbar Navbar -->
                <!-- Nav Item - User Information -->
-               <li class="nav-item dropdown no-arrow">
+               <div class="nav-item dropdown no-arrow">
                 <a  class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
@@ -70,7 +70,7 @@
 
                     
                 </div>
-            </li>   
+              </div>   
           </nav>
 
 
@@ -87,7 +87,7 @@
                         @csrf
                         @method('PUT')
 
-                        <div class="row custom-jumbotron box8">
+                        <div class="editroom-row editroom-jumbotron box8">
                           
                           <div class="custom-form-inner">
                               <div class="col-sm-6 form-group custom-form-group">
@@ -107,39 +107,29 @@
 
                               <div class="col-sm-6 form-group custom-form-group">
                                 <label for="size">Room Size</label>
-                                <input type="number" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" value="{{$room->roomsize}}" required>
+                                <input type="text" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" value="{{$room->roomsize}}" required>
                               </div>
 
-                              {{-- <div class="col-sm-6 form-group custom-form-group">
-                                <label for="floorno">Price.</label>
-                                <input type="text" class="form-control" name="price" id="floorno" placeholder="Enter Price."  value="{{$room->price}}" required>
-                              </div>
-                            
-                              <div class="col-sm-6 form-group custom-form-group">
-                                <label for="availablerooms">Room Availability</label>
-                                <input type="text" class="form-control" name="availablerooms" id="availablerooms" placeholder="Enter Available Room." required>
-                              </div>
-                              
-                              <div class="col-sm-6 form-group custom-form-group">
-                                <label for="maxoccupancy">Max Occupancy</label>
-                                <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter maxoccupancy." required>
-                              </div> --}}
+              
                               
                               <div class="col-sm-6 form-group custom-form-group">
                                 <label for="Category">Category</label>
-                                <select name="category" class="form-control custom-select browser-default">
-                                
-                                  <option @if($room->category == 'Normal') selected @endif>Normal</option>
+                                  <select name="category" class="form-control custom-select browser-default">
+                                  <option>Select your Room Category</option>
+                                    @foreach ($categories as $category)
+                                       <option value="{{$category->id}}"> {{$category->categoryname}} </option>
+                                    @endforeach
+                                  {{-- <option @if($room->category == 'Normal') selected @endif>Normal</option>
                                   <option @if($room->category == 'Standered') selected @endif>Standered</option>
                                   <option @if($room->category == 'Premium') selected @endif>Premium</option>
                                   <option @if($room->category == 'Super Premium') selected @endif>Super Premium</option>
                                   <option @if($room->category == 'Queen') selected @endif>Queen</option>
-                                  
+                                   --}}
                                 
                               </select>
                               </div>
                               
-                              
+{{--                               
                               <div class="col-sm-6 form-group custom-form-group">
                                 <label for="Country">Room Type</label>
                                 <select name="roomtype" class="form-control custom-select browser-default">
@@ -153,16 +143,12 @@
                                   <option @if($room->roomtype == 'Adjoining Room') selected @endif> Adjoining Room</option>
                                   <option @if($room->roomtype == 'Duplex Room') selected @endif>Duplex Room</option>
                                 </select>
-                              </div>
+                              </div> --}}
 
-                              <div class="col-sm-6 form-group custom-form-group">
-                                <label for="availablerooms">Room Availability</label>
-                                <input type="text" class="form-control" name="availablerooms" id="availablerooms" placeholder="Enter Available Room." value="{{$room->availablerooms}}" required>
-                              </div>
                               
                               <div class="col-sm-6 form-group custom-form-group">
-                                <label for="maxoccupancy">Max Occupancy</label>
-                                <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter maxoccupancy." value="{{$room->maxoccupancy}}" required>
+                                <label for="maxoccupancy">Number Of Guest</label>
+                                <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter no of guest." value="{{$room->maxoccupancy}}" required>
                               </div>
 
                               {{-- <div class="col-sm-6 form-group custom-form-group">
@@ -187,19 +173,19 @@
 
 
                               <div class="col-sm-6 form-group custom-form-group">
-                                <label for="guestservice">Guest Service</label>
+                                <label for="guestservice">Special Service</label>
                                 <select name="guestservice[]" class="form-control custom-select browser-default" multiple>
-                                  {{-- <option value="{{$room->guestservice}}">Select Services</option> --}}
+                                <option value="{{$room->guestservice}}">Select Services</option>
                               
-                                <option  {{in_array("24-Hour room service",$room->guestservice) ? 'selected' : '' }}>24-Hour room service</option>
-                                <option  {{ in_array("Free wireless internet access",$room->guestservice) ? 'selected' : '' }}>Free wireless internet access</option>
-                                <option  {{ in_array("Complimentary use of hotel bicycle",$room->guestservice) ? 'selected' : '' }}>Complimentary use of hotel bicycle</option>
-                                <option  {{ in_array("Laundry service",$room->guestservice) ? 'selected' : '' }}>Laundry service</option>
-                                <option  {{ in_array("Tour & excursions",$room->guestservice) ? 'selected' : '' }}>Tour & excursions</option>
-                                <option  {{ in_array("24 Hour concierge",$room->guestservice) ? 'selected' : '' }}>24 Hour concierge</option>
-                                <option  {{ in_array("E-Bike & horse cart rental",$room->guestservice) ? 'selected' : '' }}>E-Bike & horse cart rental</option>
-                                <option  {{ in_array("Airport transfers",$room->guestservice) ? 'selected' : '' }}>Airport transfers</option>
-                                <option  {{ in_array("Babysitting on request",$room->guestservice) ? 'selected' : '' }}>Babysitting on request</option>
+                                <option @if($room->guestservice) {{in_array("Coffee Maker",$room->guestservice) ? 'selected' : '' }} @endif>Coffee Maker</option>
+                                <option @if($room->guestservice) {{ in_array("Fruit Basket",$room->guestservice) ? 'selected' : '' }} @endif>Fruit Basket</option>
+                                <option @if($room->guestservice) {{ in_array("Dry fruits, nuts & chocolates",$room->guestservice) ? 'selected' : '' }} @endif>Dry fruits, nuts & chocolates</option>
+                                <option @if($room->guestservice) {{ in_array("Laundry service",$room->guestservice) ? 'selected' : '' }} @endif>Laundry service</option>
+                                <option @if($room->guestservice) {{ in_array("Hairdyers",$room->guestservice) ? 'selected' : '' }} @endif>Hairdyers</option>
+                                <option @if($room->guestservice) {{ in_array("Extra stationery",$room->guestservice) ? 'selected' : '' }} @endif>Extra stationery</option>
+                                <option @if($room->guestservice) {{ in_array("Towelled slippers",$room->guestservice) ? 'selected' : '' }} @endif>Towelled slippers</option>
+                                <option @if($room->guestservice) {{ in_array("Bath Robe",$room->guestservice) ? 'selected' : '' }} @endif>Bath Robe</option>
+
                                 </select>
                               </div>
 
@@ -210,22 +196,19 @@
                                   {{-- <option value="{{$room->facilities}}">Select Facilities</option> --}}
                                 <option {{in_array("Free Wi-Fi",$room->facilities) ? 'selected' : '' }}>Free Wi-Fi</option>
                                 <option {{in_array("Flat-screen TV",$room->facilities) ? 'selected' : '' }}>Flat-screen TV</option>
-                                <option {{in_array("Coffee Maker",$room->facilities) ? 'selected' : '' }}>Coffee Maker</option>
-                                <option {{in_array("Pool",$room->facilities) ? 'selected' : '' }}>Pool</option>
+
+                                <option {{in_array("Pool",$room->facilities) ? 'selected' : '' }}>Mini Fridge</option>
                                 <option {{in_array("24 Hour security",$room->facilities) ? 'selected' : '' }}>24 Hour security</option>
-                                <option {{in_array("Car parking",$room->facilities) ? 'selected' : '' }}>Car parking</option>
-                                <option {{in_array("Poolside bar",$room->facilities) ? 'selected' : '' }}>Poolside bar</option>
-                                <option {{in_array("Disable rooms & Interconnecting room",$room->facilities) ? 'selected' : '' }}>Disable rooms & Interconnecting room</option>
-                                <option {{in_array("Sunset boat trip",$room->facilities) ? 'selected' : '' }}>Sunset boat trip</option>
-                                </select>
+                                <option {{in_array("Car parking",$room->facilities) ? 'selected' : '' }}>Free Room Service</option>
+                              
                               </div>
 
-                          
+{{--                           
                               
                               <div class="col-sm-12 form-group custom-form-group1">
                                 <label for="description" class="form-label" >Description</label>
                                 <textarea name="description" class="form-control" id="description" rows="3" >{{ $room->description}}</textarea>
-                              </div>
+                              </div> --}}
                               
                     
                             

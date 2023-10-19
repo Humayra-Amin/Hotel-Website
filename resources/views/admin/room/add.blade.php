@@ -4,9 +4,6 @@
 <div id="content-wrapper" class="d-flex flex-column">
 
 
-  @include('admin.inc.message')
-
-
     <!-- Main Content -->
     <div id="content">
 
@@ -35,7 +32,7 @@
 
             <!-- Topbar Navbar -->
              <!-- Nav Item - User Information -->
-             <li class="nav-item dropdown no-arrow">
+             <div class="nav-item dropdown no-arrow">
               <a  class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
@@ -74,18 +71,20 @@
 
                   
               </div>
-          </li>   
+
+            </div>
+             
        </nav>
 
-
+       @include('admin.inc.message')
 
                  <div class="container mt-3">
                           <h2 class="text-left">Add Rooms</h2>
                        
-                    <form action="{{ url('admin/room') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ url('/admin/room') }}" method="POST" enctype="multipart/form-data">
                       @csrf
   
-                      <div class="row custom-jumbotron box8">
+                      <div class="addroom-row addroom-jumbotron box8">
                         
                         <div class="custom-form-inner">
                             <div class="col-sm-6 form-group custom-form-group">
@@ -96,6 +95,7 @@
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="roomno">Room No</label>
                               <input type="number" class="form-control" name="roomno" id="roomno" placeholder="Enter Room No." required>
+                            
                             </div>
 
                             <div class="col-sm-6 form-group custom-form-group">
@@ -106,6 +106,7 @@
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="roomsize">Room Size</label>
                               <input type="text" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" required>
+                            
                             </div>
 
                             {{-- <div class="col-sm-6 form-group custom-form-group">
@@ -128,37 +129,24 @@
                               <label for="Category">Category</label>
                               <select name="category_id" class="form-control custom-select browser-default">
                                 <option>Select your Room Category</option>
-                                @foreach ($categories as $category)
+                                {{-- @foreach ($categories as $category)
                                 <option value="{{$category->id}}"> {{$category->categoryname}} </option>
-                                @endforeach
+                                @endforeach --}}
+
+
+                                <option value="Normal">Single Room</option>
+                                <option value="Standered">Double Room</option>
+                                <option value="Premium">Couple Room</option>
+                                <option value="Super Premium">VIP Room</option>
+                                
                             </select>
                             </div>
                             
-                          
+            
                             
                             <div class="col-sm-6 form-group custom-form-group">
-                              <label for="roomtype">Room Type</label>
-                              <select name="roomtype" class="form-control custom-select browser-default">
-                    
-                                <option>Single Room</option>
-                                <option>Double Room</option>
-                                <option >Quad Room</option>
-                                <option >Hollywood Twin Room</option>
-                                <option > Double-Double Room</option>
-                                <option >Interconnecting Room</option>
-                                <option > Adjoining Room</option>
-                                <option >Duplex Room</option>
-                              </select>
-                            </div>
-
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="availablerooms">Room Availability</label>
-                              <input type="text" class="form-control" name="availablerooms" id="availablerooms" placeholder="Enter Available Room." required>
-                            </div>
-                            
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="maxoccupancy">Max Occupancy</label>
-                              <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter maxoccupancy." required>
+                              <label for="maxoccupancy">Number Of Guest</label>
+                              <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter no of guest." required>
                             </div>
 
                             {{-- <div class="col-sm-6 form-group custom-form-group">
@@ -185,43 +173,36 @@
 
 
                             <div class="col-sm-6 form-group custom-form-group">
-                              <label for="guestservice">Guest Service</label>
-                              <select name="guestservice[]" class="form-control custom-select browser-default" multiple>
-                           
-                              <option>24-Hour room service</option>
-                              <option>Free wireless internet access</option>
-                              <option >Complimentary use of hotel bicycle</option>
-                              <option >Laundry service</option>
-                              <option >Tour & excursions</option>
-                              <option >24 Hour concierge</option>
-                              <option >E-Bike & horse cart rental</option>
-                              <option >Airport transfers</option>
-                              <option >Babysitting on request</option>
-                              </select>
-                            </div>
-
-
-                            <div class="col-sm-6 form-group custom-form-group">
                               <label for="facilities">Facilities</label>
                               <select name="facilities[]" class="form-control custom-select browser-default" multiple>
                               <option>Free Wi-Fi</option>
                               <option>Flat-screen TV</option>
-                              <option >Coffee Maker</option>
-                              <option >Pool</option>
+                              <option >Mini Fridge</option>
                               <option >24 Hour security</option>
-                              <option >Car parking</option>
-                              <option >Poolside bar</option>
-                              <option >Disable rooms & Interconnecting room</option>
-                              <option >Sunset boat trip</option>
+                              <option >Free Room Service</option>
+                              </select>
+                            </div>
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="guestservice">Special Service</label>
+                              <select name="guestservice[]" class="form-control custom-select browser-default" multiple>
+                           
+                              <option>Coffee Maker</option>
+                              <option>Fruit Basket</option>
+                              <option>Dry fruits, nuts & chocolates</option>
+                              <option>Laundry service</option>
+                              <option>Hairdyers</option>
+                              <option>Extra stationery</option>
+                              <option>Towelled slippers</option>
+                              <option>Bath Robe</option>
                               </select>
                             </div>
 
                         
                             
-                            <div class="col-sm-12 form-group custom-form-group1">
+                            {{-- <div class="col-sm-12 form-group custom-form-group1">
                               <label for="description" class="form-label">Description</label>
                               <textarea name="description" class="form-control" id="description" rows="3"></textarea>
-                            </div>
+                            </div> --}}
                             
                             
                             <div class="col-sm-12">

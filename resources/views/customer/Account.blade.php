@@ -1,64 +1,139 @@
-{{-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>personal Information</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
-    <link rel="stylesheet" href="{{asset('employees/auth/personalInfo.css')}}">
-</head>
-    
-  <body> --}}
- @extends('customer.layouts.app')
- @section('app')
-    
- @include('admin.inc.message')
+@extends('customer.layouts.apps')
+@section('apps')
+@include('admin.inc.message')
 
 
-<div class="container-xl complex px-4 mt-4">
+<!-- Sidebar -->
+<div class="sidebar">
+    <i class='fa fa-user-circle user-icon'></i><p class="user-name">Abdhur Rahman</p>
+    <!-- Row 1 -->
+    <div class="row">
+  
+  
+        <!-- Card 1: Booking History -->
+        <div class="col-sm-6">
+            <div class="card customer-ml">
+                    <i class="fa fa-list icon-customer"></i>
+                    <p class="font-customer "> <a href="/bookinglist">Booking List</a></p>
+        </div>
+    </div>
+  
+  
+  
+  
+        <!-- Card 2: Change Password -->
+        <div class="col-sm-6">
+            <div class="card customer-mr">
+                    <i class="fa fa-key icon-customer"></i>
+                    <p class="font-customer"> <a href="/changepassword">Change Password</a></p>
+            </div>
+        </div>
+   
+  
+  
+  
+        <!-- Card 3: Profile Information -->
+        <div class="col-sm-6">
+            <div class="card customer-ml my-3">
+                    <i class="fa fa-address-card icon-customer"></i>
+                    <p class="font-customer"> <a href="/Account">Account</a></p>
+            </div>
+        </div>
+  </div>
+  
+  
+  
+  
+  
+  
+    <!-- Sign-out button -->
+    <div class="sign-out-customer">
+        <button class="btn btn-danger">Sign Out</button>
+    </div>    
+  </div>
+  
+
+
+
+
+{{-- <div class="container-xl complex px-4 mt-4"> --}}
+
+
  <div class="body-change">
-    <div class="row g-0">
-        <div class="col-xl-4">
+
+
+    {{-- <div class="row g-0"> --}}
+
+
+        {{-- <div class="col-xl-4">
+
+
             <div class="file-card mb-10 mb-xl-0">
+
+
                 <div class="custom-card-header">Profile Picture
                 </div>
+
+
                 <div class="custom-card-body text-center">
                  
+
                     <div class=" files-img">
                       
+
                         <div class="imageWrapper">
-                          <img class="image" src="http://via.placeholder.com/700x500">
+                          <img class="image-info" src="http://via.placeholder.com/700x500">
                         </div>
+
+
                       </div>
+
+
                       <p class="text-center para">ABC</p>
-                    {{-- <button type="file" class= "btn btn-primary upload-img">Upload new image</button> --}}
+
+
                     <button class="file-upload">            
                         <input type="file" class="file-input">Upload Image</button>
+
+
                 </div>
+
+
             </div>
+
+
                 
-        </div>
+        </div> --}}
+
+
         <div class="col-xl-8">
 
+
             <div class="file-card mb-4">
+
                 <div class="custom-card-header">Personal Information</div>
+
+
                 <div class="custom-card-body">
+
+
                     <form>
 
-                        <div class="row gx-3 mb-3">
+                        <div class="account-row gx-3 mb-3">
 
                             <div class="col-md-6">
-                                <input class="personalform-control" id="inputFirstName" type="text" placeholder="First name" value="">
+                                <input class="personalform-control" id="inputFirstName" name="name" type="text" placeholder="Name" value="{{auth()->user()->name}}">
                             </div>
 
                             <div class="col-md-6">
-                                <input class="personalform-control" id="inputLastName" type="text" placeholder="Last name" value="">
+                                <input class="personalform-control" id="inputEmailAddress" name="email" type="text" placeholder="Email Address" value="{{auth()->user()->email}}">
                             </div>
 
                         </div>
 
-                        <div class="row gx-3 mb-3">
+
+
+                        {{-- <div class="row gx-3 mb-3">
 
                             <div class="col-md-6">
                                 <input class="personalform-control" id="inputEmailAddress" type="text" placeholder="Email Address" value="">
@@ -68,9 +143,11 @@
                                 <input class="personalform-control" id="inputPhoneNumber" type="text" placeholder="Phone Number" value="">
                             </div>
 
-                        </div>
+                        </div> --}}
 
-                        <div class="row gx-3 mb-3">
+
+
+                        {{-- <div class="row gx-3 mb-3">
 
                             <div class="col-md-6">
                                 <input class="personalform-control" id="inputZip" type="text" placeholder="Zip" value="">
@@ -80,8 +157,11 @@
                                 <input class="personalform-control" id="inputCountry" type="text" placeholder="Country" value="">
                             </div>
 
-                        </div>
+                        </div> --}}
 
+
+
+{{-- 
                         <div class="row gx-3 mb-3">
 
                             <div class="col-md-6">
@@ -91,17 +171,32 @@
                             <div class="col-md-6">
                                 <input class="personalform-control" id="inputCity" type="text" placeholder="City" value="">
                             </div>
-                        </div>
+                        </div> --}}
+
+
+
                         
-                        <button class="btn btn-primary" type="button">Save Details</button>
+                        <button class="btn btn-primary ml-4" type="submit">Save Details</button>
+
+
                     </form>
 
+
                 </div>
+
             </div>
+
+
         </div>
-    </div>
+
+
+    {{-- </div> --}}
+
+
  </div>
+
+
 </div>
-  {{-- </body>
-</html> --}}
+
+
 @endsection

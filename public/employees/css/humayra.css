@@ -2,9 +2,10 @@
       .custom-h2
               {
                     color:#141414;
-                    font-family: roboto;
+                    font-family: 'roboto';
                     font-size: 40px;
-              }
+                    margin-right: 170px;
+                  }
       /* .custom-box8
               {
                 box-shadow: 0px 0px 5px 1px #ddd;
@@ -22,15 +23,14 @@
                 padding-top: 0;
                 display: flex;
                 flex-wrap: wrap;
-                margin-top: 50px;
-                margin-right: 70px;
-                margin-left: 90px;
+                margin-top: 40px;
+                margin-right: 170px;
               }
      .text-font
               {
                 color: #1e2cc8;
                 font-size: 36px;
-                font-family: roboto;
+                font-family: 'roboto';
                 margin-top: 20px;
                 margin-bottom: 20px;
               }

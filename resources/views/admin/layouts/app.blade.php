@@ -22,10 +22,14 @@
     <link rel="stylesheet" type="text/css" link href="{{asset('rooms/vendor/fontawesome-free/css/all.min.css')}}">
 
     <!-- Add the slick-theme.css if you want default styling -->
-    {{-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> --}}
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Add the slick-theme.css if you want default styling -->
-    {{-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> --}}
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
+    <!--login register-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  
 
     <!-- Custom styles for this template-->
     <link rel="stylesheet" href="{{asset('rooms/css/sb-admin-2.min.css')}}">
@@ -49,15 +53,45 @@
     <link rel="stylesheet" href="{{asset('employees/css/editReservation.css')}}">
     <link rel="stylesheet" href="{{asset('employees/css/booklists.css')}}">
 
+    <link rel="stylesheet" href="{{asset('employees/css/dashboards.css')}}">
 
 
 
-  
- 
+
 
     <!--drag and drop -->
     <link rel="stylesheet" href="style.css">
     
+
+
+    
+    <!-- Bootstrap core JavaScript-->
+    <script src="{{asset('rooms/vendor/jquery/jquery.min.js')}}"></script>
+    
+    <!-- slick js -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script src="{{asset('rooms/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="{{asset('rooms/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="{{ asset('rooms/js/sb-admin-2.min.js') }}"></script>
+
+    <!-- Page level plugins -->
+    <script src="{{asset('rooms/vendor/chart.js/Chart.min.js')}}"></script>
+
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="{{asset('rooms/js/jaima.js')}}"></script>
+    <script src="{{asset('rooms/js/karima.js')}}"></script>
+    <script src="{{asset('rooms/js/urbashi.js')}}"></script>
+
+    <script src="{{asset('employees/js/humayra.js')}}"></script>
+    <script src="{{asset('employees/js/tushin.js')}}"></script>
+    <script src="{{asset('employees/js/kayem.js')}}"></script>
 
 
 
@@ -76,37 +110,6 @@
 
     
     
-    <!-- Bootstrap core JavaScript-->
-    <script src="{{asset('rooms/vendor/jquery/jquery.min.js')}}"></script>
-    
-    <!-- slick js -->
-    {{-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> --}}
-    
-    <script src="{{asset('rooms/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="{{asset('rooms/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="{{ asset('rooms/js/sb-admin-2.min.js') }}"></script>
-
-    <!-- Page level plugins -->
-    <script src="{{asset('rooms/vendor/chart.js/Chart.min.js')}}"></script>
-
-    <!--login register-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-  
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-    <script src="{{asset('rooms/js/jaima.js')}}"></script>
-    <script src="{{asset('rooms/js/karima.js')}}"></script>
-    <script src="{{asset('rooms/js/urbashi.js')}}"></script>
-
-    <script src="{{asset('employees/js/humayra.js')}}"></script>
-    <script src="{{asset('employees/js/tushin.js')}}"></script>
-    <script src="{{asset('employees/js/kayem.js')}}"></script>
-
 
     
     <!-- Page level custom scripts -->

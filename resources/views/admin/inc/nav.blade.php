@@ -3,7 +3,7 @@
  <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin">
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
         </div>
@@ -15,7 +15,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="/dashboard">
+        <a class="nav-link" href="/admin">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -31,26 +31,9 @@
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse"
             aria-expanded="true" aria-controls="collapse">
            <i class="fa-solid fa-list-ul"></i>
-            <span>Category</span>
-        </a>
-        <div id="collapse" class="collapse" aria-labelledby="heading" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Categories:</h6>
-                <a class="collapse-item" href="/admin/category/">Category List</a>
-                <a class="collapse-item" href="/admin/category/show">View Category</a>
-                <a class="collapse-item" href="/admin/category/create">Add Category</a>
-                <a class="collapse-item" href="/admin/category/edit">Edit Category</a>
-            </div>
-        </div>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-            aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fa-sharp fa-solid fa-hotel"></i>
             <span>Hotel Rooms</span>
         </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapse" class="collapse" aria-labelledby="heading" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Components:</h6>
                 <a class="collapse-item" href="/admin/room">View Room</a>
@@ -61,35 +44,55 @@
         </div>
     </li>
 
-    <!-- Nav Item - Utilities Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-            aria-expanded="true" aria-controls="collapseUtilities">
-            <i class="fa-sharp fa-solid fa-person"></i>
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+            aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fa-sharp fa-solid fa-hotel"></i>
             <span>Employee</span>
         </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-            data-parent="#accordionSidebar">
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Utilities:</h6>
                 <a class="collapse-item" href="/admin/employee">View Employee list</a>
                 <a class="collapse-item" href="/admin/employee/add">Add Employee</a>
                 <a class="collapse-item" href="/admin/employee/edit">Edit Employee</a>
                 <a class="collapse-item" href="/admin/employee/single">Single Employee</a>
-               
             </div>
         </div>
     </li>
+
+    <!-- Nav Item - Utilities Collapse Menu -->
+    {{-- <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+            aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fa-sharp fa-solid fa-person"></i>
+            <span>Customer</span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Custom Customer:</h6>
+                <a class="collapse-item" href="/admin/customerlist">Customer List</a>
+               
+            </div>
+        </div>
+    </li> --}}
+
+
+
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsecustomer"
             aria-expanded="true" aria-controls="collapsecustomer">
             <i class="fa-solid fa-users"></i>
-            <span>Customer</span>
+            <span>Booking</span>
         </a>
         <div id="collapsecustomer" class="collapse" aria-labelledby="headingcustomer" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Customer:</h6>
-                <a class="collapse-item" href="/customerlist">Customer List</a>
+                <h6 class="collapse-header">Custom Booking:</h6>
+                <a class="collapse-item" href="/admin/booking/booklists">Booking List</a>
+                <a class="collapse-item" href="/admin/booking/reservation">Add Reservation</a>
+                <a class="collapse-item" href="/admin/booking/editReservation">Edit Reservation</a>
+                <a class="collapse-item" href="/admin/booking/singleview">SingleView</a>
        
             </div>
         </div>
@@ -98,15 +101,13 @@
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsebooking"
             aria-expanded="true" aria-controls="collapsebooking">
             <i class="fa-solid fa-clipboard-list"></i>
-            <span>Booking</span>
+            <span>Account</span>
         </a>
         <div id="collapsebooking" class="collapse" aria-labelledby="headingbooking" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Booking:</h6>
-                <a class="collapse-item" href="/admin/booking/booklists">Booking List</a>
-                <a class="collapse-item" href="/admin/booking/reservation">Add Reservation</a>
-                <a class="collapse-item" href="/admin/booking/editReservation">Edit Reservation</a>
-                <a class="collapse-item" href="/admin/booking/singleview">SingleView</a>
+                <h6 class="collapse-header">Custom Account:</h6>
+                <a class="collapse-item" href="">Expense</a>
+                <a class="collapse-item" href="">Income</a>
            
         </div>
     </li>
@@ -119,4 +120,7 @@
 
 </ul>
 
+
+
 <!-- End of Sidebar -->
+

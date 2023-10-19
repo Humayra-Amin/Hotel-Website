@@ -10,24 +10,28 @@ class Employee extends Model
     use HasFactory;
     protected $fillable = 
     [
-        'fname',
-        'lname',
-        'eid',
-        'Locality',
-        'email',
-        'phone',            
-        'dob',
+        'ename', 
+        'email', 
+        'phone', 
+        'image', 
+        'emergencyContact',
+        'fatherName', 
+        'motherName', 
+        'Locality', 
+        'dob', 
         'nid',
-        'country',
-        'joiningdate',
-        'sex',
+        'position', 
+        'gender', 
+        'joiningdate', 
         'salary',
-        'position',
-        // 'password',
-        // 'confirm-password',
+        'verified',
         'image',
     ];
+
+
     protected $casts = [
         'image' => 'array',
     ];
+
+    
 }
