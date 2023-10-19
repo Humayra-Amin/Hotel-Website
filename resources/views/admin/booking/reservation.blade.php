@@ -99,7 +99,7 @@
           
           
           <div class="col-sm-8 form-group">
-            <h2 class="text-center">Reservation</h2>
+            <h2 class="add-text-center">Reservation</h2>
           </div>
 
 

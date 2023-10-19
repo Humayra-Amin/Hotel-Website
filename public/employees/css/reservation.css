@@ -21,7 +21,7 @@
         margin-top: 50px;
         margin-right: 70px;
   }
-.text-center
+.add-text-center
   {
         color: #1e2cc8;
         font-size: 36px;
@@ -29,6 +29,7 @@
         margin-top: 20px;
         margin-bottom: 20px;
         margin-left: 280px;
+        text-align: center;
 
   }
 .reserve-label
