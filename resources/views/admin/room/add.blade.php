@@ -159,7 +159,7 @@
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="roomview">Room View</label>
                               <select name="roomview" class="form-control custom-select browser-default">
-                           
+                                <option>Select View</option>
                               <option>Sea View</option>
                               <option>Mountain View</option>
                               <option>Road View</option>
