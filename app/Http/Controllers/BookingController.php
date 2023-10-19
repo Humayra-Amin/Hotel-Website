@@ -15,26 +15,13 @@ class BookingController extends Controller
     {
         $rooms = Room::all();
         return view("admin.booking.reservation")->with('rooms',  $rooms);
-        // return view("admin.booking.reservation");
-        
+       
     }
 
 
 
     public function store(Request $request)
     {
-
-
-    // $request->validate([
-    //     'name' => 'required|max:50',
-    //     'email' => 'required|email',
-    //     'tel' => 'required',
-    //     'nid' => 'required|integer',
-    //     'roomcategory' => 'required|max:20',
-    //     'roomno' => 'required|integer',
-    //     'maxoccupancy' => 'required',
-    //     'checkInDate' => 'required',
-    //     'checkOutDate' => 'required',
 
 
     $request->validate([
@@ -50,18 +37,6 @@ class BookingController extends Controller
             'price' => 'required',
             'discount' => 'nullable|numeric',
     ]);
-
-
-
-
-    // check customer 
-    // $customer = Customer::where("email", $request->email)->first();
-    // if(!$customer){
-    //     $customer->name = $request->name;
-    //     $customer->email = $request->email;
-    //     $customer->password = ;
-    // }
-
 
 
 
@@ -104,20 +79,6 @@ class BookingController extends Controller
     public function update(Request $request,$id)
     {
 
-
-        // $request->validate([
-        //     'name' => 'required|max:50',
-        //     'email' => 'required|email',
-        //     'tel' => 'required',
-        //     'nid' => 'required|integer',
-        //     'roomcategory' => 'required|max:20',
-        //     'roomno' => 'required|integer',
-        //     'maxoccupancy' => 'required',
-        //     'checkInDate' => 'required',
-        //     'checkOutDate' => 'required',
-
-        // ]);
-
         $request->validate([
             'cname' => 'required|max:50',
             'email' => 'required|email',
@@ -132,19 +93,6 @@ class BookingController extends Controller
             'discount' => 'nullable|numeric',
     ]);
 
-
-
-        // $booking = Booking::find ($id);
-        // $booking->name = $request->name;
-        // $booking->email = $request->email;
-        // $booking->tel = $request->tel;
-        // $booking->nid = $request->nid;
-        // $booking->roomcategory = $request->roomcategory;
-        // $booking->roomno = $request->roomno;
-        // $booking->maxoccupancy = $request->maxoccupancy;
-        // $booking->checkInDate = $request->checkInDate;
-        // $booking->checkOutDate = $request->checkOutDate;
-        // $booking->update();
 
         $booking = Booking::find ($id);
         $booking->cname = $request->cname;
@@ -191,7 +139,6 @@ class BookingController extends Controller
 
     public function booklists()
     {
-        // return view("admin.booking.booklists");
 
         $bookings = Booking::all();
         return view("admin.booking.booklists")->with('bookings',  $bookings);
