@@ -62,7 +62,7 @@
     </li>
 
     <!-- Nav Item - Utilities Collapse Menu -->
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
             aria-expanded="true" aria-controls="collapseUtilities">
             <i class="fa-sharp fa-solid fa-person"></i>
@@ -76,7 +76,10 @@
                
             </div>
         </div>
-    </li>
+    </li> --}}
+
+
+
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsecustomer"
             aria-expanded="true" aria-controls="collapsecustomer">
@@ -103,8 +106,8 @@
         <div id="collapsebooking" class="collapse" aria-labelledby="headingbooking" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Account:</h6>
-                <a class="collapse-item" href="/">Expense</a>
-                <a class="collapse-item" href="/">Income</a>
+                <a class="collapse-item" href="">Expense</a>
+                <a class="collapse-item" href="">Income</a>
            
         </div>
     </li>

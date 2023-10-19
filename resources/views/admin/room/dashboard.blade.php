@@ -81,151 +81,219 @@
 
 
                     <div class="dash-container">
-<div class="row">
-                            <h3 class="rtitle">BOOKINGS</h3>
-        
-
-                            <div class="room-cards">
-                                <!-- Room Card 1 -->
-
-                                <div class="col-md-3">
-                                <div class="room-card">
-                                    <img src="{{asset('image/9.jpg')}}" class="img-fluid imagefile" alt="">
-                                    <h2 class=roomh2>SINGLE ROOM</h2>
-                                    <p>Occupied</p>
-                                    <p>Price: $150/night</p>
-                                    <a href="#" class="btn btn-primary">View Details</a>
-                                </div>
-                            </div>
-
-
-                                <!-- Room Card 2 -->
-                                <div class="col-md-3">
-                                <div class="room-card">
-                                    <img src="{{asset('image/9.jpg')}}" class="img-fluid imagefile" alt="">                
-                                    <h2 class=roomh2>DOUBLE ROOM</h2>
-                                    <p>Available</p>
-                                    <p>Price: $120/night</p>
-                                    <a href="#" class="btn btn-primary">View Details</a>
-                                </div>
-                            </div>
-
-
-
-                                <!-- Room Card 3 -->
-                                <div class="col-md-3">
-                                <div class="room-card">
-                                    <img src="{{asset('image/9.jpg')}}" class="img-fluid imagefile" alt="">
-                                    <h2 class=roomh2>COUPLE ROOM</h2>
-                                    <p>Occupied</p>
-                                    <p>Price: $150/night</p>
-                                    <a href="#" class="btn btn-primary">View Details</a>
-                                </div>
-                            </div>
-                        </div>
-        
-        
-                                                    <!-- Room Card 3 -->
-                                                    <div class="col-md-3">
-                                                    <div class="room-card">
-                                                        <img src="{{asset('image/9.jpg')}}" class="img-fluid imagefile" alt="">
-                                                        <h2 class=roomh2>VIP ROOM</h2>
-                                                        <p>Occupied</p>
-                                                        <p>Price: $150/night</p>
-                                                        <a href="#" class="btn btn-primary">View Details</a>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-
+                        <div class="card">
+                          <div class="dash-card-body">
+                            <h3 class="dash-h3">Overview</h3>
                             <div class="dash-row">
-            
-            
-                                <div class="col-md-3">
-                                    <div class="dash-card">
-                                        <div class="dash-card-body">
-                                            <h5 class="dash-card-title"><i class="fas fa-bed"></i> Available Rooms</h5>
-                                            {{-- <p class="dash-card-text">Total reservations: 50</p>
-                                            <p class="dash-card-text">Pending reservations: 10</p>
-                                            <p class="dash-card-text">Occupied rooms: 40</p> --}}
-                                            <p class="dash-card-text">Available rooms: 10</p>
-                                            <a href="" class="btn btn-primary">View Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                
-                             
-                                
-                                
-                        
-                                <div class="col-md-3">
-                                    <div class="dash-card">
-                                        <div class="dash-card-body">
-                                            <h5 class="dash-card-title"><i class="fas fa-sign-out-alt"></i> Checkout</h5>
-                                            {{-- <p class="dash-card-text">Available rooms: 30</p>
-                                            <p class="dash-card-text">Occupied rooms: 20</p>
-                                            <p class="dash-card-text">Rooms under cleaning: 5</p>
-                                            <p class="dash-card-text">Maintenance in progress: 2</p> --}}
-                                            <p class="dash-card-text">Today's checkouts: 10</p>
-                                            <a href="" class="btn btn-primary">View Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-            
-            
-                                <div class="col-md-3">
-                                    <div class="dash-card">
-                                        <div class="dash-card-body">
-                                            <h5 class="dash-card-title"><i class="fas fa-bed"></i> Bookings</h5>
-                                            {{-- <p class="dash-card-text">Total reservations: 50</p>
-                                            <p class="dash-card-text">Pending reservations: 10</p>
-                                            <p class="dash-card-text">Occupied rooms: 40</p> --}}
-                                            <p class="dash-card-text">Today's booking: 10</p>
-                                            <a href="" class="btn btn-primary">View Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-            
-                                <div class="col-md-3">
-                                    <div class="dash-card">
-                                        <div class="dash-card-body">
-                                            <h5 class="dash-card-title"><i class="fas fa-credit-card"></i> Payments</h5>
-                                            {{-- <p class="dash-card-text">Check-ins today: 5</p>
-                                            <p class="dash-card-text">Check-outs today: 3</p> --}}
-                                            <p class="dash-card-text">Total revenue: $2000</p>
-                                            {{-- <p class="dash-card-text">Outstanding payments: $500</p>
-                                            <p class="dash-card-text">Average daily rate: $150</p> --}}
-                                            <a href="" class="btn btn-primary">View Details</a>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-lg-12">
+                          <div class="dash-row">
+                            <div class="col-sm-3 Overview-body">
+                              <h5 class="dash-card-title dash-text-center">Today's Check-in</h5>
+                              <p class="overview-text dashp-text-center">5</p>
                             </div>
-                            
-            
-            
-            
-            
-                            {{-- <div class="row">
-                                <div class="col-md-12">
-                                    <canvas id="bookingStatusChart"></canvas>
-                                </div>
-                            </div> --}}
-             
+                            <div class="col-sm-3 Overview-body">
+                              <h5 class="dash-card-title dash-text-center">Today's Check-out</h5>
+                              <p class="overview-text dashp-text-center">4</p>
+                            </div>
+                            <div class="col-lg-3 Overview-body">
+                              <h5 class="dash-card-title dash-text-center">Available Room</h5>
+                              <p class="overview-text dashp-text-center">5</p>
+                            </div>
+                            <div class="col-lg-3 Overview-body">
+                              <h5 class="dash-card-title dash-text-center">Occupied Room</h5>
+                              <p class="overview-text dashp-text-center">10</p>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                      <div class="row">
+                        <h3 class="dashtitle-h3">Available Rooms</h3>
+                        <!-- 1st room -->
+                  
+                        <div class="col-md-3">
+                          <div class="card">
+                            <img src="{{asset('image/luxary room.jpg')}}" class="img-fluid imagefile" alt="">
+                            <div class="card-body">
+                              <h5 class="card-title">Single Room</h5>
+                              <p class="card-text">Available Rooms: 6</p>
+                              <button class="btn btn-primary" data-toggle="modal" data-target="#roomStatusModal" data-occupied="2" data-available="5">View</button>
+                            </div>
+                          </div>
+                        
+                  
+                      <div class="modal fade" id="roomStatusModal" tabindex="-1" role="dialog" aria-labelledby="roomStatusModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="roomStatusModalLabel">Room Status</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <p>Occupied Room: 5<span id="modalOccupied"></span></p>
+                              <p>Available Room: 10<span id="modalAvailable"></span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                           
+                  
+                  <!-- 2nd room -->
+                  
+                      <div class="col-md-3">
+                        <div class="card">
+                            <img src="{{asset('image/luxary room.jpg')}}" class="img-fluid imagefile" alt="">
+                          <div class="card-body">
+                            <h5 class="card-title">Double Room</h5>
+                            <p class="card-text">Available Rooms: 2</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#roomStatusModal" data-occupied="2" data-available="5">View</button>
+                          </div>
+                        </div>
+                      
+                  
+                    <div class="modal fade" id="roomStatusModal" tabindex="-1" role="dialog" aria-labelledby="roomStatusModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="roomStatusModalLabel">Room Status</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Occupied Room: <span id="modalOccupied"></span></p>
+                            <p>Available Room: <span id="modalAvailable"></span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  <!-- 3rd room -->
+                        <div class="col-md-3">
+                          <div class="card">
+                            <img src="{{asset('image/luxary room.jpg')}}" class="img-fluid imagefile" alt="">
+                            <div class="card-body">
+                              <h5 class="card-title">Couple Room</h5>
+                              <p class="card-text">Available Rooms: 2</p>
+                              <button class="btn btn-primary" data-toggle="modal" data-target="#roomStatusModal" data-occupied="2" data-available="5">View</button>
+                            </div>
+                          </div>
+                        
+                       
+                  
+                      <div class="modal fade" id="roomStatusModal" tabindex="-1" role="dialog" aria-labelledby="roomStatusModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="roomStatusModalLabel">Room Status</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <p>Occupied Room: <span id="modalOccupied"></span></p>
+                              <p>Available Room: <span id="modalAvailable"></span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                           
+                     
+                    <!-- 4th room -->
+                  
+                    <div class="col-md-3">
+                      <div class="card">
+                        <img src="{{asset('image/luxary room.jpg')}}" class="img-fluid imagefile" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title">VIP Room</h5>
+                          <p class="card-text">Available Rooms: 3</p>
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#roomStatusModal" data-occupied="2" data-available="5">View</button>
+                        </div>
+                      </div>
                     
-            
-                    {{-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> --}}
-
-
-                {{-- </div> --}}
-            </div>
+                   
+                  
+                  <div class="modal fade" id="roomStatusModal" tabindex="-1" role="dialog" aria-labelledby="roomStatusModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="roomStatusModalLabel">Room Status</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Occupied Room: <span id="modalOccupied"></span></p>
+                          <p>Available Room: <span id="modalAvailable"></span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                      </div>
+                  
+                  
+                      <div class="card">
+                        <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">Recent Bookings</h5>
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Name</th>
+                                    <th>ID</th>
+                                    <th>Room Category</th>
+                                    <th>Payment Status</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Alex</td>
+                                    <td>10 </td>
+                                    <td>single</td>
+                                    <td>paid</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Maria</td>
+                                    <td>20</td>
+                                    <td>Double</td>
+                                    <td>Due</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Jerry</td>
+                                    <td>30</td>
+                                    <td>Double</td>
+                                    <td>Failed</td>
+                                  </tr>
+                                
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">Room Occupancy</h5>
+                              <div id="piechart"></div>
+                              <p class="card-text">Occupied: 4</p>
+                              <p class="card-text">Available: 6</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                      </div>
+                    </div>
 
         
         <!-- Logout Modal-->
