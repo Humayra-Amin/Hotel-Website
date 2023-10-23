@@ -138,8 +138,15 @@
                                 <td>{{$room->roomtitle}}</td>  
                                 <td>{{$room->floorno}}</td>
                                 {{-- <td>{{$room->category_id}}</td>     --}}
-                                <td>{{$room->price}}</td>  
+                                <td>{{$room->price}}</td> 
+                                
+                                @if ($room->status)
                                 <td>{{$room->status}}</td>
+
+                                @else
+                                <td>ABL</td>
+
+                                @endif
                                 <td class="text-center">
                                 <div class="d-flex">
                                 <a href="/admin/room/{{$room->id}}" title="view" class="btn btn-outline-primary btn-eye my-2 "><i class="fa-solid fa-eye"></i></a>

@@ -79,75 +79,46 @@
 
 
 
-        <div class="container mt-3 ">
 
 
 @include('admin.inc.message')
   
 
-       <form>
+<div class=" expense-container">
+    <h1 class= "expense-h1">Expense</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Utility</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
 
+        <tbody id="utility-table">
+            <tr>
+                <td><input type="text" class="form-control utility-input" placeholder="Enter utility"></td>
+                <td><input type="number" class="form-control expense-input" placeholder="Enter expense"></td>
+                <td><button class="btn btn-primary" id="add-utility">+</button></td>
 
-    <div class="expense-row expense-jumbotron expense-box8">
-      
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td></td>
+                <td><strong>Total: <span id="total-expense">0</span> USD</strong></td>
+            </tr>
+        </tfoot>
 
-      
-      <div class="col-sm-3 form-group">
-    <h2 class=" expense-h2 ">Expense</h2>
-</div>
+        {{-- <thead>
+            <tr>
+                <th>Maintanence</th>
+            </tr>
+        </thead> --}}
 
-
-            <div class="col-sm-12  form-group">
-                <label for="cname" class="expense-label">Customer Name</label>
-                <input type="text" class="form-control" name="cname" id="cname" placeholder="Name" required>
-            </div>
-
-
-            <div class="col-sm-12  form-group">
-                <label for="roomcategory" class="expense-label">Room Category</label>
-                <input type="text" name="roomcategory" id="roomcategory" class="form-control" placeholder="Room Category" required>
-            </div>
-
-
-
-            <div class="col-sm-12  form-group">
-                <label for="date" class="expense-label">Expense Date</label>
-                <input type="date" name="date" id="date" class="form-control" placeholder="Expense Date" required>
-            </div>
-
-
-
-            <div class="col-sm-12  form-group">
-                <label for="amount" class="expense-label">Amount</label>
-                <input type="text" name="amount" id="amount" class="form-control" placeholder="Amount" required>
-            </div>
-
-
-
-            <button type="submit" class="btn btn-primary expense-button">Submit</button>
-
-
-
-           </div>
-
-
-            </form>
-
-
-            </div>
-      
-
-
-      
-    </div>
-
-
-  </form>
-
+    </table>
 
 </div>
 
-      
-</div>
-
+   
 @endsection

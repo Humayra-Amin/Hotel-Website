@@ -39,7 +39,7 @@
 
 
         <li class="nav-item">
-          <a class="nav-link" href="#gallary">Gallary</a>
+          <a class="nav-link" href="/gallery">Gallery</a>
         </li>
 
 

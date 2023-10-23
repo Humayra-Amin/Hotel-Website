@@ -122,17 +122,17 @@
     <div class="hotel-room">
 
 
-      @if ($room->image[0])
+      {{-- @if ($room->image[0]) --}}
               {{-- @foreach ($room->image as $img) --}}
 
 
-              <div>
+              {{-- <div>
                   <img src='{{Storage::disk("public")->url($room->image[0])}}' class="d-block w-100  home-image" >
-              </div>
+              </div> --}}
 
 
               {{-- @endforeach --}}
-              @endif
+              {{-- @endif --}}
 
            <div class="hotel-room-body">
 

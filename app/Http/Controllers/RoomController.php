@@ -16,7 +16,8 @@ class RoomController extends Controller
     public function index()
     {
 
-        $categories = Category::all();
+        
+        $categories = Room::select("category_id")->groupBy("category_id")->get();
         return view("admin.category.viewcategory")->with('categories',  $categories);
 
     }
