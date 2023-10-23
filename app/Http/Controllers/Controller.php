@@ -14,6 +14,10 @@ class Controller extends BaseController
    
     public function index()
     {
+
+        $categories = Room::get()->groupBy("category_id");
+
+     return $categories;
         return view("admin.room.dashboard");
     }
     
@@ -22,10 +26,6 @@ class Controller extends BaseController
         return view("admin.utility");
     }
      
-    // public function home()
-    // {
-    //     $rooms = Room::all();
-    //     return view("admin.home");
-    // }
+    
     
 }

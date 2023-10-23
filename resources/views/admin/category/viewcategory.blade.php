@@ -96,11 +96,11 @@
       @foreach($categories as $category)
             <div class="col-md-4">
                 <div class="box-card">
-                  <a href="/admin/room/roomcategory/{{$category->id}}">
+                  <a href="/admin/room/roomcategory/{{$category->category_id}}">
                   <div class="field-body">
                     {{-- <img src="{{asset('image/hotel1.jpg')}}" class="img-fluid image-file" alt=""> --}}
 
-                    <div class="centered"><a href= "/admin/room/roomcategory/{{$category->id}}">{{$category->categoryname}}</a></div>
+                    <div class="centered"><a href= "/admin/room/roomcategory/{{$category->category_id}}">{{$category->category_id}}</a></div>
                   </div>
                 </div>
               </div>

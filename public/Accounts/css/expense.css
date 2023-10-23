@@ -1,17 +1,18 @@
-.expense-h2
+.expense-h1
 {
       color:#000000;
       font-family: 'roboto';
       font-size: 40px;
       text-align: center;
-      margin-left: 350px;
 }
 
-.expense-jumbotron
+.expense-container
 {
-      margin-bottom: 2rem;
-      background-color: #eaecf4;
-      border-radius: 0.3rem;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      margin-top: 150px;
+      margin-bottom: 50px;
 }
 .expense-row
 {
