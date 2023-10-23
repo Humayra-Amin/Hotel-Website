@@ -114,6 +114,13 @@ class CustomerController extends Controller
     } 
 
 
+    public function gallery()
+    {
+
+        return view("customer.gallery");
+        
+    } 
+
 
 
     public function postLogin(Request $request)

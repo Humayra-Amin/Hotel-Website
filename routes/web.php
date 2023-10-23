@@ -111,6 +111,7 @@ Route::middleware(["auth:emps"])->group(function () {
     Route::get('/services', [CustomerController::class, "services"]);
     Route::get('/contact', [CustomerController::class, "contact"]);
     Route::get('/Allrooms', [CustomerController::class, "Allrooms"]);
+    // Route::get('/contact', [CustomerController::class, "gallery"]);
     Route::get('/', [HomeController::class, "home"]);
     Route::get('/singleroom/{id}', [HomeController::class, "singleroom"]);
     Route::put('/roombook', [HomeController::class, "roombook"]);
@@ -136,6 +137,10 @@ Route::middleware(["auth:emps"])->group(function () {
 
     Route::get('/admin/Account/expense', [AccountController::class, "expense"]);
     Route::get('/admin/Account/income', [AccountController::class, "income"]);
+
+
+
+    Route::get('/contact', [CustomerController::class, "gallery"]);
 
     
 
