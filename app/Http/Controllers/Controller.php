@@ -19,7 +19,7 @@ class Controller extends BaseController
 
         $categories = Room::get()->groupBy("category_id");
 
-     return $categories;
+        return $categories;
         return view("admin.room.dashboard");
 
       
