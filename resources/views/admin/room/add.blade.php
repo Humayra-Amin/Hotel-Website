@@ -134,10 +134,10 @@
                                 @endforeach --}}
 
 
-                                <option value="Normal">Single Room</option>
-                                <option value="Standered">Double Room</option>
-                                <option value="Premium">Couple Room</option>
-                                <option value="Super Premium">VIP Room</option>
+                                <option value="Single Room">Single Room</option>
+                                <option value="Double Room">Double Room</option>
+                                <option value="Couple Room">Couple Room</option>
+                                <option value="VIP Room">VIP Room</option>
                                 
                             </select>
                             </div>

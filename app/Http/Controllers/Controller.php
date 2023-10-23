@@ -15,9 +15,9 @@ class Controller extends BaseController
     public function index()
     {
 
-        $categories = Room::get()->groupBy("category_id");
+    //     $categories = Room::get()->groupBy("category_id");
 
-     return $categories;
+    //  return $categories;
         return view("admin.room.dashboard");
     }
     
