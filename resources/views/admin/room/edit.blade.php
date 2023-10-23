@@ -116,16 +116,16 @@
                                 <label for="Category">Category</label>
                                   <select name="category" class="form-control custom-select browser-default">
                                   <option>Select your Room Category</option>
-                                    @foreach ($categories as $category)
+                                    {{-- @foreach ($categories as $category)
                                        <option value="{{$category->id}}"> {{$category->categoryname}} </option>
-                                    @endforeach
-                                  {{-- <option @if($room->category == 'Normal') selected @endif>Normal</option>
+                                    @endforeach --}}
+                                  <option @if($room->category == 'Normal') selected @endif>Normal</option>
                                   <option @if($room->category == 'Standered') selected @endif>Standered</option>
                                   <option @if($room->category == 'Premium') selected @endif>Premium</option>
                                   <option @if($room->category == 'Super Premium') selected @endif>Super Premium</option>
                                   <option @if($room->category == 'Queen') selected @endif>Queen</option>
-                                   --}}
-                                
+                                   
+                      
                               </select>
                               </div>
                               

@@ -144,7 +144,7 @@
                                 <td>{{$room->status}}</td>
 
                                 @else
-                                <td>ABL</td>
+                                <td>Available</td>
 
                                 @endif
                                 <td class="text-center">
