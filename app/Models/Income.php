@@ -5,18 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class dashboard extends Model
+class Income extends Model
 {
     use HasFactory;
 
     protected $fillable = 
     [
-           'roomtitle',
-           'roomno',
-           'bookedroom',
-           'checkInDate',
-           'checkOutDate',
-           
-           
+           'reservation_id',
+           'price',
+           'discount',
+           'paid',
+           'due',
     ];
 }

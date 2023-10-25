@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Booking;
+use App\Models\Income;
 use App\Models\Customer;
 use App\Models\Room;
 use Illuminate\Http\Request;
@@ -52,6 +53,19 @@ class BookingController extends Controller
     $booking->discount = $request->discount;
     $booking->specialrequest = $request->specialrequest;
     $booking->save();
+
+
+    $income= new Income();
+    $income->reservation_id = $request->reservation_id;
+    $income->price = $request->price;
+    $income->discount = $request->discount;
+    $income->paid = $request->paid;
+    $income->due = (float)$income->price - (float)$income->discount - (float)$income->paid;
+
+    $income->save();
+
+    
+
 
     $room = Room::where('id', $request->room_id)->first();
     $room->status = 'Booked';
@@ -140,6 +154,8 @@ class BookingController extends Controller
         $bookings = Booking::all();
         return view("admin.booking.booklists")->with('bookings',  $bookings);
     }
+
+
 
 
 
