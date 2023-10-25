@@ -151,22 +151,27 @@
                         <h3 class="dashtitle-h3">Available Rooms</h3>
 
 
-                        <!-- 1st room -->
+                        <!-- Rooms -->
                   
+
+
+                        @foreach ($roomCounts as $catName => $roomCount)
+                            
+                        
                         <div class="col-md-3">
 
 
                           <div class="card">
                             <img src="{{asset('image/luxary room.jpg')}}" class="img-fluid imagefile" alt="">
                             <div class="card-body">
-                              <h5 class="card-title">Single Room</h5>
-                              <p class="card-text">Available Rooms: 6</p>
-                              <button class="btn btn-primary" data-toggle="modal" data-target="#roomStatusModal" data-occupied="2" data-available="5">View</button>
+                              <h5 class="card-title">{{$catName}}</h5>
+                              <p class="card-text">Available Rooms: {{$roomCount["Available"]}}</p>
+                              <button class="btn btn-primary" data-toggle="modal" data-target="#roomStatusModal{{str_replace(" ","_",$catName)}}" data-occupied="2" data-available="5">View</button>
                             </div>
                           </div>
                         
                   
-                      <div class="modal fade" id="roomStatusModal" tabindex="-1" role="dialog" aria-labelledby="roomStatusModalLabel" aria-hidden="true">
+                      <div class="modal fade" id="roomStatusModal{{str_replace(" ","_",$catName)}}" tabindex="-1" role="dialog" aria-labelledby="roomStatusModalLabel" aria-hidden="true">
                         
                         <div class="modal-dialog" role="document">
 
@@ -180,8 +185,8 @@
                             </div>
 
                             <div class="modal-body">
-                              <p>Occupied Room: 5<span id="modalOccupied"></span></p>
-                              <p>Available Room: 10<span id="modalAvailable"></span></p>
+                              <p>Booked Rooms: <span id="modalOccupied">{{$roomCount["bookRoomNo"]}}</span></p>
+                              <p>Available Rooms: <span id="modalAvailable">{{$roomCount["ablRoomNo"]}}</span></p>
                             </div>
 
                           </div>
@@ -194,140 +199,8 @@
 
                       </div>
                            
-                  
-                  <!-- 2nd room -->
-                  
-                      <div class="col-md-3">
-
-
-                        <div class="card">
-                            <img src="{{asset('image/luxary room.jpg')}}" class="img-fluid imagefile" alt="">
-                          <div class="card-body">
-                            <h5 class="card-title">Double Room</h5>
-                            <p class="card-text">Available Rooms: 2</p>
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#roomStatusModal" data-occupied="2" data-available="5">View</button>
-                          </div>
-                        </div>
-                      
-                  
-                    <div class="modal fade" id="roomStatusModal" tabindex="-1" role="dialog" aria-labelledby="roomStatusModalLabel" aria-hidden="true">
-                      
-                      <div class="modal-dialog" role="document">
-                        
-                        <div class="modal-content">
-                          
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="roomStatusModalLabel">Room Status</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-
-                          <div class="modal-body">
-                            <p>Occupied Room: <span id="modalOccupied"></span></p>
-                            <p>Available Room: <span id="modalAvailable"></span></p>
-                          </div>
-
-                        </div>
-
-
-                      </div>
-
-                    </div>
-
-                    </div>
-
-
-                  <!-- 3rd room -->
-
-                        <div class="col-md-3">
-                          
-
-                          <div class="card">
-                            <img src="{{asset('image/luxary room.jpg')}}" class="img-fluid imagefile" alt="">
-                            <div class="card-body">
-                              <h5 class="card-title">Couple Room</h5>
-                              <p class="card-text">Available Rooms: 2</p>
-                              <button class="btn btn-primary" data-toggle="modal" data-target="#roomStatusModal" data-occupied="2" data-available="5">View</button>
-                            </div>
-                          </div>
-                        
-                       
-                  
-                      <div class="modal fade" id="roomStatusModal" tabindex="-1" role="dialog" aria-labelledby="roomStatusModalLabel" aria-hidden="true">
-                        
-                        <div class="modal-dialog" role="document">
-                          
-                          <div class="modal-content">
-
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="roomStatusModalLabel">Room Status</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-
-                            <div class="modal-body">
-                              <p>Occupied Room: <span id="modalOccupied"></span></p>
-                              <p>Available Room: <span id="modalAvailable"></span></p>
-                            </div>
-
-                          </div>
-
-
-                        </div>
-
-                      </div>
-
-                      </div>
-                           
-                     
-                    <!-- 4th room -->
-                  
-                    <div class="col-md-3">
-                      
-
-                      <div class="card">
-                        <img src="{{asset('image/luxary room.jpg')}}" class="img-fluid imagefile" alt="">
-                        <div class="card-body">
-                          <h5 class="card-title">VIP Room</h5>
-                          <p class="card-text">Available Rooms: 3</p>
-                          <button class="btn btn-primary" data-toggle="modal" data-target="#roomStatusModal" data-occupied="2" data-available="5">View</button>
-                        </div>
-                      </div>
-                    
-                   
-                  
-                  <div class="modal fade" id="roomStatusModal" tabindex="-1" role="dialog" aria-labelledby="roomStatusModalLabel" aria-hidden="true">
-                    
-                    <div class="modal-dialog" role="document">
-                      
-                      <div class="modal-content">
-                        
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="roomStatusModalLabel">Room Status</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-
-
-                        <div class="modal-body">
-                          <p>Occupied Room: <span id="modalOccupied"></span></p>
-                          <p>Available Room: <span id="modalAvailable"></span></p>
-                        </div>
-
-
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  </div>
-
-
-                      </div>
+                      @endforeach
+                
                   
                   
                       <div class="card">

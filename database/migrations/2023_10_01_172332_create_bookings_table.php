@@ -21,11 +21,11 @@ return new class extends Migration
             $table->string('tel');
             $table->string('nid');
             $table->string('room_id');
-            $table->string('guestnumber');
+            $table->string('guestnumber')->nullable();
             $table->date('checkInDate');
             $table->date('checkOutDate');
-            $table->decimal('price');
-            $table->decimal('discount')->nullable();
+            $table->string('price');
+            $table->string('discount')->nullable();
             $table->text('specialrequest')->nullable();
 
             $table->timestamps();

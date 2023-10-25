@@ -148,7 +148,7 @@
 
           <div class="col-sm-6 form-group">
             <label for="guestnumber" class="reserve-label">Number of Guests</label>
-            <input type="text" class="form-control" name="guestnumber" id="guestnumber" placeholder="Number of Guests" required>
+            <input type="text" class="form-control" name="guestnumber" id="guestnumber" placeholder="Number of Guests">
           </div>
 
 
