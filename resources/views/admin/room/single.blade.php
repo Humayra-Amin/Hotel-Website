@@ -119,7 +119,7 @@
                 </ul>
             </div>
 
-            <p class="customize-fonts">View :  {{$room->roomview}} </p>
+            {{-- <p class="customize-fonts">View :  {{$room->roomview}} </p> --}}
             <p class="customize-fonts">Price :  {{$room->price}} </p>
          </div>
 
