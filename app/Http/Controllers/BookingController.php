@@ -30,7 +30,7 @@ class BookingController extends Controller
             'tel' => 'required',
             'nid' => 'required',
             'room_id' => 'required',
-            'guestnumber' => 'required',
+            'guestnumber' => 'nullable',
             'checkInDate' => 'required|date',
             'checkOutDate' => 'required|date',
             'price' => 'required',
@@ -58,6 +58,7 @@ class BookingController extends Controller
     $room->update();
 
 
+
     return redirect("admin/booking/booklists")->with("success", "Booking Done....");
 
     }
@@ -83,7 +84,7 @@ class BookingController extends Controller
             'tel' => 'required',
             'nid' => 'required',
             'room_id' => 'required',
-            'guestnumber' => 'required',
+            'guestnumber' => 'nullable',
             'checkInDate' => 'required|date',
             'checkOutDate' => 'required|date',
             'price' => 'required',

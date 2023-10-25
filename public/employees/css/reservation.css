@@ -51,6 +51,9 @@
   label[for="specialrequest"]::after {
       content: "";
   }
+  label[for="guestnumber"]::after {
+      content: "";
+  }
 
   .button-file{
         width: min-content;

@@ -21,7 +21,39 @@ class Controller extends BaseController
 
         // return $categories;
 
-        return view("admin.room.dashboard");
+        $categories = Room::get()->groupBy("category_id");
+
+
+        $roomCounts = [];
+        foreach ($categories as $category_id => $rooms) 
+        {
+
+            $available = $rooms->where('status', NULL)->count();
+            $booked = $rooms->where('status', 'Booked')->count();
+
+
+            $bookRoomNo =[];
+            $ablRoomNo =[];
+            foreach($rooms as $room){
+                if($room->status == "Booked"){
+                    $bookRoomNo[] = $room->roomno;
+                } else{
+                    $ablRoomNo[] = $room->roomno;
+                }
+            }
+            
+            $roomCounts[$category_id] = 
+            [
+                'Available' => $available,
+                'Booked' => $booked,
+                'bookRoomNo' => implode(",",$bookRoomNo),
+                'ablRoomNo' => implode(",",$ablRoomNo)
+            ];
+        }
+
+    
+
+        return view("admin.room.dashboard")->with("roomCounts", $roomCounts);
 
       
     }
