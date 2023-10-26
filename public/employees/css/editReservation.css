@@ -42,3 +42,25 @@
     width: min-content;
     margin-left: 958px;
   }
+
+  .editreserve-label::after
+  {
+      content:" *";
+      color: red;
+  }
+  label[for="discount"]::after {
+      content: "";
+  }
+
+  label[for="specialrequest"]::after {
+      content: "";
+  }
+  label[for="guestnumber"]::after {
+      content: "";
+  }
+  label[for="paid"]::after {
+      content: "";
+  }
+  label[for="due"]::after {
+      content: "";
+  }

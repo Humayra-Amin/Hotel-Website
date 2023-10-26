@@ -20,7 +20,10 @@ class Booking extends Model
             'checkOutDate',
             'price',
             'discount',
+            'paid',
+            'due',
             'specialrequest',
+            'status',
     ];
 
     public function room()

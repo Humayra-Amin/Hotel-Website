@@ -26,7 +26,11 @@ return new class extends Migration
             $table->date('checkOutDate');
             $table->string('price');
             $table->string('discount')->nullable();
+            $table->string('paid')->nullable();
+            $table->string('due')->nullable();
             $table->text('specialrequest')->nullable();
+            $table->string('status')->nullable();
+
 
             $table->timestamps();
         });
