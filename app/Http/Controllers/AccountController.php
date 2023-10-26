@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Income;
+use App\Models\Expense;
 use Illuminate\Http\Request;
 
 class AccountController extends Controller
@@ -15,8 +16,8 @@ class AccountController extends Controller
     }
     public function expenselist()
     {
-
-        return view("admin.Account.expenselist");
+        $expenses = Expense::all();
+        return view("admin.account.expenselist")->with('expenses',  $expenses);
 
     }
 
