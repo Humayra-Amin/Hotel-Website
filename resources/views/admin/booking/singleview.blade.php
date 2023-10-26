@@ -102,7 +102,7 @@
 
             <div class="col-12 bookinfo">
 
-                  <h2 class="single-view">{{$booking->roomcategory}}</h2>
+                  <h2 class="single-view">{{$booking->room->roomtitle}}-{{$booking->room->roomno}}</h2>
                 
                     <div class= "row">
 
@@ -113,17 +113,21 @@
 
                     <p class="single-p">{{$booking->cname}}</p>
 
-                    <h2 class="singleview">National Id.:</h2>
+                    <h2 class="singleview">Contact No.: </h2>
 
-                    <p class="single-p">{{$booking->nid}}</p>
+                    <p class="single-p">{{$booking->tel}}</p>
 
-                    <h2 class="singleview">Room Category:</h2>
-    
-                    <p class="single-p">{{$booking->room->roomtitle}}-{{$booking->room->roomno}}</p>
+                    <h2 class="singleview">Check-in Date: </h2>
 
-                    <h2 class="singleview">Check-out Date:</h2>
+                    <p class="single-p">{{$booking->checkInDate}}</p>
 
-                    <p class="single-p">{{ $booking->checkOutDate}}</p>
+                    <h2 class="singleview">Total Amount: </h2>
+
+                    <p class="single-p">{{$booking->price}}</p>
+
+                    <h2 class="singleview">Paid: </h2>
+
+                    <p class="single-p">{{$booking->paid}}</p>
 
                 </div>
 
@@ -136,41 +140,55 @@
 
                     <p class="single-p">{{$booking->email}}</p>
     
-                    <h2 class="singleview">Contact No.:</h2>
+                    <h2 class="singleview">Room Category:</h2>
+    
+                    <p class="single-p">{{$booking->room->roomtitle}}-{{$booking->room->roomno}}</p>
 
-                    <p class="single-p">{{$booking->tel}}</p>
+                    <h2 class="singleview">Check-out Date:</h2>
 
-                    <h2 class="singleview">Check-in Date:</h2>
+                    <p class="single-p">{{ $booking->checkOutDate}}</p>
 
-                    <p class="single-p">{{$booking->checkInDate}}</p>
+                    <h2 class="singleview">Discount:</h2>
+
+                    <p class="single-p">{{$booking->discount}}</p>
+
+                    <h2 class="singleview">Due:</h2>
+
+                    <p class="single-p">{{$booking->due}}</p>
 
 
                 </div>
 
 
+
+
+                
                     </div>
 
 
 
-                {{-- <div class="d-flex">
+                <div class="d-flex">
 
                         
                     
-                        <form method="POST" action="{{ route('admin.booking.accept', ['id' => $booking->id]) }}">
+                        <form method="POST" action="{{ route('admin.booking.checkedout', ['id' => $booking->id]) }}">
                             @csrf
-                            <button type="submit" class="btn-primary singleview-button">Accept</button>
+
+                            <input type="text" class="due-file-control" name="paid" id="paid"  value="{{$booking->due}}" required>
+
+                            <button type="submit" class="btn-primary singleview-button">Checked Out</button>
                         </form>
 
 
 
-                        <form method="POST" action="{{ route('admin.booking.deny', ['id' => $booking->id]) }}">
+                        {{-- <form method="POST" action="{{ route('admin.booking.deny', ['id' => $booking->id]) }}">
                             @csrf
                             <button type="submit" class="btn-danger singleview-button mx-2">Deny</button>
-                        </form>
+                        </form> --}}
                 
                 
                 
-                    </div> --}}
+                    </div>
 
 
 
@@ -183,6 +201,27 @@
         
         </div>
 
+        {{-- <div class="col-md-12 duefiles">
+            
+            <form>
+
+
+              <h2 class="text-center-due">Due Payment</h2>
+
+              <div class=" formdue">
+
+                <div class=" groupdue">
+
+                    <input type="paid" class="due-file-control" name="paid" id="paid" placeholder="Enter Amount" required>
+                
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-files">Add</button>
         
+              </div>
+
+            </form>
+
+        </div> --}}
            
  @endsection

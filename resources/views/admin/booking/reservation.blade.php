@@ -178,6 +178,18 @@
           </div>
 
 
+          <div class="col-sm-6 form-group">
+            <label for="paid" class="reserve-label">Paid</label>
+            <input type="number" name="paid" class="form-control" id="paid" placeholder="paid" required>
+          </div>
+
+
+          <div class="col-sm-6 form-group">
+            <label for="due" class="reserve-label">Due</label>
+            <input type="number" name="due" class="form-control" id="due" placeholder="due">
+          </div>
+
+
 
           <div class="col-sm-12 form-group">
             <label for="specialrequest" class="reserve-label">Special Request, Ex. extra bed, comforter.....</label>

@@ -52,6 +52,8 @@
     <link rel="stylesheet" href="{{asset('employees/css/reservation.css')}}">
     <link rel="stylesheet" href="{{asset('employees/css/editReservation.css')}}">
     <link rel="stylesheet" href="{{asset('employees/css/booklists.css')}}">
+    <link rel="stylesheet" href="{{asset('employees/css/checkout.css')}}">
+
 
     <link rel="stylesheet" href="{{asset('employees/css/dashboards.css')}}">
 

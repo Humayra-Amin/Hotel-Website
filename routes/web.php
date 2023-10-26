@@ -81,11 +81,14 @@ Route::middleware(["auth:emps"])->group(function () {
     Route::get('/admin/booking/reservation', [BookingController::class, "reservation"]);
     Route::get('/admin/booking/{id}/editReservation', [BookingController::class, "editReservation"]);
     Route::get('/admin/booking/singleview', [BookingController::class, "singleview"]);
+    Route::get('/admin/booking/checkout', [BookingController::class, "checkout"]);
+    Route::post('/admin/booking/{id}', [BookingController::class, "search"]);
     Route::get('/admin/booking/{id}', [BookingController::class, "show"]);
     Route::post('admin/booking', [BookingController::class, "store"]);
     Route::put('/admin/booking/{id}', [BookingController::class, "update"]);
-    Route::post('/admin/booking/{id}/accept', [BookingController::class, "accept"])->name('admin.booking.accept');
-    Route::post('/admin/booking/{id}/deny', [BookingController::class, "deny"])->name('admin.booking.deny');
+    Route::post('/admin/booking/{id}/checkedout', [BookingController::class, "checkedout"])->name('admin.booking.checkedout');
+    // Route::post('/admin/booking/{id}/deny', [BookingController::class, "deny"])->name('admin.booking.deny');
+
 
 
 

@@ -93,6 +93,7 @@
                 <a class="collapse-item" href="/admin/booking/reservation">Add Reservation</a>
                 <a class="collapse-item" href="/admin/booking/editReservation">Edit Reservation</a>
                 <a class="collapse-item" href="/admin/booking/singleview">SingleView</a>
+                <a class="collapse-item" href="/admin/booking/checkout">Check Out</a>
        
             </div>
         </div>

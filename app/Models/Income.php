@@ -12,9 +12,6 @@ class Income extends Model
     protected $fillable = 
     [
            'reservation_id',
-           'price',
-           'discount',
            'paid',
-           'due',
     ];
 }

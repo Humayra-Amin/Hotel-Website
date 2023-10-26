@@ -36,7 +36,21 @@ class BookingController extends Controller
             'checkOutDate' => 'required|date',
             'price' => 'required',
             'discount' => 'nullable|numeric',
+            'paid' => 'nullable|numeric',
+            'due' => 'nullable|numeric',
     ]);
+
+
+
+    $room = Room::where("id", $request->room_id)->first();
+    if(!$room){
+        return redirect("admin/booking/booklists")->with("error", "Room not found.");
+    }
+
+    // if($room->status == "Booked"){
+    //     return redirect("admin/booking/booklists")->with("error", "Room not found.");
+    // }
+
 
 
 
@@ -49,19 +63,18 @@ class BookingController extends Controller
     $booking->guestnumber = $request->guestnumber;
     $booking->checkInDate = $request->checkInDate;
     $booking->checkOutDate = $request->checkOutDate;
+    $booking->specialrequest = $request->specialrequest;
+
     $booking->price = $request->price;
     $booking->discount = $request->discount;
-    $booking->specialrequest = $request->specialrequest;
+    $booking->paid = $request->paid;
+    $booking->due =  (float)$booking->price - (float)$booking->discount - (float)$booking->paid;
+
     $booking->save();
 
 
     $income= new Income();
-    $income->reservation_id = $request->reservation_id;
-    $income->price = $request->price;
-    $income->discount = $request->discount;
     $income->paid = $request->paid;
-    $income->due = (float)$income->price - (float)$income->discount - (float)$income->paid;
-
     $income->save();
 
     
@@ -103,6 +116,8 @@ class BookingController extends Controller
             'checkOutDate' => 'required|date',
             'price' => 'required',
             'discount' => 'nullable|numeric',
+            'paid' => 'nullable|numeric',
+            'due' => 'nullable|numeric',
     ]);
 
 
@@ -117,6 +132,8 @@ class BookingController extends Controller
         $booking->checkOutDate = $request->checkOutDate;
         $booking->price = $request->price;
         $booking->discount = $request->discount;
+        $booking->paid = $request->paid;
+        $booking->due = $request->due;
         $booking->specialrequest = $request->specialrequest;
         $booking->update();
         
@@ -134,7 +151,6 @@ class BookingController extends Controller
         return view("admin.booking.singleview");
 
     }
-
 
 
     public function show($id)
@@ -156,51 +172,79 @@ class BookingController extends Controller
     }
 
 
+    public function checkout()
+    {
+
+        return view("admin.booking.checkout");
+
+    }
+
+
+
+    public function search(Request $request)
+   {
+
+    $request->validate([
+        'emailorcontact' => 'required',
+    ]);
+
+    $emailOrContact = $request->emailorcontact;
+
+    $booking = Booking::with("room", "income")->where('email', $emailOrContact)
+        ->orWhere('tel', $emailOrContact)
+        ->first();
+
+        if($booking){
+            if($booking->room->status != "Booked"){
+                return redirect()->back()->with('error', 'Booking not found.');
+            }
+        } else{
+            return redirect()->back()->with('error', 'Booking not found.');
+        }
+
+    
+        return view('admin.booking.singleview')->with('booking',  $booking);
+        
+
+   } 
+
+
+
+    public function checkedout(Request $request,$id)
+    {
+
+        $booking = Booking::with("room")->find($id);
+        if($booking){
+            if($booking->room->status != "Booked"){
+                return redirect()->back()->with('error', 'Booking not found.');
+            }
+        } else{
+            return redirect()->back()->with('error', 'Booking not found.');
+        }
+
+
+        $income= new Income();
+        $income->reservation_id = $booking->id;
+        $income->paid = $request->paid;
+        $income->save();
+
+
+
+        $room = $booking->room;
+        $room->status = null;
+        $room->save();
+
+
+        return redirect()->back()->with('success', 'Checked Out successfully!!!!');
+
+    }
 
 
 
 
-    // public function accept(Request $request, $id)
-    // {
-
-    //     $booking = Booking::find($id);
 
 
-    //     if (!$booking) {
-
-    //         return redirect()->back()->with('error', 'Booking not found.');
-    //     }
-
-
-    //     $booking->status = 'Accepted';
-    //     $booking->save();
-
-
-    //     return redirect()->back()->with('success', 'Booking accepted successfully!!!!');
-
-    // }
-
-
-
-
-    // public function deny(Request $request, $id)
-    // {
-
-    //     $booking = Booking::find($id);
-
-
-    //     if (!$booking) {
-
-    //         return redirect()->back()->with('error', 'Booking not found.');
-    //     }
-
-
-    //     $booking->status = 'Denied';
-    //     $booking->save();
-
-    //     return redirect()->back()->with('error', 'Booking denied!!!!');
-
-    // }
+    
 
     
 }

@@ -190,6 +190,17 @@
       </div>
 
 
+      <div class="col-sm-6 form-group">
+        <label for="paid" class="editreserve-label">Paid</label>
+        <input type="number" name="paid" class="form-control" id="paid" placeholder="paid" value="{{$booking->paid}}">
+      </div>
+
+
+      <div class="col-sm-6 form-group">
+        <label for="due" class="editreserve-label">Due</label>
+        <input type="number" name="due" class="form-control" id="due" placeholder="due" value="{{$booking->due}}">
+      </div>
+
 
       <div class="col-sm-12 form-group">
         <label for="specialrequest" class="editreserve-label">Special Request, Ex. extra bed, comforter.....</label>
