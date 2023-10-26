@@ -46,7 +46,7 @@ class AccountController extends Controller
 
 
 
-        return redirect("admin/account/expenselist");
+        return redirect("admin/account/expenselist")->with("success", "Total Expense");
 
     }
 
