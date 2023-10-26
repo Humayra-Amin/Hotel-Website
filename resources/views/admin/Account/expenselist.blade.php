@@ -95,15 +95,22 @@
                             <thead>
                             <tr>
                         
-                            <th class=col-md-3>Date</th>
+                            <th class=col-md-3>Expense Name</th>
                             <th class=col-md-2>Total Cost</th>
                            
                     
                             </tr>
                             </thead>
                             <tbody>
-                          
-                       
+                               
+                                @foreach($expenses as $expense)
+                                <tr>
+                                  
+                                    <td>{{$expense->expensename}}</td> 
+                                    <td>{{$expense->cost}}</td> 
+                                    
+                                 </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>

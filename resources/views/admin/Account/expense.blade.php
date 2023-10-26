@@ -96,8 +96,8 @@
 
         <tbody id="utility-table">
             <tr>
-                <td><input type="text" class="form-control utility-input" placeholder="Enter utility"></td>
-                <td><input type="number" class="form-control expense-input" placeholder="Enter expense"></td>
+                <td><input type="text" name="expensename" class="form-control utility-input" placeholder="Enter utility"></td>
+                <td><input type="number" name="cost" class="form-control expense-input" placeholder="Enter expense"></td>
                 <td><button class="btn btn-primary" id="add-utility">+</button></td>
 
             </tr>
