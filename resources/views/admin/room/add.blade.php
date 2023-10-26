@@ -217,11 +217,7 @@
                               </div>
                             </div>
     
-                        
-                            <div class="col-sm-4">
-                              <input type="checkbox" class="form-check d-inline" id="chb" required><label for="chb" class="form-check-label">&nbsp;I accept all terms and conditions.
-                              </label>
-                            </div>
+                      
                       
                             <div class="col-sm-12 form-group mb-0">
                               <button class="btn btn-primary btn-lg float-right add-room-btn">Submit</button>

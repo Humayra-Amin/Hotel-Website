@@ -6,6 +6,7 @@ use App\Models\Income;
 use App\Models\Customer;
 use App\Models\Room;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class BookingController extends Controller
 {
@@ -70,6 +71,11 @@ class BookingController extends Controller
     $booking->paid = $request->paid;
     $booking->due =  (float)$booking->price - (float)$booking->discount - (float)$booking->paid;
 
+
+    // $checkInDate = Carbon::parse($request->checkInDate);
+    // $checkOutDate = Carbon::parse($request->checkOutDate);
+
+
     $booking->save();
 
 
@@ -121,6 +127,13 @@ class BookingController extends Controller
     ]);
 
 
+    $room = Room::where("id", $request->room_id)->first();
+    if(!$room){
+        return redirect("admin/booking/booklists")->with("error", "Room not found.");
+    }
+
+
+
         $booking = Booking::find ($id);
         $booking->cname = $request->cname;
         $booking->email = $request->email;
@@ -129,15 +142,21 @@ class BookingController extends Controller
         $booking->room_id = $request->room_id;
         $booking->guestnumber = $request->guestnumber;
         $booking->checkInDate = $request->checkInDate;
-        $booking->checkOutDate = $request->checkOutDate;
+        $booking->checkOutDate = $request->checkOutDate;;
+        $booking->specialrequest = $request->specialrequest;
+
         $booking->price = $request->price;
         $booking->discount = $request->discount;
         $booking->paid = $request->paid;
-        $booking->due = $request->due;
-        $booking->specialrequest = $request->specialrequest;
+        $booking->due =  (float)$booking->price - (float)$booking->discount - (float)$booking->paid;
+
         $booking->update();
         
 
+        $room = Room::where('id', $request->room_id)->first();
+        $room->status = 'Booked';
+        $room->update();
+    
         return redirect("admin/booking/booklists")->with("success", "BookingList Updated....");
 
     }
