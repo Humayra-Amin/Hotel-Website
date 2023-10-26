@@ -114,16 +114,16 @@
                               
                               <div class="col-sm-6 form-group custom-form-group">
                                 <label for="Category">Category</label>
-                                  <select name="category" class="form-control custom-select browser-default">
+                                  <select name="category_id" class="form-control custom-select browser-default">
                                   <option>Select your Room Category</option>
                                     {{-- @foreach ($categories as $category)
                                        <option value="{{$category->id}}"> {{$category->categoryname}} </option>
                                     @endforeach --}}
-                                  <option @if($room->category == 'Normal') selected @endif>Normal</option>
-                                  <option @if($room->category == 'Standered') selected @endif>Standered</option>
-                                  <option @if($room->category == 'Premium') selected @endif>Premium</option>
-                                  <option @if($room->category == 'Super Premium') selected @endif>Super Premium</option>
-                                  <option @if($room->category == 'Queen') selected @endif>Queen</option>
+                                  <option @if($room->category == "Single Room") selected @endif>Single Suits</option>
+                                  <option @if($room->category == "Double Room") selected @endif>Double Suits</option>
+                                  <option @if($room->category == "Couple Room") selected @endif>Couple Suits</option>
+                                  <option @if($room->category == "VIP Room") selected @endif>VIP Suits</option>
+                                
                                    
                       
                               </select>
@@ -151,15 +151,11 @@
                                 <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter no of guest." value="{{$room->maxoccupancy}}" required>
                               </div>
 
-                              {{-- <div class="col-sm-6 form-group custom-form-group">
-                                <label for="size">Room Size</label>
-                                <input type="number" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" value="{{$room->roomsize}}" required>
-                              </div> --}}
 
                               <div class="col-sm-6 form-group custom-form-group">
                                 <label for="view">Room View</label>
                                 <select name="roomview" class="form-control custom-select browser-default">
-                            
+                                <option>Select View</option>
                                 <option @if($room->roomview == 'Sea View') selected @endif>Sea View</option>
                                 <option @if($room->roomview == 'Mountain View') selected @endif>Mountain View</option>
                                 <option @if($room->roomview == 'Mountain View') selected @endif>Road View</option>

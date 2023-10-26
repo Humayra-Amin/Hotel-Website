@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('roomtitle');
             $table->string('roomno');
             $table->string('floorno');
-            $table->string('price');
+            $table->float('price')->default(0);
             $table->string('category_id');
             $table->string('roomsize');
             $table->string('roomview')->nullable();

@@ -23,11 +23,15 @@ class Booking extends Model
             'paid',
             'due',
             'specialrequest',
-            'status',
     ];
 
     public function room()
     {
         return $this->belongsTo(Room::class); 
+    }
+
+    public function income()
+    {
+        return $this->hasMany(Income::class, "reservation_id", "id"); 
     }
 }

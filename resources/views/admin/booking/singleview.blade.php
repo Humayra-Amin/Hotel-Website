@@ -173,6 +173,9 @@
                     
                         <form method="POST" action="{{ route('admin.booking.checkedout', ['id' => $booking->id]) }}">
                             @csrf
+
+                            <input type="text" class="due-file-control" name="paid" id="paid"  value="{{$booking->due}}" required>
+
                             <button type="submit" class="btn-primary singleview-button">Checked Out</button>
                         </form>
 
@@ -198,7 +201,7 @@
         
         </div>
 
-        <div class="col-md-12 duefiles">
+        {{-- <div class="col-md-12 duefiles">
             
             <form>
 
@@ -219,6 +222,6 @@
 
             </form>
 
-        </div>
+        </div> --}}
            
  @endsection

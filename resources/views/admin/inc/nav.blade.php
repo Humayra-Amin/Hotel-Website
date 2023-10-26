@@ -108,6 +108,7 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Account:</h6>
                 <a class="collapse-item" href="/admin/Account/expense">Expense</a>
+                <a class="collapse-item" href="/admin/Account/expenselist">Expense List</a>
                 <a class="collapse-item" href="/admin/Account/income">Income</a>
            
         </div>

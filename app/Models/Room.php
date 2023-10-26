@@ -33,4 +33,9 @@ class Room extends Model
         'facilities' => 'array',
     ];
 
+
+    public function booking(){
+        return $this->hasMany(Booking::class);
+    }
+
 }

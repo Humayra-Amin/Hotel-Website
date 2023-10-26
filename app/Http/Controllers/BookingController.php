@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Booking;
+use App\Models\Income;
 use App\Models\Customer;
 use App\Models\Room;
 use Illuminate\Http\Request;
@@ -41,6 +42,18 @@ class BookingController extends Controller
 
 
 
+    $room = Room::where("id", $request->room_id)->first();
+    if(!$room){
+        return redirect("admin/booking/booklists")->with("error", "Room not found.");
+    }
+
+    // if($room->status == "Booked"){
+    //     return redirect("admin/booking/booklists")->with("error", "Room not found.");
+    // }
+
+
+
+
     $booking = new Booking();
     $booking->cname = $request->cname;
     $booking->email = $request->email;
@@ -50,12 +63,21 @@ class BookingController extends Controller
     $booking->guestnumber = $request->guestnumber;
     $booking->checkInDate = $request->checkInDate;
     $booking->checkOutDate = $request->checkOutDate;
+    $booking->specialrequest = $request->specialrequest;
+
     $booking->price = $request->price;
     $booking->discount = $request->discount;
     $booking->paid = $request->paid;
-    $booking->due = $request->due;
-    $booking->specialrequest = $request->specialrequest;
+    $booking->due =  (float)$booking->price - (float)$booking->discount - (float)$booking->paid;
+
     $booking->save();
+
+
+    $income= new Income();
+    $income->paid = $request->paid;
+    $income->save();
+
+    
 
 
     $room = Room::where('id', $request->room_id)->first();
@@ -168,7 +190,7 @@ class BookingController extends Controller
 
     $emailOrContact = $request->emailorcontact;
 
-    $booking = Booking::with("room")->where('email', $emailOrContact)
+    $booking = Booking::with("room", "income")->where('email', $emailOrContact)
         ->orWhere('tel', $emailOrContact)
         ->first();
 
@@ -188,7 +210,7 @@ class BookingController extends Controller
 
 
 
-    public function checkedout($id)
+    public function checkedout(Request $request,$id)
     {
 
         $booking = Booking::with("room")->find($id);
@@ -201,10 +223,12 @@ class BookingController extends Controller
         }
 
 
-        if($booking ->due == 0){
-            
-        }
-      
+        $income= new Income();
+        $income->reservation_id = $booking->id;
+        $income->paid = $request->paid;
+        $income->save();
+
+
 
         $room = $booking->room;
         $room->status = null;
@@ -218,24 +242,9 @@ class BookingController extends Controller
 
 
 
-    // public function deny(Request $request, $id)
-    // {
-
-    //     $booking = Booking::find($id);
 
 
-    //     if (!$booking) {
-
-    //         return redirect()->back()->with('error', 'Booking not found.');
-    //     }
-
-
-    //     $booking->status = 'Denied';
-    //     $booking->save();
-
-    //     return redirect()->back()->with('error', 'Booking denied!!!!');
-
-    // }
+    
 
     
 }

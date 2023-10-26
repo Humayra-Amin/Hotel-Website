@@ -85,7 +85,7 @@
     
     
                 <div class="col-md-12 d-flex align-items-center justify-content-between">
-                    <h2>Income</h2>
+                    <h2>Expense</h2>
                    
                 </div>
                 
@@ -95,26 +95,14 @@
                             <thead>
                             <tr>
                         
-                            <th class=col-md-3>Reservation Id</th>
-                            <th class=col-md-2>Price</th>
-                            <th class=col-md-2>Discount</th>
-                    
-                            <th class=col-md-2>Paid</th>
-                            <th class=col-md-2>Due</th>
+                            <th class=col-md-3>Date</th>
+                            <th class=col-md-2>Total Cost</th>
                            
+                    
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($incomes as $income)
-                                <tr>
-                                    <td>{{$income->reservation_id}}</td>  
-                                    <td>{{$income->price}}</td>  
-                                    <td>{{$income->discount}}</td>
-                                    <td>{{$income->paid}}</td> 
-                                    <td>{{$income->due}}</td> 
-                                    
-                                 </tr>
-                            @endforeach
+                          
                        
                             </tbody>
                         </table>
