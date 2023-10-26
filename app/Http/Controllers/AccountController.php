@@ -10,7 +10,7 @@ class AccountController extends Controller
     //
     public function expense()
     {
-
+     
         return view("admin.Account.expense");
 
     }
@@ -26,6 +26,28 @@ class AccountController extends Controller
     {
         $incomes = Income::all();
         return view("admin.account.income")->with('incomes',  $incomes);
+    }
+
+    public function store(Request $request)
+    {
+
+
+        $request->validate([
+           'expensename',
+           'costt',
+    
+
+        ]);
+
+        $expense= new Expense();
+        $expense->expensename = $request->expensename;
+        $expense->cost = $request->cost;
+        $expense->save();
+
+
+
+        return redirect("admin/account/expenselist");
+
     }
 
 
