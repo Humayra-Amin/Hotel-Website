@@ -96,11 +96,10 @@
                             <tr>
                         
                             <th class=col-md-3>Reservation Id</th>
-                            <th class=col-md-2>Price</th>
-                            <th class=col-md-2>Discount</th>
-                    
                             <th class=col-md-2>Paid</th>
-                            <th class=col-md-2>Due</th>
+                            <th class=col-md-2>Created Date</th>
+
+                          
                            
                             </tr>
                             </thead>
@@ -108,10 +107,8 @@
                             @foreach($incomes as $income)
                                 <tr>
                                     <td>{{$income->reservation_id}}</td>  
-                                    <td>{{$income->price}}</td>  
-                                    <td>{{$income->discount}}</td>
                                     <td>{{$income->paid}}</td> 
-                                    <td>{{$income->due}}</td> 
+                                  
                                     
                                  </tr>
                             @endforeach

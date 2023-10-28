@@ -146,7 +146,13 @@ Route::middleware(["auth:emps"])->group(function () {
 
     Route::get('/contact', [CustomerController::class, "gallery"]);
 
+
+
+    Route::get('/pdf', [Controller::class, "pdf"]);
+
     
+
+
 
 
 

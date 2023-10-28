@@ -81,41 +81,41 @@
 @include('admin.inc.message')
   
 
-<div class=" expense-container">
-    <h1 class= "expense-h1">Expense</h1>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Utility</th>
-                <th>Cost</th>
-            </tr>
-        </thead>
 
-        <tbody id="utility-table">
-            <tr>
-                <td><input type="text" name="expensename" class="form-control utility-input" placeholder="Enter utility"></td>
-                <td><input type="number" name="cost" class="form-control expense-input" placeholder="Enter expense"></td>
-                <td><button class="btn btn-primary" id="add-utility">+</button></td>
+<div class="container mt-3">
+    <h2 class="text-left">Add Expense</h2>
+ 
 
-            </tr>
-        </tbody>
-        
-        <tfoot>
-            <tr>
-                <td></td>
-                <td><strong>Total: <span id="total-expense">0</span> USD</strong></td>
-            </tr>
-        </tfoot>
 
-        {{-- <thead>
-            <tr>
-                <th>Maintanence</th>
-            </tr>
-        </thead> --}}
+<div class="addexpense-row addexpense-jumbotron box8">
+  
+  <div class="custom-form-inner-expense">
+      <div class="col-sm-6 form-group custom-form-group-expense">
+        <label for="expensename">Expense name</label>
+        <input type="text" class="form-control" name="expensename" id="expensename" placeholder="Enter Expense Name.">
+      </div>
 
-    </table>
+      <div class="col-sm-6 form-group custom-form-group-expense">
+        <label for="cost">Cost</label>
+        <input type="number" class="form-control" name="cost" id="cost" placeholder="Enter Aamount." required>
+      
+      </div>
+
+
+     
+
+
+      <div class="col-sm-12 form-group mb-0">
+        <button class="btn btn-primary add-expense-btn">Submit</button>
+      </div>
+  </div>
 
 </div>
+</form>
+</div>
+
+
+ 
 
    
 @endsection

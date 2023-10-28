@@ -72,18 +72,12 @@ class BookingController extends Controller
     $booking->due =  (float)$booking->price - (float)$booking->discount - (float)$booking->paid;
 
 
-    // $checkInDate = Carbon::parse($request->checkInDate);
-    // $checkOutDate = Carbon::parse($request->checkOutDate);
-
-
     $booking->save();
 
 
     $income= new Income();
     $income->paid = $request->paid;
     $income->save();
-
-    
 
 
     $room = Room::where('id', $request->room_id)->first();
@@ -151,6 +145,11 @@ class BookingController extends Controller
         $booking->due =  (float)$booking->price - (float)$booking->discount - (float)$booking->paid;
 
         $booking->update();
+
+
+        $income= new Income();
+        $income->paid = $request->paid;
+        $income->update();
         
 
         $room = Room::where('id', $request->room_id)->first();
