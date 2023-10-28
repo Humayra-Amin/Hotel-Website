@@ -72,10 +72,22 @@ class BookingController extends Controller
     $booking->due =  (float)$booking->price - (float)$booking->discount - (float)$booking->paid;
 
 
+    $checkInDate = Carbon::parse($request->checkInDate);
+    $checkOutDate = Carbon::parse($request->checkOutDate);
+    
+    $numberOfDays = $checkInDate->diffInDays($checkOutDate);
+    
+    
+    $price = $numberOfDays * $room->price;
+    
+    $booking->price = $price;
+
+    
     $booking->save();
 
 
     $income= new Income();
+    $income->reservation_id = $booking->id;
     $income->paid = $request->paid;
     $income->save();
 

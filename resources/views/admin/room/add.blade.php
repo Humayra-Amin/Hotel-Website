@@ -168,7 +168,7 @@
 
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="price">Price</label>
-                              <input type="text" class="form-control" name="price" id="price" placeholder="Enter Price." required>
+                              <input type="number" class="form-control" name="price" id="price" placeholder="Enter Price." required>
                             </div>
 
 
