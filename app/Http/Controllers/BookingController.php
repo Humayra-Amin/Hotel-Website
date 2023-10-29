@@ -97,7 +97,6 @@ class BookingController extends Controller
     $room->update();
 
 
-
     return redirect("admin/booking/booklists")->with("success", "Booking Done....");
 
     }
@@ -133,9 +132,16 @@ class BookingController extends Controller
     ]);
 
 
-    $room = Room::where("id", $request->room_id)->first();
-    if(!$room){
-        return redirect("admin/booking/booklists")->with("error", "Room not found.");
+    // $room = Room::where("id", $request->room_id)->first();
+    // if(!$room){
+    //     return redirect("admin/booking/booklists")->with("error", "Room not found.");
+    // }
+
+
+    $booking = Booking::find($id);
+
+    if (!$booking) {
+        return redirect("admin/booking/booklists")->with("error", "Booking not found.");
     }
 
 
@@ -151,27 +157,41 @@ class BookingController extends Controller
         $booking->checkOutDate = $request->checkOutDate;;
         $booking->specialrequest = $request->specialrequest;
 
-        $booking->price = $request->price;
+        // $booking->price = $request->price;
+        // $booking->discount = $request->discount;
+        // $booking->paid = $request->paid;
+        // $booking->due =  (float)$booking->price - (float)$booking->discount - (float)$booking->paid;
+
+
+        $checkInDate = Carbon::parse($request->checkInDate);
+        $checkOutDate = Carbon::parse($request->checkOutDate);
+        $numberOfDays = $checkInDate->diffInDays($checkOutDate);
+        $room = Room::where("id", $request->room_id)->first();
+
+        $price = $numberOfDays * $room->price;
+        $booking->price = $price;
+
         $booking->discount = $request->discount;
         $booking->paid = $request->paid;
-        $booking->due =  (float)$booking->price - (float)$booking->discount - (float)$booking->paid;
+        $booking->due = (float)$booking->price - (float)$booking->discount - (float)$booking->paid;
+
 
         $booking->update();
 
 
-        $income= new Income();
-        $income->paid = $request->paid;
-        $income->update();
+        // $income= new Income();
+        // $income->paid = $request->paid;
+        // $income->update();
         
 
 
 
-        $room = Room::where('id', $request->room_id)->first();
-        $room->status = 'Booked';
-        $room->update();
+        // $room = Room::where('id', $request->room_id)->first();
+        // $room->status = 'Booked';
+        // $room->update();
     
-        return redirect("admin/booking/booklists")->with("success", "BookingList Updated....");
-
+        return redirect("admin/booking/booklists")->with("success", "Booking Updated.....");
+    
     }
 
 

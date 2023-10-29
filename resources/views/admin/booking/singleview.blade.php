@@ -177,7 +177,7 @@
 
                 {{-- <h2 class="single-h2">Payment History</h2>
 
-                @if ($reservation_id->income->count() > 0)
+                @if ($income->reservation_id->count() > 0)
                     <table>
                         <thead>
                             <tr>
@@ -186,10 +186,10 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($reservation_id->income as $paid)
+                            @foreach ($income->reservation_id as $paid)
                                 <tr>
-                                    <td>{{ $paid->created_at->format('Y-m-d') }}</td>
-                                    <td>${{ $paid->price }}</td>
+                                    <td>{{$paid->created_at->format('Y-m-d')}}</td>
+                                    <td>{{$income->paid}}</td>
                                 </tr>
                             @endforeach
                         </tbody>
@@ -198,6 +198,7 @@
                     <p> No payment history available</p>
                 @endif --}}
 
+                
                 
                     </div>
 
