@@ -44,9 +44,7 @@ class AccountController extends Controller
         $expense->cost = $request->cost;
         $expense->save();
 
-
-
-        return redirect("admin/account/expenselist");
+        return redirect("admin/Account/expenselist")->with("success", "Total Expense");
 
     }
 

@@ -91,8 +91,6 @@ class BookingController extends Controller
     $income->paid = $request->paid;
     $income->save();
 
-    
-
 
     $room = Room::where('id', $request->room_id)->first();
     $room->status = 'Booked';
@@ -159,6 +157,11 @@ class BookingController extends Controller
         $booking->due =  (float)$booking->price - (float)$booking->discount - (float)$booking->paid;
 
         $booking->update();
+
+
+        $income= new Income();
+        $income->paid = $request->paid;
+        $income->update();
         
 
 

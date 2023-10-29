@@ -8,6 +8,8 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
+use Barryvdh\DomPDF\Facade\Pdf;
+
 
 class Controller extends BaseController
 {
@@ -63,6 +65,14 @@ class Controller extends BaseController
     public function utility()
     {
         return view("admin.utility");
+    }
+
+
+
+    public function pdf()
+    {
+        $pdf = Pdf::loadView('pdf');
+        return $pdf->download('invoice.pdf');
     }
      
     
