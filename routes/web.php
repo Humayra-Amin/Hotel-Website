@@ -141,6 +141,7 @@ Route::middleware(["auth:emps"])->group(function () {
     Route::get('/admin/Account/expense', [AccountController::class, "expense"]);
     Route::get('/admin/Account/expenselist', [AccountController::class, "expenselist"]);
     Route::get('/admin/Account/income', [AccountController::class, "income"]);
+    Route::post('/admin/Account', [AccountController::class, "store"]);
 
 
 

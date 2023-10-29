@@ -85,7 +85,8 @@
 <div class="container mt-3">
     <h2 class="text-left">Add Expense</h2>
  
-
+    <form action="{{ url('/admin/Account') }}" method="POST" enctype="multipart/form-data">
+        @csrf
 
 <div class="addexpense-row addexpense-jumbotron box8">
   
@@ -101,8 +102,6 @@
       
       </div>
 
-
-     
 
 
       <div class="col-sm-12 form-group mb-0">
