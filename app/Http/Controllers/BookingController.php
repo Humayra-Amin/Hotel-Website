@@ -161,6 +161,8 @@ class BookingController extends Controller
         $booking->update();
         
 
+
+
         $room = Room::where('id', $request->room_id)->first();
         $room->status = 'Booked';
         $room->update();
@@ -262,7 +264,27 @@ class BookingController extends Controller
         $room->save();
 
 
-        return redirect()->back()->with('success', 'Checked Out successfully!!!!');
+
+        $booking = Booking::findOrFail($id);
+    
+        if ($booking->due > 0) 
+        
+        {
+            $booking->paid = $booking->price;
+            $booking->due = 0;
+            $booking->save();
+
+    
+            return redirect()->back()->with('success', 'Checked Out successfully!!!! Due amount is now 0...');
+        } 
+        
+        else
+        
+        {
+            return redirect()->back()->with('error', 'There is no due....');
+        }
+
+        // return redirect()->back()->with('success', 'Checked Out successfully!!!!');
 
     }
 

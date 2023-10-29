@@ -109,7 +109,7 @@
 
 
 
-      <div class="col-sm-12  form-group">
+      <div class="col-sm-6  form-group">
         <label for="cname" class="editreserve-label">Customer Name</label>
         <input type="text" class="form-control" name="cname" id="cname" placeholder="Name" value="{{$booking->cname}}" required>
       </div>
@@ -131,7 +131,7 @@
 
 
       <div class="col-sm-6 form-group">
-        <label for="email" class="editreserve-label">Input NID</label>
+        <label for="email" class="editreserve-label">National Id</label>
         <input type="nid" class="form-control" name="nid" id="nid" placeholder="Enter NID" value="{{$booking->nid}}" required>
       </div>
 
@@ -157,8 +157,8 @@
 
 
       <div class="col-sm-6 form-group">
-        <label for="maxoccupancy" class="editreserve-label">Max Occupancy</label>
-        <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter maxoccupancy" value="{{$booking->maxoccupancy}}" required>
+        <label for="guestnumber" class="editreserve-label">Number of Guests</label>
+        <input type="text" class="form-control" name="guestnumber" id="guestnumber" value="{{$booking->guestnumber}}" placeholder="Number of Guests">
       </div>
 
 

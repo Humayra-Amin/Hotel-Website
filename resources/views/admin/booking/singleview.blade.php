@@ -84,7 +84,6 @@
 @include('admin.inc.message')
 
 
-
       <h2 class="single-h2">Booking Info</h2>
 
       <div class="book-container mt-3">
@@ -125,9 +124,25 @@
 
                     <p class="single-p">{{$booking->price}}</p>
 
-                    <h2 class="singleview">Paid: </h2>
 
-                    <p class="single-p">{{$booking->paid}}</p>
+                    @if ($booking->due > 0)
+
+                    {{-- Paid: {{$booking->price - $booking->due}} --}}
+                    <h2 class="singleview">Paid: </h2>
+    
+                    <p class="single-p">{{$booking->price - $booking->due}}</p>
+
+                    
+                    @else 
+
+
+                    <h2 class="singleview">Paid: </h2>
+    
+                    <p class="single-p">{{$booking->price}}</p>
+
+
+
+                    @endif
 
                 </div>
 
@@ -160,7 +175,28 @@
                 </div>
 
 
+                {{-- <h2 class="single-h2">Payment History</h2>
 
+                @if ($reservation_id->income->count() > 0)
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Created Date</th>
+                                <th>Paid</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($reservation_id->income as $paid)
+                                <tr>
+                                    <td>{{ $paid->created_at->format('Y-m-d') }}</td>
+                                    <td>${{ $paid->price }}</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                @else
+                    <p> No payment history available</p>
+                @endif --}}
 
                 
                     </div>
@@ -170,23 +206,20 @@
                 <div class="d-flex">
 
                         
-                    
+                    @if ($booking->due > 0)
+
                         <form method="POST" action="{{ route('admin.booking.checkedout', ['id' => $booking->id]) }}">
                             @csrf
 
                             <input type="text" class="due-file-control" name="paid" id="paid"  value="{{$booking->due}}" required>
 
-                            <button type="submit" class="btn-primary singleview-button">Checked Out</button>
+                            <button type="submit" class="btn-primary singleview-button">Check Out</button>
+
                         </form>
 
+                        @endif
 
-
-                        {{-- <form method="POST" action="{{ route('admin.booking.deny', ['id' => $booking->id]) }}">
-                            @csrf
-                            <button type="submit" class="btn-danger singleview-button mx-2">Deny</button>
-                        </form> --}}
-                
-                
+                        
                 
                     </div>
 
