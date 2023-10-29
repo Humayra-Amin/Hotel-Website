@@ -24,10 +24,10 @@ return new class extends Migration
             $table->string('guestnumber')->nullable();
             $table->date('checkInDate');
             $table->date('checkOutDate');
-            $table->string('price');
-            $table->string('discount')->nullable();
-            $table->string('paid')->nullable();
-            $table->string('due')->nullable();
+            $table->float('price');
+            $table->float('discount')->nullable();
+            $table->float('paid')->nullable();
+            $table->float('due')->nullable();
             $table->text('specialrequest')->nullable();
             $table->string('status')->nullable();
 

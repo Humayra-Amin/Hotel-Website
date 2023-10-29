@@ -34,7 +34,7 @@ class AccountController extends Controller
 
         $request->validate([
            'expensename',
-           'costt',
+           'cost',
     
 
         ]);
