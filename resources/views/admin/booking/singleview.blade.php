@@ -198,7 +198,25 @@
                     <p> No payment history available</p>
                 @endif --}}
 
+
+
+
+{{-- <h3>Booking History for {{$booking->room->roomtitle}}-{{$booking->room->roomno}}</h3>
+
+@if ($booking->income->count() > 0)
+    <ul>
+        @foreach ($booking->income as $income)
+            <li>
                 
+                Date: {{ $income->date }}
+                Payment: {{ $income->paid }}
+            </li>
+        @endforeach
+    </ul>
+@else
+    <p>No income history available for this booking.</p>
+@endif --}}
+
                 
                     </div>
 
