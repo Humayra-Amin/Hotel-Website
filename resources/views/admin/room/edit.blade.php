@@ -112,38 +112,23 @@
 
               
                               
-                              <div class="col-sm-6 form-group custom-form-group">
-                                <label for="Category">Category</label>
-                                  <select name="category_id" class="form-control custom-select browser-default">
-                                  <option>Select your Room Category</option>
-                                    {{-- @foreach ($categories as $category)
-                                       <option value="{{$category->id}}"> {{$category->categoryname}} </option>
-                                    @endforeach --}}
-                                  <option @if($room->category == "Single Room") selected @endif>Single Suits</option>
-                                  <option @if($room->category == "Double Room") selected @endif>Double Suits</option>
-                                  <option @if($room->category == "Couple Room") selected @endif>Couple Suits</option>
-                                  <option @if($room->category == "VIP Room") selected @endif>VIP Suits</option>
+                            <div class="col-sm-6 form-group custom-form-group">
+                              <label for="Category">Category</label>
+                              <select name="category_id" class="form-control custom-select browser-default">
+                                <option>Select your Room Category</option>
+                                {{-- @foreach ($categories as $category)
+                                <option value="{{$category->id}}"> {{$category->categoryname}} </option>
+                                @endforeach --}}
+
+
+                                <option @if($room->category_id=="Single Room") selected @endif>Single Room</option>
+                                <option @if($room->category_id=="Double Room") selected @endif>Double Room</option>
+                                <option @if($room->category_id=="Couple Room") selected @endif>Couple Room</option>
+                                <option @if($room->category_id=="VIP Room")  selected @endif>VIP Room</option>
                                 
-                                   
-                      
-                              </select>
-                              </div>
-                              
-{{--                               
-                              <div class="col-sm-6 form-group custom-form-group">
-                                <label for="Country">Room Type</label>
-                                <select name="roomtype" class="form-control custom-select browser-default">
-                  
-                                  <option @if($room->roomtype == 'Single Room') selected @endif>Single Room</option>
-                                  <option @if($room->roomtype == 'Double Room') selected @endif>Double Room</option>
-                                  <option @if($room->roomtype == 'Quad Room') selected @endif>Quad Room</option>
-                                  <option @if($room->roomtype == 'Hollywood Twin Room') selected @endif>Hollywood Twin Room</option>
-                                  <option @if($room->roomtype == 'Double-Double Room') selected @endif> Double-Double Room</option>
-                                  <option @if($room->roomtype == 'Interconnecting Room') selected @endif>Interconnecting Room</option>
-                                  <option @if($room->roomtype == 'Adjoining Room') selected @endif> Adjoining Room</option>
-                                  <option @if($room->roomtype == 'Duplex Room') selected @endif>Duplex Room</option>
-                                </select>
-                              </div> --}}
+                            </select>
+                            </div>                              
+                          
 
                               
                               <div class="col-sm-6 form-group custom-form-group">
@@ -199,13 +184,7 @@
                               
                               </div>
 
-{{--                           
-                              
-                              <div class="col-sm-12 form-group custom-form-group1">
-                                <label for="description" class="form-label" >Description</label>
-                                <textarea name="description" class="form-control" id="description" rows="3" >{{ $room->description}}</textarea>
-                              </div> --}}
-                              
+
                     
                             
                   
