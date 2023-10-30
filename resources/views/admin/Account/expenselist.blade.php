@@ -97,6 +97,7 @@
                         
                             <th class=col-md-3>Expense Name</th>
                             <th class=col-md-2>Total Cost</th>
+                            <th class=col-md-2>Created Date</th>
                            
                     
                             </tr>
@@ -108,6 +109,7 @@
                                   
                                     <td>{{$expense->expensename}}</td> 
                                     <td>{{$expense->cost}}</td> 
+                                    <td>{{$expense->created_at}}</td> 
                                     
                                  </tr>
                             @endforeach

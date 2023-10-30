@@ -108,6 +108,7 @@
                                 <tr>
                                     <td>{{$income->reservation_id}}</td>  
                                     <td>{{$income->paid}}</td> 
+                                    <td>{{$income->created_at}}</td> 
                                   
                                     
                                  </tr>
