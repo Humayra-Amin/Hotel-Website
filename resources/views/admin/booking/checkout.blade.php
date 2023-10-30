@@ -85,7 +85,6 @@
 
                         <h2 class="checkout-h2">Hotel Checkout</h2>
 
-                        @include('admin.inc.message')
 
 
                         <form method="POST" action="{{ url('/admin/booking/checkout') }}">

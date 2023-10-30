@@ -93,7 +93,7 @@
            <div class="row">
        
 
-      @foreach($categories as $category)
+          @foreach($categories as $category)
             <div class="col-md-4">
                 <div class="box-card">
                   <a href="/admin/room/roomcategory/{{$category->category_id}}">

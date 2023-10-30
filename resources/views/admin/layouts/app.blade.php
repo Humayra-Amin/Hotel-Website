@@ -97,7 +97,7 @@
     <script src="{{asset('employees/js/tushin.js')}}"></script>
     <script src="{{asset('employees/js/kayem.js')}}"></script>
 
-    <script src="{{asset('Accounts/js/expense.js')}}"></script>
+    
 
 
 </head>

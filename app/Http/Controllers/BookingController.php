@@ -79,7 +79,7 @@ class BookingController extends Controller
     $numberOfDays = $checkInDate->diffInDays($checkOutDate);
     
     
-    $price = $numberOfDays * $room->price;
+    $price = (float)$numberOfDays * (float)$room->price;
     
     $booking->price = $price;
 
@@ -132,10 +132,7 @@ class BookingController extends Controller
     ]);
 
 
-    // $room = Room::where("id", $request->room_id)->first();
-    // if(!$room){
-    //     return redirect("admin/booking/booklists")->with("error", "Room not found.");
-    // }
+   
 
 
     $booking = Booking::find($id);
