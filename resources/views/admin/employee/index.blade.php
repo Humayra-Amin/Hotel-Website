@@ -150,7 +150,7 @@
 
 
 
-                        <th scope="col"> Id </th>
+                        {{-- <th scope="col"> Id </th> --}}
                 <th scope="col">Employee Name</th>
                 <th scope="col">Joining</th>
                 <th scope="col">Position</th>
@@ -177,7 +177,7 @@
 
 
 
-                         <td>{{$employee->eid}}</td>
+                         {{-- <td>{{$employee->eid}}</td> --}}
                     <td>{{$employee->ename}}</td>
                     <td>{{$employee->joiningdate}}</td>
                     <td>{{$employee->position}}</td>

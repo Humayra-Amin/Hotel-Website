@@ -42,7 +42,7 @@
             <div class="col-4">
             <div class="ddd">
             @foreach ($employee->image as $image)
-                    <img src='{{Storage::disk("public")->url($image)}}' class="image">     
+                    <img src='{{Storage::disk("public")->url("emp/$image")}}' class="image">     
                 @endforeach
                 <h2 class="group-card-title">{{$employee->employeetitle}}</h2>
                 </div>
