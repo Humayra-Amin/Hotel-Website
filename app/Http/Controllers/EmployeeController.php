@@ -124,8 +124,8 @@ class EmployeeController extends Controller
 
 
     
-        Storage::disk("public")->put("$employee->id", $request->file('image'));
-        $employee->image= Storage::disk("public")->files($employee->id);
+        Storage::disk("public")->put("emp/$employee->id", $request->file('image'));
+        $employee->image= Storage::disk("public")->files("emp/$employee->id");
         $employee->update();
 
 
@@ -209,10 +209,10 @@ class EmployeeController extends Controller
 
         if($request->file('image'))
         {
-            Storage::disk("public")->deleteDirectory("$employee->id");
-        Storage::disk("public")->put("$employee->id", $request->file('image'));
+            Storage::disk("public")->deleteDirectory("emp/$employee->id");
+        Storage::disk("public")->put("emp/$employee->id", $request->file('image'));
         }
-        $employee->image= Storage::disk("public")->files($employee->id);
+        $employee->image= Storage::disk("public")->files("emp/$employee->id");
         $employee->update();
 
 

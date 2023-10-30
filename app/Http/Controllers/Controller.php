@@ -19,9 +19,6 @@ class Controller extends BaseController
     public function index()
     {
 
-    //     $categories = Room::get()->groupBy("category_id");
-
-        // return $categories;
 
         $categories = Room::get()->groupBy("category_id");
 
@@ -53,9 +50,28 @@ class Controller extends BaseController
             ];
         }
 
+
+        $bookedCount = Room::where("status", "Booked")->count();
+        $ablCount = Room::where("status", null)->count();
+
+
+        
+        $todayBook = Booking::whereDay('checkInDate', '=', date('d'))->count();
+        $todayCheckout = Booking::whereDay('checkOutDate', '=', date('d'))->count();
+
+
+        $lastFiveBook = Booking::take(5)->get();
+      
     
 
-        return view("admin.room.dashboard")->with("roomCounts", $roomCounts);
+        return view("admin.room.dashboard")->with([
+            "roomCounts"=> $roomCounts,
+            "bookedCount"=> $bookedCount,
+            "ablCount"=> $ablCount,
+            "todayBook"=> $todayBook,
+            "todayCheckout"=> $todayCheckout,
+            "lastFiveBook"=> $lastFiveBook,
+        ]);
 
       
     }

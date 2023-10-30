@@ -15,9 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('reservation_id');
             $table->float('price')->default(0);
-            $table->float('discount')->default(0);
-            $table->float('paid')->default(0);
-            $table->float('due')->default(0);
             $table->timestamps();
         });
     }

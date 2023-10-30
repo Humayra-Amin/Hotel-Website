@@ -6,6 +6,14 @@
 
     <div id="content-wrapper" class="d-flex flex-column">
         
+
+      
+    <script>
+
+    function handler(e){
+      console.log(e.target.value);
+    }
+    </script>
     
         <!-- Main Content -->
         <div id="content">
@@ -162,7 +170,7 @@
 
           <div class="col-sm-6 form-group">
             <label for="checkOutDate" class="reserve-label">Check-out Date</label>
-            <input type="date" class="form-control" name="checkOutDate" id="checkOutDate" required>
+            <input type="date" class="form-control" name="checkOutDate" id="checkOutDate" onchange="handler(event);"  required>
           </div>
 
 

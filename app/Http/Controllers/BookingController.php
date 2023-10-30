@@ -73,6 +73,7 @@ class BookingController extends Controller
 
 
     $checkInDate = Carbon::parse($request->checkInDate);
+
     $checkOutDate = Carbon::parse($request->checkOutDate);
     
     $numberOfDays = $checkInDate->diffInDays($checkOutDate);
@@ -128,7 +129,6 @@ class BookingController extends Controller
             'price' => 'required',
             'discount' => 'nullable|numeric',
             'paid' => 'nullable|numeric',
-            'due' => 'nullable|numeric',
     ]);
 
 
@@ -266,10 +266,13 @@ class BookingController extends Controller
     {
 
         $booking = Booking::with("room")->find($id);
+
+        
         if($booking){
             if($booking->room->status != "Booked"){
                 return redirect()->back()->with('error', 'Booking not found.');
             }
+
         } else{
             return redirect()->back()->with('error', 'Booking not found.');
         }
@@ -288,14 +291,19 @@ class BookingController extends Controller
 
 
 
-        $booking = Booking::findOrFail($id);
+        if(Carbon::parse($booking->checkOutDate)->startOfDay() != Carbon::parse(now())->startOfDay()){
+            $booking->checkOutDate = now();
+            $booking->update();
+        }
+
     
         if ($booking->due > 0) 
-        
         {
-            $booking->paid = $booking->price;
-            $booking->due = 0;
-            $booking->save();
+
+            $oldPaid = $booking->paid;
+            $booking->paid =  $oldPaid+ $request->paid;
+            $booking->due = $booking->price - ($oldPaid+$request->paid);
+            $booking->update();
 
     
             return redirect()->back()->with('success', 'Checked Out successfully!!!! Due amount is now 0...');

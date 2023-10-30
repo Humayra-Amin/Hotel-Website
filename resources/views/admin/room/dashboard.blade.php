@@ -108,25 +108,25 @@
 
                             <div class="col-sm-3 Overview-body">
                               <h5 class="dash-card-title dash-text-center">Today's Check-in</h5>
-                              <p class="overview-text dashp-text-center">5</p>
+                              <p class="overview-text dashp-text-center">{{$todayBook}}</p>
                             </div>
 
 
                             <div class="col-sm-3 Overview-body">
                               <h5 class="dash-card-title dash-text-center">Today's Check-out</h5>
-                              <p class="overview-text dashp-text-center">4</p>
+                              <p class="overview-text dashp-text-center">{{$todayCheckout}}</p>
                             </div>
 
 
                             <div class="col-lg-3 Overview-body">
                               <h5 class="dash-card-title dash-text-center">Available Room</h5>
-                              <p class="overview-text dashp-text-center">5</p>
+                              <p class="overview-text dashp-text-center">{{$ablCount}}</p>
                             </div>
 
 
                             <div class="col-lg-3 Overview-body">
                               <h5 class="dash-card-title dash-text-center">Occupied Room</h5>
-                              <p class="overview-text dashp-text-center">10</p>
+                              <p class="overview-text dashp-text-center">{{$bookedCount}}</p>
                             </div>
 
 
@@ -223,7 +223,7 @@
                                 <thead>
                                   <tr>
                                     <th>Name</th>
-                                    <th>ID</th>
+                                    <th>Room No</th>
                                     <th>Room Category</th>
                                     <th>Payment Status</th>
                                   </tr>
@@ -232,29 +232,19 @@
 
                                 <tbody>
 
-
-                                  <tr>
-                                    <td>Alex</td>
-                                    <td>10 </td>
-                                    <td>single</td>
-                                    <td>paid</td>
-                                  </tr>
-
-
-                                  <tr>
-                                    <td>Maria</td>
-                                    <td>20</td>
-                                    <td>Double</td>
+                              @foreach ($lastFiveBook as $last)
+                                    
+                                <tr>
+                                  <td>{{$last->cname}}</td>
+                                  <td>{{$last->room_id}}</td>
+                                  <td>{{$last->room->category_id}}</td>
+                                  @if ($last->due = 0)
+                                    <td>Paid</td>
+                                    @else 
                                     <td>Due</td>
-                                  </tr>
-
-
-                                  <tr>
-                                    <td>Jerry</td>
-                                    <td>30</td>
-                                    <td>Double</td>
-                                    <td>Failed</td>
-                                  </tr>
+                                  @endif
+                                </tr>
+                              @endforeach
 
                                 
                                 </tbody>
