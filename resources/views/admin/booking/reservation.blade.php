@@ -13,6 +13,65 @@
     function handler(e){
       console.log(e.target.value);
     }
+    $(document).ready(function(){
+      var nowTemp = new Date();
+      var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+
+      var checkin = $('#checkInDate').datepicker({
+
+        beforeShowDay: function(date) {
+          return date.valueOf() >= now.valueOf();
+        },
+        autoclose: true
+
+      }).on('changeDate', function(ev) {
+        if (ev.date.valueOf() > checkout.datepicker("getDate").valueOf() || !checkout.datepicker("getDate").valueOf()) {
+
+          var newDate = new Date(ev.date);
+          newDate.setDate(newDate.getDate() + 1);
+          checkout.datepicker("update", newDate);
+
+        }
+        $('#checkOutDate')[0].focus();
+      });
+
+
+      var checkout = $('#checkOutDate').datepicker({
+        beforeShowDay: function(date) {
+          if (!checkin.datepicker("getDate").valueOf()) {
+            return date.valueOf() >= new Date().valueOf();
+          } else {
+            return date.valueOf() > checkin.datepicker("getDate").valueOf();
+          }
+        },
+        autoclose: true
+
+      }).on('changeDate', function(ev) {
+        let value1 = document.querySelector('#checkInDate');
+        let price = document.querySelector('#roomcategory')
+        calculateDate(value1.value, ev.target.value, price.value)
+      });
+
+      
+      const roomCategory = document.querySelector('#roomcategory');
+     
+      roomCategory.addEventListener("change", function(e) {
+        const value1 = document.querySelector('#checkInDate');
+        const value2 = document.querySelector('#checkOutDate');
+        calculateDate(value1.value, value2.value, e.target.value)
+      })
+      function calculateDate(value1, value2, price ) {
+        
+          if (!(value1 && value2 && price)) return;
+            date1 = new Date(value1);
+            date2 = new Date(value2);
+            var Difference_In_Time = date2.getTime() - date1.getTime();
+            Difference_In_Days = Difference_In_Time / (1000 * 60 * 60 * 24);
+            document.getElementById('price').value = parseFloat(Difference_In_Days) * parseFloat(price) || 0 ;
+        }
+
+      })
+
     </script>
     
         <!-- Main Content -->
@@ -145,7 +204,7 @@
           <select class="form-control" name="room_id" id="roomcategory" placeholder="Room Category" required>
             <option >Select Room Category</option>
             @foreach ($rooms as $room)
-            <option value="{{ $room->id }}">{{$room->roomtitle}} - {{$room->roomno}}</option>
+            <option value="{{ $room->price }}">{{$room->roomtitle}} - {{$room->roomno}}</option>
             @endforeach
               
           </select>
@@ -163,14 +222,14 @@
 
           <div class="col-sm-6 form-group">
             <label for="checkInDate" class="reserve-label">Check-in Date</label>
-                <input type="date" class="form-control" name="checkInDate" id="checkInDate" required>
+                <input class="form-control clickable input-md" type="text" name="checkInDate" id="checkInDate" required>
           </div>
 
 
 
           <div class="col-sm-6 form-group">
             <label for="checkOutDate" class="reserve-label">Check-out Date</label>
-            <input type="date" class="form-control" name="checkOutDate" id="checkOutDate" onchange="handler(event);"  required>
+            <input class="form-control clickable input-md" type="text" name="checkOutDate" id="checkOutDate" onchange="handler(event);"  required>
           </div>
 
 
@@ -192,10 +251,10 @@
           </div>
 
 
-          <div class="col-sm-6 form-group">
+          {{-- <div class="col-sm-6 form-group">
             <label for="due" class="reserve-label">Due</label>
             <input type="number" name="due" class="form-control" id="due" placeholder="due">
-          </div>
+          </div> --}}
 
 
 

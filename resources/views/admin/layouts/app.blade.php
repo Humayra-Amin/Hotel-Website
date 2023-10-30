@@ -76,6 +76,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     
     <script src="{{asset('rooms/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src = 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js'></script>
 
     <!-- Core plugin JavaScript-->
     <script src="{{asset('rooms/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
