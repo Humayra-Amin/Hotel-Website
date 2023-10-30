@@ -215,18 +215,22 @@
                 <div class="d-flex">
 
                         
-                    @if ($booking->due > 0)
 
                         <form method="POST" action="{{ route('admin.booking.checkedout', ['id' => $booking->id]) }}">
                             @csrf
 
+                            @if ($booking->due > 0)
                             <input type="text" class="due-file-control" name="paid" id="paid"  value="{{$booking->due}}" required>
+                            @else 
+                            <input type="text" class="due-file-control" name="paid" id="paid"  value="{{$booking->due}}" hidden>
+                            @endif
 
-                            <button type="submit" class="btn-primary singleview-button">Check Out</button>
+                            @if ($booking->room->status == "Booked")
+                                <button type="submit" class="btn-primary singleview-button">Check Out</button>
+                            @endif
 
                         </form>
 
-                        @endif
 
                         
                 

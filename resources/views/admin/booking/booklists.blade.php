@@ -134,7 +134,7 @@
 
                                 <td class="text-center">
                                   <a href="/admin/booking/{{$booking->id}}" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></a>
-                                  <a href="/admin/booking/{{$booking->id}}/editReservation/" title="editReservation" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></a>  
+                                  {{-- <a href="/admin/booking/{{$booking->id}}/editReservation/" title="editReservation" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></a>   --}}
                                 </td>
 
 

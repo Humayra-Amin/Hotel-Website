@@ -48,8 +48,9 @@
 
       }).on('changeDate', function(ev) {
         let value1 = document.querySelector('#checkInDate');
-        let price = document.querySelector('#roomcategory')
-        calculateDate(value1.value, ev.target.value, price.value)
+        let price = document.querySelector('#roomcategory');
+        let priceAttr = $("#roomcategory").find(':selected').attr('data-price');
+        calculateDate(value1.value, ev.target.value, priceAttr)
       });
 
       
@@ -58,10 +59,10 @@
       roomCategory.addEventListener("change", function(e) {
         const value1 = document.querySelector('#checkInDate');
         const value2 = document.querySelector('#checkOutDate');
-        calculateDate(value1.value, value2.value, e.target.value)
+        const price = e.target[e.target.selectedIndex].getAttribute('data-price');
+        calculateDate(value1.value, value2.value, price)
       })
       function calculateDate(value1, value2, price ) {
-        
           if (!(value1 && value2 && price)) return;
             date1 = new Date(value1);
             date2 = new Date(value2);
@@ -69,7 +70,6 @@
             Difference_In_Days = Difference_In_Time / (1000 * 60 * 60 * 24);
             document.getElementById('price').value = parseFloat(Difference_In_Days) * parseFloat(price) || 0 ;
         }
-
       })
 
     </script>
@@ -193,7 +193,7 @@
           <select class="form-control" name="room_id" id="roomcategory" placeholder="Room Category" required>
             <option >Select Room Category</option>
             @foreach ($rooms as $room)
-            <option value="{{ $room->price }}">{{$room->roomtitle}} - {{$room->roomno}}</option>
+            <option value="{{ $room->id }}" data-price="{{$room->price}}">{{$room->roomtitle}} - {{$room->roomno}}</option>
             @endforeach
               
           </select>
