@@ -46,14 +46,7 @@
                                     aria-labelledby="userDropdown">
 
                                     @auth
-                                        <a class="dropdown-item" href="#">
-                                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                            Profile
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                            Settings
-                                        </a>
+                                       
                                         
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
@@ -61,10 +54,10 @@
                                             Logout
                                         </a>
                                     @else
-                                        <a class="dropdown-item" href="admin/login">
+                                        {{-- <a class="dropdown-item" href="admin/login">
                                             <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                             Login
-                                        </a>
+                                        </a> --}}
                                         <a class="dropdown-item" href="admin/login">
                                             <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                             Login
@@ -223,7 +216,7 @@
                                 <thead>
                                   <tr>
                                     <th>Name</th>
-                                    <th>Room No</th>
+                                    <th> Room ID</th>
                                     <th>Room Category</th>
                                     <th>Payment Status</th>
                                   </tr>
@@ -237,8 +230,8 @@
                                 <tr>
                                   <td>{{$last->cname}}</td>
                                   <td>{{$last->room_id}}</td>
-                                  <td>{{$last->room->category_id}}</td>
-                                  @if ($last->due = 0)
+                                  <td>{{$last->room->category_id}}-{{$last->room->roomno}}</td>
+                                  @if ($last->due == 0)
                                     <td>Paid</td>
                                     @else 
                                     <td>Due</td>

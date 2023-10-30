@@ -89,30 +89,30 @@
 
                         <div class="editroom-row editroom-jumbotron box8">
                           
-                          <div class="custom-form-inner">
-                              <div class="col-sm-6 form-group custom-form-group">
+                          <div class="customedit-form-inner">
+                              <div class="col-sm-6 form-group customedit-form-group">
                                 <label for="roomtitle">Room Title</label>
                                 <input type="text" class="form-control" name="roomtitle" id="room-title" placeholder="Enter Room Name" value="{{$room->roomtitle}}" required>
                               </div>
 
-                              <div class="col-sm-6 form-group custom-form-group">
+                              <div class="col-sm-6 form-group customedit-form-group">
                                 <label for="roomno">Room No.</label>
                                 <input type="number" class="form-control" name="roomno" id="room-no" placeholder="Enter Room No." value="{{$room->roomno}}" required>
                               </div>
 
-                              <div class="col-sm-6 form-group custom-form-group">
+                              <div class="col-sm-6 form-group customedit-form-group">
                                 <label for="buildingno">Floor No.</label>
                                 <input type="text" class="form-control" name="floorno" id="room-no" placeholder="Enter Floor No." value="{{$room->floorno}}" required>
                               </div>
 
-                              <div class="col-sm-6 form-group custom-form-group">
+                              <div class="col-sm-6 form-group customedit-form-group">
                                 <label for="size">Room Size</label>
                                 <input type="text" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" value="{{$room->roomsize}}" required>
                               </div>
 
               
                               
-                            <div class="col-sm-6 form-group custom-form-group">
+                            <div class="col-sm-6 form-group customedit-form-group">
                               <label for="Category">Category</label>
                               <select name="category_id" class="form-control custom-select browser-default">
                                 <option>Select your Room Category</option>
@@ -131,13 +131,13 @@
                           
 
                               
-                              <div class="col-sm-6 form-group custom-form-group">
+                              <div class="col-sm-6 form-group customedit-form-group">
                                 <label for="maxoccupancy">Number Of Guest</label>
                                 <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter no of guest." value="{{$room->maxoccupancy}}" required>
                               </div>
 
 
-                              <div class="col-sm-6 form-group custom-form-group">
+                              <div class="col-sm-6 form-group customedit-form-group">
                                 <label for="view">Room View</label>
                                 <select name="roomview" class="form-control custom-select browser-default">
                                 <option>Select View</option>
@@ -147,31 +147,31 @@
                                 </select>
                               </div>
 
-                              <div class="col-sm-6 form-group custom-form-group">
+                              <div class="col-sm-6 form-group customedit-form-group">
                                 <label for="price">Price.</label>
                                 <input type="text" class="form-control" name="price" id="price" placeholder="Enter Price."  value="{{$room->price}}" required>
                               </div>
 
 
-                              <div class="col-sm-6 form-group custom-form-group">
+                              <div class="col-sm-6 form-group customedit-form-group">
                                 <label for="guestservice">Special Service</label>
                                 <select name="guestservice[]" class="form-control custom-select browser-default" multiple>
-                                <option value="{{$room->guestservice}}">Select Services</option>
+                                {{-- <option value="{{$room->guestservice[0]}}"></option> --}}
                               
-                                <option @if($room->guestservice) {{in_array("Coffee Maker",$room->guestservice) ? 'selected' : '' }} @endif>Coffee Maker</option>
-                                <option @if($room->guestservice) {{ in_array("Fruit Basket",$room->guestservice) ? 'selected' : '' }} @endif>Fruit Basket</option>
-                                <option @if($room->guestservice) {{ in_array("Dry fruits, nuts & chocolates",$room->guestservice) ? 'selected' : '' }} @endif>Dry fruits, nuts & chocolates</option>
-                                <option @if($room->guestservice) {{ in_array("Laundry service",$room->guestservice) ? 'selected' : '' }} @endif>Laundry service</option>
-                                <option @if($room->guestservice) {{ in_array("Hairdyers",$room->guestservice) ? 'selected' : '' }} @endif>Hairdyers</option>
-                                <option @if($room->guestservice) {{ in_array("Extra stationery",$room->guestservice) ? 'selected' : '' }} @endif>Extra stationery</option>
-                                <option @if($room->guestservice) {{ in_array("Towelled slippers",$room->guestservice) ? 'selected' : '' }} @endif>Towelled slippers</option>
-                                <option @if($room->guestservice) {{ in_array("Bath Robe",$room->guestservice) ? 'selected' : '' }} @endif>Bath Robe</option>
+                                <option @if($room->guestservice[0]) {{in_array("Coffee Maker",$room->guestservice) ? 'selected' : '' }} @endif>Coffee Maker</option>
+                                <option @if($room->guestservice[0]) {{ in_array("Fruit Basket",$room->guestservice) ? 'selected' : '' }} @endif>Fruit Basket</option>
+                                <option @if($room->guestservice[0]) {{ in_array("Dry fruits, nuts & chocolates",$room->guestservice) ? 'selected' : '' }} @endif>Dry fruits, nuts & chocolates</option>
+                                <option @if($room->guestservice[0]) {{ in_array("Laundry service",$room->guestservice) ? 'selected' : '' }} @endif>Laundry service</option>
+                                <option @if($room->guestservice[0]) {{ in_array("Hairdyers",$room->guestservice) ? 'selected' : '' }} @endif>Hairdyers</option>
+                                <option @if($room->guestservice[0]) {{ in_array("Extra stationery",$room->guestservice) ? 'selected' : '' }} @endif>Extra stationery</option>
+                                <option @if($room->guestservice[0]) {{ in_array("Towelled slippers",$room->guestservice) ? 'selected' : '' }} @endif>Towelled slippers</option>
+                                <option @if($room->guestservice[0]) {{ in_array("Bath Robe",$room->guestservice) ? 'selected' : '' }} @endif>Bath Robe</option>
 
                                 </select>
                               </div>
 
 
-                              <div class="col-sm-6 form-group custom-form-group">
+                              <div class="col-sm-6 form-group customedit-form-group">
                                 <label for="view">Facilities</label>
                                 <select name="facilities[]" class="form-control custom-select browser-default" multiple>
                                   {{-- <option value="{{$room->facilities}}">Select Facilities</option> --}}
@@ -189,9 +189,9 @@
                             
                   
                             <div class="col-sm-12">
-                            <div class="upload__box">
-                              <div class="upload__btn-box">
-                                  <label class="upload__btn">
+                            <div class="uploadedit__box">
+                              <div class="uploadedit__btn-box">
+                                  <label class="uploadedit__btn">
                                     @if ($room->image)
                                     @foreach ($room->image as $img)
                                     <div>
@@ -200,17 +200,17 @@
                                     @endforeach
                                  @endif
                                       Upload Room Image     
-                                  <input  name="image[]" type="file" multiple data-max_length="20" class="upload__inputfile">
+                                  <input  name="image[]" type="file" multiple data-max_length="20" class="uploadedit__inputfile">
                                   </label>
                               </div>
-                              <div class="upload__img-wrap"></div>
+                              <div class="uploadedit__img-wrap"></div>
                             </div>
                             </div>
                           
                           
                         
                               <div class="col-sm-12 form-group mb-0">
-                                <button class="btn btn-primary btn-lg float-right add-room-btn">Update Room</button>
+                                <button class="btn btn-primary btn-lg float-right edit-room-btn">Update Room</button>
                               </div>
                           </div>
                     
@@ -219,6 +219,28 @@
                     </div>
                                               
                     
+                    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                            <div class="modal-footer">
+                                <form action="{{url('/admin/logout')}}" method="DELETE">
+                                    @csrf
+                              
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                                <button class="btn btn-primary">Logout</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                   
                     
   @endsection
