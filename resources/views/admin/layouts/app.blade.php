@@ -33,9 +33,9 @@
 
     <!-- Custom styles for this template-->
     <link rel="stylesheet" href="{{asset('rooms/css/sb-admin-2.min.css')}}">
-    <link rel="stylesheet" href="{{asset('rooms/css/karima.css')}}">
-    <link rel="stylesheet" href="{{asset('rooms/css/jaima.css')}}">
-    <link rel="stylesheet" href="{{asset('rooms/css/urbashi.css')}}">
+    <link rel="stylesheet" href="{{asset('rooms/css/RoomList.css')}}">
+    <link rel="stylesheet" href="{{asset('rooms/css/AddRoom.css')}}">
+    <link rel="stylesheet" href="{{asset('rooms/css/EditRoom.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/category.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/addcategory.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/editcategory.css')}}">
@@ -44,10 +44,10 @@
 
     <link rel="stylesheet" href="{{asset('rooms/css/categorylist.css')}}">
 
-    <link rel="stylesheet" href="{{asset('employees/css/humayra.css')}}">
-    <link rel="stylesheet" href="{{asset('employees/css/tushin.css')}}">
-    <link rel="stylesheet" href="{{asset('employees/css/kayem.css')}}">
-    <link rel="stylesheet" href="{{asset('employees/css/fardin.css')}}">
+    <link rel="stylesheet" href="{{asset('employees/css/AddEmployee.css')}}">
+    <link rel="stylesheet" href="{{asset('employees/css/EditEmployee.css')}}">
+    <link rel="stylesheet" href="{{asset('employees/css/EmployeeList.css')}}">
+    <link rel="stylesheet" href="{{asset('employees/css/singleEmployee.css')}}">
     <link rel="stylesheet" href="{{asset('employees/css/singleview.css')}}">
     <link rel="stylesheet" href="{{asset('employees/css/reservation.css')}}">
     <link rel="stylesheet" href="{{asset('employees/css/editReservation.css')}}">
@@ -90,13 +90,13 @@
     
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    <script src="{{asset('rooms/js/jaima.js')}}"></script>
-    <script src="{{asset('rooms/js/karima.js')}}"></script>
-    <script src="{{asset('rooms/js/urbashi.js')}}"></script>
+    <script src="{{asset('rooms/js/AddRoom.js')}}"></script>
+    <script src="{{asset('rooms/js/RoomList.js')}}"></script>
+    <script src="{{asset('rooms/js/EditRoom.js')}}"></script>
 
-    <script src="{{asset('employees/js/humayra.js')}}"></script>
-    <script src="{{asset('employees/js/tushin.js')}}"></script>
-    <script src="{{asset('employees/js/kayem.js')}}"></script>
+    <script src="{{asset('employees/js/AddEmployee.js')}}"></script>
+    <script src="{{asset('employees/js/EditEmployee.js')}}"></script>
+    <script src="{{asset('employees/js/EmployeeList.js')}}"></script>
 
     
 
