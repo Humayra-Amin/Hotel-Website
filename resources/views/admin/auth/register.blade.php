@@ -1,6 +1,13 @@
-@extends('admin.auth.layout.create')
-  
-@section('content') 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{asset('rooms/css/register.css')}}"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+    <body>
 
   <div id="content-wrapper" class="d-flex flex-column">
 
@@ -47,6 +54,7 @@
    </div>
    </div>
   </div>
-@endsection
+    </body>
+</html>
                       
             
