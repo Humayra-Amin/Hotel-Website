@@ -1,8 +1,8 @@
-.form-container{
+.form-logincontainer{
                 
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;                 
+  background-size: cover;                  */
   font-family: 'Signika';
   display: flex;
   justify-content:space-around;
@@ -13,31 +13,32 @@
 
 .log-container {
   background-color: #fff;
-  padding: 20px;
+  padding: 60px;
   border-radius: 5px;
   box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.1);
   margin-bottom:50px;
 }
 
 .login-form {
-  max-width: 350px;
-  margin: 6px 8px;
+  width: 300px;
+  margin: 12px 6px;
 }
 
 .login-form h1 {
   text-align: center;
 }
 
-label {
+/* .label-login {
   display: block;
   margin-top: 10px;
-}
+} */
 
 input[type="email"],
 input[type="password"] {
   width: 100%;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }

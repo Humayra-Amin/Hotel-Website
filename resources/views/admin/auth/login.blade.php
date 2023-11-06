@@ -15,21 +15,21 @@
     <!-- Main Content -->
     <div id="content">
 
-        <div class="form-container">
+        <div class="form-logincontainer">
             <div class="log-container">
                 <form class="login-form" action="{{ route('login.post') }}" method="POST">
                     @csrf
                     <h1>Login</h1>
-                    <div class="login-form">
-                    <input type="email" class="label" name="email" id="email" placeholder="Email" required>
+                    <div>
+                    <input type="email"  name="email" id="email" placeholder="Email" required>
                     @if ($errors->has('email'))
                     <span class="text-danger">{{ $errors->first('email') }}</span>
                     @endif
 
                     </div>
         
-                    <div class="login-form">
-                    <input type="password" class="label" name="password" id="password" placeholder="Password" required>
+                    <div>
+                    <input type="password"  name="password" id="password" placeholder="Password" required>
                     @if ($errors->has('password'))
                     <span class="text-danger">{{ $errors->first('password') }}</span>
                     @endif
