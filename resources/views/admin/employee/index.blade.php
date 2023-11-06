@@ -182,7 +182,7 @@
                                 <a href="/admin/employee/{{$employee->id}}/edit/" title="edit" class="btn btn-outline-dark btn-pencil mx-2 my-2 "><i class="fa-solid fa-pencil"></i></a>
                                 
                                 <form action="/admin/employee/{{$employee->id}}/delete/" method="DELETE">
-                                    <button type="submit" title="delete" class="btn btn-outline-danger btn-trash mb-1"><i class="fa-solid fa-trash"></i></button>
+                                    <button type="submit" title="delete" class="btn btn-outline-danger btn-trash mb-1  my-2"><i class="fa-solid fa-trash"></i></button>
                                 </form>
 
 

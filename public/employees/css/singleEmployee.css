@@ -1,15 +1,18 @@
             .group-h2 
             {    font-family: roboto;
                  font-weight:bold ;
-                 font-size: 15px;
+                 font-size: 18px;
                  color:black;
+                 margin-left: 140px;
                 
              }
             p
             {
                 font-family: roboto;                
                 color:black;
-                font-size: 14px; 
+                font-size: 17px;
+                margin-left: 140px;
+ 
             }
             .label
             {

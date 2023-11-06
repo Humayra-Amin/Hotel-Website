@@ -239,10 +239,10 @@
 
 
       
-      <div class="col-sm-12">
+      {{-- <div class="col-sm-12">
         <input type="checkbox" class="form-check-input ml-1" id="chb" required>
         <label for="chb" class="form-check-label form-label ml-4">I accept all terms and conditions.</label>
-      </div>
+      </div> --}}
 
     
 
