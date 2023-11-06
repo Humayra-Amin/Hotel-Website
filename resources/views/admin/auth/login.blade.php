@@ -17,41 +17,48 @@
 
         <div class="form-logincontainer">
             <div class="log-container">
+
                 <form class="login-form" action="{{ route('login.post') }}" method="POST">
                     @csrf
+
                     <h1>Login</h1>
                     <div>
                     <input type="email"  name="email" id="email" placeholder="Email" required>
                     @if ($errors->has('email'))
                     <span class="text-danger">{{ $errors->first('email') }}</span>
                     @endif
-
                     </div>
-        
+
                     <div>
                     <input type="password"  name="password" id="password" placeholder="Password" required>
                     @if ($errors->has('password'))
                     <span class="text-danger">{{ $errors->first('password') }}</span>
                     @endif
                     </div>
-        
-                    {{-- <div class="form-options">
-                        <label class="remember">
-                            <input type="checkbox" name="remember"> Remember me
-                        </label>
-                        <a href="#">Forgot password?</a>
-                    </div> --}}
+
+
+
         
                     <button type="submit">Login</button>
+
+
         
                     <div class="signup-link">
                         Don't have an account? <a href="/admin/register">Sign Up</a>
                     </div>
+
+
+
                 </form>
+
             </div>
+
           </div>
+
         </div>
+
     </div>
+
 
     </body>
 </html>

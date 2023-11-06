@@ -250,25 +250,9 @@
 
                         </div>
 
-                        <div class="col-md-6">
 
-                          <div class="card">
 
-                            <div class="card-body">
 
-                              <h5 class="card-title">Room Occupancy</h5>
-
-                              <div id="piechart"></div>
-
-                              <p class="card-text">Occupied: 4</p>
-
-                              <p class="card-text">Available: 6</p>
-
-                            </div>
-
-                          </div>
-
-                        </div>
 
                       </div>
 
@@ -281,6 +265,7 @@
         
                     
         <!-- Logout Modal-->
+        
         <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">

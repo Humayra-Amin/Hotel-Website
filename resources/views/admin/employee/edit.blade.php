@@ -97,7 +97,7 @@
 
       @foreach ($employee->image as $image)
 
-            <img id="file_upload" src="{{Storage::disk("public")->url($image)}}" alt="your image" class="form-upload-img" />
+            <img id="file_upload" src="{{Storage/emp::disk("public")->url($image)}}" alt="your image" class="form-upload-img" />
       
             @endforeach
 
