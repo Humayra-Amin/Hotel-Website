@@ -1,39 +1,42 @@
-            .group-h2 
-            {    font-family: roboto;
+        .group-h2 
+            {    font-family: "roboto";
                  font-weight:bold ;
-                 font-size: 15px;
+                 font-size: 18px;
                  color:black;
+                 margin-left: 140px;
                 
              }
-            p
+        .para
             {
-                font-family: roboto;                
+                font-family: "roboto";                
                 color:black;
-                font-size: 14px; 
+                font-size: 17px;
+                margin-left: 140px;
+ 
             }
-            .label
+        .label
             {
-                font-family: roboto;
+                font-family: "roboto";
                 font-weight:bold ;
                 color:black;
                 font-size: 15px;
             }
-            .aaa
+        .second-r
             {
                 margin-left: 65px;
             }
             
-            .bbb
+        .firt-r
             {
                 margin-left: 50px;
             }
-            .CCC
+        .singleE-h2
             {
                 padding-bottom: 30px;
                 margin-left: 40px;
                 font-weight: bold;
             }
-            .group-container 
+        .group-container 
 
            {  
                 margin: 50px;
@@ -41,7 +44,7 @@
                 background-color: #eaecf4;
                
             }
-            .image
+        .image
             { 
                 border-radius: 70%;
                 margin-top: 90px;
@@ -49,11 +52,8 @@
                 width: 180px;
                 height: 200px;
                 
-                /* Border-radius: 4px; */
-                
-                /* object-fit: contain; */
             }
-            .group-card-title 
+        .group-card-title 
             {  
                 font-size: 34px;
                 font-weight: bold;
@@ -61,7 +61,7 @@
                 margin-left: 55px;
                 color: black;
             }
-            .card-text 
+        .group-card-text 
             {   
                 
                 font-family: 'Work Sans', sans-serif;

@@ -61,7 +61,7 @@
         </nav>
  
 
-      <h2 class="CCC" style="color: black;">Employee Details</h2>
+      <h2 class="singleE-h2" style="color: black;">Employee Details</h2>
       <div class="group-container mt-3">
         <div class="group-card-text">
         </div>
@@ -70,47 +70,47 @@
             </div>
            
 
-            <div class="col-4">
+            {{-- <div class="col-4">
             <div class="ddd">
             @foreach ($employee->image as $image)
                     <img src='{{Storage::disk("public")->url("emp/$image")}}' class="image">     
                 @endforeach
                 <h2 class="group-card-title">{{$employee->employeetitle}}</h2>
                 </div>
-            </div>
+            </div> --}}
 
 
 
 
-            <div class="col-3 bbb fs-5 ">
+            <div class="col-3 firt-r fs-5 ">
 
 
                 <h2 class="group-h2">Employee Name:</h2>
-                <p>{{$employee->ename}}</p>
+                <p class="para">{{$employee->ename}}</p>
 
 
                 <h2 class="group-h2">Mother's Name:</h2>
-                <p>{{$employee->motherName}}</p>
+                <p class="para">{{$employee->motherName}}</p>
 
 
                 <h2 class="group-h2">Gender:</h2>
-                <p>{{$employee->gender}}</p>
+                <p class="para">{{$employee->gender}}</p>
 
 
                 <h2 class="group-h2">Present Address:</h2>
-                <p>{{$employee->Locality}}</p>
+                <p class="para">{{$employee->Locality}}</p>
 
 
                 <h2 class="group-h2">Emergency Contact:</h2>
-                <p>{{$employee->emergencyContact}}</p>
+                <p class="para">{{$employee->emergencyContact}}</p>
 
 
                 <h2 class="group-h2">Joining Date:</h2>
-                <p>{{$employee->joiningdate}}</p>
+                <p class="para">{{$employee->joiningdate}}</p>
 
 
                 <h2 class="group-h2">Salary:</h2>
-                <p>{{$employee->salary}}</p>
+                <p class="para">{{$employee->salary}}</p>
                 
 
                 
@@ -121,31 +121,31 @@
 
 
 
-            <div class="col-3 aaa fs-5">
+            <div class="col-3 second-r fs-5">
 
 
                 <h2 class="group-h2">Email:</h2>
-                <p>{{$employee->email}}</p>
+                <p class="para">{{$employee->email}}</p>
 
 
                 <h2 class="group-h2">Father's Name:</h2>
-                <p>{{$employee->fatherName}}</p>
+                <p class="para">{{$employee->fatherName}}</p>
 
 
                 <h2 class="group-h2">Date of Birth:</h2>
-                <p>{{$employee->dob}}</p>
+                <p class="para">{{$employee->dob}}</p>
 
 
                 <h2 class="group-h2">Contact No:</h2>
-                <p>{{$employee->phone}}</p>
+                <p class="para">{{$employee->phone}}</p>
 
 
                 <h2 class="group-h2">National ID:</h2>
-                <p>{{$employee->nid}}</p>
+                <p class="para">{{$employee->nid}}</p>
 
 
                 <h2 class="group-h2">Position:</h2>
-                <p>{{$employee->position}}</p>
+                <p class="para">{{$employee->position}}</p>
                 
                 
 
