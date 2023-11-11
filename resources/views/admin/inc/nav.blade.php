@@ -6,13 +6,12 @@
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin">
         <div class="sidebar-brand-icon ">
             <i class="fa-solid fa-square-h"></i>
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
-            {{-- <i class='fas fa-house-user'></i> --}}
-
         </div>
+        
         <div class="sidebar-brand-text mx-3">Hotel Management</div>
     </a>
+
+   
 
     <!-- Divider -->
     <hr class="sidebar-divider my-0">
