@@ -4,13 +4,14 @@
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
-            {{-- <i class='fas fa-house-user'></i> --}}
-
+        <div class="sidebar-brand-icon ">
+            <i class="fa-solid fa-square-h"></i>
         </div>
+        
         <div class="sidebar-brand-text mx-3">Hotel Management</div>
     </a>
+
+   
 
     <!-- Divider -->
     <hr class="sidebar-divider my-0">
@@ -32,7 +33,7 @@
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse"
             aria-expanded="true" aria-controls="collapse">
-           <i class="fa-solid fa-list-ul"></i>
+            <i class="fa-sharp fa-solid fa-hotel"></i>
             <span>Hotel Rooms</span>
         </a>
         <div id="collapse" class="collapse" aria-labelledby="heading" data-parent="#accordionSidebar">
@@ -40,8 +41,8 @@
                 <h6 class="collapse-header">Custom Components:</h6>
                 <a class="collapse-item" href="/admin/room">View Room</a>
                 <a class="collapse-item" href="/admin/room/add">Add Room</a>
-                <a class="collapse-item" href="/admin/room/edit">Edit Room</a>
-                <a class="collapse-item" href="/admin/room/single">Single Room</a>
+                {{-- <a class="collapse-item" href="/admin/room/edit">Edit Room</a>
+                <a class="collapse-item" href="/admin/room/single">Single Room</a> --}}
             </div>
         </div>
     </li>
@@ -49,7 +50,7 @@
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
             aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fa-sharp fa-solid fa-hotel"></i>
+            <i class="fa-solid fa-person"></i>
             <span>Employee</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -57,8 +58,8 @@
                 <h6 class="collapse-header">Custom Utilities:</h6>
                 <a class="collapse-item" href="/admin/employee">View Employee list</a>
                 <a class="collapse-item" href="/admin/employee/add">Add Employee</a>
-                <a class="collapse-item" href="/admin/employee/edit">Edit Employee</a>
-                <a class="collapse-item" href="/admin/employee/single">Single Employee</a>
+                {{-- <a class="collapse-item" href="/admin/employee/edit">Edit Employee</a>
+                <a class="collapse-item" href="/admin/employee/single">Single Employee</a> --}}
             </div>
         </div>
     </li>
@@ -93,8 +94,8 @@
                 <h6 class="collapse-header">Custom Booking:</h6>
                 <a class="collapse-item" href="/admin/booking/booklists">Booking List</a>
                 <a class="collapse-item" href="/admin/booking/reservation">Add Reservation</a>
-                <a class="collapse-item" href="/admin/booking/editReservation">Edit Reservation</a>
-                <a class="collapse-item" href="/admin/booking/singleview">SingleView</a>
+                {{-- <a class="collapse-item" href="/admin/booking/editReservation">Edit Reservation</a>
+                <a class="collapse-item" href="/admin/booking/singleview">SingleView</a> --}}
                 <a class="collapse-item" href="/admin/booking/checkout">Check Out</a>
        
             </div>
