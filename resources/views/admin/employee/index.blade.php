@@ -90,7 +90,7 @@
 
                     <div class="input-group">
 
-                            <input type="text" class="form-control bg-light border-1 small" placeholder="Search a room"
+                            <input type="text" class="form-control bg-light border-1 small" placeholder="Search a employee"
                                 aria-label="Search" aria-describedby="basic-addon2">
                                 <div class="input-group-append">
                                 <button class="btn btn-dark" type="button">
