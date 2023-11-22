@@ -32,7 +32,7 @@
   
 
     <!-- Custom styles for this template-->
-    <link rel="stylesheet" href="{{asset('rooms/css/sb-admin-2.min.css')}}">
+    <link rel="stylesheet" href="{{asset('rooms/css/sb-admin-2.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/RoomList.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/AddRoom.css')}}">
     <link rel="stylesheet" href="{{asset('rooms/css/EditRoom.css')}}">
