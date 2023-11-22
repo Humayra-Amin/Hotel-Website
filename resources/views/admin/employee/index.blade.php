@@ -90,7 +90,7 @@
 
                     <div class="input-group">
 
-                            <input type="text" class="form-control bg-light border-1 small" placeholder="Search a room"
+                            <input type="text" class="form-control bg-light border-1 small" placeholder="Search a employee"
                                 aria-label="Search" aria-describedby="basic-addon2">
                                 <div class="input-group-append">
                                 <button class="btn btn-dark" type="button">
@@ -178,10 +178,17 @@
                               
                                 <td class="text-right">
                                 <div class="d-flex">
-                                <a href="/admin/employee/{{$employee->id}}" title="view" class="btn btn-outline-primary btn-eye my-2"><i class="fa-solid fa-eye"></i></a>
+                                {{-- <a href="/admin/employee/{{$employee->id}}" title="view" class="btn btn-outline-primary btn-eye my-2"><i class="fa-solid fa-eye"></i></a>
                                 <a href="/admin/employee/{{$employee->id}}/edit/" title="edit" class="btn btn-outline-dark btn-pencil mx-2 my-2 "><i class="fa-solid fa-pencil"></i></a>
                                 
                                 <form action="/admin/employee/{{$employee->id}}/delete/" method="DELETE">
+                                    <button type="submit" title="delete" class="btn btn-outline-danger btn-trash mb-1  my-2"><i class="fa-solid fa-trash"></i></button>
+                                </form> --}}
+
+                                <a  title="view" class="btn btn-outline-primary btn-eye my-2"><i class="fa-solid fa-eye"></i></a>
+                                <a  title="edit" class="btn btn-outline-dark btn-pencil mx-2 my-2 "><i class="fa-solid fa-pencil"></i></a>
+                                
+                                <form  method="DELETE">
                                     <button type="submit" title="delete" class="btn btn-outline-danger btn-trash mb-1  my-2"><i class="fa-solid fa-trash"></i></button>
                                 </form>
 
