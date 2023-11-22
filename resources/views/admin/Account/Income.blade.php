@@ -75,7 +75,7 @@
     
     
                 <div class="col-md-12 d-flex align-items-center justify-content-between">
-                    <h2>Income</h2>
+                    <h2 class="h2-bill">Bill</h2>
                    
                 </div>
                 

@@ -43,9 +43,9 @@
 
 
         
-                    <div class="signup-link">
+                    {{-- <div class="signup-link">
                         Don't have an account? <a href="/admin/register">Sign Up</a>
-                    </div>
+                    </div> --}}
 
 
 

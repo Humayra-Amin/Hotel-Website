@@ -249,7 +249,7 @@
      
 
       <div class="col-sm-12 form-group mb-0">
-        <button class="btn btn-primary float-right">Submit</button>
+        <button class="btn btn-primary float-right">Update</button>
       </div>
 
 
