@@ -4,8 +4,11 @@
 
     <div class="container">
 
+      <div class="custom-logo">
+        <img src=image/Paradise1.png alt="Paradise" class="custom-logo">
+      </div>
 
-    <a class="navbar-brand fw-bold" href="#">Hotel Paradise</a>
+    {{-- <a class="navbar-brand fw-bold" href="#">Paradise</a> --}}
 
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +36,7 @@
 
 
         <li class="nav-item">
-          <a class="nav-link" href="/services">Services</a>
+          <a class="nav-link" href="/aboutus">About</a>
         </li>
 
 
@@ -43,13 +46,14 @@
         </li>
 
 
+        
 
         <li class="nav-item">
           <a class="nav-link" href="/contact">Contact</a>
         </li>
 
     
-        @if (Auth::user())
+        {{-- @if (Auth::user())
        
         
         <li class="nav-item">
@@ -95,7 +99,7 @@
         
 
        
-        @endif
+        @endif --}}
          
 
 
