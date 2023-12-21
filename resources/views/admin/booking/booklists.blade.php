@@ -133,10 +133,17 @@
 
 
                                 <td class="text-center">
+<<<<<<< HEAD
                                   {{-- <a href="/admin/booking/{{$booking->id}}" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></a> --}}
                                   {{-- <a href="/admin/booking/{{$booking->id}}/editReservation/" title="editReservation" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></a>   --}}
                                 
                                   <a href="/admin/booking/{{$booking->id}}" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></a>
+=======
+                                  
+                                  <a href="/admin/booking/{{$booking->id}}" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></a>
+                                  <a href="/admin/booking/{{$booking->id}}/editReservation/" title="editReservation" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></a>  
+    
+>>>>>>> 765fca892ee021af4914a1f964fa2104828fa833
                                 </td>
 
 

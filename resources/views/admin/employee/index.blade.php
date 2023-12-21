@@ -178,11 +178,12 @@
                               
                                 <td class="text-right">
                                 <div class="d-flex">
-                                {{-- <a href="/admin/employee/{{$employee->id}}" title="view" class="btn btn-outline-primary btn-eye my-2"><i class="fa-solid fa-eye"></i></a>
+                                <a href="/admin/employee/{{$employee->id}}" title="view" class="btn btn-outline-primary btn-eye my-2"><i class="fa-solid fa-eye"></i></a>
                                 <a href="/admin/employee/{{$employee->id}}/edit/" title="edit" class="btn btn-outline-dark btn-pencil mx-2 my-2 "><i class="fa-solid fa-pencil"></i></a>
                                 
                                 <form action="/admin/employee/{{$employee->id}}/delete/" method="DELETE">
                                     <button type="submit" title="delete" class="btn btn-outline-danger btn-trash mb-1  my-2"><i class="fa-solid fa-trash"></i></button>
+<<<<<<< HEAD
                                 </form> --}}
 
                                 <a  href="/admin/employee/{{$employee->id}}" title="view" class="btn btn-outline-primary btn-eye my-2"><i class="fa-solid fa-eye"></i></a>
@@ -190,6 +191,8 @@
                                 
                                 <form  method="DELETE">
                                     <button type="submit" title="delete" class="btn btn-outline-danger btn-trash mb-1  my-2"><i class="fa-solid fa-trash"></i></button>
+=======
+>>>>>>> 765fca892ee021af4914a1f964fa2104828fa833
                                 </form>
 
 

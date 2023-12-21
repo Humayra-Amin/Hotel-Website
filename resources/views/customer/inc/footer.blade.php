@@ -28,12 +28,16 @@
 		  		<div class="footer-col mt-5">
 
 
-                  <h4>Resources</h4>
+                  <h4>Quick Links</h4>
 
 
                   <ul  class="pl-0">
-                      <li><a href="#">Video Tutorial</a></li>
-                      <li><a href="#">Term &amp; Service</a></li>
+                      <li><a href="/">Home</a></li>
+                      <li><a href="/Allrooms">Rooms</a></li>
+                      <li><a href="/aboutus">About</a></li>
+                      <li><a href="/gallery">Gallery</a></li>
+                      <li><a href="/contact">Contacts</a></li>
+
                   </ul>
 
 
@@ -87,7 +91,7 @@
     <div class="text-center mb-2">
 
 
-      <p class="footer-alt mb-0 f-14">2023 Copyright, All Rights Reserved</p>
+      <p class="footer-alt mb-0 f-14">&copy; Copyright @ 2023</p>
 
 
    </div>

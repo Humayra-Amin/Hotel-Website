@@ -110,13 +110,13 @@ Route::middleware(["auth:emps"])->group(function () {
     // Route::get('/register', [CustomerController::class, "register"]);
     // Route::post('/post-register', [CustomerController::class, "postRegister"]);
    
-    // Route::get('/services', [CustomerController::class, "services"]);
-    // Route::get('/contact', [CustomerController::class, "contact"]);
-    // Route::get('/Allrooms', [CustomerController::class, "Allrooms"]);
-    // // Route::get('/contact', [CustomerController::class, "gallery"]);
-    // Route::get('/', [HomeController::class, "home"]);
-    // Route::get('/singleroom/{id}', [HomeController::class, "singleroom"]);
-    // Route::put('/roombook', [HomeController::class, "roombook"]);
+    Route::get('/services', [CustomerController::class, "services"]);
+    Route::get('/contact', [CustomerController::class, "contact"]);
+    Route::get('/Allrooms', [CustomerController::class, "Allrooms"]);
+    Route::get('/gallery', [CustomerController::class, "gallery"]);
+    Route::get('/', [HomeController::class, "home"]);
+    Route::get('/singleroom/{id}', [HomeController::class, "singleroom"]);
+    Route::put('/roombook', [HomeController::class, "roombook"]);
 
 
 
