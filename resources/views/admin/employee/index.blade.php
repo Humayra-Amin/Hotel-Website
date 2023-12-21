@@ -185,7 +185,7 @@
                                     <button type="submit" title="delete" class="btn btn-outline-danger btn-trash mb-1  my-2"><i class="fa-solid fa-trash"></i></button>
                                 </form> --}}
 
-                                <a  title="view" class="btn btn-outline-primary btn-eye my-2"><i class="fa-solid fa-eye"></i></a>
+                                <a  href="/admin/employee/{{$employee->id}}" title="view" class="btn btn-outline-primary btn-eye my-2"><i class="fa-solid fa-eye"></i></a>
                                 <a  title="edit" class="btn btn-outline-dark btn-pencil mx-2 my-2 "><i class="fa-solid fa-pencil"></i></a>
                                 
                                 <form  method="DELETE">

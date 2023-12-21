@@ -98,7 +98,6 @@ Route::middleware(["auth:emps"])->group(function () {
 
     Route::resource('/admin/category', CategoryController::class);
     Route::get('/admin/category/{id}/delete', [CategoryController::class, "delete"]);
-
     Route::get('/admin/customerlist', [CustomerController::class, "customerlist"]);
 
 });
@@ -106,35 +105,31 @@ Route::middleware(["auth:emps"])->group(function () {
   
                             //customer route
 
-    Route::get('/login', [CustomerController::class, "login"]);
-    Route::post('/post-login', [CustomerController::class, "postLogin"]);
-    Route::get('/register', [CustomerController::class, "register"]);
-    Route::post('/post-register', [CustomerController::class, "postRegister"]);
+    // Route::get('/login', [CustomerController::class, "login"]);
+    // Route::post('/post-login', [CustomerController::class, "postLogin"]);
+    // Route::get('/register', [CustomerController::class, "register"]);
+    // Route::post('/post-register', [CustomerController::class, "postRegister"]);
    
-    Route::get('/services', [CustomerController::class, "services"]);
-    Route::get('/contact', [CustomerController::class, "contact"]);
-    Route::get('/Allrooms', [CustomerController::class, "Allrooms"]);
-    // Route::get('/contact', [CustomerController::class, "gallery"]);
-    Route::get('/', [HomeController::class, "home"]);
-    Route::get('/singleroom/{id}', [HomeController::class, "singleroom"]);
-    Route::put('/roombook', [HomeController::class, "roombook"]);
+    // Route::get('/services', [CustomerController::class, "services"]);
+    // Route::get('/contact', [CustomerController::class, "contact"]);
+    // Route::get('/Allrooms', [CustomerController::class, "Allrooms"]);
+    // // Route::get('/contact', [CustomerController::class, "gallery"]);
+    // Route::get('/', [HomeController::class, "home"]);
+    // Route::get('/singleroom/{id}', [HomeController::class, "singleroom"]);
+    // Route::put('/roombook', [HomeController::class, "roombook"]);
 
 
 
-    Route::middleware(["auth:customers"])->group(function () {
-        Route::get('/logout', [CustomerController::class, "logout"]);
-        Route::get('/Account', [CustomerController::class, "Account"]);
-        Route::get('/changepassword', [CustomerController::class, "changepassword"]);
-        Route::get('/bookmodal', [CustomerController::class, "bookmodal"]);
-        Route::get('/bookinglist', [HomeController::class, "bookinglist"]);
-    });
+    // Route::middleware(["auth:customers"])->group(function () {
+    //     Route::get('/logout', [CustomerController::class, "logout"]);
+    //     Route::get('/Account', [CustomerController::class, "Account"]);
+    //     Route::get('/changepassword', [CustomerController::class, "changepassword"]);
+    //     Route::get('/bookmodal', [CustomerController::class, "bookmodal"]);
+    //     Route::get('/bookinglist', [HomeController::class, "bookinglist"]);
+    // });
 
 
-                               //dashboard route
-
-    Route::get('/admin/dashboards', [DashboardController::class, "dashboards"]);
-    Route::get('/admin/utility', [DashboardController::class, "utility"]);
-
+     
 
                                    //accounts route
 

@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Storage;
 
 class EmployeeController extends Controller
 {
-    //
+  
 
 
     public function index()

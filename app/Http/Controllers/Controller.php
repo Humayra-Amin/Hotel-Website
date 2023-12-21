@@ -53,9 +53,6 @@ class Controller extends BaseController
 
         $bookedCount = Room::where("status", "Booked")->count();
         $ablCount = Room::where("status", null)->count();
-
-
-        
         $todayBook = Booking::whereDay('checkInDate', '=', date('d'))->count();
         $todayCheckout = Booking::whereDay('checkOutDate', '=', date('d'))->count();
 
@@ -77,11 +74,6 @@ class Controller extends BaseController
     }
 
 
-    
-    public function utility()
-    {
-        return view("admin.utility");
-    }
 
 
 
