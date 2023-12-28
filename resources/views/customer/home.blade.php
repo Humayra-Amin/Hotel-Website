@@ -7,23 +7,8 @@
 <div class="home-page">
 
 
-  <div id="roomCarousel" class="carousel carousel-slide" data-interval="5000" data-ride="carousel">
+     <div id="roomCarousel" class="carousel carousel-slide" data-interval="5000" data-ride="carousel">
 
-
-    <ol class="carousel-indicators carousel">
-      <li data-target="#roomCarousel" data-slide-to="0" class="active"></li>
-      {{-- <li data-target="#roomCarousel" data-slide-to="1"></li> --}}
-      {{-- <li data-target="#roomCarousel" data-slide-to="2"></li>
-      <li data-target="#roomCarousel" data-slide-to="3"></li>
-      <li data-target="#roomCarousel" data-slide-to="4"></li> --}}
-    </ol>
-
-
-
-
-    <div class="carousel-inner">
-
-      <div class="carousel-item active">
         <img src="image/hotels2.jpeg" alt="hotels2" class="slider-img">
 
 
@@ -34,17 +19,17 @@
 
 
        </div>
+ </div>
 
 
 
-
-      <div class="carousel-item">
+      {{-- <div class="carousel-item">
         <img src="image/hotels2.jpeg" alt="hotels2" class="slider-img">
         <div class="carousel-caption d-none d-md-block">
           <h1 class="slider-title">Experience The Lavishing Side</h1>
-        {{-- <h2>Experience luxury and comfort</h2> --}}
+      
       </div>
-      </div>
+      </div> --}}
 
 
 
@@ -79,7 +64,7 @@
 
 
 
-    </div>
+    
 
 
     {{-- <a class="carousel-control-prev " href="#roomCarousel"  role="button" data-slide="prev">
@@ -93,7 +78,7 @@
 
 
 
-  </div>
+
   <!-- slider end -->
 
 
@@ -122,7 +107,7 @@
     <div class="hotel-room">
 
 
-      @if ($room->image[0])
+      @if ($room->image)
               @foreach ($room->image as $img)
 
 
@@ -287,36 +272,36 @@
 
                                                            <!-- booking form Section -->
 
-<section class="reservation" id="reservation">
+<div class="reservation-clr" >
 
       <h1 class="reserve-h1">Book Now</h1>
 
-      <form action="{{ url('admin/booking') }}" method="POST" enctype="multipart/form-data">
+      <form action="{{ url('admin/booking') }}" method="POST" enctype="multipart/form-data" class="reservation-form">
         @csrf
 
-         <div class="container">
+         <div class="reservation-container">
 
-            <div class="box">
+            <div class="reservation-box">
                <p>Name <span>*</span></p>
                <input type="text" class="input" placeholder="Your Name">
             </div>
 
-            <div class="box">
+            <div class="reservation-box">
                <p>Email <span>*</span></p>
                <input type="text" class="input" placeholder="Your Email">
             </div>
 
-            <div class="box">
+            <div class="reservation-box">
                <p>Check in <span>*</span></p>
                <input type="date" class="input">
             </div>
 
-            <div class="box">
+            <div class="reservation-box">
                <p>Check out <span>*</span></p>
                <input type="date" class="input">
             </div>
 
-            <div class="box">
+            <div class="reservation-box">
                <p>Adults <span>*</span></p>
                <select name="adults" class="input">
                   <option value="1">1 adults</option>
@@ -328,7 +313,7 @@
                </select>
             </div>
 
-            <div class="box">
+            <div class="reservation-box">
                <p>Children <span>*</span></p>
                <select name="child" class="input">
                   <option value="1">1 child</option>
@@ -340,7 +325,7 @@
                </select>
             </div>
 
-            <div class="box">
+            <div class="reservation-box">
                <p>Rooms <span>*</span></p>
                <select name="rooms" class="input">
                   <option value="1">1 rooms</option>
@@ -352,7 +337,7 @@
                </select>
             </div>
 
-            <div class="box">
+            <div class="reservation-box">
                <p>Room Category <span>*</span></p>
                {{-- <label for="roomcategory" class="reserve-box">Room Category </label> --}}
                {{-- <select class="form-control" name="room_id" id="roomcategory" placeholder="Room Category" required> --}}
@@ -371,7 +356,7 @@
 
       </form>
 
-   </section>
+    </div>
 
 
 

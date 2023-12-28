@@ -5,11 +5,9 @@
     font-family: 'Signika';
 }
 .home-page{
-    width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
+ 
+    
 }
 
 
@@ -79,17 +77,11 @@
 
 .slider-img {  
     width: 100%;
-    height: 610px;
+    height: 680px;
     object-fit: cover;
 
 }
-.slider-arrow{
-   background-color: black;
-}
-.slider-arrow:hover{
-    color: black;
-}
-/* rooms */
+
 
 .room-section-heading {
     font-size: 34px;
@@ -113,12 +105,13 @@
 } */
 
 .section-site{
-    padding: 6rem;
-    /* background: linear-gradient(90deg,  rgb(77, 96, 117) 0%, rgba(245,245,255,1) 100%); */
+    padding: 60px;
+    background: whitesmoke;
 }
 
 .hotel-room .hotel-room-body{
     padding: 30px;    
+    
 }
        
 .hotel-room{
@@ -180,6 +173,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    background: whitesmoke;
     /* gap: 6rem; */
 }
 .about .row .content h2 {
@@ -286,8 +280,7 @@
 } */
 
           /* footer */
-
-        
+       
 .row-custom{
     display: flex;
     flex-wrap: wrap;
@@ -295,7 +288,7 @@
 
 ul{
     list-style: none;
-}
+} 
 
 .footer{
     background-color: #a6c7ea;
@@ -431,7 +424,8 @@ label[for="due"]::after {
 } */
 
 .reserve-h1 {
-    padding-bottom: 5px;
+    padding-top: 60px;
+    padding-bottom: 40px;
     padding-left: 620px;
     font-size: 34px;
     font-weight: bold;
@@ -445,41 +439,47 @@ label[for="due"]::after {
     width: 80px;        
     position: absolute;
     left: 650px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     display: block;
     border-bottom: 2px solid #c5874e;
 }
 
 /* reservation */
-
-.reservation form{
-    padding: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+.reservation-clr
+{
+    background: whitesmoke;
+}
+.reservation-form{
+    padding: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
     border: .2rem solid rgba(0, 0, 0, 0.1);
     border-radius: 1.5rem;
+    
+ 
 }
 
-.reservation form .container{
+.reservation-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap:16px;
+  
 }
 
-.reservation form .container .box{
-    flex: 1 1 40rem;
+.reservation-form .reservation-container .reservation-box{
+    flex: 1 1 20rem;
 }
 
-.reservation form .container .box p{
-    font-size: 25px;
+.reservation-form .reservation-container .reservation-box p{
+    font-size: 18px;
     color: #0077b6;
 }
 
-.reservation form .container .box .input{
+.reservation-form .reservation-container .reservation-box .input{
     font-size: 20px;
-    width: 100%;
+   
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
     border-bottom: .2rem solid rgba(0, 0, 0, 0.1);
     color: #333;
 }
@@ -490,9 +490,6 @@ label[for="due"]::after {
 }
 
 /* end */
-
-
-
 
 
 
@@ -508,9 +505,9 @@ label[for="due"]::after {
     margin-bottom: 100px;
    
 }
-/* .home-map{
-    background:linear-gradient(90deg,  rgb(77, 96, 117) 0%, rgba(245,245,255,1) 100%);
-} */
+.home-map{
+    background:whitesmoke;
+}
 
 .homemap-title{
     font-size: 34px;
@@ -518,6 +515,7 @@ label[for="due"]::after {
     font-weight: bold;
     color: #3e74ad;
    padding-bottom: 30px;
+   padding-top: 60px;
 
 }
 
