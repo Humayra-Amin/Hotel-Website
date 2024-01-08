@@ -10,14 +10,10 @@
 				<div class="footer-col mt-5">
 
 
-                  <h4>Information</h4>
+                  <h4>About Us</h4>
 
 
-                  <ul class="pl-0">
-                      <li><a href="#">Pages</a></li>
-                      <li><a href="#">Our Team</a></li>
-                      <li><a href="#">Pricing</a></li>
-                  </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptates ad magni! Vel iste alias aliquam velit quo. Ipsa quam sint, dignissimos quia ipsum eaque hic cupiditate aut veniam eius.</p>
 
 
                 </div>
@@ -35,8 +31,7 @@
                       <li><a href="/">Home</a></li>
                       <li><a href="/Allrooms">Rooms</a></li>
                       <li><a href="/aboutus">About</a></li>
-                      <li><a href="/gallery">Gallery</a></li>
-                      <li><a href="/contact">Contacts</a></li>
+
 
                   </ul>
 
@@ -49,14 +44,12 @@
 		  		  <div class="footer-col mt-5">
 
 
-                  <h4>Help</h4>
+                  <h4>Contact Us</h4>
 
 
                   <ul  class="pl-0">
-                      <li><a href="#">Sign Up </a></li>
-                      <li><a href="#">FAQ</a></li>
-                      <li><a href="#">Terms of Services</a></li>
-                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">hotelP@gmail.com</a></li>
+                      <li><a href="#">+123456789</a></li>
                   </ul>
 
 
@@ -68,10 +61,11 @@
 		  		  <div class="footer-col mt-5">
 
 
-                  <h4>Follow Us</h4>
+                  <h4>Get Social</h4>
 
 
                   <div class="social-links">
+                    <p>Follow us on social platforms</p>
                       <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                       <a href="#"><i class="fa-brands fa-instagram"></i></a>
                       <a href="#"><i class="fa-brands fa-twitter"></i></a>

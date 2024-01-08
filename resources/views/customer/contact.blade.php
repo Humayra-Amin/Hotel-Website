@@ -4,98 +4,35 @@
 
 
 
-<div class="contact">
-
-
-    <div class="row">
-
-
-        <img src="image/deluxe room.jpg" media="min-width:600px" alt="Contact Image" class="contactimage">
-
-
-        <div class="text-caption">
-
-            <h1 class="text-contact">Contact Us</h1>
-
-       </div>
-
-
-    </div>
-
-
-
-    <div class="writeus px-5 py-5">
-
-
-            <h3 class="title-writeus">Write Us</h3>
-
-
-            <form>
-
-
-                <div class="row">
-
-
-                <div class="col-sm-4">
-
-                <div class="form-group">
-                    <input type="text"placeholder="Your name..."class="form-control" id="name" name="name" required>
-                </div>
-
-                </div>
-
-
-                <div class="col-sm-4">
-
-                <div class="form-group">
-                    <input type="email" placeholder="Your email..." class="form-control" id="email" name="email" required>
-                </div>
-    
+<div class="standard-promo contact-us-promo">
+    <div class="container">
+        <h3 class="standard-promo-header">Contact Us</h3>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div id="map-canvas" class="map map-canvas" style="width: 100%;height: 300px;"></div>
             </div>
-
-
-
-            <div class="col-sm-4">
-
-                <div class="form-group">
-                    <input type="text" placeholder="Subject..." class="form-control" id="subject" name="subject" required>
-                </div>
-
+            <div class="col-xs-12 col-sm-6">
+                <h4 class="name">The Metropolis Hotel</h4>
+                <p class="address">
+                    <a style="color:#333" href="https://maps.google.com/?q=The+Metropolis+Hotel+&amp;ll=41.40932800,2.17888500" target="_blank" rel="noopener"></a>
+                </p>
+                <p class="phone-number">
+                    <span class="letter">T</span>
+                    <a style="color:#333" href="tel:(01) 234 567 890">(01) 234 567 890</a>
+                </p>
+                <p class="fax-number">
+                    <span class="letter">F</span>
+                    (01) 234 567 890
+                </p>
+                <p class="email">
+                    <span class="letter">E</span>
+                    <a style="color:#333" href="mailto:metropolis@hotel.com.au">metropolis@hotel.com.au</a>
+                </p>
+                <a class="btn btn-primary" href="/contactUs.html">Learn More</a>
             </div>
-
-
-
-            <div class="col-sm-12">
-
-                <div class="form-group">
-                    <textarea class="form-control form-message"  placeholder="Message..."id="message" name="message" rows="5" required></textarea>
-                </div>
-
-            </div>
-
-
-                </div>
-
-
-
-
-
-                <div class="send-btn-primary">
-                <button type="submit" class="send-btn  send-btn-block ">SEND<i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-                </div>
-
-
-
-            </form>
-
-
         </div>
-
-
-    <div class="row maptop">
-
-
-        <div class="col">
+    </div>
+</div>
 
 
             <!-- Add your map code here (e.g., using Google Maps) -->
@@ -108,7 +45,7 @@
         </div>
 
 
-        <div class="col contact-detail">
+        {{-- <div class="col contact-detail">
 
 
             <h2 class="contact-heading">GET IN TOUCH</h2>
@@ -145,7 +82,7 @@
 
 
 
-            </div>
+            </div> --}}
 
         </div>
 

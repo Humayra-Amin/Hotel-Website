@@ -169,59 +169,17 @@
 
 /* about */
 
-.about .row{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+#about .container {
+    max-width: 930px;
     background: whitesmoke;
-    /* gap: 6rem; */
-}
-.about .row .content h2 {
-    padding-bottom: 5px;
-    padding-left: 0px;
-    font-size: 34px;
-    font-weight: bold;
-    font-family:"Playfair Display", serif;
-    color: #3e74ad;
-}
-
-
-.about .row .content h2:after{
-    content: '';
-    width: 80px;        
-    position: absolute;
-    left: 620px;
-    margin-bottom: 10px;
-    display: block;
-    border-bottom: 2px solid #c5874e;
-}
-
-
-.about .row .image{
-    flex: 1 1 30rem;
-}
-
-.about .row .image img{
-    width: 100%;
-    padding-left: 150px;
-}
-
-.about .row .content{
-    flex: 1 1 51rem;
-}
-
-.about .row .content h3{
-    font-size: 3.5rem;
-    color: var(--primary);
-    padding: 2rem 0;
-}
-
-.about .row .content p{
-    font-size: 18px;
-    color: #000000;
-    /* padding: 1rem 0; */
-    /* line-height: 0.8; */
-}
+  }
+  
+  #about p {
+    font-size: 1.2em;
+  }
+  .btn{
+    margin-bottom: 50px;
+  }
 
 
 /* Services */
@@ -311,7 +269,7 @@ ul{
     position: relative;
 }
 
-/* .footer-col h4::before{
+.footer-col h4::before{
     content: '';
     position: absolute;
     left: 0;
@@ -320,7 +278,7 @@ ul{
     height: 2px;
     box-sizing: border-box;
     width: 50px;
-} */
+}
 
 .footer-col ul li:not(:last-child){
     margin-bottom: 10px;
@@ -347,12 +305,12 @@ ul{
     height: 42px;
     width: 42px;
     font-size: 1.5em;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(53, 178, 195);
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #ffffff;
+    color: #272222;
     transition: all 0.5s ease;
 }
 
@@ -445,7 +403,7 @@ label[for="due"]::after {
 }
 
 /* reservation */
-.reservation-clr
+/* .reservation-clr
 {
     background: whitesmoke;
 }
@@ -487,7 +445,7 @@ label[for="due"]::after {
 .button-files{
     width: min-content;
     margin-left: 650px;
-}
+} */
 
 /* end */
 

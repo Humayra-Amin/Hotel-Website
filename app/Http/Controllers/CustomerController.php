@@ -87,12 +87,12 @@ class CustomerController extends Controller
 
 
 
-    public function services()
-    {
+    // public function services()
+    // {
 
-        return view("customer.services");
+    //     return view("customer.services");
 
-    }
+    // }
 
 
 
@@ -114,12 +114,12 @@ class CustomerController extends Controller
     } 
 
 
-    public function gallery()
-    {
+    // public function gallery()
+    // {
 
-        return view("customer.gallery");
+    //     return view("customer.gallery");
         
-    } 
+    // } 
 
 
 

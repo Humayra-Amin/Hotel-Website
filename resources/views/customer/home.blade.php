@@ -23,67 +23,6 @@
 
 
 
-      {{-- <div class="carousel-item">
-        <img src="image/hotels2.jpeg" alt="hotels2" class="slider-img">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="slider-title">Experience The Lavishing Side</h1>
-      
-      </div>
-      </div> --}}
-
-
-
-
-      {{-- <div class="carousel-item">
-        <img src="image/room.jpg" alt="Room" class="slider-img">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="slider-title">Welcome to Our Hotel</h1>
-        <h2>Experience luxury and comfort</h2>
-      </div>
-      </div> --}}
-
-
-
-      {{-- <div class="carousel-item">
-        <img src="image/yard.jpg" alt="yard" class="slider-img">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="slider-title">Welcome to Our Hotel</h1>
-        <h2>Experience luxury and comfort</h2>
-      </div>
-      </div>
-      
-
-
-      <div class="carousel-item">
-        <img src="image/pool2.jpg" alt="swimmingpool" class="slider-img">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="slider-title">Welcome to Our Hotel</h1>
-        <h2>Experience luxury and comfort</h2>
-      </div>
-      </div> --}}
-
-
-
-    
-
-
-    {{-- <a class="carousel-control-prev " href="#roomCarousel"  role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon slider-arrow" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#roomCarousel"  role="button" data-slide="next">
-      <span class="carousel-control-next-icon slider-arrow" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </a> --}}
-
-
-
-
-  <!-- slider end -->
-
-
-
-
                                                  <!-- Our room -->
 
 
@@ -151,128 +90,29 @@
 
                                                <!--ABOUT US-->
 
-{{-- <div class="about-us">
 
-
-  <div class="container">
-
-
-    <div class="row">
-
-
-      <div class="col-lg-6">
-        <img src="image/about.jpg" alt="Hotel Paradise" class="img-fluid rounded">
-      </div>
-
-
-
-      <div class="col-lg-6">
-        <h2 class="mb-6">About Us</h2>
-        <p>Welcome to Hotel Paradise,where luxury meets tranquility.Our establishment offers a unique blend of modern amenities and classic elegance,ensuring an unforgettable experience for our guests.With a range of facilities including a spa,fitness center,and elegant event spaces, we cater to both leisure and business travelers.Our dedicated staff is committed to providing exceptional service, making your stay truly special.</p>
-        <p>Complimentary breakfast,high-speed Wi-Fi,and attentive concierge services are just a few of the features that await you at Hotel Paradise.We invite you to indulge in a world of comfort and indulgence.</p>
-      </div>
-
-
-
-    </div>
-
-
-  </div>
-
-
-</div> --}}
-
-<section class="about" id="about">
-
-  <div class="row">
-
-    <div class="col-lg-6 image">
-      <img src="image/about.jpg" alt="Hotel Paradise" class="img-fluid rounded">
-    </div>
-
-     <div class="content">
-      <h2 class="mb-6">About Us</h2>
-      <p>Enjoy our elegant guest rooms, designed in warm beige tones and tailored to the needs of private and business travelers alike. All rooms have a large marble bathroom, a double bed, air conditioning, an additional work area with free internet access and a walk-in closet.</p>
-      <p>Bed configuration, extra bed options, air conditioning are also important. Each hotel has a slightly different list that can also include details such as the window view or the presence of a balcony. It is crucial to clearly indicate such features as early as on the first list view of all rooms.</p>
-     </div>
-
-  </div>
-
-</section>
-
-
-<!-- Services Section -->
-{{-- <div class="home-services px-3 py-5">
-  <h2 class="text-center services-title">Services that Hotel Pradise provide </h2>
-
-
-
-  
-  <div class="row">
-
-
-      <div class="col-sm-3 mb-4">
-
-
-          <div class="services-card">
-              <img src="image/swimming pool.jpeg" class="card-img-top services-image" alt="Service 1">
-              <div class="services-card-body">
-                  <h5 class="services-card-title">The Infinity Pool</h5>
-                  <a href="/services" class="services-view">View More</a>
-              </div>
+       <section id="about" style="background:whitesmoke;" class="padding-xlarge text-center position-relative overflow-hidden">
+            <div class="pattern-overlay pattern-right position-absolute">
+                 <img src="image/leaf-pattern1.png" alt="pattern">
+                            </div>
+                 <div class="container">
+                   <div class="row">
+          <div class="detail mb-4">
+         <h2 style="color:#3e74ad;" class="display-5 text-capitalize">Welcome to Hotel Paradise</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae rerum quia molestias placeat ad, vel eum aliquid voluptas assumenda obcaecati a sed, cumque deleniti nulla, delectus repellat quasi iure sapiente?</p>
+           </div>
           </div>
+                                            
+             <a href="about.html" class="btn btn-arrow btn-pill btn-medium btn-outline-dark bg-light text-black position-relative">
+            <span class="abt">About Us</span>
+    </a>
+             </div>
+    </section>
 
 
+                                     <!-- booking form Section -->
 
-      </div>
-
-
-      <div class="col-sm-3 mb-4">
-          <div class="services-card">
-              <img src="image/restaurant.jpg" class="card-img-top services-image" alt="Service 2">
-              <div class="services-card-body">
-                  <h5 class="services-card-title">Restaurant</h5>
-                  <a href="/services" class="services-view">View More</a>
-              </div>
-          </div>
-      </div>
-
-
-
-      <div class="col-sm-3 mb-4">
-          <div class="services-card">
-              <img src="image/gym (2).jpg" class="card-img-top services-image" alt="Service 3">
-              <div class="services-card-body">
-                  <h5 class="services-card-title ">Gym</h5>
-                  <a href="/services" class="services-view">View More</a>
-              </div>
-          </div>
-      </div>
-
-
-
-
-      <div class="col-sm-3 mb-4">
-        <div class="services-card">
-            <img src="image/Biliard zone.jpg" class="card-img-top services-image" alt="Service 3">
-            <div class="services-card-body">
-                <h5 class="services-card-title ">Billiard Zone</h5>
-                <a href="/services" class="services-view">View More</a>
-            </div>
-        </div>
-    </div>
-
-
-
-
-  </div>
-
-
-</div> --}}
-
-                                                           <!-- booking form Section -->
-
-<div class="reservation-clr" >
+{{-- <div class="reservation-clr" >
 
       <h1 class="reserve-h1">Book Now</h1>
 
@@ -338,17 +178,18 @@
             </div>
 
             <div class="reservation-box">
-               <p>Room Category <span>*</span></p>
+               <p>Room Category <span>*</span></p> --}}
                {{-- <label for="roomcategory" class="reserve-box">Room Category </label> --}}
                {{-- <select class="form-control" name="room_id" id="roomcategory" placeholder="Room Category" required> --}}
-                <select name="room_id" class="input">
+                {{-- <select name="room_id" class="input">
                  <option >Select Room Category</option>
                  @foreach ($rooms as $room)
                  <option value="{{ $room->id }}" data-price="{{$room->price}}">{{$room->roomtitle}} - {{$room->roomno}}</option>
                  @endforeach
                    
                </select>
-            </div>
+            
+              </div>
    
          </div>
 
@@ -356,7 +197,7 @@
 
       </form>
 
-    </div>
+    </div> --}}
 
 
 
@@ -456,15 +297,8 @@
       </div>
            </form> --}}
    
-
-
-
-
-
-                                                           <!-- Map Section -->
-
-
-<div class="home-map">
+<!-- Map Section -->
+ <div class="home-map">
 
 
   <h2 class="text-center homemap-title">Location</h2>
@@ -490,7 +324,6 @@
 
 </div>
   
-
 
 @endsection
 

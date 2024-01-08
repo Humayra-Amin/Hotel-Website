@@ -127,13 +127,13 @@
 
 
 
-              <form action="{{ url('/roombook') }}" method="POST" enctype="multipart/form-data">
-                @csrf 
+              <form action="{{ url('admin/booking') }}" method="POST" enctype="multipart/form-data">
+                @csrf
 
 
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" placeholder="Enter your name" name="name" class="form-control" id="name" required>
+                    <input type="text" placeholder="Enter your name" name="cname" class="form-control" id="name" required>
                 </div>
 
 
@@ -145,17 +145,26 @@
 
 
 
+                {{-- <div class="form-group">
+                  <label for="roomcategory" class="reserve-label">Room Category </label>
+                  <select class="form-control" name="room_id" id="roomcategory" required>
+                      <option >Select Room Category</option>
+                      @foreach ($room as $rooms)
+                      <option value="{{ $room->id }}" data-price="{{$room->price}}">{{$room->roomtitle}} - {{$room->roomno}}</option>
+                      @endforeach
+                        
+                    </select>
+                </div> --}}
                 <div class="form-group">
                   <label for="roomcategory" class="reserve-label">Room Category </label>
-                  <select class="form-control" name="roomcategory" id="roomcategory" required>
-                      <option value="Normal">Normal</option>
-                      <option value="Standered">Standered</option>
-                      <option value="Premium">Premium</option>
-                      <option value="Super Premium">Super Premium</option>
-                      <option value="Queen">Queen</option>
+                  <select class="form-control" name="room_id" id="roomcategory" placeholder="Room Category" required>
+                    <option >Select Room Category</option>
+                    @foreach ($rooms as $room)
+                    <option value="{{ $room->id }}" data-price="{{$room->price}}">{{$room->roomtitle}} - {{$room->roomno}}</option>
+                    @endforeach
+                      
                   </select>
                 </div>
-
 
 
                 <div class="form-group">
