@@ -116,6 +116,7 @@ Route::middleware(["auth:emps"])->group(function () {
     Route::get('/gallery', [CustomerController::class, "gallery"]);
     Route::get('/', [HomeController::class, "home"]);
     Route::get('/singleroom/{id}', [HomeController::class, "singleroom"]);
+    Route::get('/aboutus', [HomeController::class, "aboutus"]);
     Route::put('/roombook', [HomeController::class, "roombook"]);
 
 
@@ -140,7 +141,6 @@ Route::middleware(["auth:emps"])->group(function () {
 
 
 
-    Route::get('/contact', [CustomerController::class, "gallery"]);
 
 
 

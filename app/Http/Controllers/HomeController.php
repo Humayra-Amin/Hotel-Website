@@ -31,6 +31,11 @@ class HomeController extends Controller
 
     }
 
+    public function aboutus()
+    {
+       return view("customer.aboutus");
+    }
+
 
 
     public function roombook(Request $request, $id)

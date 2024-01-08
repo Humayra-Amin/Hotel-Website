@@ -20,7 +20,7 @@
     <div class="collapse navbar-collapse " id="navbarNav">
 
 
-      <ul class="navbar-nav ml-auto">
+      {{-- <ul class="navbar-nav ml-auto">
 
 
         <li class="nav-item">
@@ -30,7 +30,7 @@
 
 
         <li class="nav-item">
-          <a class="nav-link" href="/Allrooms">Rooms</a>
+          <a class="nav-link" href="">Rooms</a>
         </li>
 
 
@@ -41,70 +41,14 @@
 
 
 
-        {{-- <li class="nav-item">
-          <a class="nav-link" href="/gallery">Gallery</a>
-        </li> --}}
-
-
         
 
         <li class="nav-item">
           <a class="nav-link" href="/contact">Contact</a>
         </li>
 
-    
-        {{-- @if (Auth::user())
-       
-        
-        <li class="nav-item">
-
-
-          <form action="{{url('/logout')}}" method="GET">
-            @csrf
-
-
-
-            <button class="nav-link"  type="submit">LOGOUT</button> 
-
-
-
-        </form>
-      
-
-
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="/Account">Profile</a>
-        </li>
-
-        
-
-
-        @else
-        
-
-
-        
-                <li class="nav-item">
-                  <a class="nav-link" href="{{ url('login') }}">Login</a>
-                </li>
-
-
-
-        
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('register') }}">Register</a>
-                </li>
-        
-
-       
-        @endif --}}
-         
-
-
      
-      </ul>
+      </ul> --}}
 
 
     </div>

@@ -76,7 +76,6 @@
     </div>
 
 
-
   @endforeach  
 
 
@@ -99,8 +98,13 @@
                    <div class="row">
           <div class="detail mb-4">
          <h2 style="color:#3e74ad;" class="display-5 text-capitalize">Welcome to Hotel Paradise</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae rerum quia molestias placeat ad, vel eum aliquid voluptas assumenda obcaecati a sed, cumque deleniti nulla, delectus repellat quasi iure sapiente?</p>
-           </div>
+                <p>
+                Hotel Paradise is a charming and comfortable retreat nestled in a picturesque setting. 
+                The warm and inviting atmosphere, coupled with friendly staff, ensures a delightful stay.
+                With well-appointed rooms, modern amenities, and a serene ambiance, guests can relax and unwind in paradise-like surroundings.
+                Whether you're here for business or leisure, Hotel Paradise offers a haven of tranquility and hospitality for a memorable experience.
+              </p>
+              </div>
           </div>
                                             
              <a href="about.html" class="btn btn-arrow btn-pill btn-medium btn-outline-dark bg-light text-black position-relative">
@@ -110,192 +114,8 @@
     </section>
 
 
-                                     <!-- booking form Section -->
-
-{{-- <div class="reservation-clr" >
-
-      <h1 class="reserve-h1">Book Now</h1>
-
-      <form action="{{ url('admin/booking') }}" method="POST" enctype="multipart/form-data" class="reservation-form">
-        @csrf
-
-         <div class="reservation-container">
-
-            <div class="reservation-box">
-               <p>Name <span>*</span></p>
-               <input type="text" class="input" placeholder="Your Name">
-            </div>
-
-            <div class="reservation-box">
-               <p>Email <span>*</span></p>
-               <input type="text" class="input" placeholder="Your Email">
-            </div>
-
-            <div class="reservation-box">
-               <p>Check in <span>*</span></p>
-               <input type="date" class="input">
-            </div>
-
-            <div class="reservation-box">
-               <p>Check out <span>*</span></p>
-               <input type="date" class="input">
-            </div>
-
-            <div class="reservation-box">
-               <p>Adults <span>*</span></p>
-               <select name="adults" class="input">
-                  <option value="1">1 adults</option>
-                  <option value="2">2 adults</option>
-                  <option value="3">3 adults</option>
-                  <option value="4">4 adults</option>
-                  <option value="5">5 adults</option>
-                  <option value="6">6 adults</option>
-               </select>
-            </div>
-
-            <div class="reservation-box">
-               <p>Children <span>*</span></p>
-               <select name="child" class="input">
-                  <option value="1">1 child</option>
-                  <option value="2">2 child</option>
-                  <option value="3">3 child</option>
-                  <option value="4">4 child</option>
-                  <option value="5">5 child</option>
-                  <option value="6">6 child</option>
-               </select>
-            </div>
-
-            <div class="reservation-box">
-               <p>Rooms <span>*</span></p>
-               <select name="rooms" class="input">
-                  <option value="1">1 rooms</option>
-                  <option value="2">2 rooms</option>
-                  <option value="3">3 rooms</option>
-                  <option value="4">4 rooms</option>
-                  <option value="5">5 rooms</option>
-                  <option value="6">6 rooms</option>
-               </select>
-            </div>
-
-            <div class="reservation-box">
-               <p>Room Category <span>*</span></p> --}}
-               {{-- <label for="roomcategory" class="reserve-box">Room Category </label> --}}
-               {{-- <select class="form-control" name="room_id" id="roomcategory" placeholder="Room Category" required> --}}
-                {{-- <select name="room_id" class="input">
-                 <option >Select Room Category</option>
-                 @foreach ($rooms as $room)
-                 <option value="{{ $room->id }}" data-price="{{$room->price}}">{{$room->roomtitle}} - {{$room->roomno}}</option>
-                 @endforeach
-                   
-               </select>
-            
-              </div>
-   
-         </div>
-
-         <button type="submit" class="btn btn-primary button-files">Submit</button>
-
-      </form>
-
-    </div> --}}
 
 
-
-
-
-    {{-- @include('admin.inc.message')
-       
-       
-    <h1 class="reserve-h1">Book Now</h1>
-         
-       <form action="{{ url('admin/booking') }}" method="POST" enctype="multipart/form-data">
-         @csrf
-       
-          <div class="container mt-3">
-            
-           <div class="reserve-row reserve-jumbotron custom-box8">
-
-            <div class="row">
-       
-             <div class="col-sm-6  form-group">
-               <label for="cname" class="reserve-box">Name</label>
-               <input type="text" class="form-control" name="cname" id="cname" placeholder="Name" required>
-             </div>
-       
-   
-   
-             <div class="col-sm-6 form-group">
-               <label for="email" class="reserve-box">Email</label>
-               <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-             </div>
-   
-   
-   
-             <div class="col-sm-6 form-group">
-               <label for="tel" class="reserve-box">Contact No.</label>
-               <input type="tel" name="tel" class="form-control" id="tel" placeholder="Contact Number" required>
-             </div>
-   
-   
-   
-             <div class="col-sm-6 form-group">
-               <label for="email" class="reserve-box">National Id</label>
-               <input type="nid" class="form-control" name="nid" id="nid" placeholder="NID" required>
-             </div>
-   
-   
-   
-           <div class="col-sm-6 form-group">
-             <label for="roomcategory" class="reserve-box">Room Category </label>
-             <select class="form-control" name="room_id" id="roomcategory" placeholder="Room Category" required>
-               <option >Select Room Category</option>
-               @foreach ($rooms as $room)
-               <option value="{{ $room->id }}" data-price="{{$room->price}}">{{$room->roomtitle}} - {{$room->roomno}}</option>
-               @endforeach
-                 
-             </select>
-           </div>
-         
-   
-   
-   
-             <div class="col-sm-6 form-group">
-               <label for="guestnumber" class="reserve-box">Number of Guests</label>
-               <input type="text" class="form-control" name="guestnumber" id="guestnumber" placeholder="Number of Guests">
-             </div>
-   
-   
-   
-             <div class="col-sm-6 form-group">
-              <label for="checkInDate" class="reserve-box">Check-in Date</label>
-                  <input type="date" class="form-control" name="checkInDate" id="checkInDate"  required>
-            </div>
-      
-      
-      
-            <div class="col-sm-6 form-group">
-              <label for="checkOutDate" class="reserve-box">Check-out Date</label>
-              <input type="date" class="form-control" name="checkOutDate" id="checkOutDate"  required>
-            </div>
-   
-   
-   
-             <div class="col-sm-12 form-group">
-               <label for="specialrequest" class="reserve-box">Special Request, Ex. extra bed, comforter.....</label>
-               <textarea name="specialrequest" class="form-control" id="specialrequest" rows="3"></textarea>
-             </div>
-   
-       
-       
-             <button type="submit" class="btn btn-primary button-file">Submit</button>
-   
-   
-            </div>
-
-          </div>
-  
-      </div>
-           </form> --}}
    
 <!-- Map Section -->
  <div class="home-map">
@@ -322,7 +142,7 @@
 </div>
 
 
-</div>
+
   
 
 @endsection

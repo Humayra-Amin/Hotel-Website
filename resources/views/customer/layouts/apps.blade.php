@@ -13,23 +13,9 @@
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="{{asset('customer/css/home.css')}}">
-  <link rel="stylesheet" href="{{asset('customer/css/login.css')}}">
-  <link rel="stylesheet" href="{{asset('customer/css/register.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/footer.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/singleroom.css')}}">
-  <link rel="stylesheet" href="{{asset('customer/css/reservation.css')}}">
-  <link rel="stylesheet" href="{{asset('customer/css/services.css')}}">
-  <link rel="stylesheet" href="{{asset('customer/css/contact.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/rooms.css')}}">
-  <link rel="stylesheet" href="{{asset('customer/css/lightbox.css')}}">
-  <link rel="stylesheet" href="{{asset('customer/css/gallery.css')}}">
-
-
-  <link rel="stylesheet" href="{{asset('customer/css/personalInfo.css')}}">
-  <link rel="stylesheet" href="{{asset('customer/css/bookinglist.css')}}">
-  <link rel="stylesheet" href="{{asset('customer/css/changepass.css')}}">
-  <link rel="stylesheet" href="{{asset('customer/css/sidebar.css')}}">
-
 
 
 
@@ -42,8 +28,7 @@
     <script src="lightbox-plus-jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
-    <script src="{{asset('employees/js/gallery.js')}}"></script>
-    <script src="{{asset('employees/js/lightbox.js')}}"></script>
+  
 
 
 

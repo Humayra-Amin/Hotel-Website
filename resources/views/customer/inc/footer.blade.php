@@ -13,9 +13,11 @@
                   <h4>About Us</h4>
 
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptates ad magni! Vel iste alias aliquam velit quo. Ipsa quam sint, dignissimos quia ipsum eaque hic cupiditate aut veniam eius.</p>
-
-
+                    <p>
+                      Hotel Paradise is a charming getaway where comfort meets tranquility. 
+                     Immerse yourself in a relaxing atmosphere, surrounded by lush landscapes. 
+                     Whether for business or leisure, Hotel Paradise is your home away from home.
+                    </p>
                 </div>
 		  
 
@@ -29,7 +31,7 @@
 
                   <ul  class="pl-0">
                       <li><a href="/">Home</a></li>
-                      <li><a href="/Allrooms">Rooms</a></li>
+                      <li><a href="">Rooms</a></li>
                       <li><a href="/aboutus">About</a></li>
 
 
