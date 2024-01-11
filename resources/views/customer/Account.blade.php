@@ -54,56 +54,7 @@
   
 
 
-
-
-{{-- <div class="container-xl complex px-4 mt-4"> --}}
-
-
  <div class="body-change">
-
-
-    {{-- <div class="row g-0"> --}}
-
-
-        {{-- <div class="col-xl-4">
-
-
-            <div class="file-card mb-10 mb-xl-0">
-
-
-                <div class="custom-card-header">Profile Picture
-                </div>
-
-
-                <div class="custom-card-body text-center">
-                 
-
-                    <div class=" files-img">
-                      
-
-                        <div class="imageWrapper">
-                          <img class="image-info" src="http://via.placeholder.com/700x500">
-                        </div>
-
-
-                      </div>
-
-
-                      <p class="text-center para">ABC</p>
-
-
-                    <button class="file-upload">            
-                        <input type="file" class="file-input">Upload Image</button>
-
-
-                </div>
-
-
-            </div>
-
-
-                
-        </div> --}}
 
 
         <div class="col-xl-8">
@@ -132,50 +83,6 @@
                         </div>
 
 
-
-                        {{-- <div class="row gx-3 mb-3">
-
-                            <div class="col-md-6">
-                                <input class="personalform-control" id="inputEmailAddress" type="text" placeholder="Email Address" value="">
-                            </div>
-
-                            <div class="col-md-6">
-                                <input class="personalform-control" id="inputPhoneNumber" type="text" placeholder="Phone Number" value="">
-                            </div>
-
-                        </div> --}}
-
-
-
-                        {{-- <div class="row gx-3 mb-3">
-
-                            <div class="col-md-6">
-                                <input class="personalform-control" id="inputZip" type="text" placeholder="Zip" value="">
-                            </div>
-
-                            <div class="col-md-6">
-                                <input class="personalform-control" id="inputCountry" type="text" placeholder="Country" value="">
-                            </div>
-
-                        </div> --}}
-
-
-
-{{-- 
-                        <div class="row gx-3 mb-3">
-
-                            <div class="col-md-6">
-                                <input class="personalform-control" id="inputState" type="text" placeholder="State" value="">
-                            </div>
-
-                            <div class="col-md-6">
-                                <input class="personalform-control" id="inputCity" type="text" placeholder="City" value="">
-                            </div>
-                        </div> --}}
-
-
-
-                        
                         <button class="btn btn-primary ml-4" type="submit">Save Details</button>
 
 
@@ -188,9 +95,6 @@
 
 
         </div>
-
-
-    {{-- </div> --}}
 
 
  </div>

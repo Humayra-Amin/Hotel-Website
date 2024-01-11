@@ -41,8 +41,6 @@
                 <h6 class="collapse-header">Custom Components:</h6>
                 <a class="collapse-item" href="/admin/room">View Room</a>
                 <a class="collapse-item" href="/admin/room/add">Add Room</a>
-                {{-- <a class="collapse-item" href="/admin/room/edit">Edit Room</a>
-                <a class="collapse-item" href="/admin/room/single">Single Room</a> --}}
             </div>
         </div>
     </li>
@@ -58,29 +56,9 @@
                 <h6 class="collapse-header">Custom Utilities:</h6>
                 <a class="collapse-item" href="/admin/employee">View Employee list</a>
                 <a class="collapse-item" href="/admin/employee/add">Add Employee</a>
-                {{-- <a class="collapse-item" href="/admin/employee/edit">Edit Employee</a>
-                <a class="collapse-item" href="/admin/employee/single">Single Employee</a> --}}
             </div>
         </div>
     </li>
-
-    <!-- Nav Item - Utilities Collapse Menu -->
-    {{-- <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-            aria-expanded="true" aria-controls="collapseUtilities">
-            <i class="fa-sharp fa-solid fa-person"></i>
-            <span>Customer</span>
-        </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-            data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Customer:</h6>
-                <a class="collapse-item" href="/admin/customerlist">Customer List</a>
-               
-            </div>
-        </div>
-    </li> --}}
-
 
 
     <li class="nav-item">
@@ -94,8 +72,6 @@
                 <h6 class="collapse-header">Custom Booking:</h6>
                 <a class="collapse-item" href="/admin/booking/booklists">Booking List</a>
                 <a class="collapse-item" href="/admin/booking/reservation">Add Reservation</a>
-                {{-- <a class="collapse-item" href="/admin/booking/editReservation">Edit Reservation</a>
-                <a class="collapse-item" href="/admin/booking/singleview">SingleView</a> --}}
                 <a class="collapse-item" href="/admin/booking/checkout">Check Out</a>
        
             </div>

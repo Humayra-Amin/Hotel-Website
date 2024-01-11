@@ -1,21 +1,4 @@
-{{-- <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>gallery</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="lightbox.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
-  </head>
-  <style>
-  
-
-  </style>
-  <body> --}}
-
-
-
-    @extends('customer.layouts.apps')
+@extends('customer.layouts.apps')
 
 @section('apps')
 
@@ -96,8 +79,6 @@
         {{-- </div>
       </div>
     </div> --}}
-
-  {{-- </body> --}}
 
 
   {{-- <script type="text/javascript">

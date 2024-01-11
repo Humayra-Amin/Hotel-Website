@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Storage;
 
 class RoomController extends Controller
 {
-    //
 
 
     public function index()
@@ -23,8 +22,6 @@ class RoomController extends Controller
     }
 
 
-
-
     public function roomcategory(Request $request)
     {
 
@@ -32,8 +29,6 @@ class RoomController extends Controller
         return view("admin.room.index")->with('rooms',  $rooms);
 
     }
-
-
 
 
     public function add()
@@ -45,16 +40,12 @@ class RoomController extends Controller
     }
 
 
-
-
     public function single()
     {
 
         return view("admin.room.single");
 
     }
-
-
 
 
     public function store(Request $request)
@@ -102,9 +93,6 @@ class RoomController extends Controller
         
         $room->image= Storage::disk("public")->files($room->id);
         $room->update();
-
-
-
         return redirect("admin/room")->with("success", "Room created.");
 
     }
@@ -143,29 +131,18 @@ class RoomController extends Controller
         $room->update();
 
        
-
        if($request->file('image')){
         foreach($request->file('image') as $img){
             Storage::disk("public")->put("$room->id", $img);
-
         }
 
     }
 
-
         $room->image= Storage::disk("public")->files($room->id);
         $room->update();
-
-
-
         return redirect("admin/room")->with("success", "Room updated.");
 
-
-
     }
-
-
-
 
     public function show($id)
     { 
@@ -175,9 +152,6 @@ class RoomController extends Controller
 
     }
 
-
-
-
     public function edit($id)
     { 
 
@@ -185,14 +159,9 @@ class RoomController extends Controller
        $categories = Category::all();
        return view("admin.room.edit")->with('room',  $room)->with('categories', $categories);
 
-    //    $categories = Category::all();
-    //    return view("admin.room.edit")->with('categories',  $categories);
-
     }
 
 
-
-    
     public function delete(Request $request)
     { 
 

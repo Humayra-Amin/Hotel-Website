@@ -14,7 +14,6 @@
 
         <div class="carousel-caption d-none d-md-block">
           <h1 class="slider-title">The Hotel Paradise</h1>
-          {{-- <h2>Experience luxury and comfort</h2> --}}
         </div>
 
 
@@ -24,7 +23,6 @@
 
 
                                                  <!-- Our room -->
-
 
   <div class="section-site">
 
@@ -85,8 +83,6 @@
 </div>
 
 
-
-
                                                <!--ABOUT US-->
 
 
@@ -116,8 +112,7 @@
 
 
 
-   
-<!-- Map Section -->
+                                             <!-- Map Section -->
  <div class="home-map">
 
 
@@ -138,12 +133,7 @@
 
 </div>
 
-
 </div>
-
-
-
-  
 
 @endsection
 

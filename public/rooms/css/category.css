@@ -14,7 +14,6 @@
     cursor: pointer;
     transition: transform 0.9s ease-in-out;
     background-color: rgb(193, 198, 255);
-    /* color: linear-gradient(90deg, rgb(59, 112, 173) 5%, rgb(1, 1, 15) 100%);; */
 }
 .field-body{
   padding: 2px 2px;
@@ -23,9 +22,6 @@
   .mop{
       padding-left: 20px;
   } 
-  /* .card-title{
-      padding-left: 20px;
-  }  */
 
 .section-head-category {
   position: relative;
@@ -70,10 +66,6 @@
 
   
 }
-
-/* .image-file{
-  transition: transform 0.9s ease-in-out;
-} */
 
 .box-card:hover {         
  

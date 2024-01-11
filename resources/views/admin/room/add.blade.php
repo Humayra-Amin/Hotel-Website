@@ -96,29 +96,11 @@
                             
                             </div>
 
-                            {{-- <div class="col-sm-6 form-group custom-form-group">
-                              <label for="price">Price</label>
-                              <input type="text" class="form-control" name="price" id="price" placeholder="Enter Price." required>
-                            </div> --}}
-
-                            {{-- <div class="col-sm-6 form-group custom-form-group">
-                              <label for="availablerooms">Room Availability</label>
-                              <input type="text" class="form-control" name="availablerooms" id="availablerooms" placeholder="Enter Available Room." required>
-                            </div>
-
-                            <div class="col-sm-6 form-group custom-form-group">
-                              <label for="maxoccupancy">Max Occupancy</label>
-                              <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter maxoccupancy." required>
-                            </div> --}}
-
 
                             <div class="col-sm-6 form-group custom-form-group">
                               <label for="Category">Category</label>
                               <select name="category_id" class="form-control custom-select browser-default">
                                 <option>Select your Room Category</option>
-                                {{-- @foreach ($categories as $category)
-                                <option value="{{$category->id}}"> {{$category->categoryname}} </option>
-                                @endforeach --}}
 
 
                                 <option value="Single Room">Single Room</option>
@@ -135,12 +117,6 @@
                               <label for="maxoccupancy">Number Of Guest</label>
                               <input type="text" class="form-control" name="maxoccupancy" id="maxoccupancy" placeholder="Enter no of guest." required>
                             </div>
-
-                            {{-- <div class="col-sm-6 form-group custom-form-group">
-                              <label for="roomsize">Room Size</label>
-                              <input type="text" name="roomsize" class="form-control" id="number" placeholder="Enter Room size" required>
-                            </div> --}}
-
 
 
                             <div class="col-sm-6 form-group custom-form-group">
@@ -185,13 +161,6 @@
                             </div>
 
                         
-                            
-                            {{-- <div class="col-sm-12 form-group custom-form-group1">
-                              <label for="description" class="form-label">Description</label>
-                              <textarea name="description" class="form-control" id="description" rows="3"></textarea>
-                            </div> --}}
-                            
-                            
                             <div class="col-sm-12">
                               <div class="upload__box">
                                 <div class="upload__btn-box">

@@ -87,12 +87,9 @@ Route::middleware(["auth:emps"])->group(function () {
     Route::post('admin/booking', [BookingController::class, "store"]);
     Route::put('/admin/booking/{id}', [BookingController::class, "update"]);
     Route::post('/admin/booking/{id}/checkedout', [BookingController::class, "checkedout"])->name('admin.booking.checkedout');
-    // Route::post('/admin/booking/{id}/deny', [BookingController::class, "deny"])->name('admin.booking.deny');
 
 
 
-
-    
                                   //admin.category route
 
 
@@ -105,11 +102,7 @@ Route::middleware(["auth:emps"])->group(function () {
   
                             //customer route
 
-    // Route::get('/login', [CustomerController::class, "login"]);
-    // Route::post('/post-login', [CustomerController::class, "postLogin"]);
-    // Route::get('/register', [CustomerController::class, "register"]);
-    // Route::post('/post-register', [CustomerController::class, "postRegister"]);
-   
+
     Route::get('/services', [CustomerController::class, "services"]);
     Route::get('/contact', [CustomerController::class, "contact"]);
     Route::get('/Allrooms', [CustomerController::class, "Allrooms"]);
@@ -121,27 +114,12 @@ Route::middleware(["auth:emps"])->group(function () {
 
 
 
-    // Route::middleware(["auth:customers"])->group(function () {
-    //     Route::get('/logout', [CustomerController::class, "logout"]);
-    //     Route::get('/Account', [CustomerController::class, "Account"]);
-    //     Route::get('/changepassword', [CustomerController::class, "changepassword"]);
-    //     Route::get('/bookmodal', [CustomerController::class, "bookmodal"]);
-    //     Route::get('/bookinglist', [HomeController::class, "bookinglist"]);
-    // });
-
-
-     
-
                                    //accounts route
 
     Route::get('/admin/Account/expense', [AccountController::class, "expense"]);
     Route::get('/admin/Account/expenselist', [AccountController::class, "expenselist"]);
     Route::get('/admin/Account/income', [AccountController::class, "income"]);
     Route::post('/admin/Account', [AccountController::class, "store"]);
-
-
-
-
 
 
     Route::get('/pdf', [Controller::class, "pdf"]);

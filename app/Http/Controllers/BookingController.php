@@ -42,7 +42,6 @@ class BookingController extends Controller
     ]);
 
 
-    // return $request;
 
     $room = Room::where("id", $request->room_id)->first();
     if(!$room){
@@ -104,7 +103,6 @@ class BookingController extends Controller
     {
         $booking=Booking::where("id",$id)->firstOrfail();
         return view("admin.booking.editReservation")->with('booking',  $booking);
-        // return view("admin.booking.editReservation");
     }
 
 
@@ -127,8 +125,6 @@ class BookingController extends Controller
     ]);
 
 
-   
-
 
     $booking = Booking::find($id);
 
@@ -149,10 +145,6 @@ class BookingController extends Controller
         $booking->checkOutDate = Carbon::parse($request->checkOutDate);
         $booking->specialrequest = $request->specialrequest;
 
-        // $booking->price = $request->price;
-        // $booking->discount = $request->discount;
-        // $booking->paid = $request->paid;
-        // $booking->due =  (float)$booking->price - (float)$booking->discount - (float)$booking->paid;
 
 
         $checkInDate = Carbon::parse($request->checkInDate);
@@ -170,17 +162,6 @@ class BookingController extends Controller
 
         $booking->update();
 
-
-        // $income= new Income();
-        // $income->paid = $request->paid;
-        // $income->update();
-        
-
-
-
-        // $room = Room::where('id', $request->room_id)->first();
-        // $room->status = 'Booked';
-        // $room->update();
     
         return redirect("admin/booking/booklists")->with("success", "Booking Updated.....");
     
@@ -263,7 +244,6 @@ class BookingController extends Controller
 
         
         if($booking){
-            // return $booking;
 
             if($booking->room->status != "Booked"){
                 return redirect()->back()->with('error', 'Booking not found.');
@@ -313,16 +293,6 @@ class BookingController extends Controller
         {
             return redirect()->back()->with('success', 'Checked Out successfully!!!!');
         }
-
-
     }
 
-
-
-
-
-
-    
-
-    
 }

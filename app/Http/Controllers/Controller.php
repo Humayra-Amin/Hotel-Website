@@ -73,16 +73,11 @@ class Controller extends BaseController
       
     }
 
-
-
-
-
     public function pdf()
     {
         $pdf = Pdf::loadView('pdf');
         return $pdf->download('invoice.pdf');
     }
      
-    
     
 }

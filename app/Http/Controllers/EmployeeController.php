@@ -46,19 +46,6 @@ class EmployeeController extends Controller
 
 
         $request->validate([
-            // 'fname' => 'required|max:50',
-            // 'lname' => 'required|max:50',
-            // 'eid' => 'required',
-            // 'Locality' => 'required|max:150',
-            // 'email' => 'required|email',
-            // 'phone' => 'required',
-            // 'dob' => 'required',
-            // 'nid' => 'required|integer',
-            // 'position' => 'required',
-            // 'sex' => 'required',
-            // 'salary' => 'required|integer',
-            // 'joiningdate' => 'required',
-
 
 
             'ename' => 'required|max:50', 
@@ -74,35 +61,7 @@ class EmployeeController extends Controller
             'gender' => 'required',
             'joiningdate' => 'required',
             'salary' => 'required|integer',
-            // 'verified' => 'boolean',
         ]);
-
-
-            // $user = new User();
-            // $user->fname = $request->fname;
-            // $user->lname = $request->lname;
-            // $user->password = $request->password;
-            // 'password' => Hash::make($request->password)
-            // $user->save();
-        
-
-
-
-        // $employee = new Employee();
-        // $employee->fname = $request->fname;
-        // $employee->lname = $request->lname;
-        // $employee->eid = $request->eid;
-        // $employee->Locality = $request->Locality;
-        // $employee->email = $request->email;
-        // $employee->phone = $request->phone;
-        // $employee->dob = $request->dob;
-        // $employee->nid = $request->nid;
-        // $employee->position = $request->position;
-        // $employee->sex = $request->sex;
-        // $employee->salary = $request->salary;
-        // $employee->joiningdate = $request->joiningdate;
-        // $employee->save();
-
 
 
         $employee = new Employee();
@@ -119,7 +78,6 @@ class EmployeeController extends Controller
         $employee->gender = $request->gender;
         $employee->joiningdate = $request->joiningdate;
         $employee->salary = $request->salary;
-        // $employee->verified = $request->has('verified');
         $employee->save();
 
 
@@ -140,18 +98,6 @@ class EmployeeController extends Controller
     public function update(Request $request,$id)
     {
         $request->validate([
-            // 'fname' => 'required|max:50',
-            // 'lname' => 'required|max:50',
-            // 'eid' => 'required',
-            // 'Locality' => 'required|max:150',
-            // 'email' => 'required|email',
-            // 'phone' => 'required',
-            // 'dob' => 'required',
-            // 'nid' => 'required|integer',
-            // 'position' => 'required',
-            // 'sex' => 'required',
-            // 'salary' => 'required|integer',
-            // 'joiningdate' => 'required',
 
 
             'ename' => 'required|max:50', 
@@ -170,22 +116,6 @@ class EmployeeController extends Controller
 
 
         ]);
-
-
-        // $employee = Employee::find ($id);
-        // $employee->fname = $request->fname;
-        // $employee->lname = $request->lname;
-        // $employee->eid = $request->eid;
-        // $employee->Locality = $request->Locality;
-        // $employee->email = $request->email;
-        // $employee->phone = $request->phone;
-        // $employee->dob = $request->dob;
-        // $employee->nid = $request->nid;
-        // $employee->position = $request->position;
-        // $employee->sex = $request->sex;
-        // $employee->salary = $request->salary;
-        // $employee->joiningdate = $request->joiningdate;
-        // $employee->update();
 
 
 

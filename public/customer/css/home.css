@@ -6,8 +6,6 @@
 }
 .home-page{
     height: 100%;
- 
-    
 }
 
 
@@ -46,7 +44,6 @@
     height: 50px;
     width: 50%;
     color: white;
-    /* border-radius: 60px; */
     font-weight: 600;
 }
 
@@ -59,6 +56,7 @@
   }
 
 /* sliderimage */
+
 .carousel-caption{
         padding-bottom:210px;
         color:#ffffff;
@@ -100,9 +98,6 @@
    border-bottom: 2px solid #c5874e;
 }
   
-/* .room-card {
-    margin-bottom: 20px;
-} */
 
 .section-site{
     padding: 60px;
@@ -126,47 +121,6 @@
 }
 
 
-
-/* about us */
-
-/* .about-us {
-    background:linear-gradient(90deg,  rgb(77, 96, 117) 0%, rgba(245,245,255,1) 100%);
-    padding-bottom: 80px;
-    font-family: 'Poppins';
-}
-
-.about-us img {
-    padding-top:30px;
-    padding-bottom: 100px;
-    width: 80%;
-}
-
-.about-us h2 {
-    padding-bottom: 5px;
-    padding-left: 0px;
-    font-size: 34px;
-    font-weight: bold;
-    font-family:"Playfair Display", serif;
-    color: rgb(15, 0, 0);
-}
-
-
-.about-us h2:after{
-    content: '';
-    width: 80px;        
-    position: absolute;
-    left: 20px;
-    margin-bottom: 10px;
-    display: block;
-    border-bottom: 2px solid #c5874e;
-}
-
-.about-us p {
-    font-size: 18px;
-    color:linear-gradient(90deg, rgb(156, 165, 175) 5%, rgba(245,245,255,1) 100%);
-} */
-
-
 /* about */
 
 #about .container {
@@ -180,62 +134,6 @@
   .btn{
     margin-bottom: 50px;
   }
-
-
-/* Services */
-/* .services-title{
-    padding-bottom: 75px;
-    padding-left: 0px;
-    font-size: 34px;
-    font-family: "Playfair Display", serif;
-    font-weight: bold;
-    color: rgb(15, 0, 0);
-}
-.services-title:after{
-    content: '';
-    width: 250px;        
-    position: absolute;
-    left: 40%;
-    margin-bottom: 5px;
-    display: block;
-    border-bottom: 2px solid #c5874e;
-} */
-
-
-/* .home-services{
-    background:linear-gradient(90deg,  rgb(77, 96, 117) 0%, rgba(245,245,255,1) 100%);
-} */
-/* .services-card {
-    width: 300px;
-    padding: 0px 0px;
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255);
-    border-radius: 0px ;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-.services-card-title {
-    margin-top: 5px;
-    font-family:serif;
-    font-size: 25px;
-    padding-left: 10px;
-}
-.services-view{
-    text-decoration: none;
-    color: #c5874e;
-    font-size: 20px;
-    padding-left: 10px;
-}
-.services-view:hover{
-    color: #c5874e;
-    text-decoration: none;
-}
-.services-image{
-    cursor: pointer;
-    transition: transform 0.7s ease-out;
-}
-.services-image:hover {         
-    transform: scale(.9);
-} */
 
           /* footer */
        
@@ -251,8 +149,6 @@ ul{
 .footer{
     background-color: #a6c7ea;
     padding: 20px 10px;
-    /* margin-top: 350px;
-    margin-bottom: 0; */
 }
 
 .footer-col{
@@ -330,56 +226,6 @@ margin-top: 1px;
 }
 
                               /* reservation */
-/* .reservation form{
-    padding: 2rem;
-    border-radius: 1.5rem;
-} */
-
-
-
-/* .add-text-center
-{
-      color: #1e2cc8;
-      font-size: 36px;
-      font-family: 'roboto';
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-left: 280px;
-      text-align: center;
-
-}
-.reserve-box
-{
-      font-weight: 600;
-      color: black;
-      font-family: 'roboto';
-}
-
-.reserve-box::after
-{
-    content:" *";
-    color: red;
-}
-label[for="discount"]::after {
-    content: "";
-}
-
-label[for="specialrequest"]::after {
-    content: "";
-}
-label[for="guestnumber"]::after {
-    content: "";
-}
-label[for="paid"]::after {
-    content: "";
-}
-label[for="due"]::after {
-    content: "";
-}
-.button-file{
-      width: min-content;
-      margin-left: 958px;
-} */
 
 .reserve-h1 {
     padding-top: 60px;
@@ -402,55 +248,6 @@ label[for="due"]::after {
     border-bottom: 2px solid #c5874e;
 }
 
-/* reservation */
-/* .reservation-clr
-{
-    background: whitesmoke;
-}
-.reservation-form{
-    padding: 50px;
-    margin-left: 80px;
-    margin-right: 80px;
-    border: .2rem solid rgba(0, 0, 0, 0.1);
-    border-radius: 1.5rem;
-    
- 
-}
-
-.reservation-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:16px;
-  
-}
-
-.reservation-form .reservation-container .reservation-box{
-    flex: 1 1 20rem;
-}
-
-.reservation-form .reservation-container .reservation-box p{
-    font-size: 18px;
-    color: #0077b6;
-}
-
-.reservation-form .reservation-container .reservation-box .input{
-    font-size: 20px;
-   
-    padding: 10px;
-    margin: 5px;
-    border-bottom: .2rem solid rgba(0, 0, 0, 0.1);
-    color: #333;
-}
-
-.button-files{
-    width: min-content;
-    margin-left: 650px;
-} */
-
-/* end */
-
-
-
 
 .home-image{
     width: 100%;
@@ -459,9 +256,7 @@ label[for="due"]::after {
 }
 
 
-.mapsize{
- 
-}
+
 .home-map{
     background:whitesmoke;
 }

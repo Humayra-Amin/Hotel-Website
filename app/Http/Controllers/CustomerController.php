@@ -36,9 +36,6 @@ class CustomerController extends Controller
 
         $customers = Customer::all();
         return view("admin.customerlist")->with('customers',  $customers);
-        // $customers=Customer::where("id")->firstOrfail();
-        // return view("admin.customerlist")->with('customers',  $customers);
-
     }
 
 
@@ -47,7 +44,6 @@ class CustomerController extends Controller
     {
 
         return view("customer.Account");
-        // $user = auth()-
 
     }
     public function changepassword()
@@ -86,16 +82,6 @@ class CustomerController extends Controller
     }
 
 
-
-    // public function services()
-    // {
-
-    //     return view("customer.services");
-
-    // }
-
-
-
     public function contact()
     {
 
@@ -104,24 +90,12 @@ class CustomerController extends Controller
     }
 
 
-    
-
     public function Allrooms()
     {
 
         return view("customer.Allrooms");
         
     } 
-
-
-    // public function gallery()
-    // {
-
-    //     return view("customer.gallery");
-        
-    // } 
-
-
 
     public function postLogin(Request $request)
     {
@@ -177,8 +151,6 @@ class CustomerController extends Controller
     }
     
 
-
-  
     public function logout(Request $request) {
 
             Auth::guard("customers")->logout();
