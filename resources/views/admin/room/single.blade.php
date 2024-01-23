@@ -72,7 +72,6 @@
                 <div class=container>
                 <div class= "row">
                     <div class="col-md-6 mt-5">
-                    {{-- <div id="roomImageSlider"> --}}
                     <div class="slider">
                         <!-- room images here -->
                                     

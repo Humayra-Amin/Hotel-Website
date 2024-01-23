@@ -117,7 +117,6 @@
 
                     @if ($booking->due > 0)
 
-                    {{-- Paid: {{$booking->price - $booking->due}} --}}
                     <h2 class="singleview">Paid: </h2>
     
                     <p class="single-p">{{$booking->price - $booking->due}}</p>
@@ -135,8 +134,6 @@
                     @endif
 
                 </div>
-
-
 
 
                     <div class="col-6">
@@ -164,50 +161,6 @@
 
                 </div>
 
-
-                {{-- <h2 class="single-h2">Payment History</h2>
-
-                @if ($income->reservation_id->count() > 0)
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Created Date</th>
-                                <th>Paid</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($income->reservation_id as $paid)
-                                <tr>
-                                    <td>{{$paid->created_at->format('Y-m-d')}}</td>
-                                    <td>{{$income->paid}}</td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                @else
-                    <p> No payment history available</p>
-                @endif --}}
-
-
-
-
-{{-- <h3>Booking History for {{$booking->room->roomtitle}}-{{$booking->room->roomno}}</h3>
-
-@if ($booking->income->count() > 0)
-    <ul>
-        @foreach ($booking->income as $income)
-            <li>
-                
-                Date: {{ $income->date }}
-                Payment: {{ $income->paid }}
-            </li>
-        @endforeach
-    </ul>
-@else
-    <p>No income history available for this booking.</p>
-@endif --}}
-
-                
                     </div>
 
 

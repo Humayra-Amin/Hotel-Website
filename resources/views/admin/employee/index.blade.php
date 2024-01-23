@@ -132,7 +132,6 @@
                         
 
                         <div class="form-check-left">
-                            <!-- <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"> -->
                             <label class="form-check-label" for="flexCheckIndeterminate"></label>
                         </div>
 
@@ -140,7 +139,6 @@
 
 
 
-                        {{-- <th scope="col"> Id </th> --}}
                 <th scope="col">Employee Name</th>
                 <th scope="col">Joining</th>
                 <th scope="col">Position</th>
@@ -167,7 +165,6 @@
 
 
 
-                         {{-- <td>{{$employee->eid}}</td> --}}
                     <td>{{$employee->ename}}</td>
                     <td>{{$employee->joiningdate}}</td>
                     <td>{{$employee->position}}</td>
@@ -195,22 +192,6 @@
 
                           </tr>
 
-
-                            <!-- <tr>
-                            <td>00012</td>
-                    <td>fardin</td>
-                    <td>farabi</td>
-                    <td>02 january 23</td>
-                    <td>manager</td>
-                    <td>farabi@gmail.com</td>
-                    <td>>018394363</td> 
-                    <td class="text-right">
-                                <span> <button type="button" title="view" class="btn btn-outline-primary btn-eye"><i class="fa-solid fa-eye"></i></button></span>
-                                <span> <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></i></button></span>
-                                <span> <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i></span>
-                                </td>
-                                 </tr>
-                             -->
 
                         @endforeach
 

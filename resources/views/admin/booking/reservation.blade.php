@@ -240,13 +240,6 @@
           </div>
 
 
-          {{-- <div class="col-sm-6 form-group">
-            <label for="due" class="reserve-label">Due</label>
-            <input type="number" name="due" class="form-control" id="due" placeholder="due">
-          </div> --}}
-
-
-
           <div class="col-sm-12 form-group">
             <label for="specialrequest" class="reserve-label">Special Request, Ex. extra bed, comforter.....</label>
             <textarea name="specialrequest" class="form-control" id="specialrequest" rows="3"></textarea>

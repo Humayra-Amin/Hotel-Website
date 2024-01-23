@@ -14,7 +14,6 @@
 
         <div class="carousel-caption d-none d-md-block">
           <h1 class="slider-title">The Hotel Paradise</h1>
-          {{-- <h2>Experience luxury and comfort</h2> --}}
         </div>
 
 
@@ -24,7 +23,6 @@
 
 
                                                  <!-- Our room -->
-
 
   <div class="section-site">
 
@@ -60,10 +58,12 @@
 
            <div class="hotel-room-body">
 
-
-            <a href="/singleroom/  {{$room->id}}">
-            <h5 class="card-title">{{$room->roomtitle}}</h5>
-            <p class="card-text">{{$room->price}}</p>
+            
+          
+            <a href="{{ route('singleRoom', ['id' => $room->id, 'cat_id' => $room->category_id])
+               }}">
+              <h5 class="card-title">{{$room->roomtitle}}</h5>
+              <p class="card-text">{{$room->price}}</p>
             </a>
 
 
@@ -83,8 +83,6 @@
 
 
 </div>
-
-
 
 
                                                <!--ABOUT US-->
@@ -116,8 +114,7 @@
 
 
 
-   
-<!-- Map Section -->
+                                             <!-- Map Section -->
  <div class="home-map">
 
 
@@ -138,12 +135,7 @@
 
 </div>
 
-
 </div>
-
-
-
-  
 
 @endsection
 

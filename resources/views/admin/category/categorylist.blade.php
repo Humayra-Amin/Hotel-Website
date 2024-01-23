@@ -117,63 +117,9 @@
                             </div>
                           </td>
                            @endforeach
-                              {{-- <tr>
-                                <td>2</td>
-                                <td>DULUXE DOUBLE SUITS</td>
-                                <td class="text-center">
-                                 <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></button></i>
-                                 <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
-                                 </td>
-                              </tr>
-                              <tr>
-                                <td>3</td>
-                                <td>EXECUTIVE TWIN SUITS</td>
-                                <td class="text-center">
-                                 <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></button></i>
-                                 <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
-                                 </td>
-                              </tr>
-                              <tr>
-                                <td>4</td>
-                                <td>SINGLE SUITS</td>
-                                <td class="text-center">
-                                 <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></button></i>
-                                 <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
-                                 </td>
-                              </tr>
-                              <tr>
-                                <td>5</td>
-                                <td>PERMIUM SUITS</td>
-                                <td class="text-center">
-                                 <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></button></i>
-                                 <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
-                                 </td>
-                              </tr>
-                              <tr>
-                                <td>6</td>
-                                <td>QUEEN SUITS</td>
-                                <td class="text-center">
-                                 <button type="button" title="edit" class="btn btn-outline-dark btn-pencil"><i class="fa-solid fa-pencil"></button></i>
-                                 <button type="button" title="delete" class="btn btn-outline-danger btn-trash"><i class="fa-solid fa-trash"></button></i>
-                                 </td>
-                              </tr> --}}
+                             
                             </tbody>
                         </table>
-
-
-
-             
-                  {{-- <div>
-                    <ul class="pagination rounded-circle justify-content-center mt-2 mb-4">
-                      <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">4</a></li>
-          
-                      <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                    </ul>
-                </div> --}}
 
             </div>
         </div>

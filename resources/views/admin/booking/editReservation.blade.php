@@ -133,12 +133,6 @@
           @foreach ($rooms as $room)
             <option value="{{ $rooms }}">{{ $rooms }}>({{$id->roomtitle}} - {{$id->roomno}})</option>
         @endforeach
-
-        
-            {{-- <option @if($booking->room_id == 'Single Room') selected @endif>Single Room</option>
-            <option @if($booking->room_id == 'Double Room') selected @endif>Double Room</option>
-            <option @if($booking->room_id == 'Couple Room') selected @endif>Couple Room</option>
-            <option @if($booking->room_id == 'VIP Room') selected @endif>VIP Room</option> --}}
         </select>
       </div>
 

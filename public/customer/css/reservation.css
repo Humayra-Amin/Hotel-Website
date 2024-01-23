@@ -7,7 +7,6 @@
     padding: 20px;
     background-color: rgb(236, 237, 240);
     border-radius: 5px;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   }
   .button-file{
     width: min-content;

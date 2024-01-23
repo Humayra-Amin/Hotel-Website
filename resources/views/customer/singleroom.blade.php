@@ -8,12 +8,19 @@
   <div class="room-details">
 
 
+
     <!-- Room Details Section -->
     <section class="my-5">
+      @if (session('msg'))  
+          <div class="alert alert-{{session('status')}} alert-dismissible fade show" role="alert">
+            {{session('msg')}}.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        @endif
       <div class="row">
         <div class="col-md-6 room-slider">
 
-
+           
 
           <!-- Slider Carousel -->
           <div id="roomSlider" class="carousel slide" data-ride="carousel">
@@ -90,11 +97,16 @@
 
 
 
+             
+              @include('admin.inc.message')
 
-@include('admin.inc.message')
+              @if($cat_id->count() == 0)
+                        <h4 class="text-danger">Room Not Availabile</h4>
+              @else 
+                  <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#reservationModal">Book Now</button>
+              @endif
 
-
-            <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#reservationModal">Book Now</button>
+           
 
 
           </div>
@@ -115,81 +127,86 @@
 
 
 <div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    
-
   <div class="modal-dialog" role="document">
-
-
         <div class="modal-content">
-
-
             <div class="modal-body">
 
-
-
-              <form action="{{ url('admin/booking') }}" method="POST" enctype="multipart/form-data">
+              <form action="{{ route('customer.book') }}" method="POST" enctype="multipart/form-data">
                 @csrf
-
-
+                <div class="my-3 box-shadow">
+                  @if($room->discount > 0 )
+                      @php $offer_price =  ($room->price - $room->discount) @endphp
+                      <h4 class="text-center text-success">Offer Price 
+                        <del class="text-danger"> <span id="regularprice">{{$room->price}}</span> </del>  <span id="offerprice">{{$offer_price}}</span>
+                      </h4>
+                  @endif
+                </div>
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" placeholder="Enter your name" name="cname" class="form-control" id="name" required>
                 </div>
-
-
-
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                        <input type="email"  placeholder="Enter your email" name="email" class="form-control" id="email" required>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="">Phone</label>
+                        <input type="tel"  placeholder="Enter your Phone" name="tel" class="form-control" id="email" required>
+                    </div>
+                  </div>
+                </div>    
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email"  placeholder="Enter your email" name="email" class="form-control" id="email" required>
-                </div>
-
-
-
-                <div class="form-group">
-                  <label for="roomcategory" class="reserve-label">Room Category </label>
-                  <select class="form-control" name="room_id" id="roomcategory" required>
-                      <option >Select Room Category</option>
-                      @foreach ($room as $rooms)
-                      <option value="{{ $room->id }}" data-price="{{$room->price}}">{{$room->roomtitle}} - {{$room->roomno}}</option>
-                      @endforeach
-                        
-                    </select>
-                </div>
-                {{-- <div class="form-group">
-                  <label for="roomcategory" class="reserve-label">Room Category </label>
-                  <select class="form-control" name="room_id" id="roomcategory" placeholder="Room Category" required>
-                    <option >Select Room Category</option>
-                    @foreach ($rooms as $room)
-                    <option value="{{ $room->id }}" data-price="{{$room->price}}">{{$room->roomtitle}} - {{$room->roomno}}</option>
-                    @endforeach
-                      
+                  <label for="">Available Rooms</label>
+                  <select name="room_id" id="room_cat" class="form-select">
+                    @foreach ($cat_id as $cat)
+                    <option value="{{ $room->id }}" data-price="{{$cat->price}}" data-discount="{{$cat->discount}}">{{$room->roomtitle}} - {{ $cat->roomno }} </option>
+                    @endforeach  
                   </select>
-                </div> --}}
-
-
-                <div class="form-group">
-                    <label for="checkInDate">Check-in Date</label>
-                    <input type="date" class="form-control" name="checkInDate" id="checkInDate" required>
                 </div>
-
-
-
-                <div class="form-group">
-                    <label for="checkOutDate">Check-out Date</label>
-                    <input type="date" class="form-control" name="checkOutDate" id="checkOutDate" required>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group">
+                        <label for="checkInDate">Check-in Date</label>
+                        <input type="text" class="form-control" name="checkInDate" id="checkInDate" required>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                        <label for="checkOutDate">Check-out Date</label>
+                        <input type="text" class="form-control" name="checkOutDate" id="checkOutDate" required>
+                    </div>
+                  </div>
                 </div>
-
-
-              
+                <div class="row mb-3">
+                  <div class="col-6">
+                    <label for="">Guest Number</label>
+                    <input type="text" name="guestnumber" class="form-control">
+                  </div>
+                  <div class="col-6">                     
+                      <label for="">Price</label>
+                      <input type="text" name="show_price" class="form-control" id="show_price_info" value="{{ $room->price}}" readonly>                   
+                      <input type="hidden" name="price" class="form-control" id="price_value" value="{{ $room->price}}" >                   
+                      <input type="hidden" name="discount"  id="discount_input" value="{{ $room->discount}}" >                   
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="">Paid Amount</label>
+                  <input type="text" name="paid" class="form-control" id="paid_input" value="0">
+              </div>
+                <div class="text-end">                  
+                  <button type="submit" class="btn btn-primary px-5">Book Now</button>
+                </div>
+              </form>              
             </div>
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-secondary" id="closeButton">Close</button>
-                <button type="submit" class="btn btn-primary" id="reserveButton">Reserve</button>
-            </div>
+            
 
 
 
-          </form>
+       
           
 
 
@@ -204,5 +221,54 @@
 
 @endsection
 
+@section('myscript')
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script>
 
+  $(function(){
+
+    // On Change Value
+    $(document).on('change', '#room_cat', function(){
+      let price       =  $(this).children('option:selected').data('price'); 
+      let discount    =  $(this).children('option:selected').data('discount'); 
+      let offer_price = (price - discount);
+      $('#price_value').val(price);
+      $('#show_price_info').val(price);
+      $('#discount_input').val(discount);
+
+      $('#regularprice').text(price)
+      $('#offerprice').text(offer_price)
+    });
+
+
+    $('#checkOutDate').datepicker();
+    $("#checkInDate").datepicker().on('change', function(){
+      $('#checkOutDate').val('');
+      $('#show_price_info').val(0);
+    });
+    
+    $(document).on('change', '#checkOutDate', function(){
+      let date1 = $("#checkInDate").val();
+      let date2 = $("#checkOutDate").val();    
+      date1 = new Date(date1);
+      date2 = new Date(date2);
+      let milli_secs = date1.getTime() - date2.getTime();
+      let days = milli_secs / (1000 * 3600 * 24);
+      let stay_days = Math.round(Math.abs(days));
+
+      let price     = $('#price_value').val();
+      let discount  = $('#discount_input').val();
+      price = (price - discount) * stay_days;
+      $('#show_price_info').val(price);
+
+    });
+    
+  });
+
+
+ 
+</script>
+
+@endsection
 

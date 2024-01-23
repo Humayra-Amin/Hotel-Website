@@ -44,46 +44,6 @@
 
         </div>
 
-
-        {{-- <div class="col contact-detail">
-
-
-            <h2 class="contact-heading">GET IN TOUCH</h2>
-
-            <h3 class="contact-title">Contact Us</h3>
-
-            <div class="iconflex mb-3">
-
-            <i class="fa-solid fa-envelope contact-icon"></i>
-
-             <p class="icon-title"> hotelpradise@email.com</p>
-
-            </div>
-
-
-
-            <div class="iconflex mb-3">
-
-            <i class="fa-solid fa-phone contact-icon"></i> 
-
-            <p class="icon-title">+123456789</p>
-
-        </div>
-
-
-
-        <div class="iconflex mb-3">
-
-            <i class="fa-solid fa-location-dot contact-icon"></i>
-
-            <p class="icon-title">123 Main St, Cityville</p>
-
-        </div>
-
-
-
-            </div> --}}
-
         </div>
 
     </div>

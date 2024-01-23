@@ -127,7 +127,6 @@
                                 <td>{{$room->roomno}}</td>  
                                 <td>{{$room->roomtitle}}</td>  
                                 <td>{{$room->floorno}}</td>
-                                {{-- <td>{{$room->category_id}}</td>     --}}
                                 <td>{{$room->price}}</td> 
                                 
                                 @if ($room->status)

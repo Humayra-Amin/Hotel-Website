@@ -116,9 +116,6 @@
                               <label for="Category">Category</label>
                               <select name="category_id" class="form-control custom-select browser-default">
                                 <option>Select your Room Category</option>
-                                {{-- @foreach ($categories as $category)
-                                <option value="{{$category->id}}"> {{$category->categoryname}} </option>
-                                @endforeach --}}
 
 
                                 <option @if($room->category_id=="Single Room") selected @endif>Single Room</option>

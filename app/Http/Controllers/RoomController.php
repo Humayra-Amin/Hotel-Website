@@ -10,19 +10,17 @@ use Illuminate\Support\Facades\Storage;
 
 class RoomController extends Controller
 {
-    //
 
 
     public function index()
     {
 
         
-        $categories = Room::select("category_id")->groupBy("category_id")->get();
+        // $categories = Room::select("category_id")->groupBy("category_id")->get();
+        $categories = Room::get();
         return view("admin.category.viewcategory")->with('categories',  $categories);
 
     }
-
-
 
 
     public function roomcategory(Request $request)
@@ -34,8 +32,6 @@ class RoomController extends Controller
     }
 
 
-
-
     public function add()
     {   
 
@@ -43,8 +39,6 @@ class RoomController extends Controller
         return view("admin.room.add")->with('categories',  $categories);
 
     }
-
-
 
 
     public function single()
@@ -55,14 +49,12 @@ class RoomController extends Controller
     }
 
 
-
-
     public function store(Request $request)
     {
 
 
         $request->validate([
-            'roomtitle' => 'required|max:20',
+            'roomtitle' => 'required|max:50',
             'roomno' => 'required|integer|unique:rooms',
             'floorno' => 'required',
             'price' => 'required',
@@ -102,9 +94,6 @@ class RoomController extends Controller
         
         $room->image= Storage::disk("public")->files($room->id);
         $room->update();
-
-
-
         return redirect("admin/room")->with("success", "Room created.");
 
     }
@@ -143,29 +132,18 @@ class RoomController extends Controller
         $room->update();
 
        
-
        if($request->file('image')){
         foreach($request->file('image') as $img){
             Storage::disk("public")->put("$room->id", $img);
-
         }
 
     }
 
-
         $room->image= Storage::disk("public")->files($room->id);
         $room->update();
-
-
-
         return redirect("admin/room")->with("success", "Room updated.");
 
-
-
     }
-
-
-
 
     public function show($id)
     { 
@@ -175,9 +153,6 @@ class RoomController extends Controller
 
     }
 
-
-
-
     public function edit($id)
     { 
 
@@ -185,14 +160,9 @@ class RoomController extends Controller
        $categories = Category::all();
        return view("admin.room.edit")->with('room',  $room)->with('categories', $categories);
 
-    //    $categories = Category::all();
-    //    return view("admin.room.edit")->with('categories',  $categories);
-
     }
 
 
-
-    
     public function delete(Request $request)
     { 
 
@@ -200,7 +170,28 @@ class RoomController extends Controller
        return redirect()->back()->with('success','Record Successfully Deleted');
 
     }
+
     
+    // discount 
+    public function showDiscountValue()
+    {   
+
+        $rooms = Room::all()->unique('category_id')->take(6); 
+        return view("admin.room.discount")->with('rooms',  $rooms);
+
+    }
+
+    public function updateDiscountValue(Request $request)
+    {   
+        
+        $rooms = Room::where('category_id', $request->category_id)
+              ->update(['discount' =>  $request->discount]);
+        if($rooms)
+            return redirect()->back()->with('msg', "Discount Updated.")->with('status', 'success');
+        else
+            return redirect()->back()->with('msg', "Something Error! Try again latter.")->with('status', 'danger');
+
+    }
 
 
 }
