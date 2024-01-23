@@ -57,9 +57,13 @@ Route::middleware(["auth:emps"])->group(function () {
     Route::get('/admin/room/single', [RoomController::class, "single"]);
     Route::get('/admin/room/roomcategory/{id}', [RoomController::class, "roomcategory"]);
 
+    Route::get('/admin/discount', [RoomController::class, "showDiscountValue"]);
+    Route::post('/admin/udatediscount', [RoomController::class, "updateDiscountValue"])->name('room.discount');
 
 
-                                //admin.employee route
+
+
+                                //Admin.employee route
 
 
     Route::get('/admin/employee/', [EmployeeController::class, "index"]);
@@ -108,9 +112,11 @@ Route::middleware(["auth:emps"])->group(function () {
     Route::get('/Allrooms', [CustomerController::class, "Allrooms"]);
     Route::get('/gallery', [CustomerController::class, "gallery"]);
     Route::get('/', [HomeController::class, "home"]);
-    Route::get('/singleroom/{id}', [HomeController::class, "singleroom"]);
+    Route::get('/singleroom/{id}/{cat_id}', [HomeController::class, "singleroom"])->name('singleRoom'); 
     Route::get('/aboutus', [HomeController::class, "aboutus"]);
     Route::put('/roombook', [HomeController::class, "roombook"]);
+
+    Route::post('/customerbook', [HomeController::class, "BookNow"])->name('customer.book');
 
 
 

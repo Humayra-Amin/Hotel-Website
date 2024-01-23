@@ -41,6 +41,7 @@
                 <h6 class="collapse-header">Custom Components:</h6>
                 <a class="collapse-item" href="/admin/room">View Room</a>
                 <a class="collapse-item" href="/admin/room/add">Add Room</a>
+                <a class="collapse-item" href="/admin/discount">Discount Manage</a>
             </div>
         </div>
     </li>

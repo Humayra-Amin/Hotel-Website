@@ -34,6 +34,7 @@ return new class extends Migration
             $table->text('guestservice')->nullable();
             $table->text('image')->nullable();
             $table->string('status')->nullable();
+            $table->float('discount')->nullable();
 
 
             $table->timestamps();

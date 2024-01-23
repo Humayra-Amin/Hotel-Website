@@ -23,6 +23,7 @@ class Room extends Model
         'guestservice',
         'image',
         'status',
+        'discount',
        
     ];
 

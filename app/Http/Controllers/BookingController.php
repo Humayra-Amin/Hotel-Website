@@ -75,7 +75,7 @@ class BookingController extends Controller
     
     $booking->price = $price-$request->discount;
     $booking->due =  (float)$booking->price - (float)$booking->paid;
-
+    $booking->status = 'checkin';
 
     
     $booking->save();
@@ -109,6 +109,7 @@ class BookingController extends Controller
 
     public function update(Request $request,$id)
     {
+        
 
         $request->validate([
             'cname' => 'required|max:50',
@@ -158,7 +159,7 @@ class BookingController extends Controller
         $booking->discount = $request->discount;
         $booking->paid = $request->paid;
         $booking->due = (float)$booking->price - (float)$booking->discount - (float)$booking->paid;
-
+        
 
         $booking->update();
 
@@ -215,9 +216,17 @@ class BookingController extends Controller
 
     $emailOrContact = $request->emailorcontact;
 
-    $booking = Booking::with("room", "income")->where('email', $emailOrContact)
-        ->orWhere('tel', $emailOrContact)
-        ->first();
+        // return $booking = Booking::with("room", "income")->where('email', $emailOrContact)
+        //     ->orWhere('tel', $emailOrContact)
+        //     ->latest()
+        //     ->first();
+
+         $booking = Booking::join('rooms', 'bookings.room_id', '=', 'rooms.id')
+                        ->select('rooms.*', 'bookings.*')
+                        ->with("income")
+                        ->where([['.email', $emailOrContact], ['bookings.status', 'checkin']])
+                        ->orWhere([['tel', $emailOrContact], ['bookings.status', 'checkin']])
+                        ->latest('bookings.created_at')->first();
 
         if($booking){
             if($booking->room->status != "Booked"){
@@ -268,10 +277,13 @@ class BookingController extends Controller
         $room->status = null;
         $room->save();
 
+        $booking->status = 'checkOut';
+        $booking->update();
 
 
         if(Carbon::parse($booking->checkOutDate)->startOfDay() != Carbon::parse(now())->startOfDay()){
             $booking->checkOutDate = now();
+            $booking->status = 'checkOut';
             $booking->update();
         }
 
@@ -282,6 +294,7 @@ class BookingController extends Controller
             $oldPaid = $booking->paid;
             $booking->paid = $oldPaid + $request->paid;
             $booking->due = $booking->price - ($oldPaid+$request->paid);
+            $booking->status = 'checkOut';
             $booking->update();
 
     
@@ -294,5 +307,9 @@ class BookingController extends Controller
             return redirect()->back()->with('success', 'Checked Out successfully!!!!');
         }
     }
+
+
+    // Discount Module
+
 
 }

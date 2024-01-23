@@ -58,10 +58,12 @@
 
            <div class="hotel-room-body">
 
-
-            <a href="/singleroom/  {{$room->id}}">
-            <h5 class="card-title">{{$room->roomtitle}}</h5>
-            <p class="card-text">{{$room->price}}</p>
+            
+          
+            <a href="{{ route('singleRoom', ['id' => $room->id, 'cat_id' => $room->category_id])
+               }}">
+              <h5 class="card-title">{{$room->roomtitle}}</h5>
+              <p class="card-text">{{$room->price}}</p>
             </a>
 
 

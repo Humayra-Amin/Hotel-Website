@@ -1,12 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\Customer;
 use App\Models\Room;
 use App\Models\RoomBook;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use App\Models\Booking;
+use App\Models\Income;
+use Carbon\Carbon;
 
 class HomeController extends Controller
 {
@@ -16,18 +19,21 @@ class HomeController extends Controller
     public function home()
     {   
 
-        $rooms=Room::all()->take(6);
+        $rooms=Room::all()->unique('category_id')->take(6);
+
         return view("customer.home")->with('rooms',  $rooms);
 
     }
 
 
 
-    public function singleroom($id)
+    public function singleroom($id, $cat_id)
     { 
-
+     
        $room=Room::where("id",$id)->firstOrfail();
-       return view("customer.singleroom")->with('room',  $room);
+       $cat_id  = Room::select('roomno', 'price', 'discount')->where([['category_id', $cat_id], ['status', null]])->get();
+
+       return view("customer.singleroom", compact('room', 'cat_id'));
 
     }
 
@@ -99,5 +105,72 @@ class HomeController extends Controller
 
     }
 
+
+
+
+    public function BookNow(Request $request){
+                    
+      
+            $request->validate([
+                'cname' => 'required|max:50',
+                'email' => 'required|email',
+                'tel' => 'required', 
+                'room_id' => 'required',
+                'guestnumber' => 'nullable',
+                'checkInDate' => 'required|date',
+                'checkOutDate' => 'required|date', 
+            ]);
+
+
+
+        $room = Room::where("id", $request->room_id)->first();
+        if(!$room){
+            return redirect()->back();
+        }
+
+
+        $booking = new Booking();
+        $booking->cname = $request->cname;
+        $booking->email = $request->email;
+        $booking->tel = $request->tel; 
+        $booking->nid = "n/a";
+        $booking->room_id = $request->room_id;
+        $booking->guestnumber = $request->guestnumber;
+        $booking->checkInDate = Carbon::parse($request->checkInDate);
+        $booking->checkOutDate = Carbon::parse($request->checkOutDate);
+        
+        $checkInDate = Carbon::parse($request->checkInDate);
+        $checkOutDate = Carbon::parse($request->checkOutDate);
+        $numberOfDays = $checkInDate->diffInDays($checkOutDate);
+
+
+        $price      = (float)$numberOfDays * (float)$room->price;
+        $discount   = (float)$numberOfDays * (float)$room->discount;
+
+        $booking->price     = $price;
+        $booking->discount  = $discount; 
+
+        $booking->paid = ($request->paid) ? $request->paid : 0 ;
+        $booking->due = $price - (float)$booking->discount - (float)$booking->paid;
+        $booking->status = 'checkin';
+        
+        $booking->save();
+
+
+        $income= new Income();
+        $income->reservation_id = $booking->id;
+        $income->paid = $request->paid;
+        $income->save();
+
+
+        $room = Room::where('id', $request->room_id)->first();
+        $room->status = 'Booked';
+        $room->update();
+
+        if($room->update())
+            return redirect()->back()->with('msg', "Room Boking Successfully.")->with('status', 'success');
+        else
+            return redirect()->back()->with('msg', "Something Error! Try again latter.")->with('status', 'danger');
+    }  
     
 }

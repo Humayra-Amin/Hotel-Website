@@ -115,5 +115,6 @@
     </div>
 
 
+    @yield('myscript')
   </body>
 </html>

@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="{{asset('customer/css/footer.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/singleroom.css')}}">
   <link rel="stylesheet" href="{{asset('customer/css/rooms.css')}}">
-
+  <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"  rel="stylesheet">
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -26,11 +26,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="lightbox-plus-jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
   
-
-
+   
 
 </head>
 <body class="title-nav">
@@ -58,8 +56,14 @@
        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-       <!-- Add custom JS -->
+       <!-- Add custom JS --> 
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
        <script src="{{asset('rooms/js/home.js')}}"></script>
        <script src="script.js"></script>
+
+
+       
+@yield('myscript')
+
     </body>
     </html>

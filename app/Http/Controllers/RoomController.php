@@ -16,7 +16,8 @@ class RoomController extends Controller
     {
 
         
-        $categories = Room::select("category_id")->groupBy("category_id")->get();
+        // $categories = Room::select("category_id")->groupBy("category_id")->get();
+        $categories = Room::get();
         return view("admin.category.viewcategory")->with('categories',  $categories);
 
     }
@@ -53,7 +54,7 @@ class RoomController extends Controller
 
 
         $request->validate([
-            'roomtitle' => 'required|max:20',
+            'roomtitle' => 'required|max:50',
             'roomno' => 'required|integer|unique:rooms',
             'floorno' => 'required',
             'price' => 'required',
@@ -169,7 +170,28 @@ class RoomController extends Controller
        return redirect()->back()->with('success','Record Successfully Deleted');
 
     }
+
     
+    // discount 
+    public function showDiscountValue()
+    {   
+
+        $rooms = Room::all()->unique('category_id')->take(6); 
+        return view("admin.room.discount")->with('rooms',  $rooms);
+
+    }
+
+    public function updateDiscountValue(Request $request)
+    {   
+        
+        $rooms = Room::where('category_id', $request->category_id)
+              ->update(['discount' =>  $request->discount]);
+        if($rooms)
+            return redirect()->back()->with('msg', "Discount Updated.")->with('status', 'success');
+        else
+            return redirect()->back()->with('msg', "Something Error! Try again latter.")->with('status', 'danger');
+
+    }
 
 
 }
