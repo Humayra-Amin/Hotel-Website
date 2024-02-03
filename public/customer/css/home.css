@@ -10,9 +10,9 @@
 
 
 /* navbar */
-.navbar-light.sticky-header{
+/* .navbar-light.sticky-header{
     background-color:#a6c7ea;
-}
+} */
 .navbar-light .navbar-nav .nav-link{
   color: rgb(15, 0, 0);
   font-size: 19px;
@@ -47,8 +47,8 @@
     font-weight: 600;
 }
 
-.custom-logo img {
-    width: 170px;
+.custom-logo {
+    width: 140px;
     height: auto;
     margin-top: -10px;
     margin-left: 500px;
@@ -287,4 +287,130 @@ padding-bottom: 30px;
 
 
 
+/* Media query for screens up to 767px width */
+@media only screen and (max-width: 767px) {
 
+    .navbar-light .navbar-nav .nav-link {
+        padding-right: 10px; 
+        font-size: 16px; 
+    }
+
+    .navbar-light .navbar-brand {
+        font-size: 24px;
+        padding-right: 10px;
+    }
+
+    .custom-logo img {
+        margin-left: 20px; 
+    }
+
+    /* .carousel-caption {
+        padding-bottom: 120px; 
+        font-size: 24px; 
+    }
+
+    .slider-title {
+        font-size: 40px;
+    }
+
+    .slider-img {
+        height: 400px; 
+    } */
+
+    .room-section-heading {
+        font-size: 24px;
+    }
+
+    .section-site {
+        padding: 20px; 
+    }
+
+    .hotel-room .hotel-room-body {
+        padding: 20px; 
+    }
+
+
+    .footer-col {
+        width: 100%;
+        padding: 0; 
+    }
+
+    .footer-col h4::before {
+        width: 80px; 
+    }
+
+    /* Add media query for smaller screens */
+@media only screen and (max-width: 767px) {
+    .home-map {
+     
+        width: 100%;
+    }
+
+    .homemap-title {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+}
+}
+
+
+/* Media query for medium-sized screens (768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 16px;
+        padding-right: 10px; 
+    }
+
+    .navbar-light .navbar-brand {
+        font-size: 24px; 
+        padding-right: 10px; 
+    }
+
+    .custom-logo img {
+        margin-left: 300px; 
+    }
+
+    .carousel-caption {
+        padding-bottom: 120px; 
+        font-size: 24px; 
+    }
+
+    .slider-title {
+        font-size: 40px; 
+    }
+
+    .slider-img {
+        height: 400px; 
+    }
+
+    .room-section-heading {
+        font-size: 24px; 
+    }
+
+    .section-site {
+        padding: 40px; 
+    }
+
+    .hotel-room .hotel-room-body {
+        padding: 20px; 
+    }
+
+
+    .footer-col {
+        width: 100%; 
+        padding: 0 10px; 
+    }
+
+    .footer-col h4::before {
+        width: 30px; 
+    }
+
+    .home-map{
+        width: 100%;
+    }
+    .homemap-title {
+        font-size: 28px; 
+        padding-top: 20px; 
+        padding-bottom: 20px; 
+    }
+}

@@ -31,7 +31,7 @@ class HomeController extends Controller
     { 
      
        $room=Room::where("id",$id)->firstOrfail();
-       $cat_id  = Room::select('roomno', 'price', 'discount')->where([['category_id', $cat_id], ['status', null]])->get();
+       $cat_id  = Room::select('roomno', 'price', 'discount', 'id')->where([['category_id', $cat_id]])->get();
 
        return view("customer.singleroom", compact('room', 'cat_id'));
 
@@ -172,5 +172,30 @@ class HomeController extends Controller
         else
             return redirect()->back()->with('msg', "Something Error! Try again latter.")->with('status', 'danger');
     }  
+
+
+    public function checkAvailability(Request $request)
+    {
+    
+        $checkInDate =  Carbon::parse($request->input('checkInDate'));
+        $checkOutDate =  Carbon::parse($request->input('checkOutDate'));
+        $room_id =  $request->input('room_id'); 
+        // Check the date is alreay or not
+        $booking = Booking::where('room_id', $room_id)
+                            ->where(function ($query) use ($checkInDate, $checkOutDate) {
+                                $query->where('checkInDate', '<', $checkOutDate)
+                                    ->where('checkOutDate', '>', $checkInDate);
+                            })
+                            ->first();
+
+        if ($booking) {
+            return response()->json(false, 409);
+        } else {
+            return response()->json(true, 200);
+        }
+    }
+
+    
     
 }
+

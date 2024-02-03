@@ -40,12 +40,12 @@
   @foreach ($rooms as $room)
 
 
-    <div class="col-md-6 col-lg-4 mb-5">
+    <div class="col-md-3  mb-5">
     <div class="hotel-room">
 
 
       @if ($room->image)
-              @foreach ($room->image as $img)
+              
 
 
               <div>
@@ -53,7 +53,7 @@
               </div>
 
 
-              @endforeach
+             
               @endif
 
            <div class="hotel-room-body">
@@ -105,7 +105,7 @@
               </div>
           </div>
                                             
-             <a href="about.html" class="btn btn-arrow btn-pill btn-medium btn-outline-dark bg-light text-black position-relative">
+             <a href="isan" class="btn btn-arrow btn-pill btn-medium btn-outline-dark bg-light text-black position-relative">
             <span class="abt">About Us</span>
     </a>
              </div>

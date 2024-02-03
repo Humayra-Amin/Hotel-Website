@@ -4,9 +4,7 @@
 
     <div class="container">
 
-      <div class="custom-logo">
-        <img src=image/Paradise1.png alt="Paradise" class="custom-logo">
-      </div>
+     
 
     {{-- <a class="navbar-brand fw-bold" href="#">Paradise</a> --}}
 

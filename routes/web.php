@@ -117,7 +117,7 @@ Route::middleware(["auth:emps"])->group(function () {
     Route::put('/roombook', [HomeController::class, "roombook"]);
 
     Route::post('/customerbook', [HomeController::class, "BookNow"])->name('customer.book');
-
+    Route::post('/check-availability', [HomeController::class, 'checkAvailability']);
 
 
                                    //accounts route

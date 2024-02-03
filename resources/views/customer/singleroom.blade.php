@@ -163,7 +163,7 @@
                   <label for="">Available Rooms</label>
                   <select name="room_id" id="room_cat" class="form-select">
                     @foreach ($cat_id as $cat)
-                    <option value="{{ $room->id }}" data-price="{{$cat->price}}" data-discount="{{$cat->discount}}">{{$room->roomtitle}} - {{ $cat->roomno }} </option>
+                    <option value="{{ $cat->id }}" data-price="{{$cat->price}}" data-discount="{{$cat->discount}}">{{$room->roomtitle}} - {{ $cat->roomno }} </option>
                     @endforeach  
                   </select>
                 </div>
@@ -179,7 +179,7 @@
                         <label for="checkOutDate">Check-out Date</label>
                         <input type="text" class="form-control" name="checkOutDate" id="checkOutDate" required>
                     </div>
-                  </div>
+                  </div> 
                 </div>
                 <div class="row mb-3">
                   <div class="col-6">
@@ -196,9 +196,12 @@
                 <div class="form-group">
                   <label for="">Paid Amount</label>
                   <input type="text" name="paid" class="form-control" id="paid_input" value="0">
-              </div>
+                </div>
+                <div class="">
+                  <span id="available_status"></span>
+                </div>
                 <div class="text-end">                  
-                  <button type="submit" class="btn btn-primary px-5">Book Now</button>
+                  <button type="submit" id="submit_booking" class="btn btn-primary px-5 #">Book Now</button>
                 </div>
               </form>              
             </div>
@@ -222,8 +225,9 @@
 @endsection
 
 @section('myscript')
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"></script>
 <script>
 
   $(function(){
@@ -262,7 +266,24 @@
       price = (price - discount) * stay_days;
       $('#show_price_info').val(price);
 
+      let room_id   =  $("#room_cat").children('option:selected').val(); 
+      axios.post('/check-availability', {
+          checkInDate: date1, 
+          checkOutDate: date2, 
+          room_id: room_id,
+        })
+        .then(function (response) {
+           $("#available_status").html('<span class="text-success">Room is available for the specified date</span>' )
+           $('#submit_booking').show();
+        })
+        .catch(function (error) {
+          $("#available_status").html('<span class="text-danger">Room is not available.Choose Different Date</span>' )
+          $('#submit_booking').hide();
+        });
+
     });
+
+    
     
   });
 

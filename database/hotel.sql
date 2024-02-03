@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 14, 2024 at 08:53 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Generation Time: Jan 23, 2024 at 06:47 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `employee`
+-- Database: `hotel`
 --
 
 -- --------------------------------------------------------
@@ -52,7 +52,8 @@ CREATE TABLE `bookings` (
 --
 
 INSERT INTO `bookings` (`id`, `cname`, `email`, `tel`, `nid`, `room_id`, `guestnumber`, `checkInDate`, `checkOutDate`, `price`, `discount`, `paid`, `due`, `specialrequest`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'John Doe', 'johndoe@gmail.com', '01888888888', '2156358945698', '2', '2 person', '2024-01-11', '2024-01-15', 40000.00, NULL, 30000.00, 10000.00, NULL, NULL, '2024-01-11 02:16:23', '2024-01-11 02:16:23');
+(1, 'John Doe', 'johndoe@gmail.com', '01888888888', '2156358945698', '2', '2 person', '2024-01-11', '2024-01-15', 40000.00, NULL, 30000.00, 10000.00, NULL, NULL, '2024-01-11 02:16:23', '2024-01-11 02:16:23'),
+(2, 'Saif Morshed', 'saif@gmail.com', '01815113066', 'n/a', '3', '2', '2024-01-22', '2024-01-24', 10000.00, 0.00, 3000.00, 7000.00, NULL, 'checkin', '2024-01-21 13:11:30', '2024-01-21 13:11:30');
 
 -- --------------------------------------------------------
 
@@ -174,7 +175,8 @@ CREATE TABLE `incomes` (
 --
 
 INSERT INTO `incomes` (`id`, `reservation_id`, `paid`, `created_at`, `updated_at`) VALUES
-(1, '1', 30000.00, '2024-01-11 02:16:23', '2024-01-11 02:16:23');
+(1, '1', 30000.00, '2024-01-11 02:16:23', '2024-01-11 02:16:23'),
+(2, '2', 3000.00, '2024-01-21 13:11:30', '2024-01-21 13:11:30');
 
 -- --------------------------------------------------------
 
@@ -255,6 +257,7 @@ CREATE TABLE `rooms` (
   `facilities` text NOT NULL,
   `guestservice` text DEFAULT NULL,
   `image` text DEFAULT NULL,
+  `discount` int(11) NOT NULL DEFAULT 0,
   `status` varchar(255) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -264,11 +267,12 @@ CREATE TABLE `rooms` (
 -- Dumping data for table `rooms`
 --
 
-INSERT INTO `rooms` (`id`, `roomtitle`, `roomno`, `floorno`, `price`, `category_id`, `roomsize`, `roomview`, `maxoccupancy`, `facilities`, `guestservice`, `image`, `status`, `created_at`, `updated_at`) VALUES
-(2, 'Double Room', '201', '2nd Floor', 10000.00, 'Double Room', '250 per square', 'Sea View', '2 person', '[\"Free Wi-Fi\",\"Flat-screen TV\",\"Mini Fridge\",\"24 Hour security\"]', '[\"Coffee Maker\",\"Fruit Basket\",\"Dry fruits, nuts & chocolates\",\"Laundry service\"]', '[\"2\\/4KrDo0d6UvlGpmfd78GWJKkiznUQCqZhd8smu4Tb.jpg\"]', 'Booked', '2024-01-10 07:56:53', '2024-01-11 02:16:23'),
-(3, 'Single Room', '101', '1st floor', 5000.00, 'Single Room', '250 per square', 'Mountain View', '2 person', '[\"Free Wi-Fi\",\"Flat-screen TV\",\"Mini Fridge\"]', '[\"Coffee Maker\",\"Fruit Basket\"]', '[\"3\\/FxLWanGghCoTjO3ZdFU1b9r9EiF02ZN88Tbk8zyk.jpg\"]', NULL, '2024-01-10 08:00:25', '2024-01-10 08:00:25'),
-(4, 'Couple Room', '301', '3rd floor', 4000.00, 'Couple Room', '200 square feet', 'Mountain View', '2 person', '[\"Free Wi-Fi\",\"Flat-screen TV\",\"Mini Fridge\"]', '[\"Coffee Maker\",\"Fruit Basket\",\"Dry fruits, nuts & chocolates\"]', '[\"4\\/RT4RlKbekQJpEzomoLXyN3XBfG1v6Fts4kGDphbK.jpg\"]', NULL, '2024-01-11 01:34:29', '2024-01-11 01:34:30'),
-(5, 'VIP Room', '401', '4th Floor', 10000.00, 'VIP Room', '256 per square', 'Sea View', '3 person', '[\"Mini Fridge\",\"24 Hour security\",\"Free Room Service\"]', '[\"Coffee Maker\",\"Fruit Basket\",\"Dry fruits, nuts & chocolates\"]', '[\"5\\/0p6EKJMsycxDibyADuxOomXSMDM8YD1chUpJprzA.jpg\"]', NULL, '2024-01-11 01:35:27', '2024-01-11 01:35:28');
+INSERT INTO `rooms` (`id`, `roomtitle`, `roomno`, `floorno`, `price`, `category_id`, `roomsize`, `roomview`, `maxoccupancy`, `facilities`, `guestservice`, `image`, `discount`, `status`, `created_at`, `updated_at`) VALUES
+(2, 'Double Room', '201', '2nd Floor', 10000.00, 'Double Room', '250 per square', 'Sea View', '2 person', '[\"Free Wi-Fi\",\"Flat-screen TV\",\"Mini Fridge\",\"24 Hour security\"]', '[\"Coffee Maker\",\"Fruit Basket\",\"Dry fruits, nuts & chocolates\",\"Laundry service\"]', '[\"2\\/4KrDo0d6UvlGpmfd78GWJKkiznUQCqZhd8smu4Tb.jpg\"]', 0, 'Booked', '2024-01-10 07:56:53', '2024-01-11 02:16:23'),
+(3, 'Single Room', '101', '1st floor', 5000.00, 'Single Room', '250 per square', 'Mountain View', '2 person', '[\"Free Wi-Fi\",\"Flat-screen TV\",\"Mini Fridge\"]', '[\"Coffee Maker\",\"Fruit Basket\"]', '[\"3\\/FxLWanGghCoTjO3ZdFU1b9r9EiF02ZN88Tbk8zyk.jpg\"]', 0, 'Booked', '2024-01-10 08:00:25', '2024-01-21 13:11:30'),
+(4, 'Couple Room', '301', '3rd floor', 4000.00, 'Couple Room', '200 square feet', 'Mountain View', '2 person', '[\"Free Wi-Fi\",\"Flat-screen TV\",\"Mini Fridge\"]', '[\"Coffee Maker\",\"Fruit Basket\",\"Dry fruits, nuts & chocolates\"]', '[\"4\\/RT4RlKbekQJpEzomoLXyN3XBfG1v6Fts4kGDphbK.jpg\"]', 0, NULL, '2024-01-11 01:34:29', '2024-01-11 01:34:30'),
+(5, 'VIP Room', '401', '4th Floor', 10000.00, 'VIP Room', '256 per square', 'Sea View', '3 person', '[\"Mini Fridge\",\"24 Hour security\",\"Free Room Service\"]', '[\"Coffee Maker\",\"Fruit Basket\",\"Dry fruits, nuts & chocolates\"]', '[\"5\\/0p6EKJMsycxDibyADuxOomXSMDM8YD1chUpJprzA.jpg\"]', 0, NULL, '2024-01-11 01:35:27', '2024-01-11 01:35:28'),
+(6, 'Single Sea Vew room', '102', '1st Floor', 6000.00, 'Single Room', '100x100', 'Sea View', '2', '[\"Free Wi-Fi\",\"Flat-screen TV\",\"Mini Fridge\",\"24 Hour security\",\"Free Room Service\"]', '[\"Coffee Maker\",\"Fruit Basket\",\"Dry fruits, nuts & chocolates\",\"Laundry service\",\"Hairdyers\",\"Extra stationery\",\"Towelled slippers\",\"Bath Robe\"]', '[\"6\\/2upncr2hrTqOt0DR0Fftmz8dqCDkA4oJbak2tmMx.jpg\",\"6\\/Iev6a3Y9puDBRdwvpBhHaGjVtvVbbvz2L74yGPfh.jpg\"]', 0, NULL, '2024-01-21 13:09:25', '2024-01-21 13:09:25');
 
 -- --------------------------------------------------------
 
@@ -292,7 +296,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'huma', 'huma@gmail.com', NULL, '$2y$10$RQuWpwTd8thja/l2CwdpR.Jg5waCjzUiw/O46tLX79NUImP29MU56', NULL, '2023-12-18 02:53:03', '2023-12-18 02:53:03');
+(1, 'huma', 'huma@gmail.com', NULL, '$2y$10$RQuWpwTd8thja/l2CwdpR.Jg5waCjzUiw/O46tLX79NUImP29MU56', NULL, '2023-12-18 02:53:03', '2023-12-18 02:53:03'),
+(2, 'Saif', 'saif@gmail.com', NULL, '$2y$10$z6E2PKhBvRI.g1Dw6ejDdeVINH0tZCYppoWYA4i9MvIyW1QpWgBty', NULL, '2024-01-21 13:07:47', '2024-01-21 13:07:47');
 
 --
 -- Indexes for dumped tables
@@ -383,7 +388,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `bookings`
 --
 ALTER TABLE `bookings`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -419,7 +424,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `incomes`
 --
 ALTER TABLE `incomes`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -437,13 +442,13 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `rooms`
 --
 ALTER TABLE `rooms`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
