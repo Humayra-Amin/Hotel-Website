@@ -17,19 +17,22 @@ class RoomController extends Controller
 
         
         // $categories = Room::select("category_id")->groupBy("category_id")->get();
-        $categories = Room::get();
-        return view("admin.category.viewcategory")->with('categories',  $categories);
-
-    }
-
-
-    public function roomcategory(Request $request)
-    {
-
+        // $categories = Room::get();
+       
+        // return view("admin.room.index")->with('categories',  $categories);
         $rooms = Room::get();
         return view("admin.room.index")->with('rooms',  $rooms);
 
     }
+
+
+    // public function roomcategory(Request $request)
+    // {
+
+    //     $rooms = Room::get();
+    //     return view("admin.room.index")->with('rooms',  $rooms);
+
+    // }
 
 
     public function add()

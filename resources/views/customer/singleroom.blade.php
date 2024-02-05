@@ -76,9 +76,12 @@
           <!-- Room Details -->
             <h2>{{$room->roomtitle}}</h2>
 
-            <p>Description: {{$room->description}}</p>
+            {{-- <p>Description: {{$room->description}}</p> --}}
 
-            <p>Room Availability: {{$room->availablerooms}}</p>
+            {{-- <p>Room Availability: {{$room->availablerooms}}</p> --}}
+
+             <p>Floor No: {{$room->floorno}}</p>
+
 
             <p>Max Occupancy: {{$room->maxoccupancy}}</p>
 

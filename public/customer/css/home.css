@@ -88,7 +88,7 @@
     color: #3e74ad;
 }
 
-.room-section-heading:after {
+/* .room-section-heading:after {
    content: '';
    width: 90px;
    position: absolute;
@@ -96,7 +96,7 @@
    margin-bottom: 10px;
    display: block;
    border-bottom: 2px solid #c5874e;
-}
+} */
   
 
 .section-site{
@@ -165,7 +165,7 @@ ul{
     position: relative;
 }
 
-.footer-col h4::before{
+/* .footer-col h4::before{
     content: '';
     position: absolute;
     left: 0;
@@ -174,7 +174,7 @@ ul{
     height: 2px;
     box-sizing: border-box;
     width: 50px;
-}
+} */
 
 .footer-col ul li:not(:last-child){
     margin-bottom: 10px;

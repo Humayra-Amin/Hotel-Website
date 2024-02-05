@@ -35,7 +35,11 @@ class HomeController extends Controller
 
        return view("customer.singleroom", compact('room', 'cat_id'));
 
+    
+
     }
+
+    
 
     public function aboutus()
     {
