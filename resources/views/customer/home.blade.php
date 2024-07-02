@@ -28,7 +28,7 @@
 
     <div class="row">
     <div class="col-md-12 mb-5 text-center">
-        <h1 class="room-section-heading">Our Rooms</h1>
+        <h1 class="room-section-heading">Rooms</h1>
     </div>
     </div>
 
@@ -90,7 +90,7 @@
 
        <section id="about" style="background:whitesmoke;" class="padding-xlarge text-center position-relative overflow-hidden">
             <div class="pattern-overlay pattern-right position-absolute">
-                 <img src="image/leaf-pattern1.png" alt="pattern">
+                 <img src="" alt="">
                             </div>
                  <div class="container">
                    <div class="row">

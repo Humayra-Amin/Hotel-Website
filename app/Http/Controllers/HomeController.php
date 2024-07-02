@@ -172,7 +172,7 @@ class HomeController extends Controller
         $room->update();
 
         if($room->update())
-            return redirect()->back()->with('msg', "Room Boking Successfully.")->with('status', 'success');
+            return redirect()->back()->with('msg', "Room Booking Successfully.")->with('status', 'success');
         else
             return redirect()->back()->with('msg', "Something Error! Try again latter.")->with('status', 'danger');
     }  
@@ -184,7 +184,7 @@ class HomeController extends Controller
         $checkInDate =  Carbon::parse($request->input('checkInDate'));
         $checkOutDate =  Carbon::parse($request->input('checkOutDate'));
         $room_id =  $request->input('room_id'); 
-        // Check the date is alreay or not
+        // Check the date is already or not
         $booking = Booking::where('room_id', $room_id)
                             ->where(function ($query) use ($checkInDate, $checkOutDate) {
                                 $query->where('checkInDate', '<', $checkOutDate)
